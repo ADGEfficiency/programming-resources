@@ -8,6 +8,8 @@ https://www.reddit.com/r/vim/
 
 [A Good Vimrc](https://dougblack.io/words/a-good-vimrc.html)
 
+[Vim Setup for Markdown](https://www.swamphogg.com/2015/vim-setup/)
+
 [Talk on going mouseless with Vim, Tmux, and Hotkeys](https://www.youtube.com/watch?v=E-ZbrtoSuzw)
 
 [Why I Still Use Vim](https://medium.com/commitlog/why-i-still-use-vim-67afd76b4db6)

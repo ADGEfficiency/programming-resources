@@ -1,3 +1,11 @@
+## Resources
+
+[What Your Computer Does While You Wait](https://manybutfinite.com/post/what-your-computer-does-while-you-wait/)
+
+[What Every Programmer Should Know About Memory](https://akkadia.org/drepper/cpumemory.pdf)
+
+[What Every Computer Scientist Should Know About Floating-Point Arithmetic](https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf)
+
 ## TODO
 
 CPU, RAM, GPU, storage
