@@ -61,6 +61,8 @@ Summarize
 END { print sum, sum/NR }
 ```
 
+`awk $3 > 6`
+
 ## Pattern-action
 
 Common paradigm (also followed by `sed` and `grep`)

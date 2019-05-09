@@ -1,3 +1,11 @@
+## Unix
+
+Most things are text files
+
+Terminal runs processes
+
+Server is just another computer
+
 https://en.wikipedia.org/wiki/Unix_philosophy
 
 Originated by Ken Thompson (implemented the original Unix system).

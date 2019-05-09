@@ -4,9 +4,17 @@ https://mkaz.blog/code/working-with-vim/
 
 https://www.reddit.com/r/vim/
 
+[Vim - Full Stack Python](https://www.fullstackpython.com/vim.html)
+
+[A Good Vimrc](https://dougblack.io/words/a-good-vimrc.html)
+
 [Talk on going mouseless with Vim, Tmux, and Hotkeys](https://www.youtube.com/watch?v=E-ZbrtoSuzw)
 
 [Why I Still Use Vim](https://medium.com/commitlog/why-i-still-use-vim-67afd76b4db6)
+
+[Vim galore - everything you need to know about Vim (github)](https://github.com/mhinz/vim-galore#readme)
+
+[Why, oh WHY, do those #?@! nutheads use vi? (blog post)](http://www.viemu.com/a-why-vi-vim.html)
 
 ### History 
 
