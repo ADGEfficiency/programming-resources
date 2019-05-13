@@ -12,8 +12,13 @@ This repository is in early development - a refactor of my programming resources
 
 [High Scalability](http://highscalability.com/all-time-favorites/)
 
-The Scribe's Oath - Uncle Bob Martin - [youtube](https://www.youtube.com/watch?v=X31Jc6HQUcs)
+## Talks
 
-The Principles of Clean Architecture - Uncle Bob Martin - [youtube](https://www.youtube.com/watch?v=o_TH-Y78tt4)
+Robert (Uncle Bob) Martin
+- The Scribe's Oath - [youtube](https://www.youtube.com/watch?v=X31Jc6HQUcs)
+- The Principles of Clean Architecture - [youtube](https://www.youtube.com/watch?v=o_TH-Y78tt4)
+- Craftsmen - Control Your Environment - [youtube](https://www.youtube.com/watch?v=NZNhtYVb6H8)
 
-Craftsmen - control your environment - Uncle Bob Martin - [youtube](https://www.youtube.com/watch?v=NZNhtYVb6H8)
+Raymond Hettinger
+
+- Modern solvers: Problems well-defined are problems solved - PyCon 2019 - [youtube](https://www.youtube.com/watch?v=_GP9OpZPUYc)
