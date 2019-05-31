@@ -12,11 +12,20 @@ CPU, RAM, GPU, storage
 
 Threads vs processs
 
-## Why powers of 2
+## Bits & bytes
 
-We like to think in base 10 (ie 10 things at a time).  
+bit = 0 or 1
 
-Computers think in base 2 (one bit has two states), so computers group things in 2.  
+one bit -> 2 numbers (0, 1)
+two bits -> 4 numbers (0, 1, 2, 3)
+three bits -> 8 numbers (0, 1, ... 7)
+...
+n bits -> 2^n numbers
+
+one byte = 8 bits -> (0-255)
+
+Computers think in base 2 (one bit has two states), so computers group things in 2.
+- we like to think in base 10 (ie 10 things at a time)
 
 Having RAM in sizes like 1024 MB is so that the computer can use it efficiently
 

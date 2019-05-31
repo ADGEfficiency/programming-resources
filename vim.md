@@ -4,6 +4,20 @@ https://mkaz.blog/code/working-with-vim/
 
 https://www.reddit.com/r/vim/
 
+# Intro
+
+[Vim & Python: Making yourself at home](https://justin.abrah.ms/vim/vim_and_python.html)
+
+# Intermediate
+
+[vimways](https://vimways.org/2018/)
+
+
+
+[What is your most productive shortcut with Vim? - Your problem with Vim is that you don't grok vi](https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim)
+
+[Vim Learning Resources](https://thorstenball.com/blog/2012/07/09/vim-learning-resources/)
+
 [Vim - Full Stack Python](https://www.fullstackpython.com/vim.html)
 
 [A Good Vimrc](https://dougblack.io/words/a-good-vimrc.html)
