@@ -1,40 +1,53 @@
-https://www.reddit.com/r/vim/comments/ae8tnp/i_know_vim_fu/
 
-https://mkaz.blog/code/working-with-vim/
+`g;` go back to last change `g,`
 
-https://www.reddit.com/r/vim/
+Text objects ` w s p b B `
 
-# Intro
+`aw` a word
+`ib` inner block
 
-[Vim & Python: Making yourself at home](https://justin.abrah.ms/vim/vim_and_python.html)
+`f` inclusive find
+`t` exclusive find
 
-# Intermediate
+` ( ) ` move sentences
+` { } ` move paragraphs
 
-[vimways](https://vimways.org/2018/)
+`gj gk` move over wrapped lines
 
+`daw` delete and move to start of next work
+`diw` delete and move to the space in between
 
+`:reg` show all registers
 
-[What is your most productive shortcut with Vim? - Your problem with Vim is that you don't grok vi](https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim)
+`"rp` access content in the r register
+`"ry` yank to register r
 
-[Vim Learning Resources](https://thorstenball.com/blog/2012/07/09/vim-learning-resources/)
+`"1-9 ` history registers (queue)
+`"0 ` the yank register
+`"a-z ` named registers
+`"A-Z ` same as a-z but append
 
-[Vim - Full Stack Python](https://www.fullstackpython.com/vim.html)
+buffer = in memory text of a file
+window = viewport onto a buffer
+tab page = collection of windows
 
-[A Good Vimrc](https://dougblack.io/words/a-good-vimrc.html)
+windows
+` ctrl-w n ` new buffer
 
-[Vim Setup for Markdown](https://www.swamphogg.com/2015/vim-setup/)
+`:ls` check buffer list
 
-[Talk on going mouseless with Vim, Tmux, and Hotkeys](https://www.youtube.com/watch?v=E-ZbrtoSuzw)
+`:bn :bp` move between buffers
 
-[Why I Still Use Vim](https://medium.com/commitlog/why-i-still-use-vim-67afd76b4db6)
+`gt gT` move between tabs
 
-[Vim galore - everything you need to know about Vim (github)](https://github.com/mhinz/vim-galore#readme)
+`:tabnew`
 
-[Why, oh WHY, do those #?@! nutheads use vi? (blog post)](http://www.viemu.com/a-why-vi-vim.html)
+`ctrl+n ctrl+p` to move between autocompletes
 
-### History 
+`ctrl+x ctrl+t` theasarus
+`ctrl+x ctrl+k` dictionary
+`ctrl+x ctrl+s` spelling
 
-https://twobithistory.org/2018/08/05/where-vim-came-from.html
 
 ## Why Vim
 
@@ -62,6 +75,10 @@ Using vim keys on the
 
 Vim is **optimized for repetition**
 - repetition is the problem - Vim is the cure
+
+Action + motion
+- action = does something
+- motion = place to move cursor
 
 One key to move, one key to change
 - `/word` `.` `n` `.`

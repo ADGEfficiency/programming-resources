@@ -2,7 +2,11 @@
 
 Fluent Python - Luciano Ramalho
 
+[Think Python - Allen Downey](https://greenteapress.com/thinkpython2/thinkpython2.pdf)
+
 Effective Python: 59 Specific Ways to Write Better Python - Brett Slatkin
+
+[Automate the Boring Stuff with Python - Al Sweigart](https://automatetheboringstuff.com/)
 
 ## Useful links
 

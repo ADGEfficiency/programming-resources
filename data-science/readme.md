@@ -6,6 +6,19 @@ Breiman (2001) Statistical Modeling: The Two Cultures - [paper](https://projecte
 
 [Beware the data science pin factory: The power of the full-stack data science generalist and the perils of division of labor through function](https://multithreaded.stitchfix.com/blog/2019/03/11/FullStackDS-Generalists/)
 
+[The Future of Data Science is Past](http://koaning.io/posts/the-future-is-past/)
+
+The jupyter notebook that contains the recommender algorithm is not the investment that needs to be made by the team but rather it is all the stuff around the algorithm that requires practically all the work. Note that step 5 also requires communication with a big data cluster which also demonstrates that a recommender is more of an engineering investment than an algorithmic one. You don’t want a pure scientist team here, you need solid engineers and developers.
+
+This is besides the fact that a lot of good algorithms can be created with simple heuristics that don’t require a maths degree. One could:
+
+recommend content that is often watched together
+recommend content that is often watched together unless it is too popular
+recommend the next episode
+These are all fair options to at least benchmark. I would also like to point out that the latter idea is a great idea even it isn’t technically machine learning. It should compete with any deep learning algorithm, any day.
+
+The future of our applied field is not in our new algorithms. It is in remembering all the old things we used to do with algorithms before there was hype.
+
 [Engineers Shouldn’t Write ETL: A Guide to Building a High Functioning Data Science Department](https://multithreaded.stitchfix.com/blog/2016/03/16/engineers-shouldnt-write-etl/)
 
 Most shops foster a relationship between engineers and scientists that lies somewhere in the spectrum between non-existent1 and highly dysfunctional.
@@ -33,3 +46,15 @@ ds really nice, and it’s easy to recruit for. Thus was born the traditional, m
 ## Repos
 
 [donnemartin/data-science-ipython-notebooks](https://github.com/donnemartin/data-science-ipython-notebooks)
+
+## Articles
+
+[Why you should care about the Nate Silver vs. Nassim Taleb Twitter war](https://towardsdatascience.com/why-you-should-care-about-the-nate-silver-vs-nassim-taleb-twitter-war-a581dce1f5fc)
+
+## Textbooks
+
+[The Nature of Code](https://natureofcode.com/book/) - Daniel Shiffman
+
+
+
+

@@ -33,6 +33,8 @@ some of grep's more common flags:
 
 `grep -rl 'search term' .`
 
+`grep -rl CMA .` to find where CMA class is in a folder		
+
 ## awk
 
 [Brian Kernighan on successful language design](https://www.youtube.com/watch?v=Sg4U4r_AgJU)
