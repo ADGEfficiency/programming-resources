@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-hi=1
-echo $hi

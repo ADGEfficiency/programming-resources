@@ -27,6 +27,17 @@ Going to the home folder (`/Users/adam`)
 
 `cd ~`
 
+Go back to last directory
+```bash
+cd -
+```
+
+Use the last argument from your previous command
+```bash
+mkdir mydir
+rm -rf $_
+```
+
 ## What is in this file?
 
 `cat`
@@ -155,7 +166,7 @@ Generate project structure for use in a readme
 tree >> out.txt
 
 # new file
-tree >> out.txt
+tree > out.txt
 ```
 
 ## Find a class/function in a project
@@ -166,12 +177,10 @@ grep -rl MyClass .
 
 ## Piping
 
-```
+```	
 pip freeze | grep numpy
 ```
 
 ```
 grep -rl LSTM . | grep -v __pycache__ | grep -v .ipynb_checkpoints
 ```
-
-

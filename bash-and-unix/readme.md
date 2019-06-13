@@ -9,13 +9,3 @@ Show sizes of files in directory
 du -hs *
 ```
 
-Go back to last directory
-```bash
-cd -
-```
-
-Use the last argument from your previous command
-```bash
-mkdir mydir
-rm -rf $_
-```
