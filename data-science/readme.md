@@ -55,6 +55,13 @@ ds really nice, and it’s easy to recruit for. Thus was born the traditional, m
 
 [The Nature of Code](https://natureofcode.com/book/) - Daniel Shiffman
 
+[Hello, Startup: A Programmer's Guide to Building Products, Technologies, and Teams](https://www.amazon.co.uk/gp/product/B016YZWDA4/ref=ppx_yo_dt_b_d_asin_title_o01?ie=UTF8&psc=1)
+
+[Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
+
+[Python for Data Analysis](http://bedford-computing.co.uk/learning/wp-content/uploads/2015/10/Python-for-Data-Analysis.pdf)
+
+[Agile Data Science - Russell Jurney](https://www.oreilly.com/library/view/agile-data-science/9781449326890/)
 
 
 

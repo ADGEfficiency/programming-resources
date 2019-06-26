@@ -1,3 +1,6 @@
+TODO
+- permissions
+
 ## Where am I?
 
 Which directory am I in?

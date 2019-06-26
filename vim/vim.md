@@ -229,3 +229,11 @@ Windows = views onto buffers
 ```
 ctrl-w r  rotate
 ```
+
+## Saving files
+
+`:w`
+
+`:save` write and change to the new file
+
+`:wa` save all buffers and panes

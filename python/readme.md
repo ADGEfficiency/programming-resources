@@ -1,12 +1,12 @@
 ## Textbooks
 
-Fluent Python - Luciano Ramalho
-
 [Think Python - Allen Downey](https://greenteapress.com/thinkpython2/thinkpython2.pdf)
 
 Effective Python: 59 Specific Ways to Write Better Python - Brett Slatkin
 
 [Automate the Boring Stuff with Python - Al Sweigart](https://automatetheboringstuff.com/)
+
+[Fluent Python - Luciano Ramalho](http://shop.oreilly.com/product/0636920032519.do)
 
 ## Useful links
 
@@ -40,5 +40,7 @@ PyCon 2010: The Mighty Dictionary - [youtube](https://www.youtube.com/watch?v=C4
 Hidden Treasures in the Standard Library - [video](https://pyvideo.org/pycon-us-2011/pycon-2011--hidden-treasures-in-the-standard-libr.html)
 
 Raymond Hettingier - Python's Class Development Toolkit - [youtube](https://www.youtube.com/watch?v=HTLu2DFOdTg&t=528s)
+
+Raymond Hettingier - Modern solvers: Problems well-defined are problems solved - PyCon 2019 - [youtube](https://www.youtube.com/watch?v=_GP9OpZPUYc)
 
 Jeff Reback - What is the Future of Pandas - [youtube](https://www.youtube.com/watch?v=_-gJtO0XR48)
