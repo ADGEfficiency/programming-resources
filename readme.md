@@ -32,6 +32,10 @@ This repository is my personal collection of programming resources.  If you like
 
 [Hello, Startup: A Programmer's Guide to Building Products, Technologies, and Teams - Yevgeniy Brikman](https://www.amazon.co.uk/gp/product/B016YZWDA4/ref=ppx_yo_dt_b_d_asin_title_o01?ie=UTF8&psc=1)
 
+## Textbooks
+
+[Clean Architecture: A Craftsman's Guide to Software Structure and Design - Robert C. Martin](https://www.goodreads.com/book/show/18043011-clean-architecture)
+
 ## Talks
 
 Robert (Uncle Bob) Martin

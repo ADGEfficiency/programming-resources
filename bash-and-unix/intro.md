@@ -140,6 +140,8 @@ Up and down arrows to move between commands
 
 `<C-r>` history
 
+Aliases are also very important for improving speed (see below)
+
 
 ## Setting environment variables
 
@@ -228,6 +230,7 @@ Your shell is configured using
 `~/.bash_profile` (Mac - but Mac will also have a `bashrc`)
 
 These scripts are run every time you start a new shell.  It is common to add `echo` statements to these files to get used to this idea.
+
 
 ## Aliases
 
