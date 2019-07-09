@@ -4,8 +4,6 @@
 
 [Six glorious commands worth getting to know](https://astrobiomike.github.io/bash/six_commands#tr)
 
-Show sizes of files in directory
-```bash
-du -hs *
-```
+[A Beautifully Productive Terminal Experience](https://mikebuss.com/2014/02/02/a-beautiful-productive-terminal-experience/)
 
+[Switching from bash to zsh](https://www.chenhuijing.com/blog/bash-to-zsh/#%F0%9F%91%BE)

@@ -1,11 +1,3 @@
-## ipython quality of life stuff
-
-Import numpy and pandas into ipython
-
-using ? in ipython
-
-## *args and **kwargs
-
 ## Asserts
 
 Asserts are low overhead, and help the reader understand the code

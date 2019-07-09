@@ -1,3 +1,12 @@
+## Wildcards
+
+`?` matches a single character
+
+`[78]` matches either 7 or 8
+
+`{.txt, .csv}` matches txt or csv files
+
+
 ## Unix tools
 
 htop, grep, vim, tmux, cut, sort

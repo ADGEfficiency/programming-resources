@@ -20,7 +20,11 @@ vimtutor
 
 [Seven habits of effective text editing](http://moolenaar.net/habits.html)
 
+[Vim 101: A Beginner's Guide to Vim](https://www.linux.com/learn/vim-101-beginners-guide-vim)
+
 ## Intermediate
+
+[Fcode VIM cheat sheet](https://www.fcodelabs.com/2018/12/08/Vim-Cheats/)
 
 [omerxx/vim-notebook](https://github.com/omerxx/vim-notebook/blob/master/VIM_NOTEBOOK.md) - theory, tips, and tricks after reading Drew Neil's Practical VIM & an unordered list of tips picked up along the way
 

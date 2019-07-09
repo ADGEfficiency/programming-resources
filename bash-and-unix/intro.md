@@ -1,5 +1,6 @@
 TODO
 - permissions
+- move stuff from readme
 
 ## Where am I?
 
@@ -51,6 +52,22 @@ rm -rf $_
 
 `less` - uses vim bindings
 
+
+## What is in this folder?
+
+Show sizes of files in directory
+
+```bash
+du -hs *
+```
+
+Show disk usage
+
+```bash
+df -h
+```
+
+
 ## Making new stuff
 
 `mkdir`
@@ -58,7 +75,10 @@ rm -rf $_
 
 `touch myfile.txt`
 
+
 ## Getting faster
+
+`TAB` for autocomplete
 
 Up and down arrows
 
@@ -67,6 +87,7 @@ Up and down arrows
 `history`
 
 `<C-r>` history
+
 
 ## Setting variables
 
@@ -170,6 +191,12 @@ tree >> out.txt
 
 # new file
 tree > out.txt
+```
+
+You can also put the redirection at the start
+
+```bash
+> out.txt tree
 ```
 
 ## Find a class/function in a project

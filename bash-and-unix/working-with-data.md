@@ -7,7 +7,7 @@ Select second column from a csv
 `-f` fields (aka columns)
 `-d` delimiter
 
-Get unique values (`uniq` will only consolidate entries right after each other)
+Get unique values (`uniq` will only consolidate entries right after each other to save memory)
 
 `cat my_file.txt | cut -f 2 | sort | uniq -c`
 

@@ -1,24 +1,16 @@
-## Unix
-
-Most things are text files
-
-Terminal runs processes
-
-Server is just another computer
+## The Unix Philosophy
 
 https://en.wikipedia.org/wiki/Unix_philosophy
 
-Originated by Ken Thompson (implemented the original Unix system).
-
-Minimalist, modular software development
-- simple
-- short
-- clear
-- modular
-- extensible
-
 Unix philosophy is as important as Unix itself
 - cultural norms for developing software
+
+Originated by Ken Thompson (implemented the original Unix system)
+
+## Minimalist, modular software development
+
+> Many UNIX programs do quite trivial things in isolation, but, combined with other programs, become general and useful tools.
+The UNIX Programming Environment, Brian Kernighan and Rob Pike (1984)
 
 Write programs that
 - do one thing and do it well
@@ -26,14 +18,24 @@ Write programs that
 - handle text streams, because that is a universal interface
 - are easy to write, test and run
 
-> Many UNIX programs do quite trivial things in isolation, but, combined with other programs, become general and useful tools.
-The UNIX Programming Environment, Brian Kernighan and Rob Pike (1984)
-
-Tools
+Programs that are
+- simple
+- short
+- clear
+- modular
+- extensible
+ 
+The UNIX toolset is about
 - using programs in combination to get a job done
 - rather than monolithic, self sufficient, special or one time programs
 
-Eric Raymond's 17 Unix Rules
+## Everything is a (text) file
+
+https://en.wikipedia.org/wiki/Everything_is_a_file
+
+Directories, hard drives, modems, keyboards are all simple streams of bytes
+
+## Eric Raymond's 17 Unix Rules
 
 1. Build modular programs
 2. Write readable programs
@@ -53,7 +55,7 @@ Eric Raymond's 17 Unix Rules
 16. Write flexible and open programs
 17. Make the program and protocols extensible
 
-Mike Gancarz: The UNIX Philosophy
+## Mike Gancarz: The UNIX Philosophy
 
 Small is beautiful
 Make each program do one thing well
@@ -64,11 +66,3 @@ Use software leverage to your advantage
 Use shell scripts to increase leverage and portability
 Avoid captive user interfaces
 Make every program a filter
-
-## Everything is a file
-
-Directories, hard drives, modems, keyboards are all simple streams of bytes
-
-https://en.wikipedia.org/wiki/Everything_is_a_file
-
-

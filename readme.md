@@ -1,5 +1,8 @@
 This repository is my personal collection of programming resources.  If you like this check out [rl-resources](https://github.com/ADGEfficiency/rl-resources) and [ml-resources](https://github.com/ADGEfficiency/ml-resources).
 
+- [List of software development philosophies - Wikipedia](https://en.wikipedia.org/wiki/List_of_software_development_philosophies)
+- [dwmkerr/hacker-laws](https://github.com/dwmkerr/hacker-laws)
+
 ## Blog posts
 
 [Teach Yourself Programming in Ten Years - Peter Norvig](http://norvig.com/21-days.html)
@@ -35,11 +38,6 @@ Robert (Uncle Bob) Martin
 - The Scribe's Oath - [youtube](https://www.youtube.com/watch?v=X31Jc6HQUcs)
 - The Principles of Clean Architecture - [youtube](https://www.youtube.com/watch?v=o_TH-Y78tt4)
 - Craftsmen - Control Your Environment - [youtube](https://www.youtube.com/watch?v=NZNhtYVb6H8)
-
-## Podcasts
-
-This Week in AI
-- [Are We Being Honest About How Difficult AI Really Is? with David Ferrucc](https://twimlai.com/twiml-talk-268-are-we-being-honest-about-how-difficult-ai-really-is-with-david-ferrucci/)
 
 ## Random
 
