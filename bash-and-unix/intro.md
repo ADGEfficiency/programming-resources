@@ -2,30 +2,52 @@
 
 Which directory am I in?
 
-`pwd`
+```bash
+pwd
+```
 
 What is in this directory?
 
-`ls`
+```bash
+ls
 
-`-a` show hidden files
-`-G` colorized
-`-l` long format
-`-r` reverse order 
-`-t` sort by time
+-a show hidden files
+-G colorized
+-l long format
+-r reverse order 
+-t sort by time
+```
 
-`tree`
-`-L {num}`
+Tree is a very useful program for showing the folder structure deeper in the file system
+
+```bash
+tree
+-L {num}
+```
 
 ## Changing directories
 
-`cd`
+Move down into a folder
+
+```bash
+cd dirname
+```
+
+To go one level up
+
+```bash
+cd ..
+```
 
 Getting to highest level folders by `cd /etc`, `cd /Users`
 
 Going to the home folder (`/Users/adam`)
 
-`cd ~`
+```bash
+cd ~
+
+cd $HOME
+```
 
 Go back to last directory
 ```bash
@@ -33,25 +55,33 @@ cd -
 ```
 
 Use the last argument from your previous command
+
 ```bash
 mkdir mydir
-rm -rf $_
+
+tree $_
 ```
 
 ## What is in this file?
 
-`cat`
+```bash
+#  print file contents
+cat
 
-`head`
+#  print first n rows
+head
 
-`tail`
+#  print last n rows
+tail
 
-`less` - uses vim bindings
+#  paging over the file
+less
+```
 
 
 ## What is in this folder?
 
-Show sizes of files in directory
+Show sizes of files in directory (the `*` symbol is a wildcard that matches everything)
 
 ```bash
 du -hs *
@@ -66,38 +96,87 @@ df -h
 
 ## Making new stuff
 
-`mkdir`
-`-p` recursive
+Make a directory
 
-`touch myfile.txt`
+```bash
+mkdir
+
+-p recursive
+```
+
+Make a file
+
+```bash
+touch myfile.txt
+```
+
+Make a file with a single line `tdd`
+
+```bash
+echo tdd > .python-version
+```
+
+
+## Removing stuff
+
+Be careful with `rm` - there is no trash can for `rm`!
+
+```bash
+rm file
+
+rm -rf directory
+```
 
 
 ## Getting faster
 
 `TAB` for autocomplete
 
-Up and down arrows
+Up and down arrows to move between commands
 
 `!python` - rerun last command for program
 
-`history`
+`history` will print the 
 
 `<C-r>` history
 
 
-## Setting variables
+## Setting environment variables
 
-`env` is the equivalent of `dir()` in Python
+The terminal is a stateful system - it has a whole bunch of variables.  You can see these using `env` (the equivalent of `dir()` in Python)
 
-`zz=1`
+We can set a variable using:
+
+```bash
+zz=1
+```
 
 If I want to  see what this variable is (note the `$` - this is always used)
 
-`echo $zz`
+```bash
+echo $zz
+```
 
-But these variables will not be inherited - to get this we need to use `export`
+But these variables will not be inherited by sub processes - to get this we need to use `export`.  You will always see `export` used in the shell config scripts (i.e. `.bash_rc`), and the simpler variable assignment in shell scripts.
 
-`export zz=2`
+```bash
+export zz=2
+```
+
+
+## Getting help
+
+```bash
+man ls
+```
+
+
+## Where is this thing?
+
+```bash
+which ls
+```
+
 
 ## PATH
 
@@ -110,6 +189,7 @@ Locations the shell checks when you type a command.  You can think of adding a l
 A common pattern you will see in install scripts
 
 `echo 'export PATH=$PATH:$SPARK_HOME/bin' >> ~/.bashrc`
+
 
 ## Shebang
 
@@ -129,6 +209,7 @@ Now can run file without specifying the program
 ```bash
 $ ./myfile
 ```
+
 
 ## Source
 
@@ -177,16 +258,23 @@ alias gp='git push origin '
 alias gls='clear && git status'
 ```
 
+
 ## Redirect to file
 
 Generate project structure for use in a readme
 
-```
+```bash
 # append
 tree >> out.txt
 
 # new file
 tree > out.txt
+```
+
+Another common pattern is generating a requirements file for a Python project
+
+```bash
+pip freeze > requirements.txt
 ```
 
 You can also put the redirection at the start
@@ -195,21 +283,24 @@ You can also put the redirection at the start
 > out.txt tree
 ```
 
+
 ## Find a class/function in a project
+
+`grep` is one of the UNIX searching tools
 
 ```bash
 grep -rl MyClass .
 ```
 
+
 ## Piping
 
-```	
+```bash
 pip freeze | grep numpy
-```
 
-```
 grep -rl LSTM . | grep -v __pycache__ | grep -v .ipynb_checkpoints
 ```
+
 
 ## SSH
 

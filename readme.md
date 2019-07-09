@@ -44,3 +44,5 @@ Robert (Uncle Bob) Martin
 [Screenshots from developers & Unix people (2002)](https://anders.unix.se/2015/10/28/screenshots-from-developers--unix-people-2002/)
 
 [Screenshots from developers: 2002 vs. 2015](https://anders.unix.se/2015/12/10/screenshots-from-developers--2002-vs.-2015/)
+
+[The challenges of teaching software engineering](https://www.sicpers.info/2019/07/the-challenges-of-teaching-software-engineering/)

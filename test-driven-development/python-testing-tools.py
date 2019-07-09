@@ -1,4 +1,44 @@
-## Useful commands
+## Hypothesis - [docs](https://hypothesis.readthedocs.io/en/latest/)
+
+Hypothesis is a library that lets you do property based testing:
+
+```python
+def bad_adder(a, b):
+    return abs(a + b)
+
+@given(
+    floats(allow_nan=False, allow_infinity=False),
+    floats(allow_nan=False, allow_infinity=False)
+)
+def test_bad_adder(a, b):
+    result = bad_adder(a, b)
+    assert result == a + b
+```
+
+## Coverage.py - [docs](https://coverage.readthedocs.io/en/v4.5.x/)
+
+Coverage tells you how much of your code base is tested:
+
+```bash
+pip install coverage
+
+coverage run my_program.py arg1 arg2
+
+coverage report -m
+```
+
+## pytest - [docs](https://docs.pytest.org/en/latest/)
+
+`pytest` is a framework for managing tests of a Python program.  Pytest is run from the command line, and well look for functions beginning or ending in test (i.e. `test_db`) in files that begin or end with test (i.e. `test_app.py`).
+
+```bash
+pip install pytest
+
+pytest tests
+```
+
+Pytest offers features to run only specific test, to parametrize tests with different inputs & expected outputs and to create fixtures (code to be shared between tests) - see my [notes on pytest here]().
+
 
 `pytest -v --tb=line` one line per test, show the traceback
 
