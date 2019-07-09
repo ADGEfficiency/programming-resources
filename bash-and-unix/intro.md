@@ -1,7 +1,3 @@
-TODO
-- permissions
-- move stuff from readme
-
 ## Where am I?
 
 Which directory am I in?
@@ -213,4 +209,18 @@ pip freeze | grep numpy
 
 ```
 grep -rl LSTM . | grep -v __pycache__ | grep -v .ipynb_checkpoints
+```
+
+## SSH
+
+The basic syntax for SSH is
+
+```bash
+ssh USER@HOSTNAME
+```
+
+Commonly if you are using AWS you will SSH while also passing your private key
+
+```bash
+ssh -i ~/.ssh/key.pem -tt ubuntu@ec2-54-93-188-105.eu-central-1.compute.amazonaws.com
 ```
