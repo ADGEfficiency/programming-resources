@@ -21,8 +21,62 @@ ls
 Tree is a very useful program for showing the folder structure deeper in the file system
 
 ```bash
-tree
--L {num}
+tree -L {num}
+```
+
+Clear the terminal
+```bash
+clear
+```
+
+## Making and editing files
+
+Make a file
+
+```bash
+touch myfile.txt
+```
+
+Edit a file
+
+```bash
+nano myfile.txt
+```
+
+## What is in this file?
+
+```bash
+#  print file contents
+cat readme.md
+
+#  print first n rows
+head -n 3 readme.md
+
+#  print last n rows
+tail -n 3 readme.md
+
+#  paging over the file
+less readme.md
+```
+
+## Making directories
+
+Make a directory
+
+```bash
+mkdir practice-dir
+
+-p recursive
+```
+
+## Moving stuff
+
+Be careful with `mv` - it will overwrite the file!
+
+```bash
+cp myfile.txt practice-dir/copy.txt
+
+mv myfile.txt practice-dir/my-file.txt
 ```
 
 ## Changing directories
@@ -30,7 +84,7 @@ tree
 Move down into a folder
 
 ```bash
-cd dirname
+cd practice-dir
 ```
 
 To go one level up
@@ -62,21 +116,6 @@ mkdir mydir
 tree $_
 ```
 
-## What is in this file?
-
-```bash
-#  print file contents
-cat
-
-#  print first n rows
-head
-
-#  print last n rows
-tail
-
-#  paging over the file
-less
-```
 
 
 ## What is in this folder?
@@ -94,21 +133,6 @@ df -h
 ```
 
 
-## Making new stuff
-
-Make a directory
-
-```bash
-mkdir
-
--p recursive
-```
-
-Make a file
-
-```bash
-touch myfile.txt
-```
 
 Make a file with a single line `tdd`
 

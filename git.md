@@ -18,7 +18,17 @@ git commit -m 'message'
 git push origin master
 ```
 
-## Introduction to git
+## Cloning an existing repo
+
+To clone a repo, simply use the website for the repo on github - don't download and unzip!
+
+For example, to clone this repo:
+
+```bash
+git clone https://github.com/ADGEfficiency/programming-resources
+```
+
+## Initializing a repo
 
 To start from the start, lets:
 - make an empty directory
@@ -28,6 +38,8 @@ To start from the start, lets:
 - commit the changes
 
 ```bash
+mkdir practice-repo
+
 git init
 
 touch README.md
@@ -37,29 +49,7 @@ git add *
 git commit -m 'initial commit'
 ```
 
-Note that we don't push this anywhere.
-
-## Dev branches
-
-Branching is not required on all projects.  Sometimes it can be nice to have a stable master branch and to experiment in another branch.
-
-```bash
-git checkout -b dev
-
-touch dev.py
-
-git add dev.py
-
-git commit -m 'dev work'
-```
-
-Now if I want these changes in my master branch:
-
-```bash
-git checkout master
-
-git merge dev
-```
+Note that we don't push this anywhere - the git repo can happily live and track changes to our code locally.
 
 ## Working with GitHub
 
@@ -100,6 +90,28 @@ git config --global core.excludesfile '~/.gitignore'
 
 #  show global gitignore
 git config --get core.excludesfile
+```
+
+## Dev branches
+
+Branching is not required on all projects.  Sometimes it can be nice to have a stable master branch and to experiment in another branch.
+
+```bash
+git checkout -b dev
+
+touch dev.py
+
+git add dev.py
+
+git commit -m 'dev work'
+```
+
+Now if I want these changes in my master branch:
+
+```bash
+git checkout master
+
+git merge dev
 ```
 
 ## Resources
