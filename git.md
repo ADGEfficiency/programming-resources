@@ -40,6 +40,8 @@ To start from the start, lets:
 ```bash
 mkdir practice-repo
 
+cd practice-repo
+
 git init
 
 touch README.md
@@ -123,3 +125,7 @@ git merge dev
 ## Advanced
 
 [More productive Git](https://increment.com/open-source/more-productive-git/)
+
+[Git From the Bits Up](https://www.youtube.com/watch?v=MYP56QJpDr4)
+
+[GOTO 2015 • Deep Dive into Git • Edward Thomson](https://www.youtube.com/watch?v=dBSHLb1B8sw)
