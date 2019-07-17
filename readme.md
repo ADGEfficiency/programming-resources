@@ -36,6 +36,8 @@ This repository is my personal collection of programming resources.  If you like
 
 [Clean Architecture: A Craftsman's Guide to Software Structure and Design - Robert C. Martin](https://www.goodreads.com/book/show/18043011-clean-architecture)
 
+[Introduction to High-Performance Scientific Computing - Victor Eijkhout](http://pages.tacc.utexas.edu/~eijkhout/istc/html/index.html)
+
 ## Talks
 
 Robert (Uncle Bob) Martin
