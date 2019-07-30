@@ -17,6 +17,8 @@ Effective Python: 59 Specific Ways to Write Better Python - Brett Slatkin
 High Performance Data Processing in Python || Donald Whyte - [youtube](https://www.youtube.com/watch?v=nmYyISMdOqY)
 - how python and numpy works at memory level
 
+[Losing your Loops Fast Numerical Computing with NumPy - Jake VanderPlas](https://www.youtube.com/watch?v=EEUXKG97YRw)
+
 Ned Batchelder - Big-O: How Code Slows as Data Grows - PyCon 2018 - [youtube](https://www.youtube.com/watch?time_continue=1&v=duvZ-2UK0fc)
 
 Brandon Rhodes: All Your Ducks In A Row: Data Structures in the Std Lib and Beyond - PyCon 2014 - [youtube](https://www.youtube.com/watch?v=fYlnfvKVDoM&feature=player_embedded)

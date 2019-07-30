@@ -6,9 +6,77 @@ Reader should be able to figure out in a minute what a function does
 
 What does the function do?  Should be as long as it needs to be.
 
+Functional programming = input -> output with no side effects
+
 ## Refactoring
 
 Cycle of reorganzing and rewriting to improve readabiity & testability
+
+[The Skills Poor Programmers Lack - Justin Meiners](https://justinmeiners.github.io/the-skills-programmers-lack/)
+
+Three fundamental skills are often missing:
+1. understanding the language & what is going on inside the computer
+
+Minimal level is [a course on data structures](http://opendatastructures.org/ods-python/) and [a course on assembly & architecture](http://inst.eecs.berkeley.edu/~cs61c/sp15/).
+
+```python
+if isDelivered and isNotified: isDone = True else: isDone = false;
+
+versus
+
+isDone = isDelivered and isNotified
+```
+
+2. Anticipating problems
+
+Careful programmers think through states & transitions of programs
+
+Don't generate random file names and hope a collision doesn't happen
+
+3. Organizing & designing systems
+
+Design is not just making short functions - **the real problem is writing code that mixes unrelated ideas**.
+
+Good software = well defined concepts & clear responsibilities.
+
+Useful strategies
+- design patterns & SOLID for classes
+- functional programming for pure functions with no side effects
+- model-view-controllor to separate storage & UI from business logic
+
+Good design = easy to change
+
+Best way to learn = write & study lots of programs
+
+[Think in Math. Write in Code. - Justin Meiners](https://justinmeiners.github.io/think-in-math/)
+
+Programming languages 
+- implementation tool (not thinking tools)
+- strict and formal
+
+Thinking tools
+- should be free & flexible
+
+Math = thinking tool for computation
+- reason about logical structures
+
+Basic programming pattern
+1. identify problem
+2. design algorithm & data structure to solve it
+3. implement & test
+
+Ideally steps 1 & 2 should be solved first, then a programming language used for step 3
+
+**Separate thinking from implementation**
+- implementation can distract from the problem
+
+Programming languages = poor abstraction tools
+- black boxes = hides contents, only show input & output
+- boxes leak because brief description can't determine the behaviour
+
+[up to Most importantly for problem-solving, black boxes are rigid]
+
+
 
 [dwmkerr/hacker-laws](https://github.com/dwmkerr/hacker-laws) - Laws, Theories, Principles and Patterns that developers will find useful
 
