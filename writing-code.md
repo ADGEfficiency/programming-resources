@@ -10,7 +10,17 @@ Functional programming = input -> output with no side effects
 
 ## Refactoring
 
-Cycle of reorganzing and rewriting to improve readabiity & testability
+Cycle of reorganizing and rewriting to improve readability & testability
+
+Brett Slatkin - Refactoring Python: Why and how to restructure your code - PyCon 2016 - [youtube](https://www.youtube.com/watch?v=D_6ybDcU5gc&feature=player_embedded)
+
+Wrote effective Python - 59 ways!
+
+Refactoring 
+- repeatedly reorganizing + rewriting until it's obvious to a new reader
+- readability and testability
+- great programmer spends half his time refactoring
+- instead of using a conditional - use a class with `__bool__` and then use ` if instance then` etc.  Allows easier testing
 
 [The Skills Poor Programmers Lack - Justin Meiners](https://justinmeiners.github.io/the-skills-programmers-lack/)
 

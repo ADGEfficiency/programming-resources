@@ -14,6 +14,8 @@ Effective Python: 59 Specific Ways to Write Better Python - Brett Slatkin
 
 ## Talks
 
+[Memory Management in Python - The Basics - PyCon 2016 - Nina Zakharenko](https://www.youtube.com/watch?v=F6u5rhUQ6dU)
+
 High Performance Data Processing in Python || Donald Whyte - [youtube](https://www.youtube.com/watch?v=nmYyISMdOqY)
 - how python and numpy works at memory level
 
