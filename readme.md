@@ -9,8 +9,6 @@ This repository is my personal collection of programming resources.  If you like
 
 ## Community
 
-[DataTau](http://www.datatau.com/)
-
 [Hacker News](https://news.ycombinator.com/)
 - [HN: the good parts](https://danluu.com/hn-comments/)
 

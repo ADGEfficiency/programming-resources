@@ -12,6 +12,15 @@ Functional programming = input -> output with no side effects
 
 Cycle of reorganizing and rewriting to improve readability & testability
 
+## Links
+[Linux kernel coding style](https://www.kernel.org/doc/Documentation/process/coding-style.rst)
+
+[Things I Learnt The Hard Way (in 30 Years of Software Development)](https://blog.juliobiason.net/thoughts/things-i-learnt-the-hard-way/)
+
+[3 Kinds of Good Tech Debt - Jon Thornton - Squarespace](https://engineering.squarespace.com/blog/2019/three-kinds-of-good-tech-debt)
+
+## Notes
+
 Brett Slatkin - Refactoring Python: Why and how to restructure your code - PyCon 2016 - [youtube](https://www.youtube.com/watch?v=D_6ybDcU5gc&feature=player_embedded)
 
 Wrote effective Python - 59 ways!
@@ -86,15 +95,9 @@ Programming languages = poor abstraction tools
 
 [up to Most importantly for problem-solving, black boxes are rigid]
 
-
-
-[dwmkerr/hacker-laws](https://github.com/dwmkerr/hacker-laws) - Laws, Theories, Principles and Patterns that developers will find useful
-
 [Learn more programming languages, even if you won't use them](https://thorstenball.com/blog/2019/04/09/learn-more-programming-languages/)
 
 Languages shape the way we think*, each in their own peculiar way. That’s true for programming languages as well. Each language contains a different mental model, a different perspective for thinking about computation and how to write programs.
-
-[Linux kernel coding style](https://www.kernel.org/doc/Documentation/process/coding-style.rst)
 
 [Things I was wrong about when I started programming](https://javascriptplayground.com/things-i-was-wrong-about-javascript/)
 
@@ -135,7 +138,3 @@ The Gestalt principles concern themselves with how we visually perceive groups o
 3. Proximity - the space between objects (close to similarity) -
 4. Closure - group formed if they appear to form a whole
 5. Continuation - intersection of two objects appears to the eye as one single object
-
-[Things I Learnt The Hard Way (in 30 Years of Software Development)](https://blog.juliobiason.net/thoughts/things-i-learnt-the-hard-way/)
-
-
