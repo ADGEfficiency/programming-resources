@@ -1,3 +1,6 @@
+[VECTORS, MATRICES, AND ARRAYS RECIPES IN PYTHON](https://dataisutopia.com/blog/vectors-matrices-and-arrays-recipes-in-python/)
+
+
 ## Preallocating array memory before loops
 
 ```python

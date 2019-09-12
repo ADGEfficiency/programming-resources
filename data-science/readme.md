@@ -4,6 +4,8 @@ Breiman (2001) Statistical Modeling: The Two Cultures - [paper](https://projecte
 
 ## Blog posts
 
+[Data science is different now - Vicki Boykis](https://veekaybee.github.io/2019/02/13/data-science-is-different/)
+
 [Beware the data science pin factory: The power of the full-stack data science generalist and the perils of division of labor through function](https://multithreaded.stitchfix.com/blog/2019/03/11/FullStackDS-Generalists/)
 
 [The Future of Data Science is Past](http://koaning.io/posts/the-future-is-past/)

@@ -7,6 +7,10 @@ This repository is my personal collection of programming resources.  If you like
 
 [Teach Yourself Programming in Ten Years - Peter Norvig](http://norvig.com/21-days.html)
 
+## Blogs
+
+[The Clean Code Blog - Robert C. Martin (Uncle Bob)](http://blog.cleancoder.com/)
+
 ## Community
 
 [Hacker News](https://news.ycombinator.com/)
@@ -23,6 +27,8 @@ This repository is my personal collection of programming resources.  If you like
 [The Friendship That Made Google Huge - Jeff Dean and Sanjay Ghemawat](https://www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge)
 
 [How Data (and Some Breathtaking Soccer) Brought Liverpool to the Cusp of Glory](https://www.nytimes.com/2019/05/22/magazine/soccer-data-liverpool.html)
+
+[A Unicorn Lost in the Valley, Evernote Blows Up the ‘Fail Fast’ Gospel](https://www.nytimes.com/2019/06/28/business/evernote-what-happened.html)
 
 ## Books
 

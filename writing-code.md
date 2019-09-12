@@ -1,37 +1,12 @@
-## Readability
+# Links
 
-Reader should be able to figure out in a minute what a function does
-
-## Functions
-
-What does the function do?  Should be as long as it needs to be.
-
-Functional programming = input -> output with no side effects
-
-## Refactoring
-
-Cycle of reorganizing and rewriting to improve readability & testability
-
-## Links
 [Linux kernel coding style](https://www.kernel.org/doc/Documentation/process/coding-style.rst)
 
 [Things I Learnt The Hard Way (in 30 Years of Software Development)](https://blog.juliobiason.net/thoughts/things-i-learnt-the-hard-way/)
 
 [3 Kinds of Good Tech Debt - Jon Thornton - Squarespace](https://engineering.squarespace.com/blog/2019/three-kinds-of-good-tech-debt)
 
-## Notes
-
-Brett Slatkin - Refactoring Python: Why and how to restructure your code - PyCon 2016 - [youtube](https://www.youtube.com/watch?v=D_6ybDcU5gc&feature=player_embedded)
-
-Wrote effective Python - 59 ways!
-
-Refactoring 
-- repeatedly reorganizing + rewriting until it's obvious to a new reader
-- readability and testability
-- great programmer spends half his time refactoring
-- instead of using a conditional - use a class with `__bool__` and then use ` if instance then` etc.  Allows easier testing
-
-[The Skills Poor Programmers Lack - Justin Meiners](https://justinmeiners.github.io/the-skills-programmers-lack/)
+## [The Skills Poor Programmers Lack - Justin Meiners](https://justinmeiners.github.io/the-skills-programmers-lack/)
 
 Three fundamental skills are often missing:
 1. understanding the language & what is going on inside the computer
@@ -138,3 +113,101 @@ The Gestalt principles concern themselves with how we visually perceive groups o
 3. Proximity - the space between objects (close to similarity) -
 4. Closure - group formed if they appear to form a whole
 5. Continuation - intersection of two objects appears to the eye as one single object
+
+## Readability
+
+Reader should be able to figure out in a minute what a function does
+
+## Functions
+
+What does the function do?  Should be as long as it needs to be.
+
+### Greg Ward - How to Write Reusable Code - PyCon 2015 - [video](https://www.youtube.com/watch?v=r9cnHO15YgU)
+
+- functions = compute stuff & returns value with no side effect
+- procedure = has side effects
+- don't combine functions and procedures in the same function
+ 
+### Jack Diederich - HOWTO Write a Function - [youtube](https://www.youtube.com/watch?v=rrBJVMyD-Gs)
+
+- return early if possible (holdover from C - compiler would require/need a single return)
+- All effort is not useful effort - but all effort feels like useful effort
+- define things where you use them (ie lists to append too etc) - the reason not to do this is a holdover from C
+
+Job hard enough without trying to clever up the place
+Always and nevers - this talk doesn’t have them
+Not all effort is useful effort
+
+Code review 
+- the last chance, the gatekeeper 
+- reviews force you to think about how the code will be read
+
+Reader should be able to figure out in a minute what a function does
+
+Functions are about WHAT - what does the function do
+- function should go on as long as it has too
+
+Input
+- get info
+- don't get what you don't need
+- early errors are good errors (ie input checks)
+- asserts add information
+
+Transform
+- should be boring
+- exceptions should be exceptional
+
+Output
+- pretty print results
+- executions should be really surprising
+- format info the way caller expects
+- use assert statements - they are low overhead and tells reader what is going to happen
+- return once = form old compilers (no longer true) = use as many returns as you need
+- returning early adds confidence - return early when you can
+
+If you can get away without using a temporary - don’t use it (skip the temporary)
+- means reader has less to worry about 
+
+Exceptions show that you have thought about your failure conditions
+
+rules for `**kwargs` - hurts readability, use only where you have too
+
+### Jack Diederich - Stop Writing Classes - [video](https://www.youtube.com/watch?v=o9pEzgHorH0)
+
+- if you have two methods - one being init - it shouldn’t be a class!
+- don’t make new execeptions when you don’t need to
+- refactor religiously 
+
+Zen of Python = prefer easy things
+* simple better than complex
+* flat is better than nested
+* readability counts
+* if the implementation is hard to explain, its a bad idea
+* if the implementation is easy to explain, is might be a good idea
+
+Don't do hard things in the first place, or revert complications later
+
+How to notice when you've done down the wrong path, and how to work backwards from there
+
+If you use class once and throw it away, it could be a lot simpler
+
+First thing you need to do with code is to read it
+
+Don't write code you don't need
+
+Use class with bundle of mutable data and bunch of related functions
+
+## Refactoring
+
+Cycle of reorganizing and rewriting to improve readability & testability
+
+### Brett Slatkin - Refactoring Python: Why and how to restructure your code - PyCon 2016 - [youtube](https://www.youtube.com/watch?v=D_6ybDcU5gc&feature=player_embedded)
+
+Wrote effective Python - 59 ways!
+
+Refactoring 
+- repeatedly reorganizing + rewriting until it's obvious to a new reader
+- readability and testability
+- great programmer spends half his time refactoring
+- instead of using a conditional - use a class with `__bool__` and then use ` if instance then` etc.  Allows easier testing
+

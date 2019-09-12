@@ -342,3 +342,9 @@ Commonly if you are using AWS you will SSH while also passing your private key
 ```bash
 ssh -i ~/.ssh/key.pem -tt ubuntu@ec2-54-93-188-105.eu-central-1.compute.amazonaws.com
 ```
+
+## SSH tunneling for Jupyter
+
+```bash
+ssh -N -L localhost:8888:localhost:8888 $USER@$HOST
+```

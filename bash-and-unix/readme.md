@@ -2,6 +2,10 @@
 
 Best things in your bash_profile/aliases? - [Hacker News](https://news.ycombinator.com/item?id=18898523)
 
+[Unix at 50: How the OS that powered smartphones started from failure - Ars Technica](https://arstechnica.com/gadgets/2019/08/unix-at-50-it-starts-with-a-mainframe-a-gator-and-three-dedicated-researchers/)
+
+[The Bourne-Again Shell - The Architecture of Open Source Applications](http://www.aosabook.org/en/bash.html)
+
 [jlevy/the-art-of-command-line](https://github.com/jlevy/the-art-of-command-line)
 
 [Six glorious commands worth getting to know](https://astrobiomike.github.io/bash/six_commands#tr)

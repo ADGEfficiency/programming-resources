@@ -18,6 +18,17 @@ git commit -m 'message'
 git push origin master
 ```
 
+## Structure of a git repo
+
+Working copy
+- the files on your machine
+
+The index / staging area / cache
+- after `add`, before `commit`
+
+The checked out branch
+- branch that you tried the match the contents with
+
 ## Cloning an existing repo
 
 To clone a repo, simply use the website for the repo on github - don't download and unzip!
@@ -76,7 +87,13 @@ A common workflow is where you want to work on someone elses repo and send your 
 
 Git works because it remembers everything - if you commit 10 GB of images it will always be there.
 
-Commands like checkout, reset can overwrite your work - this will happen to you when you are learning.
+Commands like `checkout`, reset can overwrite your work - this will happen to you when you are learning.
+
+`checkout` will reset <filename> in your working copy to be equivalent with what’s in your index
+
+```bash
+git checkout -- <filename>
+```
 
 The best practice is small, regular commits - commit early and often.
 
@@ -126,6 +143,6 @@ git merge dev
 
 [More productive Git](https://increment.com/open-source/more-productive-git/)
 
-[Git From the Bits Up](https://www.youtube.com/watch?v=MYP56QJpDr4)
+[Git From the Bits Up - Tim Berglund](https://www.youtube.com/watch?v=MYP56QJpDr4)
 
-[GOTO 2015 • Deep Dive into Git • Edward Thomson](https://www.youtube.com/watch?v=dBSHLb1B8sw)
+[Deep Dive into Git - Edward Thomson](https://www.youtube.com/watch?v=dBSHLb1B8sw)
