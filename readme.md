@@ -30,6 +30,8 @@ This repository is my personal collection of programming resources.  If you like
 
 [A Unicorn Lost in the Valley, Evernote Blows Up the ‘Fail Fast’ Gospel](https://www.nytimes.com/2019/06/28/business/evernote-what-happened.html)
 
+[Why Google+ Failed](https://onezero.medium.com/why-google-failed-4b9db05b973b)
+
 ## Books
 
 [A Mind at Play: How Claude Shannon Invented the Information Age](https://www.amazon.com/Mind-Play-Shannon-Invented-Information/dp/1476766681)
@@ -55,4 +57,8 @@ Robert (Uncle Bob) Martin
 
 [Screenshots from developers: 2002 vs. 2015](https://anders.unix.se/2015/12/10/screenshots-from-developers--2002-vs.-2015/)
 
+[At what time of day do famous programmers work?](https://ivan.bessarabov.com/blog/famous-programmers-work-time)
+
 [The challenges of teaching software engineering](https://www.sicpers.info/2019/07/the-challenges-of-teaching-software-engineering/)
+
+[Linus Torvalds on C++](http://harmful.cat-v.org/software/c++/linus)

@@ -199,6 +199,9 @@ Use class with bundle of mutable data and bunch of related functions
 
 ## Refactoring
 
+Programmer speak for iteration & rewriting
+- much easier if you have a test suite that you can use to check if you broke your program!
+
 Cycle of reorganizing and rewriting to improve readability & testability
 
 ### Brett Slatkin - Refactoring Python: Why and how to restructure your code - PyCon 2016 - [youtube](https://www.youtube.com/watch?v=D_6ybDcU5gc&feature=player_embedded)
