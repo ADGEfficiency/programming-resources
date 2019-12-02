@@ -7,6 +7,10 @@ This repository is my personal collection of programming resources.  If you like
 
 [Teach Yourself Programming in Ten Years - Peter Norvig](http://norvig.com/21-days.html)
 
+## Courses
+
+Introduction to Computer Science and Programming in Python - [lecture videos](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-videos/index.htm) - [course home page](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/)
+
 ## Blogs
 
 [The Clean Code Blog - Robert C. Martin (Uncle Bob)](http://blog.cleancoder.com/)
@@ -44,12 +48,23 @@ This repository is my personal collection of programming resources.  If you like
 
 [Introduction to High-Performance Scientific Computing - Victor Eijkhout](http://pages.tacc.utexas.edu/~eijkhout/istc/html/index.html)
 
+## Podcasts
+
+[Artificial Intelligence (AI) Podcast - Lex Fridman](https://www.youtube.com/playlist?list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4):
+- [Bjarne Stroustrup: C++](https://youtu.be/uTxRF5ag27A)
+
 ## Talks
 
 Robert (Uncle Bob) Martin
 - The Scribe's Oath - [youtube](https://www.youtube.com/watch?v=X31Jc6HQUcs)
 - The Principles of Clean Architecture - [youtube](https://www.youtube.com/watch?v=o_TH-Y78tt4)
 - Craftsmen - Control Your Environment - [youtube](https://www.youtube.com/watch?v=NZNhtYVb6H8)
+
+### History of programming
+
+[Is It Time to Rewrite the Operating System in Rust? - Bryan Cantrill - 2018](https://www.youtube.com/watch?v=HgtRAbE1nBM&list=WL&index=3&t=0s)
+
+[Why Isn't Functional Programming the Norm? – Richard Feldman - 2019](https://www.youtube.com/watch?v=QyJZzq0v7Z4)
 
 ## Random
 

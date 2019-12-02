@@ -1,6 +1,14 @@
+
+
+[Practical advice for analysis of large, complex data sets - Google - 2016](http://www.unofficialgoogledatascience.com/2016/10/practical-advice-for-analysis-of-large.html)
+
+[abhat222/Data-Science--Cheat-Sheet](https://github.com/abhat222/Data-Science--Cheat-Sheet)
+
 [50 years of Data Science](https://courses.csail.mit.edu/18.337/2015/docs/50YearsDataScience.pdf) - [hacker news discussion](https://news.ycombinator.com/item?id=10431617)
 
 Breiman (2001) Statistical Modeling: The Two Cultures - [paper](https://projecteuclid.org/download/pdf_1/euclid.ss/1009213726) - [hacker news discussion](https://news.ycombinator.com/item?id=19835962) - [summary](http://duboue.net/blog27.html)
+
+[Tea: A High-level Language and Runtime System for Automating Statistical Analysis - YouTube](https://www.youtube.com/watch?v=bBCSeud21YU)
 
 ## Blog posts
 
@@ -44,6 +52,22 @@ ds really nice, and it’s easy to recruit for. Thus was born the traditional, m
  d, give people end-to-end ownership of the work they produce (autonomy). In the case of data scientists, that means ownership of the ETL. It also means ownership of the analysis of the data and the outcome of the data science. The best-case outcome of many efforts of data scientists is an artifact meant for a machine consumer, not a human one. Rather than a report, dashboard, or PowerPoint presentation, it is some sort of algorithm or API that is integrated into the engineering stack – something that fundamentally changes the operation of the business. Autonomy means the data scientists own that code as well. All the way into production. They should be able to develop and deploy it without asking the permission of engineers, be accountable for support, be held to performance, latency, and SLA requirements, etc.T
 
  his puts vertical responsibility and focus squarely into the hands of data scientists. 
+
+## [Gabby Shklovsky - Random Forests Best Practices for the Business World - PyData NYC 2017](https://www.youtube.com/watch?v=E7VLE-U07x0) - [slides](https://www.youtube.com/redirect?q=https%3A%2F%2Fwww.slideshare.net%2FPyData%2Frandom-forests-best-practices-for-the-business-world&redir_token=HgV_RBYb_uD_jYV6nYygn8RpyKR8MTU2OTkwODE2N0AxNTY5ODIxNzY3&v=E7VLE-U07x0&event=video_description)
+
+### factor out linear relationships
+
+R2 = misleading when comparing model w & wout linear component
+
+## best practice for interpreting
+
+Feature importances
+
+Check bidirectional relationship for top predictors & response
+- manually check a few trees (4-5)
+- parametric study across one feature - need to use multiple datasets (non-linear model!)  - use test data
+
+Tree graphics = export graph vis
 
 ## Repos
 
