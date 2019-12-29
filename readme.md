@@ -36,11 +36,17 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 [Why Google+ Failed](https://onezero.medium.com/why-google-failed-4b9db05b973b)
 
+[When Larry Met Sergey](https://marker.medium.com/when-larry-met-sergey-8bfcdbace1f7)
+
 ## Books
 
 [A Mind at Play: How Claude Shannon Invented the Information Age](https://www.amazon.com/Mind-Play-Shannon-Invented-Information/dp/1476766681)
 
 [Hello, Startup: A Programmer's Guide to Building Products, Technologies, and Teams - Yevgeniy Brikman](https://www.amazon.co.uk/gp/product/B016YZWDA4/ref=ppx_yo_dt_b_d_asin_title_o01?ie=UTF8&psc=1)
+
+[The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World (2015 book) - Pedro Domingos](https://en.wikipedia.org/wiki/The_Master_Algorithm)
+
+[Algorithms to Live By: The Computer Science of Human Decisions - Christian & Griffiths](https://www.goodreads.com/book/show/25666050-algorithms-to-live-by)
 
 ## Textbooks
 

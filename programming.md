@@ -1,5 +1,4 @@
 > The cool thing about programming is that the principles are useful in real life - Hai (Data Science Retreat - Batch 19)
->
 
 > Software is not a rapidly advancing technology. The rules of software are the same today as they were in 1946, when Alan Turing wrote the very first code that would execute in an electronic computer. The tools have changed, and the hardware has changed, but the essence of software remains the same. Software—the stuff of computer programs—is composed of sequence, selection, iteration, and indirection. Nothing more. Nothing less - Uncle Bob Martin - Clean Architecture: A Craftsman's Guide to Software Structure and Design 
 
@@ -25,7 +24,7 @@ Premature specalization can hurt:
 - narrows context
 - loss of accountability
 
-Minimuw viable products
+Minimum viable products
 
 Iterative code development
 
@@ -47,7 +46,21 @@ Good design = easy to change
 
 Machine code (binary) -> assembly -> C -> Python -> tensorflow -> keras
 
-## What makes code good?
+Abstraction = defining an object to carry out a task
+
+Abstractions hide detail
+
+In Python we don't need interfaces due to duck typing
+
+## Encaspsulation
+
+Simplifying behavior and hiding data
+
+## Dependency
+
+
+
+##What makes code good?
 
 Length
 

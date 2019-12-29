@@ -1,4 +1,6 @@
+[Data Science from Scratch](https://www.oreilly.com/library/view/data-science-from/9781492041122/)
 
+[What Does It Take to be a Successful Data Scientist?](https://hdsr.mitpress.mit.edu/pub/5irjez4q/)
 
 [Practical advice for analysis of large, complex data sets - Google - 2016](http://www.unofficialgoogledatascience.com/2016/10/practical-advice-for-analysis-of-large.html)
 
