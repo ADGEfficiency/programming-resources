@@ -27,6 +27,8 @@ tree -L {num}
 Clear the terminal
 ```bash
 clear
+
+Ctrl-L
 ```
 
 ## Making and editing files
@@ -42,6 +44,7 @@ Edit a file
 ```bash
 nano myfile.txt
 ```
+
 
 ## What is in this file?
 
@@ -59,6 +62,7 @@ tail -n 3 readme.md
 less readme.md
 ```
 
+
 ## Making directories
 
 Make a directory
@@ -69,6 +73,7 @@ mkdir practice-dir
 -p recursive
 ```
 
+
 ## Moving stuff
 
 Be careful with `mv` - it will overwrite the file!
@@ -78,6 +83,7 @@ cp myfile.txt practice-dir/copy.txt
 
 mv myfile.txt practice-dir/my-file.txt
 ```
+
 
 ## Changing directories
 
@@ -101,6 +107,8 @@ Going to the home folder (`/Users/adam`)
 cd ~
 
 cd $HOME
+
+cd
 ```
 
 Go back to last directory
@@ -115,7 +123,6 @@ mkdir mydir
 
 tree $_
 ```
-
 
 
 ## What is in this folder?
@@ -160,9 +167,9 @@ Up and down arrows to move between commands
 
 `!python` - rerun last command for program
 
-`history` will print the 
+`history` will print the history of your shell (the file is located at `~/.bash_history`)
 
-`<C-r>` history
+`<C-r>` to search history
 
 Aliases are also very important for improving speed (see below)
 
@@ -245,6 +252,7 @@ Running file / loading a file
 source myfile
 ```
 
+
 ## Configuration
 
 Your shell is configured using 
@@ -319,6 +327,16 @@ You can also put the redirection at the start
 grep -rl MyClass .
 ```
 
+Below we use a wildcard `*`
+
+```bash
+ls */*.png
+```
+
+```bash
+find . -name ".bashrc"
+```
+
 
 ## Piping
 
@@ -330,6 +348,8 @@ grep -rl LSTM . | grep -v __pycache__ | grep -v .ipynb_checkpoints
 
 
 ## SSH
+
+Very important skill to work on remote machines
 
 The basic syntax for SSH is
 
@@ -343,8 +363,17 @@ Commonly if you are using AWS you will SSH while also passing your private key
 ssh -i ~/.ssh/key.pem -tt ubuntu@ec2-54-93-188-105.eu-central-1.compute.amazonaws.com
 ```
 
+
 ## SSH tunneling for Jupyter
 
 ```bash
 ssh -N -L localhost:8888:localhost:8888 $USER@$HOST
 ```
+
+
+## Dotfiles repo
+
+Common to backup your dotfiles on GitHub
+- you can clone this onto a remote machine & source your dotfiles!
+
+[My dotfiles here](https://github.com/ADGEfficiency/dotfiles)

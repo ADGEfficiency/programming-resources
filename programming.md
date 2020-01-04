@@ -1,8 +1,35 @@
 > The cool thing about programming is that the principles are useful in real life - HAI BUI
 
+## Sequence, selection, iteration and indirection
+
 > Software is not a rapidly advancing technology. The rules of software are the same today as they were in 1946, when Alan Turing wrote the very first code that would execute in an electronic computer. 
+
 > The tools have changed, and the hardware has changed, but the essence of software remains the same. 
+
 > Software—the stuff of computer programs—is composed of sequence, selection, iteration, and indirection. Nothing more. Nothing less - UNCLE BOB MARTIN 
+
+Sequence = code runs in order
+
+Selection = only running certain lines (i.e. using an `if` statement)
+
+Iteration = looping (`for`, `while`)
+
+Indirection = referencing by name, rather than by value (i.e. pointing to data via memory address)
+
+## Abstraction
+
+Functionality is exposed through an interface
+- the implementation is hidden
+- the detail is abstracted away
+
+Abstractions hide detail
+- closely related is the idea of encapsulation - simplifying behavior and hiding data
+
+The opposite of abstract is concrete
+- hard to change, dependent on a framework
+
+Example of increasing abstraction:
+- Machine code (binary) -> assembly -> C -> Python -> tensorflow -> keras
 
 ## Simplicity
 
@@ -19,6 +46,10 @@ KISS = keep it simple stupid
 
 Complexity == bad!
 
+Simple baselines are important in data science
+- something that is easy to get working
+- something to compare a more complex solution too
+
 YAGNI = you ain't gonna need it
 - don't add features in before you know whether you need it
 
@@ -32,30 +63,59 @@ Premature specalization can hurt
 
 Most of programming is being able to 
 - adapt examples to your problem
+- know how to read the error messages you get
 - using Google to find solutions to your error messages
-
-
-Useful strategies
-- design patterns & SOLID for classes
-- functional programming for pure functions with no side effects
-- model-view-controller to separate storage & UI from business logic
-
-Architecture
-- should show the intent of a program
-- not the frameworks
 
 Best way to learn = write & study lots of programs
 
-Less code is not always better
-- I am now very eager to extend a function's body by a line or two if I can introduce more clarity to the code to help me and my teammates understand it.
+Useful programming strategies (beyond the scope of this course)
+- design patterns
+- functional programming for pure functions with no side effects
+- model-view-controller to separate storage & UI from business logic
 
-Martin's 1st law of documentation - produce nothing unless it's need is immediate & significant
+
+## SOLID - [Wikipedia](https://en.wikipedia.org/wiki/SOLID)
+
+Single responsibility principle
+- A class should only have a single responsibility, that is, only changes to one part of the software's specification should be able to affect the specification of the class.
+
+Open–closed principle
+- open for extension, but closed for modification
+
+Liskov substitution principle
+- Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program
+
+Interface segregation principle
+- Many client-specific interfaces are better than one general-purpose interface
+
+Dependency inversion principle
+- depend upon abstractions, not concretions
+
+Software architecture (beyond the scope of this course!)
+- should show the intent of a program
+- not the frameworks
+
+## Working as a programmer
+
+Half of programmers have less than 5 years experience
+
+Healthy dev teams = in control of their development environments
+
+Control over computers, tools, databases etc
+
+Devs should be able to do anything to their development machines
+
+Must be safe for research - stuff that would be dangerous in production environment
 
 ## Writing code
 
-Design is not just making short functions - **the real problem is writing code that mixes unrelated ideas**
+Good software = well defined concepts (abstractions!) & clear responsibilities
 
-Good software = well defined concepts & clear responsibilities
+Design is not just making short functions 
+- **the real problem is writing code that mixes unrelated ideas**
+
+Less code is usually (but not always better)
+- I am now very eager to extend a function's body by a line or two if I can introduce more clarity to the code to help me and my teammates understand it
 
 Who is code for
 - readability (it's obvious to a new reader)
@@ -72,17 +132,19 @@ Kent Beck
 
 ## What makes code good?
 
+Readability
+- style
+- in Python this means PEP8
+
 Length
 
 Dependencies
-
-Style
 
 Functional decomposition
 
 ## Symptoms of bad code 
 
-(rigid, fragile, not reusable)
+Rigid, fragile, not reusable
 
 Rigidity 
 - when you touch the code you need to modify massive amounts of other code to come into consistency with this change
@@ -93,18 +155,6 @@ Spaghetti = coupling = dependency
 - dependencies - which modules know about each other
 
 Modules depend on each other / databases / code in undesirable ways
-
-## Abstraction
-
-Functionality is exposed through an interface
-- the implementation is hidden
-- the detail is abstracted away
-
-Abstractions hide detail
-- closely related is the idea of encapsulation - simplifying behavior and hiding data
-
-Example of increasing abstraction:
-- Machine code (binary) -> assembly -> C -> Python -> tensorflow -> keras
 
 ## Refactoring
 
@@ -119,20 +169,15 @@ Example of increasing abstraction:
 
 Fred Brooks - plan to throw one away
 
-[7 absolute truths I unlearned as junior developer](https://monicalent.com/blog/2019/06/03/absolute-truths-unlearned-as-junior-developer/)
-
-Not all experience is created equal
-- that’s why mentors are so important, and the team you work with is worth so much more than a couple bucks in your paycheck
-
-Loads of companies and startups have little or no tests.
-- no company has a perfect tech setup
-
-Good enough is good enough
+## Documentation
 
 Documentation lies sometimes
 - focus on automation over documentation where appropriate.
 
-## The readme
+Martin's 1st law of documentation 
+- produce nothing unless it's need is immediate & significant
+
+### The readme
 
 Write readme before the code
 
@@ -143,21 +188,40 @@ Readme is a pitch
 
 ## All paradigms remove capability from the programmer
 
+Three align with the three big concerns of architecture: function, separation of components, and data management.
+
 ### 1 - Structured programming
 
-Limits direct transfer of control (ie no GOTO)
+Limits direct transfer of control (ie no `GOTO`)
 
 Allows functional decomposition
 
-### 2 - OOP
+### 2 - Object Oriented Programming
 
 Discipline on indirect transfer of control
 
-Polymorphism allows source code dependency inversions
-- dependencies don't depend on flow of control
+OOP
+- encaspsulation = hiding details in a class (abstraction!)
+- inheritance = class having subclasses (`Cat` & `Dog` class inherits from `Animal`)
+- polymorphism = subclasses can override methods of the parent class
 
-OO
-- encaspsulation, polymorphism, inheritance
+```python
+class Animal:
+    def eat(self): 
+		  return 'still hungry'
+
+class Dog(Animal):
+    def eat(self): 
+		  return 'full'
+```
+
+Duck typing
+- an object's suitability is determined by the presence of certain methods and properties, rather than the type of the object itself
+- 'If it walks like a duck and it quacks like a duck, then it must be a duck'
+
+```python
+obj.quack()
+```
 
 ### 3 - Functional programming
 
@@ -169,20 +233,6 @@ Separate components that do versus do not mutate variables
 Infinite data storage allows immutable variables
 - this is how git works!
 - no state, can generate state from history
-
-Notice how well those three align with the three big concerns of architecture: function, separation of components, and data management.
-
-## Working as a programmer
-
-Half of programmers have less than 5 years experience
-
-Healthy dev teams = in control of their development environments
-
-Control over computers, tools, databases etc
-
-Devs should be able to do anything to their development machines
-
-Must be safe for research - stuff that would be dangerous in production environment
 
 ## Further reading
 

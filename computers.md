@@ -2,11 +2,9 @@
 
 ## What computers read
 
-Binary
+**Binary** = 011100100
 
 **Bit** = $[0, 1]$
-
-A byte can represent the integers from $0$ to $255$
 
 one bit -> 2 numbers (0, 1)
 two bits -> 4 numbers (0, 1, 2, 3)
@@ -14,12 +12,21 @@ three bits -> 8 numbers (0, 1, ... 7)
 ...
 n bits -> 2^n numbers
 
-One **byte** = 8 bits -> (0-255)
+**Byte** = 8 bits
+- a byte can represent the integers from $0$ to $255$
 
-Computers think in base 2 (one bit has two states), so computers group things in 2.
-- we like to think in base 10 (ie 10 things at a time)
+Computers think in base 2 (one bit has two states)
+- computers group things in 2 (2 things at a time)
+- we group in base 10 (10 things at a time)
+- having memory (RAM & storage) in sizes like 1024 MB is so that the computer can use it efficiently
 
-Having memory (RAM & storage) in sizes like 1024 MB is so that the computer can use it efficiently
+Hexadecimal
+- aka base 16, hex
+
+Example
+- decimal = 999999
+- binary = `11110100001000111111`
+- hex = `F423F`
 
 ## Hardware
 
@@ -28,10 +35,15 @@ CPU = if/else, sequential
 RAM = random access memory, parallel
 - arrays of bytes
 - parallel access of bytes by integer addresses
+- accessing data in memory is fast, but capacity is limited
+- typical laptop has 8 - 16 GB
 
 Storage = SSD or spinning disk
+- accessing data on disk is slow, but capacity is usually large and cheap
+- typical laptop has 256 - 1024 GB
 
 GPU = matrix multiplication, parallel operations
+- typical ML GPU is 12 GB
 
 ## Float 32 vs 64
 
@@ -44,7 +56,10 @@ float32 is a 32 bit number - float64 uses 64 bits
 [How Operating Systems Work: 10 Concepts you Should Know as a Developer
 ](https://medium.com/cracking-the-data-science-interview/how-operating-systems-work-10-concepts-you-should-know-as-a-developer-8d63bb38331f)
 
-UNIX, Linux & OSX
+Linux, OSX
+- UNIX based
+- most serious computing done on Linux based systems
+- means that the same programs work on OSX
 
 Windows
 - more challenging development environment
@@ -53,12 +68,11 @@ Windows
 
 ## Processes
 
-Process = program in execution
-- identified by a PID in Unix systems
-
 Program = sequential instructions 
 
-The process keeps data in RAM
+Process = program in execution
+- identified by a PID in Unix systems
+- keeps data in RAM
 
 ## Threads
 
@@ -78,7 +92,7 @@ Moves processes back and forth between the main memory and the disk during execu
 - tracks whenever memory gets freed up or unallocated
 
 Process address space is the set of logical addresses that a process references in its code
-- when 32-bit addressing is in use, addresses can range from 0 to 0x7fffffff
+- when 32-bit addressing is in use, addresses can range from 0 to 0x7fffffff (hexadecimal)
 - try running `print(object())` in Python
 
 # Programming languages
@@ -87,24 +101,37 @@ Process address space is the set of logical addresses that a process references 
 
 [Hackers & Painters: Big Ideas from the Computer Age](https://en.wikipedia.org/wiki/Hackers_%26_Painters) - Chapter 10
 
+Languages differ in many ways - one of the most important is **the abstractions offered to the programmer**
+
+Properties of languages
+- level - how close to the metal you are
+- static vs. dynamic
+- compiled vs. interpreted
+- size of community (how easy it is to find help online)
+
 ## Computer time versus programmer time
 
-Computer time has become cheaper
-- programmer time is as valuable as ever
+Classic tradeoff between how fast a program is versus how hard a language is to use 
+
+Computer time has become cheaper, programmer time is as valuable as ever
 
 ## Landscape
 
-Fast = C or C++
+Fast = C, C++, Rust
 
 Business = Java
 
-Data, scientific & web = Python
+Data, scientific = Python , R , Julia
 
-Academics = R or MatLab
+Academics = R, MatLab, Fortran
 
-Web/browser = Javascript
+Web, browser = Javascript, Ruby, Python, Go
 
 Data engineering = Scala
+
+Mobile = Swift, Kotlin
+
+Notable mentions = Lisp, Perl, Haskell
 
 ## Machine code
 
@@ -148,14 +175,13 @@ Compiled
 - static type checking in editors
 
 An **interpreter** can be used to
-- examines program one piece at a time
+- examine a program one piece at a time
 - generates & executes machine language one piece at a time
 
 Interpreted
 - no compiling (or compile time)
 - interactive interperter
 - dynamically typed
-
  
 ## Type inference
 
