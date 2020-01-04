@@ -48,7 +48,8 @@ UNIX, Linux & OSX
 
 Windows
 - more challenging development environment
-- subsystem for Linux
+- but it is getting much better!
+- [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 ## Processes
 
@@ -142,10 +143,20 @@ Not many programmers work in assembly
 A **compiler** is used to 
 - translate high level programs into machine code
 
+Compiled
+- declare variables & their types
+- static type checking in editors
+
 An **interpreter** can be used to
 - examines program one piece at a time
 - generates & executes machine language one piece at a time
-- 
+
+Interpreted
+- no compiling (or compile time)
+- interactive interperter
+- dynamically typed
+
+ 
 ## Type inference
 
 In a statically-typed language, you have to know the kind of values each variable can have at the time you write the program. With dynamic typing, you can set any variable to any value, whenever you want
@@ -160,19 +171,6 @@ Static
 Dynamic
 - slower
 - more flexible
-
-## Interpreted versus compiled
-
-Interpreted
-- no compiling (or compile time)
-- interactive interperter
-- dynamically typed
-
-Compiled
-- static type checking in editors
-- declare variables
-
----
 
 Alex Gaynor: Fast Python, Slow Python - PyCon 2014 - [video](https://www.youtube.com/watch?v=7eeEf_rAJds) - [review](https://github.com/ADGEfficiency/personal/blob/master/reviews/work/fast_slow_python.md)
 
@@ -199,6 +197,7 @@ Garbage management
 
 bash
 - the language of the shell
+- popular alternatives zsh or Fish
 
 Scripting languages
 - Perl, Bash, Javascript, Ruby, Python

@@ -11,6 +11,8 @@ This repository is my personal collection of programming resources.  If you like
 
 Introduction to Computer Science and Programming in Python - [lecture videos](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-videos/index.htm) - [course home page](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/)
 
+[Computer Science from the Bottom Up](https://www.bottomupcs.com/index.xhtml)
+
 ## Blogs
 
 [The Clean Code Blog - Robert C. Martin (Uncle Bob)](http://blog.cleancoder.com/)
