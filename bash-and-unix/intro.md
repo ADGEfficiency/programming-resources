@@ -139,8 +139,6 @@ Show disk usage
 df -h
 ```
 
-
-
 Make a file with a single line `tdd`
 
 ```bash
@@ -156,6 +154,16 @@ Be careful with `rm` - there is no trash can for `rm`!
 rm file
 
 rm -rf directory
+```
+
+
+## Opening stuff
+
+You can use the default program in your OS to open files
+
+```bash
+#  open the current folder in your OS's file explorer
+open .
 ```
 
 
@@ -246,7 +254,7 @@ $ ./myfile
 
 ## Source
 
-Running file / loading a file
+Running file / loading a file into your bash environment
 
 ```bash
 source myfile
