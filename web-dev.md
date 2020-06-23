@@ -1,4 +1,8 @@
-[vasanthk/how-web-works](https://github.com/vasanthk/how-web-works) - 
+[vasanthk/how-web-works](https://github.com/vasanthk/how-web-works)
+
+[HTML is the Web - Pete Lambert](https://www.petelambert.com/journal/html-is-the-web)
+
+[Designing a RESTful API with Python and Flask](https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask)
 
 [Building Large Flask Apps in the Real World ](https://news.ycombinator.com/item?id=11121355)
 

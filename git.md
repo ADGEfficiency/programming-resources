@@ -60,6 +60,8 @@ touch README.md
 git add *
 
 git commit -m 'initial commit'
+
+git log
 ```
 
 Note that we don't push this anywhere - the git repo can happily live and track changes to our code locally.
@@ -138,6 +140,12 @@ git merge dev
 [The essential git handbook](https://medium.freecodecamp.org/the-essential-git-handbook-a1cf77ed11b5)
 
 [Git reference](https://git-scm.com/docs)
+
+[Pro Git by Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2)
+
+[Useful git commands - Marc Garcia](https://datapythonista.me/blog/useful-git-commands.html)
+
+[Git from the inside out - Mary Rose Cook](https://codewords.recurse.com/issues/two/git-from-the-inside-out)
 
 ## Advanced
 

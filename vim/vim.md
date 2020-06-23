@@ -1,3 +1,4 @@
+`J` join line below
 
 `g;` go back to last change `g,`
 

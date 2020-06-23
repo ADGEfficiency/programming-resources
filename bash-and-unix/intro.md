@@ -1,3 +1,5 @@
+# Bash
+
 ## Where am I?
 
 Which directory am I in?
@@ -122,6 +124,12 @@ Use the last argument from your previous command
 mkdir mydir
 
 tree $_
+```
+
+Run your last command
+
+```bash
+!!
 ```
 
 
@@ -385,3 +393,17 @@ Common to backup your dotfiles on GitHub
 - you can clone this onto a remote machine & source your dotfiles!
 
 [My dotfiles here](https://github.com/ADGEfficiency/dotfiles)
+
+
+## `wget`
+
+Downloads files served with HTTP, HTTPS, or FTP over a network
+
+```bash
+wget https://news.ycombinator.com/y18.gif
+```
+
+
+## Viewing `.csv` files
+
+cat raw-data/specs.csv | column -t -s, | less -S

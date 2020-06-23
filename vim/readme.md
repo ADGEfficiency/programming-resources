@@ -1,10 +1,14 @@
 # Resources
 
+[VIM USER MANUAL - by Bram Moolenaar](https://begriffs.com/pdf/vim-user-manual.pdf)
+
 ## Talks
 
 GOTO 2013 • VIM for Victory • Roy Osherove - [video](https://www.youtube.com/watch?v=2BRbyQC9oMw)
 
 Intermediate Vim - [youtube](https://www.youtube.com/watch?v=v0W7JkzQAzA) - [review](https://github.com/ADGEfficiency/personal/blob/master/reviews/work/intermeidate_vim.md)
+
+[Vim: From hjkl to a platform for plugins - Bram Moolenaar](https://youtu.be/ES1L2SPgIDI)
 
 ## Reddit
 
@@ -55,4 +59,6 @@ Vim after 11 years - [post one](https://statico.github.io/vim.html) - [post two]
 [Vim galore - everything you need to know about Vim (github)](https://github.com/mhinz/vim-galore#readme)
 
 [Why, oh WHY, do those #?@! nutheads use vi? (blog post)](http://www.viemu.com/a-why-vi-vim.html)
+
+[A list of Vim's lists](https://noahfrederick.com/log/a-list-of-vims-lists
 

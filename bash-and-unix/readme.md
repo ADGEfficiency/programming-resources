@@ -1,3 +1,18 @@
+Bash One-Liners Explained - [part one](https://catonmat.net/bash-one-liners-explained-part-one)
+
+```bash
+$ mv /path/to/file{,_old}
+# expands to:
+mv /path/to/file /path/to/file_old
+```
+
+[Effective Shell Part 7: The Subtleties of Shell Commands](https://dwmkerr.com/effective-shell-7-shell-commands/)
+
+[UNIX Toolbox](http://cb.vu/unixtoolbox.xhtml)
+[The Bash Hackers Wiki](https://wiki.bash-hackers.org/)
+
+[Clear Your Terminal in Style](https://adammusciano.com/2020/03/04/2020-03-04-clear-your-terminal-in-style/)
+
 [The Architecture of Open Source Applications: The Bourne-Again Shell](http://www.aosabook.org/en/bash.html)
 
 [DataCamp Introduction to Shell for Data Science - Datacamp Course](https://www.datacamp.com/courses/introduction-to-shell-for-data-science)
@@ -21,3 +36,5 @@ Best things in your bash_profile/aliases? - [Hacker News](https://news.ycombinat
 [An Illustrated Guide to Useful Command Line Tools](https://www.wezm.net/technical/2019/10/useful-command-line-tools/)
 
 [Ken Thompson's Unix password](https://leahneukirchen.org/blog/archive/2019/10/ken-thompson-s-unix-password.html)
+
+[The beauty of Unix pipelines](https://prithu.xyz/posts/unix-pipeline/)

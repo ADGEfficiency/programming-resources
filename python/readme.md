@@ -12,9 +12,15 @@
 
 [Python's strftime directives](http://strftime.org/)
 
+[Python’s Innards: Introduction](https://tech.blog.aknin.name/2010/04/02/pythons-innards-introduction/)
+
 ## Talks
 
+[Road to Python 3 - Lisa Guo, Hui Ding Keynote PyCon 2017](https://youtu.be/66XoCk79kjM)
+
 [Memory Management in Python - The Basics - PyCon 2016 - Nina Zakharenko](https://www.youtube.com/watch?v=F6u5rhUQ6dU)
+
+[Untitled12.ipynb | PyData Eindhoven 2019 - Vincent D. Warmerdam](https://youtu.be/yXGCKqo5cEY)
 
 High Performance Data Processing in Python || Donald Whyte - [youtube](https://www.youtube.com/watch?v=nmYyISMdOqY)
 - how python and numpy works at memory level
@@ -48,3 +54,4 @@ Raymond Hettingier - Python's Class Development Toolkit - [youtube](https://www.
 Raymond Hettingier - Modern solvers: Problems well-defined are problems solved - PyCon 2019 - [youtube](https://www.youtube.com/watch?v=_GP9OpZPUYc)
 
 Jeff Reback - What is the Future of Pandas - [youtube](https://www.youtube.com/watch?v=_-gJtO0XR48)
+

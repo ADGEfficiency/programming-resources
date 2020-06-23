@@ -6,3 +6,5 @@ Reasons why languages get popular
 - quick uprgade cycle
 
 Killer = elm-ui, clojure Datomic, ReasonML revery
+
+[What is Good About Haskell?](https://doisinkidney.com/posts/2019-10-02-what-is-good-about-haskell.html)

@@ -18,15 +18,20 @@ Breiman (2001) Statistical Modeling: The Two Cultures - [paper](https://projecte
 
 [Beware the data science pin factory: The power of the full-stack data science generalist and the perils of division of labor through function](https://multithreaded.stitchfix.com/blog/2019/03/11/FullStackDS-Generalists/)
 
+[Data Science: Reality Doesn't Meet Expectations - Dan Friedman](https://dfrieds.com/articles/data-science-reality-vs-expectations.html)
+
+[Here’s why so many data scientists are leaving their jobs](https://towardsdatascience.com/why-so-many-data-scientists-are-leaving-their-jobs-a1f0329d7ea4)
+
 [The Future of Data Science is Past](http://koaning.io/posts/the-future-is-past/)
 
 The jupyter notebook that contains the recommender algorithm is not the investment that needs to be made by the team but rather it is all the stuff around the algorithm that requires practically all the work. Note that step 5 also requires communication with a big data cluster which also demonstrates that a recommender is more of an engineering investment than an algorithmic one. You don’t want a pure scientist team here, you need solid engineers and developers.
 
 This is besides the fact that a lot of good algorithms can be created with simple heuristics that don’t require a maths degree. One could:
 
-recommend content that is often watched together
-recommend content that is often watched together unless it is too popular
-recommend the next episode
+- recommend content that is often watched together
+- recommend content that is often watched together unless it is too popular
+- recommend the next episode
+
 These are all fair options to at least benchmark. I would also like to point out that the latter idea is a great idea even it isn’t technically machine learning. It should compete with any deep learning algorithm, any day.
 
 The future of our applied field is not in our new algorithms. It is in remembering all the old things we used to do with algorithms before there was hype.
@@ -90,6 +95,14 @@ Tree graphics = export graph vis
 [Python for Data Analysis](http://bedford-computing.co.uk/learning/wp-content/uploads/2015/10/Python-for-Data-Analysis.pdf)
 
 [Agile Data Science - Russell Jurney](https://www.oreilly.com/library/view/agile-data-science/9781449326890/)
+
+## Blogs
+
+[Probably Overthinking It - Allen Downey](https://www.allendowney.com/blog/)
+
+[The Unofficial Google Data Science Blog](http://www.unofficialgoogledatascience.com/)
+
+[koaning.io](https://koaning.io/) - Vincent D. Warmerdam
 
 
 
