@@ -1,16 +1,21 @@
 # Fundamentals of Computing & Programming
 
-[computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md)
+Introductory course on how computers work, how to write programs and what tools you need.
 
-[programming.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md)
+![](assets/1883-Böcklin-Die-Toteninsel.jpg)
 
-## Hello World 
+*Die Toteninsel - Arnold Böcklin - 1883*
+
+- [programming-resources/fundamentals/computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md)
+- [programming-resources/fundamentals/programming.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md)
+- [teaching-monolith/misc/tools.ipynb](https://github.com/ADGEfficiency/teaching-monolith/blob/master/misc/tools.ipyn://github.com/ADGEfficiency/teaching-monolith/blob/master/misc/tools.ipynb)
+
+
+## Hello World Programs
+
+All tested on a Mac (x86)
 
 ### Assembly
-
-[How to write an assembly ‘hello world’ on macOS](https://jameshfisher.com/2017/02/20/macos-assembly-hello-world/)
-
-Intel x86-64
 
 ```bash
 $ brew install nasm
@@ -22,8 +27,6 @@ $ ./hello
 
 ### C
 
-Tested on a Mac
-
 ```bash
 $ gcc -o hello hello.c
 ./hello
@@ -33,7 +36,5 @@ $ gcc -o hello hello.c
 
 ```bash
 $ sudo chmod +x hello.py
-./hello.py
+$ python hello.py
 ```
-
----

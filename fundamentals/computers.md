@@ -1,6 +1,11 @@
 # Computers
 
-These notes are designed to give data scientists a foundation in computers.
+Introductory course on computing.
+
+
+![](assets/1846-Weidenbach-nilinsel-philae.jpg)
+
+*Nilinsel Philae - Ernst Weidenbach - 1846*
 
 
 ## Key takeaways
@@ -22,11 +27,11 @@ Compilers versus interpreters
 
 ## Computers are three things
 
-- CPU - computes
-- memory - remembers
-- input / output (I/O)
+1. CPU - sequential computation
+1. memory - stores data
+1. input / output (I/O)
 
-The basic idea is
+The basic idea
 - data is accessed from memory
 - compute is done on the CPU
 - data is put back into memory
@@ -34,7 +39,7 @@ The basic idea is
 
 ## Types of computers
 
-- PC
+- PC - laptop, desktop
 - server - responds to network requests
 - mobile
 - embedded devices - cars
@@ -66,7 +71,7 @@ Sequence of bits that represent actions
 Bit = `0` or `1`
 - one bit of infomation
 
-Binary code = 011100100
+Binary code = `011100100`
 - also known as machine code
 
 Historically this code was run 
@@ -84,7 +89,7 @@ three bits -> 8 numbers (0, 1, ... 7)
 n bits -> 2^n numbers
 ```
 
-We can represent binary in different forms.  For the decimal `999999`, the binary representation is `11110100001000111111`, and in hexadecimal `F423F`.
+We can represent binary in different forms.  For the decimal `999999`, the binary representation is `11110100001000111111`, and in hexadecimal `F423F`
 
 Computers think in base 2 (one bit has two states)
 - we group in base 10 (10 things at a time)
@@ -127,7 +132,7 @@ msg:    db      "Hello, world!", 10
 .len:   equ     $ - msg
 ```
 
-[programming-resources/fundamentals/assembly]()
+[programming-resources/fundamentals/hello.s](https://github.com/ADGEfficiency/programming-resources/tree/master/fundamentals)
 - compile the source assembly code into binary
 - link with system libraries to produce an executable (this can sometimes happen dynamically at runtime)
 
@@ -164,7 +169,7 @@ After compilation we get an executable
 - the complier can produce optimized code
 - complied programs are fast
 
-[programming-resources/fundamentals/hello.c]()
+[programming-resources/fundamentals/hello.c](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/hello.c)
 - compile source `.C` file into executable binary
 
 ```C
@@ -198,7 +203,7 @@ The Python interpreter
 - translate source `.py` to bytecode
 - immediately execute in a virtual machine
 
-[programming-resources/fundamentals/hello.py]()
+[programming-resources/fundamentals/hello.py](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/hello.py)
 - run the Python file (works because of the shebang line)
 
 ```python
