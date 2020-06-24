@@ -2,7 +2,7 @@
 
 A collection of programming resources, mainly relevant to the work of a data scientist.  If you like this, you might also like [rl-resources](https://github.com/ADGEfficiency/rl-resources) and [ml-resources](https://github.com/ADGEfficiency/ml-resources).
 
-The most interesting content in this repo:
+Start here:
 
 - [fundamentals/computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md)
 - [fundamentals/programming.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md)
