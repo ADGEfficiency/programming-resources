@@ -6,6 +6,9 @@ A collection of guidelines & advice on the [practice](#practice-of-programming),
 
 *Die Brücke von Chatou - Maurice de Vlaminck - 1907*
 
+clojure, swift, kotlin (modern java), julia, Go (no inheritance)
+
+garbage collection
 
 ## Key takeaways
 
@@ -58,7 +61,7 @@ When do you know a language?
 - syntax, conventions, code style
 - standard libraries
 - third party libraries
-- tooling (package manager)
+- tooling (package manager, profiler, debugger, logging)
 
 
 ## Why is programming hard
@@ -181,6 +184,9 @@ A good interface makes the common case simple
 
 Well defined systems have **good interfaces**.  Interface where one part of the system doesn't care about other parts of the system.
 
+*Further reading*
+- [Abstraction - Wikipedia](https://en.wikipedia.org/wiki/Abstraction_(computer_science))
+
 
 ## API
 
@@ -205,6 +211,13 @@ Balance between simplicity (90%) and flexibility (10%)
 Configurability is the root of all evil
 - adding configuration options = program was too stupid to figure out what is best for user
 - subjective configuration (ie colorscheme) only
+
+*Further reading*
+- [python.apichecklist.com](http://python.apichecklist.com)
+- How to make a good library API PyCon 2017 - [video](https://www.youtube.com/watch?v=4mkFfce46zE)
+- keras-team/governance/keras_api_design_guidelines.md - [text](https://github.com/keras-team/governance/blob/master/keras_api_design_guidelines.md)
+- Amjith Ramanujam Awesome Command Line Tools PyCon 2017 - [video](https://www.youtube.com/watch?v=hJhZhLg3obk&t=1321s)
+
 
 ## Documentation
 
@@ -371,6 +384,10 @@ Refactoring has degrees to it
 A test suite is crucial to effective refactoring
 - can run your test suite as you refactor, to check if you broke anything
 
+*Further reading*
+- Brett Slatkin - Refactoring Python: Why and how to restructure your code - PyCon 2016 - [youtube](https://www.youtube.com/watch?v=D_6ybDcU5gc&feature=player_embedded)
+
+
 ## Code reviews
 
 Involve collaborators
@@ -385,12 +402,12 @@ Code review forces more than one person to be involved in a project
 
 # Principles of programming
 
-*High level ideas & mental models*
+*Ideas, heuristics & mental models*
 
-
-Why does this code need to change?
-
-Who needs to read it?
+Mindsets of experienced programmers:
+- why does this code need to change?
+- who needs to read it?
+- is this code tested?
 
 
 ## Zen of Python 
@@ -424,7 +441,7 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 ```
 
-Prefer easy things
+A key idea in the Zen of Python is to prefer easy things:
 
 * simple better than complex
 * flat is better than nested
@@ -444,29 +461,30 @@ Prefer easy things
 > Taste applies to code, too. Taste is a constraint-satisfaction process regularized by a desire for simplicity. Keep a bias toward simplicity - François Chollet
 
 Why is simplicity such a common message in programming?
-- how easy it is to do complicated things
-- naive intuition that more complex / newer tech / newer tool is better
+- how easy it is to do complicated things with computers
+- intuition that more complex / newer tech / newer tool is better
 
-Simple baselines are important in data science
-- something that is easy to get working
-- something to compare a more complex solution too
-
-### There are no simple answers
-
-- how long should this function be
-- what is a good variable name
-
-We will never have general answers to those simple questions
-- we can use experience to answer specific questions (how long should this function be)
-
-But when you do make things simple
-- 'I thought this was a hard problem?'
-- 'is that all you did?'
-
-**Simplicity Paradox**
+Simplicity Paradox
 - everything that can make code simpler can make it more complex
 - there are no simple rules to write simple code
 
+There are no simple answers - we will never have general answers to simple questions 
+- how long should this function be
+- what is a good variable name
+
+But when you do make things simple:
+
+> I thought this was a hard problem?
+
+> Is that all you did?
+
+Simple baselines & models are important in data science
+- something that is easy to get working
+- something to compare a more complex solution too
+
+*Further reading*
+- Simplicity: Not Just For Beginners (or How To Write Simpler Code) - [video](https://youtu.be/W2Thd9nKqmU)
+- John Ousterhout - A Philosophy of Software Design - [video](https://www.youtube.com/watch?v=bmSAYlu0NcY)
 
 ## Common software engineering maxims
 
@@ -481,8 +499,9 @@ But when you do make things simple
 
 ## Don't write code you don't need
 
-Use other peoples code (esp. standard library)
-- tested
+Use other peoples code
+- well tested standard library
+- likely someone has faced & solved the problem you are facing
 
 Don't build flexibility you don't need
 - that you don't use
@@ -497,18 +516,6 @@ Premature specalization can hurt
 
 Simplicity versus performance
 - does this choice actually occur that much?
-
-
-## Length 
-
-Less code is usually (but not always better)
-- I am now very eager to extend a function's body by a line or two if I can introduce more clarity to the code to help me and my teammates understand it
-
-Code is a liability
-
-Less code is not always better
-- I am now very eager to extend a function’s body by a line or two if I can introduce more clarity to the code to help me and my teammates understand it.
-
 
 
 ## Specialization
@@ -542,33 +549,11 @@ Others peoples code is a liability - all code is a liability
 - if you can solve a problem without code, do it!
 
 
-## Responsibility
+## Portability
 
-Unrelated ideas
+Best tools are easily available
 
-Don't mix unrelated ideas
-
-
-## [SOLID Principles](https://en.wikipedia.org/wiki/SOLID)
-
-Single responsibility principle
-- A class should only have a single responsibility, that is, only changes to one part of the software's specification should be able to affect the specification of the class.
-
-Open–closed principle
-- open for extension, but closed for modification
-
-Liskov substitution principle
-- Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program
-
-Interface segregation principle
-- Many client-specific interfaces are better than one general-purpose interface
-
-Dependency inversion principle
-- depend upon abstractions, not concretions
-
-Software architecture (beyond the scope of this course!)
-- should show the intent of a program
-- not the frameworks
+Minimize setup cost
 
 
 ## Maintainability
@@ -588,6 +573,44 @@ Risk factors
 Successful management of a codebase consists in defending its long-term health against the dangers of decay and opportunistic growth.
 
 The organic, evolutionary nature of code also highlights the importance of getting your APIs right. By virtue of their public visibility, APIs can exert a lot of influence on the future growth of the codebase. A good API acts like a trellis, coaxing the code to grow where you want it. A bad API is like a cancer, and it will metastasize all over your codebase. Some quick examples:
+
+*Further reading:*
+- [A Codebase is an Organism](https://meltingasphalt.com/a-codebase-is-an-organism/)
+- [LEGO blocks and organ transplants](https://www.johndcook.com/blog/2011/02/03/lego-blocks-and-organ-transplants/)
+
+
+
+### [SOLID Principles](https://en.wikipedia.org/wiki/SOLID)
+
+**Single responsibility principle**
+
+> A class should only have a single responsibility, that is, only changes to one part of the software's specification should be able to affect the specification of the class.
+
+Separation of concerns & responsibility
+- don't mix unrelated ideas
+- don't mix code that changes for different reasons
+
+**Open–closed principle**
+
+> open for extension, but closed for modification
+
+Behaviour is changed by adding code - not changing existing code
+
+**Liskov substitution principle**
+
+> Objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program
+
+**Interface segregation principle**
+
+> Many client-specific interfaces are better than one general-purpose interface
+
+**Dependency inversion principle**
+
+> depend upon abstractions, not concretions
+
+
+*Further reading*
+- SOLID principles of object objected and agile design - [youtube](https://www.youtube.com/watch?v=TMuno5RZNeE)
 
 
 # Art of programming
@@ -628,6 +651,10 @@ Simple code
 Some technical debt is OK
 - Bad code isn’t bad code because it’s written badly; it’s bad code if it slows you down, causes bugs for users, or constantly breaks. That’s the code you need to fix.
 
+Software architecture 
+- should show the intent of a program
+- not the frameworks
+
 
 ## Features of bad code
 
@@ -660,7 +687,20 @@ Length
 - reader should be able to figure out in a minute what a function does
 
 
-## Naming variables
+## Length 
+
+Less code is usually (but not always better)
+- I am now very eager to extend a function's body by a line or two if I can introduce more clarity to the code to help me and my teammates understand it
+
+Code is a liability
+
+Less code is not always better
+- I am now very eager to extend a function’s body by a line or two if I can introduce more clarity to the code to help me and my teammates understand it.
+
+## Writing tips
+
+
+### Naming variables
 
 Closely related to abstraction
 - underabstraction - not putting enough detail into names
@@ -672,7 +712,7 @@ Diluting meaning of variables by adding names together
 - use the plural if you have it
 
 
-## Writing functions
+### Writing functions
 
 Functions allow
 - code reuse
@@ -718,7 +758,7 @@ Output:
 - returning early adds confidence - return early when you can
 
 
-## Writing classes
+### Writing classes
 
 Use class with bundle of mutable data and bunch of related functions
 - if you have two methods - one being init - it shouldn’t be a class!
@@ -734,6 +774,12 @@ Derived class should be usable through the base class interface, without user ne
 Classes represent real things - but they aren’t those real things!
 
 Representatives of things don’t share the relationships of the things they represent
+
+*Further reading:
+- Jack Diederich - HOWTO Write a Function - [youtube](https://www.youtube.com/watch?v=rrBJVMyD-Gs)
+- Jack Diederich - Stop Writing Classes - [video](https://www.youtube.com/watch?v=o9pEzgHorH0)
+
+
 
 
 ## Functional programming
@@ -776,6 +822,13 @@ Manifesto for Agile Software Development:
 - Regularly, the team reflects on how to become more effective, and adjusts accordingly
 
 
+## [Clean Architecture]()
+
+
+*Further reading*
+- The Principles of Clean Architecture - [youtube](https://www.youtube.com/watch?v=o_TH-Y78tt4)
+
+
 ## [Literate programming](https://en.wikipedia.org/wiki/Literate_programming)
 
 Literate programming = liked by people that like both programming and writing
@@ -792,6 +845,8 @@ Literate programming = liked by people that like both programming and writing
 3. write the program until test passes
 4. refactor
 
+10 simple rules for writing great testcases by Steve Poole and Stuart Marks - [video](https://www.youtube.com/watch?v=n6Nde8TgB2Y)
+
 
 ## [Waterfall](https://en.wikipedia.org/wiki/Waterfall_model)
 
@@ -801,41 +856,21 @@ Linear, sequential development
 
 # References
 
-[Abstraction - Wikipedia](https://en.wikipedia.org/wiki/Abstraction_(computer_science))
-
-[python.apichecklist.com](http://python.apichecklist.com)
-
-[A Codebase is an Organism](https://meltingasphalt.com/a-codebase-is-an-organism/)
-
-Jack Diederich - HOWTO Write a Function - [youtube](https://www.youtube.com/watch?v=rrBJVMyD-Gs)
-
-Jack Diederich - Stop Writing Classes - [video](https://www.youtube.com/watch?v=o9pEzgHorH0)
-
 [5 Things I’ve Learned in 20 Years of Programming](https://daedtech.com/5-things-ive-learned-in-20-years-of-programming/)
 
 Greg Ward - How to Write Reusable Code - PyCon 2015 - [video](https://www.youtube.com/watch?v=r9cnHO15YgU)
-
-Brett Slatkin - Refactoring Python: Why and how to restructure your code - PyCon 2016 - [youtube](https://www.youtube.com/watch?v=D_6ybDcU5gc&feature=player_embedded)
-
-[Simplicity: Not Just For Beginners (or How To Write Simpler Code)](https://youtu.be/W2Thd9nKqmU)
-
-John Ousterhout - A Philosophy of Software Design - [youtube](https://www.youtube.com/watch?v=bmSAYlu0NcY) - [review](https://github.com/ADGEfficiency/personal/blob/master/reviews/work/Ousterhout_philosophy_software_design.md)
-
-[Amjith Ramanujam Awesome Command Line Tools PyCon 2017](https://www.youtube.com/watch?v=hJhZhLg3obk&t=1321s)
 
 How to write a production-level code in Data Science? - [article](https://towardsdatascience.com/how-to-write-a-production-level-code-in-data-science-5d87bd75ced)
 
 Kevlin Henney - Seven Ineffective Coding Habits of Many Programmers - [youtube](https://www.youtube.com/watch?v=ZsHMHukIlJY&feature=youtu.be)
 
-Kevlin Henney – Clean Coders hate when you use these programming tricks - [youtube](https://www.youtube.com/watch?v=ZsHMHukIlJY&feature=youtu.be)
+Notes to Myself on Software Engineering - François Chollet - [blog-post](https://medium.com/s/story/notes-to-myself-on-software-engineering-c890f16f4e4d)
 
-How to make a good library API PyCon 2017 - [video](https://www.youtube.com/watch?v=4mkFfce46zE) - [review](https://github.com/ADGEfficiency/personal/blob/master/reviews/work/make_good_api.md)
+Kevlin Henney – Clean Coders hate when you use these programming tricks - [youtube](https://www.youtube.com/watch?v=ZsHMHukIlJY&feature=youtu.be)
 
 [The Skills Poor Programmers Lack - Justin Meiners](https://justinmeiners.github.io/the-skills-programmers-lack/)
 
 [Things I was wrong about when I started programming](https://javascriptplayground.com/things-i-was-wrong-about-javascript/)
-
-[Simplicity: Not Just For Beginners (or How To Write Simpler Code)](https://youtu.be/W2Thd9nKqmU)
 
 All Questions Answered - Donald Knuth - [youtube](https://www.youtube.com/watch?v=xLBvCB2kr4Q)
 
@@ -857,10 +892,6 @@ The Gestalt principles concern themselves with how we visually perceive groups o
 
 Teach Yourself Programming in Ten Years - [blog post](http://norvig.com/21-days.html)
 
-
-The Scribe's Oath - Uncle Bob Martin - [youtube](https://www.youtube.com/watch?v=X31Jc6HQUcs)
-
-The Principles of Clean Architecture - Uncle Bob Martin - [youtube](https://www.youtube.com/watch?v=o_TH-Y78tt4)
 
 Notes on "A Philosophy of Software Design." - [blog post](https://lethain.com//notes-philosophy-software-design/)
 
@@ -886,7 +917,6 @@ No Silver Bullet – Essence and Accident in Software Engineering - [paper](http
 
 Pythonic Guide to Logging - [blog post](https://timber.io/blog/the-pythonic-guide-to-logging/)
 
-10 simple rules for writing great testcases by Steve Poole and Stuart Marks - [video](https://www.youtube.com/watch?v=n6Nde8TgB2Y)
 
 https://medium.com/@samsniderheld/how-i-taught-a-machine-to-take-my-job-2dd1adb4df18
 
@@ -902,12 +932,4 @@ spaCy
 
 Robert (Uncle Bob) Martin
 - The Scribe's Oath - [youtube](https://www.youtube.com/watch?v=X31Jc6HQUcs)
-- The Principles of Clean Architecture - [youtube](https://www.youtube.com/watch?v=o_TH-Y78tt4)
 - Craftsmen - Control Your Environment - [youtube](https://www.youtube.com/watch?v=NZNhtYVb6H8)
-- Solid principles of object objected and agile design - [youtube](https://www.youtube.com/watch?v=TMuno5RZNeE)
-
-François Chollet
-- [keras-team/governance/keras_api_design_guidelines.md](https://github.com/keras-team/governance/blob/master/keras_api_design_guidelines.md)
-- Notes to Myself on Software Engineering - [blog-post](https://medium.com/s/story/notes-to-myself-on-software-engineering-c890f16f4e4d)
-
-
