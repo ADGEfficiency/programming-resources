@@ -8,7 +8,12 @@ Introductory course on how computers work, how to write programs and what tools 
 
 - [programming-resources/fundamentals/computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md)
 - [programming-resources/fundamentals/programming.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md)
-- [teaching-monolith/misc/tools.ipynb](https://github.com/ADGEfficiency/teaching-monolith/blob/master/misc/tools.ipyn://github.com/ADGEfficiency/teaching-monolith/blob/master/misc/tools.ipynb)
+- [programming-resources/fundamentals/tools.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/tools.md)
+
+
+## Where to go next
+
+[teaching-monolith/distributed-computing](https://github.com/ADGEfficiency/teaching-monolith/tree/master/distributed-computing) for a course on functional programming and parallel computation
 
 
 ## Hello World Programs
