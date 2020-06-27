@@ -6,9 +6,6 @@ A collection of guidelines & advice on the [practice](#practice-of-programming),
 
 *Die Brücke von Chatou - Maurice de Vlaminck - 1907*
 
-clojure, swift, kotlin (modern java), julia, Go (no inheritance)
-
-garbage collection
 
 ## Key takeaways
 
@@ -19,9 +16,11 @@ Common mindsets of experienced developers
 - what does this code depend on?
 - who else will read this code?
 
+After this course, you should
+
 Learn about
-- abstractions, interfaces
-- what KISS, YAGNI are
+- what is an abstraction
+- what KISS, YAGNI, DRY are
 - why code is bad
 
 
@@ -62,6 +61,17 @@ When do you know a language?
 - standard libraries
 - third party libraries
 - tooling (package manager, profiler, debugger, logging)
+
+
+## Types & type inference
+
+Most languages offer primitive data structures
+- strings, floats, integers
+
+Knowing the type of a variable is crucial to knowing what we can do with it
+- this is type inference
+
+Variables, function in & out, list items (can only be same type)
 
 
 ## Why is programming hard
@@ -297,6 +307,168 @@ Organize tests as scenarios that use multiple parts of the cod
 Human only, machine & human, machine only (instrumentation)
 
 
+## Properties of programming languages
+
+> Languages shape the way we think, each in their own peculiar way. That’s true for programming languages as well. Each language contains a different mental model, a different perspective for thinking about computation and how to write programs - Thorsten Ball
+
+
+### High versus low level
+
+How close to the metal you are
+- binary -> Assembly -> C -> Python
+
+
+### Computer time versus programmer time
+
+Classic tradeoff between how fast a program is versus how hard a language is to use 
+- computer time has become cheaper 
+- programmer time is as valuable as ever
+
+Some things can't be speedup by any language
+- can't speedup I/O
+
+Compiled languages are fast to run
+- often difficult to write (static typing etc)
+
+### Things that speed up a program
+
+- tell the compiler as much as possible (variable types etc)
+- manage memory by hand (not automatically)
+
+### Things that slow down a program
+
+- dynamic typing
+- automatic memory management
+- interpretation
+
+## Static versus dynamic typing
+
+- When you detect type errors (before or after running code)
+- How useful the tooling for your language can be
+
+Useful for compiler, tooling
+
+Static typing
+- declared the type of a variable 
+- before runtime
+- helps prevent bugs
+- helps compilers to generate fast code
+- restricts what kind of programs you can write
+
+```python
+msg: str = 'Hello World'
+```
+
+Dynamic typing
+- not declaring types
+- types checked at runtime
+- slower
+- more flexible
+
+```python
+msg = 'Hello World'
+```
+
+Dynamically typed languages can't be optimize in the same way as static - but that doesn't mean their aren't ways to optimise then
+- slow versus hard to optimize
+
+Allocations (i.e. of memory) and copies make things slow
+
+
+## Strong versus weak typing
+
+Strong typing
+- data can be manipulated only with operations for that data's type
+- types are defined by what operations you can do on them
+
+Weak typing
+- can manipulate data in anyway
+
+
+## Memory management
+
+Manual memory management
+
+Garbage collection
+- based on reference counting
+
+Memory leak = not freeing heap memory after it isn't being used
+- made easier in GC, but still can have leaks with GC (global vars etc)
+
+
+## Portability
+
+- using on different platforms
+
+Four issues
+- CPU instruction sets (fix by not using assembly)
+- system calls (fix using interfaces)
+- capabilities (hardware)
+- libraries
+
+## Size of community
+
+Maturity of language
+
+Availability of libraries, tooling
+
+
+## How functional
+
+Functional programming = not changing / relying on state
+- immutable variables
+
+Idempotent (functional)
+- function always returns the same thing, whenever it runs
+- not affected by, or affects, the outside world
+
+But the entire value of programs is that they do modify state!
+- functional = about isolating where you rely upon & impact the outside world
+
+
+## How object oriented
+
+OOP
+- abstraction = hiding implementation complexity
+- encapsulation = using classes to combine data & function (can also be to protect data access via getters & setters)
+
+
+## Scripting languages
+
+Languages that mostly call other programs
+
+bash
+- the language of the shell
+- popular alternatives zsh or Fish
+
+Scripting languages
+- Perl, Bash, Javascript, Ruby, Python
+- not a heavy type system
+
+
+## Landscape
+
+Fast = C, C++, Rust
+
+Business = Java
+
+Data, scientific = Python , R , Julia
+
+Academics = R, MatLab, Fortran
+
+Web development = Javascript, Ruby, Python, Go (no inheritance)
+
+Browser = Javascript, Typescript
+
+Data engineering = Scala
+
+Mobile = Swift, Kotlin (modern Java)
+
+Notable mentions = Lisp (dynamic, interpreted), Perl, Haskell
+
+clojure, swift, kotlin (modern java), julia, Go (no inheritance)
+
+
 # Practice of programming
 
 *What programmers actually spend their time doing*
@@ -495,6 +667,8 @@ Simple baselines & models are important in data science
 
 **YAGNI = you ain't gonna need it**
 - don't add features in before you know whether you need it
+
+**DRY** = don't repeat yourself
 
 
 ## Don't write code you don't need
@@ -824,9 +998,8 @@ Manifesto for Agile Software Development:
 
 ## [Clean Architecture]()
 
-
-*Further reading*
-- The Principles of Clean Architecture - [youtube](https://www.youtube.com/watch?v=o_TH-Y78tt4)
+- The Clean Architecture in Python - Brandon Rhodes - [video](https://youtu.be/DJtef410XaM)
+- The Principles of Clean Architecture - [video](https://www.youtube.com/watch?v=o_TH-Y78tt4)
 
 
 ## [Literate programming](https://en.wikipedia.org/wiki/Literate_programming)

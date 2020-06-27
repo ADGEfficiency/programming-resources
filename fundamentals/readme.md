@@ -1,6 +1,6 @@
 # Fundamentals of Computing & Programming
 
-Introductory course on how computers work, how to write programs and what tools you need.
+Introductory course on how computers work, how to write programs and what tools you need to do so.
 
 ![](assets/1883-Böcklin-Die-Toteninsel.jpg)
 
@@ -13,7 +13,7 @@ Introductory course on how computers work, how to write programs and what tools 
 
 ## Hello World Programs
 
-All tested on a Mac (x86)
+*Tested on a Mac (x86)*
 
 ### Assembly
 
@@ -29,7 +29,7 @@ $ ./hello
 
 ```bash
 $ gcc -o hello hello.c
-./hello
+$ ./hello
 ```
 
 ### Python
