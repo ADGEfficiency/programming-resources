@@ -538,6 +538,9 @@ Kent Beck
 2. make it right
 3. make it fast
 
+**Only optimize code once it works correctly**
+
+
 ## Refactoring
 
 > Refactor religiously - Jack Diederich
@@ -1047,6 +1050,9 @@ Kevlin Henney – Clean Coders hate when you use these programming tricks - [you
 
 All Questions Answered - Donald Knuth - [youtube](https://www.youtube.com/watch?v=xLBvCB2kr4Q)
 
+Best Practices for Scientific Computing - [text](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745)
+
+
 # Further reading
 
 [Applying the Gestalt Principles to your code](https://yetanotherchris.dev/clean-code/gestalt-principles/)
@@ -1064,7 +1070,6 @@ The Gestalt principles concern themselves with how we visually perceive groups o
 [Learn more programming languages, even if you won't use them](https://thorstenball.com/blog/2019/04/09/learn-more-programming-languages/)
 
 Teach Yourself Programming in Ten Years - [blog post](http://norvig.com/21-days.html)
-
 
 Notes on "A Philosophy of Software Design." - [blog post](https://lethain.com//notes-philosophy-software-design/)
 
@@ -1089,7 +1094,6 @@ No Silver Bullet – Essence and Accident in Software Engineering - [paper](http
 [Design Patterns in Dynamic Programming - Peter Norvig](http://norvig.com/design-patterns/design-patterns.pdf)
 
 Pythonic Guide to Logging - [blog post](https://timber.io/blog/the-pythonic-guide-to-logging/)
-
 
 https://medium.com/@samsniderheld/how-i-taught-a-machine-to-take-my-job-2dd1adb4df18
 

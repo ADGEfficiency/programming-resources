@@ -279,6 +279,9 @@ Your shell is configured using
 
 These scripts are run every time you start a new shell.  It is common to add `echo` statements to these files to get used to this idea.
 
+RC = a run command
+- file that contains startup infomation
+
 
 ## Aliases
 

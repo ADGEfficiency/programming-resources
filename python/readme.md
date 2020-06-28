@@ -14,6 +14,10 @@
 
 [Python’s Innards: Introduction](https://tech.blog.aknin.name/2010/04/02/pythons-innards-introduction/)
 
+## Blog posts
+
+How to set up a perfect Python project - Brendan Maginnis - [text](https://sourcery.ai/blog/python-best-practices/)
+
 ## Talks
 
 [Road to Python 3 - Lisa Guo, Hui Ding Keynote PyCon 2017](https://youtu.be/66XoCk79kjM)

@@ -30,7 +30,7 @@ Model performance != business performance
 - rewrite - even if you are copying it over
 
 
-[7 absolute truths I unlearned as junior developer](https://monicalent.com/blog/2019/06/03/absolute-truths-unlearned-as-junior-developer/)
+## [7 absolute truths I unlearned as junior developer](https://monicalent.com/blog/2019/06/03/absolute-truths-unlearned-as-junior-developer/)
 
 Not all experience is created equal
 - that’s why mentors are so important, and the team you work with is worth so much more than a couple bucks in your paycheck
@@ -46,3 +46,8 @@ Documentation lies sometimes.
 Disorganized or messy code isn’t the same as technical debt.
 - Having some technical debt is healthy
 - If you think your codebase is free of technical debt, there is a good chance you’re over-emphasizing polish instead of delivery. And boy did I do that!
+
+
+## [How I Became a Better Programmer](https://jlongster.com/How-I-Became-Better-Programmer)
+
+If anything, just try a new language - Regardless of what you do, you really should explore other languages. I would recommend any of the following: Clojure, Rust, Elm, OCaml/Reason, Go, or Scheme. All of them have unique features and will force you to learn a new way of thinking.

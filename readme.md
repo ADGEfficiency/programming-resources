@@ -63,6 +63,7 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 [The Clean Code Blog - Robert C. Martin (Uncle Bob)](http://blog.cleancoder.com/)
 - [Classes vs. Data Structures](http://blog.cleancoder.com/uncle-bob/2019/06/16/ObjectsAndDataStructures.html)
 - [FP vs. OO](http://blog.cleancoder.com/uncle-bob/2018/04/13/FPvsOO.html)
+- [Women In Demand](https://blog.cleancoder.com/uncle-bob/2017/10/04/WomenInDemand.html)
 
 [Code by Kate Rose Morley](http://code.iamkate.com/)
 

@@ -1,6 +1,6 @@
 #  Tools
 
-*Tooling to write and execute programs on a computer*
+To write and execute programs on a computer
 
 ![](assets/1803-antike-stadt-an-einem-Berg.jpg)
 
@@ -21,15 +21,19 @@ The basic toolset of a programmer includes
 Other useful tools
 - debugger (`pdb` in Python)
 - profiler
+- terminal mulitplexer (tmux, screen)
 
 
 # Options for data science
 
 ## Notebook server 
 
-Locally with [Jupyter Lab 2.0](https://towardsdatascience.com/jupyterlab-2-0-edd4155ab897) or online with Google Colab
+Locally with [Jupyter Lab 2.0](https://towardsdatascience.com/jupyterlab-2-0-edd4155ab897)
 - common in data science
 
+A very recent trend in computing is free access to compute via notebook style interfaces
+- Google Colab
+- Kaggle kernels
 
 ## GUI editor / IDE
 
@@ -174,21 +178,18 @@ All files are text
 - characters
 - binary
 
-The suffix doesn't change the data in a file
-- is used by programs to identify file type
+The suffix doesn't change the data in a file - is used by programs to identify file type
 
 Don't put spaces in file names
 
-Use `-` where possible
-- python (`.py`) files all need `_`
+Use `-` where possible - python (`.py`) files all need `_`, but `-` is prettier
 
 
 ## The web
 
 Server versus client side compute
 
-Server sends HTML, CSS & Javascript to your browser
-- JS runs in your browser
+Server sends HTML, CSS & Javascript to your browser - JS runs in your browser
 
 
 ## The cloud
@@ -196,18 +197,7 @@ Server sends HTML, CSS & Javascript to your browser
 Server = a computer (CPU, memory, storage)
 - mostly running Linux
 
-AWS, Google Cloud, Azure
+AWS, Google Cloud (GCP), Azure
 - AWS is the oldest
 - Azure has a big advantage in business (Microsoft product)
-
-
-## Hosted kernels / notebooks
-
-A very recent trend in computing is free access to compute via notebook style interfaces
-- Google Colab
-- Kaggle kernels
-
-
-## HTOP
-
-Let's you see processes running on Unix machines
+- GCP has a $300 credit
