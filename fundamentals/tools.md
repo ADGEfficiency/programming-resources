@@ -18,8 +18,13 @@ The basic toolset of a programmer includes
 - command line based editor (useful to edit files on remote machines)
 - version control (git)
 
+If you don't know where to start, choose either:
+- JupyterLab
+- VS Code
+
 Other useful tools
 - debugger (`pdb` in Python)
+- linter (`black` for Python)
 - profiler
 - terminal mulitplexer (tmux, screen)
 
@@ -35,12 +40,16 @@ A very recent trend in computing is free access to compute via notebook style in
 - Google Colab
 - Kaggle kernels
 
+
 ## GUI editor / IDE
 
-VS Code / Atom / Pycharm / Sublime + plugins
+VS Code or Atom 
 
 IDE = lots of tools together in one program
 - usually language specific
+- Spyder (similar to R Studio)
+- Pycharm
+- Sublime
 
 
 ## Terminal only
