@@ -32,7 +32,7 @@ Learn about
 
 > The tools have changed, and the hardware has changed, but the essence of software remains the same - UNCLE BOB MARTIN
 
-**Programming is communication** 
+**Programming is communication**
 - a sequence of instructions for a computer
 
 Who are we communicating with? Who is code for?
@@ -87,7 +87,7 @@ Tradeoffs
 
 ## Sequence, selection, iteration and indirection
 
-> Software—the stuff of computer programs—is composed of sequence, selection, iteration, and indirection. Nothing more. Nothing less - UNCLE BOB MARTIN 
+> Software—the stuff of computer programs—is composed of sequence, selection, iteration, and indirection. Nothing more. Nothing less - UNCLE BOB MARTIN
 
 - sequence = code runs in order
 - selection = only running certain lines (logical execution of code, `if`, `and`)
@@ -137,14 +137,14 @@ Where data is stored in memory is a detail that is hidden
 ## Abstraction
 
 Concrete
-- hard to change 
-- dependent on a framework 
+- hard to change
+- dependent on a framework
 - dependent on an implementation directly
 
 Abstract = the opposite of concrete
 - moving away from the physical structure towards abstract structure
-- move from the *how* to the *what* - user only needs to say what they want - not how! 
-- user does need to care about how it works on the inside 
+- move from the *how* to the *what* - user only needs to say what they want - not how!
+- user does need to care about how it works on the inside
 
 The most concrete form of a program is machine code
 - sequences of bits that map to CPU instructions (`0010110` -> `ADD`)
@@ -174,7 +174,7 @@ network = Network(['dense', 'relu', 2], ['dense', 'sigmoid', 1])
 
 Move towards the idea of hierarchy rather than physical structure
 
-Law of leaky abstractions 
+Law of leaky abstractions
 - all abstractions leak
 - impossible to abstract perfectly - because all abstractions are lies
 - sometimes leaks are necessary (because they are useful)
@@ -320,8 +320,8 @@ How close to the metal you are
 
 ### Computer time versus programmer time
 
-Classic tradeoff between how fast a program is versus how hard a language is to use 
-- computer time has become cheaper 
+Classic tradeoff between how fast a program is versus how hard a language is to use
+- computer time has become cheaper
 - programmer time is as valuable as ever
 
 Some things can't be speedup by any language
@@ -349,7 +349,7 @@ Compiled languages are fast to run
 Useful for compiler, tooling
 
 Static typing
-- declared the type of a variable 
+- declared the type of a variable
 - before runtime
 - helps prevent bugs
 - helps compilers to generate fast code
@@ -416,7 +416,11 @@ Availability of libraries, tooling
 ## How functional
 
 Functional programming = not changing / relying on state
-- immutable variables
+- immutable variables (variables that don't vary)
+
+Infinite data storage allows immutable variables
+- this is how git works!
+- no state, can generate state from history
 
 Idempotent (functional)
 - function always returns the same thing, whenever it runs
@@ -424,60 +428,80 @@ Idempotent (functional)
 
 But the entire value of programs is that they do modify state!
 - functional = about isolating where you rely upon & impact the outside world
+- separate components that do versus do not mutate variables
+- easy to switch out implementations if the idea is expressed as a pure function
+- internal state / multiple entry points = harder
 
 
 ## How object oriented
 
-OOP
+OOP = object oriented programming
+- objects (`class`) that contain data & functionality
+
+Fundamental paradigms in OOP
 - abstraction = hiding implementation complexity
 - encapsulation = using classes to combine data & function (can also be to protect data access via getters & setters)
+- inheritance
+- inheritance = class having subclasses (`Cat` & `Dog` class inherits from `Animal`)
+- polymorphism = subclasses can override methods of the parent class
 
+```python
+class Animal:
+    def eat(self):
+		    return 'still hungry'
 
-## Scripting languages
+class Dog(Animal):
+    def eat(self):
+		    return 'full'
+```
 
-Languages that mostly call other programs
+Duck typing
+- an object's suitability is determined by the presence of certain methods and properties, rather than the type of the object itself
+- 'If it walks like a duck and it quacks like a duck, then it must be a duck'
 
-bash
-- the language of the shell
-- popular alternatives zsh or Fish
-
-Scripting languages
-- Perl, Bash, Javascript, Ruby, Python
-- not a heavy type system
+```python
+obj.quack()
+```
 
 
 ## Landscape
 
-Fast = C, C++, Rust
+Fast, operating system languages = C, C++, Rust
 
 Business = Java
 
-Data, scientific = Python , R , Julia
+Data, scientific = Python, R, Julia
 
 Academics = R, MatLab, Fortran
 
-Web development = Javascript, Ruby, Python, Go (no inheritance)
+Web development = Javascript (node.js, React, Vue, Angular), Ruby, Python (Flask, Django), Go (no inheritance)
 
-Browser = Javascript, Typescript
+Browser = Javascript and it's supersets (Typescript etc)
 
 Data engineering = Scala
+- Hadoop / Spark written in Scala
 
 Mobile = Swift, Kotlin (modern Java)
 
-Notable mentions = Lisp (dynamic, interpreted), Perl, Haskell
+Notable mentions = Lisp (dynamic, interpreted), Perl, Haskell (functional)
 
-clojure, swift, kotlin (modern java), julia, Go (no inheritance)
+
+### Scripting languages
+
+Languages that call other programs
+- Perl, Bash, Javascript, Ruby, Python
+- not a heavy type system
 
 
 # Practice of programming
 
 *What programmers actually spend their time doing*
 
-> Taking examples and adapting them to your needs is a skill fundamental not just to visualization, but to all data science and programming in general. 
+> Taking examples and adapting them to your needs is a skill fundamental not just to visualization, but to all data science and programming in general.
 > Nobody knows everything, and the job involves a lot of figuring things out - RUSSELL JURNEY (Agile Data Science)
 
 Most time is spent
-- adapting examples (stealing code)
+- adapting examples (copying code)
 - getting dependencies to work
 - using Google to find solutions to error messages
 
@@ -485,7 +509,7 @@ Best way to learn
 - write programs
 - read other peoples programs (open source is amazing for this)
 
-Control over your development environment
+Importance of having control over your development environment
 - being able to use the operating system of your choice at work
 - being able to manage Python effectively on a remote machine
 - being able to do things that would be dangerous in production
@@ -499,7 +523,7 @@ Not understanding how your language works
 - how data structures are implemented
 - how data is copied (or not)
 - how is memory managed
-
+- how scope is managed
 
 
 ## What gets better
@@ -507,17 +531,18 @@ Not understanding how your language works
 - if something breaks - look at what you just changed
 - how to notice when you've done down the wrong path, and how to work backwards from there
 - anticipating problems
-- know what simple code looks like
-- recognize when your code is too complex
-- refactor, rename, encapsulating
-- prevent opportunities to be inconsistent (big message)
+- know what simple code looks like (having taste)
+- recognizing when your code is too complex
+- when to refactor & rename 
+- when to use class (encapsulation)
+- prevent opportunities to be inconsistent 
 
 Seeing unrelated ideas mixed together
 - using different libraries in the same function
 
 Seeing / feeling / fearing dependencies
 
-Seeing / feeling / fearing scope (project scope especially)
+Seeing / feeling / fearing scope (project scope especially :)
 
 
 ## Constant debugging
@@ -525,6 +550,7 @@ Seeing / feeling / fearing scope (project scope especially)
 Programming is a never ending process of fixing errors
 
 Coding is constant problem solving
+
 
 ## Iterative
 
@@ -554,7 +580,7 @@ Kent Beck
 
 Refactoring has degrees to it
 1. just copy paste functions from notebook into scripts, and fix any errors that refer to global vars slipping into functions but not through args
-2. actually changing the functionality of the functions - this is MUCH MORE INVOLVED and much riskier (because you don’t know if your changes are working correctly!). 
+2. actually changing the functionality of the functions - this is MUCH MORE INVOLVED and much riskier (because you don’t know if your changes are working correctly!).
 
 A test suite is crucial to effective refactoring
 - can run your test suite as you refactor, to check if you broke anything
@@ -585,7 +611,7 @@ Mindsets of experienced programmers:
 - is this code tested?
 
 
-## Zen of Python 
+## Zen of Python
 
 Try the following in your shell:
 
@@ -643,7 +669,7 @@ Simplicity Paradox
 - everything that can make code simpler can make it more complex
 - there are no simple rules to write simple code
 
-There are no simple answers - we will never have general answers to simple questions 
+There are no simple answers - we will never have general answers to simple questions
 - how long should this function be
 - what is a good variable name
 
@@ -699,7 +725,7 @@ Simplicity versus performance
 
 > I find that for research work, and when trying to solve difficult environments, specific custom modifications are usually required - [David Ha](http://blog.otoro.net/2018/06/09/world-models-experiments/)
 
-- simplifies the code 
+- simplifies the code
 - generalization makes code bases hard (trying to do everything - AKA YAGNI)
 
 There is a place for writing code based that aren't simple & do too much
@@ -812,7 +838,7 @@ Good software = well defined concepts & clear responsibilities
 - easier to modify
 - more fun to create
 
-Design is not just making short functions 
+Design is not just making short functions
 - the real problem is writing code that mixes unrelated ideas
 
 Simple code
@@ -828,7 +854,7 @@ Simple code
 Some technical debt is OK
 - Bad code isn’t bad code because it’s written badly; it’s bad code if it slows you down, causes bugs for users, or constantly breaks. That’s the code you need to fix.
 
-Software architecture 
+Software architecture
 - should show the intent of a program
 - not the frameworks
 
@@ -836,11 +862,11 @@ Software architecture
 ## Features of bad code
 
 - rigid
-- fragile 
+- fragile
 - not usable
 - not reusable
 
-Rigidity 
+Rigidity
 - when you touch the code you need to modify massive amounts of other code to come into consistency with this change
 - coupling details
 
@@ -853,7 +879,7 @@ Modules depend on each other / databases / code in undesirable ways
 
 ## Readability
 
-> Readable code is not a nice-to-have, it is a fundamental part of what writing code is about. This involves factoring code clearly, picking self-explanatory variable names, and inserting comments to describe anything that’s implicit. - François Chollet 
+> Readable code is not a nice-to-have, it is a fundamental part of what writing code is about. This involves factoring code clearly, picking self-explanatory variable names, and inserting comments to describe anything that’s implicit. - François Chollet
 
 Code style
 - doesn't matter to beginners, very important for experienced developers
@@ -864,7 +890,7 @@ Length
 - reader should be able to figure out in a minute what a function does
 
 
-## Length 
+## Length
 
 Less code is usually (but not always better)
 - I am now very eager to extend a function's body by a line or two if I can introduce more clarity to the code to help me and my teammates understand it
@@ -898,7 +924,7 @@ Functions allow
 Functions are about WHAT - what does the function do
 - function should go on as long as it has too
 - return early if possible
-- define things where you use them 
+- define things where you use them
 
 Short functions
 - so they can be named
@@ -915,7 +941,7 @@ TODO
 ```
 - All effort is not useful effort - but all effort feels like useful effort
 
-We can break a function down into three stages 
+We can break a function down into three stages
 
 Input:
 - don't get what you don't need
@@ -982,7 +1008,7 @@ Agile software development values:
 - Individuals and interactions over processes and tools
 - Working software over comprehensive documentation
 - Customer collaboration over contract negotiation
-- Responding to change over following a plan 
+- Responding to change over following a plan
 
 Manifesto for Agile Software Development:
 - Customer satisfaction by early and continuous delivery of valuable software.

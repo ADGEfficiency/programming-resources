@@ -71,13 +71,16 @@ Inline linting is very useful for learning proper code style
 - very hard to learn without it
 
 
-## Terminal
+## Terminal / Shell
 
 Crucial part of using computers well
 - allows automation & repetition (hard with a mouse)
 
-There are different shell languages
-- `bash`, `zsh`, `fish` etc
+
+### Terminal
+
+Program to input / ouput text
+- also called a *tty*
 
 There are different terminal emulators
 - Mac - iTerm2
@@ -85,8 +88,27 @@ There are different terminal emulators
 - Linux - default shell is usually good
 
 [Powerline](https://github.com/b-ryan/powerline-shell) 
-- to make your shell pretty
+- customize the information your terminal shows
+- to make your terminal pretty
 - uses Python - can cause problems if you are activating your virtual env at the wrong time!
+
+*Further reading*
+- [The TTY demystified](https://www.linusakesson.net/programming/tty/)
+
+
+### Shell
+
+Processes commands & returns
+
+There are different shell programs
+- `bash` - standard, available everywhere
+- `zsh` - now the default shell on macOS
+- `fish` 
+
+Features of a shell
+- history
+- autocompletion
+- keyboard shortcuts (defualt is emacs style)
 
 
 ## Command line based editor
