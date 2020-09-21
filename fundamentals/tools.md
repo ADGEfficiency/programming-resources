@@ -191,9 +191,11 @@ Good for data exploration, visualization and experiment logging/monitoring
 
 The Python that runs in your Notebook is not the same that runs when you access Python on the shell
 
-- it's iPython
-- this is where the `%%` magic commands come from
-- also the `!` command (to run shell code)
+- it's iPython!
+
+iPython is a superset of Python, with some extra
+- this is where the `%%` magic commands come from (useful are `%%run myscript.py`, `%% clear`, `%% history`)
+- the `!` command (to run shell code)
 
 ```python
 !ls

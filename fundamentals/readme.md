@@ -4,9 +4,9 @@ Introductory course on how computers work, how to write computer programs and wh
 
 The course is for beginners, and is organized into three sections:
 
-- [programming-resources/fundamentals/computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md)
-- [programming-resources/fundamentals/programming.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md)
-- [programming-resources/fundamentals/tools.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/tools.md)
+- [fundamentals/computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md)
+- [fundamentals/programming.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md)
+- [fundamentals/tools.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/tools.md)
 
 ![](assets/1883-Böcklin-Die-Toteninsel.jpg)
 
@@ -15,7 +15,7 @@ The course is for beginners, and is organized into three sections:
 
 ## Hello World Programs
 
-To demonstrate the difference between assembly, compilation & interpretation - used in [computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md) - tested on a Mac (x86 architecture).
+To demonstrate the difference between assembly, compilation & interpretation (used in [computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md) - tested on a Mac x86 architecture).
 
 ### Assembly
 

@@ -1,11 +1,11 @@
 # Computers
 
-How computers work
+*How computers work*
 
 - [hardware](#hardware)
 - [operating systems](#operating-systems)
 - [binary & assembly](#binary-&-assembly)
-- [high level languages](#high-level-languages)
+- [high level languages](#high-level-languages) - compilers & interpreters
 
 
 ![](assets/1846-Weidenbach-nilinsel-philae.jpg)
@@ -15,7 +15,7 @@ How computers work
 
 # Key takeaways
 
-After this course you should 
+After this lecture you should
 
 - have a working model of computer hardware
 - know what a bit and byte are
@@ -24,29 +24,20 @@ After this course you should
 
 # What is a computer?
 
-Let's first start by considering what computers are
+## Three things
 
-
-## Why do we use computers?
-
-What are their functions?
-
+**Why do we use computers** - what are their functions - what do they do?
 1. computation - transforming data
 2. memory - storing data
 3. communication - with other computers
 
-
-## What is a computer?
-
+**What is a computer?**
+1. computation - transforming data
 1. CPU - sequential computation
 1. memory - stores data
 1. input / output (I/O)
 
-
-## What does a computer do?
-
-What are it's fundamental, primitive operations?
-
+**What does a computer do** - what are it's fundamental, primitive operations?
 - access data from memory
 - compute new data on CPU
 - put data back in memory
@@ -54,7 +45,7 @@ What are it's fundamental, primitive operations?
 
 # Hardware
 
-What we use to do compute & store data - physical things you can touch
+*What we use to do compute & store data - physical things you can touch*
 
 
 ## Types of computers
@@ -68,10 +59,12 @@ There are many different configurations of hardware
 - mainframe - large, custom server
 - supercomputers - many processors working together
 
-All of these have in common a CPU + memory
+**All of these have in common a CPU + memory**
+- this maps directly back to the first two reasons why we use computers (compute & memory)
 
+## Compute
 
-## CPU
+### CPU
 
 [CPU - Wiki](https://en.wikipedia.org/wiki/Central_processing_unit)
 
@@ -79,7 +72,11 @@ The central processing unit (CPU) executes instructions
 
 - these are executed in order
 - instructions are binary sequences (`1101100` -> `ADD`)
-- basic arithmetic
+- instructions include basic arithmetic, accessing memory etc
+
+A CPU has it's own local memory
+- store code & data of running programs
+- registers, caches
 
 A CPU instruction cycle is composed of a fetch + decode + execute step
 
@@ -87,19 +84,18 @@ A CPU instruction cycle is composed of a fetch + decode + execute step
 - decode the instruction (from bits to instruction)
 - execute (take an action)
 
-Has local memory
-- store code & data of running programs
-- registers, caches
-
 Modern CPU's can have multiple cores
-
+- a core = a processor
 - multiple cores can run in parallel
+- one core can run one thread or one process
 - vector processors can operate in parallel (low array operations)
 
 A better CPU has
 - larger cache
 - faster processor
 - multiple cores
+
+32 vs 64 bit processors = 64 bit processor has more memory
 
 
 ### Iron law of processor performance
@@ -137,7 +133,7 @@ Branch predictor = predicts what program will do next
 - [Jim Keller - Not Dead Yet: Moore’s Law and the Future of Computers](https://youtu.be/Qnl7--MvNAM)
 
 
-## GPU & TPU
+### GPU & TPU
 
 GPU = Graphics Processing Unit
 - rendering graphics
@@ -170,16 +166,14 @@ Historically (and still today) memory is the fundamental limit and challenge in 
 Processor local memory
 - registers, caches
 
-RAM 
-- Random Access Memory
+**RAM = Random Access Memory**
+- fast (parallel access of bytes by integer addresses)
 - volatile (lose it when powered off)
 - arrays of bytes
-- parallel access of bytes by integer addresses
-- fast
 - store code & data of running programs
 - typical laptop has 8 - 16 GB
 
-Hard drives
+**Hard drives** - the disk
 - slow, mass storage
 - non-volatile
 - SSD, spinning disk
@@ -266,7 +260,7 @@ Python uses garbage collection
 - [memorymanagement.org](https://www.memorymanagement.org/) - [faq](https://www.memorymanagement.org/glossary/m.html#term-memory-management)
 
 
-# Binary & assembly
+# Machine code & assembly
 
 The CPU performs computation - it does this using a set of instructions:
 - copying / reading / writing data
@@ -314,7 +308,7 @@ Computers think in base 2 (one bit has two states)
 - often see powers of 2 in programs (32, 64 etc)
 
 
-We can use sequences of bits to represent actions we want the CPU to do
+We can use sequences of bits to represent actions we want the CPU to do (these are CPU instructions)
 - copy bytes
 - add, multiplication
 - bit logic - NOT, AND, OR, XOR
@@ -323,17 +317,15 @@ We can use sequences of bits to represent actions we want the CPU to do
 
 ## Assembly
 
-Binary is what a CPU fundamentally understands 
+Binary is what a CPU fundamentally understands - but programming directly in binary is inefficient
 
-- but programming directly in binary is inefficient
-
-Assembly
+Assembly to the rescue!
 
 - assemble code from assembly into binary
-- one to one mapping between instruction & binary (`ADD` -> `01110011`)
+- **one to one mapping between instruction & binary (`ADD` -> `01110011`)**
 - processor specific
 
-Hello World on Intel x86-64 - [programming-resources/fundamentals/hello.s](https://github.com/ADGEfficiency/programming-resources/tree/master/fundamentals):
+Hello World on Intel x86-64 - [programming-resources/fundamentals/hello.s](https://github.com/ADGEfficiency/programming-resources/tree/master/fundamentals)
 
 - compile the source assembly code into binary
 - link with system libraries to produce an executable (this can sometimes happen dynamically at runtime)
@@ -373,7 +365,7 @@ Assembly gives us a lot - but we want more
 **We want a higher level language**
 
 - but our CPU only understands binary
-- **what we want is a compiler**
+- **what we want is a compiler** - to translate our high level language into assembly
 
 
 ## Compilers
