@@ -1,13 +1,21 @@
 # Programming
 
-A collection of guidelines & advice on the [practice](#practice-of-programming), [principles](#principles-of-programming), [art](#art-of-programming) and [philosophy](#philosophies-of-programming) of programming.
+A collection of guidelines & advice on the practice, principles, art and a philosophy of programming.
+
+These notes are organized as follows:
+
+- [what is a program](#what-is-a-program) - what are programs made of, abstractions & interfaces, documentation, testing, properties of languages, OOP & functional programming, language landscape
+- [practice](#practice-of-programming) - what programmers do
+- [principles](#principles-of-programming) 
+- [art](#art-of-programming) 
+- [philosophy](#philosophies-of-programming)
 
 ![](assets/1907-Vlaminck-chatou-bridge.jpg)
 
 *Die Brücke von Chatou - Maurice de Vlaminck - 1907*
 
 
-## Key takeaways
+# Key takeaways
 
 *For those in a rush*
 
@@ -16,15 +24,13 @@ Common mindsets of experienced developers
 - what does this code depend on?
 - who else will read this code?
 
-After this course, you should
-
-Learn about
+This course will teach you
 - what is an abstraction
 - what KISS, YAGNI, DRY are
 - why code is bad
 
 
-# What is a program made of?
+# What is a program?
 
 *Things that exist in computer programs*
 
@@ -51,11 +57,12 @@ answer = int(42)
 #  data structures
 [10, 20], {'a': 10, 'b': 20}
 
-#  standard library
+#  libraries
 from collections import defaultdict
 ```
 
-When do you know a language?
+
+## When do you know a language?
 
 - syntax, conventions, code style
 - standard libraries
@@ -71,18 +78,27 @@ Most languages offer primitive data structures
 Knowing the type of a variable is crucial to knowing what we can do with it
 - this is type inference
 
-Variables, function in & out, list items (can only be same type)
+Object oriented languages give programmers the ability to create their own types
+- for example classes
+- this is what C++ gave C
 
 
 ## Why is programming hard
 
-Non-stationary
+Non-stationary environment
 - changing requirements
 - changing tools, technologies
 
 Tradeoffs
 - technical debt
 - programmer time versus computer time
+
+
+## Why is programming easy
+
+Freely shared tools & knowledge
+
+Instant feedback (error messages)
 
 
 ## Sequence, selection, iteration and indirection
@@ -113,15 +129,6 @@ Some of the infomation that the program is dealing with
 - the data (`10`, `12`)
 
 
-## What is a program made of?
-
-- primitive data types (`int`, `float`)
-- variables
-- data structures (`list`, `dict`)
-- standard library
-- third party libraries
-
-
 ## Infomation hiding
 
 Let's take the Python dictionary - we can use it without knowing where data is stored in memory
@@ -132,116 +139,163 @@ dataset = {'test': [10, 20, 30], 'train': [100, 200, 300, 400], 'name': 'fold1'}
 
 Where data is stored in memory is a detail that is hidden
 - an implementation detail that has been abstracted away from the programmer
+- abstracting away this implementation detail gives us less control
 
 
 ## Abstraction
 
-Concrete
+To understand abstraction, let's first consider it's opposite - to be concrete. 
+
+### What is concrete?
+
+Something that is concrete is:
 - hard to change
 - dependent on a framework
 - dependent on an implementation directly
 
-Abstract = the opposite of concrete
-- moving away from the physical structure towards abstract structure
-- move from the *how* to the *what* - user only needs to say what they want - not how!
-- user does need to care about how it works on the inside
-
 The most concrete form of a program is machine code
 - sequences of bits that map to CPU instructions (`0010110` -> `ADD`)
+- changing these requires changing hardware (your CPU)
 
-Most programmers work at a much higher level of abstraction - a high level programming language
 
-High level languages offer many advantages
-- libraries (standard library, third party)
-- portable to different CPU hardware
-- abstractions
+### What is abstract?
 
-Abstraction
+**Abstract = the opposite of concrete**
+- moving away from the physical structure towards abstract structure
+- move from the *how* to the *what* - user only needs to say what they want - not how!
+- user does need to care about how it works on the inside - lets programmers focus on the important details
 - hiding a implementation (abstract away complexity)
-- lets programmers focus on the important details
-- good abstractions don't just hide complexity - they can eliminate it
-- keep stuff together that should be together (based on how & why it changes)
+- move towards the idea of hierarchy rather than physical structure (i.e. inheritance)
 
-Let's take an example of neural networks, presenting abstractions that remove more and more detail:
+Good abstractions can allow good code
+- objects that map meaningfully to real world business problems (i.e. a `Customer` class)
+- keep stuff together that should be together (based on how & why it changes)
+- **good abstractions don't just hide complexity - they can eliminate it**
+
+Most programmers work at a much higher level of abstraction than machine code - using a high level programming language.  High level languages offer many advantages (one of which is abstractions):
+- libraries (standard library, third party)
+- portable to different CPU hardware architectures
+- reusable, optimized, tested abstractions
+
+Let's look at some examples of different levels of abstraction when modelling neural networks:
 
 ```python
-layer = [[Node('relu'), Node('relu')], [Node('sigmoid')]]
+#  TENSORFLOW 1
+a = tf.constant(5.0)
+b = tf.constant(6.0)
+c = a * b
 
-layers = [Dense('relu', nodes=2), Dense('sigmoid', nodes=1)]
+with tf.Session() as sess:
+  print(sess.run(c))
 
-network = Network(['dense', 'relu', 2], ['dense', 'sigmoid', 1])
+#  TENSORFLOW 2
+a = 5.0
+b = 6.0
+c = tf.add(a, b)
 ```
 
-Move towards the idea of hierarchy rather than physical structure
 
-Law of leaky abstractions
+Law of leaky abstractions - abstraction are never perfect
 - all abstractions leak
-- impossible to abstract perfectly - because all abstractions are lies
+- impossible to abstract perfectly - because all abstractions are lies (approximations - they are the map, not the territory)
 - sometimes leaks are necessary (because they are useful)
 
 
 ## Interfaces
 
-An abstraction hides detail by exposing only a simple interface to the programmer
-- we want narrow, minimal interfaces with deep functionality
+An interface is
+- what the use interacts with
+- how we actually use something
 
-An interface is the total cost of the system to the user
+**An interface is the total cost of the system to the user**
 - everything they need to think about
 - dependencies
 
+What do we want in a good interface?
+- narrow, minimal interfaces with deep functionality
+- familiarity (works like other tools)
+- allows isolation & communication
+
+**Good abstractions allow good interfaces**
+- hides detail by exposing only a simple interface to the programmer
+
 A good interface makes the common case simple
 - sensible defaults
-
-Well defined systems have **good interfaces**.  Interface where one part of the system doesn't care about other parts of the system.
 
 *Further reading*
 - [Abstraction - Wikipedia](https://en.wikipedia.org/wiki/Abstraction_(computer_science))
 
 
-## API
+### API
 
-Closely related to interfaces
-- not talking about REST API's (which is more concrete that a general API)
+API = Application programming interface
+- a specific example is REST API's (which is more concrete that the general API idea)
+- a user interface
+- can be CLI, REST, UI, GUI
 
-API
-- user interface
-- CLI, REST, UI, GUI
+Key question = **who will use the API?**
 
-Who will use the API?
+A good API makes it easy to develop a solution 
 
-Good API = makes it easy to develop a solution by providing building blocks to be put together by the programmer
+- by providing building blocks to be put together by the programmer
 
 Balance between simplicity (90%) and flexibility (10%)
 - focus on 90% of use cases
-- simplicity
-- flexibility
-- consistency
-- safety
+- also need to consider consistency and safety
 
 Configurability is the root of all evil
 - adding configuration options = program was too stupid to figure out what is best for user
 - subjective configuration (ie colorscheme) only
 
 *Further reading*
+
 - [python.apichecklist.com](http://python.apichecklist.com)
-- How to make a good library API PyCon 2017 - [video](https://www.youtube.com/watch?v=4mkFfce46zE)
 - keras-team/governance/keras_api_design_guidelines.md - [text](https://github.com/keras-team/governance/blob/master/keras_api_design_guidelines.md)
-- Amjith Ramanujam Awesome Command Line Tools PyCon 2017 - [video](https://www.youtube.com/watch?v=hJhZhLg3obk&t=1321s)
+- [Notes to Myself on Software Engineering - François Chollet](https://medium.com/s/story/notes-to-myself-on-software-engineering-c890f16f4e4d)
+
+*Further watching*
+
+- [Amjith Ramanujam Awesome Command Line Tools PyCon 2017](https://www.youtube.com/watch?v=hJhZhLg3obk&t=1321s)
+- [How to make a good library API PyCon 2017](https://www.youtube.com/watch?v=4mkFfce46zE)
 
 
 ## Documentation
 
-Documentation lies sometimes
-- focus on automation over documentation where appropriate.
+What is documentation in software?
 
-Uncle Bob Martin's 1st law of documentation - produce nothing unless it's need is immediate & significant
+- content that explains how software works, how to use it
+- not executable
+
+Examples
+
+- comments
+- `README.md`
+- Jupyter Notebook tutorials
+- Sphinx style generated documentation
+
+**The key problem with documentation is the possibility of inconsistency**:
+- documentation lies sometimes
+
+Take the example below:
+
+```python
+def calculate_absolute_change(x, y):
+    return abs(x - y)
+
+#  calculate percentage change in profit
+calculate_absolute_change()
+```
+
+Uncle Bob Martin's 1st law of documentation 
+
+- produce no documentation unless it's need is immediate & significant
 
 
 ### Comments
 
 Can be useful
 - can also be wrong
-- should describe things that aren't obvious from the code
+- **should describe things that aren't obvious from the code**
 
 Needing comments can suggest poorly written code
 - variable & function names aren't useful
@@ -270,76 +324,100 @@ def add_profit(sales, profit):
     return sales + profit
 ```
 
-Takeaway - find out for yourself what your theory on comments is
-
 
 ### The readme
-
-Write readme before the code
-- write the API / interface before the code
 
 Readme is a pitch
 - why this library exists
 - what it solves
 - to what extent
 
-Write sample code for the most common use cases
-- readme driven design
+Many potential users of your library will read this (and only this!)
+
+Readme driven design = very cool idea
+- write readme before the code
+- write the API / interface before the code
+- write sample code for the most common use cases
 
 
 ## Testing
 
-[teaching-monolith/test-driven-development](https://github.com/ADGEfficiency/teaching-monolith/tree/master/test-driven-development)
+**An executable form of documentation**
+- tests can express functionality of the code to the reader
 
-- a form of documentation
+Examples
+- use inline assert statements - they are low overhead and tells reader what has to happen
+- unit tests
+- integration tests
+- system tests 
 
-- use assert statements - they are low overhead and tells reader what is going to happen
+Focus tests on code that is touched a lot / is important / changes a lot
 
-Focus unit tests on code that is touched a lot / is important
+Organize tests as scenarios that use multiple parts of the code
 
-Unchohesive tests - tests should express functionality of the code to the reader
-
-Organize tests as scenarios that use multiple parts of the cod
+*Further reading*
+- [teaching-monolith/test-driven-development](https://github.com/ADGEfficiency/teaching-monolith/tree/master/test-driven-development)
 
 
 ## Logging
 
+Data generated by a program in execution
+
 Human only, machine & human, machine only (instrumentation)
 
+A log file
+- append only
+- sequence of records
+- ordered by time
 
-## Properties of programming languages
+Records 
+- what happened 
+- when it happened
 
-> Languages shape the way we think, each in their own peculiar way. That’s true for programming languages as well. Each language contains a different mental model, a different perspective for thinking about computation and how to write programs - Thorsten Ball
-
-
-### High versus low level
-
-How close to the metal you are
-- binary -> Assembly -> C -> Python
+*Further reading*
+- [The Log: What every software engineer should know about real-time data's unifying abstraction](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
 
 
-### Computer time versus programmer time
+# Properties of programming languages
 
-Classic tradeoff between how fast a program is versus how hard a language is to use
+> Languages shape the way we think, each in their own peculiar way. That’s true for programming languages as well. Each language contains a different mental model, a different perspective for thinking about computation and how to write programs - THORSTEN BALL
+
+Attributes, components & patterns that make languages similar and different
+
+
+## High versus low level languages
+
+How close to the metal (hardware) you are
+- the lowest level = machine code (binary)
+- next is assembly
+- then languages like C
+
+
+## Computer time versus programmer time
+
+**Classic tradeoff between how fast a program is versus how hard a language is to us**
 - computer time has become cheaper
 - programmer time is as valuable as ever
 
-Some things can't be speedup by any language
-- can't speedup I/O
+Some things can't be sped up by any language
+- can't speed up I/O
 
 Compiled languages are fast to run
 - often difficult to write (static typing etc)
 
-### Things that speed up a program
+
+## Things that speed up the execution of a program
 
 - tell the compiler as much as possible (variable types etc)
 - manage memory by hand (not automatically)
 
-### Things that slow down a program
+
+## Things that slow down the execution of a program
 
 - dynamic typing
 - automatic memory management
 - interpretation
+
 
 ## Static versus dynamic typing
 
@@ -377,111 +455,154 @@ Allocations (i.e. of memory) and copies make things slow
 
 ## Strong versus weak typing
 
+No precise technical definition
+- measurement of the 'strength' of the type system
+
 Strong typing
-- data can be manipulated only with operations for that data's type
-- types are defined by what operations you can do on them
+- stronger = stricter
+- checks happen at compile time - errors caught before code is run
 
 Weak typing
-- can manipulate data in anyway
+- type checking at runtime - meaning errors cause crashes
+- errors from automatic type conversion
+
+[Strong and weak typing - Wiki](https://en.wikipedia.org/wiki/Strong_and_weak_typing)
 
 
 ## Memory management
 
-Manual memory management
+Why is it important to manage memory
+- you only have a limited amount
+- memory leak = not freeing heap memory after it isn't being used
+
+Manual memory management = lowest level
+- manually allocate & assign data to memory
 
 Garbage collection
+- automatically managed memory
 - based on reference counting
-
-Memory leak = not freeing heap memory after it isn't being used
-- made easier in GC, but still can have leaks with GC (global vars etc)
+- this is what Python does
+- but still can have leaks (global vars etc)
 
 
 ## Portability
 
-- using on different platforms
+Portability = using code on different platforms
 
-Four issues
+Four issues make this hard:
 - CPU instruction sets (fix by not using assembly)
 - system calls (fix using interfaces)
 - capabilities (hardware)
 - libraries
 
+Assembly is not portable
+
+High level languages are portable
+- compile to a target instruction set
+
+
 ## Size of community
 
 Maturity of language
+- how long will it be supported
 
 Availability of libraries, tooling
 
+Availability of employees, colleagues and talent
 
-## How functional
+
+## How functional is the language?
+
+
+## What is functional programming?
 
 Functional programming = not changing / relying on state
-- immutable variables (variables that don't vary)
+- variables that don't vary (immutable data)
+- first class functions (no objects - aka no state)
+- no side effects
 
-Infinite data storage allows immutable variables
-- this is how git works!
-- no state, can generate state from history
-
-Idempotent (functional)
-- function always returns the same thing, whenever it runs
+Why is functional programmming good?
+- idempotentcy - function always returns the same thing, whenever it runs
 - not affected by, or affects, the outside world
 
 But the entire value of programs is that they do modify state!
-- functional = about isolating where you rely upon & impact the outside world
+- true functional programming is an unreachable idea
+- functional programming is about isolating where you rely upon & impact the outside world
+
+Useful ideas
 - separate components that do versus do not mutate variables
 - easy to switch out implementations if the idea is expressed as a pure function
-- internal state / multiple entry points = harder
+- internal state / multiple entry points = harder to work with
+
+*Further reading*
+- [teaching-monolith/distributed-computing/functional-programming.ipynb ](https://github.com/ADGEfficiency/teaching-monolith/blob/master/distributed-computing/functional-programming.ipynb)
 
 
-## How object oriented
+## How object oriented is the language?
 
 OOP = object oriented programming
 - objects (`class`) that contain data & functionality
+- OOP = grouping data (class attributes in Python) and function (class methods in Python)
 
 Fundamental paradigms in OOP
 - abstraction = hiding implementation complexity
 - encapsulation = using classes to combine data & function (can also be to protect data access via getters & setters)
-- inheritance
 - inheritance = class having subclasses (`Cat` & `Dog` class inherits from `Animal`)
 - polymorphism = subclasses can override methods of the parent class
 
 ```python
 class Animal:
     def eat(self):
-		    return 'still hungry'
+    return 'still hungry'
 
 class Dog(Animal):
     def eat(self):
-		    return 'full'
+    return 'full'
 ```
 
 Duck typing
-- an object's suitability is determined by the presence of certain methods and properties, rather than the type of the object itself
 - 'If it walks like a duck and it quacks like a duck, then it must be a duck'
+- don't check type of a variable
+- instead check to see if an attribute or method is present
 
 ```python
-obj.quack()
+obj.eat()
+
+# rather than
+if isinstance(obj, Dog):
+    obj.eat()
 ```
 
 
 ## Landscape
 
-Fast, operating system languages = C, C++, Rust
+For data science, common languages that you should be familiar with (you do not need to know):
+- Python, R
+- Scala (and it's relationship with Java & the JVM)
+- Javascript (and how it runs in the Browser)
+- Julia & Swift (seen as potential Python successors)
+
+
+### Languages by domain
+
+Fast, operating system languages = C, C++, Rust, Go 
 
 Business = Java
+- runs on a Java Virtual Machine (JVM)
 
 Data, scientific = Python, R, Julia
 
 Academics = R, MatLab, Fortran
 
-Web development = Javascript (node.js, React, Vue, Angular), Ruby, Python (Flask, Django), Go (no inheritance)
+Web development = Javascript (node.js, React, Vue, Angular), Typescript (strongly typed Typescript, superset of JS) Ruby, Python (Flask, Django)
 
 Browser = Javascript and it's supersets (Typescript etc)
 
 Data engineering = Scala
 - Hadoop / Spark written in Scala
+- runs on a Java Virtual Machine (JVM)
 
-Mobile = Swift, Kotlin (modern Java)
+Mobile = Swift, Kotlin (modern Java on Android)
 
 Notable mentions = Lisp (dynamic, interpreted), Perl, Haskell (functional)
 
@@ -495,24 +616,74 @@ Languages that call other programs
 
 # Practice of programming
 
-*What programmers actually spend their time doing*
+*What programmers actually do*
 
 > Taking examples and adapting them to your needs is a skill fundamental not just to visualization, but to all data science and programming in general.
+
 > Nobody knows everything, and the job involves a lot of figuring things out - RUSSELL JURNEY (Agile Data Science)
 
 Most time is spent
-- adapting examples (copying code)
-- getting dependencies to work
-- using Google to find solutions to error messages
+- adapting examples (copying code & changing it)
+- getting dependencies to work (i.e. installing CUDA)
+- using Google to find solutions to error messages (knowing what to search for)
 
 Best way to learn
 - write programs
 - read other peoples programs (open source is amazing for this)
+> [reading code] is really worth it for what it builds in your brain. The more you learn to read other people’s stuff, the more able you are to invent your own in the future  - Donald Knuth 
+
+
+## Reading other peoples code
+
+Read
+- great writers write a lot, and read even more
+- so should a programmer
+- read your dependencies (pandas, numpy etc)
+
+Run
+- use the software, understand inputs & outputs
+- examine high level structure - `tree` is useful here
+- dive into key sections & important data structures - look out for interesting code patterns to learn from
+
+Test
+- write test cases to prove your understanding
+- perhaps these can even be added to the project test suite
 
 Importance of having control over your development environment
 - being able to use the operating system of your choice at work
 - being able to manage Python effectively on a remote machine
 - being able to do things that would be dangerous in production
+
+Further reading
+
+- [Read Code - Nemil Dalal](https://www.nemil.com/on-software-engineering/read-code.html)
+
+
+## Googling error messages
+
+In Python, the useful error message is usually at the bottom
+
+Using Stack Overflow
+
+```python
+data = [10, 20, 30]
+data[4] = 40
+
+# Traceback (most recent call last):
+#   File "<stdin>", line 2, in <module>
+# IndexError: list assignment index out of range
+```
+
+Sometimes your error message will include data that is specific to your problem (which may not be useful to Google)
+
+```python
+import numpy as np
+data = np.ones((2, 2))
+data[3, 3] = 10
+# Traceback (most recent call last):
+#   File "<stdin>", line 3, in <module>
+# IndexError: index 3 is out of bounds for axis 0 with size 2
+```
 
 
 ## What beginners get wrong
@@ -551,8 +722,10 @@ Programming is a never ending process of fixing errors
 
 Coding is constant problem solving
 
+- this is a great thing (always something to o)
 
-## Iterative
+
+## Programming is iterative
 
 No one gets a program correct the first time
 - implement new ideas in parallel with the old ones, rather than mutating the existing code
@@ -565,6 +738,50 @@ Kent Beck
 3. make it fast
 
 **Only optimize code once it works correctly**
+
+Kernighan's Law
+
+- debugging complex code is harder that simpler
+- so write simple code!
+
+> Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.
+
+
+## Technical debt
+
+Technical debt = delaying work that will have to be done in the future
+
+- good technical debt is intentional
+- good technical debt is documented
+- common to use `TODO` comments
+
+```python
+#  TODO fix later
+```
+
+You can search for all the `TODO`'s using `grep`:
+
+```bash
+$ grep -r 'TODO' .
+```
+
+Build the most difficult part of the project first
+
+- to test it, need other parts of the project in place
+- one solution to this is scaffolding
+
+Scaffolding
+
+- build something cheap that will be thrown away later
+- build it to get the project moving forward
+- example in data science would be a mock dataset, or a small model
+
+
+How do we fix technical debt - refactoring!
+
+Further reading:
+
+- [3 Kinds of Good Tech Debt](https://engineering.squarespace.com/blog/2019/three-kinds-of-good-tech-debt)
 
 
 ## Refactoring
@@ -585,8 +802,17 @@ Refactoring has degrees to it
 A test suite is crucial to effective refactoring
 - can run your test suite as you refactor, to check if you broke anything
 
+Before you can refactor, you need to write code
+
+- write a few functions / classes / entire codebases
+- see what code is shared, how design in one part of the system infulences another
+
+The dream is to find simple changes in one part of the code base that remove other parts
+
 *Further reading*
+
 - Brett Slatkin - Refactoring Python: Why and how to restructure your code - PyCon 2016 - [youtube](https://www.youtube.com/watch?v=D_6ybDcU5gc&feature=player_embedded)
+- [Why we decided to go for the Big Rewrite](https://tech.channable.com/posts/2019-10-04-why-we-decided-to-go-for-the-big-rewrite.html)
 
 
 ## Code reviews
@@ -603,17 +829,16 @@ Code review forces more than one person to be involved in a project
 
 # Principles of programming
 
-*Ideas, heuristics & mental models*
+*Ideas, heuristics & mental models - very pretentious*
 
 Mindsets of experienced programmers:
+- how do I check this works (is this code tested)?
 - why does this code need to change?
 - who needs to read it?
-- is this code tested?
+- where will this code run? 
 
 
 ## Zen of Python
-
-Try the following in your shell:
 
 ```bash
 $ python -c "import this"
@@ -642,7 +867,7 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 ```
 
-A key idea in the Zen of Python is to prefer easy things:
+A key idea in the Zen of Python is to prefer simple things:
 
 * simple better than complex
 * flat is better than nested
@@ -934,11 +1159,7 @@ Short functions
 Avoid long lists of parameters
 - don't pass three strings & a float, pass an Order & Employee
 - if your function takes lots of arguments, maybe it should be more than one function
-
-
-```python
-TODO
-```
+- if your function takes lots of arguments, maybe it should be a class
 - All effort is not useful effort - but all effort feels like useful effort
 
 We can break a function down into three stages
@@ -963,7 +1184,11 @@ Output:
 
 ### Writing classes
 
-Use class with bundle of mutable data and bunch of related functions
+When do I write a class?
+- when you are passing around data together (although `dict` may work as well)
+- a bundle of mutable data and bunch of related functions
+- when you want to model a real world concept (`Dog`, `Model`) etc
+
 - if you have two methods - one being init - it shouldn’t be a class!
 
 If you use class once and throw it away, it could be a lot simpler
@@ -981,23 +1206,6 @@ Representatives of things don’t share the relationships of the things they rep
 *Further reading:
 - Jack Diederich - HOWTO Write a Function - [youtube](https://www.youtube.com/watch?v=rrBJVMyD-Gs)
 - Jack Diederich - Stop Writing Classes - [video](https://www.youtube.com/watch?v=o9pEzgHorH0)
-
-
-
-
-## Functional programming
-
-
-## Design patterns
-
-
-### MVC
-
-- model-view-controller to separate storage & UI from business logic
-
-
-### Clean architecture
-
 
 
 # Philosophies of programming
@@ -1025,7 +1233,7 @@ Manifesto for Agile Software Development:
 - Regularly, the team reflects on how to become more effective, and adjusts accordingly
 
 
-## [Clean Architecture]()
+## Clean Code
 
 - The Clean Architecture in Python - Brandon Rhodes - [video](https://youtu.be/DJtef410XaM)
 - The Principles of Clean Architecture - [video](https://www.youtube.com/watch?v=o_TH-Y78tt4)
@@ -1039,7 +1247,6 @@ Literate programming = liked by people that like both programming and writing
 - Literate programming (LP) tools are used to obtain two representations from a literate source file: one suitable for further compilation or execution by a computer, the "tangled" code, and another for viewing as formatted documentation, which is said to be "woven" from the literate source.[3] While the first generation of literate programming tools were computer language-specific, the later ones are language-agnostic and exist above the programming languages.
 
 
-
 ## [Test driven development](https://en.wikipedia.org/wiki/Test-driven_development)
 
 1. write test
@@ -1048,7 +1255,6 @@ Literate programming = liked by people that like both programming and writing
 4. refactor
 
 10 simple rules for writing great testcases by Steve Poole and Stuart Marks - [video](https://www.youtube.com/watch?v=n6Nde8TgB2Y)
-
 
 ## [Waterfall](https://en.wikipedia.org/wiki/Waterfall_model)
 
@@ -1124,8 +1330,6 @@ Pythonic Guide to Logging - [blog post](https://timber.io/blog/the-pythonic-guid
 https://medium.com/@samsniderheld/how-i-taught-a-machine-to-take-my-job-2dd1adb4df18
 
 Continuous Integration for Machine Learning - [blog post](https://medium.com/@rstojnic/continuous-integration-for-machine-learning-6893aa867002)
-
-Web Architecture 101 - [blog post](https://engineering.videoblocks.com/web-architecture-101-a3224e126947
 
 [hellerve/programming-talks](https://github.com/hellerve/programming-talks)
 

@@ -1,24 +1,21 @@
 # Fundamentals of Computing & Programming
 
-Introductory course on how computers work, how to write programs and what tools you need to do so.
+Introductory course on how computers work, how to write computer programs and what tools you need.
 
-![](assets/1883-Böcklin-Die-Toteninsel.jpg)
-
-*Die Toteninsel - Arnold Böcklin - 1883*
+The course is for beginners, and is organized into three sections:
 
 - [programming-resources/fundamentals/computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md)
 - [programming-resources/fundamentals/programming.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md)
 - [programming-resources/fundamentals/tools.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/tools.md)
 
+![](assets/1883-Böcklin-Die-Toteninsel.jpg)
 
-## Where to go next
-
-[teaching-monolith/distributed-computing](https://github.com/ADGEfficiency/teaching-monolith/tree/master/distributed-computing) for a course on functional programming and parallel computation
+<i>Die Toteninsel - Arnold Böcklin - 1883</i>
 
 
 ## Hello World Programs
 
-*Tested on a Mac (x86)*
+To demonstrate the difference between assembly, compilation & interpretation - used in [computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md) - tested on a Mac (x86 architecture).
 
 ### Assembly
 

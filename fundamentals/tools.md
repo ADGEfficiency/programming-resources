@@ -1,6 +1,6 @@
 #  Tools
 
-To write and execute programs on a computer
+*What you need write and run computer programs*
 
 ![](assets/1803-antike-stadt-an-einem-Berg.jpg)
 
@@ -9,7 +9,11 @@ To write and execute programs on a computer
 
 # Key takeaways
 
-Use a toolset that you are comfortable with & enjoy - while constantly trying to fill gaps, learn shortcuts & use a mouse less
+Use a toolset that you are comfortable with & enjoy using & maintaining 
+- learn shortcuts
+- slowly add new tools as you feel comfortable
+
+fill gaps, learn shortcuts & use a mouse less
 
 The basic toolset of a programmer includes
 - text editor (to edit code)
@@ -29,32 +33,44 @@ Other useful tools
 - terminal mulitplexer (tmux, screen)
 
 
-# Options for data science
+## Keyboard shortcuts
 
-## Notebook server 
+Useful editor shortcuts
+- comment out a block of code
+- jump to definition of a function/class
+- jump to line number
+
+Shell aliases
+- probably the highest value productivity change a programmer can make
+
+Look at what you spend lots of time doing / typing
+- record your screen (replay 2x speed :)
+
+Check what commands you use often on the shell:
+
+```bash
+#  bash
+$ cat ~/.bash_history | sort | uniq -c | sor
+#  zsh
+$ awk -F ";" '{print $2}' ~/.zsh_history | sort | uniq -c | sort
+```
+
+I find post-it notes on my screen useful
+
+
+# Tooling options for data science
+
+## Notebooks
 
 Locally with [Jupyter Lab 2.0](https://towardsdatascience.com/jupyterlab-2-0-edd4155ab897)
 - common in data science
+- an example of literate programming
 
 A very recent trend in computing is free access to compute via notebook style interfaces
 - Google Colab
 - Kaggle kernels
 
-
-## GUI editor / IDE
-
-VS Code or Atom 
-
-IDE = lots of tools together in one program
-- usually language specific
-- Spyder (similar to R Studio)
-- Pycharm
-- Sublime
-
-
-## Terminal only
-
-tmux/screen + vim/emacs
+You can often access GPU as well :)
 
 
 ## Text editor 
@@ -62,7 +78,7 @@ tmux/screen + vim/emacs
 Possible features
 - syntax highlighting
 - linting / syntax / style checking
-- find and replace
+- find, find and replace
 - autocomplete
 - type / function argument hints
 - top-bottom split (same file), left right split (different file)
@@ -70,24 +86,64 @@ Possible features
 Inline linting is very useful for learning proper code style
 - very hard to learn without it
 
+### GUI Text editor or IDE for a text editor
 
-## Terminal / Shell
+Text editor = edits text
+
+IDE = integrated development environment
+
+- lots of tools together in one program
+- has tools to run, debug code
+- usually language specific
+
+The distinction between text editors and IDE's is somewhat vague
+
+- text editors commonly used for programming almost always have IDE type components
+- most IDE's have text editors
+
+Commonly used programs
+
+- VS Code (very popular, excellent ecosystem, Electron app)
+- Atom (popular, not supported, Electron app) 
+- Sublime (fast)
+- PyCharm (Python specific, powerful, slow)
+- Spyder (similar to R Studio)
+
+
+### Terminal text editors
+
+vim/emacs - often combined with a terminal multiplexer (iterm or screen)
+
+Even if you use a GUI editor as you main editor, you will need to know the basics of one terminal editor that is widely available on remote servers (vim or nano)
+- when you are SSH'd into a remote server, you may want to make small edits to files on the remote machine
+- UNIX systems will come with a few for free - nano, vim
+- worth knowing enough to edit a file just in case
+
+Vim or nano?
+- vim is the more powerful editor
+- nano has a lower learning curve
+- if you don't know, pick nano
+
+
+
+
+## Terminals & Shells
 
 Crucial part of using computers well
 - allows automation & repetition (hard with a mouse)
 
-
 ### Terminal
 
-Program to input / ouput text
+A program that run-
+Program to input / output text to a sh
 - also called a *tty*
 
 There are different terminal emulators
-- Mac - iTerm2
+- Mac - [iTerm2](https://www.iterm2.com/) (some useful improvements to the default Terminal app)
 - Windows - Windows Terminal (new!)
-- Linux - default shell is usually good
+- Linux - default shell pretty good
 
-[Powerline](https://github.com/b-ryan/powerline-shell) 
+If you want your shell to look pretty - check out [Powerline](https://github.com/b-ryan/powerline-shell) 
 - customize the information your terminal shows
 - to make your terminal pretty
 - uses Python - can cause problems if you are activating your virtual env at the wrong time!
@@ -98,7 +154,9 @@ There are different terminal emulators
 
 ### Shell
 
-Processes commands & returns
+[Shell](https://en.wikipedia.org/wiki/Shell_(computing))
+
+A program that processes commands & returns
 
 There are different shell programs
 - `bash` - standard, available everywhere
@@ -111,14 +169,7 @@ Features of a shell
 - keyboard shortcuts (defualt is emacs style)
 
 
-## Command line based editor
-
-It is possible to run an editor directly inside the shell
-- UNIX systems will come with a few for free - nano, vim
-- worth knowing enough to edit a file just in case
-
-
-## How to use Jupyter Lab / ipython
+## How to use Jupyter Lab 
 
 Modal editor
 - undo versus undo cells
@@ -135,11 +186,14 @@ Good for data exploration, visualization and experiment logging/monitoring
 - not good for testing, developing packages
 
 **Best practice - refactor functions from notebooks into scripts**
+- go through this with class (after setup)
+- show `%%autoreload`
 
-## Running shell code in your notebook
+The Python that runs in your Notebook is not the same that runs when you access Python on the shell
 
-Prefix with `!`
-
+- it's iPython
+- this is where the `%%` magic commands come from
+- also the `!` command (to run shell code)
 
 ```python
 !ls
@@ -153,8 +207,9 @@ With `pip` we can use either as a shell command or directly in the notebook (bel
 ```
 
 
-## Minimum level of git
+## git
 
+Minimum level of git
 - don't use the GUI or web based Github client 
 - `Add files via upload` is a sure sign of a newbie
 
@@ -172,7 +227,7 @@ Use the following in your shell:
 ```
 
 
-## Markdown 101
+## Markdown
 
 Markdown is a syntax used to format text in notebooks & in readme's on GitHub
 
@@ -192,7 +247,7 @@ Markdown is a syntax used to format text in notebooks & in readme's on GitHub
 ```
 
 
-## LaTeX 101
+## LaTeX
 
 LaTeX is syntax for producing scientific documentation
 
@@ -202,25 +257,31 @@ Use a `$`
 
 `$x_{3}$` -> $x_{3}$
 
+It will render in Notebooks
 
-## File system naming
+
+## Files
 
 All files are text
 - characters
 - binary
 
-The suffix doesn't change the data in a file - is used by programs to identify file type
+File system naming
+- The suffix doesn't change the data in a file 
+- is used by programs to identify file type
 
 Don't put spaces in file names
-
-Use `-` where possible - python (`.py`) files all need `_`, but `-` is prettier
+- use `-` where possible - python (`.py`) files all need `_`, but `-` is prettier
 
 
 ## The web
 
-Server versus client side compute
+Web is a conversation between computers
+- clients & servers
+- server sends HTML, CSS & Javascript to your browser - JS runs in your browser
 
-Server sends HTML, CSS & Javascript to your browser - JS runs in your browser
+Javascript means that the server can send you code to run
+- server versus client side compute
 
 
 ## The cloud
@@ -232,3 +293,15 @@ AWS, Google Cloud (GCP), Azure
 - AWS is the oldest
 - Azure has a big advantage in business (Microsoft product)
 - GCP has a $300 credit
+
+Skillets required on the cloud
+- shell (most likely bash)
+- SSH, SSH keys, SSH tunnels
+
+Common workflow
+- spin up server
+- SSH in
+- clone a repo (for code)
+- get data (S3)
+- run Python scripts
+- transfer data
