@@ -1,5 +1,16 @@
+[Things I Learnt from a Senior Software Engineer - Neil Kakkar](https://neilkakkar.com/things-I-learnt-from-a-senior-dev.html)
 
-# Junior
+[The Marks of a True Senior Developer](https://medium.com/madhash/the-marks-of-a-true-senior-developer-d5f3b11c3375)
+
+> “The mediocre teacher tells. The good teacher explains. The superior teacher demonstrates. The great teacher inspires.” — William Arthur Ward
+
+[The Mistakes I Made As a Beginner Programmer](https://medium.com/edge-coders/the-mistakes-i-made-as-a-beginner-programmer-ac8b3e54c312)
+
+[Notes to a Young Software Engineer](https://www.nemil.com/on-software-engineering/index.html)
+
+[The Differences Between a Junior, Mid-Level, and Senior Developer](https://medium.com/better-programming/the-differences-between-a-junior-mid-level-and-senior-developer-bb2cb2eb000d)
+
+[Things I Learnt from a Senior Software Engineer](https://neilkakkar.com/things-I-learnt-from-a-senior-dev.html)
 
 ## [12 Things I Learned During My First Year as a Machine Learning Engineer](https://towardsdatascience.com/12-things-i-learned-during-my-first-year-as-a-machine-learning-engineer-2991573a9195)
 
@@ -51,3 +62,5 @@ Disorganized or messy code isn’t the same as technical debt.
 ## [How I Became a Better Programmer](https://jlongster.com/How-I-Became-Better-Programmer)
 
 If anything, just try a new language - Regardless of what you do, you really should explore other languages. I would recommend any of the following: Clojure, Rust, Elm, OCaml/Reason, Go, or Scheme. All of them have unique features and will force you to learn a new way of thinking.
+
+

@@ -2,6 +2,14 @@
 
 [VIM USER MANUAL - by Bram Moolenaar](https://begriffs.com/pdf/vim-user-manual.pdf)
 
+[~/.vim/colors](http://vimcolors.com/)
+
+[VimAwesome](https://vimawesome.com/)
+
+[hakluke/how-to-exit-vim](https://github.com/hakluke/how-to-exit-vim/blob/master/README.md)
+
+[Vim for Python in 2020](https://www.vimfromscratch.com/articles/vim-for-python/)
+
 ## Talks
 
 GOTO 2013 • VIM for Victory • Roy Osherove - [video](https://www.youtube.com/watch?v=2BRbyQC9oMw)
@@ -44,7 +52,9 @@ https://medium.com/@mkozlows/why-atom-cant-replace-vim-433852f4b4d1
 
 Vim after 11 years - [post one](https://statico.github.io/vim.html) - [post two](https://statico.github.io/vim2.html) - [post three](https://statico.github.io/vim3.html)
 
-[vimways](https://vimways.org/2018/)
+Vimways 
+- [2018](https://vimways.org/2018/)
+- [2019](https://vimways.org/2019/)
 
 [What is your most productive shortcut with Vim? - Your problem with Vim is that you don't grok vi](https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim)
 

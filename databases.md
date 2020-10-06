@@ -8,6 +8,10 @@
 
 ## SQL
 
+[SQL Zoo](https://sqlzoo.net/)
+
+[10 minute SQL test as part of an interview for a ‘Senior Research Data Scientist’](https://www.reddit.com/r/datascience/comments/cpe76y/10_minute_sql_test_as_part_of_an_interview_for_a/)
+
 [An Easy Introduction to SQL for Data Scientists](https://towardsdatascience.com/an-easy-introduction-to-sql-for-data-scientists-83363ae004b9)
 
 [Three must know SQL questions to pass your data science interview](https://medium.com/@jayfeng/three-must-know-sql-questions-to-pass-your-data-science-interview-463311c7eaea)
@@ -15,6 +19,8 @@
 [Modern Data Practice and the SQL Tradition](Modern Data Practice and the SQL Tradition)
 
 [Mastery with SQL](https://www.masterywithsql.com/) - a hands-on practical course for anyone who wants to learn modern SQL
+
+[We Can Do Better Than SQL](https://edgedb.com/blog/we-can-do-better-than-sql/)
 
 ## https://www.linkedin.com/posts/eric-weber-060397b7_data-statistics-datascience-activity-6667857833138229248-mg_6
 

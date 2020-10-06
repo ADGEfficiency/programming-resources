@@ -1,3 +1,17 @@
+# Python
+
+[Python's strftime directives](http://strftime.org/)
+
+[The Python Tutorial](https://docs.python.org/3/tutorial/)
+
+[An Effective Python Environment: Making Yourself at Home - Real Python](https://realpython.com/effective-python-environment/)
+
+## Courses
+
+[Google Python course](https://developers.google.com/edu/python/introduction)
+
+[Learn Python the Hard Way](https://learnpythonthehardway.org)
+
 ## Textbooks
 
 [Think Python - Allen Downey](https://greenteapress.com/thinkpython2/thinkpython2.pdf)
@@ -8,17 +22,25 @@
 
 [Fluent Python - Luciano Ramalho](http://shop.oreilly.com/product/0636920032519.do)
 
-## Useful links
-
-[Python's strftime directives](http://strftime.org/)
-
-[Python’s Innards: Introduction](https://tech.blog.aknin.name/2010/04/02/pythons-innards-introduction/)
-
 ## Blog posts
 
 How to set up a perfect Python project - Brendan Maginnis - [text](https://sourcery.ai/blog/python-best-practices/)
 
+[Python’s Innards: Introduction](https://tech.blog.aknin.name/2010/04/02/pythons-innards-introduction/)
+
+## Code Examples
+
+krother/advanced_python - [github](https://github.com/krother/advanced_python)
+
+krother/software-engineering-python - [github](https://github.com/krother/software-engineering-python)
+
 ## Talks
+
+[Top to down, left to right (Surprise talk) - James Powell](https://youtu.be/BRn6UCw35og)
+
+[Jonas Neubert - What is a PLC and how do I talk Python to it? - PyCon 2019](https://youtu.be/a0l29lgDf6k)
+
+[Modern Python Developer's Toolkit - Sebastian Witowski](https://pycon.switowski.com/)
 
 [Road to Python 3 - Lisa Guo, Hui Ding Keynote PyCon 2017](https://youtu.be/66XoCk79kjM)
 

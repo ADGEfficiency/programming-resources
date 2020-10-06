@@ -6,6 +6,8 @@ $ mv /path/to/file{,_old}
 mv /path/to/file /path/to/file_old
 ```
 
+[Non-POSIX file systems](https://weinholt.se/articles/non-posix-filesystems/)
+
 [Effective Shell Part 7: The Subtleties of Shell Commands](https://dwmkerr.com/effective-shell-7-shell-commands/)
 
 [UNIX Toolbox](http://cb.vu/unixtoolbox.xhtml)
@@ -38,3 +40,5 @@ Best things in your bash_profile/aliases? - [Hacker News](https://news.ycombinat
 [Ken Thompson's Unix password](https://leahneukirchen.org/blog/archive/2019/10/ken-thompson-s-unix-password.html)
 
 [The beauty of Unix pipelines](https://prithu.xyz/posts/unix-pipeline/)
+
+[Pipe: How the System Call That Ties Unix Together Came About](https://thenewstack.io/pipe-how-the-system-call-that-ties-unix-together-came-about/)

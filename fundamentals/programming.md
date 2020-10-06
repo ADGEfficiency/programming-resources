@@ -72,6 +72,8 @@ from collections import defaultdict
 
 ## Why is programming hard
 
+> Give the same complex problem to two modern programmers and you will , I claim , get two rather different programs . Hence my belief that current programming practice is closer to novel writing than it is to engineering - RICHARD HAMMING
+
 Non-stationary environment
 - changing requirements
 - changing tools, technologies
@@ -80,6 +82,7 @@ Tradeoffs
 - programmer time versus computer time
 - technical debt is a tradeoff
 - library A versus library B
+
 
 ## Why is programming easy
 
@@ -746,6 +749,8 @@ Debugging strategies
 
 ## Programming is iterative
 
+> One trouble with much of programming is simply that often there is not a well - defined job to be done ; rather , the programming process itself will gradually discover what the problem is! - RICHARD HAMMING
+
 No one gets a program correct the first time
 - implement new ideas in parallel with the old ones, rather than mutating the existing code
 - easy to switch out implementations if the idea is expressed as a pure function
@@ -809,6 +814,8 @@ Further reading:
 > Refactor religiously - Jack Diederich
 
 > The best writing is rewriting - E. B. WHITE
+
+> There is never time to do the job right , but there is always time to fix it later , especially in computer software! - RICHARD HAMMING
 
 - programmer speak for iteration
 - cycle of reorganizing and rewriting to improve readability & testability

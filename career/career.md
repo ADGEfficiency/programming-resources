@@ -1,6 +1,5 @@
 [My Machine Learning Research Jobhunt](https://generalizederror.github.io/My-Machine-Learning-Research-Jobhunt/)
 
-
 Tell us about your research
 
 Code interviews
@@ -9,6 +8,8 @@ Code interviews
 - time and memory complexity
 - test cases
 - then harder version (maybe not solvable)
+
+[Interviewing is a noisy prediction problem](https://erikbern.com/2018/05/02/interviewing-is-a-noisy-prediction-problem.html)
 
 Princton’s Algorithms, [Part 1](https://www.coursera.org/learn/algorithms-part1) and [Part 2](https://www.coursera.org/learn/algorithms-part2)
 

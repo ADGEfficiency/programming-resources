@@ -21,3 +21,7 @@ set stroption&      " Reset stroption to its default value.
 [Vim Setup for Markdown](https://www.swamphogg.com/2015/vim-setup/)
 
 [vim colors](http://vimcolors.com/)
+
+[Vim Script for Python Developers](https://gist.github.com/yegappan/16d964a37ead0979b05e655aa036cad0)
+
+[Vim Script for the JavaScripter](https://w0rp.com/blog/post/vim-script-for-the-javascripter/)

@@ -9,6 +9,12 @@ Start here:
 - [bash-and-unix/intro.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md)
 
 
+## Music for programming
+
+[Project Audio for GitHub](https://github.audio/)
+
+[musicForProgramming](https://musicforprogramming.net/?about)
+
 ## Random
 
 [Screenshots from developers & Unix people (2002)](https://anders.unix.se/2015/10/28/screenshots-from-developers--unix-people-2002/)
@@ -30,10 +36,15 @@ Honeypot docs
 
 [List of software development philosophies - Wikipedia](https://en.wikipedia.org/wiki/List_of_software_development_philosophies)
 
-[dwmkerr/hacker-laws](https://github.com/dwmkerr/hacker-laws)
+[dwmkerr/hacker-laws](https://github.com/dwmkerr/hacker-laws) - Laws, Theories, Principles and Patterns that developers will find useful.
 
 Richard Hamming - You and Your Research - [lecture](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
 
+[Monte Carlo Methods](https://easylang.online/apps/tutorial_mcarlo.html)
+
+[The Architecture of Open Source Applications](https://www.aosabook.org/en/index.html) - Architects look at thousands of buildings during their training, and study critiques of those buildings written by masters. In contrast, most software developers only ever get to know a handful of large programs well—usually programs they wrote themselves—and never study the great programs of history. As a result, they repeat one another's mistakes rather than building on one another's successes. 
+
+[Cities: Skylines is Turing Complete](https://medium.com/@balidani/cities-skylines-is-turing-complete-e5ccf75d1c3a)
 
 ## History of programming
 
@@ -55,7 +66,12 @@ Richard Hamming - You and Your Research - [lecture](https://www.cs.virginia.edu/
 
 Introduction to Computer Science and Programming in Python - [lecture videos](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/lecture-videos/index.htm) - [course home page](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/)
 
+[Teach Yourself Computer Science](https://teachyourselfcs.com/)
+
 [Computer Science from the Bottom Up](https://www.bottomupcs.com/index.xhtml)
+
+[CS360 -- Systems Programming](https://web.eecs.utk.edu/~jplank/plank/classes/cs360/lecture_notes.html)
+- [Memory](https://web.eecs.utk.edu/~huangj/cs360/360/notes/Memory/lecture.html)
 
 
 ## Blogs
@@ -74,9 +90,22 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 [koaning.io](https://koaning.io/) - Vincent D. Warmerdam
 - [The Future of Data Science is Past](https://koaning.io/posts/the-future-is-past/)
+- [Outliers: Selection vs. Detection](https://koaning.io/posts/outliers-selection-vs-detection/)
+
+[The Digital Cat](https://www.thedigitalcatonline.com/)
+
+## Code challenges
+
+[codewars](https://www.codewars.com/)
+
+[coderbyte](https://coderbyte.com/)
+
+[HackerRank](https://www.hackerrank.com)
 
 
 ## Articles
+
+[The Yoda of Silicon Valley](https://www.nytimes.com/2018/12/17/science/donald-knuth-computers-algorithms-programming.html)
 
 [Overlooked No More: Alan Turing, Condemned Code Breaker and Computer Visionary](https://www.nytimes.com/2019/06/05/obituaries/alan-turing-overlooked.html)
 
@@ -113,6 +142,8 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 [Artificial Intelligence (AI) Podcast - Lex Fridman](https://www.youtube.com/playlist?list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4):
 - [Bjarne Stroustrup: C++](https://youtu.be/uTxRF5ag27A)
+- [David Patterson: Computer Architecture and Data Storage](https://youtu.be/naed4C4hfAg)
+- [Jim Keller: Moore's Law, Microprocessors, Abstractions, and First Principles](https://www.youtube.com/watch?v=Nb2tebYAaOA)
 
 [Talk Python To Me](https://talkpython.fm/)
 - [Why is Python Slow?](https://talkpython.fm/episodes/show/265/why-is-python-slow)

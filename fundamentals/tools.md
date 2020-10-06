@@ -10,10 +10,8 @@
 # Key takeaways
 
 Use a toolset that you are comfortable with & enjoy using & maintaining 
-- learn shortcuts
+- fill gaps, learn shortcuts & use a mouse less
 - slowly add new tools as you feel comfortable
-
-fill gaps, learn shortcuts & use a mouse less
 
 The basic toolset of a programmer includes
 - text editor (to edit code)
@@ -85,6 +83,9 @@ Possible features
 
 Inline linting is very useful for learning proper code style
 - very hard to learn without it
+
+*Further reading*
+- [The Era of Visual Studio Code](https://blog.robenkleene.com/2020/09/21/the-era-of-visual-studio-code/) - history of text editors
 
 ### GUI Text editor or IDE for a text editor
 
@@ -307,3 +308,6 @@ Common workflow
 - get data (S3)
 - run Python scripts
 - transfer data
+
+
+

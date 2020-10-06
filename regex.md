@@ -115,6 +115,12 @@ To match sayonara
 
 ([^aeiou][aeiou])+
 
+## Useful regex
+
+To extract the contents of the HTML tag in Kindle exports
+
+`cat personal/notes/books/Hamming_art_science_engineering.html | sed "s/.*<div class='noteText'>//" | sed "s/<\/h3>//" > personal/notes/books/Hamming_art_science_engineering.md`
+
 ## Resources
 
 [Al Sweigart Yes, It's Time to Learn Regular Expressions PyCon 2017 (youtube)](https://www.youtube.com/watch?v=abrcJ9MpF60)

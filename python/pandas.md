@@ -11,6 +11,19 @@ Marc Garcia - Towards Pandas 1.0 - [youtube](https://www.youtube.com/watch?v=hK6
 
 Jeff Reback - What is the Future of Pandas (2017) - [youtube](https://www.youtube.com/watch?v=_-gJtO0XR48)
 
+[Ian Ozsvald - Making Pandas Fly | PyData Fest Amsterdam 2020](https://youtu.be/N4pj3CS857c)
+
+`df.memory_usage(deep=True)`
+
+Saving RAM
+
+- categories data type (rather than strings)
+- smaller dtypes (float32 vs 64)
+
+Speed
+
+- do stuff (like `.sum`) in numpy
+
 [Modern Pandas (Part 1) - datas-frame](https://tomaugspurger.github.io/modern-1-intro.html)
 
 [Thinking like a Panda: Everything you need to know to use pandas the right way. - Hannah Stepanek - Pycon 2019](https://www.youtube.com/watch?v=ObUcgEO4N8w)

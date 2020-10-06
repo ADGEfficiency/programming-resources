@@ -1,5 +1,21 @@
 [vasanthk/how-web-works](https://github.com/vasanthk/how-web-works)
 
+Web History - Jay Hoffman:
+
+- [Chapter 1: Birth](https://css-tricks.com/chapter-1-birth/) - Tim Berners-Lee, hypertext, packet switching
+
+Essential features of the web
+
+- server
+- HTTP - stateless layer for requests
+- browser - understands HTML
+- hyperlinks - `<a>` tag, URLs
+
+- [Chapter 2: Browers](https://css-tricks.com/chapter-2-browsers/) 
+- [Chapter 3: The Website](https://css-tricks.com/chapter-3-the-website/)
+
+[Web Architecture 101](https://engineering.videoblocks.com/web-architecture-101-a3224e126947) - the basic architecture concepts I wish I knew when I was getting started as a web developer
+
 [HTML is the Web - Pete Lambert](https://www.petelambert.com/journal/html-is-the-web)
 
 [Designing a RESTful API with Python and Flask](https://blog.miguelgrinberg.com/post/designing-a-restful-api-with-python-and-flask)
@@ -16,3 +32,7 @@ Put the full link as the values in the json returned by a url
 {self: /pets/1234,
 owner : /people/564}
 ```
+
+## MDN Docs
+
+- HTML - [text](https://developer.mozilla.org/en-US/docs/Learn/HTML)

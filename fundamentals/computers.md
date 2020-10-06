@@ -32,7 +32,6 @@ After this lecture you should
 3. communication - with other computers
 
 **What is a computer?**
-1. computation - transforming data
 1. CPU - sequential computation
 1. memory - stores data
 1. input / output (I/O)

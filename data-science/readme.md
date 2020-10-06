@@ -1,5 +1,7 @@
 [Data Science from Scratch](https://www.oreilly.com/library/view/data-science-from/9781492041122/)
 
+[drawdata.xyz](https://drawdata.xyz/) - Draw your Data and Download as CSV or JSON
+
 [What Does It Take to be a Successful Data Scientist?](https://hdsr.mitpress.mit.edu/pub/5irjez4q/)
 
 [Practical advice for analysis of large, complex data sets - Google - 2016](http://www.unofficialgoogledatascience.com/2016/10/practical-advice-for-analysis-of-large.html)
@@ -12,7 +14,13 @@ Breiman (2001) Statistical Modeling: The Two Cultures - [paper](https://projecte
 
 [Tea: A High-level Language and Runtime System for Automating Statistical Analysis - YouTube](https://www.youtube.com/watch?v=bBCSeud21YU)
 
+[DataKind Projects](https://www.datakind.org/projects)
+
 ## Blog posts
+
+[SharpestMinds](https://www.sharpestminds.com/blog)
+- [What’s happened to the data science job market in the past month](https://www.sharpestminds.com/blog/whats-happened-to-the-data-science-job-market-in-the-past-monthhttps://www.sharpestminds.com/blog/whats-happened-to-the-data-science-job-market-in-the-past-month)
+- [Why you shouldn’t be a data science generalist](https://www.sharpestminds.com/blog/why-you-shouldnt-be-a-data-science-generalist)
 
 [Data science is different now - Vicki Boykis](https://veekaybee.github.io/2019/02/13/data-science-is-different/)
 
