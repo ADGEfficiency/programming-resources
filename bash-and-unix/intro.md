@@ -1,18 +1,24 @@
 # Bash
 
+`$` indicates a command is run in the shell - you don't need to write this!
+
 ## Where am I?
 
 Which directory am I in?
 
 ```bash
-pwd
+$ pwd
 ```
 
 What is in this directory?
 
 ```bash
-ls
+$ ls
+```
 
+Useful options for `ls`:
+
+```bash
 -a show hidden files
 -G colorized
 -l long format
@@ -23,28 +29,26 @@ ls
 Tree is a very useful program for showing the folder structure deeper in the file system
 
 ```bash
-tree -L {num}
+$ tree -L {num}
 ```
 
 Clear the terminal
 ```bash
-clear
-
-Ctrl-L
+$ clear
 ```
 
 ## Making and editing files
 
-Make a file
+Make an empty file
 
 ```bash
-touch myfile.txt
+$ touch myfile.txt
 ```
 
 Edit a file
 
 ```bash
-nano myfile.txt
+$ nano myfile.txt
 ```
 
 
@@ -52,16 +56,16 @@ nano myfile.txt
 
 ```bash
 #  print file contents
-cat readme.md
+$ cat readme.md
 
 #  print first n rows
-head -n 3 readme.md
+$ head -n 3 readme.md
 
 #  print last n rows
-tail -n 3 readme.md
+$ tail -n 3 readme.md
 
 #  paging over the file
-less readme.md
+$ less readme.md
 ```
 
 
@@ -70,9 +74,13 @@ less readme.md
 Make a directory
 
 ```bash
-mkdir practice-dir
+$ mkdir practice-dir
+```
 
--p recursive
+We can also recursively create directories
+
+```bash
+$ mkdir -p practice/subfolder
 ```
 
 
@@ -81,9 +89,9 @@ mkdir practice-dir
 Be careful with `mv` - it will overwrite the file!
 
 ```bash
-cp myfile.txt practice-dir/copy.txt
+$ cp myfile.txt practice-dir/copy.txt
 
-mv myfile.txt practice-dir/my-file.txt
+$ mv myfile.txt practice-dir/my-file.txt
 ```
 
 
@@ -92,13 +100,18 @@ mv myfile.txt practice-dir/my-file.txt
 Move down into a folder
 
 ```bash
-cd practice-dir
+$ cd practice-dir
 ```
 
 To go one level up
 
 ```bash
-cd ..
+$ cd ..
+```
+
+Go back to last directory
+```bash
+$ cd -
 ```
 
 Getting to highest level folders by `cd /etc`, `cd /Users`
@@ -106,30 +119,25 @@ Getting to highest level folders by `cd /etc`, `cd /Users`
 Going to the home folder (`/Users/adam`)
 
 ```bash
-cd ~
+$ cd ~
 
-cd $HOME
+$ cd $HOME
 
-cd
-```
-
-Go back to last directory
-```bash
-cd -
+$ cd
 ```
 
 Use the last argument from your previous command
 
 ```bash
-mkdir mydir
+$ mkdir mydir
 
-tree $_
+$ tree $_
 ```
 
 Run your last command
 
 ```bash
-!!
+$ !!
 ```
 
 
@@ -138,19 +146,19 @@ Run your last command
 Show sizes of files in directory (the `*` symbol is a wildcard that matches everything)
 
 ```bash
-du -hs *
+$ du -hs *
 ```
 
 Show disk usage
 
 ```bash
-df -h
+$ df -h
 ```
 
 Make a file with a single line `tdd`
 
 ```bash
-echo tdd > .python-version
+$ echo tdd > .python-version
 ```
 
 
@@ -159,9 +167,9 @@ echo tdd > .python-version
 Be careful with `rm` - there is no trash can for `rm`!
 
 ```bash
-rm file
+$ rm file
 
-rm -rf directory
+$ rm -rf directory
 ```
 
 
@@ -171,7 +179,7 @@ You can use the default program in your OS to open files
 
 ```bash
 #  open the current folder in your OS's file explorer
-open .
+$ open .
 ```
 
 
@@ -181,11 +189,11 @@ open .
 
 Up and down arrows to move between commands
 
-`!python` - rerun last command for program
+`$ !python` - rerun last command for program
 
-`history` will print the history of your shell (the file is located at `~/.bash_history`)
+`$ history` will print the history of your shell (the file is located at `~/.bash_history`)
 
-`<C-r>` to search history
+`$ <C-r>` to search history
 
 Aliases are also very important for improving speed (see below)
 
@@ -197,33 +205,33 @@ The terminal is a stateful system - it has a whole bunch of variables.  You can 
 We can set a variable using:
 
 ```bash
-zz=1
+$ zz=1
 ```
 
 If I want to  see what this variable is (note the `$` - this is always used)
 
 ```bash
-echo $zz
+$ echo $zz
 ```
 
 But these variables will not be inherited by sub processes - to get this we need to use `export`.  You will always see `export` used in the shell config scripts (i.e. `.bash_rc`), and the simpler variable assignment in shell scripts.
 
 ```bash
-export zz=2
+$ export zz=2
 ```
 
 
 ## Getting help
 
 ```bash
-man ls
+$ man ls
 ```
 
 
 ## Where is this thing?
 
 ```bash
-which ls
+$ which ls
 ```
 
 
@@ -231,13 +239,13 @@ which ls
 
 Locations the shell checks when you type a command.  You can think of adding a location to your `PATH` as installing a program.
 
-`echo $PATH | tr ":" "\n"`
+`$ echo $PATH | tr ":" "\n"`
 
-`export PATH=$PATH:$SPARK_HOME/bin`
+`$ export PATH=$PATH:$SPARK_HOME/bin`
 
 A common pattern you will see in install scripts
 
-`echo 'export PATH=$PATH:$SPARK_HOME/bin' >> ~/.bashrc`
+`$ echo 'export PATH=$PATH:$SPARK_HOME/bin' >> ~/.bashrc`
 
 
 ## Shebang
@@ -265,7 +273,7 @@ $ ./myfile
 Running file / loading a file into your bash environment
 
 ```bash
-source myfile
+$ source myfile
 ```
 
 
@@ -319,50 +327,48 @@ Generate project structure for use in a readme
 
 ```bash
 # append
-tree >> out.txt
+$ tree >> out.txt
 
 # new file
-tree > out.txt
+$ tree > out.txt
 ```
 
 Another common pattern is generating a requirements file for a Python project
 
 ```bash
-pip freeze > requirements.txt
+$ pip freeze > requirements.txt
 ```
 
 You can also put the redirection at the start
 
 ```bash
-> out.txt tree
+$ > out.txt tree
 ```
 
 
 ## Find a class/function in a project
 
-`grep` is one of the UNIX searching tools
+`grep` is one of the UNIX searching tools.
+
+Search for the string "MyClass" inside a file, recursively, and return a list of files:
 
 ```bash
-grep -rl MyClass .
+$ grep -rl "MyClass"" .
 ```
 
-Below we use a wildcard `*`
+You can search by filename:
 
 ```bash
-ls */*.png
-```
-
-```bash
-find . -name ".bashrc"
+$ find . -name ".bashrc"
 ```
 
 
 ## Piping
 
 ```bash
-pip freeze | grep numpy
+$ pip freeze | grep numpy
 
-grep -rl LSTM . | grep -v __pycache__ | grep -v .ipynb_checkpoints
+$ grep -rl LSTM . | grep -v __pycache__ | grep -v .ipynb_checkpoints
 ```
 
 
@@ -373,29 +379,27 @@ Very important skill to work on remote machines
 The basic syntax for SSH is
 
 ```bash
-ssh USER@HOSTNAME
+$ ssh USER@HOSTNAME
 ```
 
 Commonly if you are using AWS you will SSH while also passing your private key
 
 ```bash
-ssh -i ~/.ssh/key.pem -tt ubuntu@ec2-54-93-188-105.eu-central-1.compute.amazonaws.com
+$ ssh -i ~/.ssh/key.pem -tt ubuntu@ec2-54-93-188-105.eu-central-1.compute.amazonaws.com
 ```
 
 
 ## SSH tunneling for Jupyter
 
 ```bash
-ssh -N -L localhost:8888:localhost:8888 $USER@$HOST
+$ ssh -N -L localhost:8888:localhost:8888 $USER@$HOST
 ```
 
 
 ## Dotfiles repo
 
-Common to backup your dotfiles on GitHub
+Common to backup your dotfiles on GitHub - [you can find my dotfiles here](https://github.com/ADGEfficiency/dotfiles).
 - you can clone this onto a remote machine & source your dotfiles!
-
-[My dotfiles here](https://github.com/ADGEfficiency/dotfiles)
 
 
 ## `wget`
@@ -403,10 +407,12 @@ Common to backup your dotfiles on GitHub
 Downloads files served with HTTP, HTTPS, or FTP over a network
 
 ```bash
-wget https://news.ycombinator.com/y18.gif
+$ wget https://news.ycombinator.com/y18.gif
 ```
 
 
 ## Viewing `.csv` files
 
-cat raw-data/specs.csv | column -t -s, | less -S
+```bash
+$ cat raw-data/specs.csv | column -t -s, | less -S
+```

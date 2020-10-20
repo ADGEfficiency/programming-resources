@@ -49,7 +49,8 @@ Richard Hamming - You and Your Research - [lecture](https://www.cs.virginia.edu/
 ## History of programming
 
 [History of Programming Language Conference](https://hopl4.sigplan.org/track/hopl-4-papers#History-of-HOPL)
-- [Haskell](https://dl.acm.org/doi/pdf/10.1145/1238844.1238856)
+
+[An opinionated history of programming languages](https://artagnon.com/articles/pl)
 
 [Is It Time to Rewrite the Operating System in Rust? - Bryan Cantrill - 2018](https://www.youtube.com/watch?v=HgtRAbE1nBM&list=WL&index=3&t=0s)
 
@@ -75,6 +76,10 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 
 ## Blogs
+
+[Cat on Mat](https://catonmat.net/)
+
+[dwmkerr.com](https://dwmkerr.com/)
 
 [The Clean Code Blog - Robert C. Martin (Uncle Bob)](http://blog.cleancoder.com/)
 - [Classes vs. Data Structures](http://blog.cleancoder.com/uncle-bob/2019/06/16/ObjectsAndDataStructures.html)

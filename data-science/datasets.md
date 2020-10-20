@@ -1,6 +1,6 @@
 # Datasets
 
-Where to find data!
+*Where to find data*
 
 [NIMH Data Archive](https://nda.nih.gov/) - National Institute of Mental Health Data Archive (NDA) makes available human subjects data collected from hundreds of research projects across many scientific domains
 
@@ -19,3 +19,14 @@ Where to find data!
 [Common crawl](https://commoncrawl.org/) - an open repository of web crawl data that can be accessed and analyzed by anyone
 
 [List of datasets for machine-learning research - Wikipedia](https://en.wikipedia.org/wiki/List_of_datasets_for_machine-learning_research)
+
+[roboflow](https://public.roboflow.com/) - free public computer vision datasets in many popular formats
+
+[awesomedata/awesome-public-datasets ](https://github.com/awesomedata/awesome-public-datasets)
+
+
+## Energy specific
+
+[Open EI](https://openei.org/wiki/Main_Page) - Linked energy information on hundreds of topics crowdsourced from industry and government agencies.
+
+[Energydata.info](https://energydata.info/)

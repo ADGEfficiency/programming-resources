@@ -36,3 +36,8 @@ owner : /people/564}
 ## MDN Docs
 
 - HTML - [text](https://developer.mozilla.org/en-US/docs/Learn/HTML)
+
+
+## Vue
+
+[Building a multilingual blog using Nuxt and Markdown - Marina Aisa - Vue Day 2019](https://www.youtube.com/watch?v=qOjbRDVQzH8)

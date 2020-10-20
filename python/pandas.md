@@ -7,6 +7,16 @@ If you need to iteratively add rows, it's better to maintain a Python list/dict 
 
 Explicitly designate both rows and columns (even if its just with a `:`)
 
+[pandas and friends - Marc Garcia](https://youtu.be/PQPv_4rOWe4)
+
+What is SQL not good at:
+- interactive
+- data not in a database (CSV etc)
+- managing complexity
+- unstructured or schemaless data
+- complex / nested data structures
+- specalized functionality (custom filling of missing values etc)
+
 Marc Garcia - Towards Pandas 1.0 - [youtube](https://www.youtube.com/watch?v=hK6o_TDXXN8)
 
 Jeff Reback - What is the Future of Pandas (2017) - [youtube](https://www.youtube.com/watch?v=_-gJtO0XR48)

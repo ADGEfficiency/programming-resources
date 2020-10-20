@@ -22,7 +22,13 @@
 
 [Fluent Python - Luciano Ramalho](http://shop.oreilly.com/product/0636920032519.do)
 
+## Useful tools
+
+[argparse builder](https://blog.rfox.eu/en/Programming/Tools_I_use/Tools_I_use_argparse_builder.html) - a simple graphical interface for quick creation of the argparse commandline switches for your scripts
+
 ## Blog posts
+
+[How to Write Beautiful Python Code With PEP 8](https://realpython.com/python-pep8/) from Real Python.
 
 How to set up a perfect Python project - Brendan Maginnis - [text](https://sourcery.ai/blog/python-best-practices/)
 

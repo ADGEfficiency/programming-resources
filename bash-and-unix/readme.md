@@ -1,44 +1,71 @@
-Bash One-Liners Explained - [part one](https://catonmat.net/bash-one-liners-explained-part-one)
+# Bash, UNIX & the Command Line
 
-```bash
-$ mv /path/to/file{,_old}
-# expands to:
-mv /path/to/file /path/to/file_old
-```
+These notes are organized as follows:
+- [intro.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md) - basics of the shell for complete beginners
+- [unix-philosohpy.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md) - introduction to the philosophy of UNIX
+
+![](assets/1883-Böcklin-Die-Toteninsel.jpg)
+
+<i>Die Toteninsel - Arnold Böcklin - 1883</i>
+
+
+## Resources
+
+You can also find hard copies of additional resources in [programming-resources/bash-and-unix/resources](https://github.com/ADGEfficiency/programming-resources/tree/master/bash-and-unix/resources).
+
+### References
+
+[UNIX Toolbox](http://cb.vu/unixtoolbox.xhtml) - collection of Unix/Linux/BSD commands and tasks (like a cheat sheet)
+
+[The Bash Hackers Wiki](https://wiki.bash-hackers.org/) - documentation of any kind about GNU Bash. The main motivation was to provide human-readable documentation and information so users aren't forced to read every bit of the Bash manpage.
+
+[The Architecture of Open Source Applications: The Bourne-Again Shell](http://www.aosabook.org/en/bash.html) - bash's major components: input processing, parsing, the various word expansions and other command processing, and command execution, from the pipeline perspective
+
+### History
 
 [Non-POSIX file systems](https://weinholt.se/articles/non-posix-filesystems/)
 
-[Effective Shell Part 7: The Subtleties of Shell Commands](https://dwmkerr.com/effective-shell-7-shell-commands/)
-
-[UNIX Toolbox](http://cb.vu/unixtoolbox.xhtml)
-[The Bash Hackers Wiki](https://wiki.bash-hackers.org/)
-
-[Clear Your Terminal in Style](https://adammusciano.com/2020/03/04/2020-03-04-clear-your-terminal-in-style/)
-
-[The Architecture of Open Source Applications: The Bourne-Again Shell](http://www.aosabook.org/en/bash.html)
-
-[DataCamp Introduction to Shell for Data Science - Datacamp Course](https://www.datacamp.com/courses/introduction-to-shell-for-data-science)
-
-Best things in your bash_profile/aliases? - [Hacker News](https://news.ycombinator.com/item?id=18898523)
-
-[Unix for Poets](https://www.cs.upc.edu/~padro/Unixforpoets.pdf)
-
 [Unix at 50: How the OS that powered smartphones started from failure - Ars Technica](https://arstechnica.com/gadgets/2019/08/unix-at-50-it-starts-with-a-mainframe-a-gator-and-three-dedicated-researchers/)
-
-[The Bourne-Again Shell - The Architecture of Open Source Applications](http://www.aosabook.org/en/bash.html)
-
-[jlevy/the-art-of-command-line](https://github.com/jlevy/the-art-of-command-line)
-
-[Six glorious commands worth getting to know](https://astrobiomike.github.io/bash/six_commands#tr)
-
-[A Beautifully Productive Terminal Experience](https://mikebuss.com/2014/02/02/a-beautiful-productive-terminal-experience/)
-
-[Switching from bash to zsh](https://www.chenhuijing.com/blog/bash-to-zsh/#%F0%9F%91%BE)
-
-[An Illustrated Guide to Useful Command Line Tools](https://www.wezm.net/technical/2019/10/useful-command-line-tools/)
 
 [Ken Thompson's Unix password](https://leahneukirchen.org/blog/archive/2019/10/ken-thompson-s-unix-password.html)
 
+[Pipe: How the System Call That Ties Unix Together Came About](https://thenewstack.io/pipe-how-the-system-call-that-ties-unix-together-came-about/)
+
+### Courses
+
+[DataCamp Introduction to Shell for Data Science - Datacamp Course](https://www.datacamp.com/courses/introduction-to-shell-for-data-science)
+
+### Blog Posts / Discussions
+
 [The beauty of Unix pipelines](https://prithu.xyz/posts/unix-pipeline/)
 
-[Pipe: How the System Call That Ties Unix Together Came About](https://thenewstack.io/pipe-how-the-system-call-that-ties-unix-together-came-about/)
+Best things in your bash_profile/aliases? - [Hacker News](https://news.ycombinator.com/item?id=18898523)
+
+[Six glorious commands worth getting to know](https://astrobiomike.github.io/bash/six_commands#tr)
+
+[An Illustrated Guide to Useful Command Line Tools](https://www.wezm.net/technical/2019/10/useful-command-line-tools/)
+
+### Guides
+
+[Unix for Poets](https://www.cs.upc.edu/~padro/Unixforpoets.pdf) - text processing guide
+
+[jlevy/the-art-of-command-line](https://github.com/jlevy/the-art-of-command-line) - a selection of notes and tips on using the command-line that we've found useful when working on Linux
+
+Cat On Mat - Bash One-Liners Explained
+-[part one](https://catonmat.net/bash-one-liners-explained-part-one) - working with files
+-[part two](https://catonmat.net/bash-one-liners-explained-part-two) - working with strings
+-[part three](https://catonmat.net/bash-one-liners-explained-part-three) - redirections
+-[part four](https://catonmat.net/bash-one-liners-explained-part-four) - history
+-[part five](https://catonmat.net/bash-one-liners-explained-part-five) - navigation
+
+dwmkerr.com - Effective Shell
+- [Part 1: Navigating the Command Line](https://www.dwmkerr.com/effective-shell-part-1-navigating-the-command-line/)
+- [Part 2: Become a Clipboard Gymnast](https://www.dwmkerr.com/effective-shell-part-2-become-a-clipboard-gymnast/)
+- [Part 3: Getting Help](https://www.dwmkerr.com/effective-shell-part-3-getting-hepl/)
+- [Part 4: Moving Around](https://dwmkerr.com/effective-shell-4-moving-around/)
+- [Part 5: Interlude - Understanding the Shell](https://dwmkerr.com/effective-shell-part-5-understanding-the-shell/)
+- [Part 6: Everything You Don't Need to Know About Job Control](https://dwmkerr.com/effective-shell-6-job-control/)
+- [Part 7: The Subtleties of Shell Commands](https://dwmkerr.com/effective-shell-7-shell-commands/)
+
+### Interesting reading
+

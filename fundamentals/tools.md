@@ -135,8 +135,9 @@ Crucial part of using computers well
 
 ### Terminal
 
-A program that run-
-Program to input / output text to a sh
+A program that runs other programs
+
+Program to input / output text to a shell
 - also called a *tty*
 
 There are different terminal emulators
@@ -157,7 +158,7 @@ If you want your shell to look pretty - check out [Powerline](https://github.com
 
 [Shell](https://en.wikipedia.org/wiki/Shell_(computing))
 
-A program that processes commands & returns
+A program that processes commands & returns output
 
 There are different shell programs
 - `bash` - standard, available everywhere
@@ -308,6 +309,3 @@ Common workflow
 - get data (S3)
 - run Python scripts
 - transfer data
-
-
-

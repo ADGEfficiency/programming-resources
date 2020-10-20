@@ -1,3 +1,59 @@
+# awk
+
+[Brian Kernighan on successful language design](https://www.youtube.com/watch?v=Sg4U4r_AgJU)
+
+One or two line programs that can be written on the command line
+
+Selection and validation
+- print all lines longer than 80 characters
+
+```bash
+length > 80
+```
+
+Transform & rearrange
+- replace second field by it's log
+
+```bash
+{ $2 = log($2) ; print }
+```
+
+Summarize
+- add numbers in first field, print sum and average
+
+```bash
+	{ sum += 1 }
+END { print sum, sum/NR }
+```
+
+`awk $3 > 6`
+
+## Pattern-action
+
+Common paradigm (also followed by `sed` and `grep`)
+
+```bash
+pattern { action }
+
+awk 'program' [ file1 file2 ... ]
+awk -f program_file [ file1 file2 ... ]
+
+for each file
+	for each input line
+		for each pattern
+			if pattern matches input line
+				do action
+```
+
+Lines are split into fields
+
+- `$1, $2`
+- `$0` for entire line
+
+
+[Why Learn AWK?](https://blog.jpalardy.com/posts/why-learn-awk/)
+
+
 [learnbyexample/learn_gnuawk](https://github.com/learnbyexample/learn_gnuawk/blob/master/gnu_awk.md)
 
 https://lwn.net/SubscriberLink/820829/5bf9bf8bb9d6f2bf/

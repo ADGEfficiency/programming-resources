@@ -1,6 +1,6 @@
-## The Unix Philosophy
+# The Unix Philosophy
 
-https://en.wikipedia.org/wiki/Unix_philosophy
+[Wiki](https://en.wikipedia.org/wiki/Unix_philosophy)
 
 Unix philosophy is as important as Unix itself - it is a set cultural of norms for developing software
 
