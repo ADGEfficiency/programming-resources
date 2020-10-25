@@ -2,6 +2,18 @@
 
 `$` indicates a command is run in the shell - you don't need to write this!
 
+## Spaces
+
+Shell uses space to separate things - this can complicate other times we want to use spaces
+- expands by default (scripts will break with spaces)
+- quotes to control expansion
+
+```bash
+$ "this is fine"
+
+$ this will cause problems
+```
+
 ## Where am I?
 
 Which directory am I in?

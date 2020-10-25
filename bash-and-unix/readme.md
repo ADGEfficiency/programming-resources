@@ -1,12 +1,13 @@
-# Bash, UNIX & the Command Line
+# Bash & UNIX 
 
-These notes are organized as follows:
-- [intro.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md) - basics of the shell for complete beginners
-- [unix-philosohpy.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md) - introduction to the philosophy of UNIX
+- [intro.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md) - basics of the shell for beginners
+- [unix-philosohpy.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/unix-philosophy.md) - the philosophy of UNIX
+- [working-with-data.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/unix-philosophy.md) - patterns for working with data in a shell
+- [advanced.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/advanced.md) - advanced tips & tricks
 
-![](assets/1883-Böcklin-Die-Toteninsel.jpg)
+![](berlin-wall.jpg)
 
-<i>Die Toteninsel - Arnold Böcklin - 1883</i>
+<p align="center"><i>Eastside Gallery - Berlin, 2019</i></p>
 
 
 ## Resources
@@ -44,6 +45,12 @@ Best things in your bash_profile/aliases? - [Hacker News](https://news.ycombinat
 [Six glorious commands worth getting to know](https://astrobiomike.github.io/bash/six_commands#tr)
 
 [An Illustrated Guide to Useful Command Line Tools](https://www.wezm.net/technical/2019/10/useful-command-line-tools/)
+
+### Talks
+
+UNIX shell expansion: proper use and advanced forms - Tyson Whitehead - [talk](https://youtu.be/GXu1bZptwf4)
+
+Concise GNU Bash: An Introduction to Advanced Usage - James Panacciulli @ LinuxFest Northwest 2017- [talk](https://youtu.be/BJ0uHhBkzOQ) - [slides](http://talk.jpnc.info/bash_lfnw_2017.pdf)
 
 ### Guides
 

@@ -1,24 +1,14 @@
-https://www.youtube.com/watch?v=BJ0uHhBkzOQ&list=WL&index=5&t=2833s
+## xargs
 
-man
+Fixes the following problems
+- some commands don't read from STDIN, pipe or file
+- limit on the number of arguments
 
-aliases
+xargs
+- converts STDIN into literal args
+- partitions args & runs them separately
 
-word, list, name, parameter
 
-return status code / error
+## GNU Parallel
 
-$ = expansion
-? = previous command
-
-list operaters (; & && ||)
-
-if
-
-tests [[ ]]
-
-pattern matching
-
-parameters (min 25)
-- positional 
-- special
+Similar to xargs, except in parallel

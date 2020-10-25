@@ -1,4 +1,6 @@
-## Working with data
+# Working with data
+
+## CSVs
 
 Select second column from a csv
 
@@ -6,6 +8,9 @@ Select second column from a csv
 
 `-f` fields (aka columns)
 `-d` delimiter
+
+
+## Unique values & counts
 
 Get unique values (`uniq` will only consolidate entries right after each other to save memory)
 
@@ -18,4 +23,3 @@ Sort by counts
 `-k1,1` sort using column 1
 `-n` numerically
 `-r` reverse
-
