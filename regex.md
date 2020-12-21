@@ -7,6 +7,12 @@ Expressions that match patterns
 
 Match on the entire line
 
+
+## Useful patterns
+
+`\d+` find a digit of any length
+
+
 ## Matches
 
 `.` match any character

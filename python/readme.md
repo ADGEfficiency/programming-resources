@@ -6,11 +6,13 @@
 
 [An Effective Python Environment: Making Yourself at Home - Real Python](https://realpython.com/effective-python-environment/)
 
+
 ## Courses
 
 [Google Python course](https://developers.google.com/edu/python/introduction)
 
 [Learn Python the Hard Way](https://learnpythonthehardway.org)
+
 
 ## Textbooks
 
@@ -22,9 +24,11 @@
 
 [Fluent Python - Luciano Ramalho](http://shop.oreilly.com/product/0636920032519.do)
 
+
 ## Useful tools
 
 [argparse builder](https://blog.rfox.eu/en/Programming/Tools_I_use/Tools_I_use_argparse_builder.html) - a simple graphical interface for quick creation of the argparse commandline switches for your scripts
+
 
 ## Blog posts
 
@@ -34,13 +38,17 @@ How to set up a perfect Python project - Brendan Maginnis - [text](https://sourc
 
 [Python’s Innards: Introduction](https://tech.blog.aknin.name/2010/04/02/pythons-innards-introduction/)
 
+
 ## Code Examples
 
 krother/advanced_python - [github](https://github.com/krother/advanced_python)
 
 krother/software-engineering-python - [github](https://github.com/krother/software-engineering-python)
 
+
 ## Talks
+
+[How to Write Python Code Others Like to Use - Anna Tisch - Kiwi Pycon X](https://youtu.be/xZSGo4vM-ok)
 
 [Top to down, left to right (Surprise talk) - James Powell](https://youtu.be/BRn6UCw35og)
 
@@ -86,4 +94,35 @@ Raymond Hettingier - Python's Class Development Toolkit - [youtube](https://www.
 Raymond Hettingier - Modern solvers: Problems well-defined are problems solved - PyCon 2019 - [youtube](https://www.youtube.com/watch?v=_GP9OpZPUYc)
 
 Jeff Reback - What is the Future of Pandas - [youtube](https://www.youtube.com/watch?v=_-gJtO0XR48)
+
+["Python Oddities Explained" - Trey Hunner (PyCon AU 2019)](https://youtu.be/4MCT4WLf7Ac?t=35)
+
+
+Python is not block scoped
+- list comprehensions have their own scope
+- for loops don't have their own scope
+
+Two ways to change things in Py
+- change variable (assignment)
+- change object (mutation)
+
+Can read globals always
+- can't assign to globals in local scope
+
+Scope matters with assignment, not with mutation
+
+Lists don't contain objects, they contain references to memory locations
+
+```python
+x = []
+x.append(x)
+```
+
+Variables don't contain objects, they are names that point to objects
+
+`+=` on lists & tuples
+- will not mutate tuples (instead create new object)
+- will mutate lists (same object mutated)
+
+Duck typing
 

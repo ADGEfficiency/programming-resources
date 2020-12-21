@@ -242,8 +242,19 @@ Configurability is the root of all evil
 - adding configuration options = program was too stupid to figure out what is best for user
 - subjective configuration (ie colorscheme) only
 
+Symmetry in API's
+
+- upload & download
+- create & delete
+- allows chainable operations - what comes out can be put directly into the next operation
+
+If you users are writing loops, these are things you can do internally in your API
+
+API's that are convenient for your users can require lots more work on your part!
+
 *Further reading*
 
+- [How to Write Python Code Others Like to Use - Anna Tisch - Kiwi Pycon X](https://youtu.be/xZSGo4vM-ok)
 - [python.apichecklist.com](http://python.apichecklist.com)
 - [keras-team/governance/keras_api_design_guidelines.md](https://github.com/keras-team/governance/blob/master/keras_api_design_guidelines.md)
 - [Notes to Myself on Software Engineering - François Chollet](https://medium.com/s/story/notes-to-myself-on-software-engineering-c890f16f4e4d)
@@ -328,10 +339,14 @@ A special text file
 - why this library exists
 - what problem it solves
 
-Readme driven design 
+Readme driven development 
 - write readme before the code
 - write the API / interface before the code
+- write the tutorial before the code
 - write sample code for the most common use cases
+
+*Further reading*
+- [Readme Driven Development](https://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
 
 
 ## Testing
@@ -749,7 +764,7 @@ Debugging strategies
 
 ## Programming is iterative
 
-> One trouble with much of programming is simply that often there is not a well - defined job to be done ; rather , the programming process itself will gradually discover what the problem is! - RICHARD HAMMING
+> One trouble with much of programming is simply that often there is not a well - defined job to be done ; rather, the programming process itself will gradually discover what the problem is! - RICHARD HAMMING
 
 No one gets a program correct the first time
 - implement new ideas in parallel with the old ones, rather than mutating the existing code
@@ -807,6 +822,7 @@ Further reading:
 - [3 Kinds of Good Tech Debt](https://engineering.squarespace.com/blog/2019/three-kinds-of-good-tech-debt)
 - [2014_Sculley_ML_technical_debt](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf)
 - [2014_Sculley_ml_high_interest_credit_card.pdf](https://research.google/pubs/pub43146/)
+- [Technical debt as a lack of understanding](https://daverupert.com/2020/11/technical-debt-as-a-lack-of-understanding/)
 
 
 ## Refactoring

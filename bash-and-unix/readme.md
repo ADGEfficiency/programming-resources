@@ -24,6 +24,8 @@ You can also find hard copies of additional resources in [programming-resources/
 
 ### History
 
+[Origin of the Shell](https://multicians.org/shell.html)
+
 [Non-POSIX file systems](https://weinholt.se/articles/non-posix-filesystems/)
 
 [Unix at 50: How the OS that powered smartphones started from failure - Ars Technica](https://arstechnica.com/gadgets/2019/08/unix-at-50-it-starts-with-a-mainframe-a-gator-and-three-dedicated-researchers/)

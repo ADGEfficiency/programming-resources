@@ -1,3 +1,8 @@
+https://www.intricatecloud.io/2018/11/writing-quick-and-dirty-scripts-using-bash/
+
+https://github.com/DigitalMachinist/win-zsh
+
+
 ## xargs
 
 Fixes the following problems

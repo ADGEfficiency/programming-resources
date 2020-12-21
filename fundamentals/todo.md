@@ -1,3 +1,10 @@
+Type = assert checked at compile time
+
+Symtatic sugar = something already in the language that you can do another way
+
+https://daverupert.com/2020/11/technical-debt-as-a-lack-of-understanding/
+https://news.ycombinator.com/item?id=25008587
+
 ## Design patterns
 
 TODO

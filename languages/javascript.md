@@ -1,5 +1,6 @@
 [Deep JavaScript: Theory and techniques](https://exploringjs.com/deep-js/)
 
+[The Modern JavaScript Tutorial](https://javascript.info/)
 
 [Learn JavaScript in 12 Minutes](https://www.youtube.com/watch?v=Ukg_U3CnJWI)
 

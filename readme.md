@@ -99,6 +99,7 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 [The Digital Cat](https://www.thedigitalcatonline.com/)
 
+
 ## Code challenges
 
 [codewars](https://www.codewars.com/)
@@ -149,6 +150,11 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 - [Bjarne Stroustrup: C++](https://youtu.be/uTxRF5ag27A)
 - [David Patterson: Computer Architecture and Data Storage](https://youtu.be/naed4C4hfAg)
 - [Jim Keller: Moore's Law, Microprocessors, Abstractions, and First Principles](https://www.youtube.com/watch?v=Nb2tebYAaOA)
+- [James Gosling: Java, JVM, Emacs, and the Early Days of Computing](https://youtu.be/IT__Nrr3PNI)
+- [Chris Lattner: The Future of Computing and Programming Languages](https://www.youtube.com/watch?v=nWTvXbQHwWs)
+- [Brian Kernighan: UNIX, C, AWK, AMPL, and Go Programming](https://youtu.be/O9upVbGSBFo)
+- [Guido van Rossum: Python](https://www.youtube.com/watch?v=ghwaIiE3Nd8)
+- [Algorithms and Computational Complexity: Richard Karp](https://youtu.be/KllCrlfLuzs)
 
 [Talk Python To Me](https://talkpython.fm/)
 - [Why is Python Slow?](https://talkpython.fm/episodes/show/265/why-is-python-slow)

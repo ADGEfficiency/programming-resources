@@ -181,6 +181,27 @@ Kernel - restart & run all
 Keyboard shortcuts
 - `a`, `b`, `dd` are the most important
 
+Toggle Sidebar `Cmd B`
+
+Close window `Alt W`
+
+### Text mode
+
+Undo text `Cmd Z`
+Redo text `Shift Cmd Z`
+
+Undo cell `Z`
+Redo cell `Shift Z`
+
+### Command mode
+
+Insert cell 
+- above `a`
+- below `b`
+
+Delete cell `dd`
+
+
 Split views
 - notebooks, shell, file explorer
 

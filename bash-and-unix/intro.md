@@ -2,6 +2,7 @@
 
 `$` indicates a command is run in the shell - you don't need to write this!
 
+
 ## Spaces
 
 Shell uses space to separate things - this can complicate other times we want to use spaces
@@ -13,6 +14,7 @@ $ "this is fine"
 
 $ this will cause problems
 ```
+
 
 ## Where am I?
 
@@ -48,6 +50,7 @@ Clear the terminal
 ```bash
 $ clear
 ```
+
 
 ## Making and editing files
 

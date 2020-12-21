@@ -25,3 +25,5 @@ d = {
 for k, v in sorted(d.items()):
      print(k, sys.getsizeof(v))
 ```
+
+

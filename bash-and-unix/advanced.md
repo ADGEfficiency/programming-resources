@@ -39,6 +39,33 @@ $ popd
 `one || two` only run two if one fails
 
 
+## Infomation from last command
+
+`!$` last element of previous command
+
+`!:3` third
+
+`!*` all
+
+`!!` entire command
+
+## Replace in last command
+
+```bash
+$ cat _drafts/file.md
+
+$ ^draft^note
+cat _notes/file.md
+```
+
+Same as
+
+```bash
+$ !!:gs/draft/note/
+
+$ !:gs/draft/note/
+```
+
 ## Wildcards & patterns
 
 `*` matches any character
