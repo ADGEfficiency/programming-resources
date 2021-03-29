@@ -1,8 +1,9 @@
 [andkret/Cookbook](https://github.com/andkret/Cookbook) - The Data Engineering Cookbook
+- hit and miss, early chapters are better
 
 [Top 10 blog posts to help you transition to data engineering](https://blog.insightdatascience.com/top-10-blog-posts-to-help-you-transition-to-data-engineering-1db2312ecdaf)
 
-mara /mara-pipelines - a lightweight data transformation framework with a focus on transparency and complexity reduction [github](https://github.com/mara/mara-pipelines)
+`mara/mara-pipelines` - a lightweight data transformation framework with a focus on transparency and complexity reduction [github](https://github.com/mara/mara-pipelines)
 
 
 ## Daniel Molnar talks
@@ -11,8 +12,7 @@ Berlin Buzzwords 2016
 - [slides](https://www.slideshare.net/soobrosa/migrating-a-data-stack-from-aws-to-azure-via-raspberry-pi)
 - [talk](https://www.youtube.com/watch?time_continue=378&v=QhXPANTd9nE&feature=emb_logo)
 
-
-[slides](https://www.slideshare.net/soobrosa/data-janitor-101)
+Data Janitor 101 - [slides](https://www.slideshare.net/soobrosa/data-janitor-101)
 
 emphasis on data quality
 

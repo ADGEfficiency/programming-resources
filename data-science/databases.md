@@ -6,6 +6,14 @@
 
 [Terrifically Simple JSON](https://github.com/mpnally/Terrifically-Simple-JSON)
 
+## SQLite
+
+https://sqlite.org/lpc2019/doc/trunk/briefing.md - a briefing on SQLite intended for Linux kernel hackers, and especially those working on Linux filesystems
+- subroutine in same process
+- same heap & stack
+
+
+
 ## SQL
 
 [SQL Zoo](https://sqlzoo.net/)

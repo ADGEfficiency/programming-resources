@@ -1,5 +1,7 @@
 [Data Science from Scratch](https://www.oreilly.com/library/view/data-science-from/9781492041122/)
 
+[How we scaled data science to all sides of Airbnb over 5 years of hypergrowth](https://venturebeat.com/2015/06/30/how-we-scaled-data-science-to-all-sides-of-airbnb-over-5-years-of-hypergrowth/)
+
 [drawdata.xyz](https://drawdata.xyz/) - Draw your Data and Download as CSV or JSON
 
 [What Does It Take to be a Successful Data Scientist?](https://hdsr.mitpress.mit.edu/pub/5irjez4q/)

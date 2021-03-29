@@ -1,3 +1,4 @@
+
 [Things I Learnt from a Senior Software Engineer - Neil Kakkar](https://neilkakkar.com/things-I-learnt-from-a-senior-dev.html)
 
 [The Marks of a True Senior Developer](https://medium.com/madhash/the-marks-of-a-true-senior-developer-d5f3b11c3375)
@@ -11,6 +12,13 @@
 [The Differences Between a Junior, Mid-Level, and Senior Developer](https://medium.com/better-programming/the-differences-between-a-junior-mid-level-and-senior-developer-bb2cb2eb000d)
 
 [Things I Learnt from a Senior Software Engineer](https://neilkakkar.com/things-I-learnt-from-a-senior-dev.html)
+
+## [What I’ve Learned in 45 Years in the Software Industry](https://www.bti360.com/what-ive-learned-in-45-years-in-the-software-industry/)
+
+- beware the curse of knowledge
+- simplicity
+- understand, then be understood
+- beware of technology lock in
 
 ## [12 Things I Learned During My First Year as a Machine Learning Engineer](https://towardsdatascience.com/12-things-i-learned-during-my-first-year-as-a-machine-learning-engineer-2991573a9195)
 

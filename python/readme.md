@@ -6,6 +6,8 @@
 
 [An Effective Python Environment: Making Yourself at Home - Real Python](https://realpython.com/effective-python-environment/)
 
+[Scipy Lecture Notes](https://scipy-lectures.org/index.html)
+
 
 ## Courses
 

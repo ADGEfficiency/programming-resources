@@ -1,3 +1,6 @@
+[Data-oriented Programming in Python](https://www.moderndescartes.com/essays/data_oriented_python/)
+
+
 [VECTORS, MATRICES, AND ARRAYS RECIPES IN PYTHON](https://dataisutopia.com/blog/vectors-matrices-and-arrays-recipes-in-python/)
 
 

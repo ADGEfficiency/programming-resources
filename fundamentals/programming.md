@@ -967,6 +967,9 @@ Simple baselines & models are important in data science
 
 **DRY** = don't repeat yourself
 
+*Further reading*
+- [Goodbye, Clean Code](https://overreacted.io/goodbye-clean-code/)
+
 
 ## Don't write code you don't need
 

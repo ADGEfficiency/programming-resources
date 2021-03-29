@@ -34,6 +34,8 @@ vimtutor
 
 [Vim 101: A Beginner's Guide to Vim](https://www.linux.com/learn/vim-101-beginners-guide-vim)
 
+[Steps to learn Vim](https://blog.joren.ga/tools/vim-learning-steps)
+
 ## Intermediate
 
 [Fcode VIM cheat sheet](https://www.fcodelabs.com/2018/12/08/Vim-Cheats/)
@@ -71,4 +73,6 @@ Vimways
 [Why, oh WHY, do those #?@! nutheads use vi? (blog post)](http://www.viemu.com/a-why-vi-vim.html)
 
 [A list of Vim's lists](https://noahfrederick.com/log/a-list-of-vims-lists
+
+[A Vim Guide for Advanced Users](https://thevaluable.dev/vim-advanced/)
 

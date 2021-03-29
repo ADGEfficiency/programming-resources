@@ -6,6 +6,8 @@ Test driven development is a software engineering philosophy - is isn't the only
 
 [Clean Architecture: A Craftsman's Guide to Software Structure and Design - Robert C. Martin](https://www.goodreads.com/book/show/18043011-clean-architecture)
 
+[Stargirl Flowers Python testing style guide](https://blog.thea.codes/my-python-testing-style-guide/)
+
 ## Criticism of TDD
 
 [Why most unit testing is a waste](https://rbcs-us.com/documents/Why-Most-Unit-Testing-is-Waste.pdf)

@@ -34,6 +34,11 @@ You can also find hard copies of additional resources in [programming-resources/
 
 [Pipe: How the System Call That Ties Unix Together Came About](https://thenewstack.io/pipe-how-the-system-call-that-ties-unix-together-came-about/)
 
+[The beauty of Unix pipelines](https://prithu.xyz/posts/unix-pipeline/)
+- [Hacker News discussion](https://news.ycombinator.com/item?id=23420786)
+
+[The Challenges of Integrating the Unix and Mac OS Environments](https://www.usenix.org/legacy/publications/library/proceedings/usenix2000/invitedtalks/sanchez_html/sanchez.html)
+
 ### Courses
 
 [DataCamp Introduction to Shell for Data Science - Datacamp Course](https://www.datacamp.com/courses/introduction-to-shell-for-data-science)
@@ -48,6 +53,8 @@ Best things in your bash_profile/aliases? - [Hacker News](https://news.ycombinat
 
 [An Illustrated Guide to Useful Command Line Tools](https://www.wezm.net/technical/2019/10/useful-command-line-tools/)
 
+[Ten Things I Wish I’d Known About bash](https://zwischenzugs.com/2018/01/06/ten-things-i-wish-id-known-about-bash/)
+
 ### Talks
 
 UNIX shell expansion: proper use and advanced forms - Tyson Whitehead - [talk](https://youtu.be/GXu1bZptwf4)
@@ -55,6 +62,10 @@ UNIX shell expansion: proper use and advanced forms - Tyson Whitehead - [talk](h
 Concise GNU Bash: An Introduction to Advanced Usage - James Panacciulli @ LinuxFest Northwest 2017- [talk](https://youtu.be/BJ0uHhBkzOQ) - [slides](http://talk.jpnc.info/bash_lfnw_2017.pdf)
 
 ### Guides
+
+[routeback/bashscripts](https://github.com/routeback/bashscripts) - a collection of GNU/Linux bash scripts
+
+[Bash Pitfalls](https://mywiki.wooledge.org/BashPitfalls) - a compilation of common mistakes made by bash users
 
 [Unix for Poets](https://www.cs.upc.edu/~padro/Unixforpoets.pdf) - text processing guide
 

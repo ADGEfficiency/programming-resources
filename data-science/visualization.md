@@ -20,3 +20,9 @@ https://www.d3-graph-gallery.com/
 [List of 20 Simple, Distinct Colors](https://sashamaps.net/docs/resources/20-colors/)
 
 [How to pick more beautiful colors for your data visualizations](https://blog.datawrapper.de/beautifulcolors/)
+
+
+## Streamlit
+
+docs - https://docs.streamlit.io/en/stable/
+ 

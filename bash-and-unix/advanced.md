@@ -77,6 +77,13 @@ $ !:gs/draft/note/
 `{1..4}` 1 2 3 4
 
 
+## Shell Parameter Expansion
+
+`${param}`
+
+[3.5.3 Shell Parameter Expansion](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html)
+
+
 ## Brace expansion
 
 Can't have spaces!

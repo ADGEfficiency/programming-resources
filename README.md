@@ -2,18 +2,20 @@
 
 A collection of programming resources, mainly relevant to the work of a data scientist.  If you like this, you might also like [rl-resources](https://github.com/ADGEfficiency/rl-resources) and [ml-resources](https://github.com/ADGEfficiency/ml-resources).
 
-Start here:
+
+## Fundamentals
 
 - [fundamentals/computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md)
 - [fundamentals/programming.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md)
 - [bash-and-unix/intro.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md)
 
 
-## Music for programming
+## Music for Programming
 
 [Project Audio for GitHub](https://github.audio/)
 
 [musicForProgramming](https://musicforprogramming.net/?about)
+
 
 ## Random
 
@@ -27,7 +29,7 @@ Start here:
 
 [Linus Torvalds on C++](http://harmful.cat-v.org/software/c++/linus)
 
-Honeypot docs
+Honeypot documentaries
 - [Ember.js](https://www.youtube.com/watch?v=Cvz-9ccflKQ)
 - [Vue.js](https://www.youtube.com/watch?v=OrxmtDw4pVI)
 - [GraphQL](https://www.youtube.com/watch?v=783ccP__No8)
@@ -44,7 +46,7 @@ Richard Hamming - You and Your Research - [lecture](https://www.cs.virginia.edu/
 
 [The Architecture of Open Source Applications](https://www.aosabook.org/en/index.html) - Architects look at thousands of buildings during their training, and study critiques of those buildings written by masters. In contrast, most software developers only ever get to know a handful of large programs well—usually programs they wrote themselves—and never study the great programs of history. As a result, they repeat one another's mistakes rather than building on one another's successes. 
 
-[Cities: Skylines is Turing Complete](https://medium.com/@balidani/cities-skylines-is-turing-complete-e5ccf75d1c3a)
+
 
 ## History of programming
 
@@ -58,6 +60,10 @@ Richard Hamming - You and Your Research - [lecture](https://www.cs.virginia.edu/
 
 
 ## Courses
+
+[calmcode.io](https://calmcode.io/) - video tutorials for modern ideas and open source tools (mostly Python)
+
+[ines/course-starter-python](https://github.com/ines/course-starter-python) - course framework for spaCy
 
 ./missing-semester - gain proficiency with computing systems (shell, editor, version control) - [notes](https://missing.csail.mit.edu/) - [lecture videos](https://www.youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J)
 - [Lecture 4: Data Wrangling (2020)](https://youtu.be/sz_dsktIjt4) - sed
@@ -100,7 +106,7 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 [The Digital Cat](https://www.thedigitalcatonline.com/)
 
 
-## Code challenges
+## Code Challenges
 
 [codewars](https://www.codewars.com/)
 
@@ -109,7 +115,7 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 [HackerRank](https://www.hackerrank.com)
 
 
-## Articles
+## Blog Posts & Articles
 
 [The Yoda of Silicon Valley](https://www.nytimes.com/2018/12/17/science/donald-knuth-computers-algorithms-programming.html)
 
@@ -125,6 +131,7 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 [When Larry Met Sergey](https://marker.medium.com/when-larry-met-sergey-8bfcdbace1f7)
 
+[Cities: Skylines is Turing Complete](https://medium.com/@balidani/cities-skylines-is-turing-complete-e5ccf75d1c3a)
 
 ## Books
 
@@ -146,17 +153,21 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 ## Podcasts
 
-[Artificial Intelligence (AI) Podcast - Lex Fridman](https://www.youtube.com/playlist?list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4):
+[Lex Fridman Podcast](https://www.youtube.com/playlist?list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4):
+
 - [Bjarne Stroustrup: C++](https://youtu.be/uTxRF5ag27A)
 - [David Patterson: Computer Architecture and Data Storage](https://youtu.be/naed4C4hfAg)
 - [Jim Keller: Moore's Law, Microprocessors, Abstractions, and First Principles](https://www.youtube.com/watch?v=Nb2tebYAaOA)
+- [Jim Keller: The Future of Computing, AI, Life, and Consciousness](https://youtu.be/G4hL5Om4IJ4)
 - [James Gosling: Java, JVM, Emacs, and the Early Days of Computing](https://youtu.be/IT__Nrr3PNI)
 - [Chris Lattner: The Future of Computing and Programming Languages](https://www.youtube.com/watch?v=nWTvXbQHwWs)
 - [Brian Kernighan: UNIX, C, AWK, AMPL, and Go Programming](https://youtu.be/O9upVbGSBFo)
 - [Guido van Rossum: Python](https://www.youtube.com/watch?v=ghwaIiE3Nd8)
-- [Algorithms and Computational Complexity: Richard Karp](https://youtu.be/KllCrlfLuzs)
+- [Richard Karp: Algorithms and Computational Complexity](https://youtu.be/KllCrlfLuzs)
+- [Brendan Eich: JavaScript, Firefox, Mozilla, and Brave](https://youtu.be/krB0enBeSiE)
 
 [Talk Python To Me](https://talkpython.fm/)
+
 - [Why is Python Slow?](https://talkpython.fm/episodes/show/265/why-is-python-slow)
 
 [Presentable](https://www.relay.fm/presentable) - how we design and build the products that are shaping our digital future
