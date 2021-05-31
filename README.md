@@ -1,23 +1,23 @@
 # Programming Resources
 
-A collection of programming resources, mainly relevant to the work of a data scientist.  If you like this, you might also like [rl-resources](https://github.com/ADGEfficiency/rl-resources) and [ml-resources](https://github.com/ADGEfficiency/ml-resources).
+A collection of programming resources, mainly relevant to the work of a data scientist.  These are my personal notes - you will often find my notes alongside links to articles.
+
+Many of these notes are also used for teaching - such as: 
+- [fundamentals/computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md), - [fundamentals/programming.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md),
+- [bash-and-unix/intro.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md),
+- [test-driven-development](https://github.com/ADGEfficiency/programming-resources/tree/master/test-driven-development).
+
+If you like this, you might also like [rl-resources](https://github.com/ADGEfficiency/rl-resources) and [ml-resources](https://github.com/ADGEfficiency/ml-resources) - which are similar collections on reinforcement learning and machine learning.
 
 
-## Fundamentals
+## Music to Listen to While Programming
 
-- [fundamentals/computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md)
-- [fundamentals/programming.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md)
-- [bash-and-unix/intro.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md)
-
-
-## Music for Programming
-
-[Project Audio for GitHub](https://github.audio/)
+[Project Audio for GitHub](https://github.audio/) - based on current activity on GitHub
 
 [musicForProgramming](https://musicforprogramming.net/?about)
 
 
-## Random
+## Random Cool Stuff
 
 [Screenshots from developers & Unix people (2002)](https://anders.unix.se/2015/10/28/screenshots-from-developers--unix-people-2002/)
 
@@ -29,7 +29,8 @@ A collection of programming resources, mainly relevant to the work of a data sci
 
 [Linus Torvalds on C++](http://harmful.cat-v.org/software/c++/linus)
 
-Honeypot documentaries
+Honeypot documentaries:
+
 - [Ember.js](https://www.youtube.com/watch?v=Cvz-9ccflKQ)
 - [Vue.js](https://www.youtube.com/watch?v=OrxmtDw4pVI)
 - [GraphQL](https://www.youtube.com/watch?v=783ccP__No8)
@@ -37,6 +38,7 @@ Honeypot documentaries
 [The Programmers' Stone](https://www.datapacrat.com/Opinion/Reciprocality/r0/index.html)
 
 [List of software development philosophies - Wikipedia](https://en.wikipedia.org/wiki/List_of_software_development_philosophies)
+- [Rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging)
 
 [dwmkerr/hacker-laws](https://github.com/dwmkerr/hacker-laws) - Laws, Theories, Principles and Patterns that developers will find useful.
 

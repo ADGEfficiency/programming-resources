@@ -99,7 +99,6 @@ Jeff Reback - What is the Future of Pandas - [youtube](https://www.youtube.com/w
 
 ["Python Oddities Explained" - Trey Hunner (PyCon AU 2019)](https://youtu.be/4MCT4WLf7Ac?t=35)
 
-
 Python is not block scoped
 - list comprehensions have their own scope
 - for loops don't have their own scope

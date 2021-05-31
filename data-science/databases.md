@@ -1,10 +1,13 @@
 [The Next 50 Years of Databases - 2015](http://www.cs.cmu.edu/~pavlo/blog/2015/09/the-next-50-years-of-databases.html)
 
+[Practical SQL for Data Analysis](https://hakibenita.com/sql-for-data-analysis) - What you can do without Pandas
+
 [Things I Wished More Developers Knew About Databases](https://medium.com/@rakyll/things-i-wished-more-developers-knew-about-databases-2d0178464f78)
 
 [Modern Data Lakes Overview](https://developer.sh/posts/delta-lake-and-iceberg)
 
 [Terrifically Simple JSON](https://github.com/mpnally/Terrifically-Simple-JSON)
+
 
 ## SQLite
 
@@ -30,21 +33,55 @@ https://sqlite.org/lpc2019/doc/trunk/briefing.md - a briefing on SQLite intended
 
 [We Can Do Better Than SQL](https://edgedb.com/blog/we-can-do-better-than-sql/)
 
+[What exactly does being proficient in SQL entail?](https://www.reddit.com/r/dataengineering/comments/k3ygzc/what_exactly_does_being_proficient_in_sql_entail/?utm_medium=android_app&utm_source=share)
+
 ## https://www.linkedin.com/posts/eric-weber-060397b7_data-statistics-datascience-activity-6667857833138229248-mg_6
 
-Basic:
-1. SELECT and WHERE for filtering and selection.
-2. COUNT, SUM, MAX for aggregating data.
-3. DISTINCT, GROUP BY, COUNT DISTINCT for producing useful distinct lists and distinct aggregates.
-4. LEFT and INNER JOIN when/where to use them.
+### Basic
 
-The use of UNION seemed to fall in basic for some, intermediate for others.
+SELECT and WHERE for filtering and selection
+
+COUNT, SUM, MAX, GROUP BY, HAVING for aggregating data"
+
+DISTINCT, COUNT DISTINCT for producing useful distinct lists and distinct aggregates
+
+OUTER (e.g. LEFT) and INNER JOIN when/where to use them
+
+Strings and time conversions
+
+UNION and UNION ALL.
+
+### Intermediate
+
+DML/DDL/DCL concepts
+
+Handling NULLs creatively (e.g. with COALESCE)
+
+Using LEFT AND INNER JOIN as a means of filtering without using the WHERE statements.
+
+Subqueries and the impact of subqueries on efficiency of the query. Some basic ability to tune the query.
+
+Temporary tables
+
+Self joins for leveraging a table against itself.
+
+Window functions like PARTITION, LEAD, LAG, NTILE
+
+UDFs (user defined functions)
+
+Use of indexes in querying to make operations faster.
+
+### Advanced
+
+Recursive CTEs
+
+Dynamic SQL generation
+
+Query optimization
+
+Materialized views
 
 Intermediate:
-1. Handling NULLs creatively (e.g. with COALESCE)
-2. Subqueries and the impact of subqueries on efficiency of the query. Some basic ability to tune the query.
-3. Using LEFT AND INNER JOIN as a means of filtering without using the WHERE statements.
-4. Self joins for leveraging a table against itself.
 
 Advanced:
 1. Use of indexes in querying to make operations faster.

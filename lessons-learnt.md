@@ -1,3 +1,4 @@
+[10 Years of Open-Source Visualization](https://observablehq.com/@mbostock/10-years-of-open-source-visualization)
 
 [Things I Learnt from a Senior Software Engineer - Neil Kakkar](https://neilkakkar.com/things-I-learnt-from-a-senior-dev.html)
 

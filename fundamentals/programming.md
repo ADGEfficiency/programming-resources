@@ -159,6 +159,7 @@ Something that is concrete is:
 - user does need to care about how it works on the inside - lets programmers focus on the important details
 - hiding a implementation (abstract away complexity)
 - move towards the idea of hierarchy rather than physical structure (i.e. inheritance)
+- erases differences, to focus on the commonalities that matter
 
 Good abstractions can allow good code
 - objects that map meaningfully to real world business problems (i.e. a `Customer` class)
@@ -1084,6 +1085,22 @@ Behaviour is changed by adding code - not changing existing code
 
 *Further reading*
 - SOLID principles of object objected and agile design - [youtube](https://www.youtube.com/watch?v=TMuno5RZNeE)
+
+
+## Debugging
+
+Print debugging has it's place
+- able to visualize the state of a program at different points in time
+- customizable view
+- also valuable in concurrent programs (parallel or asynchronous)
+
+Formalizing print debugging into logging allows post-event analysis of problems
+
+More powerful debuggers allow interactive programming at one point in time
+
+
+*Further reading*
+- [The unreasonable effectiveness of print debugging](https://buttondown.email/geoffreylitt/archive/starting-this-newsletter-print-debugging-byoc/) - [Hacker News Discussion](https://news.ycombinator.com/item?id=26925570)
 
 
 # Art of programming

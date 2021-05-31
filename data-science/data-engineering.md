@@ -1,9 +1,87 @@
+[CS329 - Lecture 3 - Data Engineering](https://docs.google.com/document/u/1/d/1b9iuZiDEGVLHyMmnf6w2y1aN6yWQhAyqk3GHlpI9q6M/mobilebasic)
+
+
 [andkret/Cookbook](https://github.com/andkret/Cookbook) - The Data Engineering Cookbook
 - hit and miss, early chapters are better
 
 [Top 10 blog posts to help you transition to data engineering](https://blog.insightdatascience.com/top-10-blog-posts-to-help-you-transition-to-data-engineering-1db2312ecdaf)
 
 `mara/mara-pipelines` - a lightweight data transformation framework with a focus on transparency and complexity reduction [github](https://github.com/mara/mara-pipelines)
+
+
+## [Stanford Seminar - Big Data is (at least) Four Different Problems](https://youtu.be/S79-buNhdhI)
+
+Michael Stonebreaker - created first RMDBS INGRES
+
+Big data
+- volume
+- velocity
+- + one other?
+
+Where will there be disruption in the big data market
+
+Data science versus BI analytics
+- BI analytics = SQL
+- petascale SQL is a solved problem
+- 500+ nodes, databases work well
+
+Column stores are faster (compression on the columns)
+- all databases offer this
+- performance + maturity + reliability differs a lot between offerings
+
+Warehouses are getting faster than resources are getting cheaper
+
+Data scientists will replace BI
+- predictive model or big table of numbers
+- BI = big table of number
+
+Take a decade to train enough data scientists
+
+Data science
+- data management - SQL (table) based calcs
+- complex analytics - array based calcs
+
+Example of calculating covariance between many stocks
+- equivalent to `stock * stock.T`
+- not a table calculation
+
+### How to support data science
+
+Option 1
+- Map Reduce + HDFS (2008)
+- dropped by Google in 2011 -> BigTable
+- 2015 officially abandoned
+
+2013
+- MapReduce is mostly SQL market (Hive)
+
+Option 2
+- spark
+
+Spark
+- no persistence
+- no sharing (data is copied)
+- no indexes
+- 70% is SQL
+- moves the data to the query (problem)
+
+Option 3
+- move query to data
+- use relational database for SQL
+- user defined functions for analytics
+- table to arry is expensive
+
+Option 4
+- use array based DMBS
+- most efficient long term solution
+
+https://youtu.be/S79-buNhdhI?t=1849
+
+Big velocity
+- complex event processing
+
+
+
 
 
 ## Daniel Molnar talks

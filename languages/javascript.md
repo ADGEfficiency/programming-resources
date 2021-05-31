@@ -1,5 +1,7 @@
 [Deep JavaScript: Theory and techniques](https://exploringjs.com/deep-js/)
 
+[Modern Javascript: Everything you missed over the last 10 years](https://turriate.com/articles/modern-javascript-everything-you-missed-over-10-years)
+
 [The Modern JavaScript Tutorial](https://javascript.info/)
 
 [Learn JavaScript in 12 Minutes](https://www.youtube.com/watch?v=Ukg_U3CnJWI)

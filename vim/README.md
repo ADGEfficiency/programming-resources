@@ -42,6 +42,12 @@ vimtutor
 
 [omerxx/vim-notebook](https://github.com/omerxx/vim-notebook/blob/master/VIM_NOTEBOOK.md) - theory, tips, and tricks after reading Drew Neil's Practical VIM & an unordered list of tips picked up along the way
 
+Valuable Dev Vim Guides
+
+- [A Vim Guide for Intermediate Users](https://thevaluable.dev/vim-intermediate/)
+- [A Vim Guide for Advanced Users](https://thevaluable.dev/vim-advanced/)
+- [A Vim Guide for Adept Users](https://thevaluable.dev/vim-adept/)
+
 https://mkaz.blog/code/working-with-vim/
 
 [Things About Vim I Wish I Knew Earlier](https://blog.petrzemek.net/2016/04/06/things-about-vim-i-wish-i-knew-earlier/)
