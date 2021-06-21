@@ -1,18 +1,23 @@
 # Programming Resources
 
-A collection of programming resources, mainly relevant to the work of a data scientist.  These are my personal notes - you will often find my notes alongside links to articles.
+A collection of programming resources, mainly relevant to the work of a data scientist.
 
-Many of these notes are also used for teaching - such as: 
+These are my personal notes - you will often find my notes and summaries alongside links to articles.
+
+Some of these notes are also used for teaching programming things:
+
 - [fundamentals/computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md), - [fundamentals/programming.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md),
 - [bash-and-unix/intro.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md),
 - [test-driven-development](https://github.com/ADGEfficiency/programming-resources/tree/master/test-driven-development).
 
-If you like this, you might also like [rl-resources](https://github.com/ADGEfficiency/rl-resources) and [ml-resources](https://github.com/ADGEfficiency/ml-resources) - which are similar collections on reinforcement learning and machine learning.
+I also maintain similar collections on reinforcement learning and machine learning - [rl-resources](https://github.com/ADGEfficiency/rl-resources) and [ml-resources](https://github.com/ADGEfficiency/ml-resources).
 
 
 ## Music to Listen to While Programming
 
-[Project Audio for GitHub](https://github.audio/) - based on current activity on GitHub
+[Project Audio for GitHub](https://github.audio/) - tracks events happening across GitHub and converts them to music notes.
+
+[Listen to Wikipedia](http://listen.hatnote.com/) - real-time visualization and sonification of Wikipedia activity.
 
 [musicForProgramming](https://musicforprogramming.net/?about)
 
@@ -85,6 +90,8 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 ## Blogs
 
+[Haki Benita](https://hakibenita.com/)
+
 [Cat on Mat](https://catonmat.net/)
 
 [dwmkerr.com](https://dwmkerr.com/)
@@ -135,6 +142,8 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 [Cities: Skylines is Turing Complete](https://medium.com/@balidani/cities-skylines-is-turing-complete-e5ccf75d1c3a)
 
+[How Notion pulled itself back from the brink of failure](https://www.figma.com/blog/design-on-a-deadline-how-notion-pulled-itself-back-from-the-brink-of-failure/)
+
 ## Books
 
 [A Mind at Play: How Claude Shannon Invented the Information Age](https://www.amazon.com/Mind-Play-Shannon-Invented-Information/dp/1476766681)
@@ -167,6 +176,7 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 - [Guido van Rossum: Python](https://www.youtube.com/watch?v=ghwaIiE3Nd8)
 - [Richard Karp: Algorithms and Computational Complexity](https://youtu.be/KllCrlfLuzs)
 - [Brendan Eich: JavaScript, Firefox, Mozilla, and Brave](https://youtu.be/krB0enBeSiE)
+- [Charles Hoskinson: Cardano](https://youtu.be/FKh8hjJNhWc)
 
 [Talk Python To Me](https://talkpython.fm/)
 

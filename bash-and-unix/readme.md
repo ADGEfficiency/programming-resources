@@ -18,6 +18,8 @@ You can also find hard copies of additional resources in [programming-resources/
 
 [UNIX Toolbox](http://cb.vu/unixtoolbox.xhtml) - collection of Unix/Linux/BSD commands and tasks (like a cheat sheet)
 
+[Modern Unix](https://github.com/ibraheemdev/modern-unix) - modern/faster/saner alternatives or complements to common unix commands
+
 [The Bash Hackers Wiki](https://wiki.bash-hackers.org/) - documentation of any kind about GNU Bash. The main motivation was to provide human-readable documentation and information so users aren't forced to read every bit of the Bash manpage.
 
 [The Architecture of Open Source Applications: The Bourne-Again Shell](http://www.aosabook.org/en/bash.html) - bash's major components: input processing, parsing, the various word expansions and other command processing, and command execution, from the pipeline perspective

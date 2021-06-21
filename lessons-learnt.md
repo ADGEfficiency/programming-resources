@@ -1,3 +1,8 @@
+[How to Become a Bad Developer](https://rafaelquintanilha.com/how-to-become-a-bad-developer/) - [Hacker News discussion](https://news.ycombinator.com/item?id=27539342)
+
+
+[An incomplete list of skills senior engineers need, beyond coding](https://skamille.medium.com/an-incomplete-list-of-skills-senior-engineers-need-beyond-coding-8ed4a521b29f)
+
 [10 Years of Open-Source Visualization](https://observablehq.com/@mbostock/10-years-of-open-source-visualization)
 
 [Things I Learnt from a Senior Software Engineer - Neil Kakkar](https://neilkakkar.com/things-I-learnt-from-a-senior-dev.html)

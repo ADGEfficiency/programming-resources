@@ -2,7 +2,7 @@
 
 Introductory course on how computers work, how to write computer programs and what tools you need.
 
-The course is for beginners, and is organized into three sections:
+The course is for beginners - it is organized into three sections:
 
 - [fundamentals/computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md)
 - [fundamentals/programming.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md)
@@ -38,5 +38,5 @@ $ ./hello
 
 ```bash
 $ sudo chmod +x hello.py
-$ python hello.py
+$ ./hello.py
 ```

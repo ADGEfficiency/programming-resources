@@ -1,5 +1,32 @@
+Creating a Data Engineering Culture -  Jesse Anderson
+
+https://youtu.be/VkeleGIUSM8 - [slides](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnFJc3JJWk9VcHU2a2h2ZEJSWUJxT1dBMnpEUXxBQ3Jtc0ttSm1pY2dYWnM3SW1JZTIzcFRQejZfYmRwN3R5aEJWQTdrS29uQmtDcWZQdmRXb1BxN09QZlhnbjRxZTdpTnVoUmhOTW1qNVFDbjVxLThtLWNyUGhNOTRlLXI4MnpYRkQzcEJITkxQVWdDUVZOcDgxdw&q=https%3A%2F%2Fwww.dataengconf.com%2Fspeaker%2Fcreating-a-data-engineering-culture%3Futm_source%3Dyoutube%26utm_medium%3Dsocial%26utm_campaign%3D%2520-%2520DEC-BCN-18%2520Slides%2520Download)
+
+Top 10 Data Engineering Mistakes - Lars Albertsson
+https://youtu.be/Hyhwem1Gyjo
+
+Future of Data Engineering - Chris Riccomini
+https://youtu.be/ZZr9oE4Oa5U
+
+https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html
+
+Airflow
+
+- providers.amazon.aws - https://airflow.apache.org/docs/apache-airflow-providers-amazon/stable/_api/airflow/providers/amazon/index.html
+
+Upsert = An operation that inserts rows into a database table if they do not already exist, or updates them if they do
+
 [CS329 - Lecture 3 - Data Engineering](https://docs.google.com/document/u/1/d/1b9iuZiDEGVLHyMmnf6w2y1aN6yWQhAyqk3GHlpI9q6M/mobilebasic)
 
+[16 fundamental principles for transforming data in a warehouse](https://miles2code.com/data/datawarehouse/2021/05/11/data-modeling-principles.html)
+
+Storage layers
+- raw
+- core - entities,
+- aggregations,
+- bespoke / experimental / convienence.
+
+Ensure that all Facts/Events have a business timestamp and an arrival/etl timestamp
 
 [andkret/Cookbook](https://github.com/andkret/Cookbook) - The Data Engineering Cookbook
 - hit and miss, early chapters are better

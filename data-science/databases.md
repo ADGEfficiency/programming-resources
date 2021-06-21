@@ -19,6 +19,8 @@ https://sqlite.org/lpc2019/doc/trunk/briefing.md - a briefing on SQLite intended
 
 ## SQL
 
+[fredbenenson/kickstarter_sql_style_guide](https://gist.github.com/fredbenenson/7bb92718e19138c20591)
+
 [SQL Zoo](https://sqlzoo.net/)
 
 [10 minute SQL test as part of an interview for a ‘Senior Research Data Scientist’](https://www.reddit.com/r/datascience/comments/cpe76y/10_minute_sql_test_as_part_of_an_interview_for_a/)
