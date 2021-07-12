@@ -147,6 +147,11 @@ git merge dev
 
 [Git from the inside out - Mary Rose Cook](https://codewords.recurse.com/issues/two/git-from-the-inside-out)
 
+[Things I wish Git had: Commit groups](http://blog.danieljanus.pl/2021/07/01/commit-groups/)
+
+- merge commits vs. squash & merge vs. rebase & merge
+
+
 ## Advanced
 
 [More productive Git](https://increment.com/open-source/more-productive-git/)
@@ -154,3 +159,4 @@ git merge dev
 [Git From the Bits Up - Tim Berglund](https://www.youtube.com/watch?v=MYP56QJpDr4)
 
 [Deep Dive into Git - Edward Thomson](https://www.youtube.com/watch?v=dBSHLb1B8sw)
+

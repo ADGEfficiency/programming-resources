@@ -30,7 +30,7 @@ $ sed -n '/parsing\ error/p' data/logger.log
 
 Replace in Python files:
 ```bash
-$ sed -i '' "s/climatedb.newspapers.utils/climatedb.utils/" newspapers/*.py
+$ sed -i "s/climatedb.newspapers.utils/climatedb.utils/" newspapers/*.py
 ```
 
 Remove:

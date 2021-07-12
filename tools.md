@@ -16,3 +16,5 @@ Monitoring
 CI = Bazel
 
 [An ex-Googler's guide to dev tools](https://about.sourcegraph.com/blog/ex-googler-guide-dev-tools/)
+
+[Practical Tmux](https://mutelight.org/practical-tmux)

@@ -8,6 +8,12 @@
 
 [Terrifically Simple JSON](https://github.com/mpnally/Terrifically-Simple-JSON)
 
+## From HN
+
+https://news.ycombinator.com/item?id=27025829
+
+resist the temptation to 'SELECT *' into a data frame and break the problem up into stages where you get the database to do the maximum work before it gets to the data frame. 
+
 
 ## SQLite
 
@@ -15,6 +21,7 @@ https://sqlite.org/lpc2019/doc/trunk/briefing.md - a briefing on SQLite intended
 - subroutine in same process
 - same heap & stack
 
+The Untold Story of SQLite - https://corecursive.com/066-sqlite-with-richard-hipp/
 
 
 ## SQL
