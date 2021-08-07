@@ -83,4 +83,18 @@ A lot of data science work is research - writing tests may not be justified
 
 Testing of data science code often requires creativity
 
+From [How to use Test Driven Development in a Data Science Workflow](https://towardsdatascience.com/tdd-datascience-689c98492fcc)
 
+TDD is probably not worth the effort in the following scenarios:
+
+- You are exploring a data source, especially if you do it to get an idea of the potential and pitfalls of said source.
+- You are building a simple and straightforward proof of concept. Your goal is to evaluate whether further efforts are promising or not.
+- You are working with a complete and manageable data source.
+- You are (and you will be) the only person who is working on a project. This assumption is stronger than it might appear at first glance but holds for ad-hoc analyses.
+
+In contrast, TDD is great in these cases:
+
+- Analytics pipeline
+- Complicated proof of concept, i.e. different ways to solve a subproblem, clean data etc…
+- Working with a subset of data, so you have to make sure that you capture problems when new issues come up without destroying working code.
+- You are working in a team, yet you want to make sure that no one breaks the functioning code.

@@ -6,11 +6,12 @@ These are my personal notes - you will often find my notes and summaries alongsi
 
 Some of these notes are also used for teaching programming things:
 
-- [fundamentals/computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md), - [fundamentals/programming.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md),
+- [fundamentals/computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md), 
+- [fundamentals/programming.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md),
 - [bash-and-unix/intro.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md),
 - [test-driven-development](https://github.com/ADGEfficiency/programming-resources/tree/master/test-driven-development).
 
-I also maintain similar collections on reinforcement learning and machine learning - [rl-resources](https://github.com/ADGEfficiency/rl-resources) and [ml-resources](https://github.com/ADGEfficiency/ml-resources).
+I maintain similar collections on [reinforcement learning](https://github.com/ADGEfficiency/rl-resources) and [machine learning](https://github.com/ADGEfficiency/ml-resources).
 
 
 ## Music to Listen to While Programming
@@ -164,7 +165,7 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 ## Podcasts
 
-[Lex Fridman Podcast](https://www.youtube.com/playlist?list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4):
+[Lex Fridman Podcast](https://www.youtube.com/playlist?list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4)
 
 - [Bjarne Stroustrup: C++](https://youtu.be/uTxRF5ag27A)
 - [David Patterson: Computer Architecture and Data Storage](https://youtu.be/naed4C4hfAg)

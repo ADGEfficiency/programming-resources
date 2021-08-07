@@ -7,6 +7,8 @@ If you need to iteratively add rows, it's better to maintain a Python list/dict 
 
 Explicitly designate both rows and columns (even if its just with a `:`)
 
+[Offset aliases](https://pandas.pydata.org/docs/user_guide/timeseries.html#timeseries-offset-aliases)
+
 [pandas and friends - Marc Garcia](https://youtu.be/PQPv_4rOWe4)
 
 What is SQL not good at:

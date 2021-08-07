@@ -1347,6 +1347,8 @@ Best Practices for Scientific Computing - [text](https://journals.plos.org/plosb
 
 # Further reading
 
+[Coding habits for data scientists](https://www.thoughtworks.com/insights/blog/coding-habits-data-scientists)
+
 [Applying the Gestalt Principles to your code](https://yetanotherchris.dev/clean-code/gestalt-principles/)
 
 The Gestalt principles concern themselves with how we visually perceive groups of objects

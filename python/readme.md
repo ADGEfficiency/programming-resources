@@ -2,11 +2,19 @@
 
 [Python's strftime directives](http://strftime.org/)
 
+
+## Starters
+
 [The Python Tutorial](https://docs.python.org/3/tutorial/)
 
 [An Effective Python Environment: Making Yourself at Home - Real Python](https://realpython.com/effective-python-environment/)
 
 [Scipy Lecture Notes](https://scipy-lectures.org/index.html)
+
+
+## Advanced
+
+[Python Design Patterns](https://python-patterns.guide/)
 
 
 ## Courses

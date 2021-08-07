@@ -1,3 +1,30 @@
+## Walrus Operatior
+
+```python
+match = func()
+if match is not None:
+  do()
+  
+if (match := func()) is not None:
+```
+
+## Decorator
+
+```python
+def decorator(func):
+    def wrapper(*args, **kwargs):
+        #  do stuff before function call
+        if "summary" not in kwargs.keys():
+            kwargs["summary"] = {"cleaning": {}}
+        #  run func
+        #  do stuff after
+        #  return
+        return func(*args, **kwargs)
+
+    return wrapper
+
+```
+
 ## Debugging using pdb
 
 pdb

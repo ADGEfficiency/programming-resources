@@ -8,19 +8,7 @@ https://youtu.be/Hyhwem1Gyjo
 Future of Data Engineering - Chris Riccomini
 https://youtu.be/ZZr9oE4Oa5U
 
-
-Airflow
-
-https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html
-
-- providers.amazon.aws - https://airflow.apache.org/docs/apache-airflow-providers-amazon/stable/_api/airflow/providers/amazon/index.html
-
 Upsert = An operation that inserts rows into a database table if they do not already exist, or updates them if they do
-
-
-Talks
-- [Best practices with Airflow - Maxime Beauchemin](https://youtu.be/dgaoqOZlvEA)
-- [A Practical Introduction to Airflow - Matt Davis](https://youtu.be/cHATHSB_450)
 
 [CS329 - Lecture 3 - Data Engineering](https://docs.google.com/document/u/1/d/1b9iuZiDEGVLHyMmnf6w2y1aN6yWQhAyqk3GHlpI9q6M/mobilebasic)
 

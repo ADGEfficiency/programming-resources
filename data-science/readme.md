@@ -8,7 +8,7 @@
 
 [Practical advice for analysis of large, complex data sets - Google - 2016](http://www.unofficialgoogledatascience.com/2016/10/practical-advice-for-analysis-of-large.html)
 
-[abhat222/Data-Science--Cheat-Sheet](https://github.com/abhat222/Data-Science--Cheat-Sheet)
+[abhat222/Data-Science-Cheat-Sheet](https://github.com/abhat222/Data-Science--Cheat-Sheet)
 
 [50 years of Data Science](https://courses.csail.mit.edu/18.337/2015/docs/50YearsDataScience.pdf) - [hacker news discussion](https://news.ycombinator.com/item?id=10431617)
 
@@ -17,6 +17,16 @@ Breiman (2001) Statistical Modeling: The Two Cultures - [paper](https://projecte
 [Tea: A High-level Language and Runtime System for Automating Statistical Analysis - YouTube](https://www.youtube.com/watch?v=bBCSeud21YU)
 
 [DataKind Projects](https://www.datakind.org/projects)
+
+[Scipy Lecture Notes](https://scipy-lectures.org/index.html)
+
+[Coding habits for data scientists](https://www.thoughtworks.com/insights/blog/coding-habits-data-scientists)
+
+Complexity is driven by interconnected parts:
+- dependency
+
+Complexity can't be avoided - but it can be compartmentalized.
+
 
 ## Blog posts
 

@@ -1,5 +1,27 @@
 # make
 
+A bit about `make` & Makefiles
+
+
+## Why make
+
+Machine readable documentation
+
+Dependency, retries
+
+Easy to test
+
+Parallel executaion of targets
+
+Track changes in git
+
+## Makefile
+
+```makefile
+<target>: <prerequisites>
+<tab>	<recipe>
+```
+
 ## Setup
 
 ```bash
@@ -7,12 +29,11 @@ chmod +x *.py *.sh
 ```
 
 Build a simple data pipeline:
+- use simple Python scripts as mock for real data tasks.
 
 ```
 make
 ```
-
-Use simple Python scripts as mock for real data tasks.
 
 
 ## Simple program
@@ -54,45 +75,16 @@ $ make clean DIR=~/bin
 
 ```makefile
 DIR = ~/binary
-
 clean:
  rm ${DIR}
 ```
 
-## pipeline notes on make
-
-Machine readable documentation
-
-Dependency, retries
-
-Easy to test
-
-Parallel executaion of targets
-
-Track changes in git
-
-
-## resources
+## Resources
 
 Introduction to Make - https://www.grymoire.com/Unix/Make.html#What_is_make.3F_What_does_the_command_do.3F
 
-```makefile
-<target>: <prerequisites>
-<tab>	<recipe>
-```
+GNU make - https://www.gnu.org/software/make/manual/make.html
 
-## GNU make - https://www.gnu.org/software/make/manual/make.html
+How to use Makefiles to run a simple Map Reduce Data Pipeline - https://www.benevolent.com/engineering-blog/make-reduce-how-to-use-makefiles-to-run-a-simple-map-reduce-data-pipeline
 
-
-
-## How to use Makefiles to run a simple Map Reduce Data Pipeline - https://www.benevolent.com/engineering-blog/make-reduce-how-to-use-makefiles-to-run-a-simple-map-reduce-data-pipeline
-
-
-Introduction to Make - https://www.grymoire.com/Unix/Make.html#What_is_make.3F_What_does_the_command_do.3F
-
-## GNU make - https://www.gnu.org/software/make/manual/make.html
-
-## https://www.benevolent.com/engineering-blog/make-reduce-how-to-use-makefiles-to-run-a-simple-map-reduce-data-pipeline
-
-
-
+https://www.benevolent.com/engineering-blog/make-reduce-how-to-use-makefiles-to-run-a-simple-map-reduce-data-pipeline

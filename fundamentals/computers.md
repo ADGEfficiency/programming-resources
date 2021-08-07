@@ -179,6 +179,11 @@ Processor local memory
 - typical laptop has 256 - 1024 GB
 
 
+### Real versus virtual memory
+
+[Measuring memory usage: virtual versus real memory](https://lemire.me/blog/2021/07/29/measuring-memory-usage-virtual-versus-real-memory/)
+
+
 ## I/O
 
 Input / Output
