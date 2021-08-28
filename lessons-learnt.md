@@ -1,6 +1,5 @@
 [How to Become a Bad Developer](https://rafaelquintanilha.com/how-to-become-a-bad-developer/) - [Hacker News discussion](https://news.ycombinator.com/item?id=27539342)
 
-
 [An incomplete list of skills senior engineers need, beyond coding](https://skamille.medium.com/an-incomplete-list-of-skills-senior-engineers-need-beyond-coding-8ed4a521b29f)
 
 [10 Years of Open-Source Visualization](https://observablehq.com/@mbostock/10-years-of-open-source-visualization)
@@ -78,3 +77,34 @@ Disorganized or messy code isn’t the same as technical debt.
 If anything, just try a new language - Regardless of what you do, you really should explore other languages. I would recommend any of the following: Clojure, Rust, Elm, OCaml/Reason, Go, or Scheme. All of them have unique features and will force you to learn a new way of thinking.
 
 
+## [An Old Hacker's Tips On Staying Employed](https://madned.substack.com/p/an-old-hackers-tips-on-staying-employed)
+
+### Personal brand
+
+Importance of a personal brand for job security
+- can be independent of the success of the projects you work on
+
+If you were a complete pain-in-the-ass to work with, dropped the ball a lot, said things you were going to do but didn’t do them, then good luck.
+
+### Make your boss afraid
+
+Make yourself indispensable
+
+### Make your boss happy
+
+Make your boss successful
+
+### Do it anyway
+
+Sometimes you need to do grunt or non-glamarous work
+- just get it done
+
+> We are all constantly measured in the eyes of our employers by what we actually deliver, and those who can find a way to succeed even in the face of adversity will always have an advantage over those who cannot, or do not want to.
+
+### Two and done
+
+So the Two-And-Done rule was born, wherein I will state my case the first time, and if whoever is arguing to the contrary does not agree after hearing my position, I’ll let it go. 
+
+But the next time the opportunity comes up, I will argue my point again. Maybe allowing for a gap of time for people to consider my original point, or maybe allowing me time to refine and rephrase my ideas to be more convincing.
+
+If I fail to get my way after the second time though, I am done.

@@ -1,3 +1,7 @@
+https://www.bitsondisk.com/writing/2021/retire-the-csv/
+
+https://news.ycombinator.com/item?id=28221654
+
 Creating a Data Engineering Culture -  Jesse Anderson
 
 https://youtu.be/VkeleGIUSM8 - [slides](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnFJc3JJWk9VcHU2a2h2ZEJSWUJxT1dBMnpEUXxBQ3Jtc0ttSm1pY2dYWnM3SW1JZTIzcFRQejZfYmRwN3R5aEJWQTdrS29uQmtDcWZQdmRXb1BxN09QZlhnbjRxZTdpTnVoUmhOTW1qNVFDbjVxLThtLWNyUGhNOTRlLXI4MnpYRkQzcEJITkxQVWdDUVZOcDgxdw&q=https%3A%2F%2Fwww.dataengconf.com%2Fspeaker%2Fcreating-a-data-engineering-culture%3Futm_source%3Dyoutube%26utm_medium%3Dsocial%26utm_campaign%3D%2520-%2520DEC-BCN-18%2520Slides%2520Download)
@@ -12,15 +16,6 @@ Upsert = An operation that inserts rows into a database table if they do not alr
 
 [CS329 - Lecture 3 - Data Engineering](https://docs.google.com/document/u/1/d/1b9iuZiDEGVLHyMmnf6w2y1aN6yWQhAyqk3GHlpI9q6M/mobilebasic)
 
-[16 fundamental principles for transforming data in a warehouse](https://miles2code.com/data/datawarehouse/2021/05/11/data-modeling-principles.html)
-
-Storage layers
-- raw
-- core - entities,
-- aggregations,
-- bespoke / experimental / convienence.
-
-Ensure that all Facts/Events have a business timestamp and an arrival/etl timestamp
 
 [andkret/Cookbook](https://github.com/andkret/Cookbook) - The Data Engineering Cookbook
 - hit and miss, early chapters are better
@@ -33,11 +28,6 @@ Ensure that all Facts/Events have a business timestamp and an arrival/etl timest
 ## [Stanford Seminar - Big Data is (at least) Four Different Problems](https://youtu.be/S79-buNhdhI)
 
 Michael Stonebreaker - created first RMDBS INGRES
-
-Big data
-- volume
-- velocity
-- + one other?
 
 Where will there be disruption in the big data market
 
@@ -102,9 +92,6 @@ Big velocity
 - complex event processing
 
 
-
-
-
 ## Daniel Molnar talks
 
 Berlin Buzzwords 2016
@@ -145,19 +132,68 @@ a/b
 - most results are illusory
 - small data -> bayesian
 
-
 lots of data science is about proving something isn't working
 - importance of curiosity, talking to users
 - causation versus corrulation
-
-
-
-
-
-
 
 - computers are a sadness, I am the cure
 - chose boring technology
 - discovering python
 - you suck at excel, data driven products now!
 - chris stucchio on testing
+
+---
+
+CS 329S: Machine Learning Systems Design - Lct 3 - Data engineering - https://docs.google.com/document/u/1/d/1b9iuZiDEGVLHyMmnf6w2y1aN6yWQhAyqk3GHlpI9q6M/mobilebasic
+
+
+Sources of data
+- user generated - search text, clicks,
+- system generated - logs, metadata, model predictions,
+- enterprise applications data - inventory, customer relationships,
+- third party data - 1st party = own customers, 2nd party = collected by another company about own customers, 3rd party = data about public
+
+Internet + smartphones = more data
+
+| Format  | Binary or Text | Human-readable? | Use case     | Layout |
+| JSON    | Text           | Yes             | Everywhere   | Arbitrary |
+| CSV     | Text           | Yes             | Everywhere   | Row |
+| Parquet | Binary         | No              | Tabular data | | Column |
+
+
+JSON
+- most common,
+- supported by many programming languages,
+- versatile,
+- key-value.
+
+Row versus columar
+- row good for transactions
+
+CSV
+- row based,
+- good for accessing samples,
+- good for writes (appends0
+
+Parquet
+- column based,
+- good for accessing features,
+- good for lots of reads, few writes (appends not good)
+
+Numpy / pandas = columar
+- example of accessing columns verus rows of dataframe
+
+Text versus binary
+
+- opening binary files in text editors -> wierd characters / numbers
+
+Binary = more compact, but not human readable
+
+OLTP versus OLAP [RnR]
+
+ETL [RnR]
+- sources, targets
+
+ELT = no schema on load
+
+Batch versus streaming

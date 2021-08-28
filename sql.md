@@ -8,6 +8,14 @@
 
 [Terrifically Simple JSON](https://github.com/mpnally/Terrifically-Simple-JSON)
 
+## https://en.wikipedia.org/wiki/Data_definition_language
+
+Data description language (DDL) is a syntax for creating and modifying database objects (tables, indices, and users). 
+
+DDL statements are similar to a computer programming language for defining data structures, especially database schemas. 
+
+Common examples of DDL statements include CREATE, ALTER, and DROP. 
+
 ## From HN
 
 https://news.ycombinator.com/item?id=27025829

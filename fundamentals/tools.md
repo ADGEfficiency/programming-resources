@@ -14,6 +14,7 @@ Use a toolset that you are comfortable with & enjoy using & maintaining
 - slowly add new tools as you feel comfortable
 
 The basic toolset of a programmer includes
+
 - text editor (to edit code)
 - terminal (to run & install programs, move files)
 - file manager & navigator (that can see hidden files (`.bashrc` etc)
@@ -21,10 +22,12 @@ The basic toolset of a programmer includes
 - version control (git)
 
 If you don't know where to start, choose either:
+
 - JupyterLab
 - VS Code
 
 Other useful tools
+
 - debugger (`pdb` in Python)
 - linter (`black` for Python)
 - profiler

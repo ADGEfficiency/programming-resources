@@ -25,6 +25,8 @@ I maintain similar collections on [reinforcement learning](https://github.com/AD
 
 ## Random Cool Stuff
 
+[RosettaGit](https://rosettagit.org/) - solutions to the same task in as many different programming languages as possible
+
 [Screenshots from developers & Unix people (2002)](https://anders.unix.se/2015/10/28/screenshots-from-developers--unix-people-2002/)
 
 [Screenshots from developers: 2002 vs. 2015](https://anders.unix.se/2015/12/10/screenshots-from-developers--2002-vs.-2015/)
@@ -57,6 +59,8 @@ Richard Hamming - You and Your Research - [lecture](https://www.cs.virginia.edu/
 
 
 ## History of programming
+
+[History of Infra as Code](https://youtu.be/9kQ5l26mmbU) - talk about history of cloud services, Docker etc
 
 [History of Programming Language Conference](https://hopl4.sigplan.org/track/hopl-4-papers#History-of-HOPL)
 

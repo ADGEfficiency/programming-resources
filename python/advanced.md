@@ -1,3 +1,6 @@
+## StringIO, BytesIO
+
+
 ## Walrus Operatior
 
 ```python
@@ -14,8 +17,6 @@ if (match := func()) is not None:
 def decorator(func):
     def wrapper(*args, **kwargs):
         #  do stuff before function call
-        if "summary" not in kwargs.keys():
-            kwargs["summary"] = {"cleaning": {}}
         #  run func
         #  do stuff after
         #  return

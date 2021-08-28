@@ -28,12 +28,19 @@ Print matching lines:
 $ sed -n '/parsing\ error/p' data/logger.log
 ```
 
-Replace in Python files:
+Replace in Python files (need the extra `""` at the front on MacOS):
+
 ```bash
-$ sed -i "s/climatedb.newspapers.utils/climatedb.utils/" newspapers/*.py
+$ sed -i "" "s/climatedb.newspapers.utils/climatedb.utils/" newspapers/*.py
 ```
 
 Remove:
 ```bash
 $ sed -i "s/pattern//g"
+```
+
+Replace:
+
+```bash
+sed -i "" "s/from config import S3_BUCKET, S3_PREFIX/from emd.config import default_config/" *.py
 ```

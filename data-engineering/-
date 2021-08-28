@@ -1,0 +1,85 @@
+Tools
+- git
+- dbt
+- Snowflake
+- Serverless
+
+
+## Colmuns / Fields to have in your data
+
+Ensure that all Facts/Events have a business timestamp and an arrival/etl timestamp
+
+## Databases
+
+Normalization
+- good in theory (no duplication, less memory, link by foreign keys)
+- but not good in practice (require many quieries / joins to get data, slow quieries)
+
+
+## Structured vs Unstructured
+
+Structured versus unstructured data
+- structured = schema
+
+
+## What is a Data Warehouse?
+
+https://en.wikipedia.org/wiki/Data_warehouse
+
+Focus on business analytics
+
+Loads data from many sources (makes copies)
+
+Built using ETL or ELT
+
+Focus on structured data
+  Schema clearly defined
+  Easy to search and analyze
+  Can only handle data with specific schema
+  Schema changes will cause a lot of trouble
+  Data warehouse
+
+
+## What is a Data Mart?
+
+Simple data warehouse
+
+
+## What is a Data Lake?
+
+https://en.wikipedia.org/wiki/Data_lake
+
+Structured and unstructured data
+Fast arrival (e.g. no need to clean up first)
+Can handle data from any source
+No need to worry about schema, schema changes
+Blob or file storage (S3, Google Cloud Storage, Azure Blob?)
+
+Combination of analytics platform (like Spark, Python) and a storage platform (S3, Azure Blob etc).
+
+Important properties of data lakes:
+- Support for unstructured and semi-structured data.
+- Scalability to PetaBytes and higher.
+- SQL like interface to interact with the stored data.
+- Ability to connect various analytics tools as seamlessly as possible.
+- Are generally a combination of decoupled storage and analytics tools.
+
+https://aws.amazon.com/big-data/datalakes-and-analytics/what-is-a-data-lake/
+
+
+
+References:
+- [Modern Data Lakes Overview](https://developer.sh/posts/delta-lake-and-iceberg)
+
+
+
+## Data Lake House
+
+
+
+## Orchestration
+
+Benefits
+- parallelization,
+
+
