@@ -1,3 +1,4 @@
+
 # grep
 
 `grep search_term filename`
@@ -17,3 +18,9 @@ some of grep's more common flags:
 
 `grep -rl CMA .` to find where CMA class is in a folder		
 
+
+## Reading
+
+[Command line made easy: five simple recipes for grep](https://arstechnica.com/information-technology/2009/05/command-line-made-easy-five-simple-recipes-for-grep/?itm_source=parsely-api)
+
+[Linux/BSD command line wizardry: Learn to think in sed, awk, and grep](https://arstechnica.com/gadgets/2021/08/linux-bsd-command-line-101-using-awk-sed-and-grep-in-the-terminal/) - good for beginners.

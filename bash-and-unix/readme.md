@@ -20,6 +20,12 @@ You can also find hard copies of additional resources in [programming-resources/
 
 [Modern Unix](https://github.com/ibraheemdev/modern-unix) - modern/faster/saner alternatives or complements to common unix commands
 
+[Linux/BSD command line wizardry: Learn to think in sed, awk, and grep](https://arstechnica.com/gadgets/2021/08/linux-bsd-command-line-101-using-awk-sed-and-grep-in-the-terminal/) - good for beginners.
+
+- grep finds strings,
+- sed replaces strings,
+- awk finds columns.
+
 [The Bash Hackers Wiki](https://wiki.bash-hackers.org/) - documentation of any kind about GNU Bash. The main motivation was to provide human-readable documentation and information so users aren't forced to read every bit of the Bash manpage.
 
 [The Architecture of Open Source Applications: The Bourne-Again Shell](http://www.aosabook.org/en/bash.html) - bash's major components: input processing, parsing, the various word expansions and other command processing, and command execution, from the pipeline perspective

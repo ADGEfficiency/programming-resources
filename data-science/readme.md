@@ -1,3 +1,18 @@
+[Oil is the New Data](https://logicmag.io/nature/oil-is-the-new-data/)
+
+Despite the climate crisis that our planet faces, Big Oil is doubling down on fossil fuels. At over 30 billion barrels of crude oil a year, production has never been higher. 
+
+Now, with the help of tech companies like Microsoft, oil companies are using cutting-edge technology to produce even more. 
+
+Big Tech and Big Oil are closely linked, and only getting closer. The foundation of their partnership is the cloud.
+
+This helps explain why cloud providers have only captured about 30 percent of the total addressable market. 
+
+While cloud technology has matured considerably over the past half-decade, big corporations that run their own data centers still dominate the majority of the world’s IT infrastructure.
+
+
+
+
 [Data Science from Scratch](https://www.oreilly.com/library/view/data-science-from/9781492041122/)
 
 [How we scaled data science to all sides of Airbnb over 5 years of hypergrowth](https://venturebeat.com/2015/06/30/how-we-scaled-data-science-to-all-sides-of-airbnb-over-5-years-of-hypergrowth/)

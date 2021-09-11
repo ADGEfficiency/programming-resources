@@ -1266,9 +1266,23 @@ Classes represent real things - but they aren’t those real things!
 
 Representatives of things don’t share the relationships of the things they represent
 
-*Further reading:
+*Further reading:*
 - Jack Diederich - HOWTO Write a Function - [youtube](https://www.youtube.com/watch?v=rrBJVMyD-Gs)
 - Jack Diederich - Stop Writing Classes - [video](https://www.youtube.com/watch?v=o9pEzgHorH0)
+
+## Clever versus Insightful Code
+
+Clever code exploits knowledge about the language
+
+- sometimes being clever is easier than being simple,
+- the core algorithm may be complex, but the systems around that complexity should be simple.
+
+Insightful code exploits knowledge about the problem
+
+
+*Further reading:*
+- [Clever versus Insightful Code - Hillel Wayne](https://www.hillelwayne.com/post/cleverness/)
+- [Hacker News discussion](https://news.ycombinator.com/item?id=27418296)
 
 
 # Philosophies of programming

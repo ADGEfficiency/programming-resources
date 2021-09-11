@@ -56,6 +56,66 @@ Richard Hamming - You and Your Research - [lecture](https://www.cs.virginia.edu/
 
 [The Architecture of Open Source Applications](https://www.aosabook.org/en/index.html) - Architects look at thousands of buildings during their training, and study critiques of those buildings written by masters. In contrast, most software developers only ever get to know a handful of large programs well—usually programs they wrote themselves—and never study the great programs of history. As a result, they repeat one another's mistakes rather than building on one another's successes. 
 
+[Don't Call Yourself A Programmer, And Other Career Advice](https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/)
+
+[Do call yourself a programmer, and other career advice](http://yosefk.com/blog/do-call-yourself-a-programmer-and-other-career-advice.html)
+
+[Software Development Waste](https://neverworkintheory.org/2021/08/29/software-development-waste.html) - [Hacker News discussion](https://news.ycombinator.com/item?id=28352075)
+
+
+Building the wrong product
+- product that does not address user business needs
+- not doing research on users or businesses
+- ignoring feedback, low user value features
+
+Mismanaging backlog
+- duplicating work, low value features, delaying bug fixes
+- working on too many features simultaneously, imbalance of feature work and bug fixing, delaying testing or critical bug fixing 
+
+Rework
+- altering delivered work that should have been done correctly
+- no clear definition of done
+
+Unnecessarily complex solutions
+- a more complicated solution than necessary
+- a missed opportunity to simplify features, user interface, or code
+- unnecessary feature complexity from the user’s perspective 
+- unnecessary technical complexity
+- duplicating code, lack of interaction design reuse, overly complex technical design created up-front
+
+Extraneous cognitive load
+- the costs of unneeded expenditure of mental energy
+- suffering from technical debt,
+- inefficient tools and problematic APIs, libraries, and frameworks 
+- unnecessary context switching
+- inefficient development flow
+- poorly organized code 
+
+Psychological distress
+- burdening the team with unhelpful stress
+- low team morale
+- rush mode
+- interpersonal or team conflict 
+
+Waiting/multitasking
+- cost of idle time, often hidden by multi-tasking
+- slow tests or unreliable tests
+- unreliable acceptance environment
+- missing information, people, or equipment
+- context switching from delayed feedback 
+
+Knowledge loss
+- cost of re-acquiring information that the team once knew
+- team churn
+- knowledge silos 
+
+Ineffective communication
+- incomplete, incorrect, misleading, inefficient, or absent communication
+- team size too large
+- asynchronous communication - distributed teams/stakeholders, opaque processes outside team
+- imbalance - dominating the conversation; not listening
+- Inefficient meetings (lack of focus; skipping retros; not discussing blockers each day; meetings running over (e.g. long stand-ups)) 
+
 
 
 ## History of programming
@@ -70,8 +130,14 @@ Richard Hamming - You and Your Research - [lecture](https://www.cs.virginia.edu/
 
 [Why Isn't Functional Programming the Norm? – Richard Feldman - 2019](https://www.youtube.com/watch?v=QyJZzq0v7Z4)
 
+[Why does "=" mean assignment? - Hillel Wayne](https://www.hillelwayne.com/equals-as-assignment/)
+
 
 ## Courses
+
+6.005 Software Construction - [course homepage](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-005-software-construction-spring-2016/) - [notes](https://ocw.mit.edu/ans7870/6/6.005/s16/index.html) - introduces fundamental principles and techniques of software development - how to write software that is safe from bugs, easy to understand, and ready for change.
+
+[Systematic Program Design](https://www.youtube.com/channel/UC7dEjIUwSxSNcW4PqNRQW8w) - video lectures.
 
 [calmcode.io](https://calmcode.io/) - video tutorials for modern ideas and open source tools (mostly Python)
 
@@ -94,6 +160,22 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 
 ## Blogs
+
+[Hillel Wayne](https://www.hillelwayne.com/about/)
+
+- [Clever vs Insightful Code](https://www.hillelwayne.com/post/cleverness/)
+- [What engineering can teach (and learn from) us](https://www.hillelwayne.com/post/what-we-can-learn/)
+- [Are we really engineers?](https://www.hillelwayne.com/post/are-we-really-engineers/)
+- [The Hard Part of Learning a Language](https://www.hillelwayne.com/post/learning-a-language/)
+
+[Proper Fixation](http://yosefk.com/blog/)
+
+- [Don't ask if a monorepo is good for you – ask if you're good enough for a monorepo](http://yosefk.com/blog/dont-ask-if-a-monorepo-is-good-for-you-ask-if-youre-good-enough-for-a-monorepo.html)
+- [Evil tip: avoid "easy" things](http://yosefk.com/blog/evil-tip-avoid-easy-things.html)
+- [Love thy coworker; thy work, not necessarily](http://yosefk.com/blog/love-thy-coworker-thy-work-not-necessarily.html)
+- [Things from Python I'd miss in Go](http://yosefk.com/blog/things-from-python-id-miss-in-go.html)
+- [Engineers vs managers: economics vs business](http://yosefk.com/blog/engineers-vs-managers-economics-vs-business.html)
+- [The cardinal programming jokes](http://yosefk.com/blog/the-cardinal-programming-jokes.html)
 
 [Haki Benita](https://hakibenita.com/)
 
