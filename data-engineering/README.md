@@ -3,6 +3,8 @@
 
 ## What is data engineering?
 
+> the most basic foundation of what is most critically needed: all the important data, in the same place, easily queryable (from https://erikbern.com/2021/07/07/the-data-team-a-short-story.html)
+
 A data engineer enables access to data
 
 Emphasis on data quality
@@ -41,6 +43,12 @@ Data engineer = entity recognition
 - volume
 - velocity
 - variety
+
+Better compute ability / access (cloud)
+
+Business user data literacy
+
+Business value of data - better tooling = higher leverage tooling
 
 
 ## Sources of Data
@@ -173,6 +181,8 @@ Normalization
 
 ### Orchestration
 
+Setup + execute jobs
+
 https://medium.com/memory-leak/data-orchestration-a-primer-56f3ddbb1700
 
 Data orchestration solutions center around the concept of a DAG (direct acyclic graphs), a collection of all the tasks you want to run, organized in a way that reflects their relationships and dependencies.
@@ -264,6 +274,9 @@ Focus on structured data
   Schema changes will cause a lot of trouble
   Data warehouse
 
+Redshift, Snowflake, Google BigQuery
+- better access to hadoop by only SQL
+
 
 ### What is a Data Mart?
 
@@ -273,16 +286,68 @@ Simple data warehouse
 ## Data Lake House
 
 
+## ETL tools
+
+Stitch
+
+Fivetran
+
+
 ## Tools
 
 - git
-- great expectations
 - dbt
-- Snowflake
-- Serverless
+- Snowflake,
+- boto
+- Stitch, 
+- Fivetran,
+- Serverless,
 - BigQuery (can this be data warehosue?)
 - Redshift (can this be data warehosue?)
 - Postgres (can this be data warehosue?)
+
+
+## dbt
+
+SQL + yaml + Python
+
+- use to extract data from data warehouse
+
+Modelling raw data
+
+Generate documentation
+
+https://www.getdbt.com/
+
+dbt connects to and runs SQL against your database, warehouse, platform, or query engine.
+
+## What makes dbt so powerful?
+
+As a dbt user, your main focus will be on writing models (i.e. select queries) that reflect core business logic – there’s no need to write boilerplate code to create tables and views, or to define the order of execution of your models. Instead, dbt handles turning these models into objects in your warehouse for you.
+
+dbt handles boilerplate code to materialize queries as relations. For each model you create, you can easily configure a materialization.
+
+Jinja templating
+
+
+## Who should use dbt?
+
+dbt is appropriate for anyone who interacts with a data warehouse. It can be used by data engineers, data analysts and data scientists, or anyone that knows how to write select queries in SQL.
+
+
+
+## Great Expectations
+
+https://docs.greatexpectations.io/docs/why_use_ge
+- automated testing of data in prod
+- similar use case to data ingestion - https://greatexpectations.io/case-studies/heineken-case-study/
+
+## Hypothesis
+
+https://hypothesis.readthedocs.io/en/latest/
+- more powerful unit testing
+- https://www.hillelwayne.com/contract-examples/
+
 
 ### Spark
 
@@ -300,3 +365,4 @@ Spark
 
 [CS329 - Lecture 3 - Data Engineering](https://docs.google.com/document/u/1/d/1b9iuZiDEGVLHyMmnf6w2y1aN6yWQhAyqk3GHlpI9q6M/mobilebasic)
 
+[Modern Data Stack for Analytics Engineering - Kyle Shannon](https://youtu.be/UmIZIkeOfi0)

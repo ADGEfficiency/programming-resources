@@ -1,3 +1,25 @@
+Best practice for SQL statements in Python 
+
+
+https://docs.aws.amazon.com/athena/latest/ug/querying-with-prepared-statements.html
+
+Prepared statements enable Athena queries to take parameters directly and help to prevent SQL injection attacks. 
+
+---
+
+https://stackoverflow.com/questions/50823715/how-to-solve-sql-injection-for-athena
+
+You'll have to format your SQL query as a string before you prepare the query, and include variables by string concatenation.
+
+This puts the responsibility on you and your application code to ensure the variables are safe, and don't cause SQL injection vulnerabilities.
+
+https://stackoverflow.com/questions/50676867/executing-named-queries-in-athena
+
+Escaping in Athena's SQL dialect isn't very complicated, however. In identifiers double quotes need to be escaped as two double quotes and in literal strings single quotes need to be escaped as single quotes. Other datatypes just need to be clean, e.g. only digits for integers.
+
+Also, keep in mind that in Athena, the dangers of SQL injection are different than in an RDBMS: Athena can't delete your data. 
+
+
 # AWS Athena
 
 Limited on the amount of data we can pull - limited by boto when reading csv

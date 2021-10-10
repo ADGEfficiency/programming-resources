@@ -1,3 +1,31 @@
+Learnt on the job
+
+- SQL injection + prepared statements,
+- indexing,
+- less tables usually better ?
+
+
+## ORMs
+
+[Object-Relational Mapping is the Vietnam of Computer Science](https://blog.codinghorror.com/object-relational-mapping-is-the-vietnam-of-computer-science/)
+
+- mismatch between relational database models and traditional object models, object/relational impedance mismatch,
+- relational concepts are at heart, are set-based (ORM = object based),
+- the only workable solution to the ORM problem is to pick one or the other: either abandon relational databases, or abandon objects. If you take the O or the R out of the equation, you no longer have a mapping problem.
+
+
+---
+
+[Herding elephants: Lessons learned from sharding Postgres at Notion](https://www.notion.so/blog/sharding-postgres-at-notion)
+
+[The data model behind Notion's flexibility](https://www.notion.so/blog/data-model-behind-notion)
+
+- Changing the type of a block doesn’t change the block’s properties or content — it only changes the type attribute. The information is just rendered differently, or even ignored if the property isn’t used by that block type.
+- Decoupling property storage from block type allows for efficient transformation and changes to our rendering logic. But it’s also essential for collaboration, because we preserve as much user intention as possible.
+- ID, properties, type, content (children), parent,
+-  In Notion, indentation is structural: it’s a reflection of the structure of the render tree. In other words, when you indent something in Notion, you are manipulating relationships between blocks and their content, not just adding a style.
+-  
+
 [The Next 50 Years of Databases - 2015](http://www.cs.cmu.edu/~pavlo/blog/2015/09/the-next-50-years-of-databases.html)
 
 [Practical SQL for Data Analysis](https://hakibenita.com/sql-for-data-analysis) - What you can do without Pandas
@@ -30,6 +58,25 @@ https://sqlite.org/lpc2019/doc/trunk/briefing.md - a briefing on SQLite intended
 - same heap & stack
 
 The Untold Story of SQLite - https://corecursive.com/066-sqlite-with-richard-hipp/
+
+
+## Relational Databases
+
+Could be it's own file
+
+Database relationship = associations created by joins
+
+1. one to one,
+2. one to many,
+3. many to many.
+
+Primary key = unique identifier for each row
+
+Foreign key = column that creates relationships between tables
+- references primary key of another table
+- all relationships should be sorted by foreign keys
+
+[Thoughts on Foreign Keys?](https://github.com/github/gh-ost/issues/331)
 
 
 ## SQL

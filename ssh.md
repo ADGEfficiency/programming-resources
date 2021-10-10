@@ -1,1 +1,38 @@
+# ssh
+
+Use cases of SSH are:
+
+- to access a remote server securely, 
+- transfer files, 
+- forward local and remote ports, 
+- mount remote directories, 
+- redirect GUI, 
+- proxy arbitrary traffic.
+
+Pre-installed by default with the vast majority of Linux distributions
+
+
+## Introduction
+
 [A visual guide to SSH tunnels](https://robotmoon.com/ssh-tunnels/)
+
+[SSH Tunneling Explained](https://goteleport.com/blog/ssh-tunneling-explained/)
+
+
+## Advanced
+
+[How to SSH Properly](https://goteleport.com/blog/how-to-ssh-properly/) - SSH certificates
+
+[SSH Agent Explained](https://smallstep.com/blog/ssh-agent-explained/)
+
+- ssh-agent is a key manager for SSH
+- holds your keys and certificates in memory, unencrypted, and ready for use by ssh
+- keeps private keys safe
+- ssh-add command is your gateway to the SSH agent - add/remove keys etc
+
+Agent forwarding
+- allows your local SSH agent to reach through an existing SSH connection and transparently authenticate on a more distant server
+- With agent forwarding, the SSH client on EC2 can use the keys on your local computer to authenticate to GitHub
+
+ProxyJump
+- safer than agent forwarding

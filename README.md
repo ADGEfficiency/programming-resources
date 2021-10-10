@@ -117,7 +117,6 @@ Ineffective communication
 - Inefficient meetings (lack of focus; skipping retros; not discussing blockers each day; meetings running over (e.g. long stand-ups)) 
 
 
-
 ## History of programming
 
 [History of Infra as Code](https://youtu.be/9kQ5l26mmbU) - talk about history of cloud services, Docker etc
@@ -160,6 +159,11 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 
 ## Blogs
+
+[Matt Might](https://matt.might.net/articles/)
+
+- [A short introduction to make](https://matt.might.net/articles/intro-to-make/)
+- [Tips for work-life balance](https://matt.might.net/articles/work-life-balance/)
 
 [Hillel Wayne](https://www.hillelwayne.com/about/)
 
@@ -270,3 +274,9 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 - [Why is Python Slow?](https://talkpython.fm/episodes/show/265/why-is-python-slow)
 
 [Presentable](https://www.relay.fm/presentable) - how we design and build the products that are shaping our digital future
+
+
+## Humor
+
+[After being in a data science/ developer role for the better part of a decade, here is how companies REALLY develop software and AI/ML applications](https://www.reddit.com/r/datascience/comments/e6s20u/after_being_in_a_data_science_developer_role_for/)
+

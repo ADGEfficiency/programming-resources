@@ -1,3 +1,12 @@
+[20 Things I’ve Learned in my 20 Years as a Software Engineer](https://www.simplethread.com/20-things-ive-learned-in-my-20-years-as-a-software-engineer/) - [Hacker News discussion](https://news.ycombinator.com/item?id=28797485)
+
+- The benefit of talented engineers comes from the fact that they avoid costly pitfalls - not that they pump out more code per hour worked.
+
+The first one was not a bad person by any means, but had no social skills, no ability to communicate and often just forged ahead building great stuff on his own. Entire areas of the software were entirely conceived and created by him, and it was difficult to even grasp what he was doing while pair programming with him. In a day he would write more tests and get more coverage than the rest of us would create in a week.
+
+The second one had come from a FAANG-ish place where he was extremely successful, but didn't want the money or stress. He was extremely kind, considerate and great at communicating. Pair programming with him was a joy and he helped everyone else on the team grow. I'm confident he could have created entire regions of the software on his own, but he knew that wasn't the right thing to do. He would often ask questions until someone else on the team could solve a problem, even though I'm sure he knew how to solve it easily himself. 
+
+
 [How to Become a Bad Developer](https://rafaelquintanilha.com/how-to-become-a-bad-developer/) - [Hacker News discussion](https://news.ycombinator.com/item?id=27539342)
 
 [An incomplete list of skills senior engineers need, beyond coding](https://skamille.medium.com/an-incomplete-list-of-skills-senior-engineers-need-beyond-coding-8ed4a521b29f)
@@ -14,9 +23,63 @@
 
 [Notes to a Young Software Engineer](https://www.nemil.com/on-software-engineering/index.html)
 
+- [Think in Tradeoffs](https://www.nemil.com/on-software-engineering/think-in-tradeoffs.html) -  most engineering decisions as tradeoffs — not good choices versus bad choices.
+- [Pierce the Abstraction Wall](https://www.nemil.com/on-software-engineering/pierce-the-abstraction-wall.html) - soft versus hard interfaces
+- [Don't Write Code](https://www.nemil.com/on-software-engineering/dont-write-code.html)
+- [Read Code](https://www.nemil.com/on-software-engineering/read-code.html)
+- [The User is King (And Not)](https://www.nemil.com/on-software-engineering/user-is-king-and-not.html)
+
 [The Differences Between a Junior, Mid-Level, and Senior Developer](https://medium.com/better-programming/the-differences-between-a-junior-mid-level-and-senior-developer-bb2cb2eb000d)
 
 [Things I Learnt from a Senior Software Engineer](https://neilkakkar.com/things-I-learnt-from-a-senior-dev.html)
+
+[What Separates Good from Great Data Scientists?](https://towardsdatascience.com/what-separates-good-from-great-data-scientists-2906431455fd)
+
+- strong focus on business impact,
+- software engineering skills,
+- expectation management,
+- can use the cloud,
+
+[Building a data team at a mid-stage startup: a short story](https://erikbern.com/2021/07/07/the-data-team-a-short-story.html)
+
+- not aligned on metrics,
+- data science work not production ready - not integrated often enough (should be like commits, early + often)
+- the most basic foundation of what is most critically needed: all the important data, in the same place, easily queryable
+- centralization of the reporting structure, but keeping the work management decentralized - > creates a much tighter feedback loop between data and decisions
+
+```
+    Lack of data, and fragmented data
+        The product is poorly instrumented so data often doesn't exist in the first place
+        A fragmentation of data systems, with data spread out over many different ones
+        Brittle business processes driven by data but with little or no automation
+    An unclear expectation of what the data team's job is supposed to be
+        Data scientists hired to do R&D and figure out some way to deploy AI or whatever — as a result not having any clear business goal
+        Data team complaining about it being hard to productionize ML, yet the product team doesn't really seem to care about the feature
+        People in need of “English-to-SQL translators”
+    A product team not trained to be data driven
+        Product managers not thinking about data as a tool for building better features
+        A lack of alignment between what product teams want to build versus what data teams have
+    A culture that fundamentally is at odds with being data driven
+        A culture of celebrating shipping, versus celebrating measurable progress and learnings
+        To the extent teams actually use metrics, they are inconsistent, poorly measured, and in some cases at conflict with other teams
+    No data leadership
+        A fractured data org with various data people reporting into other functional areas
+        Other departments not getting the help they need, so they work around the data team and hire lots of analysts
+        Lack of standardizations of toolchain and best practice
+```
+
+```
+The other thing is, note what's happening with the supply chain team. The journey is roughly:
+
+    That team started out with their own “business analysts” (outside the data team) but need the data team to run queries for them to get data
+    Those business analysts are starting to run queries themselves with the help of the data team
+    They start to build up “shadow tech debt” (in this case monster SQL queries) which first causes a bunch of friction with the data team
+    The data team starts embedding into the team and helping them get to a better place
+    Because of the embedding, the need for business analysts goes down and data scientists goes up
+```
+
+
+
 
 ## [What I’ve Learned in 45 Years in the Software Industry](https://www.bti360.com/what-ive-learned-in-45-years-in-the-software-industry/)
 

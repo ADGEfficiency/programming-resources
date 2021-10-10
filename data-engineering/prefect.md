@@ -73,3 +73,13 @@ Submit Python functions
 Can use `LocalExectuor` locally (no Dask)
 
 ## https://docs.prefect.io/core/concepts/execution.html#triggers
+
+
+## https://docs.prefect.io/core/concepts/schedules.html
+
+
+Three components of schedule:
+
+- clock - emits events,
+- filters - avoid running on weekends,
+- adjustments - modify events - like advancing to next month

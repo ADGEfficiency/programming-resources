@@ -11,6 +11,8 @@
 
 [Scipy Lecture Notes](https://scipy-lectures.org/index.html)
 
+[ipython-cookbook](https://github.com/ipython-books/cookbook-2nd)
+
 
 ## Advanced
 

@@ -1,5 +1,6 @@
-[Data-oriented Programming in Python](https://www.moderndescartes.com/essays/data_oriented_python/)
+[Understanding the internals of NumPy - iPython Cookbook](https://ipython-books.github.io/45-understanding-the-internals-of-numpy-to-avoid-unnecessary-array-copying/)
 
+[Data-oriented Programming in Python](https://www.moderndescartes.com/essays/data_oriented_python/)
 
 [VECTORS, MATRICES, AND ARRAYS RECIPES IN PYTHON](https://dataisutopia.com/blog/vectors-matrices-and-arrays-recipes-in-python/)
 

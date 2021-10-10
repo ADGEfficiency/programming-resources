@@ -1,3 +1,10 @@
+https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration
+
+https://docs.github.com/actions/automating-builds-and-tests/building-and-testing-nodejs-or-python?langId=py
+
+Events - https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
+
+
 https://posthog.com/blog/automating-a-software-company-with-github-actions
 
 Per repository workflows

@@ -194,7 +194,9 @@ Abstractions are never perfect
 - impossible to abstract perfectly - because all abstractions are lies 
 - they are approximations - the map, not the territory
 
-
+*Further reading*
+- [Abstraction - Wikipedia](https://en.wikipedia.org/wiki/Abstraction_(computer_science))
+- [Pierce the Abstraction Wall](https://www.nemil.com/on-software-engineering/pierce-the-abstraction-wall.html) - soft versus hard interfaces
 
 ## Interfaces
 
@@ -217,8 +219,7 @@ What do we want in a good interface?
 A good interface makes the common case simple
 - sensible defaults
 
-*Further reading*
-- [Abstraction - Wikipedia](https://en.wikipedia.org/wiki/Abstraction_(computer_science))
+
 
 
 ### API
@@ -687,28 +688,33 @@ Seeing / feeling / fearing dependencies
 
 Seeing / feeling / fearing scope (project scope especially :)
 
+
 ## Reading code
 
-Read
+Read:
+
 - great writers write a lot, and read even more
 - so should a programmer
 - read your dependencies (pandas, numpy etc)
 
-Run
+Run:
+
 - use the software, understand inputs & outputs
 - examine high level structure - `tree` is useful here
 - dive into key sections & important data structures - look out for interesting code patterns to learn from
 
-Test
+Test:
+
 - write test cases to prove your understanding
 - perhaps these can even be added to the project test suite
 
-Importance of having control over your development environment
+Importance of having control over your development environment:
+
 - being able to use the operating system of your choice at work
 - being able to manage Python effectively on a remote machine
 - being able to do things that would be dangerous in production
 
-Further reading
+*Further reading*
 
 - [Read Code - Nemil Dalal](https://www.nemil.com/on-software-engineering/read-code.html)
 
@@ -1164,6 +1170,31 @@ Spaghetti = coupling = dependency
 - dependencies - which modules know about each other
 
 Modules depend on each other / databases / code in undesirable ways
+
+
+## Code is bad
+
+> The line of code that’s the fastest to write, that never breaks, that doesn’t need maintenance, is the line you never had to write - STEVE JOBS
+
+Problems should be solved with the least amount of code possible
+
+Code is bad:
+
+- introduces maintenance cost,
+- expensive to write,
+- often we write our own code for a problem that is solved by someone elses code.
+
+External tools are often a better choice than home-grown solutions:
+
+- better tested & widely used,
+- better security updates,
+- often cheap compared to software engineer salaries.
+
+Similar logic for using managed services versus installing everything yourself
+
+*Further reading*
+
+- [Don't Write Code](https://www.nemil.com/on-software-engineering/dont-write-code.html)
 
 
 ## Readability

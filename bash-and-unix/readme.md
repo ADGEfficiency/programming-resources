@@ -20,6 +20,8 @@ You can also find hard copies of additional resources in [programming-resources/
 
 [Modern Unix](https://github.com/ibraheemdev/modern-unix) - modern/faster/saner alternatives or complements to common unix commands
 
+[6 Command Line Tools for Productive Programmers](https://earthly.dev/blog/command-line-tools/)
+
 [Linux/BSD command line wizardry: Learn to think in sed, awk, and grep](https://arstechnica.com/gadgets/2021/08/linux-bsd-command-line-101-using-awk-sed-and-grep-in-the-terminal/) - good for beginners.
 
 - grep finds strings,

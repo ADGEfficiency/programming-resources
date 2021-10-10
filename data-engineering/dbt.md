@@ -1,16 +1,9 @@
-https://www.getdbt.com/
+## https://docs.getdbt.com/faqs/loading-data
+How do I load data into my warehouse?
 
-dbt connects to and runs SQL against your database, warehouse, platform, or query engine.
+dbt assumes that you already have a copy of your data, in your data warehouse. We recommend you use an off-the-shelf tool like Stitch or Fivetran to get data into your warehouse.
 
-## What makes dbt so powerful?
+Can dbt be used to load data?
 
-As a dbt user, your main focus will be on writing models (i.e. select queries) that reflect core business logic – there’s no need to write boilerplate code to create tables and views, or to define the order of execution of your models. Instead, dbt handles turning these models into objects in your warehouse for you.
-
-dbt handles boilerplate code to materialize queries as relations. For each model you create, you can easily configure a materialization.
-
-Jinja templating
-
-
-## Who should use dbt?
-
-dbt is appropriate for anyone who interacts with a data warehouse. It can be used by data engineers, data analysts and data scientists, or anyone that knows how to write select queries in SQL.
+No, dbt does not extract or load data. It focuses on the transformation step only.
+Edit this page
