@@ -719,6 +719,20 @@ Importance of having control over your development environment:
 - [Read Code - Nemil Dalal](https://www.nemil.com/on-software-engineering/read-code.html)
 
 
+## Learning a new language
+
+- Read issues (open & closed!) on Github repos of packages/libraries you use,
+- Read the standard library.
+
+
+*Further reading*
+
+- [How To Rapidly Improve At Any Programming Language](https://www.cbui.dev/how-to-rapidly-improve-at-any-programming-language/)
+- [To Learn a New Language, Read Its Standard Library](http://patshaughnessy.net/2021/10/23/to-learn-a-new-language-read-its-standard-library)
+
+
+
+
 ## Googling error messages
 
 In Python, the most recent (what error happened) error message is at the bottom

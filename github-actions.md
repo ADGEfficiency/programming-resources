@@ -1,3 +1,6 @@
+
+
+
 https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration
 
 https://docs.github.com/actions/automating-builds-and-tests/building-and-testing-nodejs-or-python?langId=py
@@ -176,3 +179,19 @@ Continuous integration:
 
 Continuous deployment
 - deploying on commits / PRs
+
+---
+
+## Automating a software company with GitHub Actions
+
+https://posthog.com/blog/automating-a-software-company-with-github-actions
+
+https://news.ycombinator.com/item?id=28234057
+
+It's gotten to the point where new any new workflows I write are thin wrappers around a single script and I don't import any actions besides actions/checkout (even that has been bug prone, historically).
+
+CI is a script, and the YAML configs for those various services configure the machine type, OS and toolchain. Everything else is contained within the script. Sometimes even toolchain setup is handled by the script.
+
+Not following this model has wasted so much time when migrating services or trying to tweak what CI does.
+
+With a script you can run it locally to ensure it performs the steps desired, leaving the CI “setup” to minimal environment/toolchain debugging. 

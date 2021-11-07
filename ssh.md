@@ -11,6 +11,13 @@ Use cases of SSH are:
 
 Pre-installed by default with the vast majority of Linux distributions
 
+Examples:
+
+```
+ssh -A -i ~/.ssh/adam-emd-monitoring.pem -tt ubuntu@13.239.125.196
+scp -i ~/.ssh/adam-emd-monitoring.pem ubuntu@13.239.125.196:/home/ubuntu/research/research/bi/.env .
+```
+
 
 ## Introduction
 
@@ -31,6 +38,7 @@ Pre-installed by default with the vast majority of Linux distributions
 - ssh-add command is your gateway to the SSH agent - add/remove keys etc
 
 Agent forwarding
+
 - allows your local SSH agent to reach through an existing SSH connection and transparently authenticate on a more distant server
 - With agent forwarding, the SSH client on EC2 can use the keys on your local computer to authenticate to GitHub
 

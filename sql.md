@@ -13,6 +13,32 @@ Learnt on the job
 - relational concepts are at heart, are set-based (ORM = object based),
 - the only workable solution to the ORM problem is to pick one or the other: either abandon relational databases, or abandon objects. If you take the O or the R out of the equation, you no longer have a mapping problem.
 
+[Relational Databases Aren’t Dinosaurs, They’re Sharks](https://www.simplethread.com/relational-databases-arent-dinosaurs-theyre-sharks/)
+
+Most relational databases come with four primary guarantees:
+
+- Atomicity – The guarantee that any series of operations within a transaction are treated as a single unit. The entire thing either succeeds or fails, and won’t leave you in an invalid state.
+- Consistency – The guarantee that any operation against the database will leave it in a valid state.
+- Isolation – The guarantee that any operations executed concurrently will leave the database in the same state as they would have if they were executed sequentially. Generally this means that transactions can’t see data being modified by other transactions.
+- Durability – The guarantee that once a transaction is committed, it will stay committed, regardless of whether the system crashes or power fails.
+
+NoSQL makes tradeoffs - BASE:
+
+- Basically Available – The system can guarantee availability, as defined by the CAP theorem, but by potentially trading off consistency.
+- Soft State – The database doesn’t enforce data consistency, and values may change without interaction, due to eventual consistency.
+- Eventual Consistency – When data is written, it isn’t guaranteed to be immediately consistent to all database consumers. Generally speaking, it has to be replicated across all nodes in the database, which means that any reads occurring during that time could be inconsistent.
+
+NoSQL advantages:
+
+- High Write Performance – Many NoSQL databases advertise having incredible write performance. Relational databases have spent years optimizing the speed of writes, but their speed is limited by their durability and consistency guarantees. Relational databases can only write as fast as their persistent memory will allow them to. Or as fast as they can process transactions, indexes, and foreign keys (especially if they have to block). Throwing out guaranteed immediate persistence, not allowing transactions, not enforcing foreign keys, etc… can immediately enable huge gains in write performance.
+- High Read Performance – Many NoSQL databases have incredible read performance. This is often enabled due to balancing reads across a number of instances in a cluster, which provides high write performance, but generally gives up consistency due to eventual consistency. Many NoSQL databases also increase read performance by having simpler query syntaxes that don’t allow complex joins or queries across multiple “tables”, or whatever grouping mechanism they use.
+- Easy Horizontal Sharding – Sharding historically has been a huge pain point for relational databases. The primary reason is that by sharding data across a number of remote instances, you end up having to give up a lot of the consistency guarantees that relational databases provide. For example, what if you had a foreign key between two tables that are sharded across a number of different instances. In order to enforce that foreign key, you would have to scan every instance in the cluster to find the related data. By getting rid of these kinds of data consistency checks, you can much more easily shard data across large numbers of instances without running into huge performance bottlenecks.
+- Easy Schema Updates – Many NoSQL databases make database modifications much easier by being “schemaless”. This usually means that whatever structure you put data into the system, it is simply stored in that way. So if you need to add a new field, you simply start saving data with that new field. If you want that field across all of your data, then you write a job to update every record and add that field. Relational databases, on the other hand, usually have strict schemas and require more complex operations to update schemas. Particularly when a database is under heavy load.
+- More Reliable, and Predictable, Performance – NoSQL databases often have much more reliable and predictable performance. Most relational databases provide a lot of opportunities to degrade performance, usually by poorly performing queries. SQL is an incredibly powerful language, but knowing the pitfalls of it, and how your particular relational database performs under different circumstances can be challenging. I’ve seen many instances where small changes to a SQL query can increase its performance by a hundred fold. Many NoSQL databases dramatically simplify data access (sometimes by only allowing key based access), and instead choose to duplicate data in order to make it more easily queryable or export data to dedicated reporting databases.
+
+
+
+
 
 ---
 

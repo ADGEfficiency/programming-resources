@@ -4,7 +4,7 @@ A collection of programming resources, mainly relevant to the work of a data sci
 
 These are my personal notes - you will often find my notes and summaries alongside links to articles.
 
-Some of these notes are also used for teaching programming things:
+Hidden inside these notes are teaching materials:
 
 - [fundamentals/computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md), 
 - [fundamentals/programming.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md),
@@ -14,7 +14,7 @@ Some of these notes are also used for teaching programming things:
 I maintain similar collections on [reinforcement learning](https://github.com/ADGEfficiency/rl-resources) and [machine learning](https://github.com/ADGEfficiency/ml-resources).
 
 
-## Music to Listen to While Programming
+## Programming Music
 
 [Project Audio for GitHub](https://github.audio/) - tracks events happening across GitHub and converts them to music notes.
 
@@ -25,7 +25,7 @@ I maintain similar collections on [reinforcement learning](https://github.com/AD
 
 ## Random Cool Stuff
 
-[RosettaGit](https://rosettagit.org/) - solutions to the same task in as many different programming languages as possible
+[RosettaGit](https://rosettagit.org/) - solutions to the same task in as many different programming languages.
 
 [Screenshots from developers & Unix people (2002)](https://anders.unix.se/2015/10/28/screenshots-from-developers--unix-people-2002/)
 
@@ -37,13 +37,7 @@ I maintain similar collections on [reinforcement learning](https://github.com/AD
 
 [Linus Torvalds on C++](http://harmful.cat-v.org/software/c++/linus)
 
-Honeypot documentaries:
-
-- [Ember.js](https://www.youtube.com/watch?v=Cvz-9ccflKQ)
-- [Vue.js](https://www.youtube.com/watch?v=OrxmtDw4pVI)
-- [GraphQL](https://www.youtube.com/watch?v=783ccP__No8)
-
-[The Programmers' Stone](https://www.datapacrat.com/Opinion/Reciprocality/r0/index.html)
+Honeypot documentaries on [Ember.js](https://www.youtube.com/watch?v=Cvz-9ccflKQ), [Vue.js](https://www.youtube.com/watch?v=OrxmtDw4pVI) & [GraphQL](https://www.youtube.com/watch?v=783ccP__No8).
 
 [List of software development philosophies - Wikipedia](https://en.wikipedia.org/wiki/List_of_software_development_philosophies)
 - [Rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging)
@@ -52,13 +46,11 @@ Honeypot documentaries:
 
 Richard Hamming - You and Your Research - [lecture](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
 
-[Monte Carlo Methods](https://easylang.online/apps/tutorial_mcarlo.html)
-
 [The Architecture of Open Source Applications](https://www.aosabook.org/en/index.html) - Architects look at thousands of buildings during their training, and study critiques of those buildings written by masters. In contrast, most software developers only ever get to know a handful of large programs well—usually programs they wrote themselves—and never study the great programs of history. As a result, they repeat one another's mistakes rather than building on one another's successes. 
 
-[Don't Call Yourself A Programmer, And Other Career Advice](https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/)
-
 [Do call yourself a programmer, and other career advice](http://yosefk.com/blog/do-call-yourself-a-programmer-and-other-career-advice.html)
+
+[Don't Call Yourself A Programmer, And Other Career Advice](https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/)
 
 [Software Development Waste](https://neverworkintheory.org/2021/08/29/software-development-waste.html) - [Hacker News discussion](https://news.ycombinator.com/item?id=28352075)
 

@@ -1,3 +1,12 @@
+[136 facts every web dev should know before they burn out and turn to landscape painting or nude modelling](https://www.baldurbjarnason.com/2021/100-things-every-web-developer-should-know/)
+
+
+https://news.ycombinator.com/item?id=27418296
+
+The difference between a decent developer and a great developer is the latter understand how their work fits into the larger picture. As a result they're able to quickly and effectively pivot to suit the dynamic needs of the business. 
+
+ It's not easy to do things the simple way, being clever is the easy path. Knowing when you need to be clever and when simple is enough is what separates experience from greenhorns. 
+
 [20 Things I’ve Learned in my 20 Years as a Software Engineer](https://www.simplethread.com/20-things-ive-learned-in-my-20-years-as-a-software-engineer/) - [Hacker News discussion](https://news.ycombinator.com/item?id=28797485)
 
 - The benefit of talented engineers comes from the fact that they avoid costly pitfalls - not that they pump out more code per hour worked.

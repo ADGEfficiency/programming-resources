@@ -14,6 +14,48 @@ Essential features of the web
 - [Chapter 2: Browers](https://css-tricks.com/chapter-2-browsers/) 
 - [Chapter 3: The Website](https://css-tricks.com/chapter-3-the-website/)
 
+[What do I need to read to be a great at CSS?](https://www.baldurbjarnason.com/2021/what-do-i-need-to-read-to-be-a-css-dev/) - [HN discussion](https://news.ycombinator.com/item?id=28968137)
+
+blog posts on specific problems and how you might solve them
+
+Reading about how to organise your work is some of the most productive learning you can do
+
+the importance of a blog in your feed reader is inversely proportional to their posting cadence. Prioritise the blogs that post only once a month or every couple of weeks over those that post every day or multiple times a day.
+
+---
+I suggest taking an used A4 piece of paper and fold it in thirds on both the horizontal and vertical side.
+
+Holding the paper vertically, you'll notice you now have 3 main sections (header, intro, rest of the page) and 3 columns you can arrange your content into.
+
+Take another A4 piece of paper, fold it in 3 and then in half this time, you'll have 3 main sections and 2 columns in each section.
+
+Now cut each of the 3 blocks from each paper, you will end up with 6 sections (3 with 3 columns and 3 with 2 columns)
+
+Try and write some of your content down on these 6 Lego blocks you created, sketch images (or just draw a rectangle with an X inside, that means "image placeholder" in graphic design layouts).
+
+This exercise will help you understand how design is just content split in manageable parts.
+
+You'll soon notice most sites are not monoliths, but the very same blocks you jotted down on paper.
+
+This will make your template-scavengig effective, you'll notice you like certain types of blocks (say 3 columns with a background image) and dislike others (say hero banners with buttons). Steal the ones you like (crop screenshots and save them), then see if you can see what you like in each of those you saved. Try and recreate them as abstractly as you can either on paper or by using the rectangle tool in any graphic editor (don't get lost making it perfect, you'll get there faster by doing it by code instead than using graphic design tools).
+
+Toy with design, it's all a fad anyway and what matters is what I've outlined here: blocks, columns, steal what you like. 
+
+---
+Most bad designs I’ve seen can be dramatically improved with some very basic design concepts that I think most developers can learn, at least towards getting the design looking relatively ‘clean’.
+
+If you can’t apply a theme or make use of a designer, keep all your colors gray, and just focus on the shades. Darker shades to bring emphasis.
+
+Secondly, make sure there is consistent padding, margins, and alignments. This is more tricky because it requires you to see the empty spaces and think of them as their own elements. Always be looking for areas of inconsistency and misalignment. This finicky because just two pixels offset here and there can have a big impact, but it is very much worth making thing look more consistent.
+
+Lastly, look for opportunities to reduce the total number of visual elements in busy areas (within reason). Good examples of superfluous elements example might be outlines around icons, underlines, borders, two “empty space rectangles” that can become a single rectangle.
+
+I’ve found 70% of my design methods are just applying these three concepts over and over again, and formulating somewhat logical principles to apply them. My designs aren’t as good as what a designer would produce, but are much higher quality than I didn’t apply any thought to design at all. 
+
+---
+ Writing modes, box-model, margin, padding, positioning (relative/absolute), flexbox, grid, media queries and units (px, %, rem, em).
+
+
 [Web Architecture 101](https://engineering.videoblocks.com/web-architecture-101-a3224e126947) - the basic architecture concepts I wish I knew when I was getting started as a web developer
 
 [HTML is the Web - Pete Lambert](https://www.petelambert.com/journal/html-is-the-web)

@@ -8,6 +8,14 @@ https://youtu.be/Hyhwem1Gyjo
 Future of Data Engineering - Chris Riccomini
 https://youtu.be/ZZr9oE4Oa5U
 
+[An introduction to Entity Resolution — needs and challenges](https://towardsdatascience.com/an-introduction-to-entity-resolution-needs-and-challenges-97fba052dde5)
+
+For understanding the data, computers need to identify records that refer to the same real-world entity
+
+A corporate service provider can use entity resolution to resolve organization names despite the different representations, misspellings, abbreviations, and typographical errors.
+
+Leading and trailing white spaces, hyphens, case differences, and dots can make any two addresses look different when they are not.
+
 [andkret/Cookbook](https://github.com/andkret/Cookbook) - The Data Engineering Cookbook
 
 - hit and miss, early chapters are better
