@@ -4,6 +4,8 @@ A collection of programming resources, mainly relevant to the work of a data sci
 
 These are my personal notes - you will often find my notes and summaries alongside links to articles.
 
+## Fundamentals Course
+
 Hidden inside these notes are teaching materials:
 
 - [fundamentals/computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md), 
@@ -11,16 +13,88 @@ Hidden inside these notes are teaching materials:
 - [bash-and-unix/intro.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md),
 - [test-driven-development](https://github.com/ADGEfficiency/programming-resources/tree/master/test-driven-development).
 
-I maintain similar collections on [reinforcement learning](https://github.com/ADGEfficiency/rl-resources) and [machine learning](https://github.com/ADGEfficiency/ml-resources).
+I also maintain similar collections on [reinforcement learning](https://github.com/ADGEfficiency/rl-resources) and [machine learning](https://github.com/ADGEfficiency/ml-resources).
 
 
-## Programming Music
+## Music to Program To
 
-[Project Audio for GitHub](https://github.audio/) - tracks events happening across GitHub and converts them to music notes.
+[Project Audio for GitHub](https://github.audio/) - tracks events happening across GitHub and converts them to music.
 
 [Listen to Wikipedia](http://listen.hatnote.com/) - real-time visualization and sonification of Wikipedia activity.
 
 [musicForProgramming](https://musicforprogramming.net/?about)
+
+
+## Blog Posts & Articles
+
+[The Yoda of Silicon Valley](https://www.nytimes.com/2018/12/17/science/donald-knuth-computers-algorithms-programming.html)
+
+[Overlooked No More: Alan Turing, Condemned Code Breaker and Computer Visionary](https://www.nytimes.com/2019/06/05/obituaries/alan-turing-overlooked.html)
+
+[The Friendship That Made Google Huge - Jeff Dean and Sanjay Ghemawat](https://www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge)
+
+[How Data (and Some Breathtaking Soccer) Brought Liverpool to the Cusp of Glory](https://www.nytimes.com/2019/05/22/magazine/soccer-data-liverpool.html)
+
+[A Unicorn Lost in the Valley, Evernote Blows Up the ‘Fail Fast’ Gospel](https://www.nytimes.com/2019/06/28/business/evernote-what-happened.html)
+
+[Why Google+ Failed](https://onezero.medium.com/why-google-failed-4b9db05b973b)
+
+[When Larry Met Sergey](https://marker.medium.com/when-larry-met-sergey-8bfcdbace1f7)
+
+[Cities: Skylines is Turing Complete](https://medium.com/@balidani/cities-skylines-is-turing-complete-e5ccf75d1c3a)
+
+[How Notion pulled itself back from the brink of failure](https://www.figma.com/blog/design-on-a-deadline-how-notion-pulled-itself-back-from-the-brink-of-failure/)
+
+
+
+## Blogs
+
+[Matt Might](https://matt.might.net/articles/)
+
+- [A short introduction to make](https://matt.might.net/articles/intro-to-make/)
+- [Tips for work-life balance](https://matt.might.net/articles/work-life-balance/)
+
+[Hillel Wayne](https://www.hillelwayne.com/about/)
+
+- [Clever vs Insightful Code](https://www.hillelwayne.com/post/cleverness/)
+- [What engineering can teach (and learn from) us](https://www.hillelwayne.com/post/what-we-can-learn/)
+- [Are we really engineers?](https://www.hillelwayne.com/post/are-we-really-engineers/)
+- [The Hard Part of Learning a Language](https://www.hillelwayne.com/post/learning-a-language/)
+
+[Proper Fixation](http://yosefk.com/blog/)
+
+- [Don't ask if a monorepo is good for you – ask if you're good enough for a monorepo](http://yosefk.com/blog/dont-ask-if-a-monorepo-is-good-for-you-ask-if-youre-good-enough-for-a-monorepo.html)
+- [Evil tip: avoid "easy" things](http://yosefk.com/blog/evil-tip-avoid-easy-things.html)
+- [Love thy coworker; thy work, not necessarily](http://yosefk.com/blog/love-thy-coworker-thy-work-not-necessarily.html)
+- [Things from Python I'd miss in Go](http://yosefk.com/blog/things-from-python-id-miss-in-go.html)
+- [Engineers vs managers: economics vs business](http://yosefk.com/blog/engineers-vs-managers-economics-vs-business.html)
+- [The cardinal programming jokes](http://yosefk.com/blog/the-cardinal-programming-jokes.html)
+
+[Haki Benita](https://hakibenita.com/)
+
+[Cat on Mat](https://catonmat.net/)
+
+[dwmkerr.com](https://dwmkerr.com/)
+
+[The Clean Code Blog - Robert C. Martin (Uncle Bob)](http://blog.cleancoder.com/)
+- [Classes vs. Data Structures](http://blog.cleancoder.com/uncle-bob/2019/06/16/ObjectsAndDataStructures.html)
+- [FP vs. OO](http://blog.cleancoder.com/uncle-bob/2018/04/13/FPvsOO.html)
+- [Women In Demand](https://blog.cleancoder.com/uncle-bob/2017/10/04/WomenInDemand.html)
+
+[Code by Kate Rose Morley](http://code.iamkate.com/)
+
+[Justin Meiners](https://justinmeiners.github.io/)
+- [Foundation of Math Reading List](https://justinmeiners.github.io/foundations-of-math-reading/)
+- [The Skills Poor Programmers Lack](https://justinmeiners.github.io/the-skills-programmers-lack/)
+- [Think in Math. Write in Code](https://justinmeiners.github.io/think-in-math/)
+
+[koaning.io](https://koaning.io/) - Vincent D. Warmerdam
+- [The Future of Data Science is Past](https://koaning.io/posts/the-future-is-past/)
+- [Outliers: Selection vs. Detection](https://koaning.io/posts/outliers-selection-vs-detection/)
+
+[The Digital Cat](https://www.thedigitalcatonline.com/)
+
+
 
 
 ## Random Cool Stuff
@@ -37,14 +111,13 @@ I maintain similar collections on [reinforcement learning](https://github.com/AD
 
 [Linus Torvalds on C++](http://harmful.cat-v.org/software/c++/linus)
 
-Honeypot documentaries on [Ember.js](https://www.youtube.com/watch?v=Cvz-9ccflKQ), [Vue.js](https://www.youtube.com/watch?v=OrxmtDw4pVI) & [GraphQL](https://www.youtube.com/watch?v=783ccP__No8).
+The Honeypot documentaries on [Ember.js](https://www.youtube.com/watch?v=Cvz-9ccflKQ), [Vue.js](https://www.youtube.com/watch?v=OrxmtDw4pVI) & [GraphQL](https://www.youtube.com/watch?v=783ccP__No8).
 
-[List of software development philosophies - Wikipedia](https://en.wikipedia.org/wiki/List_of_software_development_philosophies)
-- [Rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging)
+[List of software development philosophies - Wikipedia](https://en.wikipedia.org/wiki/List_of_software_development_philosophies), including [Rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging).
 
 [dwmkerr/hacker-laws](https://github.com/dwmkerr/hacker-laws) - Laws, Theories, Principles and Patterns that developers will find useful.
 
-Richard Hamming - You and Your Research - [lecture](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
+[Richard Hamming - You and Your Research Lecture](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
 
 [The Architecture of Open Source Applications](https://www.aosabook.org/en/index.html) - Architects look at thousands of buildings during their training, and study critiques of those buildings written by masters. In contrast, most software developers only ever get to know a handful of large programs well—usually programs they wrote themselves—and never study the great programs of history. As a result, they repeat one another's mistakes rather than building on one another's successes. 
 
@@ -134,7 +207,7 @@ Ineffective communication
 
 [ines/course-starter-python](https://github.com/ines/course-starter-python) - course framework for spaCy
 
-./missing-semester - gain proficiency with computing systems (shell, editor, version control) - [notes](https://missing.csail.mit.edu/) - [lecture videos](https://www.youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J)
+[./missing-semester](https://missing.csail.mit.edu/) - gain proficiency with computing systems (shell, editor, version control) - [notes](https://missing.csail.mit.edu/) - [lecture videos](https://www.youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J)
 - [Lecture 4: Data Wrangling (2020)](https://youtu.be/sz_dsktIjt4) - sed
 - [Lecture 5: Command-line Environment (2020)](https://youtu.be/e8BO_dYxk5c) - tmux, ssh
 - [Lecture 8: Metaprogramming (2020)](https://youtu.be/_Ms1Z4xfqv4) - make, testing
@@ -146,56 +219,7 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 [Computer Science from the Bottom Up](https://www.bottomupcs.com/index.xhtml)
 
-[CS360 -- Systems Programming](https://web.eecs.utk.edu/~jplank/plank/classes/cs360/lecture_notes.html)
-- [Memory](https://web.eecs.utk.edu/~huangj/cs360/360/notes/Memory/lecture.html)
-
-
-## Blogs
-
-[Matt Might](https://matt.might.net/articles/)
-
-- [A short introduction to make](https://matt.might.net/articles/intro-to-make/)
-- [Tips for work-life balance](https://matt.might.net/articles/work-life-balance/)
-
-[Hillel Wayne](https://www.hillelwayne.com/about/)
-
-- [Clever vs Insightful Code](https://www.hillelwayne.com/post/cleverness/)
-- [What engineering can teach (and learn from) us](https://www.hillelwayne.com/post/what-we-can-learn/)
-- [Are we really engineers?](https://www.hillelwayne.com/post/are-we-really-engineers/)
-- [The Hard Part of Learning a Language](https://www.hillelwayne.com/post/learning-a-language/)
-
-[Proper Fixation](http://yosefk.com/blog/)
-
-- [Don't ask if a monorepo is good for you – ask if you're good enough for a monorepo](http://yosefk.com/blog/dont-ask-if-a-monorepo-is-good-for-you-ask-if-youre-good-enough-for-a-monorepo.html)
-- [Evil tip: avoid "easy" things](http://yosefk.com/blog/evil-tip-avoid-easy-things.html)
-- [Love thy coworker; thy work, not necessarily](http://yosefk.com/blog/love-thy-coworker-thy-work-not-necessarily.html)
-- [Things from Python I'd miss in Go](http://yosefk.com/blog/things-from-python-id-miss-in-go.html)
-- [Engineers vs managers: economics vs business](http://yosefk.com/blog/engineers-vs-managers-economics-vs-business.html)
-- [The cardinal programming jokes](http://yosefk.com/blog/the-cardinal-programming-jokes.html)
-
-[Haki Benita](https://hakibenita.com/)
-
-[Cat on Mat](https://catonmat.net/)
-
-[dwmkerr.com](https://dwmkerr.com/)
-
-[The Clean Code Blog - Robert C. Martin (Uncle Bob)](http://blog.cleancoder.com/)
-- [Classes vs. Data Structures](http://blog.cleancoder.com/uncle-bob/2019/06/16/ObjectsAndDataStructures.html)
-- [FP vs. OO](http://blog.cleancoder.com/uncle-bob/2018/04/13/FPvsOO.html)
-- [Women In Demand](https://blog.cleancoder.com/uncle-bob/2017/10/04/WomenInDemand.html)
-
-[Code by Kate Rose Morley](http://code.iamkate.com/)
-
-[Justin Meiners](https://justinmeiners.github.io/)
-- [Foundation of Math Reading List](https://justinmeiners.github.io/foundations-of-math-reading/)
-- [The Skills Poor Programmers Lack](https://justinmeiners.github.io/the-skills-programmers-lack/)
-- [Think in Math. Write in Code](https://justinmeiners.github.io/think-in-math/)
-
-[koaning.io](https://koaning.io/) - Vincent D. Warmerdam
-- [The Future of Data Science is Past](https://koaning.io/posts/the-future-is-past/)
-- [Outliers: Selection vs. Detection](https://koaning.io/posts/outliers-selection-vs-detection/)
-
-[The Digital Cat](https://www.thedigitalcatonline.com/)
+[CS360 -- Systems Programming](https://web.eecs.utk.edu/~jplank/plank/classes/cs360/lecture_notes.html), and the module on [Memory](https://web.eecs.utk.edu/~huangj/cs360/360/notes/Memory/lecture.html).
 
 
 ## Code Challenges
@@ -206,26 +230,6 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 [HackerRank](https://www.hackerrank.com)
 
-
-## Blog Posts & Articles
-
-[The Yoda of Silicon Valley](https://www.nytimes.com/2018/12/17/science/donald-knuth-computers-algorithms-programming.html)
-
-[Overlooked No More: Alan Turing, Condemned Code Breaker and Computer Visionary](https://www.nytimes.com/2019/06/05/obituaries/alan-turing-overlooked.html)
-
-[The Friendship That Made Google Huge - Jeff Dean and Sanjay Ghemawat](https://www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge)
-
-[How Data (and Some Breathtaking Soccer) Brought Liverpool to the Cusp of Glory](https://www.nytimes.com/2019/05/22/magazine/soccer-data-liverpool.html)
-
-[A Unicorn Lost in the Valley, Evernote Blows Up the ‘Fail Fast’ Gospel](https://www.nytimes.com/2019/06/28/business/evernote-what-happened.html)
-
-[Why Google+ Failed](https://onezero.medium.com/why-google-failed-4b9db05b973b)
-
-[When Larry Met Sergey](https://marker.medium.com/when-larry-met-sergey-8bfcdbace1f7)
-
-[Cities: Skylines is Turing Complete](https://medium.com/@balidani/cities-skylines-is-turing-complete-e5ccf75d1c3a)
-
-[How Notion pulled itself back from the brink of failure](https://www.figma.com/blog/design-on-a-deadline-how-notion-pulled-itself-back-from-the-brink-of-failure/)
 
 ## Books
 

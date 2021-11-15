@@ -44,3 +44,12 @@ Agent forwarding
 
 ProxyJump
 - safer than agent forwarding
+
+---
+
+Things to get right
+
+private & public key permissions - https://superuser.com/questions/215504/permissions-on-private-key-in-ssh-folder
+
+public key (.pub file): 644 (-rw-r--r--)
+private key (id_rsa): 600 (-rw-------)
