@@ -1,6 +1,6 @@
 # Programming Resources
 
-A collection of programming resources, mainly relevant to the work of a data scientist.
+A collection of programming resources that help me manage my imposter syndrome being paid to program (I have a chemical engineering background).
 
 These are my personal notes - you will often find my notes and summaries alongside links to articles.
 
