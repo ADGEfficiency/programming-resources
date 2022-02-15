@@ -67,7 +67,7 @@ Won't change how you are fundamentally doing something - still will run same Pyt
 
 Makefiles are very close to raw shell scripts (like a Dockerfile)
 
-```
+```makefile
 targetfile: sourcefile
 	command
 ```
@@ -186,6 +186,8 @@ clean:
 [A short introduction to make - Matt Might](https://matt.might.net/articles/intro-to-make/)
 
 [What is a Makefile and how does it work?](https://opensource.com/article/18/8/what-how-makefile)
+
+[Make - Wikipedia](https://en.wikipedia.org/wiki/Make_(software))
 
 ### Discussion
 

@@ -58,7 +58,7 @@ def my_test_func(var):
 Can also pass in multiple args
 ```python
 @pytest.mark.parametrize(
-    'var1', 'var2',
+    'var1, var2',
     [(var11, var21), (var21, var22)]
 )
 def my_test_(var1, var):

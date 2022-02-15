@@ -9,23 +9,26 @@ A data engineer enables access to data
 
 Emphasis on data quality
 
-Data science versus BI analytics
+Data science versus BI analytics:
+
 - BI analytics = SQL
 - petascale SQL is a solved problem
 - 500+ nodes, databases work well
 
-Data scientists will replace BI
-- predictive model or big table of numbers
+Data scientists will replace BI:
+
+- predictive model or big table of numbers?
 - BI = big table of number
 
-Data science
-- data management - SQL (table) based calcs
-- complex analytics - array based calcs
+Data science:
 
-Data management versus analytics
+- data management - SQL (table) based calcs,
+- complex analytics - array based calcs.
 
-- data management - SQL (table) based calcs
-- complex analytics - array based calcs (deep learning etc)
+Data management versus analytics:
+
+- data management - SQL (table) based calcs,
+- complex analytics - array based calcs (deep learning etc).
 
 
 ## What is a data engineer?
@@ -277,6 +280,8 @@ Focus on structured data
 Redshift, Snowflake, Google BigQuery
 - better access to hadoop by only SQL
 
+OLTP-based relational databases are, by definition, meant for transactional loads. For analytical loads, data lakes, data warehouses, data marts, there’s another list of databases.
+
 
 ### What is a Data Mart?
 
@@ -366,3 +371,5 @@ Spark
 [CS329 - Lecture 3 - Data Engineering](https://docs.google.com/document/u/1/d/1b9iuZiDEGVLHyMmnf6w2y1aN6yWQhAyqk3GHlpI9q6M/mobilebasic)
 
 [Modern Data Stack for Analytics Engineering - Kyle Shannon](https://youtu.be/UmIZIkeOfi0)
+
+[The New Data Engineering Stack](https://towardsdatascience.com/the-new-data-engineering-stack-78939850bb30)

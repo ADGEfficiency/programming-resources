@@ -55,17 +55,22 @@ Fast
 Easy to run 
 
 Automatically run (pre commit git hook)
+- if a test isn't automated, it's not test.
 
 Deterministic
 
 
 ## Types of tests
 
-Unit test = tests a function/class in isolation
+Unit test = tests a function/class in isolation, usually only on local machine,
 
-Integration test = several functions/classes
+Integration test = several functions/classes, usually only locally.
 
-System test = entire system mimicking how a user would use the system
+System test = entire system mimicking how a user would use the system, interacts with real, external systems.
+
+Can also look in terms of online test versus offline test.
+
+
 
 
 ## Test driven development

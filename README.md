@@ -264,6 +264,7 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 - [Richard Karp: Algorithms and Computational Complexity](https://youtu.be/KllCrlfLuzs)
 - [Brendan Eich: JavaScript, Firefox, Mozilla, and Brave](https://youtu.be/krB0enBeSiE)
 - [Charles Hoskinson: Cardano](https://youtu.be/FKh8hjJNhWc)
+- [Jeffrey Shainline: Neuromorphic Computing](https://youtu.be/EwueqdgIvq4)
 
 [Talk Python To Me](https://talkpython.fm/)
 

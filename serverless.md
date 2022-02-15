@@ -11,8 +11,18 @@ Package
 sls package --stage test
 ```
 
-[The traits of serverless architecture](https://www.thoughtworks.com/insights/blog/traits-serverless-architecture)O
+Remove
+```
+sls remove --stage dev
+```
 
+Test deployed Lambda locally:
+
+```bash
+$ serverless invoke --function data_ingestion --stage test --path ./test_data/test-sunrise.json --aws-profile gridcog-dev
+```
+
+[The traits of serverless architecture](https://www.thoughtworks.com/insights/blog/traits-serverless-architecture)O
 
 - low barrier-to-entry
 - hostless

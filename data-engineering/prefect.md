@@ -1,5 +1,4 @@
-task, flow, how flows run
-
+task, flow, flow runs
 
 prefect questions we had
 - terminology
@@ -83,3 +82,44 @@ Three components of schedule:
 - clock - emits events,
 - filters - avoid running on weekends,
 - adjustments - modify events - like advancing to next month
+
+
+## https://docs.prefect.io/core/concepts/results.html
+
+## https://docs.prefect.io/api/latest/engine/results.html
+
+https://docs.prefect.io/core/advanced_tutorials/using-results.html
+
+## https://docs.prefect.io/core/idioms/targets.html
+
+flow results - https://docs.prefect.io/core/advanced_tutorials/using-results.html
+
+---
+
+## https://docs.prefect.io/core/concepts/persistence.html
+
+
+---
+
+
+## https://docs.prefect.io/core/concepts/templating.html
+
+---
+
+Prefect brings a bunch of abstractions - two important ones are the flow & flow run.
+
+What to label flow runs:
+
+    give maximum visibility of what is running in the flow run name,
+    something like nem_prices_raw_2014-01-01
+
+What to label flows:
+
+    flows can be quite general purpose, so are reused,
+    what happens to existing/scheduled flow runs if a flow is changed/updated?
+    much of the EMD work fits nicely into an ETL abstraction -> reuse of the ETL flow
+    will reusing get us into trouble in between stages?
+
+Agents - looks out for and runs flows
+
+Project - just a label
