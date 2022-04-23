@@ -1,0 +1,38 @@
+# SQLite
+
+https://sqlite.org/lpc2019/doc/trunk/briefing.md - a briefing on SQLite intended for Linux kernel hackers, and especially those working on Linux filesystems
+- subroutine in same process
+- same heap & stack
+
+The Untold Story of SQLite - https://corecursive.com/066-sqlite-with-richard-hipp/
+
+
+## Should I use SQLite?
+
+[Appropriate Uses For SQLite](https://www.sqlite.org/whentouse.html)
+
+Where to use:
+- embedded devices,
+- websites,
+- data analysis,
+- server databases.
+
+Where not to use:
+- client/server applications,
+- high volume websites,
+- very large data.
+
+
+[Avoid SQLite In Your Next Firefox Feature](https://wiki.mozilla.org/Performance/Avoid_SQLite_In_Your_Next_Firefox_Feature)
+
+- use JSON in files under 1MB compressed (lz4),
+- if lots of strings, use external files.
+
+
+## Using SQLite properly
+
+
+
+[Many Small Queries Are Efficient In SQLite](https://sqlite.org/np1queryprob.html) - [HN Discussion](https://news.ycombinator.com/item?id=26151302)
+
+ SQLite can also do large and complex queries efficiently, just like client/server databases. But SQLite can do many smaller queries efficiently too. Application developers can use whichever technique works best for the task at hand. 

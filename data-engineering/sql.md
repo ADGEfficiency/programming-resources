@@ -4,7 +4,7 @@
 
 - SQL injection + prepared statements,
 - indexing,
-- less tables usually better ?
+- less tables usually better
 
 ## Relational Databases
 
@@ -167,12 +167,31 @@ https://news.ycombinator.com/item?id=27025829
 
 resist the temptation to 'SELECT *' into a data frame and break the problem up into stages where you get the database to do the maximum work before it gets to the data frame. 
 
-## SQLite
 
-https://sqlite.org/lpc2019/doc/trunk/briefing.md - a briefing on SQLite intended for Linux kernel hackers, and especially those working on Linux filesystems
-- subroutine in same process
-- same heap & stack
+## Working with SQL
 
-The Untold Story of SQLite - https://corecursive.com/066-sqlite-with-richard-hipp/
+[Best practice for SQL statements in Python](https://www.btelligent.com/en/blog/best-practice-for-sql-statements-in-python/)
+
+- don't use string concatenation,
+- use parameterized queries.
+
+[A terrible schema from a clueless programmer](https://rachelbythebay.com/w/2021/11/06/sql/)
+
+Storing raw strings in databases = heavy.  Instead it should be normalized.
 
 
+## Code tutorials
+
+[Practical SQL for Data Analysis](https://hakibenita.com/sql-for-data-analysis) - [HN Discussion](https://news.ycombinator.com/item?id=27025829)
+
+
+## Code exercises
+
+[SQLBolt](https://sqlbolt.com/) - [HN Discussion](https://news.ycombinator.com/item?id=27842067) - interactive lessons and exercises designed to help you quickly learn SQL right in your browser.
+
+[SQL Challenge - Mode](https://mode.com/sql-challenge/)
+
+
+## Books
+
+[The Art of PostgreSQL](https://theartofpostgresql.com/)

@@ -154,6 +154,18 @@ git merge dev
 - merge commits vs. squash & merge vs. rebase & merge
 
 
+## Branching strategies
+
+[Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+
+Legacy workflow - fallen in popularity in favour of trunk based.
+
+[Trunk Based Development](https://trunkbaseddevelopment.com/)
+
+Trunk = main = master.  Developers never work on release branches.
+
+
+
 ## Advanced
 
 [More productive Git](https://increment.com/open-source/more-productive-git/)

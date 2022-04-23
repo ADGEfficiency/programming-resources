@@ -384,12 +384,42 @@ A log file
 - sequence of records
 - ordered by time
 
-Records 
+Records
+
 - what happened 
 - when it happened
 
+You should log after events, not before:
+
+```python
+#  not this
+print('doing thing')
+do_thing()
+
+#  do this
+do_thing()
+print('thing is done')
+```
+
+Separate parameters from the message:
+
+```python
+#  do this
+inp = 'some-input'
+do_thing(inp)
+print(f'did thing [inp: {inp}]')
+```
+
+Distinguish between warning, error and info:
+
+- info for business,
+- debug for technology,
+
+
 *Further reading*
+
 - [The Log: What every software engineer should know about real-time data's unifying abstraction](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
+- [My Logging Best Practices - Thomas in Coding](https://tuhrig.de/my-logging-best-practices/) - [HN discussion](https://news.ycombinator.com/item?id=28759492)
 
 
 ## Properties of programming languages

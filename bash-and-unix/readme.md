@@ -14,6 +14,11 @@
 
 You can also find hard copies of additional resources in [programming-resources/bash-and-unix/resources](https://github.com/ADGEfficiency/programming-resources/tree/master/bash-and-unix/resources).
 
+## For beginners
+
+[Survival guide for Unix newbies](https://matt.might.net/articles/basic-unix/)
+
+
 ### References
 
 [UNIX Toolbox](http://cb.vu/unixtoolbox.xhtml) - collection of Unix/Linux/BSD commands and tasks (like a cheat sheet)
@@ -96,6 +101,3 @@ dwmkerr.com - Effective Shell
 - [Part 5: Interlude - Understanding the Shell](https://dwmkerr.com/effective-shell-part-5-understanding-the-shell/)
 - [Part 6: Everything You Don't Need to Know About Job Control](https://dwmkerr.com/effective-shell-6-job-control/)
 - [Part 7: The Subtleties of Shell Commands](https://dwmkerr.com/effective-shell-7-shell-commands/)
-
-### Interesting reading
-

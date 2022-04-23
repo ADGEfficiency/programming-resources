@@ -6,6 +6,10 @@ psql -U postgres -h $PGENDPOINT -d coggy -f path/to/file.sql
 
 ```
 
+delete 2022 data
+
+DELETE FROM emd.interval_data WHERE market = 'nz' AND datetime_utc >= '2021-12-31T11:00:00';
+
 ---
 https://www.postgresql.org/docs/11/tutorial-arch.html
 
@@ -69,3 +73,8 @@ https://use-the-index-luke.com/sql/where-clause/the-equals-operator/concatenated
 https://www.brentozar.com/archive/2018/10/index-tuning-week-how-many-indexes-are-too-many/
 
 5 indexes per table, 5 columns each
+
+
+## Books
+
+[The Art of PostgreSQL](https://theartofpostgresql.com/)

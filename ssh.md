@@ -18,6 +18,13 @@ ssh -A -i ~/.ssh/adam-emd-monitoring.pem -tt ubuntu@13.239.125.196
 scp -i ~/.ssh/adam-emd-monitoring.pem ubuntu@13.239.125.196:/home/ubuntu/research/research/bi/.env .
 ```
 
+## Tunnels
+
+6006 = tensorboard, 8000 = jupyter lab
+
+```sh
+ssh -N -L localhost:6006:localhost:6006 $USER@$HOST
+```
 
 ## Introduction
 

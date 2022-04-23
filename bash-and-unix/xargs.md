@@ -1,5 +1,4 @@
-
-
+# xargs
 
 Which Flags Should I Know About?
 
@@ -13,6 +12,7 @@ https://news.ycombinator.com/item?id=28258189
 
 
 ## An Opinionated Guide to xargs
+
 https://www.oilshell.org/blog/2021/08/xargs.html
 
 
@@ -35,3 +35,9 @@ What can we control?
 - how we split text (`-d, -0`),
 - how many arguments are passed to each process,
 - whether processes are run in parallel `-P`
+
+## How to split
+
+- `xargs` split on whitespace
+- `xargs -d $'\n'` split lines
+- `xargs -0` untrusted data

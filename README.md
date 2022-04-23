@@ -25,6 +25,13 @@ I also maintain similar collections on [reinforcement learning](https://github.c
 [musicForProgramming](https://musicforprogramming.net/?about)
 
 
+## What Every Programmer Should Know
+
+[Memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf) - [HN discussion](https://news.ycombinator.com/item?id=30354290)
+
+[What every computer science major should know](https://matt.might.net/articles/what-cs-majors-should-know/)
+
+
 ## Blog Posts & Articles
 
 [The Yoda of Silicon Valley](https://www.nytimes.com/2018/12/17/science/donald-knuth-computers-algorithms-programming.html)
@@ -93,8 +100,6 @@ I also maintain similar collections on [reinforcement learning](https://github.c
 - [Outliers: Selection vs. Detection](https://koaning.io/posts/outliers-selection-vs-detection/)
 
 [The Digital Cat](https://www.thedigitalcatonline.com/)
-
-
 
 
 ## Random Cool Stuff
@@ -198,6 +203,8 @@ Ineffective communication
 
 
 ## Courses
+
+[Developer Roadmaps](https://roadmap.sh/roadmaps) - Python, React, backend, frontend.
 
 6.005 Software Construction - [course homepage](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-005-software-construction-spring-2016/) - [notes](https://ocw.mit.edu/ans7870/6/6.005/s16/index.html) - introduces fundamental principles and techniques of software development - how to write software that is safe from bugs, easy to understand, and ready for change.
 

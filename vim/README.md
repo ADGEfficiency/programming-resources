@@ -10,6 +10,8 @@
 
 [Vim for Python in 2020](https://www.vimfromscratch.com/articles/vim-for-python/)
 
+[Vimways 2019](https://vimways.org/2019/)
+
 ## Talks
 
 GOTO 2013 • VIM for Victory • Roy Osherove - [video](https://www.youtube.com/watch?v=2BRbyQC9oMw)

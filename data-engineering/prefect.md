@@ -1,3 +1,8 @@
+# Intro to Prefect
+
+
+
+---
 task, flow, flow runs
 
 prefect questions we had
@@ -123,3 +128,22 @@ What to label flows:
 Agents - looks out for and runs flows
 
 Project - just a label
+
+---
+## Prefect Targeting
+
+[https://stackoverflow.com/questions/63419097/prefect-how-to-avoid-rerunning-a-task](https://stackoverflow.com/questions/63419097/prefect-how-to-avoid-rerunning-a-task)
+
+For caching / not rerunning already run tasks in Prefect:
+
+The simplest way to cache a task is to use targets, which 
+lets you specify that the task has a templatable side effect (usually a 
+file in local or Cloud storage, but could be e.g. a database entry, 
+redis key, or anything else). Before the task is run, it checks if the 
+side effect exists and if it does, skips the run.
+
+For example, this task will write its result to a local file automatically templated with the task name and the current date:
+
+`@task(result=LocalResult(), target="{task_name}-{today}")
+def get_data():
+    return [1, 2, 3, 4, 5]`

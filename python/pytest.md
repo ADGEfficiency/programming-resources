@@ -10,7 +10,6 @@ System test = entire system mimicking how a user would use the system
 
 # Command line options
 
-
 `-v vebose`  show full diff
 
 `test_name.py::test_func` run specific function

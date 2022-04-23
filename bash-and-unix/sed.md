@@ -34,6 +34,12 @@ Replace in Python files (need the extra `""` at the front on MacOS):
 $ sed -i "" "s/climatedb.newspapers.utils/climatedb.utils/" newspapers/*.py
 ```
 
+## On linux
+```
+
+
+```
+
 Remove:
 ```bash
 $ sed -i "s/pattern//g"
