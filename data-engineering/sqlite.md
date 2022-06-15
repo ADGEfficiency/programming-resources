@@ -6,6 +6,27 @@ https://sqlite.org/lpc2019/doc/trunk/briefing.md - a briefing on SQLite intended
 
 The Untold Story of SQLite - https://corecursive.com/066-sqlite-with-richard-hipp/
 
+## [Ask HN: Have you used SQLite as a primary database?](https://news.ycombinator.com/item?id=31152490)
+
+
+## [Consider SQLite](https://blog.wesleyac.com/posts/consider-sqlite)
+
+Rather than running a SQL server (with a program running than you talk to) - embed the implementation of SQL into your program, using a single file as backing storage
+
+SQLite is popular - there are hundreds of SQLite databases running on your devices (phones, tablet)
+
+Scaling a database:
+
+1. total amount of data,
+2. read throughput,
+3. write throughput.
+
+SQLite struggles with write throughput
+
+Writes do not block reads in SQLite.
+
+Max data = 281 TB (Postgres = unlimited, but tables have lower limit on size than sqlite)
+
 
 ## Should I use SQLite?
 

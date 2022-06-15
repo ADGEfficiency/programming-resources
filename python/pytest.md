@@ -101,7 +101,7 @@ Args for fixtures:
 import pytest
 
 def test_passes():
-    with pytest.raises(Exception) as e_info:
+    with pytest.raises(Exception) as err:
         x = 1 / 0
 ```
 

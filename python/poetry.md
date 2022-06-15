@@ -1,16 +1,17 @@
-which is best - 
-
-
-
----
-
-
 # poetry
 
-poetry new climate-news-db
-then make pytoml interactively
+Make poetry project without a directory structure
 
-poetry init
+```
+$ poetry init
+```
+
+Or make with opinionated directory:
+```
+$ poetry new climate-news-db
+```
+
+Then make pytoml interactively
 
 poetry config virtualenvs.create false --local
 poetry install
@@ -24,3 +25,9 @@ poetry add
 https://python-poetry.org/docs/dependency-specification/
 
 https://stackoverflow.com/questions/53835198/integrating-python-poetry-with-docker
+
+---
+
+poetry add pkg -D
+
+poetry install --no-dev

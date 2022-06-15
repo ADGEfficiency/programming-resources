@@ -351,7 +351,9 @@ Readme driven development
 - write sample code for the most common use cases
 
 *Further reading*
-- [Readme Driven Development](https://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
+
+- [Readme Driven Development](https://tom.preston-werner.com/2010/08/23/readme-driven-development.html),
+- [Write documentation first. Then build.](https://reproof.app/blog/document-first-then-build).
 
 
 ## Testing

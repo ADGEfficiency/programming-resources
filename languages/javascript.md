@@ -1,3 +1,24 @@
+set text of p element js
+
+```js
+element.textContent = "I have changed!";
+```
+
+make json string js
+
+```js
+var jsonString = JSON.stringify(obj);
+```
+
+decode json string js
+
+```
+JSON.parse
+```
+
+
+---
+
 [Deep JavaScript: Theory and techniques](https://exploringjs.com/deep-js/)
 
 [Modern Javascript: Everything you missed over the last 10 years](https://turriate.com/articles/modern-javascript-everything-you-missed-over-10-years)
