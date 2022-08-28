@@ -1,9 +1,3 @@
-what is important about orctestration
-
-- how to track dependencies,
-- can you pass data between tasks
-
-
 # Airflow
 
 - [tutorial](https://airflow.apache.org/docs/apache-airflow/stable/tutorial.html)

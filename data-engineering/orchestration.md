@@ -1,31 +1,61 @@
-## Orchestration 101
+# Data Pipeline Orchestration
 
-Why an orchestration service?
+What is data pipeline orchestration?
 
-- schedule tasks, like scraping raw data, processing/cleaning data and aggregations,
+- schedule tasks & computation, like scraping raw data, processing/cleaning data and aggregations,
 - manage dependencies between tasks - if I get raw data again, which downstream tasks do I need to run again?
-- monitor tasks - when did this task last run?
+- monitoring & visibility of computation (future, current & past), easy access to logs.
 
 Pipelines made of tasks that take inputs & create data artifacts:
 
-- imperative - defined in Python,
-- declarative - defined in YAML
+- imperative - defined in Python (define both how and what),
+- declarative - defined in YAML (define what only).
 
-Pipelines are controlled by orchestrators.  An orchestrator is three things:
+An orchestrator is commonly built from:
 
-1. scheduler,
-2. exectuor,
-3. metadata store to keep track of pipeline execution.
+1. a scheduler / agent - responsible for starting tasks,
+2. executor / worker(s) - run tasks,
+3. metadata store -  keep track of pipeline execution,
+4. UI - displays metadata on pipeline status & gives control over agent/tasks/workers.
 
-What is a DAG?
+With a data orchestration system you will often maintain two environments - an execution environment and a scheduling / agent environment.
 
-- Directed acyclic graph
+The agent will be an always on service - even if we aren't tracking a task, the agent will still be listening.  Execution environments are only used when there are tasks to execute.
 
-Task versus data driven:
+## Importance of DAGs
+
+Directed acyclic graph
+
+## Task versus data driven:
+
 - task based =  decouple the task orchstration from the task itself (Airflow, Prefect),
 - data driven =  know the kind of data they are using/creating (Dagster)
 
-Argument for task based is that modern data systems (databases) are very aware of the data content, & can manage this
+Argument for task based is that modern data systems (databases) are very aware of the data content, & can manage/optimize this.
+
+## Orchestration Frameworks
+
+What is important about an orchestration framework?
+
+- how to track dependencies,
+- can you pass data between tasks,
+- does the orchestrator have visibility on actual data transformations in tasks,
+- maturity, 
+- documentation quality, 
+- does SAS product exist - introduces dependencies, often less flexible but quicker to develop with & avoid solving solved problems.
+
+Why an orchestration framework?
+
+- workflows of data pipeline management are complicated to build from primitive AWS components (EC2, Lambda, RDS etc),
+- the problems of data pipeline management (scheduling, batch compute etc) are common & share enough that they can be abstracted out.
+
+# Data Orchestration Frameworks
+
+Which framework (in 2022):
+
+- Airflow 2,
+- Prefect 2,
+- Dagster.
 
 ## Airflow
 
@@ -47,6 +77,8 @@ This means that if you want to:
 - maintain a workflow that only runs manually
 
 then Airflow is the wrong tool.
+
+More in programming-resources/data-engineering/airflow.md
 
 ## Prefect
 
@@ -72,6 +104,8 @@ Prefect Cloud:
 - SLAs
 
 Task library - [https://docs.prefect.io/core/task_library/overview.html](https://docs.prefect.io/core/task_library/overview.html)
+
+More in data-engineering/prefect.md
 
 ## Dagster
 

@@ -1,15 +1,11 @@
-# Intro to Prefect
+# Prefect
 
-
-
----
 task, flow, flow runs
 
 prefect questions we had
 - terminology
 - flow, agent
 - how to link tasks, manage dependencies
-
 
 https://docs.prefect.io/core/tutorial/01-etl-before-prefect.html
 

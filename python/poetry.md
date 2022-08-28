@@ -11,7 +11,7 @@ Or make with opinionated directory:
 $ poetry new climate-news-db
 ```
 
-Then make pytoml interactively
+Then make pytoml interactively or through poetry add
 
 poetry config virtualenvs.create false --local
 poetry install

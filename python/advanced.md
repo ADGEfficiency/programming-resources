@@ -21,9 +21,7 @@ def decorator(func):
         #  do stuff after
         #  return
         return func(*args, **kwargs)
-
     return wrapper
-
 ```
 
 ## Debugging using pdb

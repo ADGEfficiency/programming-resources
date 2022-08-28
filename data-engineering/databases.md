@@ -2,6 +2,13 @@ Transactional versus analytical - different read + write patterns
 
 ---
 
+Fact + dimension tables
+
+- one a fact table that says what the forecasts are
+- two a dimension table that has all the forecasts
+
+---
+
 https://www.reddit.com/r/dataengineering/comments/tqud76/database_design_best_practices_for_data_warehouses/
 
  If the system supports transactions, I normalize it. If it's for analysis, I get as close to "One Big Table" (obt) as makes sense so analyst don't have to even worry about joins.

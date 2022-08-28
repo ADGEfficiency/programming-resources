@@ -33,6 +33,34 @@ Data management versus analytics:
 Skills
 - SQL Data Modeling Python Cloud Spark Kafka
 
+
+## Components of a data engineering system
+
+Datalake - unstructured data/file storage
+
+Database - structured data storage, can be queried using a query language (commonly SQL), usually relational.
+
+Computation layers:
+
+- serverless functions,
+- Linux boxes,
+- containers.
+
+Orchestration - how to create/schedule/monitor pipelines.
+
+Data warehouse = analytics database:
+
+- Snowflake, Redshift
+
+## Good data engineering practices
+
+- always save raw data unchanged (*idempotency* is a core part of our data pipeline design),
+- keep schemas separate from database code (so we can easily change databases),
+- particular + consistent on column naming - a common set of columns (`pytz_timezone`, `datetime_utc`, `last_changed_utc`, `E, B, Q, K` etc) for use in many tables,
+- we only rely on capitalization ( `datetime` != `Datetime` ) at *sim engine time*, not anywhere else (our databases tend to flatten column names),
+- parquet everywhere - columar (important!) binary data format, can be read & visualized directly by frontend,
+- Our work always need to be account aware - our infra is always deployed across accounts (not within account).
+
 ---
 
 Don't worry too much about the individual tools in the beginning. Yes, there are certain tools like u/Cloudskipper92 mentioned Airflow, DBT, Snowflake and so on, but you need to understand why and when you use them.
