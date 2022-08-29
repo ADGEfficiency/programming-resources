@@ -31,6 +31,8 @@ I also maintain similar collections on [reinforcement learning](https://github.c
 
 [What every computer science major should know](https://matt.might.net/articles/what-cs-majors-should-know/)
 
+[Explore kandi](https://kandi.openweaver.com/) - A platform that helps developers create applications faster by reusing the right libraries, code snippets, packages, APIs, and cloud functions from over 430 million knowledge items across all repositories, cloud and information sources and applying AI to help the developer choose the right component that fits their need across technology, framework, domain, security, quality, support, license and many other dimensions.
+
 
 ## Blog Posts & Articles
 
