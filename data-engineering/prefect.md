@@ -1,3 +1,56 @@
+# Prefect 2
+
+## Inbox
+
+prefect profile create (with a Cloud API url), prefect profile use `name`
+
+https://docs.prefect.io/concepts/flows/#composing-flows
+
+
+## Prefect 2 Issues
+
+.prefectignore
+
+
+## Deploying on AWS
+
+
+
+## Prefect + Docker Compose
+
+[fraibacas/prefect-orion](https://github.com/fraibacas/prefect-orion)
+
+- Postgres, Docker Agent, Minio
+- flow storage in minio
+- Flows execute in a Docker Container!
+
+[rpeden/prefect-docker-compose](https://github.com/rpeden/prefect-docker-compose)
+
+```
+#!/usr/bin/env bash
+
+#  deploy and run a simple healthcheck Prefect flow
+#  meant to be run inside the Prefect container
+#  uses local storage & runs in a local process on the docker compose prefect container
+
+WORKQUEUE=alpha
+DEPLOYMENT=alpha
+
+prefect deployment build app/workflows/healthcheck.py:healthcheck -n $DEPLOYMENT -q $WORKQUEUE
+prefect deployment apply /opt/prefect/healthcheck-deployment.yaml
+prefect deployment run healthcheck/$DEPLOYMENT
+```
+
+## Prefect bugs
+
+I've had the actions flow deployer container break a few times because we don't have this file.
+
+I think it's automatically created when we use the CLI to create the deployment on the container (as we did previously), but not when we use Python to create the deployment.
+
+I'm putting it on a list of things to help Prefect out with at some point.
+
+
+---
 # Prefect
 
 task, flow, flow runs

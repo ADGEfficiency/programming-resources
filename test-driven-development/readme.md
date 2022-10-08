@@ -1,26 +1,18 @@
-Test driven development is a software engineering philosophy - is isn't the only one (see [List of software development philosophies - Wikipedia](https://en.wikipedia.org/wiki/List_of_software_development_philosophies)).
+# Testing
 
-## Further reading
-
-[Hello, Startup: A Programmer's Guide to Building Products, Technologies, and Teams - Yevgeniy Brikman](https://www.amazon.co.uk/gp/product/B016YZWDA4/ref=ppx_yo_dt_b_d_asin_title_o01?ie=UTF8&psc=1)
-
-[Clean Architecture: A Craftsman's Guide to Software Structure and Design - Robert C. Martin](https://www.goodreads.com/book/show/18043011-clean-architecture)
-
-[Stargirl Flowers Python testing style guide](https://blog.thea.codes/my-python-testing-style-guide/)
-
-## Criticism of TDD
-
-[Why most unit testing is a waste](https://rbcs-us.com/documents/Why-Most-Unit-Testing-is-Waste.pdf)
+Test Driven Development (TDD) is a [software engineering philosophy](https://en.wikipedia.org/wiki/List_of_software_development_philosophies)). 
 
 
-## Why test
+## Why Test Software?
 
-1. tests can tell you if you new code breaks anything
-2. tests make you write better code
-3. tests help others understand your code
+Tests can:
+
+1. detect broken software,
+2. make you write better code,
+3. help others understand your code.
 
 
-## 1 - Verifying that you didn't break anything
+## 1. Testing Detects Broken Software
 
 A test suite gives you verification that functions are not broken
 - check for correctness by failing to show incorrectness
@@ -28,7 +20,7 @@ A test suite gives you verification that functions are not broken
 It doesn't prove that everything is perfect!
 
 
-## 2 - Writing better code
+## 2. Testing Makes You Write Better Code
 
 Tests force you to decompose code into functions
 - code that is difficult to test may be too tightly coupled
@@ -39,16 +31,38 @@ We must design the function so it can be tested
 
 Test also force you to think about dependencies (you shouldn't need to run the database to test the UI)
 
-
-
-## 3 - Make code easier for others to understand
+## 3. Make code easier for others to understand
 
 Tests also act as a form of documentation - executable documentation that a computer can run (and other developers can read)
 
 Test code is as important as your source code
 
 
-## A good test suite is
+
+
+## Criticism of TDD
+
+[Why most unit testing is a waste](https://rbcs-us.com/documents/Why-Most-Unit-Testing-is-Waste.pdf)
+
+[Unit Testing is Overrated](https://tyrrrz.me/blog/unit-testing-is-overrated) - [Hacker News Dicussion](https://news.ycombinator.com/item?id=30942020)
+
+
+## What is a Test Suite?
+
+Levels of Testing
+
+Unit testing
+- tests a function/class in isolation, usually only on local machine,
+
+Integration testing
+- several functions/classes, usually only locally.
+
+System test 
+- entire system mimicking how a user would use the system, interacts with real, external systems.
+
+Can also look in terms of online test versus offline test ?
+
+## What Makes a Good Test Suite?
 
 Fast
 
@@ -59,21 +73,15 @@ Automatically run (pre commit git hook)
 
 Deterministic
 
+## How Much Test Coverage?
 
-## Types of tests
-
-Unit test = tests a function/class in isolation, usually only on local machine,
-
-Integration test = several functions/classes, usually only locally.
-
-System test = entire system mimicking how a user would use the system, interacts with real, external systems.
-
-Can also look in terms of online test versus offline test.
+Too many tests can resuln
 
 
+> Focusing on 100% unit test coverage all the time—particularly in code that isn't doing simple, single responsibility stuff—often results (in my experience) in tests that overly mock other parts of the system. The net result is that you end up writing tests that simple check that "the code was written the way it is currently written".
 
 
-## Test driven development
+## Test Driven Development (TDD)
 
 Write the test before you write the function
 
@@ -103,3 +111,13 @@ In contrast, TDD is great in these cases:
 - Complicated proof of concept, i.e. different ways to solve a subproblem, clean data etc…
 - Working with a subset of data, so you have to make sure that you capture problems when new issues come up without destroying working code.
 - You are working in a team, yet you want to make sure that no one breaks the functioning code.
+
+
+## Further reading
+
+[Hello, Startup: A Programmer's Guide to Building Products, Technologies, and Teams - Yevgeniy Brikman](https://www.amazon.co.uk/gp/product/B016YZWDA4/ref=ppx_yo_dt_b_d_asin_title_o01?ie=UTF8&psc=1)
+
+[Clean Architecture: A Craftsman's Guide to Software Structure and Design - Robert C. Martin](https://www.goodreads.com/book/show/18043011-clean-architecture)
+
+[Stargirl Flowers Python testing style guide](https://blog.thea.codes/my-python-testing-style-guide/)
+

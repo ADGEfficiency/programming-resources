@@ -11,23 +11,30 @@ Or make with opinionated directory:
 $ poetry new climate-news-db
 ```
 
-Then make pytoml interactively or through poetry add
+Then add packages interactively.
 
-poetry config virtualenvs.create false --local
-poetry install
+You can add packages later on with:
 
-poetry.toml versus pyproject.toml
+```shell-session
+$ poetry add mypy
+```
 
-poetry.lock file
+Turn off Poetry using it's own venv:
 
-poetry add
+```
+$ poetry config virtualenvs.create false --local
+```
+
+poetry.toml versus pyproject.toml versus poetry.lock file
 
 https://python-poetry.org/docs/dependency-specification/
 
 https://stackoverflow.com/questions/53835198/integrating-python-poetry-with-docker
 
----
+Development dependecies:
 
-poetry add pkg -D
+```
+$ poetry add pkg -D
+$ poetry install --no-dev
+```
 
-poetry install --no-dev

@@ -1,4 +1,13 @@
-## Assign columns
+#  Is Polars the Pandas Killer?
+
+## Pandas versus Polars
+
+## Selecting rows and columns
+
+row
+
+
+# Assign columns
 
 ```python
 df.with_columns([
@@ -6,6 +15,15 @@ df.with_columns([
     (pl.col("value") * 100).alias("hundredXValue"),
 ])
 ```
+
+## Group by
+
+
+```
+    regions = ds.groupby("region").agg([pl.mean("npv")])
+```
+
+Use of `pl.mean(col)` versus `pl.col(col).mean()`
 
 
 ## Group by with conditional

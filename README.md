@@ -32,7 +32,8 @@ I also maintain similar collections on [reinforcement learning](https://github.c
 [What every computer science major should know](https://matt.might.net/articles/what-cs-majors-should-know/)
 
 
-## Blog Posts & Articles
+## Articles
+
 
 [The Yoda of Silicon Valley](https://www.nytimes.com/2018/12/17/science/donald-knuth-computers-algorithms-programming.html)
 
@@ -53,8 +54,13 @@ I also maintain similar collections on [reinforcement learning](https://github.c
 [How Notion pulled itself back from the brink of failure](https://www.figma.com/blog/design-on-a-deadline-how-notion-pulled-itself-back-from-the-brink-of-failure/)
 
 
-
 ## Blogs
+
+[https://www.netmeister.org](https://www.netmeister.org)
+- [(A few) Ops Lessons We All Learn The Hard Way](https://www.netmeister.org/blog/ops-lessons.html)
+- [Consistent Tools](https://www.netmeister.org/blog/consistent-tools.html)
+- [Writing Shell Scripts](https://www.netmeister.org/blog/writing-shell-scripts.html)
+- [Industry vs Academia](https://www.netmeister.org/blog/industry-vs-academia.html)
 
 [Matt Might](https://matt.might.net/articles/)
 

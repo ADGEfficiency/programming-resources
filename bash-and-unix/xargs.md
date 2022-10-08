@@ -13,8 +13,11 @@ https://news.ycombinator.com/item?id=28258189
 
 ## An Opinionated Guide to xargs
 
-https://www.oilshell.org/blog/2021/08/xargs.html
+>  I always think of xargs as the inverse of echo. echo converts arguments to text streams, and xargs converts text streams to arguments.  - senkora on Aug 21, 2021 | prev | next [–]
+	
+senkora on Aug 21, 2021 | prev | next [–]
 
+https://www.oilshell.org/blog/2021/08/xargs.html - [Hacker News Discussion](https://news.ycombinator.com/item?id=28258189)
 
 ```bash
 $ echo 'alice bob' | xargs -n 1 -- echo hi
@@ -30,14 +33,38 @@ What's happening here?
 
 It may help to mentally replace xargs with the word each. As in, for each word, line, or token, invoke this process with these args.
 
-What can we control?
-
-- how we split text (`-d, -0`),
-- how many arguments are passed to each process,
-- whether processes are run in parallel `-P`
+`xargs -I {}` {} is the input - can only be one thing
 
 ## How to split
 
-- `xargs` split on whitespace
-- `xargs -d $'\n'` split lines
-- `xargs -0` untrusted data
+Limit yourself to these three
+
+- `xargs` split on whitespace/words,
+- `xargs -d $'\n'` split lines,
+- `xargs -0` untrusted data.
+
+## num args to each process
+
+`-n`
+
+## parallel or not
+
+`-P`
+
+## echoing 
+
+$ cat tasks.txt | xargs -n 1 -- $0 do_one
+
+## composing
+
+# Filter tasks by name
+find ... | grep ... | xargs ...
+
+# Limit the number of tasks.  I use this all the time
+# for faster testing
+find ... | head | xargs ...
+
+# Believe it or not, I use this to randomize music
+# and videos :)
+find ... | shuf | xargs mplayer
+

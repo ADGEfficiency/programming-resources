@@ -38,7 +38,7 @@ Skills
 
 Datalake - unstructured data/file storage
 
-Database - structured data storage, can be queried using a query language (commonly SQL), usually relational.
+Database - structured data storage, can be queried using a query language (commonly SQL), usually relational, performant way to store & access data.
 
 Computation layers:
 
@@ -48,9 +48,25 @@ Computation layers:
 
 Orchestration - how to create/schedule/monitor pipelines.
 
+Python - scripting / computing.  pandas, pytest, poetry, pydantic, mypy.
+
+Optional
+
 Data warehouse = analytics database:
 
-- Snowflake, Redshift
+- Snowflake, Redshift,
+- different data layout (columnar) = better for analytics,
+- use when you hit limits with transactional
+
+Athena - easy way to do SQL over S3 data (acts like a relational database).
+
+Streamining / queing
+
+NoSQL
+
+Spark / Dask / Ray
+
+Elastic Search
 
 ## Good data engineering practices
 

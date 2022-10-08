@@ -1,0 +1,10 @@
+[ ] ! Open with priority
+[ ] !! Open with more priority
+[@] Ongoing
+[x] Checked
+[~] Obselete
+
+[ ] item can have #tag
+[@] tags can have values #have=values
+
+https://xit.jotaen.net/

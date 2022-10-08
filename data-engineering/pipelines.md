@@ -1,9 +1,9 @@
 # Data Pipelines
 
-- isolated transformations
-- dependency
-- testing
-- visibility
+- isolated transformations,
+- dependency,
+- testing,
+- visibility.
 
 https://www.reddit.com/r/dataengineering/comments/tt0yv7/handbook_for_commom_pipelines/
 

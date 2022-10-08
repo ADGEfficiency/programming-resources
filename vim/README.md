@@ -26,6 +26,10 @@ https://www.reddit.com/r/vim/comments/ae8tnp/i_know_vim_fu/
 
 https://www.reddit.com/r/vim/
 
+## Neovim
+
+[lunarvim](https://www.lunarvim.org/#opinionated)
+
 ## Introductory
 
 vimtutor

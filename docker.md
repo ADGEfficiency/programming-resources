@@ -25,7 +25,7 @@ docker run -it $(IMAGENAME) sh
 Start shell:
 
 ```
-docker exec -it
+docker exec -it $(IMAGENAME) /bin/bash
 ```
 
 Exec = executes on runnin container, run creates temporary container
@@ -34,6 +34,13 @@ Use env from list of env variables:
 
 ```
 docker run $(IMAGENAME) --env-file env.list
+```
+
+Show running processes
+
+```
+docker container top $(IMAGENAME)
+
 ```
 
 ## Build for Intel on Apple Silicon

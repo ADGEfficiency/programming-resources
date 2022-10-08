@@ -6,6 +6,12 @@ What is data pipeline orchestration?
 - manage dependencies between tasks - if I get raw data again, which downstream tasks do I need to run again?
 - monitoring & visibility of computation (future, current & past), easy access to logs.
 
+Batch schedulers aimed at data engineers principally concerned with orchestrating third-party systems employed by others in their organizations:
+
+- not good for streaming tasks,
+- historically not good for off-schedule,
+- focused on batch, scheduled ETL (~5 minute response time).
+
 Pipelines made of tasks that take inputs & create data artifacts:
 
 - imperative - defined in Python (define both how and what),
@@ -26,7 +32,10 @@ The agent will be an always on service - even if we aren't tracking a task, the 
 
 Directed acyclic graph
 
-## Task versus data driven:
+- DAGs to define dependencies,
+- DAGs defined in Python,
+
+## Task versus data driven
 
 - task based =  decouple the task orchstration from the task itself (Airflow, Prefect),
 - data driven =  know the kind of data they are using/creating (Dagster)
@@ -35,19 +44,21 @@ Argument for task based is that modern data systems (databases) are very aware o
 
 ## Orchestration Frameworks
 
+Why an orchestration framework?
+
+- workflows of data pipeline management are complicated to build from primitive AWS components (EC2, Lambda, RDS etc),
+- the problems of data pipeline management (scheduling, batch compute etc) are common & share enough that they can be abstracted out.
+
 What is important about an orchestration framework?
 
+- language (most are Python based),
 - how to track dependencies,
 - can you pass data between tasks,
 - does the orchestrator have visibility on actual data transformations in tasks,
 - maturity, 
 - documentation quality, 
+- availability of developers with experience in the framework,
 - does SAS product exist - introduces dependencies, often less flexible but quicker to develop with & avoid solving solved problems.
-
-Why an orchestration framework?
-
-- workflows of data pipeline management are complicated to build from primitive AWS components (EC2, Lambda, RDS etc),
-- the problems of data pipeline management (scheduling, batch compute etc) are common & share enough that they can be abstracted out.
 
 # Data Orchestration Frameworks
 
@@ -57,61 +68,52 @@ Which framework (in 2022):
 - Prefect 2,
 - Dagster.
 
-## Airflow
 
-- Apache,
-- widely used / market leader, large community
-- DAGs to define dependencies,
-- DAGs defined in Python,
-- distributed execution,
-- connectors for AWS (like Lambda, S3 etc),
-- AWS offers a fully managed service,
-- batch scheduler aimed at data engineers principally concerned with orchestrating third-party systems employed by others in their organizations,
-- not good for streaming, off-schedule / no-schedule tasks, dynamic tasks,
-- flaws - scheduler bottlenecking (~10 sec), sharing data between tasks.
+## Apache Airflow
 
-This means that if you want to:
+Widely used / market leader, large community:
 
-- run your workflow on an irregular (or no) schedule
-- run multiple simultaneous runs of your workflow
-- maintain a workflow that only runs manually
+- Airflow 2 introduced in 2020,
+- mature & outdated,
+- legacy concepts,
+- can't run locally without a scheduler.
 
-then Airflow is the wrong tool.
+SAS / managed services:
+
+- AWS offers a fully managed service - https://aws.amazon.com/managed-workflows-for-apache-airflow/,
+- Astronomer - https://www.astronomer.io/
 
 More in programming-resources/data-engineering/airflow.md
 
 ## Prefect
 
-- open source (?)
-- designed to make up for some of Airflows flaws,
-- more flexible ways to define tasks in vanilla Python (no 'airflow way'),
-- Prefect Cloud - 10k runs per month for free,
-- Prefect Server
-- Prefect offers a semi-managed solution, you have to provide the workers yourself
+Designed to make up for some of Airflows flaws - seen as a successor to Airflow.
 
-Prefect Cloud versus Server - [https://docs.prefect.io/orchestration/](https://docs.prefect.io/orchestration/)
+- open source,
+- Prefect 2 introduced in 2022,
+- more flexible ways to define tasks in vanilla Python.
 
-- cloud = hosted,
-- server = open source, self deploy - see [https://docs.prefect.io/orchestration/server/overview.html](https://docs.prefect.io/orchestration/server/overview.html)
+SAS:
 
-Prefect Cloud:
-
-- permissions and authorization
-- performance enhancements that allow you to scale
-- agent monitoring
-- secure runtime secrets and parameters
-- team management
-- SLAs
-
-Task library - [https://docs.prefect.io/core/task_library/overview.html](https://docs.prefect.io/core/task_library/overview.html)
+- Prefect offers a managed solution for the UI, 
+- Provide the scheduling & execution environment yourself.
 
 More in data-engineering/prefect.md
+
+[Why Not Airflow](https://docs-v1.prefect.io/core/about_prefect/why-not-airflow.html#overview)
 
 ## Dagster
 
 - more strict about defining what comes in & out of tasks than Airflow,
-- eaiser to test,
-- don't need to double define dependencies (both intra & inter task data dependencies need to be defined in AirfloW)
+- can run locally,
+- don't need to double define dependencies (both intra & inter task data dependencies need to be defined in Airflow),
+- data aware - has more insight / access to data inputs, outputs & transformations,
+- not only task dependencies but data dependencies.
+
+SAS:
+
+- Dagster cloud - https://dagster.io/cloud.
+
 
 ## Honorable Mentions
 
