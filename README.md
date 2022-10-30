@@ -189,6 +189,8 @@ Ineffective communication
 
 ## History of programming
 
+[The A-Z of Programming Languages](http://www.math.bas.bg/bantchev/misc/az.pdf)
+
 [History of Infra as Code](https://youtu.be/9kQ5l26mmbU) - talk about history of cloud services, Docker etc
 
 [History of Programming Language Conference](https://hopl4.sigplan.org/track/hopl-4-papers#History-of-HOPL)
