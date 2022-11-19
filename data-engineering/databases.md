@@ -1,3 +1,11 @@
+[42 things I learned from building a production database](https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html)
+
+[A terrible schema from a clueless programmer](http://rachelbythebay.com/w/2021/11/06/sql/) [HN Discussion](https://news.ycombinator.com/item?id=29139902)
+
+[Common data model mistakes made by startups](https://www.metabase.com/learn/analytics/data-model-mistakes) [HN Discussion](https://news.ycombinator.com/item?id=27248093)
+
+---
+
 Transactional versus analytical - different read + write patterns
 
 ---

@@ -355,6 +355,15 @@ Redshift, Snowflake, Google BigQuery
 
 OLTP-based relational databases are, by definition, meant for transactional loads. For analytical loads, data lakes, data warehouses, data marts, there’s another list of databases.
 
+Snowflake:
+- cloud data warehouse as a service
+- focus on SQL
+
+Databricks:
+- less managed,
+- data lakehouse (data lake + SQL),
+- Spark
+
 
 ### What is a Data Mart?
 
@@ -517,3 +526,12 @@ lots of data science is about proving something isn't working
 - discovering python
 - you suck at excel, data driven products now!
 - chris stucchio on testing
+
+
+## Example Projects
+
+[gitlab-data/analytics](https://gitlab.com/gitlab-data/analytics)
+
+[Open-Source Data Engineering Projects](https://brain.sspaeti.com/open-source-data-engineering-projects/)
+
+[josephmachado/data_engineering_project_template ](https://github.com/josephmachado/data_engineering_project_template)

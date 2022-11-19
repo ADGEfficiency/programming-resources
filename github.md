@@ -1,4 +1,4 @@
-https://cli.github.com/manual/gh_release_create
+[Github CLI](https://cli.github.com/manual/gh_release_create)
 
 ```
 Interactively create a release
@@ -25,3 +25,7 @@ $ gh release create v1.2.3 '/path/to/asset.zip#My display label'
 Create a release and start a discussion
 $ gh release create v1.2.3 --discussion-category "General"
 ```
+
+---
+
+[Github Actions by Example](https://www.actionsbyexample.com/)

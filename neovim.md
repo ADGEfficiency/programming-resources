@@ -24,7 +24,6 @@ vim.cmd "set whichwrap+=<,>,[,],h,l"
 ---
 
 rm ~/.local/share/nvim/site
-
 pip install pynvim
 npm i -g neovim
 
@@ -36,7 +35,6 @@ TODO plugins
 - winresizer
 
 NOTES new shortcuts
-
 
 km("n", "<silent><leader>o", ":Lex 30", opts)
 

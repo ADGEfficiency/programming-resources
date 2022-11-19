@@ -1,8 +1,6 @@
-CSS
+[Start at the beginning: the importance of learning the basics](https://localghost.dev/blog/start-at-the-beginning-the-importance-of-learning-the-basics/)
 
-
----
-
+Good tips on getting started with HTML, CSS & Javascript.
 
 [vasanthk/how-web-works](https://github.com/vasanthk/how-web-works)
 

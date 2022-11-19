@@ -66,7 +66,8 @@ Which framework (in 2022):
 
 - Airflow 2,
 - Prefect 2,
-- Dagster.
+- Dagster,
+- MageAI.
 
 
 ## Apache Airflow
@@ -129,6 +130,8 @@ Argo
 - all tasks are container runs on Kubernetes.
 
 ## References
+
+[After Airflow. Where next for DE?](https://www.reddit.com/r/dataengineering/comments/yw3mk5/_/)
 
 [https://docs.prefect.io/core/getting_started/why-not-airflow.html](https://docs.prefect.io/core/getting_started/why-not-airflow.html)
 

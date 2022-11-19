@@ -6,3 +6,7 @@ all: ./data/clean.json
 
 ./data/clean.json: ./data/raw.json
 	./clean.py
+
+account ?= dev
+all:
+	echo $(account)

@@ -1,5 +1,44 @@
-[136 facts every web dev should know before they burn out and turn to landscape painting or nude modelling](https://www.baldurbjarnason.com/2021/100-things-every-web-developer-should-know/)
+[My guiding principles after 20 years of programming](https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c) [HN Discussion](https://news.ycombinator.com/item?id=30763516)
 
+```
+usrbinbash
+
+> Never start coding (making a solution) unless you fully understand the problem.
+
+While I agree with this in general, I find that to reall fully understand a problem, I need to attempt to code, or at least formulate, a solution to it.
+
+a) because when I break down a problem into its code-able component parts, I learn a lot about it
+
+b) because in the process of then actually implementing these parts I often discover edge cases or undefined cases (especially in naturally grown business-logic)
+
+c) because what the problem actually IS, is often not that clear at the start of the problem. Yes, in an ideal world, changing requirements would wait until the next version, however, sadly that's not what happens in the wild. 
+
+    JKCalhoun 
+
+    Yeah, it could just be me, but I prefer to make two false starts, toss them, and then get it right on the third attempt rather than attempting to whiteboard the problem for two weeks.
+
+    Not only is it more interesting to me to try three different ways to tackle a problem, but I have been burned when the two weeks of whiteboarding missed something and I'm back to having to iterate anyway.
+
+    To be sure, I do a little whiteboarding, but generally it might be about 2 hours or so of sketching out ideas, major structures, code flow ideas.
+
+        Palomides 
+
+        I forget where I read this, but something like:
+
+        first time to understand the problem
+
+        second time to understand the solution
+
+        third time to do it right 
+
+            koide
+
+            The key part here is that you shouldn't be afraid of throwing parts (or even throwing wholes) away. Many times we get too attached to solutions to the wrong problem because that's what we built.
+```
+
+[42 things I learned from building a production database](https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html)
+
+[136 facts every web dev should know before they burn out and turn to landscape painting or nude modelling](https://www.baldurbjarnason.com/2021/100-things-every-web-developer-should-know/)
 
 https://news.ycombinator.com/item?id=27418296
 
@@ -14,7 +53,6 @@ The difference between a decent developer and a great developer is the latter un
 The first one was not a bad person by any means, but had no social skills, no ability to communicate and often just forged ahead building great stuff on his own. Entire areas of the software were entirely conceived and created by him, and it was difficult to even grasp what he was doing while pair programming with him. In a day he would write more tests and get more coverage than the rest of us would create in a week.
 
 The second one had come from a FAANG-ish place where he was extremely successful, but didn't want the money or stress. He was extremely kind, considerate and great at communicating. Pair programming with him was a joy and he helped everyone else on the team grow. I'm confident he could have created entire regions of the software on his own, but he knew that wasn't the right thing to do. He would often ask questions until someone else on the team could solve a problem, even though I'm sure he knew how to solve it easily himself. 
-
 
 [How to Become a Bad Developer](https://rafaelquintanilha.com/how-to-become-a-bad-developer/) - [Hacker News discussion](https://news.ycombinator.com/item?id=27539342)
 
@@ -88,14 +126,13 @@ The other thing is, note what's happening with the supply chain team. The journe
 ```
 
 
-
-
 ## [What I’ve Learned in 45 Years in the Software Industry](https://www.bti360.com/what-ive-learned-in-45-years-in-the-software-industry/)
 
 - beware the curse of knowledge
 - simplicity
 - understand, then be understood
 - beware of technology lock in
+
 
 ## [12 Things I Learned During My First Year as a Machine Learning Engineer](https://towardsdatascience.com/12-things-i-learned-during-my-first-year-as-a-machine-learning-engineer-2991573a9195)
 

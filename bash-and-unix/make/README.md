@@ -90,6 +90,25 @@ This implies that the target is a file
 Dummy target = meta target = no commands, only dependencies
 
 
+## Variable Assignment
+
+
+```Makefile
+account ?= dev
+all:
+	echo $(account)
+```
+
+```
+$ make 
+echo dev
+dev
+$ make account=prod
+echo prod
+prod
+```
+
+
 ## Tricks
 
 Pass in command line arguments:
@@ -112,7 +131,6 @@ $(ARGUMENT)
 `$?` = all dependencies that have a timestamp more recent than target
 
  To refer to the basename of the target file, use $(basename $@)
-
 
 Uses touch to update the last modified time of the unzipped file - as this can be earlier than the zip
 

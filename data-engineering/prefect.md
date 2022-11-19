@@ -12,6 +12,13 @@ https://docs.prefect.io/concepts/flows/#composing-flows
 .prefectignore
 
 
+I've had the actions flow deployer container break a few times because we don't have this file.
+
+I think it's automatically created when we use the CLI to create the deployment on the actions container (as we did previously), but not when we use Python to create the deployment.
+
+I'm putting it on a list of things to help Prefect out with at some point.
+
+
 ## Deploying on AWS
 
 

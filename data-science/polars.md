@@ -84,3 +84,19 @@ df = q.collect()
 
 df.to_numpy
 df.to_list
+
+## Masking / Replacing Values 
+
+```
+    interval_data = interval_data.with_column(
+        pl.when(
+            pl.col('charge_energy_kw') > top,
+        ).then(
+            None
+        ).otherwise(
+            pl.col('charge_energy_kw')
+        ).alias(
+            'charge_energy_kw'
+        )
+    )
+```

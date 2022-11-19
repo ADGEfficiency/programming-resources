@@ -34,7 +34,6 @@ I also maintain similar collections on [reinforcement learning](https://github.c
 
 ## Articles
 
-
 [The Yoda of Silicon Valley](https://www.nytimes.com/2018/12/17/science/donald-knuth-computers-algorithms-programming.html)
 
 [Overlooked No More: Alan Turing, Condemned Code Breaker and Computer Visionary](https://www.nytimes.com/2019/06/05/obituaries/alan-turing-overlooked.html)
@@ -55,6 +54,20 @@ I also maintain similar collections on [reinforcement learning](https://github.c
 
 
 ## Blogs
+
+[localghost](https://localghost.dev/)
+- [Everything I googled in a week as a senior software engineer](https://localghost.dev/blog/everything-i-googled-in-a-week-as-a-senior-software-engineer/)
+- [Everything I googled in a week as a professional software engineer](https://localghost.dev/blog/everything-i-googled-in-a-week-as-a-professional-software-engineer/)
+- [Start at the beginning: the importance of learning the basics](https://localghost.dev/blog/start-at-the-beginning-the-importance-of-learning-the-basics/)
+- [Burnout, a cautionary tale (and a plea to take a break)](https://localghost.dev/blog/burnout-a-cautionary-tale-and-a-plea-to-take-a-break/)
+- [Give yourself a break: lessons from burnout](https://localghost.dev/blog/give-yourself-a-break-lessons-from-burnout/)
+
+[rachelbythebay](http://rachelbythebay.com/w/)
+- [A terrible schema from a clueless programmer](http://rachelbythebay.com/w/2021/11/06/sql/) [HN Discussion](https://news.ycombinator.com/item?id=29139902)
+- [Tasks, lists, and promises](http://rachelbythebay.com/w/2022/05/19/priority/)
+- [One way a builder culture can fail](http://rachelbythebay.com/w/2021/12/02/build/)
+- [An incomplete list of complaints about real code](http://rachelbythebay.com/w/2021/02/22/lang/)
+- [Unfortunate things about performance reviews](http://rachelbythebay.com/w/2021/02/19/perf/)
 
 [https://www.netmeister.org](https://www.netmeister.org)
 - [(A few) Ops Lessons We All Learn The Hard Way](https://www.netmeister.org/blog/ops-lessons.html)
@@ -138,7 +151,6 @@ The Honeypot documentaries on [Ember.js](https://www.youtube.com/watch?v=Cvz-9cc
 
 [Software Development Waste](https://neverworkintheory.org/2021/08/29/software-development-waste.html) - [Hacker News discussion](https://news.ycombinator.com/item?id=28352075)
 
-
 Building the wrong product
 - product that does not address user business needs
 - not doing research on users or businesses
@@ -209,6 +221,10 @@ Ineffective communication
 
 
 ## Courses
+
+[Open Source Society University - Computer Science](https://github.com/ossu/computer-science)
+
+[The Good Research Code Handbook](https://goodresearch.dev/)
 
 [Developer Roadmaps](https://roadmap.sh/roadmaps) - Python, React, backend, frontend.
 
