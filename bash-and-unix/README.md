@@ -60,6 +60,8 @@ You can also find hard copies of additional resources in [programming-resources/
 
 ### Blog Posts / Discussions
 
+[Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices/) - [HN Discussion](https://news.ycombinator.com/item?id=33354286)
+
 [The beauty of Unix pipelines](https://prithu.xyz/posts/unix-pipeline/)
 
 Best things in your bash_profile/aliases? - [Hacker News](https://news.ycombinator.com/item?id=18898523)
