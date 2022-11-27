@@ -1,11 +1,17 @@
 # Testing
 
-Test Driven Development (TDD) is a [software engineering philosophy](https://en.wikipedia.org/wiki/List_of_software_development_philosophies)). 
+Testing is a foundational component of professional software development.  
+
+My first three lessons as a software engineer were:
+
+1. DRY,
+2. YAGNI,
+3. write tests!
 
 
-## Why Test Software?
+# Why Test Software?
 
-Tests can:
+Testing has a number of benefits:
 
 1. detect broken software,
 2. make you write better code,
@@ -14,10 +20,15 @@ Tests can:
 
 ## 1. Testing Detects Broken Software
 
-A test suite gives you verification that functions are not broken
-- check for correctness by failing to show incorrectness
+> I can use data to disprove a proposition, never to prove one.  I can use history to refute a conjecture, never to affirm it - Nassim Nicholas Taleb, Fooled by Randomness
+[j]()
+A test suite gives you verification that your code is not broken:
+
+- we can check for correctness by *failing to show incorrectness*.
 
 It doesn't prove that everything is perfect!
+
+- this thinking aligns with Karl Popper's 
 
 
 ## 2. Testing Makes You Write Better Code
@@ -38,6 +49,10 @@ Tests also act as a form of documentation - executable documentation that a comp
 Test code is as important as your source code
 
 
+
+# Test Driven Development
+
+Test Driven Development (TDD) is a [software engineering philosophy](https://en.wikipedia.org/wiki/List_of_software_development_philosophies). 
 
 
 ## Criticism of TDD
@@ -61,6 +76,10 @@ System test
 - entire system mimicking how a user would use the system, interacts with real, external systems.
 
 Can also look in terms of online test versus offline test ?
+
+Unit test = tests a function/class in isolation
+Integration test = several functions/classes
+System test = entire system mimicking how a user would use the system
 
 ## What Makes a Good Test Suite?
 

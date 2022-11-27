@@ -78,6 +78,22 @@ Marked using `@pytest.mark.smoke`.
 
 We can also mark tests with `skip`, `skipif` and `xfail` (expected to fail).
 
+`-m mark_name` runs marked tests 
+
+```python
+import pytest
+
+@pytest.mark.webtest
+def test_send_http():
+    pass 
+```
+
+```bash
+$ pytest -v -m webtest
+
+$ pytest -v -m "not webtest"
+```
+
 ## Parametrizing tests
 
 ```python
@@ -125,3 +141,15 @@ def my_fixture(tmpdir):
 Args for fixtures:
 - `autoreuse=True` means all tests will use the fixture
 - `scope` controls how often the code runs.  Default is `func` (once per function run) - `session` to only run once per session
+
+
+## Raise exception
+
+```python
+import pytest
+
+def test_passes():
+    with pytest.raises(Exception) as err:
+        x = 1 / 0
+```
+
