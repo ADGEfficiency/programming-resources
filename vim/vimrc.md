@@ -1,19 +1,12 @@
+# Options
+
 tabstop - Number of spaces that <Tab> in the file counts for.
-
 shiftwidth - Number of spaces to use for each step of (auto)indent.
-
 Shiftwidth applies to =, >, and <
 
-[idiomatic-vimrc](https://github.com/romainl/idiomatic-vimrc)
+# Vimscript
 
-set booloption      " Set booloption
-set nobooloption    " Unset bool
-option.set booloption     " Toggle booloption
-
-set stroption=baz   " baz
-set stroption=      " Unset stroption.
-set stroption&      " Reset stroption to its default value.
-
+From [idiomatic-vimrc](https://github.com/romainl/idiomatic-vimrc)
 
 [A Good Vimrc](https://dougblack.io/words/a-good-vimrc.html)
 
@@ -26,3 +19,39 @@ set stroption&      " Reset stroption to its default value.
 [Vim Script for the JavaScripter](https://w0rp.com/blog/post/vim-script-for-the-javascripter/)
 
 [Reorganizing my vimrc](https://blog.djy.io/reorganizing-my-vimrc/)
+
+##  Set global, window & buffer settings
+
+See [Configure Neovim with Lua](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/)
+
+```
+# vimscript
+set tabstop=2
+
+set booleanoption
+unset booleanoption
+
+#  lua
+vim.opt.set.tabstop = 2
+
+vim.cmd "set tabstop=2"
+
+:set tabstop=2
+```
+
+## Check current value
+
+```
+:set tabstop?
+```
+
+## Unset
+
+```
+:set tabstop=
+```
+
+## Reset
+```
+:set tabstop&
+```

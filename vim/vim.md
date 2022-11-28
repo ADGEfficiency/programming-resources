@@ -1,55 +1,3 @@
-`J` join line below
-
-`g;` go back to last change `g,`
-
-Text objects ` w s p b B `
-
-`aw` a word
-`ib` inner block
-
-`f` inclusive find
-`t` exclusive find
-
-` ( ) ` move sentences
-` { } ` move paragraphs
-
-`gj gk` move over wrapped lines
-
-`daw` delete and move to start of next work
-`diw` delete and move to the space in between
-
-`:reg` show all registers
-
-`"rp` access content in the r register
-`"ry` yank to register r
-
-`"1-9 ` history registers (queue)
-`"0 ` the yank register
-`"a-z ` named registers
-`"A-Z ` same as a-z but append
-
-buffer = in memory text of a file
-window = viewport onto a buffer
-tab page = collection of windows
-
-windows
-` ctrl-w n ` new buffer
-
-`:ls` check buffer list
-
-`:bn :bp` move between buffers
-
-`gt gT` move between tabs
-
-`:tabnew`
-
-`ctrl+n ctrl+p` to move between autocompletes
-
-`ctrl+x ctrl+t` theasarus
-`ctrl+x ctrl+k` dictionary
-`ctrl+x ctrl+s` spelling
-
-
 ## Why Vim
 
 It's everywhere
@@ -99,9 +47,28 @@ Visual
 
 Command-line (aka ex)
 
+## Things
+
+buffer = in memory text of a file
+window = viewport onto a buffer
+tab page = collection of windows
+
+
+### Moving Around
+
+`g;` go back to last change `g,`
+
+`f` inclusive find
+`t` exclusive find
+
+` ( ) ` move sentences
+` { } ` move paragraphs
+
 ### Moving text around
 
 Using `dd p` to transpose line
+
+`J` join line below
 
 ### Macros
 
