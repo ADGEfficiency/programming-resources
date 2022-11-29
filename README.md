@@ -12,6 +12,8 @@ Hidden inside these notes are teaching materials:
 - [fundamentals/programming.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md),
 - [bash-and-unix/intro.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md),
 - [test-driven-development](https://github.com/ADGEfficiency/programming-resources/tree/master/test-driven-development).
+- [Leanrning Hub - Programming Basics](https://community.openweaver.com/c/learning-hub-programming-basics/19).
+
 
 I also maintain similar collections on [reinforcement learning](https://github.com/ADGEfficiency/rl-resources) and [machine learning](https://github.com/ADGEfficiency/ml-resources).
 
@@ -307,4 +309,3 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 ## Humor
 
 [After being in a data science/ developer role for the better part of a decade, here is how companies REALLY develop software and AI/ML applications](https://www.reddit.com/r/datascience/comments/e6s20u/after_being_in_a_data_science_developer_role_for/)
-
