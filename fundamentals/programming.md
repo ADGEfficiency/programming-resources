@@ -297,7 +297,9 @@ Uncle Bob Martin's 1st law of documentation
 - produce no documentation unless it's need is immediate & significant
 
 *Further reading*
+
 - [The documentation system](https://documentation.divio.com/) - there isn’t one thing called documentation, there are four.
+- [Diátaxis - A systematic framework for technical documentation authoring](https://diataxis.fr/) - four modes of documentation - tutorials, how-to guides, technical reference and explanation.
 
 
 ### Comments
@@ -305,6 +307,7 @@ Uncle Bob Martin's 1st law of documentation
 Can be useful
 - can also be wrong
 - **should describe things that aren't obvious from the code**
+- comments & docstrings should describe the why - the code already describes the how
 
 Needing comments can suggest poorly written code
 - variable & function names aren't useful
@@ -334,26 +337,45 @@ def add_profit(sales, profit):
 ```
 
 
-### Readme
+### README
 
 A special text file
 - most users of your software will read it
-- it's also very visible to recruiters (even non-technical)
+- it's also visible to recruiters (even non-technical)
+- it may be the only thing people read
 
-**The readme is a pitch**
+**The README is a pitch**
+- what is this library
 - why this library exists
 - what problem it solves
+- how to use it
 
-Readme driven development 
-- write readme before the code
+A README should be as short as possible
+- detailed documentation can do in a docs site (see Sphinx or MkDocs)
+
+Key elements
+- name
+- badges - don't use too many
+- one-liner - describe what the library dose
+- usage 
+  - example code should be included as a file in your repo as well
+  - CLI examples should show commands and output
+- API
+- Roadmap showing important files & subdirectories
+- Installation
+- License
+
+README driven development 
+- write README before the code
 - write the API / interface before the code
 - write the tutorial before the code
 - write sample code for the most common use cases
 
 *Further reading*
 
-- [Readme Driven Development](https://tom.preston-werner.com/2010/08/23/readme-driven-development.html),
+- [README Driven Development](https://tom.preston-werner.com/2010/08/23/readme-driven-development.html),
 - [Write documentation first. Then build.](https://reproof.app/blog/document-first-then-build).
+- [Art of README](https://github.com/hackergrrl/art-of-readme) - [HN Discussion](https://news.ycombinator.com/item?id=32343443)
 
 
 ## Testing

@@ -8,6 +8,7 @@ The Untold Story of SQLite - https://corecursive.com/066-sqlite-with-richard-hip
 
 ## [Ask HN: Have you used SQLite as a primary database?](https://news.ycombinator.com/item?id=31152490)
 
+## [I'm All-In on Server-Side SQLite](https://fly.io/blog/all-in-on-sqlite-litestream/) - [HN discussion](https://news.ycombinator.com/item?id=31318708)
 
 ## [Consider SQLite](https://blog.wesleyac.com/posts/consider-sqlite)
 

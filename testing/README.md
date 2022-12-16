@@ -97,7 +97,7 @@ From [Hacker News discussion](https://news.ycombinator.com/item?id=30942020):
 - Computational code is business logic:
   - Usually well defined and doesn't change much,
   - Benefits from unit tests.
-  - 
+
 - Plumbing code is everything else:
   - Database access, showing data to users.
   - Need lots of mocks to test, changes a lot and is less clearly defined.

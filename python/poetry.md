@@ -17,6 +17,7 @@ You can add packages later on with:
 
 ```shell-session
 $ poetry add mypy
+$ poetry add ipython --group develop
 ```
 
 Turn off Poetry using it's own venv:
@@ -30,11 +31,3 @@ poetry.toml versus pyproject.toml versus poetry.lock file
 https://python-poetry.org/docs/dependency-specification/
 
 https://stackoverflow.com/questions/53835198/integrating-python-poetry-with-docker
-
-Development dependecies:
-
-```
-$ poetry add pkg -D
-$ poetry install --no-dev
-```
-

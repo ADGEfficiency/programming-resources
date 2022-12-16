@@ -34,11 +34,7 @@ Replace in Python files (need the extra `""` at the front on MacOS):
 $ sed -i "" "s/climatedb.newspapers.utils/climatedb.utils/" newspapers/*.py
 ```
 
-## On linux
-```
-
-
-```
+## GNU Sed
 
 Remove:
 ```bash
@@ -49,4 +45,9 @@ Replace:
 
 ```bash
 sed -i "" "s/from config import S3_BUCKET, S3_PREFIX/from emd.config import default_config/" *.py
+```
+
+Delete:
+```
+sed '/the/d' dummy.txt
 ```

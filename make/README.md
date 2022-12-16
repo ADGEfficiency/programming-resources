@@ -108,6 +108,52 @@ echo prod
 prod
 ```
 
+## Default Arguments
+
+`:=` = simple assignment = evaluated once at the first occurrence
+
+`=` Recursive assignment = evaluated each time the variable is encountered in the code.
+
+`?=` = conditional assignment = evaluated only if variable doesn't have a value.
+
+Example Makefile
+```
+SIMPLE := $(shell date)
+RECURSIVE = $(shell date)
+CONDITIONAL ?= "not-set-elsewhere"
+
+all:
+	@echo "simple 1 $(SIMPLE)"
+	@echo "simple 2 $(SIMPLE)"
+	@echo "\nrecursive 1 $(RECURSIVE)"
+	@echo "recursive 2 $(RECURSIVE)"
+
+other:
+	@echo $(CONDITIONAL)
+```
+
+Example of simple and recursive:
+
+```shell-session
+$ make all
+simple 1 Mon 12 Dec 2022 01:44:01 NZDT
+simple 2 Mon 12 Dec 2022 01:44:01 NZDT
+
+recursive 1 Mon 12 Dec 2022 01:44:01 NZDT
+recursive 2 Mon 12 Dec 2022 01:44:01 NZDT
+```
+
+Example of conditional:
+
+```shell-session
+$ make other
+not-set-elsewhere
+
+$ make other CONDITIONAL=command-line
+command-line
+```
+
+
 
 ## Tricks
 
@@ -210,6 +256,8 @@ clean:
 ### Discussion
 
 [Absolutely do not use make for any new project - Hacker News](https://news.ycombinator.com/item?id=5275752)
+
+[The Unreasonable Effectiveness of Makefiles](https://matt-rickard.com/the-unreasonable-effectiveness-of-makefiles) - [HN discussion](https://news.ycombinator.com/item?id=32438616)
 
 ### Reference
 
