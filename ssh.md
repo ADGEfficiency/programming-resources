@@ -18,19 +18,63 @@ ssh -A -i ~/.ssh/adam-emd-monitoring.pem -tt ubuntu@13.239.125.196
 scp -i ~/.ssh/adam-emd-monitoring.pem ubuntu@13.239.125.196:/home/ubuntu/research/research/bi/.env .
 ```
 
-## Tunnels
+# Tunnels
 
-6006 = tensorboard, 8000 = jupyter lab
+SSH tunnel from `6006` on remote to local:
 
 ```sh
 ssh -N -L localhost:6006:localhost:6006 $USER@$HOST
 ```
+
+
+## `scp`
+
+`scp` allows moving files over SSH.
+
+Move file from remote to local:
+
+```shell
+$ scp ubuntu@ec2-13-210-151-189.ap-southeast-2.compute.amazonaws.com:path/to/remote/file .
+```
+
+Move directory from /local to $HOME on remote:
+
+```shell
+$ scp -r ~/path/to/dir adam@192.168.50.62:~
+```
+
+# Shells
+
+[mosh](https://mosh.org/) - [Eternal Terminal](https://eternalterminal.dev)
+
+
+# SSH Straight into `tmux`
+
+In `.ssh/config`:
+
+```config
+Host example.org
+ RemoteCommand tmux new -A -s default
+```
+
+Or alternatively, put this in `.zshrc`:
+
+```python
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+  [ -z "${TMUX}" ] && tmux new-session -A -s default
+fi
+```
+
+
+# Resources
 
 ## Introduction
 
 [A visual guide to SSH tunnels](https://robotmoon.com/ssh-tunnels/)
 
 [SSH Tunneling Explained](https://goteleport.com/blog/ssh-tunneling-explained/)
+
+[SSH Tips and Tricks](https://carlosbecker.com/posts/ssh-tips-and-tricks/) - [HN Discussion](https://news.ycombinator.com/item?id=32486031)
 
 
 ## Advanced
@@ -52,9 +96,8 @@ Agent forwarding
 ProxyJump
 - safer than agent forwarding
 
----
 
-Things to get right
+## Key Permissions
 
 private & public key permissions - https://superuser.com/questions/215504/permissions-on-private-key-in-ssh-folder
 

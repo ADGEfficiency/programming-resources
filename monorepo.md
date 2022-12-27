@@ -27,3 +27,18 @@ Avoids the `diamond dependency` problem
 - It is now impossible to build A
 
 For the base library D, it can become very difficult to release a new version without causing breakage, since all its callers must be updated at the same time. 
+
+[Monorepo, is it worth considering?](https://www.reddit.com/r/ExperiencedDevs/comments/tmca5u/monorepo_is_it_worth_considering/)
+
+Tips:
+- Can use git sparse checkout to not get every folder in repo.
+
+Good
+- Single commit history.
+
+Criticism:
+- breaks disrupt multiple places of work,
+- npm packages is better bet,
+- CICD takes longer to run.
+
+[Advantages of monorepos](https://danluu.com/monorepo/)

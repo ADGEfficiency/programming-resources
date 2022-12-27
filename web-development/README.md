@@ -1,3 +1,11 @@
+[Web Scraping with Python – A Step by Step Guide](https://www.scrapingdog.com/blog/web-scraping-with-python/)
+
+Types of headers:
+- request headers,
+- response headers,
+- payload headers,
+- representation headers - type of data (JSON, XML etc).
+
 [Start at the beginning: the importance of learning the basics](https://localghost.dev/blog/start-at-the-beginning-the-importance-of-learning-the-basics/)
 
 Good tips on getting started with HTML, CSS & Javascript.

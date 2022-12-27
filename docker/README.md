@@ -49,7 +49,15 @@ docker buildx build --platform linux/amd64 -t $(IMAGENAME) -f $(DOCKERFILE) --lo
 
 docker run -it $(IMAGENAME) sh
 
+Clean
+
+```
+docker system prune -a
+```
+
 ---
+
+difference between build time env vars and run time env vars
 
 docker-local:
 	docker build -t climatedb-app-local . -f Dockerfile.web

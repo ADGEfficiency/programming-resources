@@ -110,11 +110,11 @@ prod
 
 ## Default Arguments
 
-`:=` = simple assignment = evaluated once at the first occurrence
+`=` recursive / deferred assignment = evaluated each time the variable is encountered in the code.
 
-`=` Recursive assignment = evaluated each time the variable is encountered in the code.
+`:=` simple assignment = evaluated once at the first occurrence
 
-`?=` = conditional assignment = evaluated only if variable doesn't have a value.
+`?=` conditional assignment = evaluated only if variable doesn't have a value.
 
 Example Makefile
 ```
