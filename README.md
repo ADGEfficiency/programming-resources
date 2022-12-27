@@ -4,21 +4,22 @@ A collection of programming resources that help me manage my imposter syndrome b
 
 These are my personal notes - you will often find my notes and summaries alongside links to articles.
 
-## Fundamentals Course
+I also maintain similar collections on [reinforcement learning](https://github.com/ADGEfficiency/rl-resources) and [machine learning](https://github.com/ADGEfficiency/ml-resources).
+
+
+## Teaching Materials & Courses
 
 Hidden inside these notes are teaching materials:
 
-- [fundamentals/computers.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md), 
-- [fundamentals/programming.md](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md),
-- [bash-and-unix/intro.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md),
-- [test-driven-development](https://github.com/ADGEfficiency/programming-resources/tree/master/test-driven-development).
-
-I also maintain similar collections on [reinforcement learning](https://github.com/ADGEfficiency/rl-resources) and [machine learning](https://github.com/ADGEfficiency/ml-resources).
+- [the fundamentals of computing](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md), 
+- [the fundamentals of programming](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md),
+- [an introduction to bash and UNIX](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md),
+- [a test driven development course](https://github.com/ADGEfficiency/programming-resources/tree/master/test-driven-development).
 
 
 ## Music to Program To
 
-[Project Audio for GitHub](https://github.audio/) - tracks events happening across GitHub and converts them to music.
+[Project Audio for GitHub](https://github.com/debugger22/github-audio) - tracks events happening across GitHub and converts them to music.
 
 [Listen to Wikipedia](http://listen.hatnote.com/) - real-time visualization and sonification of Wikipedia activity.
 
@@ -53,7 +54,7 @@ I also maintain similar collections on [reinforcement learning](https://github.c
 [How Notion pulled itself back from the brink of failure](https://www.figma.com/blog/design-on-a-deadline-how-notion-pulled-itself-back-from-the-brink-of-failure/)
 
 
-## Blogs
+## Blogs & Blog Posts
 
 [localghost](https://localghost.dev/)
 - [Everything I googled in a week as a senior software engineer](https://localghost.dev/blog/everything-i-googled-in-a-week-as-a-senior-software-engineer/)
@@ -144,68 +145,14 @@ The Honeypot documentaries on [Ember.js](https://www.youtube.com/watch?v=Cvz-9cc
 [Richard Hamming - You and Your Research Lecture](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
 
 [The Architecture of Open Source Applications](https://www.aosabook.org/en/index.html) - Architects look at thousands of buildings during their training, and study critiques of those buildings written by masters. In contrast, most software developers only ever get to know a handful of large programs well—usually programs they wrote themselves—and never study the great programs of history. As a result, they repeat one another's mistakes rather than building on one another's successes. 
+[Software Development Waste](https://neverworkintheory.org/2021/08/29/software-development-waste.html) - [Hacker News discussion](https://news.ycombinator.com/item?id=28352075)
 
 [Do call yourself a programmer, and other career advice](http://yosefk.com/blog/do-call-yourself-a-programmer-and-other-career-advice.html)
 
 [Don't Call Yourself A Programmer, And Other Career Advice](https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/)
 
-[Software Development Waste](https://neverworkintheory.org/2021/08/29/software-development-waste.html) - [Hacker News discussion](https://news.ycombinator.com/item?id=28352075)
 
-Building the wrong product
-- product that does not address user business needs
-- not doing research on users or businesses
-- ignoring feedback, low user value features
-
-Mismanaging backlog
-- duplicating work, low value features, delaying bug fixes
-- working on too many features simultaneously, imbalance of feature work and bug fixing, delaying testing or critical bug fixing 
-
-Rework
-- altering delivered work that should have been done correctly
-- no clear definition of done
-
-Unnecessarily complex solutions
-- a more complicated solution than necessary
-- a missed opportunity to simplify features, user interface, or code
-- unnecessary feature complexity from the user’s perspective 
-- unnecessary technical complexity
-- duplicating code, lack of interaction design reuse, overly complex technical design created up-front
-
-Extraneous cognitive load
-- the costs of unneeded expenditure of mental energy
-- suffering from technical debt,
-- inefficient tools and problematic APIs, libraries, and frameworks 
-- unnecessary context switching
-- inefficient development flow
-- poorly organized code 
-
-Psychological distress
-- burdening the team with unhelpful stress
-- low team morale
-- rush mode
-- interpersonal or team conflict 
-
-Waiting/multitasking
-- cost of idle time, often hidden by multi-tasking
-- slow tests or unreliable tests
-- unreliable acceptance environment
-- missing information, people, or equipment
-- context switching from delayed feedback 
-
-Knowledge loss
-- cost of re-acquiring information that the team once knew
-- team churn
-- knowledge silos 
-
-Ineffective communication
-- incomplete, incorrect, misleading, inefficient, or absent communication
-- team size too large
-- asynchronous communication - distributed teams/stakeholders, opaque processes outside team
-- imbalance - dominating the conversation; not listening
-- Inefficient meetings (lack of focus; skipping retros; not discussing blockers each day; meetings running over (e.g. long stand-ups)) 
-
-
-## History of programming
+## History of Programming
 
 [The A-Z of Programming Languages](http://www.math.bas.bg/bantchev/misc/az.pdf)
 
@@ -307,4 +254,3 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 ## Humor
 
 [After being in a data science/ developer role for the better part of a decade, here is how companies REALLY develop software and AI/ML applications](https://www.reddit.com/r/datascience/comments/e6s20u/after_being_in_a_data_science_developer_role_for/)
-
