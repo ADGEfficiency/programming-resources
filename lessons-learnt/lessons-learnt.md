@@ -68,17 +68,15 @@ The second one had come from a FAANG-ish place where he was extremely successful
 
 [The Mistakes I Made As a Beginner Programmer](https://medium.com/edge-coders/the-mistakes-i-made-as-a-beginner-programmer-ac8b3e54c312)
 
-[Notes to a Young Software Engineer](https://www.nemil.com/on-software-engineering/index.html)
+[Notes to a Young Software Engineer](https://nemil.com/on-software-engineering/)
 
-- [Think in Tradeoffs](https://www.nemil.com/on-software-engineering/think-in-tradeoffs.html) -  most engineering decisions as tradeoffs — not good choices versus bad choices.
-- [Pierce the Abstraction Wall](https://www.nemil.com/on-software-engineering/pierce-the-abstraction-wall.html) - soft versus hard interfaces
-- [Don't Write Code](https://www.nemil.com/on-software-engineering/dont-write-code.html)
-- [Read Code](https://www.nemil.com/on-software-engineering/read-code.html)
-- [The User is King (And Not)](https://www.nemil.com/on-software-engineering/user-is-king-and-not.html)
+- [Think in Tradeoffs](https://nemil.com/2019/06/30/think-in-tradeoffs/) -  most engineering decisions as tradeoffs — not good choices versus bad choices.
+- [Pierce the Abstraction Wall](https://nemil.com/2019/07/30/pierce-the-abstraction-wall/) - soft versus hard interfaces
+- [Don't Write Code](https://nemil.com/2020/01/10/dont-write-code/)
+- [Read Code](https://nemil.com/2019/04/16/read-code/)
+- [The User is King (And Not)](https://nemil.com/2020/01/29/the-user-is-king-and-not/)
 
 [The Differences Between a Junior, Mid-Level, and Senior Developer](https://medium.com/better-programming/the-differences-between-a-junior-mid-level-and-senior-developer-bb2cb2eb000d)
-
-[Things I Learnt from a Senior Software Engineer](https://neilkakkar.com/things-I-learnt-from-a-senior-dev.html)
 
 [What Separates Good from Great Data Scientists?](https://towardsdatascience.com/what-separates-good-from-great-data-scientists-2906431455fd)
 
@@ -148,8 +146,6 @@ Toy problem first
 ## [Coding Mistakes I Made As A Junior Developer](https://towardsdatascience.com/coding-mistakes-i-made-as-a-junior-developer-e151dd3b3c7d)
 
 ## 150 Successful Machine Learning Models: 6 Lessons Learned at Booking.com - [paper](https://dl.acm.org/doi/pdf/10.1145/3292500.3330744) - [blog post](https://blog.acolyer.org/2019/10/07/150-successful-machine-learning-models/)
-
-150 models
 
 Model performance != business performance
 

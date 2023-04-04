@@ -60,6 +60,10 @@ krother/software-engineering-python - [github](https://github.com/krother/softwa
 
 ## Talks
 
+Raymond Hettinger - Dataclasses: The code generator to end all code generators - PyCon 2018 - [youtube](https://youtu.be/T-TwcmT6Rcw)
+
+ Raymond Hettinger: Numerical Marvels Inside Python - Keynote | PyData Tel Aviv 2022 - [youtube](https://youtu.be/wiGkV37Kbxk)
+
 [How to Write Python Code Others Like to Use - Anna Tisch - Kiwi Pycon X](https://youtu.be/xZSGo4vM-ok)
 
 [Top to down, left to right (Surprise talk) - James Powell](https://youtu.be/BRn6UCw35og)

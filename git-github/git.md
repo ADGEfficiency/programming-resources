@@ -1,3 +1,5 @@
+# Git
+
 ## 95% of my git workflow
 
 What is going on?
@@ -18,7 +20,28 @@ git commit -m 'message'
 git push origin master
 ```
 
-## Structure of a git repo
+Using `git add -u` only works when files have already been comitted to the repo.
+
+We can instead add files by name:
+
+```bash
+$ touch README.md
+$ git add README.md
+```
+
+Or add all files in the current directory:
+
+```bash
+$ git add .
+```
+
+Or add all files:
+
+```bash
+$ git add *
+```
+
+## Structure of a Git Repository
 
 Working copy
 - the files on your machine
@@ -137,17 +160,13 @@ git merge dev
 
 ## Resources
 
+[Git Reference Documentation](https://git-scm.com/docs).
+
 [Learn Git Branching](https://learngitbranching.js.org/) - the most visual and interactive way to learn Git on the web.
 
-[The essential git handbook](https://medium.freecodecamp.org/the-essential-git-handbook-a1cf77ed11b5)
+[The Essential Git Handbook](https://medium.freecodecamp.org/the-essential-git-handbook-a1cf77ed11b5) - blog post.
 
-[Git reference](https://git-scm.com/docs)
-
-[Pro Git by Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2)
-
-[Useful git commands - Marc Garcia](https://datapythonista.me/blog/useful-git-commands.html)
-
-[Git from the inside out - Mary Rose Cook](https://codewords.recurse.com/issues/two/git-from-the-inside-out)
+[Pro Git by Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2) - book.
 
 [Things I wish Git had: Commit groups](http://blog.danieljanus.pl/2021/07/01/commit-groups/)
 
@@ -165,12 +184,14 @@ Legacy workflow - fallen in popularity in favour of trunk based.
 Trunk = main = master.  Developers never work on release branches.
 
 
-
 ## Advanced
 
+[Useful git commands - Marc Garcia](https://datapythonista.me/blog/useful-git-commands.html) - more advanced Git shell commands.
+
 [More productive Git](https://increment.com/open-source/more-productive-git/)
+
+[Git from the inside out - Mary Rose Cook](https://codewords.recurse.com/issues/two/git-from-the-inside-out) - a deeper dive into how Git works under the hood.
 
 [Git From the Bits Up - Tim Berglund](https://www.youtube.com/watch?v=MYP56QJpDr4)
 
 [Deep Dive into Git - Edward Thomson](https://www.youtube.com/watch?v=dBSHLb1B8sw)
-

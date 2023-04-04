@@ -1,3 +1,11 @@
+What does it mean to be a senior software engineer?
+
+- take the user perspective,
+- descope tasks to what the business needs - avoid over engineering,
+- mentoring,
+- able to take rough business requirements and turn them into code/features.
+ 
+
 [On Being A Senior Engineer](https://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/)
 
 Senior engineer == mature engineer

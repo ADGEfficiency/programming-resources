@@ -10,6 +10,8 @@ The Untold Story of SQLite - https://corecursive.com/066-sqlite-with-richard-hip
 
 ## [I'm All-In on Server-Side SQLite](https://fly.io/blog/all-in-on-sqlite-litestream/) - [HN discussion](https://news.ycombinator.com/item?id=31318708)
 
+[I Migrated from a Postgres Cluster to Distributed SQLite with LiteFS](https://kentcdodds.com/blog/i-migrated-from-a-postgres-cluster-to-distributed-sqlite-with-litefs)
+
 ## [Consider SQLite](https://blog.wesleyac.com/posts/consider-sqlite)
 
 Rather than running a SQL server (with a program running than you talk to) - embed the implementation of SQL into your program, using a single file as backing storage

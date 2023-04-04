@@ -180,6 +180,23 @@ resist the temptation to 'SELECT *' into a data frame and break the problem up i
 Storing raw strings in databases = heavy.  Instead it should be normalized.
 
 
+## Advice
+
+1) As opposed to application programming languages that are coded either top-down or bottom-up, SQL is coded from the inside out. It's like constructing an onion; you code and test the innermost query first, then layer another query over that one and test it, then layer another query over that one and test it, etc.
+
+2) Eliminate unneeded records as early as possible in your query (preferably in the innermost query), before you start joining sets of records together.
+
+3) Learn to think in terms of sets of records and set operations; avoid "one-record-at-a-time" processing as much as possible!
+
+4) Understand how the SQL query optimizer works, so you can write better and more efficient SQL code.
+
+5) Test each query before writing the next one. Test-Driven Development (TDD) principles should be followed when writing SQL.
+
+6) Do as much of the data work as possible on the database server, making use of the DBMS's resources and the query optimizer. Return to the calling process only the data it actually needs.
+
+7) Make use of views and table-valued functions to simplify complex table joins and encapsulate complex functionality.
+
+
 ## Code tutorials
 
 [Practical SQL for Data Analysis](https://hakibenita.com/sql-for-data-analysis) - [HN Discussion](https://news.ycombinator.com/item?id=27025829)

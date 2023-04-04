@@ -42,3 +42,5 @@ Criticism:
 - CICD takes longer to run.
 
 [Advantages of monorepos](https://danluu.com/monorepo/)
+
+[Don't ask if a monorepo is good for you – ask if you're good enough for a monorepo](http://yosefk.com/blog/dont-ask-if-a-monorepo-is-good-for-you-ask-if-youre-good-enough-for-a-monorepo.html)

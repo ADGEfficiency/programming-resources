@@ -100,3 +100,15 @@ df.to_list
         )
     )
 ```
+
+## Lazy read multiple files
+
+```
+
+    queries = []
+    for file in glob.glob("~/nem-data/data/unit-scada/2019-01/clean.parquet")
+        q = pl.scan_csv(file).groupby("bar").agg([pl.count(), pl.sum("foo")])
+        queries.append(q)
+
+    dataframes = pl.collect_all(queries)
+```

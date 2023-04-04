@@ -19,11 +19,52 @@ Hidden inside these notes are teaching materials:
 
 ## Music to Program To
 
-[Project Audio for GitHub](https://github.com/debugger22/github-audio) - tracks events happening across GitHub and converts them to music.
-
 [Listen to Wikipedia](http://listen.hatnote.com/) - real-time visualization and sonification of Wikipedia activity.
 
 [musicForProgramming](https://musicforprogramming.net/?about)
+
+[Liszt](https://youtu.be/salrwSVWpC4)
+
+[Rain with Clair de Lune](https://youtu.be/7mjtE5A2zMY)
+
+[Skyrim Exploration Suite](https://youtu.be/xWtfo9kuRTU)
+
+[Offworld Trading Company Soundtrack](https://youtu.be/giqNtBAukbg)
+
+[Tosca - Suzuki](Tosca - Suzuki)
+
+
+## Random Cool Stuff
+
+[RosettaGit](https://rosettagit.org/) - solutions to the same task in as many different programming languages.
+
+[Screenshots from developers & Unix people (2002)](https://anders.unix.se/2015/10/28/screenshots-from-developers--unix-people-2002/)
+
+[Screenshots from developers: 2002 vs. 2015](https://anders.unix.se/2015/12/10/screenshots-from-developers--2002-vs.-2015/)
+
+[At what time of day do famous programmers work?](https://ivan.bessarabov.com/blog/famous-programmers-work-time)
+
+[The challenges of teaching software engineering](https://www.sicpers.info/2019/07/the-challenges-of-teaching-software-engineering/)
+
+[Linus Torvalds on C++](http://harmful.cat-v.org/software/c++/linus)
+
+The Honeypot documentaries on [Ember.js](https://www.youtube.com/watch?v=Cvz-9ccflKQ), [Vue.js](https://www.youtube.com/watch?v=OrxmtDw4pVI) & [GraphQL](https://www.youtube.com/watch?v=783ccP__No8).
+
+[List of software development philosophies - Wikipedia](https://en.wikipedia.org/wiki/List_of_software_development_philosophies), including [Rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging).
+
+[dwmkerr/hacker-laws](https://github.com/dwmkerr/hacker-laws) - Laws, Theories, Principles and Patterns that developers will find useful.
+
+[Richard Hamming - You and Your Research Lecture](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
+
+[The Architecture of Open Source Applications](https://www.aosabook.org/en/index.html) - Architects look at thousands of buildings during their training, and study critiques of those buildings written by masters. In contrast, most software developers only ever get to know a handful of large programs well—usually programs they wrote themselves—and never study the great programs of history. As a result, they repeat one another's mistakes rather than building on one another's successes. 
+
+[Software Development Waste](https://neverworkintheory.org/2021/08/29/software-development-waste.html) - [Hacker News discussion](https://news.ycombinator.com/item?id=28352075)
+
+[Do call yourself a programmer, and other career advice](http://yosefk.com/blog/do-call-yourself-a-programmer-and-other-career-advice.html)
+
+[Don't Call Yourself A Programmer, And Other Career Advice](https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/)
+
+[After being in a data science/ developer role for the better part of a decade, here is how companies REALLY develop software and AI/ML applications](https://www.reddit.com/r/datascience/comments/e6s20u/after_being_in_a_data_science_developer_role_for/)
 
 
 ## What Every Programmer Should Know
@@ -56,6 +97,14 @@ Hidden inside these notes are teaching materials:
 
 ## Blogs & Blog Posts
 
+[nemil](https://nemil.com)
+
+- [Think in Tradeoffs](https://nemil.com/2019/06/30/think-in-tradeoffs/) -  most engineering decisions as tradeoffs — not good choices versus bad choices.
+- [Pierce the Abstraction Wall](https://nemil.com/2019/07/30/pierce-the-abstraction-wall/) - soft versus hard interfaces
+- [Don't Write Code](https://nemil.com/2020/01/10/dont-write-code/)
+- [Read Code](https://nemil.com/2019/04/16/read-code/)
+- [The User is King (And Not)](https://nemil.com/2020/01/29/the-user-is-king-and-not/)
+
 [localghost](https://localghost.dev/)
 - [Everything I googled in a week as a senior software engineer](https://localghost.dev/blog/everything-i-googled-in-a-week-as-a-senior-software-engineer/)
 - [Everything I googled in a week as a professional software engineer](https://localghost.dev/blog/everything-i-googled-in-a-week-as-a-professional-software-engineer/)
@@ -83,6 +132,7 @@ Hidden inside these notes are teaching materials:
 
 [Hillel Wayne](https://www.hillelwayne.com/about/)
 
+- [Sources of Complexity: Constraints](https://www.hillelwayne.com/post/complexity-constraints/),
 - [Clever vs Insightful Code](https://www.hillelwayne.com/post/cleverness/)
 - [What engineering can teach (and learn from) us](https://www.hillelwayne.com/post/what-we-can-learn/)
 - [Are we really engineers?](https://www.hillelwayne.com/post/are-we-really-engineers/)
@@ -103,6 +153,8 @@ Hidden inside these notes are teaching materials:
 
 [dwmkerr.com](https://dwmkerr.com/)
 
+- [A Simple Makefile 'help' command](https://dwmkerr.com/makefile-help-command/)
+
 [The Clean Code Blog - Robert C. Martin (Uncle Bob)](http://blog.cleancoder.com/)
 - [Classes vs. Data Structures](http://blog.cleancoder.com/uncle-bob/2019/06/16/ObjectsAndDataStructures.html)
 - [FP vs. OO](http://blog.cleancoder.com/uncle-bob/2018/04/13/FPvsOO.html)
@@ -120,36 +172,6 @@ Hidden inside these notes are teaching materials:
 - [Outliers: Selection vs. Detection](https://koaning.io/posts/outliers-selection-vs-detection/)
 
 [The Digital Cat](https://www.thedigitalcatonline.com/)
-
-
-## Random Cool Stuff
-
-[RosettaGit](https://rosettagit.org/) - solutions to the same task in as many different programming languages.
-
-[Screenshots from developers & Unix people (2002)](https://anders.unix.se/2015/10/28/screenshots-from-developers--unix-people-2002/)
-
-[Screenshots from developers: 2002 vs. 2015](https://anders.unix.se/2015/12/10/screenshots-from-developers--2002-vs.-2015/)
-
-[At what time of day do famous programmers work?](https://ivan.bessarabov.com/blog/famous-programmers-work-time)
-
-[The challenges of teaching software engineering](https://www.sicpers.info/2019/07/the-challenges-of-teaching-software-engineering/)
-
-[Linus Torvalds on C++](http://harmful.cat-v.org/software/c++/linus)
-
-The Honeypot documentaries on [Ember.js](https://www.youtube.com/watch?v=Cvz-9ccflKQ), [Vue.js](https://www.youtube.com/watch?v=OrxmtDw4pVI) & [GraphQL](https://www.youtube.com/watch?v=783ccP__No8).
-
-[List of software development philosophies - Wikipedia](https://en.wikipedia.org/wiki/List_of_software_development_philosophies), including [Rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging).
-
-[dwmkerr/hacker-laws](https://github.com/dwmkerr/hacker-laws) - Laws, Theories, Principles and Patterns that developers will find useful.
-
-[Richard Hamming - You and Your Research Lecture](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
-
-[The Architecture of Open Source Applications](https://www.aosabook.org/en/index.html) - Architects look at thousands of buildings during their training, and study critiques of those buildings written by masters. In contrast, most software developers only ever get to know a handful of large programs well—usually programs they wrote themselves—and never study the great programs of history. As a result, they repeat one another's mistakes rather than building on one another's successes. 
-[Software Development Waste](https://neverworkintheory.org/2021/08/29/software-development-waste.html) - [Hacker News discussion](https://news.ycombinator.com/item?id=28352075)
-
-[Do call yourself a programmer, and other career advice](http://yosefk.com/blog/do-call-yourself-a-programmer-and-other-career-advice.html)
-
-[Don't Call Yourself A Programmer, And Other Career Advice](https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/)
 
 
 ## History of Programming
@@ -249,8 +271,3 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 - [Why is Python Slow?](https://talkpython.fm/episodes/show/265/why-is-python-slow)
 
 [Presentable](https://www.relay.fm/presentable) - how we design and build the products that are shaping our digital future
-
-
-## Humor
-
-[After being in a data science/ developer role for the better part of a decade, here is how companies REALLY develop software and AI/ML applications](https://www.reddit.com/r/datascience/comments/e6s20u/after_being_in_a_data_science_developer_role_for/)

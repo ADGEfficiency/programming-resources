@@ -11,7 +11,7 @@ Or make with opinionated directory:
 $ poetry new climate-news-db
 ```
 
-Then add packages interactively.
+Then add packages interactively after `poetry new` (never again).
 
 You can add packages later on with:
 

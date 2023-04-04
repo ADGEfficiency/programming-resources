@@ -21,6 +21,7 @@ Vimscript all plugins work fine in Neovim
 [Configure Neovim with Lua](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/)
 
 ## Set Options in Vimscript
+
 ```
 set tabstop=2
 set booleanoption
@@ -52,10 +53,12 @@ vim.cmd "set tabstop=2"
 ## Variables
 
 ```
-#  set variables
+#  set variable in vimscript
 let g:zoom#statustext = 'Z'
+
+#  set variable in lua
 vim.g['zoom#statustext'] = 'Z'
 
-#  check value
-: echo g:zoom
+#  check value on vim command line
+:echo g:zoom
 ```

@@ -17,9 +17,8 @@ if (match := func()) is not None:
 def decorator(func):
     def wrapper(*args, **kwargs):
         #  do stuff before function call
-        #  run func
-        #  do stuff after
-        #  return
+        func()
+        #  do stuff after function call
         return func(*args, **kwargs)
     return wrapper
 ```
