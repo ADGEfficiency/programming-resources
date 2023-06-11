@@ -33,6 +33,10 @@ Hidden inside these notes are teaching materials:
 
 [Tosca - Suzuki](Tosca - Suzuki)
 
+[soma fm - Mission Control](https://somafm.com/missioncontrol/)
+
+[lofi air traffic control](https://www.lofiatc.com/?icao=KVNY) 
+
 
 ## Random Cool Stuff
 
@@ -96,6 +100,10 @@ The Honeypot documentaries on [Ember.js](https://www.youtube.com/watch?v=Cvz-9cc
 
 
 ## Blogs & Blog Posts
+
+[Haki Benita](https://hakibenita.com/)
+
+- [SQL For Data Analysis](https://hakibenita.com/sql-for-data-analysis)
 
 [nemil](https://nemil.com)
 

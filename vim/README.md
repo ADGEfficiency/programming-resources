@@ -40,6 +40,8 @@ vimtutor - type `$ vimtutor`
 
 ## Intermediate
 
+[Vim Plugins](https://catonmat.net/vim-plugins)
+
 [Fcode VIM cheat sheet](https://www.fcodelabs.com/2018/12/08/Vim-Cheats/)
 
 [omerxx/vim-notebook](https://github.com/omerxx/vim-notebook/blob/master/VIM_NOTEBOOK.md) - theory, tips, and tricks after reading Drew Neil's Practical VIM & an unordered list of tips picked up along the way

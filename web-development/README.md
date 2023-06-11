@@ -1,3 +1,9 @@
+[My current HTML boilerplate](https://www.matuzo.at/blog/html-boilerplate/)
+
+## CSS Frameworks
+
+[mvp.css](https://andybrewer.github.io/mvp/#docs)
+
 [Web Scraping with Python – A Step by Step Guide](https://www.scrapingdog.com/blog/web-scraping-with-python/)
 
 Types of headers:
@@ -95,3 +101,8 @@ owner : /people/564}
 ## Vue
 
 [Building a multilingual blog using Nuxt and Markdown - Marina Aisa - Vue Day 2019](https://www.youtube.com/watch?v=qOjbRDVQzH8)
+
+
+## Fonts
+
+[Recursive](https://fonts.google.com/specimen/Recursive)

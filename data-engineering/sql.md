@@ -100,6 +100,20 @@ Advanced:
 5. Triggers
 6. PIVOT and UNPIVOT
 
+## Why SQL
+
+[Modern Data Practice and the SQL Tradition](https://tselai.com/modern-data-practice-and-the-sql-tradition.html)
+
+NoSQL gives you freedom
+modern sql databases handle JSON well with JSON columns
+SQL can be cheaper
+
+Bring ETL closer to the data
+
+database validations fail early
+modern sql db can handel complex functionality to work with text, dates and geolocational data
+triggers, stored procedures
+
 ## ORMs
 
 [Object-Relational Mapping is the Vietnam of Computer Science](https://blog.codinghorror.com/object-relational-mapping-is-the-vietnam-of-computer-science/)

@@ -1,3 +1,9 @@
+[Advantages of monorepos](https://danluu.com/monorepo/)
+
+- projects can be organized how they should, not how the VCS wants
+- reduces overhead from dependency management
+- repository is always in a consistent state
+
 [Why Google Stores Billions of Lines of Code in a Single Repository](https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext)
 
 Benefits

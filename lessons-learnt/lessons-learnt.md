@@ -1,3 +1,10 @@
+[Learnings from 5 years of tech startup code audits](https://kenkantzer.com/learnings-from-5-years-of-tech-startup-code-audits/)
+
+- don't need 100's of engineers (can be small + mighty)
+- simple better than smart
+- bad security vulnerabilities are often obvious
+- JWT auth can be hard to get right
+
 [My guiding principles after 20 years of programming](https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c) [HN Discussion](https://news.ycombinator.com/item?id=30763516)
 
 ```

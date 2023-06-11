@@ -1491,7 +1491,7 @@ No Silver Bullet – Essence and Accident in Software Engineering - [paper](http
 
 [Think in Math. Write in Code. - Justin Meiners](https://justinmeiners.github.io/think-in-math/)
 
-[Building Awesome Developer Tools - Ines Montani](https://youtu.be/Ivb4AAuj5JY)
+[Building Awesome Developer Tools - Ines Montani, PyCon 2019 India Keynote](https://youtu.be/Ivb4AAuj5JY)
 
 [Linux kernel coding style](https://www.kernel.org/doc/Documentation/process/coding-style.rst)
 

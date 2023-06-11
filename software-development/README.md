@@ -1,3 +1,23 @@
+[Building Awesome Developer Tools - Ines Montani, PyCon 2019 India Keynote](https://youtu.be/Ivb4AAuj5JY)
+
+everyone who writes code writes developer tools
+
+programmable & extensible tools over fully integrated - better for devs, cheaper to build, reduces feature requests / features to build
+
+favour being able to iterate over what a function returns than adding keyword args to that function
+
+allow users to pass in a function to extend behaviour
+
+an extensible library is one that provides composable primitives
+
+tips
+- callbacks,
+- function registries (decoractors),
+- single dispatch generic functions,
+- entrypoints,
+- avoiding IO
+
+
 [Software development skills for data scientists](https://www.treycausey.com/blog/software_dev_skills.html)
 
 - modular, re-usable code (DRY),
