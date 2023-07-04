@@ -172,6 +172,8 @@ git merge dev
 
 - merge commits vs. squash & merge vs. rebase & merge
 
+[THIS IS HOW I GIT](https://daniel.haxx.se/blog/2020/11/09/this-is-how-i-git/)
+
 
 ## Branching strategies
 

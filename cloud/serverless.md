@@ -1,7 +1,7 @@
 sls print
 
-
 ---
+
 Invoke locally
 ```
 sls invoke local --function get_solcast_data --stage prod --path ./unmetered-sydney-opera-house.json

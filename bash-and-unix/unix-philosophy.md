@@ -6,7 +6,7 @@ Unix philosophy is as important as Unix itself - it is a set cultural of norms f
 
 Originated by Ken Thompson (implemented the original Unix system)
 
-## Minimalist, modular software development
+## Minimalist, Modular Software Development
 
 > Many UNIX programs do quite trivial things in isolation, but, combined with other programs, become general and useful tools - The UNIX Programming Environment, Brian Kernighan and Rob Pike (1984)
 
@@ -26,7 +26,7 @@ Programs that are
  
 The UNIX toolset is about using programs in combination to get a job done, rather than monolithic, self sufficient, special or one time programs
 
-## Everything is a (text) file
+## Everything is a Text File
 
 https://en.wikipedia.org/wiki/Everything_is_a_file
 

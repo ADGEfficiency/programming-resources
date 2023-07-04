@@ -1,4 +1,4 @@
-# Advanced
+# Advanced Bash
 
 `set -x` (for debugging)
 
@@ -18,15 +18,13 @@ $ popd
 #  now in old-dir
 ```
 
-
-## Command types
+## Command Types
 
 - word = sequence of characters
 - list = sequence of commands / pipelines
 - parameter = entity that stores values
 - variable = parameter denoted by a name
 - arrays in round brackets - `names=(adam bob)`
-
 
 ## Lists
 
@@ -83,7 +81,6 @@ $ !:gs/draft/note/
 
 [3.5.3 Shell Parameter Expansion](https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html)
 
-
 ## Brace expansion
 
 Can't have spaces!
@@ -112,8 +109,6 @@ This can also be used inside strings:
 $ cp data/{raw,final}/train.csv
 # cp data/raw/train.csv data/final/train.csv
 
-
-
 ## Parameter expansion  
 
 `$name` = parameter expansion
@@ -124,7 +119,6 @@ Prefix & suffix removal
 - `#` = remove prefix
 - `%` = remove suffix
 - double `##` or `%%` = remove all matching
-
 
 ### Substrings
 
@@ -194,7 +188,6 @@ echo ${PTH%.*}
 #  home/folder/file
 ```
 
-
 ### Substitution
 
 Similar to expansion, except using `/`
@@ -228,27 +221,20 @@ $ echo ${PTH//folder/fldr}
 home/fldr/fldr/file.suffix
 ```
 
-
-
-
 ## Arithmetic
 
 `(( do math in here ))`
-
 
 ## Return Values
 
 - success = 0 
 - failure = 1 to 255
 
-
 ## Conditionals
 
 `[[ -e file ]]` file exists
 
 `[[ -d file ]]` file is a directory
-
-
 
 ## Run in background
 
@@ -276,16 +262,8 @@ fg
 fg %number
 ```
 
-
 ## Iteration
 
 Single line for loop to copy files:
 
 `for file in *.data; do cp "$file" "$file.out"; done`
-
-
-## References
-
-UNIX shell expansion: proper use and advanced forms - Tyson Whitehead - [talk](https://youtu.be/GXu1bZptwf4)
-
-Concise GNU Bash: An Introduction to Advanced Usage - James Panacciulli @ LinuxFest Northwest 2017- [talk](https://youtu.be/BJ0uHhBkzOQ) - [slides](http://talk.jpnc.info/bash_lfnw_2017.pdf)

@@ -386,7 +386,6 @@ $ pip freeze | grep numpy
 $ grep -rl LSTM . | grep -v __pycache__ | grep -v .ipynb_checkpoints
 ```
 
-
 ## SSH
 
 Very important skill to work on remote machines

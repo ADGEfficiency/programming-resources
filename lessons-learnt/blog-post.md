@@ -29,57 +29,56 @@ N lessons learnt from Y software engineering lessons
 
 ---
 
-# working as a programmer
+# 10 lessons learnt working as a programmer
+# 10 lessons learnt by many programmers
+
+## tradeoffs
+
+tradeoffs - not as good versus bad choices
+- https://nemil.com/on-software-engineering/
 
 ## Writing Code
+
+Keep ego & identity out of code.
+- https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c
+
+Take care copy and pasting.
+- https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c
+
+Great code is documented.
+- https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c
+
+Use pure functions.
+
+Soft versus hard interfaces
+- [Pierce the Abstraction Wall](https://nemil.com/2019/07/30/pierce-the-abstraction-wall/) - soft versus hard interfaces
+
+don't share state
+- 42 things I learned from building a production database
+
+use toy problems
+
+### Read
+
+Read code of libraries you depend on
+
+### Write
+
+Write papers. Writing for an audience that has zero context on what you are doing will force you to examine and clarify your assumptions.
+
+### Teach.
+
+teach - documentation is teaching
+
+### write simple code
+
+Avoid inheritance, overriding and implicit smartness.
 
 favour reability over cleverness
 
 You should write code for junior engineers.
 
-Keep ego & identity out of code.
-
-Take care copy and pasting.
-
-Write and handle errors.
-
-Fail early and recover from errors.
-
-Great code is documented.
-
-Avoid inheritance, overriding and implicit smartness.
-
-Use pure functions.
-
-Avoid using real-time for correctness guarantees.
-
-tradeoffs - not as good versus bad choices
-
-Soft versus hard interfaces
-
-don't share state
-
-use toy problems
-
-## Iterating
-
-Be conservative on APIs and liberal with implementations.  Plan to iterate at least three implementations.
-
-Sturgeon’s law applies to your work as well. Don’t linger on one project forever. Make new things. That’s the only way to learn.
-
-## Read
-
-Read code of libraries you depend on
-
-## Write
-
-Write papers. Writing for an audience that has zero context on what you are doing will force you to examine and clarify your assumptions.
-
-## Teach.
-
-teach - documentation is teaching
-
-## Regularization - simplicity, small system, no code etc
+Don't write smart code because you won't be able to debug it.
 
 remove bad code
 
@@ -93,7 +92,21 @@ Don't try to be perfect - Worry less about elegance and perfection; instead stri
 
 Strive for smaller system.
 
-## Tension between learning through doing or planning
+### handling errors
+
+Write and handle errors.
+
+Fail early and recover from errors.
+
+Avoid using real-time for correctness guarantees.
+
+## Iterating
+
+Be conservative on APIs and liberal with implementations.  Plan to iterate at least three implementations.
+
+Sturgeon’s law applies to your work as well. Don’t linger on one project forever. Make new things. That’s the only way to learn.
+
+### Tension between learning through doing or planning
 
 Don't start coding until you fully understand the problem. HN Fully understanding requires attempting to code a solution.
 
@@ -135,7 +148,6 @@ Anything that can’t be measured easily (e.g., consistency) is often forgotten;
 
 three components make up monitoring - logging, metrics, and alarms
 
-
 # working with others
 
 communication harder than technical
@@ -162,7 +174,7 @@ Give ownership.
 
 Interviews don't work.
 
-## seniority
+## Seniority
 
 Seniority not just aobut programming
 
@@ -178,6 +190,32 @@ don't comment the obvious stuff
 
 Be OK with long PR reviews.
 
+# Applications / Product / Domains / Business
+
+## Picking/choosing what to work on
+
+Develop Your Personal Brand
+
+Take on big projects. Get uncomfortable.
+
+Don't solve problems that don't exist.
+
+The hardest part of software is building the right thing
+
+## Business
+
+business impact
+
+manage expectations
+
+Innovation isn't important.
+
+Any field with multiple successful competitors is good news. It means that there is demand, which you can tap in by addressing the problem in your way. In a sector with solid margins, this is an opportunity for design innovation to shine.
+
+Any field where all of the other competitors are free services, outdated desktop apps, open-source communities with no revenue, or wannabe startup cults burning through cash is a lethal minefield covered in a cloud of mustard gas.
+
+Never go up against a free service from a multinational. At least, never directly.
+
 ## Customers
 
 Customers are the most important thing.
@@ -191,20 +229,6 @@ The buyer is quite often wrong. That fact never changes their mind.
 Think about the user experience.
 
 customer / tech support is a powerful form of research
-
-
-
-# Applications / Product / Domains / Business
-
-## Picking/choosing what to work on
-
-Develop Your Personal Brand
-
-Take on big projects. Get uncomfortable.
-
-Don't solve problems that don't exist.
-
-The hardest part of software is building the right thing
 
 ## Web Development
 
@@ -221,17 +245,3 @@ visualization is a spectrum from exploratory to explanatory. Exploratory graphic
 working with data should be 80% of the work of visualization.
 
 Model performance != business performance
-
-## Business
-
-business impact
-
-manage expectations
-
-Innovation isn't important.
-
-Any field with multiple successful competitors is good news. It means that there is demand, which you can tap in by addressing the problem in your way. In a sector with solid margins, this is an opportunity for design innovation to shine.
-
-Any field where all of the other competitors are free services, outdated desktop apps, open-source communities with no revenue, or wannabe startup cults burning through cash is a lethal minefield covered in a cloud of mustard gas.
-
-Never go up against a free service from a multinational. At least, never directly.

@@ -1,5 +1,9 @@
 # Lessons Learnt
 
-./lessons-learnt.md - list of blog posts on lessons learnt as a programmer.
+./lessons-learnt-raw.md - inputs - TODO remove
 
-./summaries.md - rough highlevel points from each post.
+./lessons-learnt.md - list of blog posts & notes on lessons learnt as a programmer. Raw.
+
+./summaries.md - rough high level points from each post. Intermediate.
+
+./blog-post.md - blog post. Final.

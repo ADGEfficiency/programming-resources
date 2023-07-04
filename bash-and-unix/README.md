@@ -1,23 +1,23 @@
-# Bash & UNIX 
+# An Introduction to Bash & UNIX 
 
-- [intro.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md) - basics of the shell for beginners
-- [unix-philosohpy.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/unix-philosophy.md) - the philosophy of UNIX
-- [working-with-data.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/unix-philosophy.md) - patterns for working with data in a shell
-- [advanced.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/advanced.md) - advanced tips & tricks
+These are notes for a course on the shell, terminal, and command line with Bash:
+
+- [intro.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md) - basics of the shell for beginners,
+- [unix-philosohpy.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/unix-philosophy.md) - the philosophy of UNIX,
+- [working-with-data.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/unix-philosophy.md) - patterns for working with data in a shell,
+- [advanced.md](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/advanced.md) - advanced tips & tricks.
 
 ![](berlin-wall.jpg)
 
 <p align="center"><i>Eastside Gallery - Berlin, 2019</i></p>
 
-
 ## Resources
 
 You can also find hard copies of additional resources in [programming-resources/bash-and-unix/resources](https://github.com/ADGEfficiency/programming-resources/tree/master/bash-and-unix/resources).
 
-## For beginners
+### For Beginners
 
 [Survival guide for Unix newbies](https://matt.might.net/articles/basic-unix/)
-
 
 ### References
 
@@ -36,6 +36,10 @@ You can also find hard copies of additional resources in [programming-resources/
 [The Bash Hackers Wiki](https://wiki.bash-hackers.org/) - documentation of any kind about GNU Bash. The main motivation was to provide human-readable documentation and information so users aren't forced to read every bit of the Bash manpage.
 
 [The Architecture of Open Source Applications: The Bourne-Again Shell](http://www.aosabook.org/en/bash.html) - bash's major components: input processing, parsing, the various word expansions and other command processing, and command execution, from the pipeline perspective
+
+UNIX shell expansion: proper use and advanced forms - Tyson Whitehead - [talk](https://youtu.be/GXu1bZptwf4)
+
+Concise GNU Bash: An Introduction to Advanced Usage - James Panacciulli @ LinuxFest Northwest 2017- [talk](https://youtu.be/BJ0uHhBkzOQ) - [slides](http://talk.jpnc.info/bash_lfnw_2017.pdf)
 
 ### History
 

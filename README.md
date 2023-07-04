@@ -1,18 +1,15 @@
 # Programming Resources
 
-A collection of programming resources that help me manage my imposter syndrome being paid to program (I have a chemical engineering background).
+These are my personal notes on programming things - you will often find my notes and summaries alongside links to articles in the many Markdown files in this repo.  This `README.md` also includes lists of resources that I have found useful.
 
-These are my personal notes - you will often find my notes and summaries alongside links to articles.
-
-I also maintain similar collections on [reinforcement learning](https://github.com/ADGEfficiency/rl-resources) and [machine learning](https://github.com/ADGEfficiency/ml-resources).
+I maintain similar collections on [reinforcement learning](https://github.com/ADGEfficiency/rl-resources) and [machine learning](https://github.com/ADGEfficiency/ml-resources).
 
 
-## Teaching Materials & Courses
+## Teaching Materials
 
-Hidden inside these notes are teaching materials:
+Hidden inside these notes are are the content for a few courses:
 
-- [the fundamentals of computing](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md), 
-- [the fundamentals of programming](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md),
+- [a course on the fundamentals](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals) of [computing](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md) & [programming](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md),
 - [an introduction to bash and UNIX](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md),
 - [a test driven development course](https://github.com/ADGEfficiency/programming-resources/tree/master/test-driven-development).
 
@@ -31,7 +28,7 @@ Hidden inside these notes are teaching materials:
 
 [Offworld Trading Company Soundtrack](https://youtu.be/giqNtBAukbg)
 
-[Tosca - Suzuki](Tosca - Suzuki)
+[Tosca - Suzuki](https://youtu.be/mNk9cbJqtjs)
 
 [soma fm - Mission Control](https://somafm.com/missioncontrol/)
 
@@ -274,8 +271,6 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 - [Charles Hoskinson: Cardano](https://youtu.be/FKh8hjJNhWc)
 - [Jeffrey Shainline: Neuromorphic Computing](https://youtu.be/EwueqdgIvq4)
 
-[Talk Python To Me](https://talkpython.fm/)
-
-- [Why is Python Slow?](https://talkpython.fm/episodes/show/265/why-is-python-slow)
+[Talk Python To Me](https://talkpython.fm/) - [Why is Python Slow?](https://talkpython.fm/episodes/show/265/why-is-python-slow)
 
 [Presentable](https://www.relay.fm/presentable) - how we design and build the products that are shaping our digital future
