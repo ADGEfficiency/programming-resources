@@ -1,6 +1,8 @@
 # Programming Resources
 
-These are my personal notes on programming things - you will often find my notes and summaries alongside links to articles in the many Markdown files in this repo.  This `README.md` also includes lists of resources that I have found useful.
+These are my personal notes on programming & computing things.
+
+You will often find my notes and summaries alongside links to articles in the many Markdown files in this repo.  This `README.md` also includes lists of resources that I have found useful.
 
 I maintain similar collections on [reinforcement learning](https://github.com/ADGEfficiency/rl-resources) and [machine learning](https://github.com/ADGEfficiency/ml-resources).
 
@@ -9,12 +11,14 @@ I maintain similar collections on [reinforcement learning](https://github.com/AD
 
 Hidden inside these notes are are the content for a few courses:
 
-- [a course on the fundamentals](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals) of [computing](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md) & [programming](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md),
-- [an introduction to bash and UNIX](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md),
-- [a test driven development course](https://github.com/ADGEfficiency/programming-resources/tree/master/test-driven-development).
+- [fundamentals](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals) of [computing](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md) & [programming](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md),
+- [Bash and UNIX](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md),
+- [test driven development](https://github.com/ADGEfficiency/programming-resources/tree/master/test-driven-development).
+
+Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-resources/tree/master/memes).
 
 
-## Music to Program To
+## Music For Programming
 
 [Listen to Wikipedia](http://listen.hatnote.com/) - real-time visualization and sonification of Wikipedia activity.
 

@@ -1,0 +1,71 @@
+{
+    "shortcuts": [
+        {
+            "command": "runmenu:restart-and-run-all",
+            "keys": [
+                "F6"
+            ],
+            "selector": "[data-jp-code-runner]"
+        },
+        {
+            "command": "kernelmenu:restart-and-clear",
+            "keys": [
+                "F7"
+            ],
+            "selector": "[data-jp-kernel-user]:focus"
+        },
+        {
+            "command": "kernelmenu:run-all-above",
+            "keys": [
+                "F8"
+            ],
+            "selector": "[data-jp-kernel-user]:focus"
+        },
+
+        {
+            "command": "terminal:open",
+            "keys": [
+                "Alt T"
+            ],
+            "selector": "body"
+        },
+
+        {
+            "command": "tabsmenu:activate-previously-used-tab",
+            "keys": [
+                "Alt ArrowUp"
+            ],
+            "selector": "body"
+        },
+        {
+            "command": "application:activate-previous-tab",
+            "keys": [
+                "Alt ArrowLeft"
+            ],
+            "selector": "body"
+        },
+        {
+            "command": "application:activate-next-tab",
+            "keys": [
+                "Alt ArrowRight"
+            ],
+            "selector": "body"
+        },
+
+        {
+            "command": "notebook:change-cell-to-code",
+            "keys": [
+                "W"
+            ],
+            "selector": ".jp-Notebook:focus"
+        },
+        {
+            "command": "notebook:change-cell-to-markdown",
+            "keys": [
+                "M"
+            ],
+            "selector": ".jp-Notebook:focus"
+        },
+
+    ]
+}
