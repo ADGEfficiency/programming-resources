@@ -76,6 +76,9 @@ Best things in your bash_profile/aliases? - [Hacker News](https://news.ycombinat
 
 [Ten Things I Wish I’d Known About bash](https://zwischenzugs.com/2018/01/06/ten-things-i-wish-id-known-about-bash/)
 
+[Shells are Two Things](https://borretti.me/article/shells-are-two-things)
+
+
 ### Talks
 
 UNIX shell expansion: proper use and advanced forms - Tyson Whitehead - [talk](https://youtu.be/GXu1bZptwf4)

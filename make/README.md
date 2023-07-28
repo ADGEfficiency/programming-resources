@@ -12,7 +12,6 @@ Make = 1977, has its quirks
 
 Rules can be moved between work flows - some even have entire workflows that can be ported across projects.
 
-
 ## Setup
 
 I've included a simple `make` driven data pipeline - to run it you will need to make a few files executable:
@@ -25,8 +24,7 @@ $ chmod +x *.py *.sh
 $ make
 ```
 
-
-## Why make
+## Why `make`
 
 Machine readable documentation
 - track changes in source control (git),
@@ -58,7 +56,6 @@ $ make
 
 Make is for making files - the files we make depend on other files that we make.
 
-
 ## Makefile
 
 Makefile will express your workflow backwards as dependencies between files
@@ -89,7 +86,6 @@ This implies that the target is a file
 
 Dummy target = meta target = no commands, only dependencies
 
-
 ## Variable Assignment
 
 
@@ -117,6 +113,7 @@ prod
 `?=` conditional assignment = evaluated only if variable doesn't have a value.
 
 Example Makefile
+
 ```
 SIMPLE := $(shell date)
 RECURSIVE = $(shell date)

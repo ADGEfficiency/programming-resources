@@ -83,3 +83,17 @@ docker-heroku-cli-intel:
 	heroku container:login
 	heroku container:push web -a climate-news-db --recursive
 	heroku container:release web -a climate-news-db
+
+---
+
+docker compose - https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose
+
+`docker-compose.override.yml`
+
+healthchecks
+
+.env
+
+multi stage dockerfiles
+
+build arguments
