@@ -45,6 +45,8 @@ Replace:
 
 ```bash
 sed -i "" "s/from config import S3_BUCKET, S3_PREFIX/from emd.config import default_config/" *.py
+
+sed -i 's/BACKEND_URL/BACKEND_HOST/g' docker-compose.yml Makefile **/*.py infra/fly/* .env
 ```
 
 Delete:

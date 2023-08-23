@@ -1,3 +1,9 @@
+div#myDiv.class1.class3
+
+<div id="myDiv" class="class2 class3"></div>
+
+---
+
 a[href="/courses"]
 
 <a href="/courses"></a>
@@ -52,6 +58,3 @@ table>tr*2>td*3
   </tr>
 </table>
 
-div#myDiv.class1.class3
-
-<div id="myDiv" class="class2 class3"></div>

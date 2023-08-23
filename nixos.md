@@ -16,3 +16,45 @@ https://cuddly-octo-palm-tree.com/posts/2021-12-19-tyska-nix-shell/
 #  automatically use nix with direnv
 use nix
 ```
+
+$ nix-shell shell.nix --command bash
+
+---
+
+# Nix Files
+
+default.nix: This is the conventional entry point for a Nix package. 
+
+When you run a command like nix-build in a directory, it will look for a file named default.nix. This file typically defines the package itself or a package set and its dependencies.
+
+shell.nix: This file is specifically used to define development environments. 
+
+When you run nix-shell in a directory, it looks for a shell.nix file and builds an environment with the specified dependencies. This is handy for setting up a consistent development environment across different systems.
+
+configuration.nix: This file is specific to NixOS, the Nix-based Linux distribution. 
+
+It's used to define the entire system configuration, including system packages, services, file system mounts, user accounts, and more. You'll find this file at /etc/nixos/configuration.nix on a NixOS system, and changes to this file are made active by running nixos-rebuild switch.
+
+---
+
+## Nix shell
+
+https://nixos.wiki/wiki/Development_environment_with_nix-shell
+
+buildInputs = required at run time
+
+nativeBuildInputs = required at build time
+
+---
+
+list install packages
+
+nix-env -q
+
+## with .envrc
+
+```
+#.envrc
+# use nix --pure --keep DIRENV_DUMP_FILE_PATH
+# use nix
+```
