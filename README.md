@@ -41,6 +41,8 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 ## Random Cool Stuff
 
+[Refactoring.Guru](https://refactoring.guru/) - makes it easy for you to discover everything you need to know about refactoring, design patterns, SOLID principles, and other smart programming topics.
+
 [RosettaGit](https://rosettagit.org/) - solutions to the same task in as many different programming languages.
 
 [Screenshots from developers & Unix people (2002)](https://anders.unix.se/2015/10/28/screenshots-from-developers--unix-people-2002/)

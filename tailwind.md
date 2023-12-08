@@ -8,3 +8,8 @@
     font-extrabold: Sets the font weight to 800.
     font-black: Sets the font weight to 900.
 
+---
+
+pines - https://devdojo.com/pines
+
+daisyui - https://daisyui.com/

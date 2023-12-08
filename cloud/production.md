@@ -1,3 +1,27 @@
+
+[How to sleep at night having a cloud service: common Architecture Do's ](https://danielsada.tech/blog/cloud-services-dos/)
+
+Simple:
+
+- infra as code,
+- CI/CD,
+- load balancing,
+- rayids, correlations / UUIDs for requests
+    * allows tracking a request through it's lifecycle
+
+Medium:
+- centralized logging,
+- monitoring agents
+    * how to tell your service is down
+- autoscaling based on load,
+- experiment system - roll out to 1% of your users,
+
+Hard:
+- blue-green deployments
+- anaomly detection, automatic mitigations
+
+---
+
 Python Anywhere, Netfly, Fly, Heroku
 
 https://www.saltstack.com/try-salt-open/, Ansible, terraform
@@ -23,11 +47,11 @@ https://www.saltstack.com/try-salt-open/, Ansible, terraform
 - time series plots
 - provide feedback to programmer - how much this function would cost
 - target for optimization = stable, and often used functions (Cython or C++)
-- parallel proccessing limited by memory
+- parallel processing limited by memory
 - code takes up lots of memory (-O for no docstrings, remove dead code)
 - sharing more between processes - sharing configuration
 - network latency (problem for scaling servers) - asyncio
-- problems with branches - context switching, suprises
+- problems with branches - context switching, surprises
 - one master branch - no branches, rely on continuous monitoring
 - staged rollouts of features, load testing using artificial load
 - 40-60 rollouts per day, 1 hour to rollout a commit from master
@@ -37,11 +61,11 @@ https://www.saltstack.com/try-salt-open/, Ansible, terraform
 
 [The Evolution of Reddit.com's Architecture](https://youtu.be/nUcO7n4hek4)
 
-- storing list of id's in memcache, retrive info from database via foreign key
+- storing list of id's in memcache, retrieve info from database via foreign key
 - update cache in place rather than re running query (after new vote) - read, mutate, write (race condition)
 - observability before you can solve a problem
-- partitoning event handling to fix throughput
-- if you are denormalizing, need tools for healing 
+- partitioning event handling to fix throughput
+- if you are denormalizing, need tools for healing
 - resource quotas to stop one service crashing entire site
 - sanity checking on resource termination - am I terminating a large % of our traffic?
 - observability, use safeguards, simple + easy to understand
@@ -49,7 +73,7 @@ https://www.saltstack.com/try-salt-open/, Ansible, terraform
 [How Slack Works](https://youtu.be/WE9c9AZe-DY)
 
 [This is how I use the good parts of @awscloud , while filtering out all the distracting hype.](https://twitter.com/dvassallo/status/1154516910265884672)
-- I can’t emphasize enough how important it is that you can easily start your entire application on your laptop, with one click. 
+- I can’t emphasize enough how important it is that you can easily start your entire application on your laptop, with one click.
 
 
 ## Machine Learning Specific
@@ -60,7 +84,7 @@ https://www.saltstack.com/try-salt-open/, Ansible, terraform
 
 Infrastructure as code
 - avoid environment drift, and to ensure idempotent operations
-- read the infrastructure configuration and you’ll know exactly how the resulting environment looks like 
+- read the infrastructure configuration and you’ll know exactly how the resulting environment looks like
 - you can rerun the provisioning without side effects, and your infrastructure has a predictable state
 
 Immutable infrastructure

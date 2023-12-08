@@ -14,11 +14,15 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 :PackerInstall
 ```
 
-Vimscript all plugins work fine in Neovim
+Vimscript all plugins work fine in Neovim.
 
-#  Options 
+If you want a good place to start, look at [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim).
+
+# Options
 
 [Configure Neovim with Lua](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/)
+
+[nvim-lua-guide](https://github.com/nanotee/nvim-lua-guide)
 
 ## Set Options in Vimscript
 
@@ -29,6 +33,7 @@ unset booleanoption
 ```
 
 # Set Options in Lua
+
 ```
 vim.opt.set.tabstop = 2
 vim.cmd "set tabstop=2"

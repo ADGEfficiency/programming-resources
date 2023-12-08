@@ -1,4 +1,4 @@
-# An Introduction to Bash & UNIX 
+# An Introduction to Bash & UNIX
 
 These are notes for a course on the shell, terminal, and command line with Bash:
 

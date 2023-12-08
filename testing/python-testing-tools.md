@@ -54,7 +54,7 @@ Pytest offers features to run only specific test, to parametrize tests with diff
 
 `-k name` only runs tests matching name
 
-`-m mark_name` runs marked tests 
+`-m mark_name` runs marked tests
 
 `-x` exit on first fail
 
@@ -78,14 +78,14 @@ Marked using `@pytest.mark.smoke`.
 
 We can also mark tests with `skip`, `skipif` and `xfail` (expected to fail).
 
-`-m mark_name` runs marked tests 
+`-m mark_name` runs marked tests
 
 ```python
 import pytest
 
 @pytest.mark.webtest
 def test_send_http():
-    pass 
+    pass
 ```
 
 ```bash
@@ -153,3 +153,8 @@ def test_passes():
         x = 1 / 0
 ```
 
+## Extensions
+
+pytest-sugar - https://github.com/Teemu/pytest-sugar
+
+pytest-testmon - https://pypi.org/project/pytest-testmon/
