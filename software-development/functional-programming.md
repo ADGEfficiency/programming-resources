@@ -1,9 +1,16 @@
+[Things I wish someone had explained about functional programming](https://jrsinclair.com/articles/2019/what-i-wish-someone-had-explained-about-functional-programming/)
+
+1. [Wrong Assumptions](https://jrsinclair.com/articles/2019/what-i-wish-someone-had-explained-about-functional-programming/)
+2. [Algebraic Structures](https://jrsinclair.com/articles/2019/algebraic-structures-what-i-wish-someone-had-explained-about-functional-programming/)
+3. [Type Classes](https://jrsinclair.com/articles/2019/type-classes-what-i-wish-someone-had-explained-about-functional-programming/)
+4. [Algebraic Data Types](https://jrsinclair.com/articles/2019/algebraic-data-types-what-i-wish-someone-had-explained-about-functional-programming/)
+
 [Why Isn't Functional Programming the Norm? – Richard Feldman - 2019](https://www.youtube.com/watch?v=QyJZzq0v7Z4)
 
 Reasons why languages get popular
 - killer app
 - platform exclusivity
-- quick uprgade cycle
+- quick upgrade cycle
 
 Killer = elm-ui, clojure Datomic, ReasonML revery
 

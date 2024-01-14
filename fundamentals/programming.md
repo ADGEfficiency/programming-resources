@@ -5,12 +5,12 @@
 - [what is a program](#what-is-a-program) - *what are programs made of* - abstractions & interfaces, documentation, testing, properties of languages, OOP & functional programming, language landscape
 - [practice of programming](#practice-of-programming) - *what programmers do* - read code, googling for error messages, debugging, refactoring
 - [principles of programming](#principles-of-programming) - *laws, mindsets and rules* - simplicity, KISS, YAGNI, DRY, maintainability, 
-- [art of programming](#art-of-programming) - *what makes a program good* - simplicity, readibility, names, functions, classes
+- [art of programming](#art-of-programming) - *what makes a program good* - simplicity, readability, names, functions, classes
 - [philosophy of programming](#philosophies-of-programming) - *coherent collections of all the above* - agile, literate programming, TDD, clean code
 
 ![](assets/1907-Vlaminck-chatou-bridge.jpg)
 
-*Die Brücke von Chatou - Maurice de Vlaminck - 1907*
+*Die Brücke von Château - Maurice de Vlaminck - 1907*
 
 
 # Key takeaways
@@ -314,7 +314,7 @@ Needing comments can suggest poorly written code
 - no functional decomposition
 - want code that explains itself
 - fallacy that people whose code is not readable will be able to write comments
-- if you cant express yourself in code, you won’t be able to in comments
+- if you can't express yourself in code, you won’t be able to in comments
 
 Comments are a source of noise in code
 1. if code is clear, speaks for itself
@@ -602,7 +602,7 @@ Maturity of language
 - first class functions (no objects - aka no state)
 - no side effects
 
-Why is functional programmming good?
+Why is functional programming good?
 - idempotentcy - function always returns the same thing, whenever it runs
 - not affected by, or affects, the outside world
 
@@ -1095,7 +1095,7 @@ Dependencies - which modules know about each other
 
 You won't always be on the bleeding edge
 - don't want to use the latest version of anything
-- bugs, compatability with other libraries
+- bugs, compatibility with other libraries
 
 Others peoples code is a liability - all code is a liability
 - if you can solve a problem without code, do it!
@@ -1208,7 +1208,7 @@ Simple code
 - expressive
 - readable
 - understandable
-- unsuprising
+- unsurprising
 - transparent
 - self-explanatory
 - reassuring
@@ -1354,7 +1354,7 @@ When do I write a class?
 - if you have two methods - one being init - it shouldn’t be a class!
 
 If you use class once and throw it away, it could be a lot simpler
-- often want mulitple instances to get benefit of reuse
+- often want multiple instances to get benefit of reuse
 
 Don't overdo inheritance
 - single level will solve many problems
@@ -1491,7 +1491,7 @@ No Silver Bullet – Essence and Accident in Software Engineering - [paper](http
 
 [Think in Math. Write in Code. - Justin Meiners](https://justinmeiners.github.io/think-in-math/)
 
-[Building Awesome Developer Tools - Ines Montani, PyCon 2019 India Keynote](https://youtu.be/Ivb4AAuj5JY)
+[Building Awesome Developer Tools - Lines Montani, PyCon 2019 India Keynote](https://youtu.be/Ivb4AAuj5JY)
 
 [Linux kernel coding style](https://www.kernel.org/doc/Documentation/process/coding-style.rst)
 
@@ -1510,9 +1510,15 @@ Continuous Integration for Machine Learning - [blog post](https://medium.com/@rs
 [hellerve/programming-talks](https://github.com/hellerve/programming-talks)
 
 spaCy
-- [Matthew Honnibal & Ines Montani: spaCy and Explosion: past, present & future](https://youtu.be/Jk9y17lvltY)
-- [Ines Montani: Python India Keynote](https://www.youtube.com/watch?v=Ivb4AAuj5JY)
+- [Matthew Honnibal & Lines Montani: spaCy and Explosion: past, present & future](https://youtu.be/Jk9y17lvltY)
+- [Lines Montani: Python India Keynote](https://www.youtube.com/watch?v=Ivb4AAuj5JY)
 
 Robert (Uncle Bob) Martin
 - The Scribe's Oath - [youtube](https://www.youtube.com/watch?v=X31Jc6HQUcs)
 - Craftsmen - Control Your Environment - [youtube](https://www.youtube.com/watch?v=NZNhtYVb6H8)
+
+[The Exceptional Beauty of Doom 3's Source Code](https://kotaku.com/the-exceptional-beauty-of-doom-3s-source-code-5975610)
+
+- Code should be locally coherent and single-functioned: One function should do exactly one thing. It should be clear about what it’s doing.
+- Local code should explain, or at least hint at the overall system design.
+- Code should be self-documenting. Comments should be avoided whenever possible. Comments duplicate work when both writing and reading code. If you need to comment something to make it understandable it should probably be rewritten.

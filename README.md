@@ -34,12 +34,23 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 [Tosca - Suzuki](https://youtu.be/mNk9cbJqtjs)
 
+[Susumu Yokota - Acid Mt. Fuji](https://youtu.be/lSY1tyuR3WQ?si=bbU--t4mLRt3pAXn)
+
 [soma fm - Mission Control](https://somafm.com/missioncontrol/)
 
 [lofi air traffic control](https://www.lofiatc.com/?icao=KVNY) 
 
 
+## Diagramming Tools
+
+[swimlanes.io](https://swimlanes.io/)
+
+[excalidraw](https://excalidraw.com/)
+
+
 ## Random Cool Stuff
+
+[cheat.sh](https://cheat.sh/) - Unified access to the best community driven documentation repositories of the world.
 
 [Refactoring.Guru](https://refactoring.guru/) - makes it easy for you to discover everything you need to know about refactoring, design patterns, SOLID principles, and other smart programming topics.
 
@@ -55,7 +66,13 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 [Linus Torvalds on C++](http://harmful.cat-v.org/software/c++/linus)
 
-The Honeypot documentaries on [Ember.js](https://www.youtube.com/watch?v=Cvz-9ccflKQ), [Vue.js](https://www.youtube.com/watch?v=OrxmtDw4pVI) & [GraphQL](https://www.youtube.com/watch?v=783ccP__No8).
+Honeypot documentaries:
+
+- [Ember.js](https://www.youtube.com/watch?v=Cvz-9ccflKQ), 
+- [Vue.js](https://www.youtube.com/watch?v=OrxmtDw4pVI),
+- [GraphQL](https://www.youtube.com/watch?v=783ccP__No8),
+- [React.js](https://youtu.be/8pDqJVdNa44?si=SWo_Yu1HRAaproFT),
+- [Ruby on Rails](https://youtu.be/HDKUEXBF3B4?si=9SIhIo4NpSUyk4lq).
 
 [List of software development philosophies - Wikipedia](https://en.wikipedia.org/wiki/List_of_software_development_philosophies), including [Rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging).
 
@@ -87,7 +104,7 @@ The Honeypot documentaries on [Ember.js](https://www.youtube.com/watch?v=Cvz-9cc
 
 [Overlooked No More: Alan Turing, Condemned Code Breaker and Computer Visionary](https://www.nytimes.com/2019/06/05/obituaries/alan-turing-overlooked.html)
 
-[The Friendship That Made Google Huge - Jeff Dean and Sanjay Ghemawat](https://www.newyorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge)
+[The Friendship That Made Google Huge - Jeff Dean and Sanjay Ghemawat](https://www.new yorker.com/magazine/2018/12/10/the-friendship-that-made-google-huge)
 
 [How Data (and Some Breathtaking Soccer) Brought Liverpool to the Cusp of Glory](https://www.nytimes.com/2019/05/22/magazine/soccer-data-liverpool.html)
 
@@ -103,6 +120,37 @@ The Honeypot documentaries on [Ember.js](https://www.youtube.com/watch?v=Cvz-9cc
 
 
 ## Blogs & Blog Posts
+
+[Austin Z. Henley](https://austinhenley.com/blog.html)
+
+- [Challenging projects every programmer should try](https://austinhenley.com/blog/challengingprojects.html)
+- [Lessons from my PhD](https://austinhenley.com/blog/lessonsfrommyphd.html)
+
+[Chip Huyen](https://huyenchip.com)
+
+- [Streaming for Data Scientists](https://huyenchip.com/2022/08/03/stream-processing-for-data-scientists.html)
+- [What we look for in a resume](https://huyenchip.com/2023/01/24/what-we-look-for-in-a-candidate.html)
+- [7 reasons not to join a startup and 1 reason to](https://huyenchip.com/2021/02/27/why-not-join-a-startup.html)
+- [Building LLM applications for production](https://huyenchip.com/2023/04/11/llm-engineering.html)
+
+[danluu](https://danluu.com/)
+
+- [Advantages of Monorepos](https://danluu.com/monorepo/)
+- [In defense of simple architectures](https://danluu.com/simple-architectures/)
+- [Some programming blogs to consider reading](https://danluu.com/programming-blogs/)
+- [Big companies v. startups](https://danluu.com/startup-tradeoffs/)
+
+[Coding Horror](https://blog.codinghorror.com)
+
+- [The Magpie Developer](https://blog.codinghorror.com/the-magpie-developer/)
+- [Don't Pollute User Space](https://blog.codinghorror.com/dont-pollute-user-space/)
+
+[Casey's Tech Stuff](https://caseymuratori.com/contents)
+
+- [Semantic Compression](https://caseymuratori.com/blog_0015)
+- [Complexity and Granularity](https://caseymuratori.com/blog_0016)
+
+[Visualize Today - Small Multiples](https://blog.smallmultiples.com.au/)
 
 [Haki Benita](https://hakibenita.com/)
 
@@ -216,7 +264,7 @@ The Honeypot documentaries on [Ember.js](https://www.youtube.com/watch?v=Cvz-9cc
 
 [calmcode.io](https://calmcode.io/) - video tutorials for modern ideas and open source tools (mostly Python)
 
-[ines/course-starter-python](https://github.com/ines/course-starter-python) - course framework for spaCy
+[lines/course-starter-python](https://github.com/lines/course-starter-python) - course framework for spaCy
 
 [./missing-semester](https://missing.csail.mit.edu/) - gain proficiency with computing systems (shell, editor, version control) - [notes](https://missing.csail.mit.edu/) - [lecture videos](https://www.youtube.com/playlist?list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J)
 - [Lecture 4: Data Wrangling (2020)](https://youtu.be/sz_dsktIjt4) - sed
@@ -241,6 +289,8 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 [HackerRank](https://www.hackerrank.com)
 
+[Regex Crossword](https://regexcrossword.com/)
+
 
 ## Books
 
@@ -254,6 +304,12 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 
 ## Textbooks
+
+[Elements of Data Analytic Style](https://worldpece.org/sites/default/files/datastyle.pdf)
+
+[Composing Programs](https://www.composingprograms.com/)
+
+[Computer Science from the Bottom Up](https://bottomupcs.com/index.html)
 
 [Clean Architecture: A Craftsman's Guide to Software Structure and Design - Robert C. Martin](https://www.goodreads.com/book/show/18043011-clean-architecture)
 

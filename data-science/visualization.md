@@ -5,6 +5,8 @@ Matplotlib Tips and Demos - [notebook](http://nbviewer.jupyter.org/urls/gist.git
 [10 Years of Open-Source Visualization](https://observablehq.com/@mbostock/10-years-of-open-source-visualization)
 - visualization is a spectrum from exploratory to explanatory
 
+[Elements of Data Analytic Style](https://worldpece.org/sites/default/files/datastyle.pdf)
+
 ## d3
 
 How to learn D3.js - [text](https://wattenberger.com/blog/d3)
@@ -28,4 +30,3 @@ https://www.d3-graph-gallery.com/
 ## Streamlit
 
 docs - https://docs.streamlit.io/en/stable/
- 

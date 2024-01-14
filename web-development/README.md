@@ -1,4 +1,14 @@
+[Two lessons on reducing sign-up friction](https://bbirnbaum.com/two-lessons-on-reducing-sign-up-friction/)
+
+Lesson 1: Don’t require a user to be interested twice
+
+Lesson 2: Email verification messages should take two seconds to read
+
 [My current HTML boilerplate](https://www.matuzo.at/blog/html-boilerplate/)
+
+[CSS Zen Garden](https://csszengarden.com/) - A demonstration of what can be accomplished through CSS-based design.
+
+[Frontend Developer Roadmap](https://roadmap.sh/frontend)
 
 ## CSS Frameworks
 
@@ -29,7 +39,7 @@ Essential features of the web
 - browser - understands HTML
 - hyperlinks - `<a>` tag, URLs
 
-- [Chapter 2: Browers](https://css-tricks.com/chapter-2-browsers/) 
+- [Chapter 2: Browsers](https://css-tricks.com/chapter-2-browsers/) 
 - [Chapter 3: The Website](https://css-tricks.com/chapter-3-the-website/)
 
 [What do I need to read to be a great at CSS?](https://www.baldurbjarnason.com/2021/what-do-i-need-to-read-to-be-a-css-dev/) - [HN discussion](https://news.ycombinator.com/item?id=28968137)

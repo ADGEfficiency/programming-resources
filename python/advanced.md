@@ -1,13 +1,13 @@
 ## StringIO, BytesIO
 
 
-## Walrus Operatior
+## Walrus Operator
 
 ```python
 match = func()
 if match is not None:
   do()
-  
+
 if (match := func()) is not None:
 ```
 
@@ -19,7 +19,7 @@ def decorator(func):
         #  do stuff before function call
         func()
         #  do stuff after function call
-        return func(*args, **kwargs)
+        return None
     return wrapper
 ```
 
@@ -50,5 +50,3 @@ d = {
 for k, v in sorted(d.items()):
      print(k, sys.getsizeof(v))
 ```
-
-

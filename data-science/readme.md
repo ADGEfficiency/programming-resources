@@ -10,10 +10,9 @@ This helps explain why cloud providers have only captured about 30 percent of th
 
 While cloud technology has matured considerably over the past half-decade, big corporations that run their own data centers still dominate the majority of the world’s IT infrastructure.
 
-
-
-
 [Data Science from Scratch](https://www.oreilly.com/library/view/data-science-from/9781492041122/)
+
+[ Michoel Snow, Hillary Green-Lerman: Hacking the Data Science Challenge | PyData New York City 2019 ](https://www.youtube.com/watch?v=DU-DlD-eKD0)
 
 [How we scaled data science to all sides of Airbnb over 5 years of hypergrowth](https://venturebeat.com/2015/06/30/how-we-scaled-data-science-to-all-sides-of-airbnb-over-5-years-of-hypergrowth/)
 
@@ -41,6 +40,8 @@ Complexity is driven by interconnected parts:
 - dependency
 
 Complexity can't be avoided - but it can be compartmentalized.
+
+[Creating correct and capable classifiers - Ian Ozsvald](https://youtu.be/t6osKvhY6Ro?si=Dlm-N0Px4ARWdk18)
 
 
 ## Blog posts
@@ -138,6 +139,3 @@ Tree graphics = export graph vis
 [The Unofficial Google Data Science Blog](http://www.unofficialgoogledatascience.com/)
 
 [koaning.io](https://koaning.io/) - Vincent D. Warmerdam
-
-
-

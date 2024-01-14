@@ -54,7 +54,7 @@ Can repeat to match multiple using
 - `*` (zero or more)
 - `+` (one or more)
 
-`|` for multiple patters
+`|` for multiple patterns
 
 `( )` for groups
 
@@ -134,3 +134,7 @@ To extract the contents of the HTML tag in Kindle exports
 [Read This If You Don’t Know Enough About Regex](https://levelup.gitconnected.com/read-this-if-you-dont-know-enough-about-regex-73141bb0e1a7)
 
 [Regexp (The GNU Awk User's Guide)](https://www.gnu.org/software/gawk/manual/html_node/Regexp.html)
+
+[Regex Crossword](https://regexcrossword.com/)
+
+[Regex 101](https://regex101.com/)

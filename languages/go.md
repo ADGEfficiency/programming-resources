@@ -7,3 +7,7 @@
 [Go at Google: Language Design in the Service of Software Engineering](https://talks.golang.org/2012/splash.article)
 
 [Notes on the Go translation of Reposurgeon](https://gitlab.com/esr/reposurgeon/blob/master/GoNotes.adoc)
+
+[Go By Example](https://gobyexample.com/)
+
+[Three Months of Go (from a Haskeller's perspective)](https://memo.barrucadu.co.uk/three-months-of-go.html)

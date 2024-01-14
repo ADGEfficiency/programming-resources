@@ -1,4 +1,21 @@
-[Building Awesome Developer Tools - Ines Montani, PyCon 2019 India Keynote](https://youtu.be/Ivb4AAuj5JY)
+[Keep your source code SIMPLE](https://kevingoslar.medium.com/keep-your-source-code-simple-d5873cb854dc)
+
+Strong-enough data: avoid stringly-typed data structures
+
+Immutable where possible: avoid unexpected mutability
+
+Misuse-proof APIs: make it impossible to use your APIs the wrong way
+- one method instead of many, to avoid being called in the wrong order
+
+Pure logic: separate processing from side-effects
+
+Lean components: avoid large and complex pieces of code
+
+Expressive errors: provide helpful error messages
+
+[On the shoulders of the giants](https://www.lpalmieri.com/posts/2020-03-08-on-the-shoulders-of-the-giants/)
+
+[Building Awesome Developer Tools - Lines Montani, PyCon 2019 India Keynote](https://youtu.be/Ivb4AAuj5JY)
 
 everyone who writes code writes developer tools
 
@@ -84,5 +101,3 @@ Ineffective communication
 - asynchronous communication - distributed teams/stakeholders, opaque processes outside team
 - imbalance - dominating the conversation; not listening
 - Inefficient meetings (lack of focus; skipping retros; not discussing blockers each day; meetings running over (e.g. long stand-ups)) 
-
-
