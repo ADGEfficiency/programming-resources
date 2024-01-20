@@ -1,3 +1,27 @@
+[The Product-Minded Software Engineer - The Pragmatic Engineer](https://blog.pragmaticengineer.com/the-product-minded-engineer/)
+
+1. Proactive with product ideas/opinions1. Proactive with product ideas/opinions
+2. Interest in the business, user behavior and data on this
+3. Curiosity and a keen interest in "why?"
+4. Strong communicators and great relationships with non-engineers
+5. Offering product/engineering tradeoffs upfront
+6. Pragmatic handling of edge cases
+7. Quick product validation cycles
+8. End-to-end product feature ownership8. End-to-end product feature ownership
+9. Strong product instincts through repeated cycles of learning
+
+```
+They ask a lot of questions to understand exactly why the product feature is being built.
+
+They bring suggestions and tradeoffs to the table, some of which are included in the revised spec.
+
+They build the feature quickly, getting early feedback, as they do.
+
+After shipping the feature, they actively follow up to understand if the feature lives up to the expectation.
+
+When it does not, they dig deep, to understand why it did not and learn something new about product usage in the real world.
+```
+
 [Keep your source code SIMPLE](https://kevingoslar.medium.com/keep-your-source-code-simple-d5873cb854dc)
 
 Strong-enough data: avoid stringly-typed data structures

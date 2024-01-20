@@ -50,6 +50,10 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 ## Random Cool Stuff
 
+[Rob Pike's 5 Rules of Programming](https://users.ece.utexas.edu/~adnan/pike.html)
+
+[Generative Artistry](https://generativeartistry.com/tutorials/) - A range of interactive tutorials, exploring ideas and techniques used in generative art.
+
 [cheat.sh](https://cheat.sh/) - Unified access to the best community driven documentation repositories of the world.
 
 [Refactoring.Guru](https://refactoring.guru/) - makes it easy for you to discover everything you need to know about refactoring, design patterns, SOLID principles, and other smart programming topics.
@@ -119,7 +123,23 @@ Honeypot documentaries:
 [How Notion pulled itself back from the brink of failure](https://www.figma.com/blog/design-on-a-deadline-how-notion-pulled-itself-back-from-the-brink-of-failure/)
 
 
+## Should You Learn to Code?
+
+[Don't Learn to Code - Learn to Automate - DaedTech](https://daedtech.com/dont-learn-to-code-learn-to-automate/)
+
+[Please Don't Learn to Code](https://blog.codinghorror.com/please-dont-learn-to-code/)
+
+
 ## Blogs & Blog Posts
+
+[Martin Heinz](https://martinheinz.dev/)
+
+- [Python Tips and Trick, You Haven't Already Seen](https://martinheinz.dev/blog/1)
+
+[benkuhn.net](https://www.benkuhn.net/)
+
+- [Essays on programming I think about a lot](https://www.benkuhn.net/progessays/)
+- [Attention is your scarcest resource](https://www.benkuhn.net/attention/)
 
 [Austin Z. Henley](https://austinhenley.com/blog.html)
 
@@ -290,6 +310,8 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 [HackerRank](https://www.hackerrank.com)
 
 [Regex Crossword](https://regexcrossword.com/)
+
+[hoanhan101/algo: 101+ coding interview problems in Go](https://github.com/hoanhan101/algo)
 
 
 ## Books

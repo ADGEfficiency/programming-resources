@@ -11,3 +11,7 @@
 [Go By Example](https://gobyexample.com/)
 
 [Three Months of Go (from a Haskeller's perspective)](https://memo.barrucadu.co.uk/three-months-of-go.html)
+
+[templ](https://templ.guide/) - Create components that render fragments of HTML and compose them to create screens, pages, documents, or apps.
+
+[hoanhan101/algo: 101+ coding interview problems in Go](https://github.com/hoanhan101/algo)

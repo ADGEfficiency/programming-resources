@@ -1,3 +1,7 @@
+[What I Wish Someone Had Told Me - Sam Altman](https://blog.samaltman.com/what-i-wish-someone-had-told-me)
+
+---
+
 https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c
 https://news.ycombinator.com/item?id=30763516
 
@@ -23,7 +27,7 @@ Features come in four categories - core, necessary, added value and unique selli
 
 Keep ego & identity out of code.
 
-Tech debt is occassionally acceptable, but can be fatal.
+Tech debt is occasionally acceptable, but can be fatal.
 
 Take care copy and pasting.
 
@@ -31,7 +35,7 @@ Write good errors.
 
 Fail early and recover from errors.
 
-Don't use dependecies unless it's a good tradeoff (NA).
+Don't use dependencies unless it's a good tradeoff (NA).
 
 Teach.
 
@@ -57,7 +61,7 @@ There is an optimal number and type of customer.
 
 Don't take customer requests at face value.
 
-Socalize task esitmates.
+Socalize task estimates.
 
 Road map (plans) are means, not ends.
 

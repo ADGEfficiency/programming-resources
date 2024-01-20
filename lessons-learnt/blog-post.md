@@ -19,6 +19,11 @@ link to the list of lessons in the programming resources, don't include in blog 
 
 ---
 
+todo add
+
+
+---
+
 could this be three posts?
 - lessons on writning code
 - lessons on working with others
@@ -102,6 +107,8 @@ Avoid using real-time for correctness guarantees.
 
 ## Iterating
 
+Fast iteration can make up for a lot; it’s usually ok to be wrong if you iterate quickly. Plans should be measured in decades, execution should be measured in weeks.
+
 Be conservative on APIs and liberal with implementations.  Plan to iterate at least three implementations.
 
 Sturgeon’s law applies to your work as well. Don’t linger on one project forever. Make new things. That’s the only way to learn.
@@ -142,7 +149,7 @@ You should be able to detect problems in your service before your customer does.
 
 Code has a lifecycle.
 
-Tech debt is occassionally acceptable, but can be fatal.
+Tech debt is occasionally acceptable, but can be fatal.
 
 Anything that can’t be measured easily (e.g., consistency) is often forgotten; pay particular attention to attributes that are difficult to measure.
 
@@ -162,7 +169,7 @@ Socalize design. Design as team, implement as individual.
 
 Create a culture where ICs are constantly thinking about radically different designs.
 
-Socalize task esitmates.
+Socalize task estimates.
 
 Road map (plans) are means, not ends.
 
@@ -173,6 +180,10 @@ Prefer structured communications tools like an in-house blog, a wiki, Basecamp, 
 Give ownership.
 
 Interviews don't work.
+
+audacious ideas motivate people.
+
+Long-term orientation is in short supply
 
 ## Seniority
 
@@ -201,6 +212,8 @@ Take on big projects. Get uncomfortable.
 Don't solve problems that don't exist.
 
 The hardest part of software is building the right thing
+
+Concentrate your resources on a small number of high-conviction bets
 
 ## Business
 

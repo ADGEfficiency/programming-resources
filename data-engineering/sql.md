@@ -30,6 +30,8 @@ Foreign key = column that creates relationships between tables
 
 [SQL Zoo](https://sqlzoo.net/)
 
+[PostgreSQL Exercises](https://pgexercises.com/)
+
 [10 minute SQL test as part of an interview for a ‘Senior Research Data Scientist’](https://www.reddit.com/r/datascience/comments/cpe76y/10_minute_sql_test_as_part_of_an_interview_for_a/)
 
 [An Easy Introduction to SQL for Data Scientists](https://towardsdatascience.com/an-easy-introduction-to-sql-for-data-scientists-83363ae004b9)
@@ -111,7 +113,7 @@ SQL can be cheaper
 Bring ETL closer to the data
 
 database validations fail early
-modern sql db can handel complex functionality to work with text, dates and geolocational data
+modern sql db can handle complex functionality to work with text, dates and geolocational data
 triggers, stored procedures
 
 ## ORMs
