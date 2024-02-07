@@ -38,7 +38,7 @@ A test suite gives you a signal that your code is **broken**.  It gives you no s
 
 We are limited to testing for for correctness by **failing to show incorrectness** - we cannot prove correctness. The best we can hope for is to show no error.
 
-Yet even with this upper limit on the kinds of problems tests can help us solve, testing for brokeness will find many bugsand regressions.  
+Yet even with this upper limit on the kinds of problems tests can help us solve, testing for brokenness will find many bugsand regressions.  
 
 
 ## 2. Testing Makes You Write Better Code
@@ -258,3 +258,5 @@ Watch out for:
 [Clean Architecture: A Craftsman's Guide to Software Structure and Design - Robert C. Martin](https://www.goodreads.com/book/show/18043011-clean-architecture)
 
 [Stargirl Flowers Python testing style guide](https://blog.thea.codes/my-python-testing-style-guide/)
+
+[Favor real dependencies for unit testing](https://stackoverflow.blog/2022/01/03/favor-real-dependencies-for-unit-testing/)

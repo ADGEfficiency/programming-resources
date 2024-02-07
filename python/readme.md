@@ -13,6 +13,8 @@
 
 [ipython-cookbook](https://github.com/ipython-books/cookbook-2nd)
 
+[Stop using utcnow and utcfromtimestamp](https://blog.ganssle.io/articles/2019/11/utcnow.html) - [HN](https://news.ycombinator.com/item?id=33138302)
+
 
 ## Advanced
 
@@ -140,4 +142,3 @@ Variables don't contain objects, they are names that point to objects
 - will mutate lists (same object mutated)
 
 Duck typing
-

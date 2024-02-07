@@ -64,6 +64,8 @@ Concise GNU Bash: An Introduction to Advanced Usage - James Panacciulli @ LinuxF
 
 ### Blog Posts / Discussions
 
+[Gödel's Incompleteness Theorem, in Bash](https://lacquer.io/math/2022/02/24/godels-incompleteness-in-bash.html)
+
 [Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices/) - [HN Discussion](https://news.ycombinator.com/item?id=33354286)
 
 [The beauty of Unix pipelines](https://prithu.xyz/posts/unix-pipeline/)

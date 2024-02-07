@@ -2,12 +2,6 @@ how were summaries created - separated out into actionable and non-actionable
 
 non-actionable are things like `do the work correctly` or `use the right tool`
 
-Use the right tool for the job. (NA)
-
-Communication is important (NA).
-
-Security is layered and context dependent (NA).
-
 structure post like
 
 - all posts mentioned,
@@ -17,10 +11,7 @@ structure post like
 
 link to the list of lessons in the programming resources, don't include in blog post
 
----
-
-todo add
-
+Security is layered and context dependent (NA).
 
 ---
 
@@ -34,58 +25,96 @@ N lessons learnt from Y software engineering lessons
 
 ---
 
+inspiration
+
+- [Essays on programming I think about a lot](https://www.benkuhn.net/progessays/)
+- [My favorite essays of life advice | benkuhn.net](https://www.benkuhn.net/weeklyessays/)
+
+---
+
 # 10 lessons learnt working as a programmer
 # 10 lessons learnt by many programmers
 
-## tradeoffs
+## Tradeoffs
 
-tradeoffs - not as good versus bad choices
+All engineering decisions are balances of trade offs.
+
+Commonly no one solution to a problem has no downsides - every solution has a number of upsides and downsides.
+
+Framing decisions as trade offs makes clear the relationship between solutions.
+
+A useful framework for analyzing a solution is:
+
+- Note the advantages,
+- Note the disadvantages,
+- Describe a context where the solutions works,
+- Note key areas of uncertainty.
+
+Don't use dependencies unless it's a good tradeoff.
+
+References:
+
 - https://nemil.com/on-software-engineering/
 
 ## Writing Code
 
+### Egoless programming
+
 Keep ego & identity out of code.
 - https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c
+- 
+[The Importance of Humility in Software Development](https://humbletoolsmith.com/2020/08/10/the-importance-of-humility-in-software-development/)
+
+### Read
+
+Read code of libraries you depend on
 
 Take care copy and pasting.
 - https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c
 
+### Write
+
+Write papers. 
+
+Writing for an audience that has zero context on what you are doing will force you to examine and clarify your assumptions.
+
+### Teach.
+
+teach - documentation is teaching
+
+### Documentation
+
 Great code is documented.
 - https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c
+
+[The Myth of Self-Documenting Code • Buttondown](https://buttondown.email/hillelwayne/archive/the-myth-of-self-documenting-code/)
+
+TODO add the different views from programming fundamentals
+
+
+## Writing Good Code
+
+Avoid inheritance, overriding and implicit smartness.
+
+favour reability over cleverness
+
+### Tests
+
+use toy problems
+
+### State
+
+don't share state
+- 42 things I learned from building a production database
 
 Use pure functions.
 
 Soft versus hard interfaces
 - [Pierce the Abstraction Wall](https://nemil.com/2019/07/30/pierce-the-abstraction-wall/) - soft versus hard interfaces
 
-don't share state
-- 42 things I learned from building a production database
-
-use toy problems
-
-### Read
-
-Read code of libraries you depend on
-
-### Write
-
-Write papers. Writing for an audience that has zero context on what you are doing will force you to examine and clarify your assumptions.
-
-### Teach.
-
-teach - documentation is teaching
-
-### write simple code
-
-Avoid inheritance, overriding and implicit smartness.
-
-favour reability over cleverness
-
 You should write code for junior engineers.
 
 Don't write smart code because you won't be able to debug it.
-
-remove bad code
 
 write less code - more code = more bugs
 
@@ -156,6 +185,8 @@ Anything that can’t be measured easily (e.g., consistency) is often forgotten;
 three components make up monitoring - logging, metrics, and alarms
 
 # working with others
+
+Communication is important (NA).
 
 communication harder than technical
 

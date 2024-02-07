@@ -1,3 +1,7 @@
+[google/lisp-koans](https://github.com/google/lisp-koans)
+
+Common Lisp Koans is a language learning exercise in the same vein as the ruby koans, python koans and others. It is a port of the prior koans with some modifications to highlight lisp-specific features. Structured as ordered groups of broken unit tests, the project guides the learner progressively through many Common Lisp language features.
+
 [The Art of Lisp & Writing](https://dreamsongs.com/ArtOfLisp.html)
 
 Nevertheless, engineering knowledge has usually preceded scientific knowledge and often has remained constant while scientific theories about the engineering materials came and went. "Engineers" were able to create sophisticated fires for cooking and metal working using chimneys and other forms of forced oxygen for centuries while scientists flailed from theory to theory. For example, while advanced fire-based engineering was going on in the 6th century BC in Greece, Anaximenes's theory was that the source or nature of the cosmos was aer (air). Aer was constantly in motion. When aer expanded it became aither (ether: bright fiery air as on a clear day); when it expanded further, it became fire. As aer condensed it became clouds; further condensation led to water, ice, earth, and finally rock. Throughout history there have been various theories of what fire was; nevertheless, the chimneys and other artifacts of working with fire remained constant and working properly.

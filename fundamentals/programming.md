@@ -336,6 +336,10 @@ def add_profit(sales, profit):
     return sales + profit
 ```
 
+*Further reading*
+
+- [The Myth of Self-Documenting Code • Buttondown](https://buttondown.email/hillelwayne/archive/the-myth-of-self-documenting-code/)
+
 
 ### README
 

@@ -67,3 +67,13 @@ vim.g['zoom#statustext'] = 'Z'
 #  check value on vim command line
 :echo g:zoom
 ```
+
+## Example Configs
+
+https://github.com/dmmulroy/kickstart.nix/tree/main/config/nvim
+
+https://github.com/mischavandenburg/dotfiles/tree/main/nvim
+
+http://www.lazyvim.org/plugins
+
+https://github.com/folke/lazy.nvim

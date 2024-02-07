@@ -1,11 +1,12 @@
 # Data Engineering
 
-
 ## What is data engineering?
+
+1. **access to data** - all the important data, in the same place, easily queryable & accessible by everyone in the business,
+2. **access to data generation/creation/transformation**.
 
 > the most basic foundation of what is most critically needed: all the important data, in the same place, easily queryable (from https://erikbern.com/2021/07/07/the-data-team-a-short-story.html)
 
-A data engineer enables access to data
 
 Emphasis on data quality
 
@@ -33,6 +34,14 @@ Data management versus analytics:
 Skills
 - SQL Data Modeling Python Cloud Spark Kafka
 
+## Principles
+
+- always save raw data unchanged,
+- keep schemas separate from database code (so can easily change databases),
+- system test with 'toy' systems (pull 2 months of data, put it through the entire pipeline etc),
+- particular + consistent on column naming - a common set of columns used in many tables,
+- capitalization is not important,
+- use binary formats (Parquet etc) where possible.
 
 ## Components of a data engineering system
 
@@ -60,7 +69,7 @@ Data warehouse = analytics database:
 
 Athena - easy way to do SQL over S3 data (acts like a relational database).
 
-Streamining / queing
+Streamining / queueing
 
 NoSQL
 
@@ -192,10 +201,10 @@ ETL [RnR]
 
 Text or binary
 - everything can read text
- 
+
 Text versus binary
 
-- opening binary files in text editors -> wierd characters / numbers
+- opening binary files in text editors -> weird characters / numbers
 
 Binary = more compact, but not human readable
 
@@ -243,7 +252,7 @@ Storage layers
 - raw
 - core - entities,
 - aggregations,
-- bespoke / experimental / convienence.
+- bespoke / experimental / convenience.
 
 
 ## Databases
@@ -512,7 +521,7 @@ Data Janitor 101 - [slides](https://www.slideshare.net/soobrosa/data-janitor-101
 a/b
 - don't a/b test (unless it really makes sense)
 - costs too much
-- world isnt IID
+- world isn't IID
 - random variation in small samples
 - most results are illusory
 - small data -> bayesian

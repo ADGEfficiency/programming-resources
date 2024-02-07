@@ -20,6 +20,10 @@ Intermediate Vim - [youtube](https://www.youtube.com/watch?v=v0W7JkzQAzA) - [rev
 
 [Vim: From hjkl to a platform for plugins - Bram Moolenaar](https://youtu.be/ES1L2SPgIDI)
 
+## Random
+
+[Vim Kōans](https://blog.sanctum.geek.nz/vim-koans/)
+
 ## Reddit
 
 https:/www.reddit.com/r/vim/
@@ -39,6 +43,8 @@ vimtutor - type `$ vimtutor`
 [Steps to learn Vim](https://blog.joren.ga/tools/vim-learning-steps)
 
 ## Intermediate
+
+[Shell from vi](https://blog.sanctum.geek.nz/shell-from-vi/)
 
 [Vim Plugins](https://catonmat.net/vim-plugins)
 

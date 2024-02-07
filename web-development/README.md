@@ -1,3 +1,5 @@
+[Where are all the animated SVGs? · Animated SVG icon editor](https://getloaf.io/blog/where-are-all-the-animated-svgs/) - [loaf](https://getloaf.io/) - free animated SVG icons and illustrations.
+
 [Two lessons on reducing sign-up friction](https://bbirnbaum.com/two-lessons-on-reducing-sign-up-friction/)
 
 Lesson 1: Don’t require a user to be interested twice

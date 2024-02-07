@@ -17,3 +17,9 @@ To get started, I recommend the following resources:
 - Read up on the hashtable, linked list, tree, graphs, heap, queue, and stack data structures. Play around with how to can use them in your language. 
 - GeeksforGeeks has a good overview on these. 
 - For coding practice, I'd recommend the HackerRank Data Structures collection.
+
+[Big O in your Average App](https://drobinin.com/assets/talks/bigo_slides.pdf)
+
+[Math for Computer Science](https://courses.csail.mit.edu/6.042/spring17/mcs.pdf)
+
+[Math for Programmers](https://xn--mxacd.xn--qxam/math-notes.pdf) - [HN](https://news.ycombinator.com/item?id=24574574)

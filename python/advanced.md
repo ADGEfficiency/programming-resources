@@ -1,5 +1,10 @@
-## StringIO, BytesIO
+[Strict Python function parameters](https://sethmlarson.dev/strict-python-function-parameters)
 
+[Python Type Hints - *args and **kwargs - Adam Johnson](https://adamj.eu/tech/2021/05/11/python-type-hints-args-and-kwargs/) - [HN](https://news.ycombinator.com/item?id=37282385)
+
+[Strict Modules](https://instagram-engineering.com/python-at-scale-strict-modules-c0bb9245c834)
+
+## StringIO, BytesIO
 
 ## Walrus Operator
 

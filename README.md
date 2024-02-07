@@ -104,6 +104,10 @@ Honeypot documentaries:
 
 ## Articles
 
+[How Discord Won](https://ianvanagas.com/2020/10/19/how-discord-won/)
+
+[The messy, secretive reality behind OpenAI’s bid to save the world](https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/)
+
 [The Yoda of Silicon Valley](https://www.nytimes.com/2018/12/17/science/donald-knuth-computers-algorithms-programming.html)
 
 [Overlooked No More: Alan Turing, Condemned Code Breaker and Computer Visionary](https://www.nytimes.com/2019/06/05/obituaries/alan-turing-overlooked.html)
@@ -132,6 +136,16 @@ Honeypot documentaries:
 
 ## Blogs & Blog Posts
 
+[Marc Lelarge](https://www.di.ens.fr/~lelarge/)
+
+[aem1k](https://aem1k.com/)
+
+- [Spin the World Quine](https://aem1k.com/world/)
+
+Nicolas Loizeau
+
+- [Building a computer in Conway's game of life](https://www.nicolasloizeau.com/gol-computer)
+
 [Martin Heinz](https://martinheinz.dev/)
 
 - [Python Tips and Trick, You Haven't Already Seen](https://martinheinz.dev/blog/1)
@@ -140,6 +154,7 @@ Honeypot documentaries:
 
 - [Essays on programming I think about a lot](https://www.benkuhn.net/progessays/)
 - [Attention is your scarcest resource](https://www.benkuhn.net/attention/)
+- [My favorite essays of life advice | benkuhn.net](https://www.benkuhn.net/weeklyessays/)
 
 [Austin Z. Henley](https://austinhenley.com/blog.html)
 

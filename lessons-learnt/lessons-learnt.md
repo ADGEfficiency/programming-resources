@@ -1,3 +1,11 @@
+[The perils of constant feedback](https://blog.tjcx.me/p/the-perils-of-constant-feedback)
+
+> I worry that the deluge of instant, high-fidelity feedback is driving us toward local minima. Usually feedback encourages us to move down the path of least resistance, to make the easiest gains—but often the best gains are made by walking uphill for bit.
+
+> There is a time for lots of feedback (when you’re close to your goal) but there’s also a time for charging ahead, Twitterverse be damned.
+
+[The Importance of Humility in Software Development](https://humbletoolsmith.com/2020/08/10/the-importance-of-humility-in-software-development/)
+
 [Rob Pike's 5 Rules of Programming](https://users.ece.utexas.edu/~adnan/pike.html)
 
 
