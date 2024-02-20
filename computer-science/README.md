@@ -22,4 +22,6 @@ To get started, I recommend the following resources:
 
 [Math for Computer Science](https://courses.csail.mit.edu/6.042/spring17/mcs.pdf)
 
-[Math for Programmers](https://xn--mxacd.xn--qxam/math-notes.pdf) - [HN](https://news.ycombinator.com/item?id=24574574)
+[Math for Programmers](https://xn--mxacd.xn--qxam/math-notes.pdf) - [HN](https://news.ycombinator.com/item?id=24574574)p
+
+[McSherrey et. al (2015) Scalability! But at what COST?](https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf)

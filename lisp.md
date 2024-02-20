@@ -23,3 +23,5 @@ The distinction some make between prototyping and software development has vexed
 ---
 
 Writing and programming are creative acts, yet we've tried to label programming as engineering (as if engineering weren't creative). Instead of fearing creativity, we need to embrace it.
+
+[The Most Beautiful Program Ever Written](https://www.lvguowei.me/post/the-most-beautiful-program-ever-written/)

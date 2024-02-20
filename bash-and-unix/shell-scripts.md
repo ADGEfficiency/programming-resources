@@ -1,3 +1,17 @@
+[Scripts to Rule Them All - The GitHub Blog](https://github.blog/2015-06-30-scripts-to-rule-them-all/)
+
+[github/scripts-to-rule-them-all: Set of boilerplate scripts describing the normalized script pattern that GitHub uses in its projects.](https://github.com/github/scripts-to-rule-them-all)
+
+script/bootstrap – installs/updates all dependencies
+script/setup – sets up a project to be used for the first time
+script/update – updates a project to run at its current version
+script/server – starts app
+script/test – runs tests
+script/cibuild – invoked by continuous integration servers to run tests
+script/console – opens a console
+
+[A cozy nest for your scripts - sd directory](https://ianthehenry.com/posts/a-cozy-nest-for-your-scripts/)
+
 [Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices/) - [HN Discussion](https://news.ycombinator.com/item?id=33354286)
 
 set -o pipefail

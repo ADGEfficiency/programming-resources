@@ -136,6 +136,25 @@ Honeypot documentaries:
 
 ## Blogs & Blog Posts
 
+[Nabeel S. Qureshi](https://nabeelqu.co/)
+
+- [Advice That Actually Worked For Me](https://nabeelqu.co/advice)
+- [How To Understand Things](https://nabeelqu.co/understanding)
+- [Notes on Karl Popper](https://nabeelqu.co/post-popper)
+- [How to Sell](https://nabeelqu.co/post-selling)
+
+[Adam Johnson](https://adamj.eu/tech/)
+- [Git: Improve diff generation with diff.algorithm=histogram](https://adamj.eu/tech/2024/01/18/git-improve-diff-histogram/)
+
+[Baldur Bjarnason](https://www.baldurbjarnason.com/archive/)
+
+- [136 facts every web dev should know before they burn out and turn to landscape painting or nude modelling – Baldur Bjarnason](https://www.baldurbjarnason.com/2021/100-things-every-web-developer-should-know/)
+
+[Ian Henry](https://ianthehenry.com/posts)
+
+- [A cozy nest for your scripts](https://ianthehenry.com/posts/a-cozy-nest-for-your-scripts/)
+- [How to Learn Nix, Part 1: What's all this about?](https://ianthehenry.com/posts/how-to-learn-nix/introduction/)
+
 [Marc Lelarge](https://www.di.ens.fr/~lelarge/)
 
 [aem1k](https://aem1k.com/)
@@ -155,6 +174,7 @@ Nicolas Loizeau
 - [Essays on programming I think about a lot](https://www.benkuhn.net/progessays/)
 - [Attention is your scarcest resource](https://www.benkuhn.net/attention/)
 - [My favorite essays of life advice | benkuhn.net](https://www.benkuhn.net/weeklyessays/)
+- [You don't need to work on hard problems](https://www.benkuhn.net/hard/)
 
 [Austin Z. Henley](https://austinhenley.com/blog.html)
 
@@ -248,6 +268,7 @@ Nicolas Loizeau
 [dwmkerr.com](https://dwmkerr.com/)
 
 - [A Simple Makefile 'help' command](https://dwmkerr.com/makefile-help-command/)
+- [Effective Shell for Beginners](https://dwmkerr.com/effective-shell-for-beginners/)
 
 [The Clean Code Blog - Robert C. Martin (Uncle Bob)](http://blog.cleancoder.com/)
 - [Classes vs. Data Structures](http://blog.cleancoder.com/uncle-bob/2019/06/16/ObjectsAndDataStructures.html)
@@ -264,6 +285,7 @@ Nicolas Loizeau
 [koaning.io](https://koaning.io/) - Vincent D. Warmerdam
 - [The Future of Data Science is Past](https://koaning.io/posts/the-future-is-past/)
 - [Outliers: Selection vs. Detection](https://koaning.io/posts/outliers-selection-vs-detection/)
+- [Bad Labels - koaning.io](https://koaning.io/posts/labels/)
 
 [The Digital Cat](https://www.thedigitalcatonline.com/)
 
@@ -286,6 +308,8 @@ Nicolas Loizeau
 
 
 ## Courses
+
+[The Debugging Guide](https://uchicago-cs.github.io/debugging-guide/)
 
 [Open Source Society University - Computer Science](https://github.com/ossu/computer-science)
 
@@ -341,6 +365,8 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 
 ## Textbooks
+
+[Command Line Interface Guidelines](https://clig.dev/)
 
 [Elements of Data Analytic Style](https://worldpece.org/sites/default/files/datastyle.pdf)
 

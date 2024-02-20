@@ -74,6 +74,10 @@ https://github.com/dmmulroy/kickstart.nix/tree/main/config/nvim
 
 https://github.com/mischavandenburg/dotfiles/tree/main/nvim
 
+https://github.com/exosyphon/nvim
+
+https://github.com/takadev15/dotfiles/tree/master/.config/nvim
+
 http://www.lazyvim.org/plugins
 
 https://github.com/folke/lazy.nvim

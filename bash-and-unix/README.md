@@ -19,6 +19,12 @@ You can also find hard copies of additional resources in [programming-resources/
 
 [Survival guide for Unix newbies](https://matt.might.net/articles/basic-unix/)
 
+[Effective Shell](https://effective-shell.com/)
+
+### Blog Posts
+
+[Bash Patterns I Use Weekly](https://will-keleher.com/posts/5-Useful-Bash-Patterns.html)
+
 ### References
 
 [UNIX Toolbox](http://cb.vu/unixtoolbox.xhtml) - collection of Unix/Linux/BSD commands and tasks (like a cheat sheet)

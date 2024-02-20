@@ -1,3 +1,84 @@
+[Advice That Actually Worked For Me](https://nabeelqu.co/advice)
+
+## Maximize baseline energy levels
+
+Energy compounds on itself.
+
+Most people’s mental models of energy are flawed: they think there’s a ‘tank’ of energy that gets depleted as you spend it. This may be roughly true for physical energy, but mental energy is different: spending mental energy on things that you consider productive or important gives you more mental energy for other things: a positive feedback loop. On the other hand, procrastinating, spending all day scrolling Twitter, or staying in bed all day reduces the amount of energy you have to spend; this means you are less likely to get anything done.
+
+## Do the most important thing first thing in the morning, and don’t check social media until you’ve done it
+
+## Tell the right stories about yourself
+
+If you tell yourself you’re very energetic person, that feeling tired is temporary, and you keep this belief going, you actually become more energetic.
+
+## Don't sleep too much
+
+## Get in the habit of Fermi estimation, looking up key quantities, and using upper and lower bounds. 
+
+I’ve noticed a lot of the smartest people I know do this: they don’t take any claims at face value, and check for themselves whether they’re plausible. This means, e.g. when they hear a fact, they’ll look it up to assure themselves that it’s true, because often people cite things that are false or partial. 
+
+ Engineers and physicists are trained to do this, everyone else has to learn. The usual name for this is Fermi estimation: estimating the rough order of magnitude of an unknown quantity using information that you already know. 
+
+## Whenever you make a claim or an argument, try and imagine the strongest possible argument against it
+
+## Write regularly, and learn to ‘think in writing’
+
+## Do a weekly review
+
+## Synthesize things as you read. 
+
+Just because you’ve read something, doesn’t mean you’ve understood it; your brain has to come up with its own encoding. Whatever understanding things is, it’s related to compression. Which implies that you want to read and then restate in your own words, so that your mind is forced to compress the thing. Ideally several times, in varying ways.
+
+Once you’ve done this, you are much more likely to retain the thing, and to actually grasp it; and if you’re struggling with this exercise, then you don’t understand the thing and should go back and look at it again. (This is also a useful bullshit filter -- try and restate someone’s claim in a different way, and see if it still holds up). 
+
+## Map out problems using logic trees
+
+This is a classic problem-solving and brainstorming technique, also known as morphological analysis. It’ll be familiar to any consultant, as it’s 80% of their secret sauce.  
+
+Take a problem, say analyzing a business’s profits (as in consulting). Break it down into logically exhaustive possibilities, e.g. “revenue” and “costs”. Break down each branch further into its component parts, e.g. revenue becomes price * quantity. Follow this process recursively, each time breaking the tree down into components.
+
+Now you have a full map of the possibilities and can start to answer questions like “how do we increase profits?” by listing out all available options. This often helps you spot options that other people will overlook.
+
+
+[136 facts every web dev should know before they burn out and turn to landscape painting or nude modelling – Baldur Bjarnason](https://www.baldurbjarnason.com/2021/100-things-every-web-developer-should-know/)
+
+There are exceptions to most rules.
+
+One of the biggest problems in web development, specifically and software development in general, is failure demand. “Failure demand is demand caused by a failure to do something or do something right for the customer." (John Seddon, 2003).
+
+Sturgeon’s law applies to your work as well. Don’t linger on one project forever. Make new things. That’s the only way to learn.
+
+The trick is to recognise when it’s time to move on.
+
+Minimalism is garbage. Simplicity is great, but minimalism sucks. Everything you see on the screen should have a reason to be there (be an embodiment of ‘doing’), but if the reasons are complicated, then the design should represent that complexity. Hiding complications makes everything harder, and excessive minimalism is just as harmful as excessive decoration.
+
+Try to write your CSS in layers.
+
+    A settings stylesheet that collects all of your base variables.
+    A base stylesheet that serves as the foundation.
+    Layout stylesheets. Each one should implement a layout or composition without depending on other stylesheets.
+    Block stylesheets that are the motif to your composition, the phrases in your structure, the recurring themes of your design.
+    And the utilities that do one thing and one thing only.
+
+Only use the ID selector in your CSS as a last resort to fix extreme and hard-to-solve specificity issues. Try doubling up on a class first. .class.class is a valid selector and can work wonders.
+
+Dependencies suck; dependencies rule. Other people’s code is like getting other people’s work for free. The downside is that it comes with their opinions, hobbies, and hygiene attached. All code comes bundled with a code smell. Usually, there isn’t anything you can do to prevent it from stinking up the place.
+
+Most ‘innovative’ tech startups face what I like to call ‘the clear field problem’. Whenever you have an app or business idea that nobody else seems to have done successfully before, it’s never because you are particularly clever or original. It’s always because everybody else who has tried is now dead in a ditch somewhere (metaphorically speaking).
+
+Any field with multiple successful competitors is good news. It means that there is demand, which you can tap in by addressing the problem in your way. In a sector with solid margins, this is an opportunity for design innovation to shine.
+
+Any field where all of the other competitors are free services, outdated desktop apps, open-source communities with no revenue, or wannabe startup cults burning through cash is a lethal minefield covered in a cloud of mustard gas.
+
+Trust is a recurring theme when it comes to teamwork. Clear communications and trust will smooth over a lot of fuck-ups.
+
+A good manager will structure the organisation and processes so that the workers' needs, when fulfilled, will result in them being able to meet the customer’s needs.
+
+A bad manager will churn through employees like tissue paper, sacrificing their well-being for vague and distant business goals.
+
+The worst manager sacrifices their well-being as well as their employees' well-being.
+
 [The perils of constant feedback](https://blog.tjcx.me/p/the-perils-of-constant-feedback)
 
 > I worry that the deluge of instant, high-fidelity feedback is driving us toward local minima. Usually feedback encourages us to move down the path of least resistance, to make the easiest gains—but often the best gains are made by walking uphill for bit.
@@ -110,7 +191,7 @@ The second one had come from a FAANG-ish place where he was extremely successful
 
 [Notes to a Young Software Engineer](https://nemil.com/on-software-engineering/)
 
-- [Think in Tradeoffs](https://nemil.com/2019/06/30/think-in-tradeoffs/) -  most engineering decisions as tradeoffs — not good choices versus bad choices.
+- [Think in Tradeoffs](https://nemil.com/2019/06/30/think-in-tradeoffs/) -  most engineedering decisions as tradeoffs — not good choices versus bad choices.
 - [Pierce the Abstraction Wall](https://nemil.com/2019/07/30/pierce-the-abstraction-wall/) - soft versus hard interfaces
 - [Don't Write Code](https://nemil.com/2020/01/10/dont-write-code/)
 - [Read Code](https://nemil.com/2019/04/16/read-code/)

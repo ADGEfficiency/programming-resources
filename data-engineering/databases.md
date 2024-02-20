@@ -6,6 +6,30 @@
 
 ---
 
+[How Time Series Databases Work—and Where They Don't](https://www.honeycomb.io/blog/time-series-database)
+
+A time series is a sequence of data points where each point is a pair: a timestamp and a numeric value.
+
+Time series databases are optimized for metrics storage.
+
+A major avenue of optimization for TSDBs is compression, reducing the number of bits needed to represent the same data:
+- delta encoding - store the difference between consecutive values,
+- delta of deltas.
+
+It's very common for vendors to provide tags or labels—pieces of key-value metadata that can be attached to a time series:
+
+- too many tags can cause combinatorial explosion.
+
+They efficiently stores and retrieves time-stamped data. Each time series is stored individually as an optimized list of values, enabling fast data retrieval and cost-effective storage.
+
+Disadvantages:
+
+- They can't effectively store high-cardinality data.
+- Write-time aggregation loses the context of the raw data, making it difficult to answer new questions.
+- Without data to relate pre-aggregated metrics to each other, your investigations can be led down the wrong path.
+
+---
+
 Transactional versus analytical - different read + write patterns
 
 ---

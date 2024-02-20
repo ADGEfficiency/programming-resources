@@ -28,7 +28,7 @@ Start shell:
 docker exec -it $(IMAGENAME) /bin/bash
 ```
 
-Exec = executes on runnin container, run creates temporary container
+Exec = executes on running container, run creates temporary container
 
 Use env from list of env variables:
 
@@ -59,3 +59,8 @@ healthchecks
 multi stage dockerfiles
 
 build arguments
+
+
+## Blog Posts
+
+[How I reduced the size of my very first published docker image by 40% - A lesson in dockerizing shell scripts](https://bhupesh.me/publishing-my-first-ever-dockerfile-optimization-ugit/) - [HN](https://news.ycombinator.com/item?id=39240471)

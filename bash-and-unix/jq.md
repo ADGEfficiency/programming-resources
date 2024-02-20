@@ -13,3 +13,7 @@ $ jq -n --arg argName 'this has a " in it!' '{"title": $argName}'
   "title": "this has a \" in it!"
 }
 ```
+
+---
+
+[The BEST CLI Tool](https://youtu.be/n8sOmEe2SDg?si=UZN9QNHTgT6Fs0e-)

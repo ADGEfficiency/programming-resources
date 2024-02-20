@@ -19,6 +19,10 @@ JSON.parse
 
 ---
 
+[Python vs JavaScript for Pythonistas – Real Python](https://realpython.com/python-vs-javascript/)
+
+[Learning JavaScript in small bites, Part 1](https://matt.might.net/articles/learning-javascript-in-small-bites/)
+
 [Deep JavaScript: Theory and techniques](https://exploringjs.com/deep-js/)
 
 [Modern Javascript: Everything you missed over the last 10 years](https://turriate.com/articles/modern-javascript-everything-you-missed-over-10-years)
