@@ -16,3 +16,7 @@ The concept of coupling and decoupling is closely (and inversely) related to coh
 ---
 
 And we saw that, despite the tighter application-level coupling found in a hypermedia-based application, it is the hypermedia system that handles changes more gracefully.
+
+[htmx in a Nutshell](https://htmx.org/docs/)
+
+[Htmx in a Nutshell | Hacker News](https://news.ycombinator.com/item?id=33987578)

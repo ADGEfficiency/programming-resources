@@ -1,3 +1,12 @@
+[The Design of Postgres](https://dsf.berkeley.edu/papers/ERL-M85-95.pdf)
+
+[Postgres Indexes for Newbies | Crunchy Data Blog](https://www.crunchydata.com/blog/postgres-indexes-for-newbies)
+
+---
+
+[The Art of PostgreSQL: a modern PostgreSQL book in 2022](https://theartofpostgresql.com/)
+
+---
 ```
 psql -
 
@@ -25,7 +34,7 @@ Schema = namespace that contains database objects:
 
 Schemas allow you to organize database objects into logical groups
 
-`public` schema is the default - these are equivilant:
+`public` schema is the default - these are equivalent:
 
 ```sql
 CREATE TABLE name
@@ -51,7 +60,7 @@ psql
 
 when in:
 
-show tabels `\dt` or `\dt+` for pub schema
+show tables `\dt` or `\dt+` for pub schema
 
 for specific schema `\dt emd.*`
 

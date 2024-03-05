@@ -14,13 +14,17 @@ script/console – opens a console
 
 [Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices/) - [HN Discussion](https://news.ycombinator.com/item?id=33354286)
 
+Pipeline command is treated as failed, even if one command in the pipeline fails.
+
+```
 set -o pipefail
+```
 
-- pipeline command is treated as failed, even if one command in the pipeline fails.
+Exit when one command fail, rather than continuing on
 
+```
 set -o errexit
-
-- exit when one command fail, rather than continuing on
+```
 
 Template
 

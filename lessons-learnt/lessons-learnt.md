@@ -1,3 +1,7 @@
+[How to Build Software like an SRE — willett dot io](https://www.willett.io/posts/precepts/)
+
+[(A few) Ops Lessons We All Learn The Hard Way](https://www.netmeister.org/blog/ops-lessons.html)
+
 [Advice That Actually Worked For Me](https://nabeelqu.co/advice)
 
 ## Maximize baseline energy levels

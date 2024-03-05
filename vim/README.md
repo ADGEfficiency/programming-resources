@@ -24,6 +24,8 @@ Intermediate Vim - [youtube](https://www.youtube.com/watch?v=v0W7JkzQAzA) - [rev
 
 [Vim Kōans](https://blog.sanctum.geek.nz/vim-koans/)
 
+[Carmack on not being a power editor user](https://news.ycombinator.com/item?id=24393987)
+
 ## Reddit
 
 https:/www.reddit.com/r/vim/
@@ -43,6 +45,8 @@ vimtutor - type `$ vimtutor`
 [Steps to learn Vim](https://blog.joren.ga/tools/vim-learning-steps)
 
 ## Intermediate
+
+[Vim Filters, External Commands, And The Shell](https://vimways.org/2019/vim-and-the-shell/)
 
 [Shell from vi](https://blog.sanctum.geek.nz/shell-from-vi/)
 

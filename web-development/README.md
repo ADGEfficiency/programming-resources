@@ -1,3 +1,7 @@
+[Things I wish I’d known about CSS | Dave Smyth](https://davesmyth.com/things-i-wish-id-known-about-css)
+
+[MVP.css – Minimalist stylesheet for HTML elements | Hacker News](https://news.ycombinator.com/item?id=32805334)
+
 [136 facts every web dev should know before they burn out and turn to landscape painting or nude modelling – Baldur Bjarnason](https://www.baldurbjarnason.com/2021/100-things-every-web-developer-should-know/)
 
 [HTML text fundamentals - Learn web development | MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals)
@@ -64,6 +68,10 @@ Lesson 2: Email verification messages should take two seconds to read
 ## CSS Frameworks
 
 [mvp.css](https://andybrewer.github.io/mvp/#docs)
+
+## Web Scraping
+
+[hiQ Labs v. LinkedIn - Wikipedia](https://en.wikipedia.org/wiki/HiQ_Labs_v._LinkedIn)
 
 [Web Scraping with Python – A Step by Step Guide](https://www.scrapingdog.com/blog/web-scraping-with-python/)
 

@@ -1,6 +1,4 @@
 
-
-
 https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration
 
 https://docs.github.com/actions/automating-builds-and-tests/building-and-testing-nodejs-or-python?langId=py
@@ -62,7 +60,7 @@ jobs:
 
 ```
 
-Package version incremeted:
+Package version incremented:
 
 ```yaml
 name: Autobump
@@ -195,3 +193,6 @@ CI is a script, and the YAML configs for those various services configure the ma
 Not following this model has wasted so much time when migrating services or trying to tweak what CI does.
 
 With a script you can run it locally to ensure it performs the steps desired, leaving the CI “setup” to minimal environment/toolchain debugging. 
+
+
+## [GitHub Actions could be so much better](https://blog.yossarian.net/2023/09/22/GitHub-Actions-could-be-so-much-better) - [Hacker News Discussion](https://news.ycombinator.com/item?id=37612420)

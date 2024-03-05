@@ -54,3 +54,90 @@ Look for lines that contain five or more capital letters in a row:
 ```
 $ grep -w "[A-Z]+{5,}" channel.log
 ```
+
+## Resources
+
+[grep: A Practical Guide](https://www.youtube.com/watch?v=crFZOrqlqao)
+
+Count:
+
+```
+grep -c
+```
+
+Case insensitive:
+
+```
+grep -i
+```
+
+Print lines that aren't matched
+
+```
+grep -v
+```
+
+Match the entire line:
+
+```
+grep -x
+```
+
+Match the entire word (not a substring of the word):
+
+```
+grep -w
+```
+
+Negate special characters:
+
+```
+grep -e
+```
+
+Print lines before or after:
+
+```
+grep -w -A 3 -B 3
+```
+
+Search for multiple things:
+
+```
+grep '404\|500'
+
+# extended regex means no escaping
+grep -E '404|500'
+```
+
+Any 400 error:
+
+```
+grep '4[0-9][0-9]'
+```
+
+### Regex patterns
+
+Start of the line:
+
+```
+grep '^FROM'
+```
+
+End of the line:
+
+```
+grep 'FROM$'
+```
+
+Inside:
+
+```
+grep '^<.*>$'
+```
+
+Boundaries:
+
+```
+grep '\bthe\b'
+```

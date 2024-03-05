@@ -2,14 +2,7 @@ https://erikbern.com/2021/07/07/the-data-team-a-short-story.html
 
 TODO
 
-https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c
 https://news.ycombinator.com/item?id=30763516
-
-Deprecate yourself.
-
-Security is layered and context dependent (NA).
-
-Don't give in to hype.
 
 https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html
 
@@ -20,10 +13,6 @@ Have the right number of abstractions (NA)
 https://www.baldurbjarnason.com/2021/100-things-every-web-developer-should-know/
 
 There are exceptions to most rules.
-
-Web development becomes more complicated the more you pull it apart and less so the more you step back.
-
-The trick is to recognise when it’s time to move on. (NA)
 
 A visitor to your site begins by building a map of it in their heads. Because without that internal map, nothing they will ever do on your site will fully make sense to them because it has no context.
 
@@ -46,15 +35,11 @@ Experience is about becoming opinionated abut tools or approach to building soft
 
 Innovation isn't important.
 
-Don’t mistake humility for ignorance.
-
 Interviews don't work.
 
 https://observablehq.com/@mbostock/10-years-of-open-source-visualization
 
 customer / tech support is a powerful form of research
-
-Don’t go it alone.
 
 Have fun.
 

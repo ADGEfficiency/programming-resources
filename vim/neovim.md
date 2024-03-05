@@ -81,3 +81,11 @@ https://github.com/takadev15/dotfiles/tree/master/.config/nvim
 http://www.lazyvim.org/plugins
 
 https://github.com/folke/lazy.nvim
+
+## Lists of Linting & Formatting Tools
+
+- [efm-langserver](https://github.com/mattn/efm-langserver),
+- [efmls-configs-nvim](https://github.com/creativenull/efmls-configs-nvim/blob/main/supported-linters-and-formatters.md),
+- [Null LS](https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md),
+- [conform](https://github.com/stevearc/conform.nvim#formatters),
+- [nvim-lint](https://github.com/mfussenegger/nvim-lint#available-linters).

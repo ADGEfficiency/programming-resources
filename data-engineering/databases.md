@@ -1,3 +1,19 @@
+## Indexes
+
+[SQL Indexing and Tuning e-Book for developers: Use The Index, Luke covers Oracle, MySQL, PostgreSQL, SQL Server, ...](https://use-the-index-luke.com/)
+
+[Poor database indexing - a SQL query performance killer - recommendations](https://www.sqlshack.com/poor-database-indexing-sql-query-performance-killer-recommendations/)
+
+[Relational Databases Explained](https://architecturenotes.co/things-you-should-know-about-databases/)
+
+Indexes are a data structure that helps decrease the look-up time of requested data. Indexes achieve this with the additional costs of storage, memory, and keeping it up to date (slower writes), which allows us to skip the tedious task of checking every table row.
+
+A transaction is a unit of work you want to treat as a single unit. Therefore, it has to either happen in full or not at all.
+
+---
+
+[How slow is SELECT * ? - Vettabase](https://vettabase.com/how-slow-is-select/)
+
 [42 things I learned from building a production database](https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html)
 
 [A terrible schema from a clueless programmer](http://rachelbythebay.com/w/2021/11/06/sql/) [HN Discussion](https://news.ycombinator.com/item?id=29139902)
@@ -90,3 +106,65 @@ That is my 2 cents.
 ---
 
 Upserts are generally a bad idea in big data. If your db/tables are small it may not be a big deal but usually you want to do append-only and deduplicate on read and deduplicate the actual table occasionally, like daily or weekly.
+
+---
+
+[Scaling Databases - Web Development](https://youtu.be/dkhOZOmV7Fo)
+
+Database Normalization
+
+[On MongoDB](https://www.nemil.com/mongo/index.html)
+
+[PyCon.DE 2017 Tamara Mendt - Modern ETL-ing with Python and Airflow (and Spark)](https://www.youtube.com/watch?v=tcJhSaowzUI)
+
+ETL usually implies batch
+- integrting multiple data sources
+- pre-aggregating to speed up queries
+- computer features for ML
+
+[Was MongoDB Ever the Right Choice?](https://www.simplethread.com/was-mongodb-ever-the-right-choice/)
+
+Solved
+- allow non strict schema
+- scale data across multiple machines
+- ability to change schema
+- good write performance
+
+Problems
+- loss of transaction structure in data
+- loss of foreign key stricture in the data
+- loss of ability to enforce schema
+- query language
+
+[Data Science for Startups: Data Pipelines](https://towardsdatascience.com/data-science-for-startups-data-pipelines-786f6746a59a)
+
+Ideal data pipeline:
+- low latency
+- scalable
+- interactive querying
+- versioning - changes to pipeline & event definitions
+- monitoring - if events not received, alerts generated
+- testing - test events don't end up in database, but can test components of pipeline
+
+Types of data
+- raw - usually JSON
+- processed - usually stored in tables
+- cooked data - aggregated / summarized
+
+Four eras of data pipelines
+1. flat files - local storage
+
+2. database - flat files then loaded into db
+
+3. data lake - stored in Hadoop/S3 then loaded into db
+- semi structured in a distributed database (S3), then run ETL to extract into an analytics database
+- scales, provides fault tolerance
+- less access to data than traditional db (you could use Spark SQL though)
+- operational overhead
+
+4. serverless era - managed services for storage and querying
+- autoscales - similar benefits to data lake
+- expensive
+- not portable across cloud service providers
+
+Store events as Parquet on S3 to use with Spark

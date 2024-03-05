@@ -29,7 +29,7 @@ $ make
 Machine readable documentation
 - track changes in source control (git),
 - encourages modularity / functional decomposition of shell scripts,
-- makes pipelines reproducable.
+- makes pipelines reproducible.
 
 Dependency, retries
 - won't re-run code that has already been run,
@@ -249,6 +249,8 @@ clean:
 [What is a Makefile and how does it work?](https://opensource.com/article/18/8/what-how-makefile)
 
 [Make - Wikipedia](https://en.wikipedia.org/wiki/Make_(software))
+
+[Makefile Tutorial By Example](https://makefiletutorial.com/#top)
 
 ### Discussion
 

@@ -473,7 +473,15 @@ Spark
 
 ## Reading
 
+[Shopify's Data Science & Engineering Foundations](https://shopify.engineering/shopifys-data-science-engineering-foundations)
+
+Kimball style relational models - not that important it's the best strategy, but that it's what was agreed.
+
+Single data modelling platform, anyone can access.
+
 [The Unbundling of Airflow](https://blog.fal.ai/the-unbundling-of-airflow-2/) - how the new ecosystem of data tooling is taking away parts of what Airflow used to be used for.
+
+[Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)
 
 ---
 

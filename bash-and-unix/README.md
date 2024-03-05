@@ -15,15 +15,13 @@ These are notes for a course on the shell, terminal, and command line with Bash:
 
 You can also find hard copies of additional resources in [programming-resources/bash-and-unix/resources](https://github.com/ADGEfficiency/programming-resources/tree/master/bash-and-unix/resources).
 
+[explainshell.com](https://explainshell.com/) is a tool that will match command-line arguments to their help text.
+
 ### For Beginners
 
 [Survival guide for Unix newbies](https://matt.might.net/articles/basic-unix/)
 
 [Effective Shell](https://effective-shell.com/)
-
-### Blog Posts
-
-[Bash Patterns I Use Weekly](https://will-keleher.com/posts/5-Useful-Bash-Patterns.html)
 
 ### References
 
@@ -70,7 +68,9 @@ Concise GNU Bash: An Introduction to Advanced Usage - James Panacciulli @ LinuxF
 
 ### Blog Posts / Discussions
 
-[Gödel's Incompleteness Theorem, in Bash](https://lacquer.io/math/2022/02/24/godels-incompleteness-in-bash.html)
+[Bash Patterns I Use Weekly](https://will-keleher.com/posts/5-Useful-Bash-Patterns.html)
+
+[Gödel's Incompleteness Theorem in Bash](https://lacquer.io/math/2022/02/24/godels-incompleteness-in-bash.html)
 
 [Shell Script Best Practices](https://sharats.me/posts/shell-script-best-practices/) - [HN Discussion](https://news.ycombinator.com/item?id=33354286)
 
@@ -86,6 +86,9 @@ Best things in your bash_profile/aliases? - [Hacker News](https://news.ycombinat
 
 [Shells are Two Things](https://borretti.me/article/shells-are-two-things)
 
+[Unix Shell Programming: The Next 50 Years](https://sigops.org/s/conferences/hotos/2021/papers/hotos21-s06-greenberg.pdf)
+
+[A slack clone in 5 lines of Bash](https://the-dam.org/docs/explanations/suc.html)
 
 ### Talks
 
@@ -94,6 +97,8 @@ UNIX shell expansion: proper use and advanced forms - Tyson Whitehead - [talk](h
 Concise GNU Bash: An Introduction to Advanced Usage - James Panacciulli @ LinuxFest Northwest 2017- [talk](https://youtu.be/BJ0uHhBkzOQ) - [slides](http://talk.jpnc.info/bash_lfnw_2017.pdf)
 
 ### Guides
+
+[Shell programming with bash: by example, by counter-example](https://matt.might.net/articles/bash-by-example/)
 
 [routeback/bashscripts](https://github.com/routeback/bashscripts) - a collection of GNU/Linux bash scripts
 
@@ -118,3 +123,7 @@ dwmkerr.com - Effective Shell
 - [Part 5: Interlude - Understanding the Shell](https://dwmkerr.com/effective-shell-part-5-understanding-the-shell/)
 - [Part 6: Everything You Don't Need to Know About Job Control](https://dwmkerr.com/effective-shell-6-job-control/)
 - [Part 7: The Subtleties of Shell Commands](https://dwmkerr.com/effective-shell-7-shell-commands/)
+
+### Textbooks
+
+[Effective Shell](https://effective-shell.com/)

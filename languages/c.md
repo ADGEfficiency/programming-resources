@@ -3,3 +3,5 @@
 [C’s Biggest Mistake - Digital Mars](https://digitalmars.com/articles/C-biggest-mistake.html)
 
 [The Ten Commandments for C Programmers (Annotated Edition)](https://www.lysator.liu.se/c/ten-commandments.html)
+
+[HPC Tools for Programming](https://web.corral.tacc.utexas.edu/CompEdu/pdf/stc/hpc_programming.pdf)

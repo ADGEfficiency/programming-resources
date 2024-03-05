@@ -20,7 +20,7 @@ git commit -m 'message'
 git push origin master
 ```
 
-Using `git add -u` only works when files have already been comitted to the repo.
+Using `git add -u` only works when files have already been committed to the repo.
 
 We can instead add files by name:
 
@@ -158,6 +158,16 @@ git checkout master
 git merge dev
 ```
 
+## Introductory
+
+[A beginner's guide to Git version control](https://developers.redhat.com/articles/2023/08/02/beginners-guide-git-version-control)
+
+[Git Techniques at Risk Ledger](https://riskledger.com/resources/git-basics-at-risk-ledger)
+
+[Learn the workings of Git, not just the commands](https://developer.ibm.com/tutorials/d-learn-workings-git/)
+
+[Confusing git terminology](https://jvns.ca/blog/2023/11/01/confusing-git-terminology/)
+
 ## Resources
 
 [Git Reference Documentation](https://git-scm.com/docs).
@@ -174,8 +184,34 @@ git merge dev
 
 [THIS IS HOW I GIT](https://daniel.haxx.se/blog/2020/11/09/this-is-how-i-git/)
 
+[Oh Shit, Git!?!](https://ohshitgit.com/) - how to get out of sticky situations in Git.
 
-## Branching strategies
+`git reflog` shows a log of changes to the local repository's HEAD and branch heads
+
+```shell-session
+$ git reflog
+e9494c5 (HEAD -> master, origin/master, origin/HEAD) HEAD@{0}: commit: feat: keeping on up
+602a6e4 HEAD@{1}: commit: feat: ups
+aa972dc HEAD@{2}: commit: feat: ups
+fea6e49 HEAD@{3}: commit: feat: ups
+8b12a3c HEAD@{4}: commit: feat: ups ups ups :tada:
+d4156df HEAD@{5}: clone: from github.com:ADGEfficiency/programming-resources
+
+$ git reset HEAD@{index}
+```
+
+Amend previous commit:
+
+```shell-session
+$ git commit --amend --no-edit
+```
+
+```shell-session
+$ git commit --amend --no-edit
+```
+
+
+## Branching Strategies
 
 [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
@@ -185,8 +221,18 @@ Legacy workflow - fallen in popularity in favour of trunk based.
 
 Trunk = main = master.  Developers never work on release branches.
 
+[Git Techniques at Risk Ledger](https://riskledger.com/resources/git-basics-at-risk-ledger)
+
+Master, dev, feature. Squash onto dev.
+
+See also [Git techniques | Hacker News](https://news.ycombinator.com/item?id=29162234) for disagreement with the Risk Ledger approach.
+
 
 ## Advanced
+
+[Git Things](https://matklad.github.io/2023/12/31/git-things.html#Git-Things) - [Hacker News Discussion](https://news.ycombinator.com/item?id=38830194)
+
+[I wish people would stop insisting that Git branches are nothing but refs](https://blog.plover.com/2023/02/27/) - [Hacker News Discussion](https://news.ycombinator.com/item?id=34965567)
 
 [Useful git commands - Marc Garcia](https://datapythonista.me/blog/useful-git-commands.html) - more advanced Git shell commands.
 
@@ -196,4 +242,24 @@ Trunk = main = master.  Developers never work on release branches.
 
 [Git From the Bits Up - Tim Berglund](https://www.youtube.com/watch?v=MYP56QJpDr4)
 
+[Git from the Bottom Up](https://jwiegley.github.io/git-from-the-bottom-up/)
+
 [Deep Dive into Git - Edward Thomson](https://www.youtube.com/watch?v=dBSHLb1B8sw)
+
+[Learn the workings of Git, not just the commands](https://developer.ibm.com/tutorials/d-learn-workings-git/)
+
+## Criticism
+
+[What’s wrong with Git? A conceptual design analysis](https://blog.acolyer.org/2016/10/24/whats-wrong-with-git-a-conceptual-design-analysis/)
+
+[Why SQLite Does Not Use Git](https://sqlite.org/whynotgit.html)
+
+[Confusing git terminology](https://jvns.ca/blog/2023/11/01/confusing-git-terminology/) - [Hacker News Discussion](https://news.ycombinator.com/item?id=38112951)
+
+The single thing that made everything "click" together is that most things are just pointers to commits: branch names, HEAD, tags, all of them are pointers.
+
+The other thing caught me out multiple times is that most commands seem inconsistent because git assumes default arguments:
+
+`git checkout file.txt` is the same as `git checkout HEAD -- file.txt`
+
+When you're on `my-branch`, `git rebase main` is the same as `git rebase main my-branch`

@@ -18,3 +18,11 @@ Documentation as Code (Docs as Code) refers to a philosophy that you should be w
     Plain Text Markup (Markdown, reStructuredText, Asciidoc)
     Code Reviews
     Automated Tests
+
+[How Stripe builds interactive docs with Markdoc](https://stripe.com/blog/markdoc)
+
+Extends Markdown with custom syntax that meets the needs of our documentation platform without sacrificing Markdown's simplicity, familiarity, or ease of use for writing prose
+
+[Markdoc](https://markdoc.dev/)
+
+Requires an Express app / Javascript backend.

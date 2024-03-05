@@ -32,3 +32,5 @@ https://www.d3-graph-gallery.com/
 ## Streamlit
 
 docs - https://docs.streamlit.io/en/stable/
+
+[random axis: A Subway Map of Maps That Use Subway Maps as a Metaphor](https://randomaxis.blogspot.com/2012/10/a-subway-map-of-maps-that-use-subway.html)

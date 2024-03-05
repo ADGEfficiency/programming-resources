@@ -4,7 +4,7 @@
 
 [sed, a stream editor - GNU.org](https://www.gnu.org/software/sed/manual/html_node/index.html#SEC_Contents)
 
-[adrianlarion/useful-sed: Useful sed scripts & patterns.](https://github.com/adrianlarion/useful-sed)
+[adrianlarion/useful-sed: Useful sed scripts & patterns.](https://github.com/adrianlarion/useful-sed) - [HN Discussion](https://news.ycombinator.com/item?id=29196221)
 
 ---
 

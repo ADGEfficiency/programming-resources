@@ -6,6 +6,26 @@ https://sqlite.org/lpc2019/doc/trunk/briefing.md - a briefing on SQLite intended
 
 The Untold Story of SQLite - https://corecursive.com/066-sqlite-with-richard-hipp/
 
+## [Command Line Shell For SQLite](https://www.sqlite.org/cli.html#index_recommendations_sqlite_expert_)
+
+The ".expert" command proposes indexes that might assist with specific queries, were they present in the database. 
+
+```shell-session
+sqlite> CREATE TABLE x1(a, b, c);                  -- Create table in database 
+sqlite> .expert
+sqlite> SELECT * FROM x1 WHERE a=? AND b>?;        -- Analyze this SELECT 
+CREATE INDEX x1_idx_000123a7 ON x1(a, b);
+
+0|0|0|SEARCH TABLE x1 USING INDEX x1_idx_000123a7 (a=? AND b>?)
+
+sqlite> CREATE INDEX x1ab ON x1(a, b);             -- Create the recommended index 
+sqlite> .expert
+sqlite> SELECT * FROM x1 WHERE a=? AND b>?;        -- Re-analyze the same SELECT 
+(no new indexes)
+
+0|0|0|SEARCH TABLE x1 USING INDEX x1ab (a=? AND b>?)
+```
+
 ## [Ask HN: Have you used SQLite as a primary database?](https://news.ycombinator.com/item?id=31152490)
 
 ## [I'm All-In on Server-Side SQLite](https://fly.io/blog/all-in-on-sqlite-litestream/) - [HN discussion](https://news.ycombinator.com/item?id=31318708)
@@ -61,3 +81,5 @@ Where not to use:
 [Many Small Queries Are Efficient In SQLite](https://sqlite.org/np1queryprob.html) - [HN Discussion](https://news.ycombinator.com/item?id=26151302)
 
  SQLite can also do large and complex queries efficiently, just like client/server databases. But SQLite can do many smaller queries efficiently too. Application developers can use whichever technique works best for the task at hand. 
+
+[Why SQLite Does Not Use Git](https://sqlite.org/whynotgit.html)

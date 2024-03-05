@@ -50,6 +50,12 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 ## Random Cool Stuff
 
+[Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)
+
+[progsbase](https://www.progsbase.com/blog/flow-charts-of-programming-language-constructs/) - Flow-Charts of Programming Language Constructs.
+
+[Vim Kōans](https://blog.sanctum.geek.nz/vim-koans/)
+
 [Rob Pike's 5 Rules of Programming](https://users.ece.utexas.edu/~adnan/pike.html)
 
 [Generative Artistry](https://generativeartistry.com/tutorials/) - A range of interactive tutorials, exploring ideas and techniques used in generative art.
@@ -135,6 +141,8 @@ Honeypot documentaries:
 
 
 ## Blogs & Blog Posts
+
+[5 Famous Programming Quotes, Explained](https://yc.prosetech.com/5-famous-programming-quotes-explained-4da607906c1)
 
 [Nabeel S. Qureshi](https://nabeelqu.co/)
 
