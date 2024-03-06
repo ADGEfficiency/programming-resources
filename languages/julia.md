@@ -21,3 +21,5 @@ include, using, import
 [What's bad about Julia?](https://viralinstruction.com/posts/badjulia/#whats_bad_about_julia)
 
 [Jula - Algorithms Book](https://algorithmsbook.com/files/appendix-g.pdf)
+
+[A quick introduction to data parallelism in Julia | Hacker News](https://news.ycombinator.com/item?id=24700436)

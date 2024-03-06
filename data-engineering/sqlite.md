@@ -51,6 +51,12 @@ Writes do not block reads in SQLite.
 
 Max data = 281 TB (Postgres = unlimited, but tables have lower limit on size than sqlite)
 
+## [How I run my servers](https://blog.wesleyac.com/posts/how-i-run-my-servers)
+
+Programs that require a database use SQLite, which means that the entire state of the app is kept in a single file. I have two redundant backup solutions: On a daily basis, a backup is taken via the SQLite .backup command, and saved to Tarsnap. The script to do so is run via cron. 
+
+I also use Litestream to stream a copy of the database to DigitalOcean Spaces storage on a secondly basis, with snapshots taken every 6 hours. This gives me quite a lot of confidence that even in the most disastrous of cases, I'm unlikely to lose a significant amount of data, and if I wanted to be more sure, I could crank up the frequency of the Tarsnap backups.
+
 
 ## Should I use SQLite?
 
@@ -75,8 +81,6 @@ Where not to use:
 
 
 ## Using SQLite properly
-
-
 
 [Many Small Queries Are Efficient In SQLite](https://sqlite.org/np1queryprob.html) - [HN Discussion](https://news.ycombinator.com/item?id=26151302)
 

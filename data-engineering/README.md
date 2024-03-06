@@ -552,3 +552,21 @@ lots of data science is about proving something isn't working
 [Open-Source Data Engineering Projects](https://brain.sspaeti.com/open-source-data-engineering-projects/)
 
 [josephmachado/data_engineering_project_template ](https://github.com/josephmachado/data_engineering_project_template)
+
+## Architecture
+
+### [Emerging Architectures for Modern Data Infrastructure | Andreessen Horowitz](https://a16z.com/emerging-architectures-for-modern-data-infrastructure/) 
+
+### [Emerging Architectures for Modern Data Infrastructure | Hacker News](https://news.ycombinator.com/item?id=24814687)
+
+This article has a large gap in the story: it ignores sensor data sources, which are both the highest velocity and highest volume data models by multiple orders of magnitude.
+
+I will make a prediction. When software that can address sensor data models becomes a platform instead of bespoke, it will eat the lunch of a lot of adjacent data platforms that aren’t targeted at sensor data for a simple reason: the extreme operational efficiency of data infrastructure required to handle sensor data models applies just as much to any other data model, there simply hasn’t been an existential economic incentive to build it for those other data models.
+
+---
+
+There are typically 2 types of data to collect: Transactional data and behavioural data.
+
+Most transactional data, due to their important nature, are already generated and captured by the production applications. Since the logic is coded by application engineer, it's usually hard to get this data wrong. These data are then ETL-ed (or EL-ed) over to a DW, as described by the article.
+
+For behavioural data, this is where your statement will most apply to. This is where tools like Snowplow, Posthog, Segment, etc come in to set up the proper event data collection engine. This is also where it's important to "collect data properly", as these kinds of event data changes structure fast, and hard to keep track over time. I'd admit this space (data collection management) is still nascent, with only tools like iterative.ly on the market. 

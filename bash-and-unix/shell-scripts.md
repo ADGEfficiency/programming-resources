@@ -1,3 +1,5 @@
+[Advanced Bash-Scripting Guide](https://web.archive.org/web/20220819180012/https://tldp.org/LDP/abs/html/) - [Hacker News Discussion](https://news.ycombinator.com/item?id=32523067)
+
 [Scripts to Rule Them All - The GitHub Blog](https://github.blog/2015-06-30-scripts-to-rule-them-all/)
 
 [github/scripts-to-rule-them-all: Set of boilerplate scripts describing the normalized script pattern that GitHub uses in its projects.](https://github.com/github/scripts-to-rule-them-all)

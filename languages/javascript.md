@@ -56,3 +56,5 @@ console.log('hello');
 [Introduction to JavaScript and Browser DOM](https://youtu.be/ljNi8nS5TtQ)
 
 [Node.JS: The Good Parts? A Skeptic's View](https://youtu.be/CN0jTnSROsk)
+
+[Memory in Javascript— Beyond Leaks | by Yonatan Kra | WalkMe Engineering | Medium](https://medium.com/walkme-engineering/memory-in-javascript-beyond-leaks-8c1d697c655c)

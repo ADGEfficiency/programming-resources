@@ -98,6 +98,35 @@ Concise GNU Bash: An Introduction to Advanced Usage - James Panacciulli @ LinuxF
 
 ### Guides
 
+[BashGuide - Greg's Wiki](https://mywiki.wooledge.org/BashGuide)
+
+[Command line wizardry, part one: Learn to think in sed, awk, and grep | Ars Technica](https://arstechnica.com/gadgets/2021/08/linux-bsd-command-line-101-using-awk-sed-and-grep-in-the-terminal/)
+
+[Command line wizardry, part two: Variables and loops in Bash](https://arstechnica.com/gadgets/2021/09/command-line-wizardry-part-two-variables-and-loops-in-bash/)
+
+Capturing command output:
+
+```shell-session
+$ echo $(echo test)
+test
+```
+
+For loops:
+
+```shell-session
+$ for x in $y ; do echo "x equals $x" ; done
+x equals 1
+x equals 2
+x equals 3
+```
+
+Work with entire line in file:
+
+```shell-session
+$ cat lines.txt | while read x ; do echo $x ; done
+```
+
+
 [Shell programming with bash: by example, by counter-example](https://matt.might.net/articles/bash-by-example/)
 
 [routeback/bashscripts](https://github.com/routeback/bashscripts) - a collection of GNU/Linux bash scripts

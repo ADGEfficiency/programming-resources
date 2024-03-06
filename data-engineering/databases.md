@@ -10,7 +10,129 @@ Indexes are a data structure that helps decrease the look-up time of requested d
 
 A transaction is a unit of work you want to treat as a single unit. Therefore, it has to either happen in full or not at all.
 
+[Things to know about databases | Hacker News](https://news.ycombinator.com/item?id=31895623)
+
+Realize that any reasonably used database will likely outlast the applications leveraging 
+
 ---
+
+# ORMs
+
+## [Is ORM still an 'anti pattern'?](https://github.com/getlago/lago/wiki/Is-ORM-still-an-%27anti-pattern%27%3F)
+
+ORMs are more misused than overused.
+
+### The Fake Problems
+
+ORMs produce objects. (Duh! That’s what the O stands for.) Objects are like directed graphs—nodes that point to other nodes but not necessarily to each other. Conversely, database relational tables contain data that are always linked bidirectionally via shared keys, aka an undirected graph.
+
+SRP dictates that a class should exist for one purpose and one purpose only. And, well, ORMs don’t do that. Sure, at a high level, they do “all the database stuffs”, but that’s equivalent to creating a single class that does “all the app stuffs”. 
+
+JohnoTheCoder explained it best, ORMs: 
+- create classes that transact with the database, 
+- represent a record, 
+- define relationships,
+- create and execute migrations.
+
+Separation of Concerns is of similar spirit to SRP, but at the application layer. SOC dictates that an infrastructure component should be concerned with one thing, not multiple. 
+
+And an ORM shifts database management from the backend to the database, violating SOC. 
+
+But SOC is a bit of a silly principle in today’s world. Nowadays, infrastructure components and coding patterns are combining tasks to achieve better performance (e.g., CPU aggregators within OLAP databases), lower latency (e.g., edge backend-frontends), and cleaner code (e.g., monorepos).
+
+### The Real Problems
+
+A common criticism of ORMs is that they’re inefficient.
+
+This is mostly false. ORMs are far more efficient than most programmers believe. However, ORMs encourage poor practices because of how easy it is to rely on host language logic (i.e., JavaScript or Ruby) to combine data.
+
+The first issue is that ORMs sometimes incur massive computational overhead when converting queries into objects (TypeORM is a particular offender of this).
+
+The second issue is that ORMs sometimes make multiple roundtrips to a database by looping through a one-to-many or many-to-many relationship. This is known as the N+1 problem (1 original query + N subqueries). 
+
+The biggest issue with ORMs is visibility. Because ORMs are effectively query writers, they aren’t the ultimate error dispatcher outside of obvious scenarios (such as incorrect primitive types). Rather, ORMs need to digest the returned SQL error and translate it to the user.
+
+### [Is ORM still an anti-pattern? | Hacker News](https://news.ycombinator.com/item?id=36497613)
+
+One of the selling points, which is now understood to be garbage, is that you can use different databases. But no-one uses different databases. 
+
+Another selling point which is "you don't need to know SQL", is also garbage. Every non-trivial long-lived application will require tweaks to individual queries at the string level. 
+
+The proper way to build a data layer is one query at a time, as a string, with string interpolation. The closer you are to raw JDBC the better.
+
+---
+
+ORMs make the easy parts slightly easier, but they make the hard parts really hard
+
+---
+
+The problem is the ORM requires you to know its language, the underlying SQL for that database, as well as how the ORM maps to that underlying language.
+
+It’s the worst of a leaky abstraction, and like 3x the conceptual overhead. But it’s better because … something something OOP. 
+
+---
+
+The unfortunate reality of our industry is that most of the popular tools which software devs are using suck and are encouraging anti-patterns.
+
+---
+
+Competency is a function of the human and not the tools.
+
+People who create piles of garbage will do so regardless of what you give them.
+
+Let's not pretend ORM made poor behavior more manageable. It was just a different style mess to clean up.
+
+You give them TDD, they'll create bad broken tests. You give them linters, they'll put in arcane and asinine rules. 
+
+---
+
+This argument has been presented forever to excuse bad tools, and it is a strawman. Of course good tools don't fix bad behavior. The argument in favor of good tools is that competent people with good tools are insanely more productive than competent people with bad tools. 
+
+## [ What is the "N+1 selects problem" in ORM (Object-Relational Mapping)? - Stack Overflow](https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping)
+
+Let's say you have a collection of Car objects (database rows), and each Car has a collection of Wheel objects (also rows). In other words, Car → Wheel is a 1-to-many relationship.
+
+Now, let's say you need to iterate through all the cars, and for each one, print out a list of the wheels. The naive O/R implementation would do the following:
+
+```
+SELECT * FROM Cars;
+```
+
+And then for each Car:
+
+```
+SELECT * FROM Wheel WHERE CarId = ?
+```
+
+In other words, you have one select for the Cars, and then N additional selects, where N is the total number of cars.
+
+Alternatively, one could get all wheels and perform the lookups in memory:
+
+```
+SELECT * FROM Wheel;
+```
+
+This reduces the number of round-trips to the database from N+1 to 2. Most ORM tools give you several ways to prevent N+1 selects.
+
+[mysql - selecting rows with id from another table - Stack Overflow](https://stackoverflow.com/questions/10562915/selecting-rows-with-id-from-another-table)
+
+```sql
+SELECT * FROM terms WHERE id IN 
+   (SELECT term_id FROM terms_relation WHERE taxonomy = "categ")
+```
+
+```sql
+SELECT t.* FROM terms AS t 
+   INNER JOIN terms_relation AS tr 
+   ON t.id = tr.term_id AND tr.taxonomy = "categ"
+```
+
+```sql
+SELECT t.id, t.name, t.slug, tr.description, tr.created_at, tr.updated_at 
+  FROM terms AS t 
+   INNER JOIN terms_relation AS tr 
+   ON t.id = tr.term_id AND tr.taxonomy = "categ"
+```
 
 [How slow is SELECT * ? - Vettabase](https://vettabase.com/how-slow-is-select/)
 
@@ -19,6 +141,8 @@ A transaction is a unit of work you want to treat as a single unit. Therefore, i
 [A terrible schema from a clueless programmer](http://rachelbythebay.com/w/2021/11/06/sql/) [HN Discussion](https://news.ycombinator.com/item?id=29139902)
 
 [Common data model mistakes made by startups](https://www.metabase.com/learn/analytics/data-model-mistakes) [HN Discussion](https://news.ycombinator.com/item?id=27248093)
+
+[Diving Deep on S3 Consistency](https://www.allthingsdistributed.com/2021/04/s3-strong-consistency.html)
 
 ---
 

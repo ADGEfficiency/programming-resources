@@ -252,6 +252,8 @@ clean:
 
 [Makefile Tutorial By Example](https://makefiletutorial.com/#top)
 
+[A Tutorial on Portable Makefiles](https://nullprogram.com/blog/2017/08/20/)
+
 ### Discussion
 
 [Absolutely do not use make for any new project - Hacker News](https://news.ycombinator.com/item?id=5275752)
@@ -277,3 +279,5 @@ https://www.benevolent.com/engineering-blog/make-reduce-how-to-use-makefiles-to-
 [Makefiles for R/LaTeX projects - Rob Hyndman](https://robjhyndman.com/hyndsight/makefiles/)
 
 [Why Use Make - Mike Bostok](https://bost.ocks.org/mike/make/)
+
+[`make` as a Static Site Generator](https://www.karl.berlin/static-site.html)
