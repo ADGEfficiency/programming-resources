@@ -28,6 +28,8 @@ Test deployed Lambda locally:
 $ serverless invoke --function data_ingestion --stage test --path ./test_data/test-sunrise.json --aws-profile gridcog-dev
 ```
 
+[Serverless Framework Commands - Print](https://www.serverless.com/framework/docs/providers/aws/cli-reference/print) - print your serverless.yml config file with all variables resolved.
+
 [The traits of serverless architecture](https://www.thoughtworks.com/insights/blog/traits-serverless-architecture)O
 
 - low barrier-to-entry

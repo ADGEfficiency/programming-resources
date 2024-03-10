@@ -1,6 +1,22 @@
+[Drunk Post: Things I've learned as a Sr Engineer](https://www.reddit.com/r/ExperiencedDevs/comments/nmodyl/drunk_post_things_ive_learned_as_a_sr_engineer/)
+
+[General guidance when working as a cloud engineer](https://www.lockedinspace.com/posts/001.html)
+
 [How to Build Software like an SRE — willett dot io](https://www.willett.io/posts/precepts/)
 
 [(A few) Ops Lessons We All Learn The Hard Way](https://www.netmeister.org/blog/ops-lessons.html)
+
+[My First Year as a Data Scientist](https://codebuildrepeat.blogspot.com/2020/03/my-first-year-as-data-scientist.html)
+
+Use databases instead of flat files.
+
+Give more presentations.  Presentations have four audiences:
+
+- devs, stakeholders, other departments and external.
+
+Need to think about the audience.
+
+Answer the question the stakeholder is answering.
 
 [Advice That Actually Worked For Me](https://nabeelqu.co/advice)
 

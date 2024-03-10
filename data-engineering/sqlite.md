@@ -33,6 +33,10 @@ sqlite> SELECT * FROM x1 WHERE a=? AND b>?;        -- Re-analyze the same SELECT
 ## [I Migrated from a Postgres Cluster to Distributed SQLite with LiteFS](https://kentcdodds.com/blog/i-migrated-from-a-postgres-cluster-to-distributed-sqlite-with-litefs)
 ## [How does SQLite work? Part 1: pages!](https://jvns.ca/blog/2014/09/27/how-does-sqlite-work-part-1-pages/)
 
+## [I Migrated from a Postgres Cluster to Distributed SQLite with LiteFS](https://kentcdodds.com/blog/i-migrated-from-a-postgres-cluster-to-distributed-sqlite-with-litefs)
+
+## [Who needs MLflow when you have SQLite?](https://ploomber.io/blog/experiment-tracking/)
+
 ## [Consider SQLite](https://blog.wesleyac.com/posts/consider-sqlite)
 
 Rather than running a SQL server (with a program running than you talk to) - embed the implementation of SQL into your program, using a single file as backing storage

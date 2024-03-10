@@ -30,6 +30,15 @@
 
 <!-- vim-markdown-toc -->
 ---
+To add
+
+[General guidance when working as a cloud engineer](https://www.lockedinspace.com/posts/001.html)
+
+[How to Build Software like an SRE — willett dot io](https://www.willett.io/posts/precepts/)
+
+[(A few) Ops Lessons We All Learn The Hard Way](https://www.netmeister.org/blog/ops-lessons.html)
+
+---
 This blog post summarizes X blog posts written by programmers about lessons they have learnt.  It's a lesson of lessons post.
 
 References are included for each section, with a full list of references at the end.
@@ -46,6 +55,8 @@ As economist Thomas Sowell wrote: “There are no solutions. There are only trad
 Most engineering decisions are not good versus bad choices - they are balances of tradeoffs. A solution to a problem always has both upsides and downsides.
 
 An example is made by [Alex Ewerlöf](https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c), who highlights UX, security and performance often fight against each other..
+
+You cannot deliver a secure, compact and well-fitted project if your biggest priority is delivering it as fast as possible. - https://www.lockedinspace.com/posts/001.html
 
 [Nemil Dalal](https://nemil.com/on-software-engineering) offers a framework for analyzing a solution is:
 
@@ -297,6 +308,9 @@ Avoid using real-time for correctness guarantees - https://maheshba.bitbucket.io
 
 use toy problems
 
+/Users/adam/personal/para/project/teaching-monolith.md - see the testing stuff in here, for the different approaches
+
+
 ### State
 
 don't share state - https://medium.com/edge-coders/the-mistakes-i-made-as-a-beginner-programmer-ac8b3e54c312
@@ -353,6 +367,8 @@ https://www.simplethread.com/20-things-ive-learned-in-my-20-years-as-a-software-
 Communication is important (NA).
 
 communication harder than technical - https://towardsdatascience.com/12-things-i-learned-during-my-first-year-as-a-machine-learning-engineer-2991573a9195
+
+[Tom at CodeBuildRepeat](https://codebuildrepeat.blogspot.com/2020/03/my-first-year-as-data-scientist.html) - presentations should be aimed at your audience - there are four audience types - devs, stakeholders, other departments and external.
 
 Don’t go it alone.
 
@@ -420,6 +436,8 @@ https://observablehq.com/@mbostock/10-years-of-open-source-visualization
 
 Model performance != business performance - https://blog.acolyer.org/2019/10/07/150-successful-machine-learning-models/
 
+[Tom at CodeBuildRepeat](https://codebuildrepeat.blogspot.com/2020/03/my-first-year-as-data-scientist.html) - use databases instead of flat files.
+
 ---
 
 [Alex Ewerlöf](https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c)
@@ -441,3 +459,5 @@ Model performance != business performance - https://blog.acolyer.org/2019/10/07/
 [Neil Kakkar](https://neilkakkar.com/things-I-learnt-from-a-senior-dev.html)
 
 [Hillel Wayne](https://buttondown.email/hillelwayne/archive/the-myth-of-self-documenting-code/)
+
+[Tom at CodeBuildRepeat](https://codebuildrepeat.blogspot.com/2020/03/my-first-year-as-data-scientist.html)

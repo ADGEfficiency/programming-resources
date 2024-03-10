@@ -196,3 +196,5 @@ With a script you can run it locally to ensure it performs the steps desired, le
 
 
 ## [GitHub Actions could be so much better](https://blog.yossarian.net/2023/09/22/GitHub-Actions-could-be-so-much-better) - [Hacker News Discussion](https://news.ycombinator.com/item?id=37612420)
+
+## [mix/actions - ServiceStack/mix](https://github.com/ServiceStack/mix/tree/master/actions)

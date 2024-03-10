@@ -168,6 +168,19 @@ git merge dev
 
 [Confusing git terminology](https://jvns.ca/blog/2023/11/01/confusing-git-terminology/)
 
+[Git For the Modern Data Scientist: 9 Git Concepts You Can’t Ignore](https://towardsdatascience.com/git-for-the-modern-data-scientist-9-git-concepts-you-cant-ignore-b4eaf7a154c2)
+
+- repository,
+- tracked & untracked,
+- commit,
+- staging area,
+- hashes & tags,
+- branch,
+- HEAD,
+- merge,
+- stash,
+- GitHub.
+
 ## Resources
 
 [Git Reference Documentation](https://git-scm.com/docs).
@@ -227,8 +240,25 @@ Master, dev, feature. Squash onto dev.
 
 See also [Git techniques | Hacker News](https://news.ycombinator.com/item?id=29162234) for disagreement with the Risk Ledger approach.
 
+[Ship / Show / Ask](https://martinfowler.com/articles/ship-show-ask.html#HowDoYouDoContinuousIntegrationWithPullRequests)
+
+Pull requests are categorized as either:
+
+- Ship (merge into mainline without review), 
+- Show (open a pull request for review, but merge into mainline immediately), 
+- Ask (open a pull request for discussion before merging). 
+
+Code review, or “Approval”, should not be a requirement for a Pull Request to be merged.
+
+Our branches should not live long, and we should rebase them on the mainline often.
+
+PRs should not replace other ways of having a conversation.
 
 ## Advanced
+
+[Cuddly, Octo-Palm Tree: The elements of git](https://cuddly-octo-palm-tree.com/posts/2021-09-19-git-elements/)
+
+Why git repos would struggle with large binary files: as every change is stored as a separate file, binary files (which typically don't compress well even for apparently small changes) will quickly take up quite a bit of space in either object or pack form.
 
 [Git Things](https://matklad.github.io/2023/12/31/git-things.html#Git-Things) - [Hacker News Discussion](https://news.ycombinator.com/item?id=38830194)
 

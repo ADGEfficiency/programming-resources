@@ -21,3 +21,7 @@
 ```
 
 [HN Discussion](https://news.ycombinator.com/item?id=32800598)
+
+## [Why Structured Logging?](https://www.structlog.org/en/stable/why.html)
+
+Structured logging means that you don’t write hard-to-parse and hard-to-keep-consistent prose in your log entries. Instead, you log events that happen in a context of key-value pairs.

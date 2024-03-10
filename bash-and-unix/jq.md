@@ -1,7 +1,4 @@
-
-
 '.key[0].key'
-
 
 https://cuddly-octo-palm-tree.com/posts/2021-09-26-tyska-jq/
 
@@ -17,3 +14,7 @@ $ jq -n --arg argName 'this has a " in it!' '{"title": $argName}'
 ---
 
 [The BEST CLI Tool](https://youtu.be/n8sOmEe2SDg?si=UZN9QNHTgT6Fs0e-)
+
+[Cookbook · jqlang/jq Wiki](https://github.com/jqlang/jq/wiki/Cookbook)
+
+[Tools You Should Know About: jq](https://cuddly-octo-palm-tree.com/posts/2021-09-26-tyska-jq/)

@@ -9,3 +9,5 @@
 - C compatibility - don't need to teach how to do for loop
 
 [Doom3 Source Code Review: Introduction](https://fabiensanglard.net/doom3/index.php)
+
+[The Little Things: Speeding up C++ compilation](https://codingnest.com/the-little-things-speeding-up-c-compilation/)

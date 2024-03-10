@@ -79,6 +79,8 @@ fi
 
 ## Advanced
 
+[vaporup/ssh-tools: Making SSH more convenient](https://github.com/vaporup/ssh-tools)
+
 [How to SSH Properly](https://goteleport.com/blog/how-to-ssh-properly/) - SSH certificates
 
 [SSH Agent Explained](https://smallstep.com/blog/ssh-agent-explained/)

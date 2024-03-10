@@ -1,3 +1,8 @@
+---
+tags:
+- dbt
+- metabase
+---
 # Data Engineering
 
 ## What is data engineering?
@@ -553,11 +558,151 @@ lots of data science is about proving something isn't working
 
 [josephmachado/data_engineering_project_template ](https://github.com/josephmachado/data_engineering_project_template)
 
+## Textbooks
+
+[Data Engineering Design Patterns](https://www.dedp.online/)
+
 ## Architecture
 
-### [Emerging Architectures for Modern Data Infrastructure | Andreessen Horowitz](https://a16z.com/emerging-architectures-for-modern-data-infrastructure/) 
+## [A modern data stack for startups](https://incident.io/blog/data-stack)
 
-### [Emerging Architectures for Modern Data Infrastructure | Hacker News](https://news.ycombinator.com/item?id=24814687)
+Fivetran and Stitch are both ETL tools designed to transport data from various sources into destinations. We use both to load data into BigQuery, our data warehouse.
+
+Once in BigQuery, we clean and transform the data using a tool called dbt. This allows us to turn raw source data into an ideal, 'data warehouse native', format that can be easily used for analysis.
+
+Finally, Metabase provides a visualisation and analytics layer, running queries against BigQuery.
+
+This dataset contains many tables, and each table will be either:
+
+Dim ⇒ dimension table
+Fct ⇒ fact table
+Stg ⇒ staging table
+
+### Dimension (dim) and fact (fct) tables
+
+Normally described as 'marts', these tables represent key business data and have been engineered for ease of use when querying.
+
+An example of a dimension table is dim_organisations. In general, dimension tables have a single row per entity they describe (ie, an organisation) and have a large number of columns that can be used to filter and group those entities.
+
+Fact tables are complementary to dimension tables, and can be seen as a list of things that happened (also referred to as an 'event stream').
+
+### Staging (stg) tables
+
+Source data, which is what Fivetran and Stitch generate, is unstable and often awkward to use.
+
+Instead of having people query the awkward source tables, we choose to build staging tables from the source data which:
+- Renames columns to be consistent (all true/false columns start with is_ or has_)
+- Casts columns to the right type (timestamp strings are parsed as timestamps)
+- Extracts deeply nested data into a suitable form (custom fields become columns)
+
+And whatever else is needed to turn the source data into the 'ideal' data for querying.
+
+### dbt
+
+```
+dbt/models
+├── marts
+│  └── core
+│      ├── core.yml
+│      ├── dim_incidents.sql
+│      ├── dim_organisations.sql
+│      ├── dim_users.sql
+│      ├── fct_organisation_statistics.sql
+│      └── fct_user_incident_graph.sql
+└── staging
+    ├── close
+    │  ├── README.md
+    │  ├── src_close.yml
+    │  ├── stg_close.yml
+    │  ├── stg_close__activities.sql
+    │  ├── stg_close__leads.sql
+    │  └── stg_close__opportunities.sql
+    └── product
+        ├── README.md
+        ├── src_product.yml
+        ├── stg_product.yml
+        ├── stg_product__actions.sql
+        ├── stg_product__announcement_rules.sql
+        ├── ...
+        └── stg_product__workflows.sql
+```
+
+You'll see mentions of 'base' tables in dbt literature, described as the first transformation after source and appearing before staging. We've opted not to create these, and to go straight for staging tables - this avoids maintaining another layer of dbt schemas, and lots of our data (especially Product) is close to staging format at source anyway.
+
+We don't produce marts from staging models unless we join them across schemas (as with the dimension tables) or perform complex transformations on them (fact tables). Again, this is to reduce the number of dbt schemas.
+
+We only have core marts right now. Until we add more marts, it makes little sense implementing a more complex structure (such as grouping marts under business units), better to adapt as we grow.
+
+---
+
+Once we had the stack up and running, we ran two workshops aiming at different audiences:
+
+- Intro to dbt, for engineers who will build dbt models. We can't hire a fulltime BI team just yet, and think we can get by with engineers surfacing more complex data features to Metabase by defining them in dbt. This session covered our dbt setup and we mobbed on adding a feature to a dbt model, manually running the schema sync into Metabase.
+- Intro to data, for the entire company. Everyone is expected to use data in their work, so everyone needs to be familiar with Metabase. This session included a rundown of the stack, then working as a group to visualise a few key business metrics. Finally, we took a list of questions we've been dying to have answered and divided it among us, with people trying to answer them in pairs.
+
+## [Data-Oriented Architecture | Eyas's Blog](https://blog.eyas.sh/2020/03/data-oriented-architecture/)
+
+DOA is an inversion of the traditional dichotomy between a monolithic binary and data store (monolithic architecture) on the one hand, and small, distributed, independent binaries each with their own data stores (microservices, and service-oriented architecture) on the other. 
+
+In data-oriented architecture, a monolithic data store is the sole source of state in the system, which is being acted on by loosely-coupled, stateless microservices.
+
+### Monoliths
+
+In a monolithic service, the bulk of server-side code is in one program that is talking to one or more databases, handling multiple aspects of a functional computation. Imagine a trading system that receives requests from customers to buy or sell some security, prices them, and fills their orders.
+
+Within a monolithic server, code could still be componentized and separated into individual modules, but there’s no forced API boundary between the different components of the program. The only rigidly defined APIs in the program are typically either (a) between the UI and the server (in whatever REST/HTTP protocol they decide on), (b) between the server and the data stores (in whatever query language they decide on), or (c) between the server and its external dependencies.
+
+### Service-Oriented Architecture and microservices
+
+Microservices are a type of service-oriented architecture. 
+
+Service-oriented architectures (SOA), on the other hand, break up monolithic programs into services for each independent, componentized function.
+
+The interface between each of these services is a formally-defined API layer. Services typically communicate one-on-one through RPCs, although other techniques like message-passing and pubsub are common.
+
+Service oriented architectures allow different services to be developed and reasoned about independently (and in parallel), if needed. The services are loosely-coupled, which means that a totally new service can now reuse the other services.
+
+As each service in an SOA defines its own API, each service can be independently accessed and interacted with. Developers debugging or mocking individual pieces can call individual components separately, and new flows can re-compose these individual services to enable new behaviors.
+
+### Scaling microservices
+
+What I’m getting at here is that as a microservices ecosystem grows, it starts being susceptible to the following problems at scale:
+
+1. N2 growth in complexity of integration as the number of components grow2,
+2. The shape of a network becomes hard to reason about a priori; i.e. creating or maintaining a testing environment or sandbox will require a lot of reasoning to make sure no component within a graph has an external dependency
+
+### Data Oriented Architecture
+
+In Data-Oriented Architecture (DOA), systems are still organized around small, loosely-coupled components, as in SOA microservices. But DOA departs from microservices in two key ways:
+
+1. Components are always stateless - Rather than componentizing and federating data stores for each relevant component, DOA mandates describing the data or state-layer in terms of a centrally managed global schema.
+2. Component-to-component interaction is minimized, instead favoring interaction through the data layer
+
+### DOA Component Communication
+
+1. Data Produces and Consumes
+
+Organizing components into producers and consumers of data is the main way to design a DOA system.
+
+If you can, at a high level, write your business logic as a series of map, filter, reduce, flatMap, and other monadic operations, you can write your DOA system as a series of components, each which queries or subscribes to its inputs and produces its outputs. The challenge in DOA is that these intermediate steps are visible, queryable data—which means that it needs to be well-encapsulated, well-represented, and corresponds to a particular business-logic concept. The advantage, though, is that the behavior of the system is externally observable, traceable, and auditable.
+
+2. Triggering Actions and Behaviors
+
+Sometimes, the simplest way to think about communication between components is as an RPC. While a well-designed DOA system3 should see a majority of its inter-component communication replaced by producer/consumer paradigms, you might still need direct ways for component X to tell Y to do Z.
+
+First, it’s important to consider if RPCs can be reorganized as events and their effects. I.e., asking if, rather than component X sending RPCs to component Y where event E happens, can X instead produce events E, and have component Y drive the responses by consuming these events?
+
+There is, of course, a naïve way to implement data-based events, where each event is persisted to a database in its own table corresponding 1:1 with a serialized version of a the RPC request. In that case, data-based events don’t decouple a system at all. For data-based events to work, translating a request/response into persisted events require them to be meaningful business-logic constructs.
+
+### It’s all about the trade-off
+
+This architecture is not a magic bullet. Where data-oriented architecture erases classes of problems, new ones arise: It requires the designer to think hard about data ownership.
+
+## [A modern data stack for startups (2022) | Hacker News](https://news.ycombinator.com/item?id=38812087)
+
+## [Emerging Architectures for Modern Data Infrastructure | Andreessen Horowitz](https://a16z.com/emerging-architectures-for-modern-data-infrastructure/) 
+
+## [Emerging Architectures for Modern Data Infrastructure | Hacker News](https://news.ycombinator.com/item?id=24814687)
 
 This article has a large gap in the story: it ignores sensor data sources, which are both the highest velocity and highest volume data models by multiple orders of magnitude.
 
@@ -570,3 +715,40 @@ There are typically 2 types of data to collect: Transactional data and behaviour
 Most transactional data, due to their important nature, are already generated and captured by the production applications. Since the logic is coded by application engineer, it's usually hard to get this data wrong. These data are then ETL-ed (or EL-ed) over to a DW, as described by the article.
 
 For behavioural data, this is where your statement will most apply to. This is where tools like Snowplow, Posthog, Segment, etc come in to set up the proper event data collection engine. This is also where it's important to "collect data properly", as these kinds of event data changes structure fast, and hard to keep track over time. I'd admit this space (data collection management) is still nascent, with only tools like iterative.ly on the market. 
+
+## [Writing a high quality data pipeline for master data with apache spark – Part 1 – Kapernikov](https://kapernikov.com/writing-a-high-quality-data-pipeline-for-master-data-with-apache-spark-part-1/)
+
+1. composability,
+2. re-use logic instead of data,
+3. verifability - that jobs are executable, external datasets are compliant, pipelines don't violate contracts,
+4. version control.
+
+[Building a data team at a mid-stage startup: a short story](https://erikbern.com/2021/07/07/the-data-team-a-short-story.html)
+
+[Building a data team at a mid-stage startup | Hacker News](https://news.ycombinator.com/item?id=27777594)
+
+# [Data Engineering Wiki](https://dataengineering.wiki/Index)
+
+## [Concepts](https://dataengineering.wiki/Concepts/Concepts)
+
+### [Claim Check Pattern](https://dataengineering.wiki/Concepts/Claim+Check+Pattern)
+
+The claim-check pattern is used to reduce the cost and size of large messages by first storing the data in an external storage location and then sending a reference to the data/event to the consumer.
+
+1. Send message
+2. Store message in data store
+3. Enqueue the message's reference (i.e. key)
+4. Read the message's reference
+5. Retrieve the message
+6. Process the message
+
+Claim Check Pattern Advantages
+
+    Reduces cost of data transfer via messaging/streams. This is because storage is usually cheaper than messaging/streaming resources (memory).
+    Helps protect the message bus and client from being overwhelmed or slowed down by large messages.
+    Allows you to asynchronously process data which can help with scalability/performance.
+
+Claim Check Pattern Disadvantages
+
+    If the external service used to store the payload fails, then the message will not be delivered.
+    Requires additional storage space and adds additional time to store/retrieve data.

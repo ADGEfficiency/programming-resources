@@ -1,3 +1,5 @@
+[Good Data Scientist, Bad Data Scientist](https://ianwhitestone.work/good-ds-bad-ds/)
+
 [Oil is the New Data](https://logicmag.io/nature/oil-is-the-new-data/)
 
 Despite the climate crisis that our planet faces, Big Oil is doubling down on fossil fuels. At over 30 billion barrels of crude oil a year, production has never been higher. 

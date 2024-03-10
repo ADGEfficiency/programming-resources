@@ -19,6 +19,8 @@ JSON.parse
 
 ---
 
+[JavaScript for impatient programmers (ES2022 edition)](https://exploringjs.com/impatient-js/toc.html) - [Hacker News Discussion](https://news.ycombinator.com/item?id=29673206)
+
 [Python vs JavaScript for Pythonistas – Real Python](https://realpython.com/python-vs-javascript/)
 
 [Learning JavaScript in small bites, Part 1](https://matt.might.net/articles/learning-javascript-in-small-bites/)

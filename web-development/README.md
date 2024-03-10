@@ -1,3 +1,11 @@
+[The single most important factor that differentiates front-end frameworks](https://themer.dev/blog/the-single-most-important-factor-that-differentiates-front-end-frameworks)
+
+[Developer Tools secrets that shouldn’t be secrets](https://christianheilmann.com/2021/11/01/developer-tools-secrets-that-shouldnt-be-secrets/)
+
+[Your Career in Web Development Starts Here | The Odin Project](https://www.theodinproject.com/)
+
+[The Complete Guide to the Dark Mode Toggle](https://ryanfeigenbaum.com/dark-mode/)
+
 [Things I wish I’d known about CSS | Dave Smyth](https://davesmyth.com/things-i-wish-id-known-about-css)
 
 [MVP.css – Minimalist stylesheet for HTML elements | Hacker News](https://news.ycombinator.com/item?id=32805334)

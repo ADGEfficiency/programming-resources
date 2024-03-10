@@ -112,3 +112,30 @@ df.to_list
 
     dataframes = pl.collect_all(queries)
 ```
+
+---
+
+[Extending the API — Polars documentation](https://docs.pola.rs/py-polars/html/reference/api.html)
+
+```python
+@pl.api.register_expr_namespace("greetings")
+class Greetings:
+    def __init__(self, expr: pl.Expr):
+        self._expr = expr
+
+    def hello(self) -> pl.Expr:
+        return (pl.lit("Hello ") + self._expr).alias("hi there")
+
+    def goodbye(self) -> pl.Expr:
+        return (pl.lit("Sayōnara ") + self._expr).alias("bye")
+
+
+pl.DataFrame(data=["world", "world!", "world!!"]).select(
+    [
+        pl.all().greetings.hello(),
+        pl.all().greetings.goodbye(),
+    ]
+)
+```
+
+[Calmcode - polars: Introduction](https://calmcode.io/course/polars/introduction)

@@ -1,4 +1,4 @@
-## Indexes
+# Indexes
 
 [SQL Indexing and Tuning e-Book for developers: Use The Index, Luke covers Oracle, MySQL, PostgreSQL, SQL Server, ...](https://use-the-index-luke.com/)
 
@@ -13,6 +13,50 @@ A transaction is a unit of work you want to treat as a single unit. Therefore, i
 [Things to know about databases | Hacker News](https://news.ycombinator.com/item?id=31895623)
 
 Realize that any reasonably used database will likely outlast the applications leveraging 
+
+[The right column order in multi-column indexes](https://use-the-index-luke.com/sql/where-clause/the-equals-operator/concatenated-keys)
+
+## Concatenated Indexes
+
+Even though the database creates the index for the primary key automatically, there is still room for manual refinements if the key consists of multiple columns. In that case the database creates an index on all primary key columns—a so-called concatenated index (also known as multi-column, composite or combined index). Note that the column order of a concatenated index has great impact on its usability so it must be chosen carefully.
+
+To define an optimal index you must understand more than just how indexes work—you must also know how the application queries the data. This means you have to know the column combinations that appear in the where clause.
+
+# Joins
+
+[Joins 13 Ways](https://justinjaffray.com/joins-13-ways/?a=b)
+
+# Relational Model
+
+[How and why the Relational Model works for databases](https://blog.the-pans.com/relational/)
+
+# Schema Design
+
+## Entity Attribute Value
+
+[Replacing EAV with JSONB in PostgreSQL](https://coussej.github.io/2016/01/14/Replacing-EAV-with-JSONB-in-PostgreSQL/)
+
+[Anti-pattern: entity-attribute-value (EAV)](https://cedanet.com.au/antipatterns/eav.php)
+
+The basic idea is to record data using a single table, typically with three columns - the entity, attribute and value.
+
+It is arguable there are valid uses of the pattern. The example sited in Wikipedia is for clinical data, where patient records would otherwise need thousands of columns in order to support all the possible attributes on a patient.
+
+However, attribute volatility isn't usually present for most database designs, so the EAV pattern doesn't offer any particular benefits. In fact there are many significant disadvantages:
+
+    Lack of enforced integrity constraints. Eg DBMS won't enforce referential integrity, or ensure values on an attribute are in an acceptable range
+    Queries are extremely inefficient, leading to many self joins just to return the counterpart of a single record
+    Queries are illegible
+    Scalability is very bad
+    The design isn't self documenting
+    Attributes can be added on the fly giving the designer the illusion that the design is very malleable
+    Graphical query tools provided by the RDBMS aren't available
+    Views aren't available
+    DBMS clustered indexes aren't available
+    DBMS query optimisation is bypassed
+    DBMS optimised disk layout strategies are bypassed
+
+[Entity-Attribute-Value fallacy | Radek Maziarka](https://radekmaziarka.pl/2018/10/26/entity-attribute-value-fallacy/)
 
 ---
 

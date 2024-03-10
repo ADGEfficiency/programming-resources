@@ -20,4 +20,8 @@ Killer = elm-ui, clojure Datomic, ReasonML revery
 
 [The Beauty of Functional Languages in Deep Learning — Clojure and Haskell](https://www.welcometothejungle.com/fr/articles/btc-deep-learning-clojure-haskell)
 
-[History of Programming Language Conference - Haskell](https://dl.acm.org/doi/pdf/10.1145/1238844.1238856)
+[Mindset shifts for Functional Programming (with Clojure)](https://blog.janetacarr.com/mindset-shifts-for-functional-programming-with-clojure/)
+
+[Functional Programming 101](https://github.com/readme/guides/functional-programming-basics)
+
+[What is functional programming?](https://cuddly-octo-palm-tree.com/posts/2021-06-06-functional-church/)

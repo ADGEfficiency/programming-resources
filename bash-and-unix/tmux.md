@@ -27,3 +27,5 @@ set -g status-right <options>
 Using shell scripts
 
 options = #(path/to/script.sh)
+
+[Tools You Should Know About: tmux](https://cuddly-octo-palm-tree.com/posts/2021-09-12-tyska-tmux/)

@@ -23,3 +23,5 @@ Sort by counts
 `-k1,1` sort using column 1
 `-n` numerically
 `-r` reverse
+
+# [How to Clean Text Data at the Command Line | Ezz | Technical Content Writer for Software Companies](https://ezzeddinabdullah.com/post/how-to-clean-text-data-at-the-command-line/)

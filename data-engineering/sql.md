@@ -46,6 +46,28 @@ Foreign key = column that creates relationships between tables
 
 [What exactly does being proficient in SQL entail?](https://www.reddit.com/r/dataengineering/comments/k3ygzc/what_exactly_does_being_proficient_in_sql_entail/?utm_medium=android_app&utm_source=share)
 
+## [SQL join flavors](https://antonz.org/sql-join/)
+
+## [SQL Join Flavors | Hacker News](https://news.ycombinator.com/item?id=37583197)
+
+Having a deeper understanding of the different JOIN flavors is critical. For example, I don't think many people realize how deceptively dangerous OUTER joins are:
+
+```sql
+SELECT user.user_id
+FROM users
+RIGHT JOIN purchases
+    ON purchases.user_id = user.user_id
+    AND user.user_id=123
+```
+
+By leaving the user_id=123 constraint in the JOIN instead of putting it in the WHERE, you've just exposed everyone's purchase data to the user. 
+
+---
+
+ Outer joins are inherently risky because they make it very easy to put conditions in a place that looks correct (read: passes review) but isn't, and the results are disastrous (information leak). 
+
+## [SQL Cheat Sheet](https://antonz.org/sql-cheatsheet/)
+
 ## https://www.linkedin.com/posts/eric-weber-060397b7_data-statistics-datascience-activity-6667857833138229248-mg_6
 
 ### Basic

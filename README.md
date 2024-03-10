@@ -41,14 +41,13 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 [lofi air traffic control](https://www.lofiatc.com/?icao=KVNY) 
 
 
-## Diagramming Tools
-
-[swimlanes.io](https://swimlanes.io/)
-
-[excalidraw](https://excalidraw.com/)
-
-
 ## Random Cool Stuff
+
+[Writing a Simple Operating System from Scratch](https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf)
+
+[The Compiler Writer Resource Page](https://c9x.me/compile/bib/)
+
+[The Tao of Programming](https://www.mit.edu/~xela/tao.html)
 
 [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)
 
@@ -110,6 +109,10 @@ Honeypot documentaries:
 
 ## Articles
 
+[DeepDream: How Alexander Mordvintsev Excavated the Computer’s Hidden Layers](https://thereader.mitpress.mit.edu/deepdream-how-alexander-mordvintsev-excavated-the-computers-hidden-layers/)
+
+[The Secret Auction That Set Off the Race for AI Supremacy](https://www.wired.com/story/secret-auction-race-ai-supremacy-google-microsoft-baidu/)
+
 [How Discord Won](https://ianvanagas.com/2020/10/19/how-discord-won/)
 
 [The messy, secretive reality behind OpenAI’s bid to save the world](https://www.technologyreview.com/2020/02/17/844721/ai-openai-moonshot-elon-musk-sam-altman-greg-brockman-messy-secretive-reality/)
@@ -142,7 +145,15 @@ Honeypot documentaries:
 
 ## Blogs & Blog Posts
 
+[Cuddly, Octo-Palm Tree](https://cuddly-octo-palm-tree.com/archives/)
+
+- [Tools You Should Know About: direnv](https://cuddly-octo-palm-tree.com/posts/2021-12-12-tyska-direnv/)
+- [Tools You Should Know About: nix-shell](https://cuddly-octo-palm-tree.com/posts/2021-12-19-tyska-nix-shell/)
+- [Tools You Should Know About: jq](https://cuddly-octo-palm-tree.com/posts/2021-09-26-tyska-jq/)
+
 [5 Famous Programming Quotes, Explained](https://yc.prosetech.com/5-famous-programming-quotes-explained-4da607906c1)
+
+[Zach Alberico - How To Become A Hacker](https://zalberico.com/essay/2020/04/19/how-to-become-a-hacker.html)
 
 [Nabeel S. Qureshi](https://nabeelqu.co/)
 

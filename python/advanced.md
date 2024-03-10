@@ -2,6 +2,10 @@
 
 [Strict Modules](https://instagram-engineering.com/python-at-scale-strict-modules-c0bb9245c834)
 
+[Python’s Innards: Introduction](https://tech.blog.aknin.name/2010/04/02/pythons-innards-introduction/)
+
+[Python behind the scenes #4: how Python bytecode is executed](https://tenthousandmeters.com/blog/python-behind-the-scenes-4-how-python-bytecode-is-executed/)
+
 ## StringIO, BytesIO
 
 ## [Strict Python function parameters](https://sethmlarson.dev/strict-python-function-parameters)

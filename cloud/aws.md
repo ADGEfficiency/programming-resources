@@ -17,3 +17,7 @@ Then the explosion in AWS Accounts led to AWS Organizations to provision and man
 But AWS Organizations managing heaps of accounts was also too painful to use and get right and so they brought in AWS Control Tower to help make setting up Organizations easier.
 
 [Diving Deep on S3 Consistency](https://www.allthingsdistributed.com/2021/04/s3-strong-consistency.html)
+
+[AWS Cloud Control API, a Uniform API to Access AWS and Third-Party Services | Hacker News](https://news.ycombinator.com/item?id=28710179)
+
+[CloudCasts - AWS for Humans](https://cloudcasts.io/)

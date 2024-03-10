@@ -90,6 +90,10 @@ Best things in your bash_profile/aliases? - [Hacker News](https://news.ycombinat
 
 [A slack clone in 5 lines of Bash](https://the-dam.org/docs/explanations/suc.html)
 
+[Hints for writing Unix tools](https://monkey.org/~marius/unix-tools-hints.html)
+
+[Command-line Tools can be 235x Faster than your Hadoop Cluster](https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html)
+
 ### Talks
 
 UNIX shell expansion: proper use and advanced forms - Tyson Whitehead - [talk](https://youtu.be/GXu1bZptwf4)

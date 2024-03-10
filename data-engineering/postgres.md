@@ -4,6 +4,15 @@
 
 ---
 
+[How Retool upgraded our 4 TB main application PostgreSQL database](https://retool.com/blog/how-we-upgraded-postgresql-database)
+
+Strategies:
+
+- dump and restore - has downtime,
+- logical replication - running two copies in parallel, with second replicating the first.
+
+---
+
 [The Art of PostgreSQL: a modern PostgreSQL book in 2022](https://theartofpostgresql.com/)
 
 ---

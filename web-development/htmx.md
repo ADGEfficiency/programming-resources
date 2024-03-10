@@ -20,3 +20,13 @@ And we saw that, despite the tighter application-level coupling found in a hyper
 [htmx in a Nutshell](https://htmx.org/docs/)
 
 [Htmx in a Nutshell | Hacker News](https://news.ycombinator.com/item?id=33987578)
+
+---
+
+[UX Design Patterns for Loading](https://pencilandpaper.io/articles/ux-pattern-analysis-loading-feedback/)
+
+Loading states are a way to play with users’ perception of time and turn it to your advantage.
+
+Loading indicators are all about balancing perceived time and perceived value. 
+
+Loading states are also a good opportunity to set expectations of users in your product. They can be used as a communication device to reduce uncertainty for the user by explaining what’s happening or preparing them for what’s coming up next.
