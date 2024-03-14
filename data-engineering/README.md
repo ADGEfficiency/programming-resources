@@ -3,6 +3,7 @@ tags:
 - dbt
 - metabase
 ---
+
 # Data Engineering
 
 ## What is data engineering?
@@ -752,3 +753,14 @@ Claim Check Pattern Disadvantages
 
     If the external service used to store the payload fails, then the message will not be delivered.
     Requires additional storage space and adds additional time to store/retrieve data.
+
+[How to learn data engineering](https://www.blef.fr/learn-data-engineering/)
+
+If we go a bit deeper, I think that every data engineer should have basis in:
+
+- data modeling — this is related to the way the data is stored is a data warehouse and the field has been cracked years ago by Kimball dimensional modeling and also Inmon model. But it recently got challenged because of "infinite" cloud power with OBT (one big table or flat) model. In order to complete your understanding of data modeling you should learn what's an OLAP cube. The cherry on the cake here is the Slowly Changing Dimensions — SCDs — concept.
+- formats — This is a huge part of data engineering. Picking the right format for your data storage. Wrong format often means bad querying performance and user-experience. In a nutshell you have: text based formats (CSV, JSON and raw stuff), columnar file formats (Parquet, ORC), memory format (Arrow), transport protocols and format (Protobuf, Thrift, gRPC, Avro), table formats (Hudi, Iceberg, Delta), database and vendor formats (Postgres, Snowflake, BigQuery, etc.). Here a small benchmark between some popular formats.
+- batch — Batch processing is at the core of data engineering. One of the major task is to move data from a source storage to a destination storage. In batch. On a regular schedule. Sometime with transformation. This is close to what we also call ETL or ELT. The main difference between both is the fact that your computation resides in your warehouse with SQL rather than outside with a programming language loading data in memory. In this category I recommend also to have a look at data ingestion (Airbyte, Fivetran, etc.), workflows (Airflow, Prefect, Dagster, etc.) and transformation (Spark, dbt, Pandas, etc.) tools.
+- stream — Stream processing can be seen as the evolution of the batch. This is not. It addresses different use-cases. This is often linked to real-time. Main technologies around stream are bus messages like Kafka and processing framework like Flink or Spark on top of the bus. Recently all-in-one cloud services appeared to simplify the real-time work. Understand Change Data Capture — CDC.
+- infrastructure — When you do data engineering this is important to master data infrastructure concepts. You'll be seen as the most technical person of a data team and you'll need to help regarding "low-level" stuff you team. You'll be also asked to put in place a data infrastructure. It means a data warehouse, a data lake or other concepts starting with data. My advice on this point is to learn from others. Read technical blogs, watch conferences and read 📘 Designing Data-Intensive Applications (even if it could be overkill).
+- new concepts — in today's data engineering a lot of new concepts enter the field every year like quality, lineage, metadata management, governance, privacy, sharing, etc.

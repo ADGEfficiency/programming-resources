@@ -1,0 +1,1 @@
+[Modular: Accelerating the Pace of AI](https://www.modular.com/) - MAX is built on top of Mojo from the ground up to empower AI engineers to unlock the full potential of AI hardware by combining the usability of Python, the safety of Rust, and the performance of C.

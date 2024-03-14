@@ -1,3 +1,29 @@
+[Splitting Your Data & Application APIs: Going Further](https://htmx.org/essays/splitting-your-apis/)
+
+Needs for a generic API:
+
+    How to predict and enable all possible workflows
+    How to avoid N+1 requests for awkward workflows
+    How to test functionality, performance, and security of every possible request
+    How to change the API without breaking the existing workflows
+    How to prioritize API changes between internal and community requirements
+    How to document everything so that all parties can get stuff done
+
+Needs for a application API:
+
+    How to collect all the data needed to render a page
+    How to optimize requests to multiple endpoints
+    How to avoid using API data fields in unintended ways
+    How to weigh the benefit of new features against the cost of new API requests
+
+This misalignment of needs the Data/App API Impedance Mismatch problem.
+
+Max’s recommendation is to split the API into two “halves”: a generic API and an application API:
+
+    I suggest you stop treating your frontend as some generic API client, and start treating it as a half of your app.
+
+    Imagine if you could just send it the whole “page” worth of JSON. Make an endpoint for /page/a and render the whole JSON for /page/a there. Do this for every page. Don’t force your front-end developers to send a bunch of individual requests to render a complex page. Stop annoying them with contrived limitations. Align yourselves.
+
 [HTMX is the Future](https://quii.dev/HTMX_is_the_Future)
 
 [Two Approaches To Decoupling](https://htmx.org/essays/two-approaches-to-decoupling/)

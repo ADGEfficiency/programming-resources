@@ -1,3 +1,5 @@
+[Data Science in Production Best Practices](https://medium.com/bcggamma/data-science-python-best-practices-fdb16fdedf82)
+
 [Good Data Scientist, Bad Data Scientist](https://ianwhitestone.work/good-ds-bad-ds/)
 
 [Oil is the New Data](https://logicmag.io/nature/oil-is-the-new-data/)

@@ -1,6 +1,145 @@
+[All Programming Philosophies Are About State | World of BS](https://www.worldofbs.com/minimize-state/)
+
+Object-Oriented - Modifying a lot of state at once is hard to get correct; encapsulate subsets of state into separate objects and allow limited manipulation of the encapsulated sub-state via methods.
+
+Functional - Modifying state is hard to get correct; keep it at the boundaries and keep logic pure so that it is easier to verify the logic is correct.
+
+Declarative - Modifying state is hard to get correct; use a language to describe how state should be manipulated and allow the machine to determine the steps required.
+
+Imperative - Modifying state is hard to get correct; minimize the number of conceptual layers between how the computer operates and how the code is written.
+
+Monolith - Modifying state distributed among many services is hard to get correct; keep it centralized.
+
+Service-Oriented-Architecture - Modifying all of the state in one service is hard to get correct; distribute it among multiple services.
+
+MicroServices - Modifying any state in a service is hard to get correct; have many services that are primarily stateless.
+
+[All programming philosophies are about state | Hacker News](https://news.ycombinator.com/item?id=34674814)
+
+OO, functional, imperative, declarative: these are ways of controlling dispatch.
+
+Monoliths and microservices are both ways to organize codebases and teams of programmers and control whether dispatch is intermediated by the network or not. Either way, both of these options are implemented by some kind of language in the previous category (OO, functional, imperative, or declarative).
+
+Service-oriented architecture applies to both monoliths and microservices, and very few programmers still working in the industry have really seen what an alternative to service-oriented architecture actually looks like. 
+
+[What distinguishes great software engineers?](https://faculty.washington.edu/ajko/papers/Li2019WhatDistinguishesEngineers.pdf)
+
+## Personality
+
+- Continuously improving
+- Open-minded
+- Executes
+- Self-reliant
+- Self-reflecting
+- Persevering
+- Curious
+- Craftsmanship
+- Turn ideas into reality
+- Passionate
+- Focused
+- Systematic
+- Adapts to new settings
+- Productive
+- Aligned with organization's goals
+- Data-driven
+- Hardworking
+- Willing to enter the unknown
+
+## Decision-making
+
+- Updates decision-making knowledge
+- Grows ability to make good decisions
+- Sees the forest and the trees
+- Handles complexity
+
+## Knowledgeable about:
+
+- Tools and building materials
+- Their technical domain
+- Engineering processes
+- Customers and business
+- Coworkers and organization
+
+## Teammate Interactions
+
+- Honest
+- Does due diligence beforehand
+- Asks for help
+- Is a good listener
+- Manages expectations
+- Integrates others' understandings
+- Doesn't make it personal
+- Walks-the-walk
+- Resists external pressure
+
+## The Engineer's Code
+
+- Pays attention to coding details
+- Fits with pieces around it
+- Makes informed trade-offs
+- Evolving
+- Elegant
+
+## External Attributes
+
+- Has a good reputation
+- Creates shared understanding
+- Creates shared success
+- Well-mannered
+- Creates a safe haven
+- Mentoring
+- Challenges others to improve
+- Personable
+- Trades favors
+
+## Internal Attributes
+
+- Long-termed
+- Creative
+- Anticipates needs
+- Uses the right processes during construction
+
+[Things I want as SRE/DevOps from Devs](https://oschvr.com/posts/what-id-like-as-sre/)
+
+How can I check the health of the service ?
+    Did you securely configured endpoints that I can ping periodically?
+    Is it going to use the same port as the service ?
+
+How can I safely and gracefully restart the service ?
+    Does graceful shutdowns wait for inflight requests to finish?
+    If I restart the service, will there be any disruption or performance degradation?
+
+How and why would the service fail ?
+    Does it has any external dependencies ?
+    And what happens if it does ?
+    Do you have a playbook, or sequence of steps, to bring the service back up?
+
+Do you use appropriate logging levels depending on the environments ? i.e. (TRACE & DEBUG should not go to production)
+    Are you logging to stdout ?
+    What format of logs are you using, (JSON, PLAINTEXT)?
+
+What kind of metrics are you exposing ?
+    Are you measuring the RED signals?
+        Rate (# of requests per second)
+        Errors (# of errors per second) and
+        Duration (time each request takes)
+
+Is there any documentation/design specification for the service ?
+    Are you using gRPC or REST ?
+    How can I see the API contract?
+    Do you have a OpenAPI/Swagger spec
+
+How does the data flow through the service ?
+    Do you have any PII/Sensitive data flowing through the service?
+    Is any part of the data captured in the service logs?
+
+What is the testing coverage for this service ?
+    Do you wrote unit, integration tests for it?
+    Is there a end to end test that I can run discard issues?
+
 [The Product-Minded Software Engineer - The Pragmatic Engineer](https://blog.pragmaticengineer.com/the-product-minded-engineer/)
 
-1. Proactive with product ideas/opinions1. Proactive with product ideas/opinions
+1. Proactive with product ideas/opinions. Proactive with product ideas/opinions
 2. Interest in the business, user behavior and data on this
 3. Curiosity and a keen interest in "why?"
 4. Strong communicators and great relationships with non-engineers

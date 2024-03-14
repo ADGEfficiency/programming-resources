@@ -25,3 +25,7 @@ To get started, I recommend the following resources:
 [Math for Programmers](https://xn--mxacd.xn--qxam/math-notes.pdf) - [HN](https://news.ycombinator.com/item?id=24574574)p
 
 [McSherrey et. al (2015) Scalability! But at what COST?](https://www.usenix.org/system/files/conference/hotos15/hotos15-paper-mcsherry.pdf)
+
+[Operational transformation - Wikipedia](https://en.wikipedia.org/wiki/Operational_transformation) - a technology for supporting a range of collaboration functionalities in advanced collaborative software systems. OT was originally invented for consistency maintenance and concurrency control in collaborative editing of plain text documents.
+
+[E.W. Dijkstra Archive: On the cruelty of really teaching computing science †EWD 1036‡ - EWD1036.v4.pdf](https://www.psy.gla.ac.uk/~steve/educ/dijk/EWD1036.v4.pdf)

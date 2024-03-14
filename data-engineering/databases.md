@@ -4,6 +4,10 @@
 
 [Poor database indexing - a SQL query performance killer - recommendations](https://www.sqlshack.com/poor-database-indexing-sql-query-performance-killer-recommendations/)
 
+[I stopped worrying and learned to love denormalized tables | Hacker News](https://news.ycombinator.com/item?id=35924259)
+
+ Who decided the point of using databases is normalization? Where is that coming from? Relational databases have existed before the concept of normalization existed. Also an index is nothing more than a partial copy of a table with a different key. It denormalizes you data. Do you use indexes other than pk? 
+
 [Relational Databases Explained](https://architecturenotes.co/things-you-should-know-about-databases/)
 
 Indexes are a data structure that helps decrease the look-up time of requested data. Indexes achieve this with the additional costs of storage, memory, and keeping it up to date (slower writes), which allows us to skip the tedious task of checking every table row.
@@ -32,6 +36,58 @@ To define an optimal index you must understand more than just how indexes work�
 
 # Schema Design
 
+## [Why I Stopped Worrying and Learned to Love Denormalized Tables | Hashboard](https://hashboard.com/blog/why-i-stopped-worrying-and-learned-to-love-denormalized-tables)
+
+Normalized tables: Tables designed to avoid repeating information, keeping data organized and easy to maintain.
+Denormalized tables: Tables that have repeated information, but make data retrieval faster and simpler to understand. aka One Big Table (OBT)
+
+I’ve come full circle on the power of wide flat tables for analytics.
+
+The excellent query performance of denormalized tables in modern warehouses also make it quicker to run analyses.
+
+I could now safely build an analytics table of millions of records and build many different visualizations and analyses with simple filters and aggregations, no complex joins or CTE’s required. The many columns ensured I could flexibly create the series and aggregations I needed.
+
+[I stopped worrying and learned to love denormalized tables | Hacker News](https://news.ycombinator.com/item?id=35924259)
+
+1) Normalisation at all costs is foolish - if the cost exceeds the value, then don't do it. That isn't complicated. Denormalised data sometimes points at design flaws, but even then all systems have design flaws and they don't automatically need to be fixed. Quality is expensive, like every other property (even doing things the cheap way is expensive, ironically - software is all about managing costs).
+
+2) For any given user it is better to have denormalised data where the data model is perfectly aligned to their use case. For a system with multiple users it is better to have normalised data. And the corollary is that any data important enough to be recorded is probably valuable enough that it will eventually have multiple interested users even if the person building the system swears that this time is different - so they should normalise their data. Brownie point to anyone who has reached enlightenment and understands the you of 12 months hence is a different user with different needs of the data. 
+
+---
+
+Value of denormalization: May improve query performance for some particular use cases. (But probably not any more than using a materialized view)
+
+---
+
+It sounds like the author is calling a kind of materialized/persisted view "denormalized tables". The actual DB tables stay untouched and fully normalized.
+
+It sure makes sense to love them, views are great. I don't know why they need a new name.
+
+---
+
+For the third time this week, in relatively unrelated fields of computation science, I'm reminded of the quote: "Duplication is less expensive than the wrong abstraction".
+
+---
+
+The schemas always exist, it’s just a question of where: the database or the code that interacts with the database. 
+
+---
+
+While this talks mostly about data warehousing, oftentimes denormalization is useful for everyday web app data storage. 
+
+If your web app (usually on Postgres) is mostly frequent reads and rare writes (most web apps are) — there's no excuse for your pages to load slower than a static site. Store your data as normalized as you want, add a denormalized materialized view, update it on writes, render pages based on the view.
+
+---
+
+
+## [Separate Tables Vs One table for Select Queries](https://stackoverflow.com/questions/47647139/database-design-separate-tables-vs-one-table-for-select-queries)
+
+Normal forms:
+
+- [First normal form](https://en.wikipedia.org/wiki/First_normal_form),
+- [Second normal form](https://en.wikipedia.org/wiki/Second_normal_form),
+- [Third normal form](https://en.wikipedia.org/wiki/Third_normal_form).
+
 ## Entity Attribute Value
 
 [Replacing EAV with JSONB in PostgreSQL](https://coussej.github.io/2016/01/14/Replacing-EAV-with-JSONB-in-PostgreSQL/)
@@ -57,6 +113,109 @@ However, attribute volatility isn't usually present for most database designs, s
     DBMS optimised disk layout strategies are bypassed
 
 [Entity-Attribute-Value fallacy | Radek Maziarka](https://radekmaziarka.pl/2018/10/26/entity-attribute-value-fallacy/)
+
+## [mysql - Database design for user settings - Stack Overflow](https://stackoverflow.com/questions/10204902/database-design-for-user-settings)
+
+```
+SETTING:
++----+------------------+-------------+--------------+-----------+-----------+
+| id | description      | constrained | data_type    | min_value | max_value |
++----+------------------+-------------+--------------+-----------+-----------+
+| 10 | Favourite Colour | true        | alphanumeric | {null}    | {null}    |
+| 11 | Item Max Limit   | false       | integer      | 0         | 9001      |
+| 12 | Item Min Limit   | false       | integer      | 0         | 9000      |
++----+------------------+-------------+--------------+-----------+-----------+
+
+ALLOWED_SETTING_VALUE:
++-----+------------+--------------+-----------+
+| id  | setting_id | item_value   | caption   |
++-----+------------+--------------+-----------+
+| 123 | 10         | #0000FF      | Blue      |
+| 124 | 10         | #FFFF00      | Yellow    |
+| 125 | 10         | #FF00FF      | Pink      |
++-----+------------+--------------+-----------+
+
+USER_SETTING:
++------+---------+------------+--------------------------+---------------------+
+| id   | user_id | setting_id | allowed_setting_value_id | unconstrained_value |
++------+---------+------------+--------------------------+---------------------+
+| 5678 | 234     | 10         | 124                      | {null}              |
+| 7890 | 234     | 11         | {null}                   | 100                 |
+| 8901 | 234     | 12         | {null}                   | 1                   |
++------+---------+------------+--------------------------+---------------------+
+
+```
+
+```sql
+-- DDL and sample data population...
+CREATE TABLE SETTING
+    (`id` int, `description` varchar(16)
+     , `constrained` varchar(5), `data_type` varchar(12)
+     , `min_value` varchar(6) NULL , `max_value` varchar(6) NULL)
+;
+
+INSERT INTO SETTING
+    (`id`, `description`, `constrained`, `data_type`, `min_value`, `max_value`)
+VALUES
+    (10, 'Favourite Colour', 'true', 'alphanumeric', NULL, NULL),
+    (11, 'Item Max Limit', 'false', 'integer', '0', '9001'),
+    (12, 'Item Min Limit', 'false', 'integer', '0', '9000')
+;
+
+CREATE TABLE ALLOWED_SETTING_VALUE
+    (`id` int, `setting_id` int, `item_value` varchar(7)
+     , `caption` varchar(6))
+;
+
+INSERT INTO ALLOWED_SETTING_VALUE
+    (`id`, `setting_id`, `item_value`, `caption`)
+VALUES
+    (123, 10, '#0000FF', 'Blue'),
+    (124, 10, '#FFFF00', 'Yellow'),
+    (125, 10, '#FF00FF', 'Pink')
+;
+
+CREATE TABLE USER_SETTING
+    (`id` int, `user_id` int, `setting_id` int
+     , `allowed_setting_value_id` varchar(6) NULL
+     , `unconstrained_value` varchar(6) NULL)
+;
+
+INSERT INTO USER_SETTING
+    (`id`, `user_id`, `setting_id`, `allowed_setting_value_id`, `unconstrained_value`)
+VALUES
+    (5678, 234, 10, '124', NULL),
+    (7890, 234, 11, NULL, '100'),
+    (8901, 234, 12, NULL, '1')
+;
+```
+
+```sql
+-- Show settings for a given user
+select
+  US.user_id 
+, S1.description 
+, S1.data_type 
+, case when S1.constrained = 'true'
+  then AV.item_value
+  else US.unconstrained_value
+  end value
+, AV.caption
+from USER_SETTING US
+  inner join SETTING S1
+    on US.setting_id = S1.id 
+  left outer join ALLOWED_SETTING_VALUE AV
+    on US.allowed_setting_value_id = AV.id
+where US.user_id = 234
+```
+
+# Views
+
+Views are a way to store an alias for a query in the database.
+
+A materialized view actually runs the query and stores the results.  It's a cache for the query.
+
+Materialized views are only as accurate as the last time they ran the query they are caching.
 
 ---
 
@@ -187,6 +346,7 @@ SELECT t.id, t.name, t.slug, tr.description, tr.created_at, tr.updated_at
 [Common data model mistakes made by startups](https://www.metabase.com/learn/analytics/data-model-mistakes) [HN Discussion](https://news.ycombinator.com/item?id=27248093)
 
 [Diving Deep on S3 Consistency](https://www.allthingsdistributed.com/2021/04/s3-strong-consistency.html)
+
 
 ---
 

@@ -25,3 +25,15 @@
 ## [Why Structured Logging?](https://www.structlog.org/en/stable/why.html)
 
 Structured logging means that you don’t write hard-to-parse and hard-to-keep-consistent prose in your log entries. Instead, you log events that happen in a context of key-value pairs.
+
+[structured, leveled logging · golang/go · Discussion #54763](https://github.com/golang/go/discussions/54763) - [Hacker News](https://news.ycombinator.com/item?id=32800598)
+
+---
+
+These days I kind of wish we didn't do text logging at all. There's essentially two types of logs: fixed messages, and values.
+
+A binary logging protocol can make this definition explicit and more efficient: you're either emitting a token for the fixed message in your applications format, or you're emitting values...and a fixed token for the format string, which can be parsed and reconstructed later.
+
+Our applications don't need to be doing this sort of text formatting in them at all, and we need the developer interface to make explicit what's happening and what's important. 
+
+[Ultimate Guide to Python Debugging](https://martinheinz.dev/blog/24)

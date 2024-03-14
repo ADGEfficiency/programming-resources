@@ -11,3 +11,5 @@
 [Why Not Rust? (2020) | Hacker News](https://news.ycombinator.com/item?id=29606523)
 
 [Rust: The Next Big Thing in Data Science](https://towardsdatascience.com/rust-the-next-big-thing-in-data-science-319a03305883#82d6)
+
+[Data With Rust](https://datawithrust.com/)

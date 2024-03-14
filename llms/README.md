@@ -1,1 +1,3 @@
 [LMQL is a programming language for LLM interaction. | LMQL](https://lmql.ai/#calc)
+
+[LLM Powered Autonomous Agents | Lil'Log](https://lilianweng.github.io/posts/2023-06-23-agent/)

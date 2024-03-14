@@ -43,6 +43,8 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 ## Random Cool Stuff
 
+[dorking (how to find anything on the Internet)](https://www.alec.fyi/dorking-how-to-find-anything-on-the-internet.html)
+
 [Writing a Simple Operating System from Scratch](https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf)
 
 [The Compiler Writer Resource Page](https://c9x.me/compile/bib/)
@@ -144,6 +146,14 @@ Honeypot documentaries:
 
 
 ## Blogs & Blog Posts
+
+[RelyAbility](https://blog.relyabilit.ie/)
+- [The Curse of Systems Thinkers (Part 1)](https://blog.relyabilit.ie/the-curse-of-systems-thinkers/)
+- [Waste versus slack in production engineering](https://blog.relyabilit.ie/waste-and-slack-in-production-engineering/)
+
+[Structure and Interpretation of Computer Programmers](https://www.sicpers.info/blog/)
+- [Discipline doesn’t scale](https://www.sicpers.info/2020/10/discipline-doesnt-scale/)
+- [I’ve vastly misunderstood the Single Responsibility Principle](https://www.sicpers.info/2023/10/ive-vastly-misunderstood-the-single-responsibility-principle/)
 
 [Cuddly, Octo-Palm Tree](https://cuddly-octo-palm-tree.com/archives/)
 
@@ -304,7 +314,8 @@ Nicolas Loizeau
 [koaning.io](https://koaning.io/) - Vincent D. Warmerdam
 - [The Future of Data Science is Past](https://koaning.io/posts/the-future-is-past/)
 - [Outliers: Selection vs. Detection](https://koaning.io/posts/outliers-selection-vs-detection/)
-- [Bad Labels - koaning.io](https://koaning.io/posts/labels/)
+- [Bad Labels](https://koaning.io/posts/labels/)
+- [Introduction to Inference](https://koaning.io/posts/introduction-to-inference/)
 
 [The Digital Cat](https://www.thedigitalcatonline.com/)
 
@@ -384,6 +395,8 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 
 ## Textbooks
+
+[Crafting Interpreters](https://craftinginterpreters.com/contents.html)
 
 [Command Line Interface Guidelines](https://clig.dev/)
 

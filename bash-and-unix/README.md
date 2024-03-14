@@ -94,6 +94,10 @@ Best things in your bash_profile/aliases? - [Hacker News](https://news.ycombinat
 
 [Command-line Tools can be 235x Faster than your Hadoop Cluster](https://adamdrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html)
 
+[The UNIX Time-Sharing System](https://chsasank.com/classic_papers/unix-time-sharing-system.html)
+
+[The Evolution of the Unix Time-sharing System](https://www.bell-labs.com/usr/dmr/www/hist.pdf)
+
 ### Talks
 
 UNIX shell expansion: proper use and advanced forms - Tyson Whitehead - [talk](https://youtu.be/GXu1bZptwf4)

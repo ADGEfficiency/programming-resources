@@ -1,4 +1,12 @@
+[Why do we need HTTPS? - How HTTPS works](https://howhttps.works/why-do-we-need-https/)
+
+1. privacy,
+2. integrity,
+3. identification.
+
 [The single most important factor that differentiates front-end frameworks](https://themer.dev/blog/the-single-most-important-factor-that-differentiates-front-end-frameworks)
+
+[Using shadow DOM - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM)
 
 [Developer Tools secrets that shouldn’t be secrets](https://christianheilmann.com/2021/11/01/developer-tools-secrets-that-shouldnt-be-secrets/)
 

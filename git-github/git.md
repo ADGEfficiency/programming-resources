@@ -256,6 +256,8 @@ PRs should not replace other ways of having a conversation.
 
 ## Advanced
 
+[Modern Git Commands and Features You Should Be Using](https://martinheinz.dev/blog/109)
+
 [Cuddly, Octo-Palm Tree: The elements of git](https://cuddly-octo-palm-tree.com/posts/2021-09-19-git-elements/)
 
 Why git repos would struggle with large binary files: as every change is stored as a separate file, binary files (which typically don't compress well even for apparently small changes) will quickly take up quite a bit of space in either object or pack form.
@@ -277,6 +279,8 @@ Why git repos would struggle with large binary files: as every change is stored 
 [Deep Dive into Git - Edward Thomson](https://www.youtube.com/watch?v=dBSHLb1B8sw)
 
 [Learn the workings of Git, not just the commands](https://developer.ibm.com/tutorials/d-learn-workings-git/)
+
+[Things I think everyone should know about Git](https://perl.plover.com/classes/git-tips/) - [Things I wish everyone knew about Git (Part II)](https://blog.plover.com/prog/git/tips-2.html)
 
 ## Criticism
 
