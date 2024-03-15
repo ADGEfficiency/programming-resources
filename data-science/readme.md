@@ -1,3 +1,50 @@
+[Taming the Tail: Adventures in Improving AI Economics | Andreessen Horowitz](https://a16z.com/taming-the-tail-adventures-in-improving-ai-economics/)
+
+AI development is a process of experimenting, much like chemistry or physics.
+
+Software development, on the other hand, is a process of building and engineering.
+
+ML is essentially code that creates code (as a function of the input data)… this creates an additional layer of indirection that’s hard to reason about.
+
+---
+
+Long-tailed distributions are also extremely common in machine learning, reflecting the state of the real world and typical data collection practices
+
+Supervised learning models tend to perform well on common inputs (i.e. the head of the distribution) but struggle where examples are sparse (the tail).
+
+The raw cost of data and compute resources. These costs are often far higher for ML than for traditional software, since so much data, so many experiments, and so many parameters are required to achieve accurate results. Anecdotally, development costs – and failure rates – for AI applications can be 3-5x higher than in typical software products.
+
+The long tail can contribute to high variable costs beyond infrastructure.
+
+AI businesses working on long-tailed problems can actually show diseconomies of scale – meaning the economics get worse over time relative to competitors. Data has a cost to collect, process, and maintain. While this cost tends to decrease over time relative to data volume, the marginal benefit of additional data points declines much faster. 
+
+---
+
+Easy mode: Bounded problems
+
+Harder: Global long tail problems
+
+Really hard: Local long tail problems
+
+---
+
+Experienced ML builders shared a more general pattern called componentizing.
+
+The critical design element is that each model addresses a global slice of data – rather than a particular customer, for instance – and that the sub-problems are relatively bounded and easy to reason about. There is no substitute, it turns out, for deep domain expertise.
+
+---
+
+Several strategies can help bring the benefits of global models to local problem spaces.
+
+A near-term, practical option is the meta model pattern, in which a single model is trained to cover a range of customers or tasks. 
+
+---
+
+Build an edge case engine. You can’t address the long tail if you can’t see it. 
+
+Collecting long-tail data in a repeatable way is a critical capability for most ML teams – usually involving identifying out-of-distribution data in production (either with statistical tests or by measuring unusual model behavior), sourcing similar examples, labeling the new data, and intelligently retraining, often using active learning.
+
+
 [Data Science in Production Best Practices](https://medium.com/bcggamma/data-science-python-best-practices-fdb16fdedf82)
 
 [Good Data Scientist, Bad Data Scientist](https://ianwhitestone.work/good-ds-bad-ds/)

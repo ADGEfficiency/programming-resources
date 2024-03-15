@@ -9,6 +9,10 @@ Matplotlib Tips and Demos - [notebook](http://nbviewer.jupyter.org/urls/gist.git
 
 [Elements of Data Analytic Style](https://worldpece.org/sites/default/files/datastyle.pdf)
 
+## Cool visualizations
+
+[Electoral College Decision Tree / Observable | Observable](https://observablehq.com/@observablehq/electoral-college-decision-tree)
+
 ## d3
 
 How to learn D3.js - [text](https://wattenberger.com/blog/d3)

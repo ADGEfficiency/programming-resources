@@ -1,3 +1,5 @@
+[Running Lisp in Production](https://www.grammarly.com/blog/engineering/running-lisp-in-production/)
+
 [google/lisp-koans](https://github.com/google/lisp-koans)
 
 Common Lisp Koans is a language learning exercise in the same vein as the ruby koans, python koans and others. It is a port of the prior koans with some modifications to highlight lisp-specific features. Structured as ordered groups of broken unit tests, the project guides the learner progressively through many Common Lisp language features.

@@ -408,35 +408,9 @@ Fivetran
 - Redshift (can this be data warehosue?)
 - Postgres (can this be data warehosue?)
 
-
 ## dbt
 
-SQL + yaml + Python
-
-- use to extract data from data warehouse
-
-Modelling raw data
-
-Generate documentation
-
-https://www.getdbt.com/
-
-dbt connects to and runs SQL against your database, warehouse, platform, or query engine.
-
-## What makes dbt so powerful?
-
-As a dbt user, your main focus will be on writing models (i.e. select queries) that reflect core business logic – there’s no need to write boilerplate code to create tables and views, or to define the order of execution of your models. Instead, dbt handles turning these models into objects in your warehouse for you.
-
-dbt handles boilerplate code to materialize queries as relations. For each model you create, you can easily configure a materialization.
-
-Jinja templating
-
-
-## Who should use dbt?
-
-dbt is appropriate for anyone who interacts with a data warehouse. It can be used by data engineers, data analysts and data scientists, or anyone that knows how to write select queries in SQL.
-
-
+See ./dbt.md
 
 ## Great Expectations
 
@@ -764,3 +738,31 @@ If we go a bit deeper, I think that every data engineer should have basis in:
 - stream — Stream processing can be seen as the evolution of the batch. This is not. It addresses different use-cases. This is often linked to real-time. Main technologies around stream are bus messages like Kafka and processing framework like Flink or Spark on top of the bus. Recently all-in-one cloud services appeared to simplify the real-time work. Understand Change Data Capture — CDC.
 - infrastructure — When you do data engineering this is important to master data infrastructure concepts. You'll be seen as the most technical person of a data team and you'll need to help regarding "low-level" stuff you team. You'll be also asked to put in place a data infrastructure. It means a data warehouse, a data lake or other concepts starting with data. My advice on this point is to learn from others. Read technical blogs, watch conferences and read 📘 Designing Data-Intensive Applications (even if it could be overkill).
 - new concepts — in today's data engineering a lot of new concepts enter the field every year like quality, lineage, metadata management, governance, privacy, sharing, etc.
+
+[What is a staging area? · Start Data Engineering](https://www.startdataengineering.com/post/what-and-why-staging/)
+
+A staging area refers to an area where the raw/unprocessed data lives, before being transformed for downstream use. 
+
+Staging areas can be database tables, files in a cloud storage system, etc.
+
+The staging area stores historical snapshots of the source data.
+
+[Functional Data Engineering — a modern paradigm for batch data processing | by Maxime Beauchemin | Medium](https://maximebeauchemin.medium.com/functional-data-engineering-a-modern-paradigm-for-batch-data-processing-2327ec32c42a)
+
+Importance of reproducibility - ie back filling.
+
+To put it simply, immutable data along with versioned logic are key to reproducibility.
+
+Pure, functional tasks.
+
+DML operations like UPDATE, APPEND and DELETE are performing mutations that ripple in side-effects. Thinking of partitions as immutable blocks of data and systematically overwriting partitions is the way to make your tasks functional. A pure task should always fully overwrite a partition as its output.
+
+A persistent and immutable staging area.
+
+Given a persistent immutable staging area and pure tasks, in theory it’s possible to recompute the state of the entire warehouse from scratch (not that you should), and get to the exact same state.
+
+In many cases business rules changes over time are best expressed with data as opposed to code. In those cases it’s desirable to store this information in “parameter tables” using effective dates, and have logic that joins and apply the right parameters for the facts being processed. An oversimplified example of this would be a “taxation rate” table that would detail the rates and effective periods, as opposed to hard-coded rates wrapped in conditional blocks of code.
+
+We move away from individual rows or cells being the “atomic state” that can be mutated to a place where partitions are the smallest unit that can be changed by tasks.
+
+The lineage of any given row can be mapped to a specific task instance through its partition, and by following the graph upstream it’s possible to understand the full lineage as a set of partitions and related task instances.

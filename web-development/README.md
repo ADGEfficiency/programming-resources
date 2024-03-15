@@ -1,3 +1,7 @@
+# Domain Name Registration
+
+[namecheap.com](https://www.namecheap.com/)
+
 [Why do we need HTTPS? - How HTTPS works](https://howhttps.works/why-do-we-need-https/)
 
 1. privacy,

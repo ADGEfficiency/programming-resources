@@ -45,6 +45,8 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 [dorking (how to find anything on the Internet)](https://www.alec.fyi/dorking-how-to-find-anything-on-the-internet.html)
 
+[practical-tutorials/project-based-learning](https://github.com/practical-tutorials/project-based-learning#python) - Curated list of project-based tutorials.
+
 [Writing a Simple Operating System from Scratch](https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf)
 
 [The Compiler Writer Resource Page](https://c9x.me/compile/bib/)
@@ -147,11 +149,19 @@ Honeypot documentaries:
 
 ## Blogs & Blog Posts
 
+[5 Famous Programming Quotes, Explained](https://yc.prosetech.com/5-famous-programming-quotes-explained-4da607906c1)
+
+[new codebase, who dis? (How to Join a Team and Learn a Codebase) - Samuel Taylor](https://www.samueltaylor.org/articles/how-to-learn-a-codebase.html)
+
+[Zach Alberico - How To Become A Hacker](https://zalberico.com/essay/2020/04/19/how-to-become-a-hacker.html)
+
 [RelyAbility](https://blog.relyabilit.ie/)
+
 - [The Curse of Systems Thinkers (Part 1)](https://blog.relyabilit.ie/the-curse-of-systems-thinkers/)
 - [Waste versus slack in production engineering](https://blog.relyabilit.ie/waste-and-slack-in-production-engineering/)
 
 [Structure and Interpretation of Computer Programmers](https://www.sicpers.info/blog/)
+
 - [Discipline doesn’t scale](https://www.sicpers.info/2020/10/discipline-doesnt-scale/)
 - [I’ve vastly misunderstood the Single Responsibility Principle](https://www.sicpers.info/2023/10/ive-vastly-misunderstood-the-single-responsibility-principle/)
 
@@ -160,10 +170,6 @@ Honeypot documentaries:
 - [Tools You Should Know About: direnv](https://cuddly-octo-palm-tree.com/posts/2021-12-12-tyska-direnv/)
 - [Tools You Should Know About: nix-shell](https://cuddly-octo-palm-tree.com/posts/2021-12-19-tyska-nix-shell/)
 - [Tools You Should Know About: jq](https://cuddly-octo-palm-tree.com/posts/2021-09-26-tyska-jq/)
-
-[5 Famous Programming Quotes, Explained](https://yc.prosetech.com/5-famous-programming-quotes-explained-4da607906c1)
-
-[Zach Alberico - How To Become A Hacker](https://zalberico.com/essay/2020/04/19/how-to-become-a-hacker.html)
 
 [Nabeel S. Qureshi](https://nabeelqu.co/)
 

@@ -496,3 +496,19 @@ Four eras of data pipelines
 - not portable across cloud service providers
 
 Store events as Parquet on S3 to use with Spark
+
+[ML Engineer Guide: Feature Store vs Data Warehouse - Hopsworks](https://www.hopsworks.ai/post/feature-store-vs-data-warehouse)
+
+The feature store is a data warehouse of features for machine learning (ML). 
+
+It is a central vault for storing documented, curated, and access-controlled features that can be used across many different models.
+
+Architecturally, it differs from the traditional data warehouse in that it is a dual-database. 
+
+One database (row-oriented) serving features at low latency to online applications.
+
+The other database (column-oriented) storing large volumes of features, used by Data Scientists to create train/test datasets and by batch applications doing offline model scoring.
+
+---
+
+Often separated into offline (large batches) and online (single rows).
