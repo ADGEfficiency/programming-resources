@@ -9,6 +9,8 @@ Matplotlib Tips and Demos - [notebook](http://nbviewer.jupyter.org/urls/gist.git
 
 [Elements of Data Analytic Style](https://worldpece.org/sites/default/files/datastyle.pdf)
 
+[cxli233/FriendsDontLetFriends](https://github.com/cxli233/FriendsDontLetFriends) - Friends don't let friends make certain types of data visualization - What are they and why are they bad.
+
 ## Cool visualizations
 
 [Electoral College Decision Tree / Observable | Observable](https://observablehq.com/@observablehq/electoral-college-decision-tree)

@@ -246,10 +246,22 @@ Numpy / pandas = columar
 - example of accessing columns verus rows of dataframe
 
 
-Batch versus streaming
+## Batch versus streaming
 
 - not real time / stream at the start
 - https://www.reddit.com/r/dataengineering/comments/sfme7l/can_someone_help_me_understand_why_data_batch/
+
+[Can someone help me understand why data batch processing and data streaming processing pose such different challenges in data management? : r/dataengineering](https://www.reddit.com/r/dataengineering/comments/sfme7l/can_someone_help_me_understand_why_data_batch/)
+
+Batch requires compute & memory - often a cluster
+- can happen off times (over night)
+
+Streaming is often single record at once at high velocity
+- continuous
+- how do you deal with events out of order
+- do you process each separately or buffer up
+- requires more fault tolerance
+- can only make decisions on one record or a bounded context of records
 
 
 ## Storage layers
@@ -378,6 +390,16 @@ Databricks:
 - less managed,
 - data lakehouse (data lake + SQL),
 - Spark
+
+Data Warehouse: primarily transformed, curated and modeled data from upstream systems 
+
+Data warehouse is a theoretical concept whereas RDBMS is a vendor implementation of a relational database (i. e. SQL Server, Oracle, Postgres). Data warehouses are traditionally built on top of the RDBMSes but with somewhat different design than transactional databases (hence you'll often hear OLTP vs OLAP databases) - it is expects that data in a data warehouse will be rarely (if ever) updated; instead it is optimized for inserts and reads. Also, data is "denormalized", meaning there is a certain level of redundancy of the data in order to avoid some JOINs (because number of them in an analytical query can be very high). 
+
+Data Warehouse stores mostly transformed structured relational data. Data Lake is like a dump for all kind of data. 
+
+The idea behind data lake is, since nowadays storage became a lot cheaper, you load all the data from various sources first into the data lake, transform it afterwards and save the transformed data for example in a Data Warehouse. This process is called ELT. Prior ETL was mainly used. This means you transform the data first and then load it into a database. 
+
+Data warehouse: has structures and usually analytics ready - as name suggests, warehouse for analytics 
 
 
 ### What is a Data Mart?
@@ -766,3 +788,19 @@ In many cases business rules changes over time are best expressed with data as o
 We move away from individual rows or cells being the “atomic state” that can be mutated to a place where partitions are the smallest unit that can be changed by tasks.
 
 The lineage of any given row can be mapped to a specific task instance through its partition, and by following the graph upstream it’s possible to understand the full lineage as a set of partitions and related task instances.
+
+[Data Engineering Roadmap For 2021 - 12 Steps To Help You Go From 0 To Data Engineering - Seattle Data Guy](https://www.theseattledataguy.com/data-engineering-roadmap-for-2021-12-steps-to-help-you-go-from-0-to-data-engineering/#page-content)
+
+    Build a strong foundation in SQL, programming (Python), and Linux basics.
+    Build your first project - a Flask API to understand API development.
+    Learn about data warehousing concepts and data pipelines (ETL/ELT).
+    Build your second project applying data warehousing concepts like creating a data model, loading data into a warehouse.
+    Learn about software testing - unit tests, integration tests.
+    Learn Airflow for workflow management and Docker for containerization.
+    Gain cloud (GCP/AWS) and NoSQL database skills. Consider getting a certification.
+    Learn streaming systems like Kafka and distributed systems like Spark.
+    Start preparing for data engineering interviews.
+    Build a more comprehensive third project utilizing your full skillset.
+    Learn UI/UX and dashboarding skills.
+    Specialize in areas of your interest.
+    Give yourself room to grow by enjoying the learning process.

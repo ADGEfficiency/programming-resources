@@ -68,6 +68,8 @@ Concise GNU Bash: An Introduction to Advanced Usage - James Panacciulli @ LinuxF
 
 ### Blog Posts / Discussions
 
+[Cheating at a Company Group Activity Using Unix Tools](https://medium.com/fundbox-engineering/cheating-at-a-company-group-activity-using-unix-tools-5c1d706f3d58)
+
 [Bash Patterns I Use Weekly](https://will-keleher.com/posts/5-Useful-Bash-Patterns.html)
 
 [Gödel's Incompleteness Theorem in Bash](https://lacquer.io/math/2022/02/24/godels-incompleteness-in-bash.html)

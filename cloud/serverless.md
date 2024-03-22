@@ -40,3 +40,5 @@ $ serverless invoke --function data_ingestion --stage test --path ./test_data/te
 - event-driven
 
 [What a typical 100% Serverless Architecture looks like in AWS!](https://medium.com/serverless-transformation/what-a-typical-100-serverless-architecture-looks-like-in-aws-40f252cd0ecb)
+
+[A *magical* AWS serverless developer experience · Plain](https://www.plain.com/blog/a-magical-aws-serverless-developer-experience)

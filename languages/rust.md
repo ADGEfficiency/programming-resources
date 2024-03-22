@@ -13,3 +13,5 @@
 [Rust: The Next Big Thing in Data Science](https://towardsdatascience.com/rust-the-next-big-thing-in-data-science-319a03305883#82d6)
 
 [Data With Rust](https://datawithrust.com/)
+
+[Performance comparison: counting words in Python, Go, C++, C, AWK, Forth, and Rust](https://benhoyt.com/writings/count-words/)

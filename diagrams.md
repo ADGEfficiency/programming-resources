@@ -4,6 +4,8 @@
 
 [Online text to diagram tools | XOSH.ORG](https://xosh.org/text-to-diagram/)
 
+[nomnoml](https://nomnoml.com/) - [Hacker News](https://news.ycombinator.com/item?id=37734875)
+
 ## Tools
 
 [swimlanes.io](https://swimlanes.io/)

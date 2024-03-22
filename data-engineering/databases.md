@@ -32,6 +32,8 @@ To define an optimal index you must understand more than just how indexes workâ€
 
 # Relational Model
 
+[A Relational Model of Data for Large Shared Data Banks](https://www.seas.upenn.edu/~zives/03f/cis550/codd.pdf)
+
 [How and why the Relational Model works for databases](https://blog.the-pans.com/relational/)
 
 # Schema Design
@@ -79,6 +81,7 @@ If your web app (usually on Postgres) is mostly frequent reads and rare writes (
 
 ---
 
+## [How to Join a fact and a type 2 dimension (SCD2) table](https://www.startdataengineering.com/post/how-to-join-fact-scd2-tables/)
 
 ## [Separate Tables Vs One table for Select Queries](https://stackoverflow.com/questions/47647139/database-design-separate-tables-vs-one-table-for-select-queries)
 
@@ -337,6 +340,44 @@ SELECT t.id, t.name, t.slug, tr.description, tr.created_at, tr.updated_at
    ON t.id = tr.term_id AND tr.taxonomy = "categ"
 ```
 
+## Migrations
+
+[The Ten Rules of Schema Growth](https://blog.datomic.com/2017/01/the-ten-rules-of-schema-growth.html)
+
+Grow your schema, and never break it.
+
+Growth migrations are suitable for production, and breakage migrations are, at best, a dev-only convenience. Keep them widely separate.
+
+Use aliases for columns.
+
+[Rules of schema growth (2017) | Hacker News](https://news.ycombinator.com/item?id=38089980)
+
+SQL implementations of views are often problematic in practice due to planning complexity & overhead. In theory they should also be a good mechanism for handling writes (see "updateable views" / "writable views") but the list of caveats is long and many developers are understandably nervous about pushing lots of logic into TRIGGERs.
+
+---
+
+The central thesis revolves around continuous growth with no advice given for removal/cleanup. This is not a sound strategy for a database schema, at least for the SQL side. Column bloat, trigger bloat, index bloat... Schemas cannot continuously grow, there needs to be DROPs along the way. 
+
+---
+
+> 5.  Never remove a name. > Removing a named schema component at any level is a breaking change for programs that depend on that name. Never remove a name.
+
+I agree with this in theory and have seen it go oh so very wrong in practice. Tables with dozens of columns, some of which may be unused, invalid, actively deceiving, or at the very least confusing. Then a new developer joins and goes "A-ha! This is the way to get my data." ... except it's not and now their query is lying to users, analysts, leadership, anyone who thinks they're looking at the right data but isn't.
+
+You absolutely have to make time to deprecate and remove parts of the schema that are no longer valid. Even if it means breaking a few eggs (hopefully during a thorough test run or phased rollout) 
+
+---
+
+This x100. The most miserable and frustrating periods of my career have been in places that never deprecated anything.
+
+---
+
+There are few things more important than comprehensive and up to date database documentation. Otherwise you don't even know what your data means. An organization that cannot produce documentation like that is somewhere between amateurish and waiting for a disaster to happen, unfortunately. 
+
+---
+
+Data outlives code.
+
 [How slow is SELECT * ? - Vettabase](https://vettabase.com/how-slow-is-select/)
 
 [42 things I learned from building a production database](https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html)
@@ -512,3 +553,7 @@ The other database (column-oriented) storing large volumes of features, used by 
 ---
 
 Often separated into offline (large batches) and online (single rows).
+
+[Monarch: Googleâ€™s Planet-Scale In-Memory Time Series Database](http://www.vldb.org/pvldb/vol13/p3181-adams.pdf)
+
+[Databases, Types and the Relational Model - Third Manifesto](https://www.dcs.warwick.ac.uk/~hugh/TTM/DTATRM.pdf)

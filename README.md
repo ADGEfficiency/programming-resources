@@ -43,6 +43,10 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 ## Random Cool Stuff
 
+[Content Tests @ The Open Buddhist University](https://buddhistuniversity.net/tests/content)
+
+[cbonsai](https://gitlab.com/jallbrit/cbonsai) - a bonsai tree generator that intelligently creates, colors, and positions a bonsai tree.
+
 [dorking (how to find anything on the Internet)](https://www.alec.fyi/dorking-how-to-find-anything-on-the-internet.html)
 
 [practical-tutorials/project-based-learning](https://github.com/practical-tutorials/project-based-learning#python) - Curated list of project-based tutorials.
@@ -52,6 +56,8 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 [The Compiler Writer Resource Page](https://c9x.me/compile/bib/)
 
 [The Tao of Programming](https://www.mit.edu/~xela/tao.html)
+
+[The Codeless Code](https://www.lulu.com/shop/qi-/the-codeless-code/hardcover/product-m9mj9y.html?page=1&pageSize=4) - fables and Kōans for the software engineer.
 
 [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)
 
@@ -113,6 +119,8 @@ Honeypot documentaries:
 
 ## Articles
 
+[The Tyranny of Spreadsheets | Tim Harford](https://timharford.com/2021/07/the-tyranny-of-spreadsheets/)
+
 [DeepDream: How Alexander Mordvintsev Excavated the Computer’s Hidden Layers](https://thereader.mitpress.mit.edu/deepdream-how-alexander-mordvintsev-excavated-the-computers-hidden-layers/)
 
 [The Secret Auction That Set Off the Race for AI Supremacy](https://www.wired.com/story/secret-auction-race-ai-supremacy-google-microsoft-baidu/)
@@ -149,11 +157,23 @@ Honeypot documentaries:
 
 ## Blogs & Blog Posts
 
+[5 Computer Science Papers That Changed How I Write Code](https://builtin.com/software-engineering-perspectives/5-computer-science-papers-changed-how-write-code)
+
 [5 Famous Programming Quotes, Explained](https://yc.prosetech.com/5-famous-programming-quotes-explained-4da607906c1)
 
 [new codebase, who dis? (How to Join a Team and Learn a Codebase) - Samuel Taylor](https://www.samueltaylor.org/articles/how-to-learn-a-codebase.html)
 
 [Zach Alberico - How To Become A Hacker](https://zalberico.com/essay/2020/04/19/how-to-become-a-hacker.html)
+
+[Erik Bernhardsson](https://erikbern.com/top-posts.html)
+
+- [The hacker's guide to uncertainty estimates](https://erikbern.com/2018/10/08/the-hackers-guide-to-uncertainty-estimates)
+- [Building a data team at a mid-stage startup: a short story](https://erikbern.com/2021/07/07/the-data-team-a-short-story)
+- [Software infrastructure 2.0: a wishlist](https://erikbern.com/2021/04/19/software-infrastructure-2.0-a-wishlist)
+
+[Seth Goldin](https://goldin.io/blog)
+
+- [Stop Using TODO for Everything](https://goldin.io/blog/stop-using-todo)
 
 [RelyAbility](https://blog.relyabilit.ie/)
 
@@ -344,6 +364,8 @@ Nicolas Loizeau
 
 
 ## Courses
+
+[Opinionated Guides on Engineering](https://opguides.info/engineering/engineering/)
 
 [The Debugging Guide](https://uchicago-cs.github.io/debugging-guide/)
 

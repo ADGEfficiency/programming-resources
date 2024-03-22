@@ -2,6 +2,10 @@
 
 [namecheap.com](https://www.namecheap.com/)
 
+---
+
+[microsoft/Web-Dev-For-Beginners: 24 Lessons, 12 Weeks, Get Started as a Web Developer](https://github.com/microsoft/Web-Dev-For-Beginners/tree/main)
+
 [Why do we need HTTPS? - How HTTPS works](https://howhttps.works/why-do-we-need-https/)
 
 1. privacy,

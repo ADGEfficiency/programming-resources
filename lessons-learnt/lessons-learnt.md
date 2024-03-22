@@ -6,6 +6,48 @@
 
 [(A few) Ops Lessons We All Learn The Hard Way](https://www.netmeister.org/blog/ops-lessons.html)
 
+[An Old Hacker's Tips On Staying Employed - The Mad Ned Memo](https://madned.substack.com/p/an-old-hackers-tips-on-staying-employed)
+
+## Develop your personal brand
+
+Brand loyalty is a thing, and even if you do not slavishly follow it, you are probably at least somewhat likely to return to something you know is of good quality than take a risk on something unknown.
+
+Personal brand also works like that. When you work on a project, even a crappy project, your personal brand is on display for all potential shoppers to see. And even when everything is going south, others will notice which people are easy to work with, which people can be relied upon to do what they said they would do, and which people consistently produce a quality result.
+
+## Make Your Boss Afraid
+
+Afraid of what will happen, if you ever decide to leave.
+
+## Make Your Boss Happy
+
+What it means is, putting yourself in your boss’s shoes, and thinking about what they need to be able to succeed in their boss’s eyes.
+
+Give your boss stuff they can use. Maybe it’s ideas and suggestions about how to frame or present work the group has done, or explain problems you have faced. Maybe it’s a little bit of bonus content from time to time, that can be highlighted in a status report. Maybe it’s helping to defuse a situation that would make your boss or the group look bad. Sometimes it takes a little imagination to put yourself in your boss’s place, or maybe even some investigation on your part to find out what your boss’s true care-about’s really are, but this is worthwhile to do in general, anyway.
+
+When your boss takes credit for your work, it is usually (unless you have an awful boss, anyway) done in a way that helps him or her, while simultaneously raising your visibility in the company, and improving your personal brand. 
+
+## The “Do It Anyway” Principle
+
+Two categories of people:
+
+1. Those who were vocal about their frustrations and frequently cited the environmental issues as reasons for delayed or unfinished tasks.
+2. Those who found ways to succeed and complete their assigned tasks anyway, despite the constraints imposed by the poor work environment.
+
+Adopting a mindset of treating obstacles as unnecessary challenges to overcome, almost like games. This mindset helped them push through difficult situations.
+
+Regardless of external factors hindering productivity, employees are still measured and evaluated based on what they deliver. Those who can find ways to succeed despite adversity will have an advantage over those who cannot or choose not to.
+
+## Two and Done
+
+The "Two-And-Done" rule is about giving yourself two chances to make your case on a disagreement:
+
+1. State your viewpoint and reasoning the first time.
+2. If not accepted, make your case again a second time, perhaps rephrasing or refining your argument.
+
+If you fail to convince others after the second attempt, gracefully concede and get behind the agreed-upon decision. Don't undermine or sabotage it.If you fail to convince others after the second attempt, gracefully concede and get behind the agreed-upon decision. Don't undermine or sabotage it.
+
+Be effective rather than stubbornly trying to always be right. 
+
 [My First Year as a Data Scientist](https://codebuildrepeat.blogspot.com/2020/03/my-first-year-as-data-scientist.html)
 
 Use databases instead of flat files.

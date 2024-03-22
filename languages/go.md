@@ -15,3 +15,5 @@
 [templ](https://templ.guide/) - Create components that render fragments of HTML and compose them to create screens, pages, documents, or apps.
 
 [hoanhan101/algo: 101+ coding interview problems in Go](https://github.com/hoanhan101/algo)
+
+[Performance comparison: counting words in Python, Go, C++, C, AWK, Forth, and Rust](https://benhoyt.com/writings/count-words/)

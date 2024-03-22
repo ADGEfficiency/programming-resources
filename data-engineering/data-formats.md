@@ -51,3 +51,7 @@ JSON Graph is a convention for modeling graph information as a JSON object.
     ]
 }
 ```
+
+[crawshaw - 2021-11-25](https://crawshaw.io/blog/thankful-for-technology)
+
+JSON is the worst form of encoding — except for all the others that have been tried. It’s complicated, but not too complicated. It’s not easily read by humans, but it can be read by humans. It is possible to extend it in intuitive ways. When it gets printed onto your terminal, you can figure out what’s going on without going and finding the magic decoder ring of the week. It makes some things that are extremely hard with XML or INI easy, without introducing accidental Turing completeness or turning country codes into booleans. Writing software is better for it, and shows the immense effect carefully describing something can do for programming. JSON was everywhere in our JavaScript before the term was defined, the definition let us see it and use it elsewhere.

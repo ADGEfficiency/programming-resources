@@ -1,3 +1,5 @@
+[Let's make faster GitLab CI/CD pipelines](https://blog.nimbleways.com/let-s-make-faster-gitlab-ci-cd-pipelines/)
+
 [Testing Firefox more efficiently with machine learning - Mozilla Hacks - the Web developer blog](https://hacks.mozilla.org/2020/07/testing-firefox-more-efficiently-with-machine-learning/)
 
 So how do we keep our CI load manageable? 

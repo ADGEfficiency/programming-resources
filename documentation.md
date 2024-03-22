@@ -26,3 +26,13 @@ Extends Markdown with custom syntax that meets the needs of our documentation pl
 [Markdoc](https://markdoc.dev/)
 
 Requires an Express app / Javascript backend.
+
+[An Engineer's Best Tips for Writing Documentation Devs Love - The New Stack](https://thenewstack.io/an-engineers-best-tips-for-writing-documentation-devs-love/)
+
+Writers should value their readers’ time — and always try to get to the point.
+
+Examples should always show actual real-world problems – since so many readers will be jumping straight to your code samples.
+
+Always verify your instructions before publishing documentation.
+
+The only thing worse than no documentation is incorrect documentation.
