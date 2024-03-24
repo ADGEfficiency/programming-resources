@@ -1,3 +1,16 @@
+[Shopify's Data Science & Engineering Foundations](https://shopify.engineering/shopifys-data-science-engineering-foundations)
+
+[Shopify's Data Science and Engineering Foundations (2020) | Hacker News](https://news.ycombinator.com/item?id=30643677)
+
+> It sounds like they have data science and data engineering in one organization. Is that team structure something that others have seen work well?
+
+I've been in orgs where it was on same team, and on different teams, both as a modeler and a data engineer. So far, I personally prefer when they're on the same team.
+
+Pros of same-team: fewer ideas "lost in translation" between data scientists and data engineers, better understanding of which datasets/flows are top priority, can sometimes share some stack components and help datascientists improve their code, better chances of getting data scientists to contribute their own batch jobs (there's just more trust as opposed to dealing with some "engineering" team that is less connected to you)
+
+Cons of same team: data engineers may not be as in-the-loop on what's happening with production datasets, may not be as tightly integrated with a devops team, may get overly caught up in "business logic" as opposed to "plumbing". 
+
+
 [Taming the Tail: Adventures in Improving AI Economics | Andreessen Horowitz](https://a16z.com/taming-the-tail-adventures-in-improving-ai-economics/)
 
 AI development is a process of experimenting, much like chemistry or physics.

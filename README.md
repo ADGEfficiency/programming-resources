@@ -43,6 +43,8 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 ## Random Cool Stuff
 
+[The Grug Brained Developer](https://grugbrain.dev/)
+
 [Content Tests @ The Open Buddhist University](https://buddhistuniversity.net/tests/content)
 
 [cbonsai](https://gitlab.com/jallbrit/cbonsai) - a bonsai tree generator that intelligently creates, colors, and positions a bonsai tree.
@@ -164,6 +166,10 @@ Honeypot documentaries:
 [new codebase, who dis? (How to Join a Team and Learn a Codebase) - Samuel Taylor](https://www.samueltaylor.org/articles/how-to-learn-a-codebase.html)
 
 [Zach Alberico - How To Become A Hacker](https://zalberico.com/essay/2020/04/19/how-to-become-a-hacker.html)
+
+[Pain We Forgot](http://lighttable.com/2014/05/16/pain-we-forgot/)
+
+[Dev tools: The ex-Googler guide](https://sourcegraph.com/blog/ex-googler-guide-dev-tools)
 
 [Erik Bernhardsson](https://erikbern.com/top-posts.html)
 
@@ -364,6 +370,8 @@ Nicolas Loizeau
 
 
 ## Courses
+
+[codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) - master programming by recreating your favorite technologies from scratch.
 
 [Opinionated Guides on Engineering](https://opguides.info/engineering/engineering/)
 

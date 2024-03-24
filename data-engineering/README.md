@@ -73,9 +73,13 @@ Data warehouse = analytics database:
 - different data layout (columnar) = better for analytics,
 - use when you hit limits with transactional
 
+The data warehouse is meant to be a repository of the clean, integrated data structured to support analysis
+
 Athena - easy way to do SQL over S3 data (acts like a relational database).
 
 Streamining / queueing
+
+Stream processing is infrastructure for continuous data processing.
 
 NoSQL
 
@@ -804,3 +808,45 @@ The lineage of any given row can be mapped to a specific task instance through i
     Learn UI/UX and dashboarding skills.
     Specialize in areas of your interest.
     Give yourself room to grow by enjoying the learning process.
+
+[A 2020 Reader's Guide to The Data Warehouse Toolkit](https://www.holistics.io/blog/how-to-read-data-warehouse-toolkit/)
+
+Guide to how to read the Kimball book:
+
+Four-step dimensional modeling design process.
+
+Basic fact table techniques — the three kinds of fact tables, along with a fourth, rarely used kind.
+
+Basic dimension table techniques — degenerate dimensions, multiple hierarchies, and the relatively short discussion on surrogate, natural, durable, and supernatural keys.
+
+Integration via Conformed Dimensions — You want to pay special attention to the Enterprise Data Warehouse Bus Architecture and Matrix along with the Opportunity/Stakeholder Matrix. Note that this is mostly due to historical reasons — this architecture is not recommended today, given the power of cloud-based data warehouses. But it’s still useful to read up on this, because it will give you a deeper appreciation for the ‘covered ground’ in our field.
+
+Dealing with Slowly Changing Dimension Attributes — read all of this. It’s still relevant. Then, for a modern update, check out Slowly Changing Dimensions in The Age of The Cloud Data Warehouse.
+
+Dealing with Dimension Hierarchies — Go through everything in here as well; this mostly lets you know that certain business scenarios might require you to deal with weird dimensional hierarchies (e.g. an employee table where peers can also be managers of each other, within the context of specific projects), and the set of ideas presented here will expand your toolbox.
+
+Advanced Fact Table Techniques — You’ll want to skim through Multiple Currency Facts and Timespan Tracking in Fact Tables, depending on your business domain, but more importantly you want to read Late Arriving Facts, since this is a commonly occurring pattern.
+
+Advanced Dimension Techniques — You’ll want to read Audit Dimensions — because this has to do with data quality, and it’s been adapted quite successfully to modern analytics (read more here); you’ll also want to read up on Late Arriving Dimensions.
+
+Special Purpose Schemas — The most generally useful idea here is Error Event Schemas, which is a nice addition to audit dimensions. Again, this is a data quality thing, and as Uber has demonstrated, still quite applicable to the contemporary practice of analytics.
+
+[The Three Types of Fact Tables](https://www.holistics.io/blog/the-three-types-of-fact-tables/)
+
+## Transaction fact tables
+
+A customer or business process does some thing; you want to capture the occurrence of that thing, and so you record a transaction in your data warehouse and you’re good to go.
+
+## Periodic snapshot tables
+
+A row in a periodic snapshot fact table captures some sort of periodic data — for instance, a daily snapshot of financial metrics, or perhaps a weekly summary of accounts receivable, or a monthly tally of inventory numbers.
+
+The ‘grain’ or ‘level of resolution’ is the period, not the individual transaction. Note that if no transactions occur during a certain period, a new row must be inserted into the periodic snapshot table, even if every fact that is saved is a null!
+
+## Accumulating snapshot tables
+
+The accumulating snapshot fact table is thus a method to measure velocity within the business process.
+
+Measures a lag indicator — that is, the difference between two dates.
+
+[Understanding Parquet, Iceberg and Data Lakehouses at Broad](https://davidgomes.com/understanding-parquet-iceberg-and-data-lakehouses-at-broad/)

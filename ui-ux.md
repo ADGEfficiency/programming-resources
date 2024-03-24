@@ -1,3 +1,25 @@
+[Rules for developers to design beautiful UIs without a designer | Hacker News](https://news.ycombinator.com/item?id=35529240)
+
+Design is how it works, not how it looks
+
+---
+
+Design is also how things look, and how things look can be important.
+
+Consumers care about how things look. If we dismiss presentation and drive people towards UX stuff every time it comes up, then the people we talk to are going to end up having good ideas that no one buys because the packaging is a mess.
+
+---
+
+How it looks is a huge part of how it works. 
+
+---
+
+Beauty matters the first time you use it, whereas functionality matters every single time.
+
+---
+
+In B2C aesthetics are important. In B2B it's usually ease and speed of operation that's more important 
+
 [Your users will do what you make easy | Handmade Network](https://c3.handmade.network/blog/p/8208-when_making_things_easy_is_bad)
 
 One does have some responsibility to make things easy that should be used, and hard if they shouldn't be used (often).

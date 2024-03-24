@@ -38,6 +38,8 @@ To add
 
 [(A few) Ops Lessons We All Learn The Hard Way](https://www.netmeister.org/blog/ops-lessons.html)
 
+Use as a template [Classic SE Mistakes by Steve McConnell • Jonathan Cook](https://www.cs.nmsu.edu/~jcook/posts/classic-se-mistakes-mcconnell/)
+
 ---
 This blog post summarizes X blog posts written by programmers about lessons they have learnt.  It's a lesson of lessons post.
 
