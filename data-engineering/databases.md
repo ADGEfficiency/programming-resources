@@ -378,6 +378,10 @@ There are few things more important than comprehensive and up to date database d
 
 Data outlives code.
 
+[Databases have failed the web](https://josephg.com/blog/databases-have-failed-the-web/)
+
+Databases only talk custom binary TCP protocols, not HTTP. Not REST. Not websockets. So you need something to translate between how the server works and how the browser works. 
+
 [How slow is SELECT * ? - Vettabase](https://vettabase.com/how-slow-is-select/)
 
 [42 things I learned from building a production database](https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html)

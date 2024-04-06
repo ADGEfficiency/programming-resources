@@ -99,6 +99,8 @@ Honeypot documentaries:
 
 [dwmkerr/hacker-laws](https://github.com/dwmkerr/hacker-laws) - Laws, Theories, Principles and Patterns that developers will find useful.
 
+[Lehman's laws of software evolution](https://en.wikipedia.org/wiki/Lehman%27s_laws_of_software_evolution)
+
 [Richard Hamming - You and Your Research Lecture](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
 
 [The Architecture of Open Source Applications](https://www.aosabook.org/en/index.html) - Architects look at thousands of buildings during their training, and study critiques of those buildings written by masters. In contrast, most software developers only ever get to know a handful of large programs well—usually programs they wrote themselves—and never study the great programs of history. As a result, they repeat one another's mistakes rather than building on one another's successes. 
@@ -157,6 +159,13 @@ Honeypot documentaries:
 [Please Don't Learn to Code](https://blog.codinghorror.com/please-dont-learn-to-code/)
 
 
+## Falsehoods
+
+[Falsehoods CS Students (Still) Believe Upon Graduating](https://www.netmeister.org/blog/cs-falsehoods.html)
+
+[Falsehoods Programmers Believe About Falsehoods Lists](https://kevin.deldycke.com/2016/12/falsehoods-programmers-believe-about-falsehoods-lists/)
+
+
 ## Blogs & Blog Posts
 
 [5 Computer Science Papers That Changed How I Write Code](https://builtin.com/software-engineering-perspectives/5-computer-science-papers-changed-how-write-code)
@@ -169,7 +178,24 @@ Honeypot documentaries:
 
 [Pain We Forgot](http://lighttable.com/2014/05/16/pain-we-forgot/)
 
+[Writing for Engineers](https://www.heinrichhartmann.com/posts/writing/)
+
 [Dev tools: The ex-Googler guide](https://sourcegraph.com/blog/ex-googler-guide-dev-tools)
+
+[Seph](https://josephg.com/blog/3-tribes/)
+
+- [Databases have failed the web](https://josephg.com/blog/databases-have-failed-the-web/)
+- [3 tribes of programming](https://josephg.com/blog/3-tribes/)
+
+[Brains to Bytes](https://www.brainstobytes.com)
+
+- [It's Fine, Nobody Can Remember Everything](https://www.brainstobytes.com/no-one-can-remember-everything/)
+- [On Abstraction and Coupling](https://www.brainstobytes.com/on-abstraction-and-coupling/)
+
+[jorzel](https://jorzel.github.io/)
+
+- [Continuous learning framework](https://jorzel.github.io/continuous-learning-framework/)
+- [Continuous Learning Framework vol. 2](https://jorzel.github.io/continuous-learning-framework-vol-2/)
 
 [Erik Bernhardsson](https://erikbern.com/top-posts.html)
 
@@ -431,6 +457,8 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 
 ## Textbooks
+
+[How to be a Programmer](https://www.arl.wustl.edu/projects/fpx/research/HowToBeAProgrammer.pdf)
 
 [Crafting Interpreters](https://craftinginterpreters.com/contents.html)
 

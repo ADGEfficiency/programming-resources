@@ -267,6 +267,22 @@ Streaming is often single record at once at high velocity
 - requires more fault tolerance
 - can only make decisions on one record or a bounded context of records
 
+## Streaming
+
+[Batch is a special case of streaming](https://www.ververica.com/blog/batch-is-a-special-case-of-streaming#:~:text=When%20a%20batch%20processor%20reads,%E2%80%9Cchaining%E2%80%9D%20operators%20together)
+
+Streaming is a proper superset of batch, and batch can be served equally well, if not better, with a new breed of modern streaming engines.
+
+Unbounded data is infinite, ever-growing data stream, bounded data for a data stream that happens to have a beginning and an end (data ingestion stops after a while). An unbounded data stream includes (is a superset of) the notion of a bounded data set.
+
+Flink accumulates records in buffers, and ships these buffers over the network when they are full. 
+
+This style of processing can emulate both record-by-record processing (regard a buffer as “full” when it has one record), pure batch processing (retain all buffers in memory and disk until the result has been fully materialized), and, interestingly, a sweet spot in the middle, which is the default behavior of Flink and can achieve very high throughput. 
+
+The little secret of batch processors is that they always include a hidden streaming component. When a batch processor reads a file, it streams the file to the first operator.
+
+The Lambda architecture advocates using a batch system for the “heavy lifting”, augmenting it with a streaming system that “catches up” with data ingestion producing early, but maybe incomplete, results. Then, separate logic tries to “merge” the produced results for serving.
+
 
 ## Storage layers
 

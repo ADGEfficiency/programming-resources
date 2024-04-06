@@ -1,3 +1,9 @@
+[Principle](https://principle.app/) - Principle makes it easy to design animated and interactive user interfaces. Whether you're designing the flow of a multi-screen app, or new interactions and animations, Principle helps you create designs that look and feel amazing.
+
+[UX & Usability Articles from Nielsen Norman Group](https://www.nngroup.com/articles/)
+
+[Laws of UX](https://lawsofux.com/)
+
 [Rules for developers to design beautiful UIs without a designer | Hacker News](https://news.ycombinator.com/item?id=35529240)
 
 Design is how it works, not how it looks

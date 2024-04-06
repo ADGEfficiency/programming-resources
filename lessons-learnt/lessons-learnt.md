@@ -1,10 +1,20 @@
 [Drunk Post: Things I've learned as a Sr Engineer](https://www.reddit.com/r/ExperiencedDevs/comments/nmodyl/drunk_post_things_ive_learned_as_a_sr_engineer/)
 
-[General guidance when working as a cloud engineer](https://www.lockedinspace.com/posts/001.html)
+[(A few) Ops Lessons We All Learn The Hard Way](https://www.netmeister.org/blog/ops-lessons.html)
 
 [How to Build Software like an SRE — willett dot io](https://www.willett.io/posts/precepts/)
 
-[(A few) Ops Lessons We All Learn The Hard Way](https://www.netmeister.org/blog/ops-lessons.html)
+Never give up on local testing. It keeps dev cycle time much shorter than needing to rely on (and fiddle with) CI or remote workspaces. Containerizing the local test environment can make it easier to keep dependencies straight and consistent across machines.
+
+Use Git. Use it for everything – infrastructure, configuration, code, dashboards, on-call rotations. Your git repository is your point-in-time-recoverable source of truth.
+
+[General guidance when working as a cloud engineer](https://www.lockedinspace.com/posts/001.html)
+
+Before jumping straight into a new technology, read and understand their docs. Eventually, it will save you time and lots of headaches. E.g: If you want to learn a new language, you should first understand the basic blocks of that technology such as (data types, interpolations, variables, assignments, etc.)
+
+A good monitoring system, well-organized repository, fault-tolerance workloads and automation mechanisms are the basis of any architecture.
+
+When bad things happen, remember that a wider view is your best ally.
 
 [An Old Hacker's Tips On Staying Employed - The Mad Ned Memo](https://madned.substack.com/p/an-old-hackers-tips-on-staying-employed)
 

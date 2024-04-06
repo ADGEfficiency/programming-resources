@@ -1,178 +1,39 @@
 <!-- vim-markdown-toc GFM -->
 
-* [Think in Tradeoffs](#think-in-tradeoffs)
-* [Pick the Right Tool](#pick-the-right-tool)
-* [Read](#read)
-* [Write](#write)
-* [Teach](#teach)
-* [Document](#document)
-* [Be Paranoid](#be-paranoid)
-* [Keep It Simple](#keep-it-simple)
-* [What To Work On](#what-to-work-on)
-* [What to build a business around](#what-to-build-a-business-around)
-* [Importance of Customers](#importance-of-customers)
-* [Design](#design)
-* [Iterate](#iterate)
-    * [Perfection](#perfection)
-* [When to Start Coding](#when-to-start-coding)
-* [Writing Good Code](#writing-good-code)
-    * [Who to write code for](#who-to-write-code-for)
-    * [Tests](#tests)
-    * [State](#state)
-    * [errors](#errors)
-* [Maintenance](#maintenance)
-* [Work Well With Others](#work-well-with-others)
-    * [criticism](#criticism)
-    * [Seniority](#seniority)
-    * [PR Reviews](#pr-reviews)
-* [Web Development Advice](#web-development-advice)
-* [Data Science Advice](#data-science-advice)
+* [Business](#business)
+    * [What to build a business around](#what-to-build-a-business-around)
+    * [Importance of Customers](#importance-of-customers)
+* [Technology](#technology)
+    * [When to Start Coding](#when-to-start-coding)
+    * [Source Control](#source-control)
+    * [Writing Good Code](#writing-good-code)
+        * [Who to write code for](#who-to-write-code-for)
+        * [Tests](#tests)
+        * [State](#state)
+        * [errors](#errors)
+    * [Maintenance](#maintenance)
+    * [Monitoring](#monitoring)
+* [People](#people)
+    * [design](#design)
+    * [Work Well With Others](#work-well-with-others)
+        * [criticism](#criticism)
+        * [Seniority](#seniority)
+        * [PR Reviews](#pr-reviews)
+* [Domain Specific Advice](#domain-specific-advice)
+    * [Web Development Advice](#web-development-advice)
+    * [Data Science Advice](#data-science-advice)
 
 <!-- vim-markdown-toc -->
----
-To add
-
-[General guidance when working as a cloud engineer](https://www.lockedinspace.com/posts/001.html)
-
-[How to Build Software like an SRE — willett dot io](https://www.willett.io/posts/precepts/)
-
-[(A few) Ops Lessons We All Learn The Hard Way](https://www.netmeister.org/blog/ops-lessons.html)
-
-Use as a template [Classic SE Mistakes by Steve McConnell • Jonathan Cook](https://www.cs.nmsu.edu/~jcook/posts/classic-se-mistakes-mcconnell/)
 
 ---
-This blog post summarizes X blog posts written by programmers about lessons they have learnt.  It's a lesson of lessons post.
 
-References are included for each section, with a full list of references at the end.
-
-quote from bismark - learn from others
-
-## Think in Tradeoffs
-[[kindle/Mckeown-Essentialism]]
-
-These problems also didn’t have true or false answers, only better or worse solutions.
-
-As economist Thomas Sowell wrote: “There are no solutions. There are only trade-offs.”7 Jim Collins, — location: [589](kindle://book?action=open&asin=B00HELB6XI&location=589) ^ref-16676
-
-Most engineering decisions are not good versus bad choices - they are balances of tradeoffs. A solution to a problem always has both upsides and downsides.
-
-An example is made by [Alex Ewerlöf](https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c), who highlights UX, security and performance often fight against each other..
-
-You cannot deliver a secure, compact and well-fitted project if your biggest priority is delivering it as fast as possible. - https://www.lockedinspace.com/posts/001.html
-
-[Nemil Dalal](https://nemil.com/on-software-engineering) offers a framework for analyzing a solution is:
-
-- Note the advantages,
-- Note the disadvantages,
-- Describe a context where the solutions works,
-- Note key areas of uncertainty.
-
-References:
-
-- https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c
-- [Think in Tradeoffs](https://nemil.com/2019/06/30/think-in-tradeoffs/)
-- https://nemil.com/on-software-engineering
-
-## Pick the Right Tool
-
-A great example of tradeoff is choosing what tools to work with.
-
-Choosing what tools you depend on is full of tradeoffs.
-
-[Daniel Bourke](https://towardsdatascience.com/12-things-i-learned-during-my-first-year-as-a-machine-learning-engineer-2991573a9195) and  
-[Alex Ewerlöf](https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c) and 
-[Justin Etheredge](https://www.simplethread.com/20-things-ive-learned-in-my-20-years-as-a-software-engineer) all suggest favouring stable, older tools over state of the art, hype-driven tools.
-
-Code itself is a tool with downside - [Nemil Dalal](https://nemil.com/on-software-engineering) notes that code requires maintenance and leads to bugs.
-
-[Justin Etheredge](https://www.simplethread.com/20-things-ive-learned-in-my-20-years-as-a-software-engineer) notes that best code is no-code, or code you don't maintain.
-
-Relying on code you don't maintain is however (you guessed it) a dependency.
-
-Closely related to choosing tools is choosing dependencies.  
-
-Choosing whether to build something yourself or use someone elses solution i a tradeoff.
-
-Dependencies can save time, but they also come with their own opinions and hygiene attached.
-
-[Nemil Dalal](https://nemil.com/on-software-engineering) suggests strive for smaller system. 
-
-Both [Samer Buna](https://medium.com/edge-coders/the-mistakes-i-made-as-a-beginner-programmer-ac8b3e54c312) and [Alex Ewerlöf](https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c) suggest to not reinvent the wheel - avoiding the 'not invented here bias' that many proggrammers fall foul of.
-
-## Read
-
-Programming is not only about writing code - it's also about reading code.
-
-[Nemil Dalal](https://nemil.com/on-software-engineering) suggests to read code of libraries you depend on.
-
-## Write
-
-[Nabeel S. Qureshi](https://nabeelqu.co/advice), [Mahesh Balakrishnan](https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html) and [Justin Etheredge](https://www.simplethread.com/20-things-ive-learned-in-my-20-years-as-a-software-engineer) all suggest to write.
-
-[Mahesh Balakrishnan](https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html) suggests to write for an audience that has zero context on what you are doing will force you to examine and clarify your assumptions. 
-
-## Teach
-
-[Alex Ewerlöf](https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c), [Aphinya Dechalert](https://medium.com/madhash/the-marks-of-a-true-senior-developer-d5f3b11c3375) and [Mike Bostock](https://observablehq.com/@mbostock/10-years-of-open-source-visualization) all advorate for teaching.
-
-[Mike Bostock](https://observablehq.com/@mbostock/10-years-of-open-source-visualization) lists teaching as the most important aspect of building tools.
-
-## Document
-
-Both [Neil Kakkar](https://neilkakkar.com/things-I-learnt-from-a-senior-dev.html) and [Alex Ewerlöf](https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c) suggest great code is documented.
-
-Documentation is one of the most contraversial topics in programming.
-
-A key problem with documentation is the possibility of inconsistency - documentation can sometimes lie.
-
-don't comment the obvious stuff (maybe better in documentation) - https://medium.com/edge-coders/the-mistakes-i-made-as-a-beginner-programmer-ac8b3e54c312
-
-Many programmers think code should be self-documenting - that the code itself is written in a way that it's understandable without external documentation. [Hillel Wayne](https://buttondown.email/hillelwayne/archive/the-myth-of-self-documenting-code/) disagrees with this.
-
-## Be Paranoid
-
-Many programmers advise a healthy degree of skepticism and paranoia.
-
-Both [Rafael Quintanilha](https://www.rafaelquintanilha.com/how-to-become-a-bad-developer/) and [Samer Buna](https://medium.com/edge-coders/the-mistakes-i-made-as-a-beginner-programmer-ac8b3e54c312) suggest to assume there are always bugs.
-
-You should be able to detect problems in your service before your customer does - https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html
-
-[Alex Ewerlöf](https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c) and [Samer Buna](https://medium.com/edge-coders/the-mistakes-i-made-as-a-beginner-programmer-ac8b3e54c312) both suggest that we should welcome errors, fail early and handle errors well. 
-
-
-## Keep It Simple
-
-simplicity - https://www.bti360.com/what-ive-learned-in-45-years-in-the-software-industry/
-
-## What To Work On
-
-The trick is to recognise when it’s time to move on. (NA) - https://www.baldurbjarnason.com/2021/100-things-every-web-developer-should-know/
-
-Take on big projects. Get uncomfortable. - https://archive.jlongster.com/How-I-Became-Better-Programmer
-
-take breaks - https://medium.com/edge-coders/the-mistakes-i-made-as-a-beginner-programmer-ac8b3e54c312
-
-Sturgeon’s law applies to your work as well. Don’t linger on one project forever. Make new things. That’s the only way to learn. - https://www.baldurbjarnason.com/2021/100-things-every-web-developer-should-know/
-
-Don't solve problems that don't exist - https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c
-
-Develop Your Personal Brand
-
-Have personal projects - https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c
-
-Take on big projects. Get uncomfortable.
-
-Don't solve problems that don't exist.
-
-The hardest part of software is building the right thing - https://www.simplethread.com/20-things-ive-learned-in-my-20-years-as-a-software-engineer/ (can talk more about failure demand here)
-
-Concentrate your resources on a small number of high-conviction bets
+# Business
 
 ## What to build a business around
 
-business impact
+[Baldur Bjarnason](https://www.baldurbjarnason.com/2021/100-things-every-web-developer-should-know/)
 
-manage expectations - https://towardsdatascience.com/what-separates-good-from-great-data-scientists-2906431455fd
+Most ‘innovative’ tech startups face what I like to call ‘the clear field problem’. Whenever you have an app or business idea that nobody else seems to have done successfully before, it’s never because you are particularly clever or original. It’s always because everybody else who has tried is now dead in a ditch somewhere (metaphorically speaking).
 
 Innovation isn't important.
 
@@ -184,11 +45,13 @@ Never go up against a free service from a multinational. At least, never directl
 
 ## Importance of Customers
 
-Customers are the most important thing. https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html
+[Mahesh Balakrishnan](https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html)
 
-There is an optimal number and type of customer. https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html
+Customers are the most important thing. 
 
-Don't take customer requests at face value.https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html
+There is an optimal number and type of customer. 
+
+Don't take customer requests at face value.
 
 The buyer is quite often wrong. That fact never changes their mind.
 
@@ -196,50 +59,7 @@ Think about the user experience.
 
 customer / tech support is a powerful form of research
 
-## Design
-
-favour stable over state of the art
-
-Encourage rough prototyping in the critical path of binding to a design. - https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html
-
-UX, security and performance often fight against each other.
-
-Features come in four categories - core, necessary, added value and unique selling points - https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c
-
-Value old technology (sharks).
-
-objective criticism
-
-design for maintenance - https://neilkakkar.com/things-I-learnt-from-a-senior-dev.html
-
-Socalize task estimates. -https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html
-
-Socalize design. Design as team, implement as individual. https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html
-
-Road map (plans) are means, not ends - https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html
-
-design - https://neilkakkar.com/things-I-learnt-from-a-senior-dev.html
-    How will local development work?
-    How will we package and deploy?
-    How will we do end-to-end testing?
-    How will we stress-test this new service?
-    How will we manage secrets?
-    CI/CD integration?
-
-
-
-## Iterate
-
-Fast iteration can make up for a lot; it’s usually ok to be wrong if you iterate quickly. Plans should be measured in decades, execution should be measured in weeks.
-
-Be conservative on APIs and liberal with implementations.  Plan to iterate at least three implementations. - https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html
-
-Sturgeon’s law applies to your work as well. Don’t linger on one project forever. Make new things. That’s the only way to learn.
-
-### Perfection
-
-Don't try to be perfect - Worry less about elegance and perfection; instead strive for continuous improvement and creating a livable system that your team enjoys working in and sustainably delivers value. - 
-https://www.simplethread.com/20-things-ive-learned-in-my-20-years-as-a-software-engineer/
+# Technology
 
 ## When to Start Coding
 
@@ -270,6 +90,12 @@ Some people tend to jump into problems and just start writing code. Other people
 plan before writing code - https://medium.com/edge-coders/the-mistakes-i-made-as-a-beginner-programmer-ac8b3e54c312
 
 but don't plan too much - https://medium.com/edge-coders/the-mistakes-i-made-as-a-beginner-programmer-ac8b3e54c312
+
+## Source Control
+
+[lockedInSpace](https://www.lockedinspace.com/posts/001.html) Git should be your only source of truth. Discard any local files or changes, what's not pushed into the repository, does not exist.
+
+[Brandon Willet](https://www.willett.io/posts/precepts/) Use Git. Use it for everything – infrastructure, configuration, code, dashboards, on-call rotations. Your git repository is your point-in-time-recoverable source of truth.
 
 
 ## Writing Good Code
@@ -313,6 +139,9 @@ use toy problems
 /Users/adam/personal/para/project/teaching-monolith.md - see the testing stuff in here, for the different approaches
 
 
+[Brandon Willet](https://www.willett.io/posts/precepts/) Never give up on local testing. It keeps dev cycle time much shorter than needing to rely on (and fiddle with) CI or remote workspaces. Containerizing the local test environment can make it easier to keep dependencies straight and consistent across machines.
+
+
 ### State
 
 don't share state - https://medium.com/edge-coders/the-mistakes-i-made-as-a-beginner-programmer-ac8b3e54c312
@@ -354,6 +183,18 @@ Tech debt is occasionally acceptable, but can be fatal - https://alexewerlof.med
 Anything that can’t be measured easily (e.g., consistency) is often forgotten; pay particular attention to attributes that are difficult to measure. - https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html
 
 three components make up monitoring - logging, metrics, and alarms - https://neilkakkar.com/things-I-learnt-from-a-senior-dev.html
+
+## Monitoring
+
+[lockedInSpace](https://www.lockedinspace.com/posts/001.html) A good monitoring system, well-organized repository, fault-tolerance workloads and automation mechanisms are the basis of any architecture.
+
+[Jan Schaumann](https://www.netmeister.org/blog/ops-lessons.html) Bart Simpson writing 'Tar is not a play thing' on the school chalkboard.Email is the worst monitoring and alerting mechanism except for all the others.
+
+# People
+
+## design
+
+[Mahesh Balakrishnan](https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html) Socalize task estimates. Socalize design. Design as team, implement as individual. 
 
 ## Work Well With Others
 
@@ -402,6 +243,10 @@ References
 
 objective criticism - https://medium.com/madhash/the-marks-of-a-true-senior-developer-d5f3b11c3375
 
+[lockedInSpace](https://www.lockedinspace.com/posts/001.html) - When bad things happen, remember that a wider view is your best ally. (spread blame)
+
+[Jan Schaumann](https://www.netmeister.org/blog/ops-lessons.html) If you determine "human error" as the root cause, then you're doing it wrong.
+
 ### Seniority
 
 Seniority not just aobut programming
@@ -417,6 +262,8 @@ Good enough in PR reviews - https://monicalent.com/blog/2019/06/03/absolute-trut
 keep PRs to single feature - https://towardsdatascience.com/coding-mistakes-i-made-as-a-junior-developer-e151dd3b3c7d
 
 Be OK with long PR reviews. - https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html
+
+# Domain Specific Advice
 
 ## Web Development Advice
 
@@ -444,7 +291,7 @@ Model performance != business performance - https://blog.acolyer.org/2019/10/07/
 
 [Alex Ewerlöf](https://alexewerlof.medium.com/my-guiding-principles-after-20-years-of-programming-a087dc55596c)
 
-[Nemil Dalal](https://nemil.com/on-software-engineering)
+[Nemil Dalal](https://nemil.com/on-software-engineering) - [Think in Tradeoffs](https://nemil.com/2019/06/30/think-in-tradeoffs/)
 
 [Daniel Bourke](https://towardsdatascience.com/12-things-i-learned-during-my-first-year-as-a-machine-learning-engineer-2991573a9195)
 
@@ -463,3 +310,25 @@ Model performance != business performance - https://blog.acolyer.org/2019/10/07/
 [Hillel Wayne](https://buttondown.email/hillelwayne/archive/the-myth-of-self-documenting-code/)
 
 [Tom at CodeBuildRepeat](https://codebuildrepeat.blogspot.com/2020/03/my-first-year-as-data-scientist.html)
+
+[lockedInSpace](https://www.lockedinspace.com/posts/001.html)
+
+[Brandon Willet](https://www.willett.io/posts/precepts/)
+
+[Jan Schaumann](https://www.netmeister.org/blog/ops-lessons.html)
+
+[Joel Goldberg](https://www.bti360.com/what-ive-learned-in-45-years-in-the-software-industry/)
+
+[Sam Altman](https://blog.samaltman.com/what-i-wish-someone-had-told-me)
+
+[James Long](https://archive.jlongster.com/How-I-Became-Better-Programmer)
+
+[Samer Buna](https://medium.com/edge-coders/the-mistakes-i-made-as-a-beginner-programmer-ac8b3e54c312)
+
+[Ned Utzig](https://madned.substack.com/p/an-old-hackers-tips-on-staying-employed)
+
+[Justin Etheredge](https://www.simplethread.com/20-things-ive-learned-in-my-20-years-as-a-software-engineer/)
+
+[Mahesh Balakrishnan](https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html)
+
+[Baldur Bjarnason](https://www.baldurbjarnason.com/2021/100-things-every-web-developer-should-know/)

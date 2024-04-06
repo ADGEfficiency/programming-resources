@@ -256,6 +256,8 @@ PRs should not replace other ways of having a conversation.
 
 ## Advanced
 
+[Popular git config options](https://jvns.ca/blog/2024/02/16/popular-git-config-options/)
+
 [Modern Git Commands and Features You Should Be Using](https://martinheinz.dev/blog/109)
 
 [Cuddly, Octo-Palm Tree: The elements of git](https://cuddly-octo-palm-tree.com/posts/2021-09-19-git-elements/)

@@ -22,6 +22,59 @@ Foreign key = column that creates relationships between tables
 - references primary key of another table
 - all relationships should be sorted by foreign keys
 
+## Subqueries
+
+A subquery is a query nested inside another query. It can perform operations in a step by step manner.
+
+Subqueries can be used in SELECT, FROM, or WHERE clauses.
+
+```sql
+SELECT employee_name
+FROM employees
+WHERE department_id IN (
+    SELECT department_id
+    FROM departments
+    WHERE department_name = 'Sales'
+);
+```
+
+A subquery is limited to being used within an expression.
+
+## CTE
+
+A CTE (Common Table Expression) defines a temporary result set that you can reference within another SELECT, INSERT, UPDATE, or DELETE statement. 
+
+```sql
+WITH Department_IDs AS (
+    SELECT department_id
+    FROM departments
+    WHERE department_name = 'Sales'
+)
+SELECT e.employee_name
+FROM employees e
+JOIN Department_IDs d ON e.department_id = d.department_id;
+```
+
+A CTE is a like a temporary table. They can be easier to read than nested subqueries. They are also reusable, testable and you can run parts of them.
+
+DBT encourages the use of CTEs:
+
+```sql
+WITH sales_dept_employees AS (
+    SELECT employee_id
+    FROM {{ ref('departments') }} d
+    JOIN {{ ref('employees') }} e ON d.department_id = e.department_id
+    WHERE d.department_name = 'Sales'
+)
+
+SELECT e.employee_name
+FROM {{ ref('employees') }} e
+JOIN sales_dept_employees sde ON e.employee_id = sde.employee_id;
+```
+
+
+
+
 [Thoughts on Foreign Keys?](https://github.com/github/gh-ost/issues/331)
 
 [How slow is SELECT * ?](https://vettabase.com/blog/how-slow-is-select/)
