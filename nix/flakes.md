@@ -85,6 +85,64 @@ Or install to system packages:
 $ nix profile install
 ```
 
+### Adding to the Flake
+
+We can add more outputs:
+
+```nix
+{
+  description = "A macOS flake for the Fish shell";
+
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+  };
+
+  outputs = { self, nixpkgs }: {
+    defaultPackage.x86_64-darwin = nixpkgs.legacyPackages.x86_64-darwin.fish;
+    finders = {
+        ripper = {
+            nixpkgs.legacyPackages.x86_64-darwin.ripgrep;
+        };
+  };
+}
+```
+
+This allows us to do:
+
+```shell-session
+$ nix build .#\finders.ripper
+$ ./result/bin/rg -V
+ripgrep 14.1.0
+```
+
+Or
+
+```shell-session
+$ nix run .#\finders.ripper
+ripgrep 14.1.0
+```
+
+`./result` is a symlink to the output of the last build.
+
+### Adding More
+
+```nix
+{
+  description = "A macOS flake for the Fish shell";
+
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+  };
+
+  outputs = { self, nixpkgs }: let
+    pkgs = import nipkgs {system = "x86_64-darwin";};
+in {
+packages = {
+default = pkgs.legacyPackages.x86_64-darwin.fish;
+};
+};
+}
+```
 
 ### `flake.lock`
 
@@ -127,3 +185,5 @@ flakes also change the interface of `nix`. Old interface (`nix-` commands) is st
 [Matthew Croughan - Use flake.nix, not Dockerfile - MCH2022](https://youtu.be/0uixRE8xlbY?si=BWdb1lSV-3D_C1Up)
 
 [serokell/nixcon2020-talk: NixCon 2020 talk about Nix flakes](https://github.com/serokell/nixcon2020-talk)
+
+[Beginners Guide to Nix EP1: Flakes - YouTube](https://www.youtube.com/watch?v=IrxCiNnXG4M)
