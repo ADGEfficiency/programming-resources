@@ -1,3 +1,6 @@
+
+[htmx, Rust & Shuttle: A New Rapid Prototyping Stack](https://www.shuttle.rs/blog/2023/10/25/htmx-with-rust)
+
 [Splitting Your Data & Application APIs: Going Further](https://htmx.org/essays/splitting-your-apis/)
 
 Needs for a generic API:

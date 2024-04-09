@@ -1,5 +1,7 @@
 # Git
 
+![](https://imgs.xkcd.com/comics/git_2x.png)
+
 ## 95% of my git workflow
 
 What is going on?

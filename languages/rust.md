@@ -15,3 +15,13 @@
 [Data With Rust](https://datawithrust.com/)
 
 [Performance comparison: counting words in Python, Go, C++, C, AWK, Forth, and Rust](https://benhoyt.com/writings/count-words/)
+
+## Web Dev
+
+[Introducing Loco: The Rails of Rust](https://www.shuttle.rs/blog/2023/12/20/loco-rust-rails)
+
+[htmx, Rust & Shuttle: A New Rapid Prototyping Stack](https://www.shuttle.rs/blog/2023/10/25/htmx-with-rust)
+
+## Beginner
+
+[Python to Rust: Breaking Down 3 Big Obstacles](https://towardsdatascience.com/python-to-rust-breaking-down-3-big-obstacles-094eb99e331d)

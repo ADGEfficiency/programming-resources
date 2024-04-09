@@ -182,6 +182,10 @@ Honeypot documentaries:
 
 [Dev tools: The ex-Googler guide](https://sourcegraph.com/blog/ex-googler-guide-dev-tools)
 
+[Vadim Kravcenko](https://vadimkravcenko.com/)
+
+- [Why software projects fail](https://vadimkravcenko.com/shorts/why-software-projects-fail/)
+
 [Seph](https://josephg.com/blog/3-tribes/)
 
 - [Databases have failed the web](https://josephg.com/blog/databases-have-failed-the-web/)

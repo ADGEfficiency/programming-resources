@@ -84,6 +84,8 @@ https://github.com/folke/lazy.nvim
 
 https://github.com/LongerHV/nixos-configuration/tree/0d3e9c174c08afb9cad1440c509e5bfbf931f7c1/dotfiles/nvim/lua/config
 
+https://github.com/LukasPietzschmann/nvim-config/tree/master
+
 ## Lists of Linting & Formatting Tools
 
 [efm-langserver](https://github.com/mattn/efm-langserver),

@@ -9,6 +9,8 @@ Explicitly designate both rows and columns (even if its just with a `:`)
 
 [Offset aliases](https://pandas.pydata.org/docs/user_guide/timeseries.html#timeseries-offset-aliases)
 
+[Hands-on Pandas(1): Series and Dataframes](https://www.brainstobytes.com/hands-on-pandas-1-series-and-dataframes/)
+
 [pandas and friends - Marc Garcia](https://youtu.be/PQPv_4rOWe4)
 
 What is SQL not good at:
@@ -42,7 +44,7 @@ Speed
 
 Index = columns in the underlying code
 
-Levels = names of the indicies in multi index
+Levels = names of the indices in multi index
 
 Labels = integers that refer to labels -> Multi indexing reduces memory usage
 
@@ -51,5 +53,3 @@ inplace=True = avoids duplication
 Outer merge = avoids duplication of data in common
 
 Try not to use apply (like a map)
-
-
