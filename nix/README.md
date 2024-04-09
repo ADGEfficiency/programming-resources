@@ -8,6 +8,12 @@ Nix is congruent - will reach the target state by constructing the target state 
 $ sh <(curl -L https://nixos.org/nix/install) --daemon
 ```
 
+## Search
+
+```shell-session
+$ nix search nixpkgs emulator
+```
+
 ## Nix Files
 
 ### default.nix

@@ -1,22 +1,12 @@
 {
-  description = "A very basic flake";
+  description = "A macOS flake for the Fish shell";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs, flake-utils, ... }:
-    flake-utils.lib.eachDefaultSystem (system:
-      let
-        pkgs = import nixpkgs { inherit system; };
-      in
-      {
-        devShell = pkgs.mkShell {
-          buildInputs = with pkgs; [
-            neovim
-          ];
-        };
-      }
-    );
+  outputs = { self, nixpkgs }: {
+    defaultPackage.x86_64-darwin = nixpkgs.legacyPackages.x86_64-darwin.fish;
+    ripgrep = nixpkgs.legacyPackages.x86_64-darwin.ripgrep;
+  };
 }

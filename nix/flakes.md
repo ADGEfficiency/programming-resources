@@ -1,10 +1,9 @@
 # Flakes
 
--   Impose a standard structure on `flake.nix`.
--   Remove any reliance on `nixpkgs` in tooling.
--   Enforce hermetic evaluation by removing `NIX_PATH` and
-    `builtins.currentSystem` among other things.
--   Integrate tightly with other nix tooling.
+- Impose a standard structure on `flake.nix`.
+- Remove any reliance on `nixpkgs` in tooling.
+- Enforce hermetic evaluation by removing `NIX_PATH` and `builtins.currentSystem` among other things.
+- Integrate tightly with other nix tooling.
 
 ## Get Started
 
@@ -14,10 +13,11 @@ In `$XGD_CONFIG_HOME/nix/nix.conf`:
 experimental-features = nix-command flakes
 ```
 
-Create a `flake.nix`:
+Create a `flake.nix` and add to Git - the flake must be in Git:
 
 ```shell-session
 $ nix flake init
+$ git add flake.nix && git commit -m "build: init flake"
 ```
 
 Update:
@@ -26,9 +26,15 @@ Update:
 $ nix flake update nixpkgs
 ```
 
-## Files
+Use it
 
-### `flake.nix`
+```shell-session
+$ nix build
+# install to system packages
+$ nix profile install
+```
+
+## `flake.nix`
 
 `flake.nix` is a file defining an attribute set with various attribute. Most notable are `description` (a string), `inputs` (an attrset) and `outputs` (a function of `inputs`).
 
@@ -36,22 +42,49 @@ $ nix flake update nixpkgs
 {
   description = "<...>";
   inputs = { nixpkgs = <...>; };
+  # outputs function that takes two arguments, self and nixpkgs
   outputs = { self, nixpkgs }: { <...> };
 }
 ```
 
+A Flake that installs the `fish` shell on macOS:
+
 ```nix
 {
+  description = "A macOS flake for the Fish shell";
+
   inputs = {
-    nixpkgs.url = "github:serokell/nixpkgs";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
+
   outputs = { self, nixpkgs }: {
-    defaultPackage = builtins.mapAttrs
-      (_: pkgs: pkgs.callPackage ./talk.nix { })
-      nixpkgs.legacyPackages;
+    defaultPackage.x86_64-darwin = nixpkgs.legacyPackages.x86_64-darwin.fish;
   };
 }
 ```
+
+You can then build this as a binary:
+
+```shell-session
+$ nix build
+$ ls result/bin
+fish
+fish_indent
+fish_key_reader
+```
+
+Or use as shell:
+
+```shell-session
+$ nix shell
+```
+
+Or install to system packages:
+
+```shell-session
+$ nix profile install
+```
+
 
 ### `flake.lock`
 
@@ -67,8 +100,7 @@ $ nix flake update nixpkgs
 
 ## CLI
 
-flakes also change the interface of `nix`. Old interface (`nix-` commands) is
-still available for compatibility purposes.
+flakes also change the interface of `nix`. Old interface (`nix-` commands) is still available for compatibility purposes.
 
 ### Old
 
@@ -88,41 +120,6 @@ still available for compatibility purposes.
     nix profile install .#foo
     nix eval .#foo
 
-### Set up (not required, it just copies a skeleton for flake.nix to the project)
-
-```shell-session
-$ nix flake init
-```
-
-### Update
-```shell-session
-$ nix flake update nixpkgs
-# or
-$ nix build . --update-input nixpkgs
-```
-
-## Initialize our first flake
-
-    $ mkdir my-first-flake && cd my-first-flake
-    $ nix flake init
-    $ git init && git add --all # flake.nix must be in git index
-    $ cat flake.nix
-
-### `flake.nix`
-
-```nix
-{
-  description = "A very basic flake";
-  outputs = { self, nixpkgs }: {
-    packages.x86_64-linux.hello = nixpkgs.legacyPackages.x86_64-linux.hello;
-    defaultPackage.x86_64-linux = self.packages.x86_64-linux.hello;
-  };
-}
-```
-
-### Use it!
-
-    $ nix build
 
 
 ## Resources
