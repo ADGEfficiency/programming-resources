@@ -1,5 +1,30 @@
 [Drunk Post: Things I've learned as a Sr Engineer](https://www.reddit.com/r/ExperiencedDevs/comments/nmodyl/drunk_post_things_ive_learned_as_a_sr_engineer/)
 
+[40 years of programming](https://liw.fi/40/)
+
+Interesting and significant software is beyond the capacity of any one person to build alone in a reasonable time frame. This means that the fundamental, crucial, core skills in building software are communication and collaboration.
+You also need to know how to talk with other people to learn what software to build, what it must do, how much effort is acceptable, how to manage the work, and many more things. 
+
+Even in the projects where I'm the only person, there are at least three people involved: past me, present me, and future me.
+
+---
+
+It is widely considered, in the software industry, that most of the cost of software production comes after the initial release, in the so called maintenance phase. The initial development might take a year or two, maintenance will take decades.
+
+One would think that this would lead to development practices, and architectural decision, and everything else to be optimized for lower maintenance costs. Unfortunately, the economic and other incentives favor the opposite.
+
+It's on individual developers to try to reduce maintenance costs surreptitiously, when they can, as a kind of preemptive guerrilla maintenance.
+
+---
+
+Detailed planning beyond the very near future is difficult and usually fails. This includes estimating how long the work will take. I avoid doing this.
+
+Planning and estimation are far from useless and should not be neglected. 
+
+---
+
+When making a change, make only one change at a time.
+
 [(A few) Ops Lessons We All Learn The Hard Way](https://www.netmeister.org/blog/ops-lessons.html)
 
 [How to Build Software like an SRE — willett dot io](https://www.willett.io/posts/precepts/)

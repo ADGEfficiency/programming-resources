@@ -16,7 +16,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 
 Vimscript all plugins work fine in Neovim.
 
-If you want a good place to start, look at [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim).
+If you want a good place to start, look at [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) or [nvim-kickstart-python/kickstart-python.lua](https://github.com/chrisgrieser/nvim-kickstart-python/blob/main/kickstart-python.lua) for Python.
 
 # Options
 

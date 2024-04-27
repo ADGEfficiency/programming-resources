@@ -25,3 +25,5 @@
 ## Beginner
 
 [Python to Rust: Breaking Down 3 Big Obstacles](https://towardsdatascience.com/python-to-rust-breaking-down-3-big-obstacles-094eb99e331d)
+
+[Adopting Rust: the missing playbook for managers and CTOs](https://mainmatter.com/blog/2023/12/13/rust-adoption-playbook-for-ctos-and-engineering-managers/)

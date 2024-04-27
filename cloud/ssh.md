@@ -79,6 +79,8 @@ fi
 
 ## Advanced
 
+[An Excruciatingly Detailed Guide To SSH (But Only The Things I Actually Find Useful)](https://grahamhelton.com/blog/ssh-cheatsheet/)
+
 [vaporup/ssh-tools: Making SSH more convenient](https://github.com/vaporup/ssh-tools)
 
 [How to SSH Properly](https://goteleport.com/blog/how-to-ssh-properly/) - SSH certificates

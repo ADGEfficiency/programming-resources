@@ -297,7 +297,7 @@ Storage layers
 
 Normalization
 - good in theory (no duplication, less memory, link by foreign keys)
-- but not good in practice (require many quieries / joins to get data, slow quieries)
+- but not good in practice (require many queries / joins to get data, slow queries)
 
 
 ## Abstractions in Data Engineering
@@ -736,7 +736,7 @@ For behavioural data, this is where your statement will most apply to. This is w
 ## [Writing a high quality data pipeline for master data with apache spark – Part 1 – Kapernikov](https://kapernikov.com/writing-a-high-quality-data-pipeline-for-master-data-with-apache-spark-part-1/)
 
 1. composability,
-2. re-use logic instead of data,
+2. reuse logic instead of data,
 3. verifability - that jobs are executable, external datasets are compliant, pipelines don't violate contracts,
 4. version control.
 
@@ -866,3 +866,7 @@ The accumulating snapshot fact table is thus a method to measure velocity within
 Measures a lag indicator — that is, the difference between two dates.
 
 [Understanding Parquet, Iceberg and Data Lakehouses at Broad](https://davidgomes.com/understanding-parquet-iceberg-and-data-lakehouses-at-broad/)
+
+[History of Data Processing Tools 21st Century](https://www.junaideffendi.com/p/data-processing-in-21st-century)
+
+[DeWitt and Stonebraker's "MapReduce: A major step backwards" (2009) | Hacker News](https://news.ycombinator.com/item?id=39875473)

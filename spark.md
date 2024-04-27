@@ -1,0 +1,1 @@
+[palantir/pyspark-style-guide](https://github.com/palantir/pyspark-style-guide) - This is a guide to PySpark code style presenting common situations and the associated best practices based on the most frequent recurring topics across the PySpark repos we've encountered.
