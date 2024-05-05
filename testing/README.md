@@ -249,7 +249,14 @@ Watch out for:
 
 [Why most unit testing is a waste](https://rbcs-us.com/documents/Why-Most-Unit-Testing-is-Waste.pdf)
 
-[Unit Testing is Overrated](https://tyrrrz.me/blog/unit-testing-is-overrated) - [Hacker News Dicussion](https://news.ycombinator.com/item?id=30942020)
+[Unit Testing is Overrated](https://tyrrrz.me/blog/unit-testing-is-overrated) - [Hacker News Discussion](https://news.ycombinator.com/item?id=30942020)
+
+# Tests are a Tradeoff
+
+Tests are a tradeoff between two things:
+
+- the cost of writing tests,
+- the cost of bugs.
 
 # Further Reading
 
@@ -260,3 +267,5 @@ Watch out for:
 [Stargirl Flowers Python testing style guide](https://blog.thea.codes/my-python-testing-style-guide/)
 
 [Favor real dependencies for unit testing](https://stackoverflow.blog/2022/01/03/favor-real-dependencies-for-unit-testing/)
+
+[Too much of a good thing: the trade-off we make with tests](https://ntietz.com/blog/too-much-of-a-good-thing-the-cost-of-excess-testing/)

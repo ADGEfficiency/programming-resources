@@ -16,6 +16,10 @@
 
 [Performance comparison: counting words in Python, Go, C++, C, AWK, Forth, and Rust](https://benhoyt.com/writings/count-words/)
 
+## Critique
+
+[Leaving Rust gamedev after 3 years](https://loglog.games/blog/leaving-rust-gamedev/)
+
 ## Web Dev
 
 [Introducing Loco: The Rails of Rust](https://www.shuttle.rs/blog/2023/12/20/loco-rust-rails)

@@ -5,6 +5,8 @@
 - SQL injection + prepared statements,
 - indexing,
 - less tables usually better
+- see unique values with a groupby and count, rather than distinct (better info)
+- always write the WHERE first before I write the DELETE FROM statement. 
 
 ## Relational Databases
 
@@ -29,13 +31,19 @@ A subquery is a query nested inside another query. It can perform operations in 
 Subqueries can be used in SELECT, FROM, or WHERE clauses.
 
 ```sql
-SELECT employee_name
-FROM employees
-WHERE department_id IN (
-    SELECT department_id
-    FROM departments
-    WHERE department_name = 'Sales'
-);
+SELECT
+  employee_name
+FROM
+  employees
+WHERE
+  department_id IN (
+    SELECT
+      department_id
+    FROM
+      departments
+    WHERE
+      department_name = 'Sales'
+  );
 ```
 
 A subquery is limited to being used within an expression.
@@ -45,14 +53,20 @@ A subquery is limited to being used within an expression.
 A CTE (Common Table Expression) defines a temporary result set that you can reference within another SELECT, INSERT, UPDATE, or DELETE statement. 
 
 ```sql
-WITH Department_IDs AS (
-    SELECT department_id
-    FROM departments
-    WHERE department_name = 'Sales'
-)
-SELECT e.employee_name
-FROM employees e
-JOIN Department_IDs d ON e.department_id = d.department_id;
+WITH
+  Department_IDs AS (
+    SELECT
+      department_id
+    FROM
+      departments
+    WHERE
+      department_name = 'Sales'
+  )
+SELECT
+  e.employee_name
+FROM
+  employees e
+  JOIN Department_IDs d ON e.department_id = d.department_id;
 ```
 
 A CTE is a like a temporary table. They can be easier to read than nested subqueries. They are also reusable, testable and you can run parts of them.
@@ -106,11 +120,12 @@ JOIN sales_dept_employees sde ON e.employee_id = sde.employee_id;
 Having a deeper understanding of the different JOIN flavors is critical. For example, I don't think many people realize how deceptively dangerous OUTER joins are:
 
 ```sql
-SELECT user.user_id
-FROM users
-RIGHT JOIN purchases
-    ON purchases.user_id = user.user_id
-    AND user.user_id=123
+SELECT
+  user.user_id
+FROM
+  users
+  RIGHT JOIN purchases ON purchases.user_id = user.user_id
+  AND user.user_id = 123
 ```
 
 By leaving the user_id=123 constraint in the JOIN instead of putting it in the WHERE, you've just exposed everyone's purchase data to the user. 

@@ -185,6 +185,8 @@ git merge dev
 
 ## Resources
 
+[Git - Book](https://git-scm.com/book/en/v2)
+
 [Git Reference Documentation](https://git-scm.com/docs).
 
 [Learn Git Branching](https://learngitbranching.js.org/) - the most visual and interactive way to learn Git on the web.

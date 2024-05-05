@@ -185,6 +185,8 @@ Honeypot documentaries:
 [Vadim Kravcenko](https://vadimkravcenko.com/)
 
 - [Why software projects fail](https://vadimkravcenko.com/shorts/why-software-projects-fail/)
+- [Database Migrations](https://vadimkravcenko.com/shorts/database-migrations/)
+- [Habits of great software engineers](https://vadimkravcenko.com/shorts/habits-of-great-software-engineers/)
 
 [Seph](https://josephg.com/blog/3-tribes/)
 

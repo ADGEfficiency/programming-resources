@@ -4,6 +4,8 @@ Names in US over time - [gif](https://i.imgur.com/DQ2Jhp3.gif)
 
 Matplotlib Tips and Demos - [notebook](http://nbviewer.jupyter.org/urls/gist.githubusercontent.com/Jwink3101/e6b57eba3beca4b05ec146d9e38fc839/raw/f486ca3dcad44c33fc4e7ddedc1f83b82c02b492/Matplotlib_Cheatsheet)
 
+[5 Steps to Beautiful Line Charts in Python](https://towardsdatascience.com/5-steps-to-build-beautiful-line-charts-with-python-655ac5477310)
+
 [10 Years of Open-Source Visualization](https://observablehq.com/@mbostock/10-years-of-open-source-visualization)
 - visualization is a spectrum from exploratory to explanatory
 

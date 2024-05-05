@@ -1,10 +1,12 @@
 .headers on
 .echo on
+
 /*
 Want to have one-to-many relationships between bugs and comments, and features and comments.
 
 One bug or feature can have many comments.
 */
+
 CREATE TABLE IF NOT EXISTS bugs (
   bug_id INTEGER PRIMARY KEY,
   issue_id INTEGER NOT NULL,
@@ -46,7 +48,7 @@ VALUES
 
 
 /*
-With this setup, we lack of referential integrity on issue_id.
+With this setup, we lack of referential integrity on issue_id, as we cannot have the issue_id refer to either the bugs table or features tables.
 
 We can select comments for a given bug by id:
 */
@@ -138,7 +140,7 @@ SELECT * FROM bugscomments as b JOIN comments AS c using (comment_id) WHERE b.is
 /*
 We can now query for all bugs or features by comment id.
 
-Still need to refer to each table by name
+Still need to refer to each table by name:
 */
 .print "\nsoln 1 - reverse relationship - select bugs or features comments by id"
 SELECT * FROM comments as c
@@ -148,7 +150,7 @@ WHERE c.comment_id = 1
 ;
 
 /*
-Can make the result appear as it the parents were stored in a single table
+Can make the result appear as it the parents were stored in a single table with a union:
 */
 
 SELECT b.issue_id, b.bug, NULL AS feature FROM comments as c JOIN (bugscomments JOIN bugs as b USING (issue_id)) using (comment_id) WHERE comment_id = 1
@@ -171,7 +173,7 @@ WHERE c.comment_id = 1;
 /*
 # Soln 2 - Common Super Table
 
-By using an ascestor table, we can rely on the enforcement of foreign keys.
+By using an ascestor table issues, we can rely on the enforcement of foreign keys.
 
 In each table relationship, there is one referencing and one referenced table.
 */

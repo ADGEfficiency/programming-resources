@@ -61,3 +61,9 @@ Different groups of people seem to describe the uses of logs differently. Databa
 This process works in reverse too: if you have a table taking updates, you can record these changes and publish a "changelog" of all the updates to the state of the table. This changelog is exactly what you need to support near-real-time replicas. So in this sense you can see tables and events as dual: tables support data at rest and logs capture change. The magic of the log is that if it is a complete log of changes, it holds not only the contents of the final version of the table, but also allows recreating all other versions that might have existed. It is, effectively, a sort of backup of every previous state of the table. 
 
 The data warehouse is meant to be a repository of the clean, integrated data structured to support analysis
+
+[What are some standards when it comes to logging? : r/ExperiencedDevs](https://www.reddit.com/r/ExperiencedDevs/comments/143tray/what_are_some_standards_when_it_comes_to_logging/)
+
+Tracing:
+
+- Make correlation id a priority. Create a uuid at the top of the stack/start of the transaction, pass it all the way down via the x-correlation-id header (if doing web) and ensure your loggers are configured to log it inherently 

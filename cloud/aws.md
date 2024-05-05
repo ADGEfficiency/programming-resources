@@ -21,3 +21,5 @@ But AWS Organizations managing heaps of accounts was also too painful to use and
 [AWS Cloud Control API, a Uniform API to Access AWS and Third-Party Services | Hacker News](https://news.ycombinator.com/item?id=28710179)
 
 [CloudCasts - AWS for Humans](https://cloudcasts.io/)
+
+[Amazon ECS Workshop :: Amazon ECS Workshop](https://ecsworkshop.com/)

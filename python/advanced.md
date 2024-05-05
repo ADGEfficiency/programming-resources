@@ -1,3 +1,37 @@
+# Enum
+
+Could use an enum instead of a dispatch dict:
+
+```python
+from enum import Enum
+
+
+class ShapePoints(Enum):
+    X = 1
+    Y = 2
+    Z = 3
+
+
+def points_per_shape(shape: str) -> int:
+    return ShapePoints[shape].value
+```
+
+# Class attributes
+
+```
+class Monkey:
+    monkeys = {}
+
+  def __init__(self, id: int):
+      self.id = id
+      Monkey.monkeys[id] = self
+
+Monkey(1)
+Monkey(2)
+print(Monkey.monkeys[1])
+```
+
+
 ## StringIO, BytesIO
 
 ## [Strict Python function parameters](https://sethmlarson.dev/strict-python-function-parameters)
@@ -35,7 +69,7 @@ print(f"{n:,}")
 Alignment:
 
 ```python
-var = 'var'
+var = "var"
 
 # left align with 20 characters
 print(f"{var:>20}:")
@@ -51,6 +85,7 @@ Datetime formatting:
 
 ```python
 from datetime import datetime
+
 now = datetime.now()
 print(f"{now:%y-%m-%d}")
 ```
@@ -94,6 +129,7 @@ def decorator(func):
         func()
         #  do stuff after function call
         return None
+
     return wrapper
 ```
 
@@ -109,20 +145,21 @@ zip, enumerate
 
 ```python
 import sys
+
 print(sys.version)
 d = {
-     "int": 0,
-     "float": 0.0,
-     "dict": dict(),
-     "set": set(),
-     "tuple": tuple(),
-     "list": list(),
-     "str": "",
-     "unicode": u"",
-     "object": object(),
+    "int": 0,
+    "float": 0.0,
+    "dict": dict(),
+    "set": set(),
+    "tuple": tuple(),
+    "list": list(),
+    "str": "",
+    "unicode": "",
+    "object": object(),
 }
 for k, v in sorted(d.items()):
-     print(k, sys.getsizeof(v))
+    print(k, sys.getsizeof(v))
 ```
 
 ---
@@ -154,6 +191,7 @@ Better to use a model:
 ```python
 class GitHubRepo:
     """GitHub repository."""
+
     def __init__(self, owner: str, name: str, description: str):
         self.owner = owner
         self.name = name
@@ -162,6 +200,7 @@ class GitHubRepo:
     def full_name(self) -> str:
         """Get the repository full name."""
         return f"{self.owner}/{self.name}"
+
 
 def get_repo(repo_name: str) -> GitHubRepo:
     """Return repository info by its name."""

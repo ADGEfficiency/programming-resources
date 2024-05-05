@@ -2,6 +2,8 @@
 
 [LÖVE - Free 2D Game Engine](https://love2d.org/)
 
+[Desvelao/lummander: Create a simple CLI with Lua.](https://github.com/Desvelao/lummander)
+
 # Lua in Neovim
 
 [Lua - Neovim docs](https://neovim.io/doc/user/lua.html)
@@ -104,12 +106,12 @@ end
 
 ```lua
 local colors = {
-    red = "#FF0000",
-    green = "#00FF00",
-    blue = "#0000FF"
+	red = "#FF0000",
+	green = "#00FF00",
+	blue = "#0000FF",
 }
 for key, value in pairs(colors) do
-    print(key, value)
+	print(key, value)
 end
 ```
 
@@ -236,12 +238,12 @@ Important options are:
 - `desc` - a description.
 
 ```lua
-vim.api.nvim_create_autocmd(
-  {"BufEnter", "BufWinEnter"}, 
-  {
-      pattern = {"*.c", "*.h"},
-      callback = function() print("Entering a C or C++ file") end
-  })
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+	pattern = { "*.c", "*.h" },
+	callback = function()
+		print("Entering a C or C++ file")
+	end,
+})
 ```
 
 The callback function will be called with a table containing info about the autocommand:
@@ -254,23 +256,23 @@ The callback function will be called with a table containing info about the auto
 ## Autocommand Groups
 
 ```lua
-local mygroup = vim.api.nvim_create_augroup('vimrc', { clear = true })
-vim.api.nvim_create_autocmd({ 'BufNewFile', 'BufRead' }, {
-  pattern = '*.html',
-  group = mygroup,
-  command = 'set shiftwidth=4',
+local mygroup = vim.api.nvim_create_augroup("vimrc", { clear = true })
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+	pattern = "*.html",
+	group = mygroup,
+	command = "set shiftwidth=4",
 })
-vim.api.nvim_create_autocmd({ 'BufNewFile', 'BufRead' }, {
-  pattern = '*.html',
-  group = 'vimrc',  -- equivalent to group=mygroup
-  command = 'set expandtab',
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+	pattern = "*.html",
+	group = "vimrc", -- equivalent to group=mygroup
+	command = "set expandtab",
 })
 ```
 
 ## User Commands
 
 ```lua
-vim.api.nvim_create_user_command('Test', 'echo "It works!"', {})
+vim.api.nvim_create_user_command("Test", 'echo "It works!"', {})
 vim.cmd.Test()
 --> It works!
 ```

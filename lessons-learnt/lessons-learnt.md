@@ -1,3 +1,15 @@
+[Habits of great software engineers](https://vadimkravcenko.com/shorts/habits-of-great-software-engineers/)
+
+    Focusing beyond the code - as a developer you will code 20% of your time. You should excel at coding nonetheless, but it won't be enough to be great.
+    Efficiency / Antifragility — Making sure everything around you runs smoothly and has forward momentum
+    Joy of tinkering - build projects, try out frameworks, build stuff on the side. Keeps the spark alive.
+    Knowing the why — It's important to know why your code does what it does, too many abstractions nowadays that rarely someone thinks below the level of their language e.g JS devs not thinking about the engine that runs their code.
+    Thinking in systems — knowing how your code impacts not only your individual system but other parts of the business/application/life.
+    Tech detox — Recharging away from your monitor makes you a better programmer.
+    The art of approximation — Knowing important tech numbers to approximate calculations when making decisions when programming.
+    If this sounds interesting there's a few more things like that at the bottom. But you'll have to read it.
+
+
 [Drunk Post: Things I've learned as a Sr Engineer](https://www.reddit.com/r/ExperiencedDevs/comments/nmodyl/drunk_post_things_ive_learned_as_a_sr_engineer/)
 
 [40 years of programming](https://liw.fi/40/)
