@@ -254,7 +254,24 @@ clean:
 
 [A Tutorial on Portable Makefiles](https://nullprogram.com/blog/2017/08/20/)
 
+[How I stopped worrying and loved Makefiles](https://gagor.pro/2024/02/how-i-stopped-worrying-and-loved-makefiles/) - [Hacker News](https://news.ycombinator.com/item?id=40182555)
+
 ### Discussion
+
+[Self-Documented Makefile](https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html)
+
+```makefile
+.PHONY: help
+
+.DEFAULT_GOAL := help
+
+help:
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
+
+install: ## Install npm dependencies for the api, admin, and frontend apps
+	@echo "Installing Node dependencies"
+	@npm install
+```
 
 [Absolutely do not use make for any new project - Hacker News](https://news.ycombinator.com/item?id=5275752)
 

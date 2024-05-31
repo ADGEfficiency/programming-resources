@@ -403,6 +403,8 @@ Nicolas Loizeau
 
 ## Courses
 
+[CSE 20289 - Systems Programming](https://www3.nd.edu/~pbui/teaching/cse.20289.sp20/)
+
 [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) - master programming by recreating your favorite technologies from scratch.
 
 [Opinionated Guides on Engineering](https://opguides.info/engineering/engineering/)

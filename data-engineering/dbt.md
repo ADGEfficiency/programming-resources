@@ -27,6 +27,15 @@ dbt is appropriate for anyone who interacts with a data warehouse. It can be use
 
 
 ---
+[How to build a mature dbt project from scratch](https://www.getdbt.com/coalesce-2021/how-to-build-a-mature-dbt-project-from-scratch)
+
+    Infancy: Initial setup of dbt, using basic commands to replicate existing ETL processes.
+    Toddlerhood: Introduction of modularity, documentation, and testing to improve reliability and maintenance.
+    Childhood: Standardization of project operations, including naming conventions and minimum requirements for documentation and testing to prepare for broader team involvement and scaling.
+    Adolescence: Expansion of the project's capabilities, focusing on performance optimization, increased data dimensions, and deeper integration with the dbt community through packages.
+    Adulthood: Solidification of the project's role within the data infrastructure, emphasizing mature integration with other tools, extensive documentation, and advanced features like metadata management.
+
+
 ## https://docs.getdbt.com/faqs/loading-data
 
 ### How do I load data into my warehouse?

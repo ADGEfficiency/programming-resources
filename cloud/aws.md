@@ -1,3 +1,7 @@
+[open-guides/og-aws](https://github.com/open-guides/og-aws) - Amazon Web Services — a practical guide.
+
+[AndrewGuenther/fck-nat](https://github.com/AndrewGuenther/fck-nat) - Feasible cost konfigurable NAT: An AWS NAT Instance AMI.
+
 [AWS IAM Roles, a tale of unnecessary complexity | infosec.rodeo](https://infosec.rodeo/posts/thoughts-on-aws-iam/)
 
 IAM principles:

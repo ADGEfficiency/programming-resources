@@ -7,3 +7,11 @@
 The principle is that the module’s behaviour is the responsibility of a single actor. 
 
 It’s not that the module has a single reason to change, but that a single entity will request the changes.
+
+---
+
+ The problem with the single responsibility principle isn't that it's wrong per se, but that what counts as a responsibility is undefined. 
+
+---
+
+An object is evidence that you’ve done something, even if all you did is gather enough data to construct the object. The object’s methods are the things you can do now that you’ve constructed the object, and (in C++ especially) the object is a promise that you will do something when the object is destroyed. 

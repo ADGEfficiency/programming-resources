@@ -29,9 +29,9 @@
 
 [mauricioabreu/golings: rustlings but for golang this time](https://github.com/mauricioabreu/golings/)
 
-## Golings Learnings
+# Golings Learnings
 
-Declare and initialize variables:
+Declare and initialize variables - requires a `var` keyword and the type:
 
 ```go
 var x = 5
@@ -70,6 +70,14 @@ const n int = 5
 fmt.Printf("formatted string, n=%d\n", n)
 ```
 
+Placeholders:
+
+`%q` - quoted string
+
+```go
+t.Errorf("got %q want %q", got, want)
+```
+
 Conditionals:
 
 ```go
@@ -105,8 +113,200 @@ float64
 string
 ```
 
-Arrays - fixed size sequence (can't change size), elements same type:
+## Arrays
+
+Arrays - fixed size sequence (can't change size), elements same type.  When you pass an array to a function, it is copied.
 
 ```go
 var colors [3]string
 ```
+
+## Slices
+
+Slices - dynamically sized
+
+- create an empty array of zeroes, initialized with 3 zeroes, capacity 10:
+
+```go
+a := make([]int, 3, 10)
+```
+
+Indexing:
+
+```go
+lastTwoNames := names[2:]
+```
+
+Appending to slice array:
+
+```go
+names := []string{"John", "Maria", "Carl", "Peter"}
+names = append(names, "Adam")
+```
+
+## Maps
+
+Like dicts
+
+```go
+m := make(map[string]int)
+m["John"] = 30
+```
+
+When extracting from the map, you also get a boolean value indicating if the key exists:
+
+```go
+phone, exists := phoneBook["Ana"]
+```
+
+Deleting from a map:
+
+```go
+delete()
+```
+
+# Iterating Arrays
+
+```go
+even_numbers := []int{2, 4, 6, 8, 10}
+
+for n, v := range even_numbers {
+	fmt.Printf("%d %d is even\n", n, v)
+}
+```
+
+# Iterating Maps
+
+```go
+phoneBook := map[string]string{
+	"Ana":  "+01 101 102",
+	"John": "+01 333 666",
+}
+
+for name, phone := range phoneBook {
+	fmt.Printf("%s has the %s phone\n", name, phone)
+}
+```
+
+# Structs
+
+No commas:
+
+```go
+type Person struct {
+	name string
+	age  int
+}
+
+var person = Person{"Bob", 20}
+```
+
+Named arguments:
+
+```go
+var person = Person{name: "Bob", age: 20}
+```
+
+Defining functions on structs:
+
+```go
+// structs3
+// Make me compile!
+package main
+
+import "fmt"
+
+type Person struct {
+	firstName string
+	lastName  string
+}
+
+func (p Person) FullName() string {
+	return p.firstName + " " + p.lastName
+}
+
+func main() {
+	person := Person{firstName: "Maurício", lastName: "Antunes"}
+	fmt.Printf("Person full name is: %s\n", person.FullName()) // here it must output Person full name is: Maurício Antunes
+}
+```
+
+## Anonymous functions
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	func(name string) {
+		fmt.Printf("Hello %s", name)
+	}("adam")
+}
+```
+
+## concurrent
+
+```go
+import (
+	"bytes"
+	"fmt"
+	"sync"
+	"testing"
+)
+
+func TestPrinter(t *testing.T) {
+	var buf bytes.Buffer
+	print(&buf)
+
+	out := buf.String()
+
+	for i := 0; i < 3; i++ {
+		want := fmt.Sprintf("Hello from goroutine %d!", i)
+		if !bytes.Contains([]byte(out), []byte(want)) {
+			t.Errorf("Output did not contain expected string. Wanted: %q, Got: %q", want, out)
+		}
+	}
+}
+
+func print(buf *bytes.Buffer) {
+	var wg sync.WaitGroup
+	var mu sync.Mutex
+
+	goroutines := 3
+
+	for i := 0; i < goroutines; i++ {
+		wg.Add(1)
+		go func(i int) {
+			defer wg.Done()
+			mu.Lock()
+			fmt.Fprintf(buf, "Hello from goroutine %d!\n", i)
+			mu.Unlock()
+		}(i)
+	}
+
+	wg.Wait()
+}
+```
+
+## Modules
+
+```shell-session
+$ go mod init hello
+```
+
+Run app:
+
+```shell-session
+$ go run hello.go
+```
+
+## Testing
+
+It needs to be in a file with a name like xxx_test.go
+
+The test function must start with the word Test
+
+The test function takes one argument only t *testing.T
+
+To use the *testing.T type, you need to import "testing", like we did with fmt in the other file

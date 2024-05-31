@@ -1,13 +1,13 @@
 set text of p element js
 
 ```js
-element.textContent = "I have changed!";
+element.textContent = 'I have changed!'
 ```
 
 make json string js
 
 ```js
-var jsonString = JSON.stringify(obj);
+var jsonString = JSON.stringify(obj)
 ```
 
 decode json string js
@@ -18,6 +18,8 @@ JSON.parse
 
 
 ---
+
+[Patterns for Reactivity with Modern Vanilla JavaScript – Frontend Masters Boost](https://frontendmasters.com/blog/vanilla-javascript-reactivity/)
 
 [JavaScript for impatient programmers (ES2022 edition)](https://exploringjs.com/impatient-js/toc.html) - [Hacker News Discussion](https://news.ycombinator.com/item?id=29673206)
 

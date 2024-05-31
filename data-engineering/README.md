@@ -870,3 +870,5 @@ Measures a lag indicator — that is, the difference between two dates.
 [History of Data Processing Tools 21st Century](https://www.junaideffendi.com/p/data-processing-in-21st-century)
 
 [DeWitt and Stonebraker's "MapReduce: A major step backwards" (2009) | Hacker News](https://news.ycombinator.com/item?id=39875473)
+
+[Hot Takes on the Modern Data Stack](https://mattpalmer.io/posts/hot-takes/)

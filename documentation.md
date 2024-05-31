@@ -36,3 +36,7 @@ Examples should always show actual real-world problems – since so many readers
 Always verify your instructions before publishing documentation.
 
 The only thing worse than no documentation is incorrect documentation.
+
+[How do you make readable or presentable documentation?](https://www.reddit.com/r/ExperiencedDevs/comments/17z5qtj/comment/k9xyngq/?share_id=IpXnb6rkEwpgwe-M8mtC9&utm_name=androidcss)
+
+Treat your docs as a product.

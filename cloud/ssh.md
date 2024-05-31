@@ -23,7 +23,7 @@ scp -i ~/.ssh/adam-emd-monitoring.pem ubuntu@13.239.125.196:/home/ubuntu/researc
 SSH tunnel from `6006` on remote to local:
 
 ```sh
-ssh -N -L localhost:6006:localhost:6006 $USER@$HOST
+ssh -N -L localhost:6006:localhost:6006 "$USER@$HOST"
 ```
 
 

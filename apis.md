@@ -24,3 +24,5 @@ Am I the only one around here who hates the whole PUT PATCH nonsense? When I wri
 [Designing a REST API: Unix time vs ISO-8601](https://nickb.dev/blog/designing-a-rest-api-unix-time-vs-iso-8601/)
 
 It is in my opinion that a REST API should implement ISO-8601.
+
+[Zalando RESTful API and Event Guidelines](https://opensource.zalando.com/restful-api-guidelines/)

@@ -137,6 +137,8 @@ def decorator(func):
 
 pdb
 
+`display` code will run the Python code you give to it and display the value. It will do this when you call it, then every time some part of the program is executed AND the value changes. So it may display the value if you call next, continue, until, etc.
+
 ## Iterating smarter
 
 zip, enumerate

@@ -194,7 +194,8 @@ Not following this model has wasted so much time when migrating services or tryi
 
 With a script you can run it locally to ensure it performs the steps desired, leaving the CI “setup” to minimal environment/toolchain debugging. 
 
-
 ## [GitHub Actions could be so much better](https://blog.yossarian.net/2023/09/22/GitHub-Actions-could-be-so-much-better) - [Hacker News Discussion](https://news.ycombinator.com/item?id=37612420)
 
 ## [mix/actions - ServiceStack/mix](https://github.com/ServiceStack/mix/tree/master/actions)
+
+[Lessons Learned from Enterprise Usage of GitHub Actions - InfoQ](https://www.infoq.com/articles/enterprise-github-actions/)

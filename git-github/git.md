@@ -303,3 +303,14 @@ The other thing caught me out multiple times is that most commands seem inconsis
 `git checkout file.txt` is the same as `git checkout HEAD -- file.txt`
 
 When you're on `my-branch`, `git rebase main` is the same as `git rebase main my-branch`
+
+## Rebasing
+
+[git rebase: what can go wrong?](https://jvns.ca/blog/2023/11/06/rebasing-what-can-go-wrong-/)
+
+2 different kinds of rebase - only one of them requires you to deal with merge conflicts.
+
+1. rebasing on an ancestor, like git rebase -i HEAD^^^^^^^ to squash many small commits into one. As long as you’re just squashing commits, you’ll never have to resolve a merge conflict while doing this.
+2. rebasing onto a branch that has diverged, like git rebase main. This can cause merge conflicts.
+
+Undoing rebases is hard

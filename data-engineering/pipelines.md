@@ -18,15 +18,81 @@ There is a configuration registry which contains the details of data (csv file).
   partition field
   ingestion style (incremental/full)
 
+## Pipelines Best Practices
+
+    handle late-arriving data
+
+    keep raw data to support reprocessing
+
+    handle occasional bursts from reprocessing, backfilling, etc
+
+    support comprehensive unit-testing and constraint-checking
+
+    minimize tight-coupling by subscribing to domain objects rather than replicate physical schemas
+
+    manage costs on cloud databases
+
+    provide a low-enough data latency to satisfy their users
+
+    automate everything
+
+    observability & alerting & KPIs
+
+    data dictionaries / data catalogs / documentation
+
+Documentation
+
+Visibility/Transparency ,metadata (run history) and logging
+
+Error recovery
+
+Monitoring
+
+Robust and offers some governance. 
+
+    Idempotency and atomicity built in
+
+    Incremental loading where applicable,
+
+    Pipeline keeps incremental state in a cheapest, most portable and accessible way - at destination.
+
+    Re-using glue code in a declarative way
+
+    Memory management for scalability, sometimes parallelism, buffer raw data to files for resuming or retrying, or reprocessing later
+
+    Support local testing and unit tests - pipeline should be runnable locally.
+
+    Self deploying schemas
+
+    Self healing schemas and automatic db migrations
+
+    Tracking schemas and knowing when they change
+
+    Data type conversions from weakly/untyped to strongly typed, so they do not get implicitly converted or guessed later
+
+    ddl and their performance hints deployed by the pipeline to enable self ddl deployments.
+
+    Extraction retries with incremental backoffs (only way to load big pulls from Zendesk for example)
+
+    Loading retries on network issues
+
+    error handling
+
+    data contracts if ingesting data from sources that might sent trash (web events for example)
+
+    Ensuring any kept raw data is in accordance with GDPR's right to be forgotten (30d expiration on PII data or some deletion strategy)
+
+    documentation
+
 ## https://www.reddit.com/r/dataengineering/comments/tsdocr/is_this_a_well_designed_idempotent_airflow/
 
 
 [Components, Workflows, and Cookbooks - Omri Fima | PyData Global 2021](https://youtu.be/QZe3o0KnmYE)
 
-components (ingredients) - reuseable code
+components (ingredients) - reusable code
 - highly shareable / reusable
 
-workflow (recipe) - reuseable atomic piece of work
+workflow (recipe) - reusable atomic piece of work
 - has entrypoint + arguments
 - shareable reliable, consistent building blocks
 
