@@ -86,6 +86,8 @@ t.Errorf("got %q want %q", got, want)
 t.Errorf("int: %d", 5)
 ```
 
+`%#v` - struct
+
 Conditionals:
 
 ```go
@@ -163,7 +165,7 @@ func SumAll(numbersToSum ...[]int) []int {
 Named return values:
 
 ```go
-func Hello(name string, language string) prefix string {
+func Hello(name string, language string) (prefix string) {
 	prefix := prefixEnglish
 	switch language {
 	case spanish:
@@ -304,10 +306,28 @@ type Person struct {
 func (p Person) FullName() string {
 	return p.firstName + " " + p.lastName
 }
+```
 
-func main() {
-	person := Person{firstName: "Maurício", lastName: "Antunes"}
-	fmt.Printf("Person full name is: %s\n", person.FullName()) // here it must output Person full name is: Maurício Antunes
+## Interfaces
+
+Rectangle has a method called Area that returns a float64 so it satisfies the Shape interface
+
+Circle has a method called Area that returns a float64 so it satisfies the Shape interface string does not have such a method, so it doesn't satisfy the interface etc.
+
+In Go interface resolution is implicit. If the type you pass in matches what the interface is asking for, it will compile.
+
+```go
+type Shape interface {
+	Area() float64
+}
+
+type Rectangle struct {
+	Width  float64
+	Height float64
+}
+
+func (r Rectangle) Area() float64 {
+	return r.Width * r.Height
 }
 ```
 
