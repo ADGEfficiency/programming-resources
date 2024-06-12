@@ -44,11 +44,16 @@
 
 [mauricioabreu/golings: rustlings but for golang this time](https://github.com/mauricioabreu/golings/)
 
+---
+
+
+# Variables
+
 Declare and initialize variables - requires a `var` keyword and the type:
 
 ```go
 var x = 5
-var int x = 5
+var int x = 
 
 // inside a function - but cannot define type
 x := 5
@@ -145,6 +150,7 @@ string
 
 ## Functions
 
+
 Typing in function definition and return:
 
 ```go
@@ -177,7 +183,27 @@ func Hello(name string, language string) (prefix string) {
 }
 ```
 
+## Pointers
 
+In Go, when you call a function or a method the arguments are copied. 
+
+Can find location in memory with `&`:
+
+```go
+&var
+```
+
+Can use a pointer:
+
+```go
+func (w *Wallet) Deposit(amount int) {
+	w.balance += amount
+}
+```
+
+We do not need to dereference the point - done automatically.
+
+When a function returns a pointer to something, you need to check if it's `nil`.
 
 ## Arrays
 
@@ -308,6 +334,12 @@ func (p Person) FullName() string {
 }
 ```
 
+Can make a struct from another:
+
+```go
+type Bitcoin int
+```
+
 ## Interfaces
 
 Rectangle has a method called Area that returns a float64 so it satisfies the Shape interface
@@ -436,6 +468,7 @@ func TestSum(t *testing.T) {
 
 	t.Run("collection of 5 numbers", func(t *testing.T) {
 		// logic
+		checkSums(t, got, want)
 	})
 	t.Run("collection of 4 numbers", func(t *testing.T) {
 		// logic
@@ -501,4 +534,10 @@ package main
 func TestHello() {
 // do stuff with Hello func
 }
+```
+
+## Error Check
+
+```shell-session
+$ errcheck .
 ```
