@@ -257,6 +257,18 @@ Deleting from a map:
 delete()
 ```
 
+Never initialize a nil map - writing to a nil map will cause runtime panic.  This is because the variable `m` is initialized to `nil`:
+
+```go
+var m map[string]string
+```
+
+Instead initialize an empty map:
+
+```go
+m := make(map[string]string)
+```
+
 ## Iteration
 
 There are only `for` loops in Go (no `while`).
