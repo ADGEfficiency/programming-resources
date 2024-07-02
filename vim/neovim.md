@@ -1,17 +1,13 @@
-# Getting Setup
+# Neovim
+
+To get started with Neovim - [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim).
+
+## Getting Setup
 
 Core file is:
 
 ```
 ~/.config/nvim/init.lua
-```
-
-Use Packer to manage packages:
-
-```
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-:PackerInstall
 ```
 
 Vimscript all plugins work fine in Neovim.
@@ -86,6 +82,8 @@ https://github.com/LongerHV/nixos-configuration/tree/0d3e9c174c08afb9cad1440c509
 
 https://github.com/LukasPietzschmann/nvim-config/tree/master
 
+[SeniorMars/dotfiles/.config/nvim](https://github.com/SeniorMars/dotfiles/tree/master/.config/nvim)
+
 ## Lists of Linting & Formatting Tools
 
 [efm-langserver](https://github.com/mattn/efm-langserver),
@@ -103,6 +101,8 @@ https://github.com/LukasPietzschmann/nvim-config/tree/master
 [Developing a Neovim Docker Plugin from Scratch](https://www.youtube.com/watch?v=HXABdG3xJW4)
 
 ## Resources
+
+[An Experienced (Neo)Vimmer's Workflow](https://seniormars.com/posts/neovim-workflow/) - [Hacker News](https://news.ycombinator.com/item?id=40798723)
 
 [Can someone explain me why the config table doesn't work inside the "opts" table?](https://www.reddit.com/r/neovim/comments/1barpx5/whichkeynvim_can_someone_explain_me_why_the/?share_id=ExbL8Hb7xuIJ0DUdEfUp_&utm_name=androidcss)
 

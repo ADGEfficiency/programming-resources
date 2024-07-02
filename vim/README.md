@@ -110,3 +110,9 @@ Where Vim Came From - [blog post](https://twobithistory.org/2018/08/05/where-vim
 1976 Feb: ed -> em (“Editor for Mortals”) at Queen Mary College
 1976 : em -> ex (“EXtended”) at UC Berkeley
 1977 Oct: ex gets visual mode, vi
+
+## Neovim
+
+[An Experienced (Neo)Vimmer's Workflow](https://seniormars.com/posts/neovim-workflow/)
+
+[The Only Video You Need to Get Started with Neovim](https://www.youtube.com/watch?v=m8C0Cq9Uv9o&list=PLiXExhAQRMT4VUrZT7_B3Oim57PKWfWdW&index=3)
