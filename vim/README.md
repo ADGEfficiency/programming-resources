@@ -116,3 +116,5 @@ Where Vim Came From - [blog post](https://twobithistory.org/2018/08/05/where-vim
 [An Experienced (Neo)Vimmer's Workflow](https://seniormars.com/posts/neovim-workflow/)
 
 [The Only Video You Need to Get Started with Neovim](https://www.youtube.com/watch?v=m8C0Cq9Uv9o&list=PLiXExhAQRMT4VUrZT7_B3Oim57PKWfWdW&index=3)
+
+[From 0 to IDE in NEOVIM from scratch](https://www.youtube.com/watch?v=zHTeCSVAFNY&list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn)

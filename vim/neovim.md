@@ -2,25 +2,64 @@
 
 To get started with Neovim - [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim).
 
+## Why Neovim?
+
+Vim was maintained by Brian Moolenaar (RIP).  Before his death Brian introduced Vimscript 9 as a language to configure Vim, which introduced a schism in the Vim community.
+
+Neovim uses Lua for configuration, and now has a vibrant community and future.
+
+Vimscript all plugins work fine in Neovim.
+
 ## Getting Setup
 
-Core file is:
+The core file is:
 
 ```
 ~/.config/nvim/init.lua
 ```
 
-Vimscript all plugins work fine in Neovim.
-
 If you want a good place to start, look at [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) or [nvim-kickstart-python/kickstart-python.lua](https://github.com/chrisgrieser/nvim-kickstart-python/blob/main/kickstart-python.lua) for Python.
 
-# Options
+## Dockerfile
+
+There is an example Dockerfile in this repo that shows how to setup Neovim with Kickstart.
+
+Build and run container interactive:
+
+```shell-session
+$ docker build -t vim . 
+$ docker run -it vim /bin/bash
+```
+
+After being inside the container, you can enable LSP for Python by:
+
+```
+:Mason
+```
+
+Then selecting `jedi-language-server` and pressing `i` to install.  You will need to restart `nvim` to get the LSP to work.
+
+To setup formatting, you need to edit the `init.lua`:
+
+```lua
+formatters_by_ft = {
+	lua = { "stylua" },
+	-- Conform can also run multiple formatters sequentially
+	-- python = { "isort", "black" },
+	--
+	-- You can use a sub-list to tell conform to run *until* a formatter
+	-- is found.
+	-- javascript = { { "prettierd", "prettier" } },
+}
+```
+
+## Options
 
 [Configure Neovim with Lua](https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/)
 
 [nvim-lua-guide](https://github.com/nanotee/nvim-lua-guide)
 
-## Set Options in Vimscript
+### Set Options in Vimscript
 
 ```
 set tabstop=2
@@ -28,14 +67,14 @@ set booleanoption
 unset booleanoption
 ```
 
-# Set Options in Lua
+### Set Options in Lua
 
 ```
 vim.opt.set.tabstop = 2
 vim.cmd "set tabstop=2"
 ```
 
-# Set Options in Commandline
+### Set Options in Commandline
 
 ```
 #  set value
@@ -51,7 +90,7 @@ vim.cmd "set tabstop=2"
 :set tabstop&
 ```
 
-## Variables
+### Variables
 
 ```
 #  set variable in vimscript

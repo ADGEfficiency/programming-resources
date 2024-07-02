@@ -34,6 +34,8 @@ It is for the people who enjoy configuring and customizing their tools.
 
 Even if Vim isn't your main text editor, a basic understanding of Vim is useful for working on remote machines.
 
+You can also enable Vim bindings in other editors like VS Code.
+
 ## History
 
 Vim's history stretches back more that 50 years - [History and effective use of Vim](https://begriffs.com/posts/2019-07-19-history-use-vim.html):
@@ -316,3 +318,7 @@ ex ranges
 `'<` start of visual selection
 `'>` end of visual selection
 can get these by `:` when in visual selection
+
+## Other Stuff
+
+Snippets
