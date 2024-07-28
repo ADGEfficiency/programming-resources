@@ -100,6 +100,30 @@ Best things in your bash_profile/aliases? - [Hacker News](https://news.ycombinat
 
 [The Evolution of the Unix Time-sharing System](https://www.bell-labs.com/usr/dmr/www/hist.pdf)
 
+[Tips on how to structure your home directory (2023) | Hacker News](https://news.ycombinator.com/item?id=40085543)
+
+```bash
+#!/bin/bash
+
+# ... common code here ...
+
+build() {
+    # Original content and logic of bash.sh
+}
+
+run() {
+    # Original content and logic of run.sh
+}
+
+deploy() {
+    # Original content and logic of deploy.sh
+}
+
+"$@"
+```
+
+[Bash #2 - Functional Command Relay | Dan Aloni](https://blog.aloni.org/posts/bash-functional-command-relay/)
+
 ### Talks
 
 UNIX shell expansion: proper use and advanced forms - Tyson Whitehead - [talk](https://youtu.be/GXu1bZptwf4)

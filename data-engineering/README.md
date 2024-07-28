@@ -240,6 +240,7 @@ At its most basic, CSVs have only two delimiting characters: a comma to delimit 
 
 **Further reading**
 - [It's Time to Retire the CSV](https://www.bitsondisk.com/writing/2021/retire-the-csv/) - [Hacker News discussion](https://news.ycombinator.com/item?id=28221654)
+- [Friends don't let friends export to CSV](https://kaveland.no/posts/2024-03-10-friends-dont-let-friends-export-csv/)
 
 Parquet
 - column based,

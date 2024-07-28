@@ -86,8 +86,180 @@ FROM {{ ref('employees') }} e
 JOIN sales_dept_employees sde ON e.employee_id = sde.employee_id;
 ```
 
+## [Improve your SQL skills X2 in 5 minutes - by Anton Zaides](https://zaidesanton.substack.com/p/the-most-underrated-skill-sql-for)
 
 
+```sql
+CREATE TABLE deals (
+deal_id INT PRIMARY KEY,
+deal_amount DECIMAL(10, 2),
+customer_name VARCHAR(255),
+region VARCHAR(255),
+deal_date DATE
+);
+
+INSERT INTO deals
+(deal_id, deal_amount, customer_name, region, deal_date)
+VALUES
+(1, 2500.00, 'Acme Corporation', 'North America', '2023-01-15'),
+(2, 25000.00, 'Globex Corporation', 'North America', '2023-01-20'),
+(3, 1250.00, 'Acme Corporation', 'North America', '2023-02-11'),
+(4, 3000.00, 'Initech', 'Europe', '2023-03-22'),
+(5, 2000.00, 'Hooli', 'Europe', '2023-03-27'),
+(6, 20000.00, 'Vehement Capital Partners', 'Europe', '2023-04-05'),
+(7, 15000.00, 'Massive Dynamic', 'North America', '2023-04-15'),
+(8, 15000.00, 'Soylent Corp', 'Asia', '2023-05-01'),
+(9, 17000.00, 'Initech', 'Europe', '2023-05-20'),
+(10, 15000.00, 'Pied Piper', 'Asia', '2023-06-03'),
+(11, 7500.00, 'Globex Corporation', 'North America', '2023-06-25'),
+(12, 8000.00, 'Pied Piper', 'Asia', '2023-07-12'),
+(13, 17000.00, 'Hooli', 'Europe', '2023-07-18'),
+(14, 12000.00, 'Soylent Corp', 'Asia', '2023-08-02'),
+(15, 9000.00, 'Massive Dynamic', 'North America', '2023-08-21'),
+(16, 23000.00, 'Vehement Capital Partners', 'Europe', '2023-09-11'),
+(17, 3000.00, 'Pied Piper', 'Asia', '2023-09-30'),
+(18, 4900.00, 'E Corp', 'North America', '2023-10-05'),
+(19, 35000.00, 'E Corp', 'North America', '2023-10-20'),
+(20, 6000.00, 'Hooli', 'Europe', '2023-11-04');
+```
+
+## Get Max in each Region
+
+Get max in each region with a subquery:
+
+```sql
+SELECT * 
+FROM deals d1
+WHERE d1.deal_amount = (
+    SELECT MAX(deal_amount)
+    FROM deals d2
+    WHERE d1.region = d2.region
+);
+```
+
+Problem with subqeery - typically requires subquery to be run for each row in the outer query/table.
+
+Get max in each region with an CTE:
+
+```sql
+with max_deals_by_region AS (
+    SELECT region, MAX(deal_amount) AS max_deal_amount
+    from DEALS
+    GROUP BY region
+)
+
+select d.*
+from deals d
+JOIN max_deals_by_region mdr
+    on d.region = mdr.region
+    AND d.deal_amount = mdr.max_deal_amount;
+```
+
+## Get Top 3 in each Region
+
+Can use partitions:
+
+```sql
+WITH ranked_deals AS (
+    SELECT
+        deal_id,
+        deal_amount,
+        customer_name,
+        region,
+        deal_date,
+        RANK() OVER (
+            PARTITION BY region
+            ORDER BY deal_amount DESC
+        ) AS deal_rank
+    FROM deals
+)
+
+SELECT
+    deal_id,
+    deal_amount,
+    customer_name,
+    region,
+    deal_date
+FROM ranked_deals
+WHERE deal_rank <= 3
+ORDER BY region, deal_rank;
+```
+
+`RANK` is a window function - allows us to perform calculations across a set of rows that are related to the current row.
+
+We create those rows with `PARTITION BY` - the `PARTITION` divides the dataset into groups.
+
+`ORDER BY` sorts the rows in each partition.
+
+`RANK() OVER (PARTITION BY region)` assigns a rank within each region.
+
+### Window Functions
+
+Four main types:
+
+1. ranking,
+2. aggregate,
+3. positional,
+4. cumulative.
+
+#### Ranking Window Functions
+
+Main ranking functions are:
+
+- `ROW_NUMBER()` - sequential numbers to rows,
+- `RANK()` sequential numbers to rows, with same number for ties,
+- `DENSE_RANK` - sequential numbers to rows, with same number for ties, no compensation for ties in next rows.
+
+```sql
+SELECT deal_id, deal_amount, customer_name, region, deal_date,
+    ROW_NUMBER() OVER (
+        PARTITION BY region ORDER BY deal_amount DESC
+    ) AS row_number,
+    RANK() OVER (
+        PARTITION BY region ORDER BY deal_amount DESC
+    ) AS rank,
+    DENSE_RANK() OVER (
+        PARTITION BY region ORDER BY deal_amount DESC
+    ) AS dense_rank
+FROM deals
+ORDER BY region, deal_amount DESC;
+```
+
+#### Aggregation Window Functions
+
+Similar to `GROUP BY`, but you can keep the data for the full row.
+
+```sql
+SELECT
+    deal_id,
+    deal_amount,
+    customer_name,
+    region,
+    deal_date,
+    ROUND((deal_amount / SUM(deal_amount) OVER
+        (PARTITION BY region)) * 100, 2) AS deal_amount_pct
+FROM deals
+ORDER BY region, deal_date DESC;
+```
+
+#### Positional Window Functions
+
+- `LEAD()` - returns value from row that follows current row,
+- `LAG()` - returns row that preceeds current row.
+- `FIRST_VALUE()` - returns first value in partition,
+- `LAST_VALUE()` - returns last value in partition.
+
+```sql
+SELECT deal_id, deal_amount, customer_name, region, deal_date,
+    deal_amount - LAG(deal_amount) OVER (
+        PARTITION BY customer_name, region
+        ORDER BY deal_date
+    ) AS deal_change_from_previous
+FROM deals
+ORDER BY customer_name, region, deal_date;
+```
+
+---
 
 [Thoughts on Foreign Keys?](https://github.com/github/gh-ost/issues/331)
 

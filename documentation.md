@@ -1,3 +1,9 @@
+[Two open source projects with great documentation • John Jago](https://johnjago.com/great-docs/)
+
+[esbuild - API](https://esbuild.github.io/api/)
+
+[redis/README.md](https://github.com/redis/redis/blob/unstable/README.md)
+
 [The Documentation System](https://www.divio.com/blog/documentation/)
 
 Tutorials, how-to guides, technical reference and explanation

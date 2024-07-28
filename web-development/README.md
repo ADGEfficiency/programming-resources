@@ -6,6 +6,8 @@
 
 [microsoft/Web-Dev-For-Beginners: 24 Lessons, 12 Weeks, Get Started as a Web Developer](https://github.com/microsoft/Web-Dev-For-Beginners/tree/main)
 
+[Mediocre Engineer’s guide to HTTPS](https://devonperoutky.super.site/blog-posts/mediocre-engineers-guide-to-https) - [Hacker News](https://news.ycombinator.com/item?id=40482799)
+
 [Why do we need HTTPS? - How HTTPS works](https://howhttps.works/why-do-we-need-https/)
 
 1. privacy,

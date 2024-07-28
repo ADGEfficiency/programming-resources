@@ -123,6 +123,8 @@ Honeypot documentaries:
 
 ## Articles
 
+[The Man Who Killed Google Search](https://www.wheresyoured.at/the-men-who-killed-google/)
+
 [The Tyranny of Spreadsheets | Tim Harford](https://timharford.com/2021/07/the-tyranny-of-spreadsheets/)
 
 [DeepDream: How Alexander Mordvintsev Excavated the Computer’s Hidden Layers](https://thereader.mitpress.mit.edu/deepdream-how-alexander-mordvintsev-excavated-the-computers-hidden-layers/)

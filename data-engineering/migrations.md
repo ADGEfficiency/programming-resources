@@ -1,3 +1,22 @@
+[Online migrations at scale](https://stripe.com/blog/online-migrations)
+
+Four-phase approach: 
+
+1. dual writing to old and new tables, 
+2. switching read paths to the new table, 
+3. updating write paths, 
+4. removing old data
+
+Why are migrations hard?
+
+- scale,
+- uptime,
+- accuracy.
+
+Offloaded backfilling to an offline process that has no impact on production.
+
+[Migrating Messenger storage to optimize performance - Engineering at Meta](https://engineering.fb.com/2018/06/26/core-infra/migrating-messenger-storage-to-optimize-performance/)
+
 [Changing Tires at 100mph: A Guide to Zero Downtime Migrations | Kiran Rao](https://kiranrao.ca/2022/05/04/zero-downtime-migrations.html)
 
     Create the new empty table

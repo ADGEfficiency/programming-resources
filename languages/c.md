@@ -5,3 +5,5 @@
 [The Ten Commandments for C Programmers (Annotated Edition)](https://www.lysator.liu.se/c/ten-commandments.html)
 
 [HPC Tools for Programming](https://web.corral.tacc.utexas.edu/CompEdu/pdf/stc/hpc_programming.pdf)
+
+[Hello World](https://thecoder08.github.io/hello-world.html) - A deep dive into the world of abstraction behind a modern Hello World program.

@@ -1,3 +1,5 @@
+[In defense of simple architectures](https://danluu.com/simple-architectures/)
+
 [personal-server/README.md](https://github.com/erebe/personal-server/blob/master/README.md) - how I manage my personal server in 2023.
 
 [Systems design for advanced beginners](https://robertheaton.com/2020/04/06/systems-design-for-advanced-beginners/)

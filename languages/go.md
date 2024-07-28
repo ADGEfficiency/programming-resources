@@ -553,3 +553,19 @@ func TestHello() {
 ```shell-session
 $ errcheck .
 ```
+
+## Concurrency
+
+An operation that does not block in Go will run in a **separate process** called a **goroutine**.
+
+Send operator:
+
+```go
+resultChannel <- Result{u, wc(u)}
+```
+
+Inverse is the receive operator:
+
+```go
+r := <-resultChannel
+```

@@ -1,3 +1,21 @@
+[Shape typing in Python](https://jameshfisher.com/2024/04/12/shape-typing-in-python/)
+
+```python
+type Mat[N, M] = np.ndarray[
+    tuple[N, M],
+    np.dtype[np.float64],
+
+def mat_mul[
+    N, K, M
+](
+  m1: Mat[N, M],
+  m2: Mat[M, K],
+) -> Mat[N, K]:
+    return m1 @ m2
+]
+```
+
+
 # Enum
 
 Could use an enum instead of a dispatch dict:
