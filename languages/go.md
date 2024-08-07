@@ -20,6 +20,10 @@
 
 [The HATE Stack - Simple and Efficient](https://www.youtube.com/watch?v=bti-bnGbyak) - [awesome-club/hate-stack](https://github.com/awesome-club/hate-stack)
 
+# HTMX
+
+[HTMX + Go - Development - Tim Brockley Blog](https://blog.timbrockley.co.uk/development/htmx-golang/)
+
 ---
 
 ## Learning Go

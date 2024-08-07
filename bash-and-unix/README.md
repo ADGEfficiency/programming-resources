@@ -102,6 +102,8 @@ Best things in your bash_profile/aliases? - [Hacker News](https://news.ycombinat
 
 [Tips on how to structure your home directory (2023) | Hacker News](https://news.ycombinator.com/item?id=40085543)
 
+[Bash #2 - Functional Command Relay | Dan Aloni](https://blog.aloni.org/posts/bash-functional-command-relay/)
+
 ```bash
 #!/bin/bash
 
@@ -122,7 +124,7 @@ deploy() {
 "$@"
 ```
 
-[Bash #2 - Functional Command Relay | Dan Aloni](https://blog.aloni.org/posts/bash-functional-command-relay/)
+[hiAndrewQuinn/shell-bling-ubuntu](https://github.com/hiAndrewQuinn/shell-bling-ubuntu) - A few scripts to be run on a fresh-off-the-presses Ubuntu VM, in order to get its shell nice 'n purdy.
 
 ### Talks
 

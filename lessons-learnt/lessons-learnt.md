@@ -1,3 +1,8 @@
+[Random Thoughts 15 years into Software Engineering](https://roughlywritten.substack.com/p/random-thoughts-15-years-into-software)
+
+Debuggability is highly underrated. When writing code, you have to think about how it will execute. You also need to be thinking about how it will fail and how you will debug it *in production*. Leave yourself audit trails, store data in human readable formats, and invest in admin tooling.
+
+
 [Habits of great software engineers](https://vadimkravcenko.com/shorts/habits-of-great-software-engineers/)
 
     Focusing beyond the code - as a developer you will code 20% of your time. You should excel at coding nonetheless, but it won't be enough to be great.

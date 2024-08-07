@@ -43,6 +43,8 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 ## Random Cool Stuff
 
+[Stories of reaching Staff-plus engineering roles](https://staffeng.com/)
+
 [The Grug Brained Developer](https://grugbrain.dev/)
 
 [Content Tests @ The Open Buddhist University](https://buddhistuniversity.net/tests/content)
@@ -183,6 +185,8 @@ Honeypot documentaries:
 [Writing for Engineers](https://www.heinrichhartmann.com/posts/writing/)
 
 [Dev tools: The ex-Googler guide](https://sourcegraph.com/blog/ex-googler-guide-dev-tools)
+
+[danluu](https://danluu.com/)
 
 [Vadim Kravcenko](https://vadimkravcenko.com/)
 

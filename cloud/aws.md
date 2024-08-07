@@ -1,3 +1,7 @@
+[AWS Security Maturity Model :: AWS Security Maturity Model](https://maturitymodel.security.aws.dev/en/model/)
+
+[Your AWS security checklist : r/aws](https://www.reddit.com/r/aws/comments/w4iq79/your_aws_security_checklist/)
+
 [open-guides/og-aws](https://github.com/open-guides/og-aws) - Amazon Web Services — a practical guide.
 
 [AndrewGuenther/fck-nat](https://github.com/AndrewGuenther/fck-nat) - Feasible cost konfigurable NAT: An AWS NAT Instance AMI.

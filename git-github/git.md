@@ -185,15 +185,13 @@ git merge dev
 
 ## Resources
 
-[Git - Book](https://git-scm.com/book/en/v2)
-
-[Git Reference Documentation](https://git-scm.com/docs).
+[Git Reference Documentation](https://git-scm.com/docs):
+- [Pro Git Book](https://git-scm.com/book/en/v2),
+- [Rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing),
 
 [Learn Git Branching](https://learngitbranching.js.org/) - the most visual and interactive way to learn Git on the web.
 
 [The Essential Git Handbook](https://medium.freecodecamp.org/the-essential-git-handbook-a1cf77ed11b5) - blog post.
-
-[Pro Git by Scott Chacon and Ben Straub](https://git-scm.com/book/en/v2) - book.
 
 [Things I wish Git had: Commit groups](http://blog.danieljanus.pl/2021/07/01/commit-groups/)
 
