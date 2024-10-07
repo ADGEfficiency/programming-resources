@@ -1,3 +1,22 @@
+# Fine Tuning
+
+[How to Fine-Tune LLMs in 2024 with Hugging Face](https://www.philschmid.de/fine-tune-llms-in-2024-with-trl)
+
+[Chatting with Transformers](https://huggingface.co/docs/transformers/en/conversations)
+
+## Codellama
+
+[Code Llama: Llama 2 learns to code](https://huggingface.co/blog/codellama)
+
+[codellama - ollama](https://ollama.com/library/codellama:34b)
+
+Formatting prompts:
+
+- [code llama prompt template](https://huggingface.co/codellama/CodeLlama-7b-Instruct-hf/discussions/19)
+- [model.py · codellama/codellama-13b-chat at main](https://huggingface.co/spaces/codellama/codellama-13b-chat/blob/main/model.py#L25-L36)
+
+
+---
 [The lifecycle of a code AI completion](https://sourcegraph.com/blog/the-lifecycle-of-a-code-ai-completion)
 
 [LMQL is a programming language for LLM interaction. | LMQL](https://lmql.ai/#calc)

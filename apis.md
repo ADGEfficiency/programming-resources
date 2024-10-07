@@ -1,3 +1,7 @@
+Shadow test of new API - run requests and check output the same
+
+---
+
 [An introduction to APIs](https://zapier.com/resources/guides/apis)
 
 A course:

@@ -186,9 +186,19 @@ Honeypot documentaries:
 
 [Dev tools: The ex-Googler guide](https://sourcegraph.com/blog/ex-googler-guide-dev-tools)
 
+[charity.wtf](https://charity.wtf/) - technology, databases, startups, engineering management, and whiskey.
+
 [danluu](https://danluu.com/)
 
+[Marc Brooker's Blog](https://brooker.co.za/blog/)
+- [How Do You Spend Your Time?](https://brooker.co.za/blog/2024/02/06/time.html)
+- [Getting Big Things Done](https://brooker.co.za/blog/2020/10/19/big-changes.html)
+
 [Vadim Kravcenko](https://vadimkravcenko.com/)
+
+[Julia Evans](https://jvns.ca/)
+- [The fish shell is awesome](https://jvns.ca/blog/2017/04/23/the-fish-shell-is-awesome/)
+- [Why you should understand (a little) about TCP](https://jvns.ca/blog/2015/11/21/why-you-should-understand-a-little-about-tcp/)
 
 - [Why software projects fail](https://vadimkravcenko.com/shorts/why-software-projects-fail/)
 - [Database Migrations](https://vadimkravcenko.com/shorts/database-migrations/)
@@ -509,3 +519,10 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 [Talk Python To Me](https://talkpython.fm/) - [Why is Python Slow?](https://talkpython.fm/episodes/show/265/why-is-python-slow)
 
 [Presentable](https://www.relay.fm/presentable) - how we design and build the products that are shaping our digital future
+
+
+## Fonts
+
+https://github.com/microsoft/cascadia-code
+
+https://github.com/tonsky/FiraCode

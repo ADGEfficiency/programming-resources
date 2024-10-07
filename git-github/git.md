@@ -312,3 +312,15 @@ When you're on `my-branch`, `git rebase main` is the same as `git rebase main my
 2. rebasing onto a branch that has diverged, like git rebase main. This can cause merge conflicts.
 
 Undoing rebases is hard
+
+---
+
+A rebase based workflow requires two rebases
+
+- rebase master onto feature (easier - integrating changes from stable master into feature)
+- rebase feature back to master (or this could be a merge commit) (harder - more potential for conflicts if feature branch has diverged significantly)
+- push master
+
+## Revert
+
+Undo commit with a new commit.

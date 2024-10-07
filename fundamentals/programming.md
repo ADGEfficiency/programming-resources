@@ -870,7 +870,7 @@ Kernighan's Law
 
 ## Technical debt
 
-Technical debt = delaying work that will have to be done in the future
+Technical debt = delaying work that will have to be done in the future - code or data that future developers will pay a cost for:
 
 - good technical debt is intentional
 - good technical debt is documented
@@ -897,15 +897,30 @@ Scaffolding
 - build it to get the project moving forward
 - example in data science would be a mock dataset, or a small model
 
-How do we fix technical debt - refactoring!
+Reasoning about technical debt:
+
+- impact,
+- cost to fix,
+- contagion - how much will technical debt spread.
+
+Types of technical debt:
+
+- local - isolated behind interface,
+- MacGyver - conflicting systems duct taped together,
+- foundational - assumption deep in the heart of the system,
+- data - present in data,
+
+How do we fix technical debt 
+
+- refactoring,
+- interfaces.
 
 Further reading:
 
 - [3 Kinds of Good Tech Debt](https://engineering.squarespace.com/blog/2019/three-kinds-of-good-tech-debt)
 - [2014_Sculley_ML_technical_debt](https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf)
 - [2014_Sculley_ml_high_interest_credit_card.pdf](https://research.google/pubs/pub43146/)
-- [Technical debt as a lack of understanding](https://daverupert.com/2020/11/technical-debt-as-a-lack-of-understanding/)
-
+- [Technical debt as a lack of understanding](https://daverupert.com/2020/11/technical-debt-as-a-lack-of-understanding/) - [Hacker News](https://news.ycombinator.com/item?id=41689332).
 
 ## Refactoring
 

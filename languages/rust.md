@@ -1,3 +1,5 @@
+[Two Years With Rust - Marc's Blog](https://brooker.co.za/blog/2020/03/22/rust.html)
+
 [An introduction to Data Oriented Design with Rust](https://jamesmcm.github.io/blog/2020/07/25/intro-dod/)
 
 [A half-hour to learn Rust](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)

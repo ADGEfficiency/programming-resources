@@ -258,6 +258,26 @@ clean:
 
 ### Discussion
 
+[Makefiles for Web Work](https://rosszurowski.com/log/2022/makefiles)
+
+Using `?=` you can set default variables that you can override outside of make. 
+
+You can document commands with a ## comment at the end of a line. For example:
+
+```makefile
+help: ## Show this help
+	@echo "\nSpecify a command. The choices are:\n"
+	@grep -E '^[0-9a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[0;36m%-12s\033[m %s\n", $$1, $$2}'
+	@echo ""
+.PHONY: help
+
+dev: node_modules ## Start a local development server
+	@./node_modules/.bin/next dev
+.PHONY: dev
+```
+
+Can then see this with `make help`
+
 [Self-Documented Makefile](https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html)
 
 ```makefile
@@ -298,3 +318,7 @@ https://www.benevolent.com/engineering-blog/make-reduce-how-to-use-makefiles-to-
 [Why Use Make - Mike Bostok](https://bost.ocks.org/mike/make/)
 
 [`make` as a Static Site Generator](https://www.karl.berlin/static-site.html)
+
+[stripe-cli/Makefile](https://github.com/stripe/stripe-cli/blob/master/Makefile)
+
+[aclark4life/project-makefile](https://github.com/aclark4life/project-makefile)

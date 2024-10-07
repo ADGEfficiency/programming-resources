@@ -8,6 +8,8 @@ Fast & lightweight.
 
 Efficient at **editing text**.
 
+Run scripts inside your editor, that use the file you are editing as input and write out to your editor.
+
 ### Vim is Everywhere
 
 The `vim` text editor & key bindings are everywhere - all Unix platforms have it installed.
@@ -286,11 +288,10 @@ Leader key
 
 ## Shell
 
-`:.w !bash` write buffer text into command 
-`:. !bash` run line in terminal and replace  
-`:r !ls` read output of commands into buffer 
-`:.w !bash` run line in terminal
-`:. !bash` run line in terminal and replace
+`:!ls` run command
+`:r !ls` read output of command into buffer 
+`:.w !bash` run line in terminal, show but don't replace
+`:. !bash` run line in terminal and replace with shell command output
 
 ## Ex Mode
 

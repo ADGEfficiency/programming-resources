@@ -69,3 +69,14 @@ DBT lets you do everything in SQL which is easier to interpret and cheaper / eas
 [Uplevel your dbt workflow with these tools and techniques · Start Data Engineering](https://www.startdataengineering.com/post/uplevel-dbt-workflow/)
 
 [How we style our dbt models | dbt Developer Hub](https://docs.getdbt.com/best-practices/how-we-style/1-how-we-style-our-dbt-models)
+
+[Advantages of Using dbt(Data Build Tool) · Start Data Engineering](https://www.startdataengineering.com/post/advantages-of-using-dbt-data-build-tool/)
+
+1. Easy to use for non engineers (shared data knowledge between engineering and non engineering teams)
+2. Extremely flexible data model (recreate data easily, backfills are easy)
+3. If most of your transformations are at a data warehouse level, this tool makes it extremely easy to do
+4. Built in testing for data quality
+5. Online, searchable data catalog and lineage
+6. Reusable macros
+7. Shockingly low learning curve
+8. Production run using dbt cloud or through Airflow trigger.

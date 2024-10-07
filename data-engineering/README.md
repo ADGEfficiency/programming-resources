@@ -40,6 +40,14 @@ Data management versus analytics:
 Skills
 - SQL Data Modeling Python Cloud Spark Kafka
 
+What to learn
+- data processing tool (like Spark)
+- orchestration (Airflow)
+- docker
+- sql
+- python
+- data modelling
+
 ## Principles
 
 - always save raw data unchanged,
@@ -48,6 +56,40 @@ Skills
 - particular + consistent on column naming - a common set of columns used in many tables,
 - capitalization is not important,
 - use binary formats (Parquet etc) where possible.
+
+## Mistakes 
+
+Not doing append only / keeping data
+- Failing to keep raw data to support reprocessing
+- Failing to keep base-level data to support re-aggregating of data
+- Updating data so that you can't create accurate historical analysis
+- Failing to architect for backup and recovery
+
+Not doing caches?
+- Failing to build aggregate data sets to speed up queries when working with large data volumes
+
+Relying on indexing too much, rather than partitioning & parallelism
+
+Not being consistent
+- Building a data model with a large number of tables (say, more than 60) with no consistency in naming, types, case, default values, or dimensional modeling methodology.
+
+Thinking in terms of products rather than architectures and designs.
+
+Designing data models and architectures for data analysis around specific use cases rather than general use cases.
+
+Locking yourself into a vendor product.
+
+Transforming more attributes than you need speculatively hoping that they will prove useful
+
+Failing to include automated testing as part of your solution.
+
+Failing to include observability and alerting as part of your solution.
+
+Building transform logic that is unavailable for skilled users to review, or too convoluted and indecipherable for skilled users to understand.
+
+Building hundreds or thousands of redundant tables.
+
+Building pipelines that aren't somewhat self-healing and require complex interactions to restart at any point.
 
 ## Components of a data engineering system
 
