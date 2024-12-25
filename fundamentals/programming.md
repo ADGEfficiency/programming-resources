@@ -949,7 +949,7 @@ Before you can refactor, you need to write code
 
 The dream is to find simple changes in one part of the code base that remove other parts
 
-*Further reading*
+Further reading:
 
 - Brett Slatkin - Refactoring Python: Why and how to restructure your code - PyCon 2016 - [youtube](https://www.youtube.com/watch?v=D_6ybDcU5gc&feature=player_embedded)
 - [Why we decided to go for the Big Rewrite](https://tech.channable.com/posts/2019-10-04-why-we-decided-to-go-for-the-big-rewrite.html)
@@ -965,6 +965,11 @@ Involve collaborators
 - people want to be involved if they can make a mark/a direction
 
 Code review forces more than one person to be involved in a project
+
+Further reading:
+
+- [Contributor Covenant: A Code of Conduct for Open Source and Other Digital Commons Communities](https://www.contributor-covenant.org/)
+- [The Power of Conventions in Software Development](https://jorzel.github.io/the-power-of-conventions-in-software-development/)
 
 
 # Principles of programming

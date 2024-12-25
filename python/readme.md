@@ -41,6 +41,8 @@
 
 ## Useful tools
 
+[The hand-picked selection of the best Python libraries and tools of 2024](https://www.reddit.com/r/Python/comments/1hbs4t8/the_handpicked_selection_of_the_best_python/?share_id=2URiFsSNPV3SGxdeps8SC&utm_name=androidcss)
+
 [argparse builder](https://blog.rfox.eu/en/Programming/Tools_I_use/Tools_I_use_argparse_builder.html) - a simple graphical interface for quick creation of the argparse commandline switches for your scripts
 
 

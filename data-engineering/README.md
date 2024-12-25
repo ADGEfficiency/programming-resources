@@ -161,8 +161,11 @@ The model becomes the byproduct of all the features they've implemented and the 
 
 ---
 
+[What is Data Engineering? - The Pragmatic Engineer](https://blog.pragmaticengineer.com/what-is-data-engineering/)
 
+[1 year of must-read articles : r/dataengineering](https://www.reddit.com/r/dataengineering/comments/p3kpq9/1_year_of_mustread_articles/)
 
+---
 
 ## What is a data engineer?
 
@@ -464,6 +467,10 @@ The idea behind data lake is, since nowadays storage became a lot cheaper, you l
 
 Data warehouse: has structures and usually analytics ready - as name suggests, warehouse for analytics 
 
+### Data lakehouse
+
+High latency on read
+
 
 ### What is a Data Mart?
 
@@ -509,6 +516,15 @@ https://hypothesis.readthedocs.io/en/latest/
 - more powerful unit testing
 - https://www.hillelwayne.com/contract-examples/
 
+## Virtualization
+
+Source systems are unlikely to have been built to support the kind of query load that happens with analytic queries. They are likely using products that won't even scale to support it. And while they're failing to support it they're also failing to support their transactional workload.
+
+Source systems often lack any kind of history. So you mostly just get current values. When there is history it's seldom organized in a useful way, and so takes a lot of ETL work to make any sense out of.
+
+Source systems will change over time - which will break or degrade (in terms of performance & data quality) your queries. Trying to prevent that means slowing their development way down.
+
+Source systems are seldom all using the exact same business definitions and data values: system A may have a customer called ACME, system B has a customer called A0934B7 - and they're the same customer. Or they both have ACME, but they're actually different customers, or one is just part of the other. This takes ETL to make sense out of.
 
 ### Spark
 
@@ -915,3 +931,38 @@ Measures a lag indicator — that is, the difference between two dates.
 [DeWitt and Stonebraker's "MapReduce: A major step backwards" (2009) | Hacker News](https://news.ycombinator.com/item?id=39875473)
 
 [Hot Takes on the Modern Data Stack](https://mattpalmer.io/posts/hot-takes/)
+
+## Bad Habits
+
+[Bad Data engineering habits/methodologies? : r/dataengineering](https://www.reddit.com/r/dataengineering/comments/nvh6c8/bad_data_engineering_habitsmethodologies/)
+
+```
+Too much repeated code
+Failing to keep raw data to support reprocessing
+Failing to keep base-level data to support re-aggregating of data
+Updating data so that you can't create accurate historical analysis
+Failing to build aggregate data sets to speed up queries when working with large data volumes
+Relying on indexing too much, rather than partitioning & parallelism
+Building a data model with a large number of tables (say, more than 60) with no consistency in naming, types, case, default values, or dimensional modeling methodology.
+Failing to architect for backup and recovery
+Thinking in terms of products rather than architectures and designs.
+Locking yourself into a vendor product.
+Designing data models and architectures for data analysis around specific use cases rather than general use cases.
+Transforming more attributes than you need speculatively hoping that they will prove useful
+Failing to include automated testing as part of your solution.
+Failing to include observability and alerting as part of your solution.
+Building transform logic that is unavailable for skilled users to review, or too convoluted and indecipherable for skilled users to understand.
+Building hundreds or thousands of redundant tables.
+Building pipelines that aren't somewhat self-healing and require complex interactions to restart at any point.
+Accepting external data in a bad, unsustainable format. When a third party gives you shit data you need to whine and throw a fit until it is in an acceptable format
+Coupling data pipeline execution with orchestration. This makes an untestable, fragile mess
+Throwing more and more data pipelines into a monolith until it gets to the point where it is impossible to work with. Orchestration frameworks like Airflow make it especially easy to fall into this pitfall
+Using pandas/dataframes/analytics tools for workflows that aren't designed for them
+Using NoSQL without a proper use case
+Putting data transformation into a BI tool
+Omitting data quality checks
+Omitting dead lettering and designing data pipelines that are incapable of rejecting bad data
+Ingesting large datasets row by row via REST APIs. Shit doesn't scale and bulk endpoints are easy to design if you need an API. Queues are usually a better solution here though
+Having a small, inexperienced team build everything themselves. In this scenario using a SaaS product like Fivetran or Stitch is a much better option
+The inability to read a query plan and properly write a query
+```

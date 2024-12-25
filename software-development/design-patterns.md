@@ -1,3 +1,13 @@
+# [Repository Pattern in Golang](https://jorzel.github.io/repository-pattern-in-golang-redis-and-external-api-as-providers/)
+
+A repository acts as a mediator between the application and the data source. 
+
+Encapsulates the logic for retrieving, storing, and querying data. 
+
+Application interacts with the repository instead of directly accessing the database or other data sources.
+
+Main benefit of using a repository pattern is that we can write application code without an assumption about the data provider in front (e.g. filesystem, database, external API).  Allows testing / mocking.
+
 # [Python Design Patterns](https://python-patterns.guide/)
 
 # [10 Design Patterns Explained in 10 Minutes - Fireship](https://youtu.be/tv-_1er1mWI?si=SvXi61M0vZajeoWt)

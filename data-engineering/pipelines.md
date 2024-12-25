@@ -40,6 +40,12 @@ There is a configuration registry which contains the details of data (csv file).
 
     data dictionaries / data catalogs / documentation
 
+self healing
+
+scalable
+
+cost efficient, zero cost at zero load
+
 Documentation
 
 Visibility/Transparency ,metadata (run history) and logging

@@ -186,3 +186,11 @@ does the orchestrator keep up. That’s a hard question. Airflow had its
 problems but with V2 a lot of these are being addressed.
 
 [https://kapernikov.com/a-comparison-of-data-processing-frameworks/](https://kapernikov.com/a-comparison-of-data-processing-frameworks/)
+
+---
+
+[Down with the DAG](https://benn.substack.com/p/down-with-the-dag)
+
+Should schedule based on desired outcomes, rather than triggering events.
+
+Use freshness requirements.

@@ -2,6 +2,8 @@
 
 [10 Years of Dotfiles](https://coornail.net/2022/06/10-years-of-dotfiles/)
 
+[hendrikmi/dotfiles](https://github.com/hendrikmi/dotfiles)
+
 ## Tools
 
 [GNU Stow](https://www.gnu.org/software/stow/manual/)

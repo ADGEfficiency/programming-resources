@@ -224,6 +224,10 @@ Materialized views are only as accurate as the last time they ran the query they
 
 # ORMs
 
+## [An ORM can bite you](https://jorzel.github.io/an-orm-can-bite-you/)
+
+ORMs can lazy load - they don't load all objects defined in foreign keys.
+
 ## [Is ORM still an 'anti pattern'?](https://github.com/getlago/lago/wiki/Is-ORM-still-an-%27anti-pattern%27%3F)
 
 ORMs are more misused than overused.
@@ -561,3 +565,17 @@ Often separated into offline (large batches) and online (single rows).
 [Monarch: Google’s Planet-Scale In-Memory Time Series Database](http://www.vldb.org/pvldb/vol13/p3181-adams.pdf)
 
 [Databases, Types and the Relational Model - Third Manifesto](https://www.dcs.warwick.ac.uk/~hugh/TTM/DTATRM.pdf)
+
+[The Snowflake Elastic Data Warehouse | Proceedings of the 2016 International Conference on Management of Data](https://dl.acm.org/doi/abs/10.1145/2882903.2903741)
+
+---
+
+## Testing
+
+[How to deal with stored procedure hell? : r/ExperiencedDevs](https://www.reddit.com/r/ExperiencedDevs/comments/1h7z9px/how_to_deal_with_stored_procedure_hell/?share_id=l2fyJkCqdDUatd0OogR4W&utm_name=androidcss&rdt=45072)
+
+ Here's one good thing about stored procedures that you can use to your advantage in this case: You can easily wrap simple, crude unit tests around them. Just stick to an Arrange/Act/Assert pattern with some ad hoc SQL. The execution of the stored procedure is the Act. Any necessary SQL to prime things for it is the Arrange (including, if necessary, a BEGIN TRAN). Then you Assert the state of the database after the procedure executes and, if necessary, ROLLBACK TRAN. 
+
+Once you have a toolbox of unit tests like this, then you can much more safely fiddle with these stored procedures. 
+
+As someone who also refactors legacy code for a living. This is the way. Wrap legacy code in tests, then replace it. If your tests are sufficiently thorough, you can be sure that the refactor doesn't break any behavior. 

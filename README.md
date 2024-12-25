@@ -43,6 +43,8 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 ## Random Cool Stuff
 
+[The Distributed Computing Manifesto](https://www.allthingsdistributed.com/2022/11/amazon-1998-distributed-computing-manifesto.html)
+
 [Stories of reaching Staff-plus engineering roles](https://staffeng.com/)
 
 [The Grug Brained Developer](https://grugbrain.dev/)
@@ -189,6 +191,10 @@ Honeypot documentaries:
 [charity.wtf](https://charity.wtf/) - technology, databases, startups, engineering management, and whiskey.
 
 [danluu](https://danluu.com/)
+
+[boz.](https://boz.com/)
+
+[The Pragmatic Engineer](https://blog.pragmaticengineer.com/)
 
 [Marc Brooker's Blog](https://brooker.co.za/blog/)
 - [How Do You Spend Your Time?](https://brooker.co.za/blog/2024/02/06/time.html)

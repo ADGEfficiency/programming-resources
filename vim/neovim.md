@@ -105,6 +105,8 @@ vim.g['zoom#statustext'] = 'Z'
 
 ## Example Configs
 
+[hendrikmi/dotfiles](https://github.com/hendrikmi/dotfiles)
+
 https://github.com/dmmulroy/kickstart.nix/tree/main/config/nvim
 
 https://github.com/mischavandenburg/dotfiles/tree/main/nvim

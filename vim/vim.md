@@ -36,6 +36,8 @@ It is for the people who enjoy configuring and customizing their tools.
 
 Even if Vim isn't your main text editor, a basic understanding of Vim is useful for working on remote machines.
 
+Using Vim requires combining it with other shell tools, such as `fzf` and `tmux`.  Vim on it's own is not enough.
+
 ## History
 
 Vim's history stretches back more that 50 years - [History and effective use of Vim](https://begriffs.com/posts/2019-07-19-history-use-vim.html):
