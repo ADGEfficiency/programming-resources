@@ -275,6 +275,8 @@ This way, when someone asks, “how many customers did we have per region over t
 
 ---
 
+[ben-nour/SQL-tips-and-tricks: SQL tips and tricks](https://github.com/ben-nour/SQL-tips-and-tricks)
+
 [Thoughts on Foreign Keys?](https://github.com/github/gh-ost/issues/331)
 
 [How slow is SELECT * ?](https://vettabase.com/blog/how-slow-is-select/)
@@ -392,6 +394,14 @@ database validations fail early
 modern sql db can handle complex functionality to work with text, dates and geolocational data
 triggers, stored procedures
 
+"NoSQL" DBs are usually used for serving fast, targeted queries. Often this is sold with the additional promises of horizontal scalability (see note 2). However, "NoSQL" is an unfortunate catch-all industry slang for "a database that isn't relational":
+
+    it doesn't model the data as rows and columns
+
+    it might not be queryable by SQL (see note 3)
+
+Some examples are ElasticSearch, Cassandra, MongoDB, and Redis, whose main common trait is that they don't store or access data using the relational concept of rows and columns. 
+
 ## ORMs
 
 [Object-Relational Mapping is the Vietnam of Computer Science](https://blog.codinghorror.com/object-relational-mapping-is-the-vietnam-of-computer-science/)
@@ -504,4 +514,6 @@ Storing raw strings in databases = heavy.  Instead it should be normalized.
 ## Books
 
 [The Art of PostgreSQL](https://theartofpostgresql.com/)
+
+---
 

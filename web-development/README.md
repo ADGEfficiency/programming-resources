@@ -2,6 +2,17 @@
 
 [namecheap.com](https://www.namecheap.com/)
 
+# Examples
+
+[blackfyre/wga: Jumping forward ~30 years](https://github.com/blackfyre/wga)
+
+htmx - A javascript library for building web applications
+TailwindCSS - A utility-first CSS framework
+    DaisyUI - A component library for TailwindCSS
+Go 1.21+ - A programming language for building web applications
+    PocketBase - A Go based SaaS platform for building web applications
+    Goreleaser - A tool for building and releasing Go applications
+
 ---
 
 [microsoft/Web-Dev-For-Beginners: 24 Lessons, 12 Weeks, Get Started as a Web Developer](https://github.com/microsoft/Web-Dev-For-Beginners/tree/main)

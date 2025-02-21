@@ -174,6 +174,10 @@ Honeypot documentaries:
 
 ## Blogs & Blog Posts
 
+[Good software development habits](https://zarar.dev/good-software-development-habits/)
+
+[Write code that is easy to delete, not easy to extend](https://programmingisterrible.com/post/139222674273/write-code-that-is-easy-to-delete-not-easy-to)
+
 [5 Computer Science Papers That Changed How I Write Code](https://builtin.com/software-engineering-perspectives/5-computer-science-papers-changed-how-write-code)
 
 [5 Famous Programming Quotes, Explained](https://yc.prosetech.com/5-famous-programming-quotes-explained-4da607906c1)
@@ -224,6 +228,7 @@ Honeypot documentaries:
 
 - [Continuous learning framework](https://jorzel.github.io/continuous-learning-framework/)
 - [Continuous Learning Framework vol. 2](https://jorzel.github.io/continuous-learning-framework-vol-2/)
+- [Different types of application logic](https://jorzel.github.io/different-types-of-application-logic/)
 
 [Erik Bernhardsson](https://erikbern.com/top-posts.html)
 

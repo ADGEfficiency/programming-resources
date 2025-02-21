@@ -568,6 +568,8 @@ Often separated into offline (large batches) and online (single rows).
 
 [The Snowflake Elastic Data Warehouse | Proceedings of the 2016 International Conference on Management of Data](https://dl.acm.org/doi/abs/10.1145/2882903.2903741)
 
+[PostgreSQL and UUID as Primary Key | Hacker News](https://news.ycombinator.com/item?id=40884878)
+
 ---
 
 ## Testing

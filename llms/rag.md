@@ -1,3 +1,28 @@
+## Implementations
+
+[Open source conversational RAG on local files](https://www.reddit.com/r/ollama/comments/1h1q4n9/open_source_conversational_rag_on_local_files/?share_id=73QeDKAeaHjhxxHZZkPho&utm_name=androidcss)
+
+[Plug and Play RAG](https://www.reddit.com/r/LocalLLaMA/comments/1g19wm6/plug_and_play_rag/?share_id=4Bpot6xQokxU8CSK1lb6f&utm_name=androidcss)
+
+[The Limitations of Text Embeddings in RAG Applications](https://neo4j.com/developer-blog/rag-text-embeddings-limitations/)
+
+Combining structured data approaches and unstructured text search techniques can deliver more accurate and relevant responses, ultimately enhancing the user experience in RAG applications.
+
+[Modular RAG: Transforming RAG Systems into LEGO-like Reconfigurable Frameworks](https://arxiv.org/abs/2407.21059)
+
+[Implementing “Modular RAG” with Haystack and Hypster | by Gilad Rubin | Towards Data Science](https://towardsdatascience.com/implementing-modular-rag-with-haystack-and-hypster-d2f0ecc88b8f)
+
+Six components:
+
+1. Indexing: Organize your data for efficient search.
+2. Pre-Retrieval: Process the user’s query before searching.
+3. Retrieval: Find the most relevant information.
+4. Post-Retrieval: Refine the retrieved information.
+5. Generation: Use an LLM to generate a response.
+6. Orchestration: Control the overall flow of the system.
+
+---
+
 We retrieve specific knowledge, like code snippets and documentation, from any external knowledge source (which may or may not be included in the model training set) and use it to guide the generative process. 
 
 If I point you to an arbitrary file in an arbitrary codebase and ask you to “write some code”, you’d also appreciate some context about that codebase. RAG is about automating this process.

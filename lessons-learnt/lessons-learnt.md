@@ -1,3 +1,10 @@
+[Mocking | Learn Go with tests](https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/mocking)
+
+Every forward-thinking post about software development emphasises the importance of quick feedback loops.
+
+Slow tests ruin developer productivity.
+
+
 [Random Thoughts 15 years into Software Engineering](https://roughlywritten.substack.com/p/random-thoughts-15-years-into-software)
 
 Debuggability is highly underrated. When writing code, you have to think about how it will execute. You also need to be thinking about how it will fail and how you will debug it *in production*. Leave yourself audit trails, store data in human readable formats, and invest in admin tooling.

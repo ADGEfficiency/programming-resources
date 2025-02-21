@@ -258,6 +258,8 @@ Tests are a tradeoff between two things:
 - the cost of writing tests,
 - the cost of bugs.
 
+Tests can be expensive to write if they are an afterthought, and/or the code is not written in way that is easy to test.
+
 # Further Reading
 
 [Hello, Startup: A Programmer's Guide to Building Products, Technologies, and Teams - Yevgeniy Brikman](https://www.amazon.co.uk/gp/product/B016YZWDA4/ref=ppx_yo_dt_b_d_asin_title_o01?ie=UTF8&psc=1)

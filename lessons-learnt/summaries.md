@@ -2,6 +2,10 @@ https://erikbern.com/2021/07/07/the-data-team-a-short-story.html
 
 TODO
 
+[Good software development habits](https://zarar.dev/good-software-development-habits/)
+
+[Write code that is easy to delete, not easy to extend](https://programmingisterrible.com/post/139222674273/write-code-that-is-easy-to-delete-not-easy-to)
+
 https://news.ycombinator.com/item?id=30763516
 
 https://maheshba.bitbucket.io/blog/2021/10/19/42Things.html

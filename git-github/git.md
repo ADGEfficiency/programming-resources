@@ -189,6 +189,8 @@ git merge dev
 - [Pro Git Book](https://git-scm.com/book/en/v2),
 - [Rebasing](https://git-scm.com/book/en/v2/Git-Branching-Rebasing),
 
+[Beej's Guide to Git](https://beej.us/guide/bggit/)
+
 [Learn Git Branching](https://learngitbranching.js.org/) - the most visual and interactive way to learn Git on the web.
 
 [The Essential Git Handbook](https://medium.freecodecamp.org/the-essential-git-handbook-a1cf77ed11b5) - blog post.

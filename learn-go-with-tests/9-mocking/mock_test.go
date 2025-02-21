@@ -10,6 +10,7 @@ import (
 func TestCountdown(t *testing.T) {
 
 	t.Run("print", func(t *testing.T) {
+		// send the output of `Countdown` to a buffer in tests, os.Stdout in application
 		buffer := &bytes.Buffer{}
 		Countdown(buffer, &SpySleeper{})
 		got := buffer.String()

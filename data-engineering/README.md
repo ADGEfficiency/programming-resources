@@ -11,6 +11,8 @@ tags:
 1. **access to data** - all the important data, in the same place, easily queryable & accessible by everyone in the business,
 2. **access to data generation/creation/transformation**.
 
+source data, manipulate data, store data and automate the process
+
 > the most basic foundation of what is most critically needed: all the important data, in the same place, easily queryable (from https://erikbern.com/2021/07/07/the-data-team-a-short-story.html)
 
 
@@ -346,6 +348,21 @@ Normalization
 - but not good in practice (require many queries / joins to get data, slow queries)
 
 
+### Data Modelling
+
+Kimball is used for data warehousing and analytics. In these use cases you care more about read performance. Less normalization means less joins (better performance), and more understandability for business users.
+
+Normalized databases are used for transactional systems where write performance is more important along with decreased redundancy.
+
+normalize till it hurts, denormalize till it works
+
+your operational database (think e-commerce store) should be highly normalized to avoid update anomalies
+
+your analytic database (data warehouse) should be highly denormalied to ease analysis
+
+The 2 approaches used now are Kimball (star schema) – very old and brittle design methodology or Data Vault (hybrid).
+
+
 ## Abstractions in Data Engineering
 
 ### Orchestration
@@ -469,7 +486,17 @@ Data warehouse: has structures and usually analytics ready - as name suggests, w
 
 ### Data lakehouse
 
+    separate storage and compute costs
+
+    instant scale up, scale down, scale out flexibility
+
+    only pay for what you use ( if the compute is asleep, you're not paying for it)
+
+    infinitely scalable. You won't run out of risk space or compute resource
+
 High latency on read
+
+Can't do concurrent writes (to same partition)
 
 
 ### What is a Data Mart?

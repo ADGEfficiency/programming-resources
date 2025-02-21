@@ -36,6 +36,10 @@ https:/www.reddit.com/r/neovim/
 
 vimtutor - type `$ vimtutor`
 
+[VIM Adventures](https://vim-adventures.com/) - Learn VIM while playing a game.
+
+[VimGolf](https://www.vimgolf.com/)
+
 [Vim & Python: Making yourself at home](https://justin.abrah.ms/vim/vim_and_python.html)
 
 [Seven habits of effective text editing](http://moolenaar.net/habits.html)

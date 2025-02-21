@@ -1,8 +1,14 @@
-# Fine Tuning
+## Fine Tuning
 
 [How to Fine-Tune LLMs in 2024 with Hugging Face](https://www.philschmid.de/fine-tune-llms-in-2024-with-trl)
 
 [Chatting with Transformers](https://huggingface.co/docs/transformers/en/conversations)
+
+[OpenPipe: Fine-Tuning for Developers](https://openpipe.ai/)
+
+[Finetune LLMs on your own consumer hardware using tools from PyTorch and Hugging Face ecosystem | PyTorch](https://pytorch.org/blog/finetune-llms/)
+
+The LoRA method works by attaching extra trainable parameters into a model(that we will denote by base model).
 
 ## Codellama
 
@@ -15,8 +21,16 @@ Formatting prompts:
 - [code llama prompt template](https://huggingface.co/codellama/CodeLlama-7b-Instruct-hf/discussions/19)
 - [model.py · codellama/codellama-13b-chat at main](https://huggingface.co/spaces/codellama/codellama-13b-chat/blob/main/model.py#L25-L36)
 
+## Structured Output
 
----
+Using the openai library and llama you can enforce that the response be valid json with response_format={ "type": "json_object" }. Hugely helpful. 
+
+## Agents
+
+[anthropic-cookbook/patterns/agents at main · anthropics/anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook/tree/main/patterns/agents)
+
+## Inbox
+
 [The lifecycle of a code AI completion](https://sourcegraph.com/blog/the-lifecycle-of-a-code-ai-completion)
 
 [LMQL is a programming language for LLM interaction. | LMQL](https://lmql.ai/#calc)
@@ -48,9 +62,3 @@ That said, it's still a gamechanger that I can do it at all.
 3. I am a bit more hyped than the author that this is a game changer, but like them, I don't think it's going to be the end of the world. There are some jobs that are going to be heavily impacted and I think we are going to have a rough few years of bots astroturfing platforms. But all in all I think it's more of a force multiplier rather than a breakthrough like the internet.
 
 IMHO it's similar to what happened to DevOps in the 2000s, you just don't need a big special team to help you deploy anymore, you hire a few specialists and mostly buy off the shelf solutions. Similarly, certain ML tasks are now easy to implement even for dumb dumb web devs like me. 
-
-## Fine Tuning
-
-[Finetune LLMs on your own consumer hardware using tools from PyTorch and Hugging Face ecosystem | PyTorch](https://pytorch.org/blog/finetune-llms/)
-
-The LoRA method works by attaching extra trainable parameters into a model(that we will denote by base model).

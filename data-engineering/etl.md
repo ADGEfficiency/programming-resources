@@ -50,3 +50,6 @@ For ELT (simple load then SQL transform), you’re relying on the memory in your
 
 The important takeaway between ELT and ETL is that with ELT you are decoupled from your source system and with ETL this is not the case.
 
+---
+
+Reverse ETL = putting data generated in your data warehouse into source systems
