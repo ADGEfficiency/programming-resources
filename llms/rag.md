@@ -21,6 +21,10 @@ Six components:
 5. Generation: Use an LLM to generate a response.
 6. Orchestration: Control the overall flow of the system.
 
+## Vector Databases
+
+[marqo-ai/marqo](https://github.com/marqo-ai/marqo) - Unified embedding generation and search engine. Also available on cloud - cloud.marqo.ai.
+
 ---
 
 We retrieve specific knowledge, like code snippets and documentation, from any external knowledge source (which may or may not be included in the model training set) and use it to guide the generative process. 

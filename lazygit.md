@@ -6,7 +6,7 @@
 
 `j k` = move up down inside left panel
 
-`J K` = move up down inside left panel
+`J K` = move up down inside right panel
 
 `[ ]` = move between tabs in one left panel
 

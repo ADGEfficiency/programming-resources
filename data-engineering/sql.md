@@ -517,3 +517,52 @@ Storing raw strings in databases = heavy.  Instead it should be normalized.
 
 ---
 
+---
+
+SQL has levels to it:
+
+- level 1
+SELECT, FROM, WHERE, GROUP BY, HAVING, LIMIT 
+
+Master these basic keywords and you’ll be well on your way to mastering SQL. 
+
+- level 2
+Mastering JOINs:
+Most common JOINs: INNER and LEFT 
+Less common JOINs: FULL OUTER 
+Joins you should avoid almost always: RIGHT and CROSS JOIN
+
+Mastering common table expressions (CTEs). 
+
+The WITH keyword defines a CTE which you can imagine as a “variable” that you can query later. 
+
+Using variables like this you can master algorithm techniques like recursion, breadth first search and more! 
+
+CTEs also make your SQL much more readable and make your coworkers hate you less compared to nested sub queries. 
+
+- level 3
+Mastering window functions 
+
+Window functions have 3 pieces:
+
+The function (i.e. SUM, RANK, AVG) 
+The over clause to start the window 
+The window definition which has 3 pieces:
+- how to split the window up with PARTITION BY 
+- how to order the window with ORDER BY 
+- how to restrict the window size with ROWS clause (useful for rolling monthly averages)
+
+Understand RANK vs DENSE_RANK vs ROW_NUMBER, I have been asked this in interviews a million times. 
+
+- level 4
+You understand table scans, b-tree indexes, and partitioning schemes to increase performance. 
+
+Doing something like COUNT(CASE WHEN) is much better than doing multiple queries with a UNION ALL. UNION ALL is terrible for all sorts of reasons that I don’t want to get into in this post. 
+
+B-trees indexes allow for efficient scanning of data in the WHERE clause. 
+
+Use explain plans to understand if an index is actually being used or not! 
+
+Partitioning is similar to indexes except it’s a “poor mans” index. It just keeps data in specific folders and skips the folders that don’t include the data I question. 
+
+What else did I miss for mastering SQL?

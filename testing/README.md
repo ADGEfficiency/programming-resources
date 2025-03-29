@@ -271,3 +271,7 @@ Tests can be expensive to write if they are an afterthought, and/or the code is 
 [Favor real dependencies for unit testing](https://stackoverflow.blog/2022/01/03/favor-real-dependencies-for-unit-testing/)
 
 [Too much of a good thing: the trade-off we make with tests](https://ntietz.com/blog/too-much-of-a-good-thing-the-cost-of-excess-testing/)
+
+[Testing in Production: the hard parts](https://copyconstruct.medium.com/testing-in-production-the-hard-parts-3f06cefaf592)
+
+The goal of testing in production isn’t to completely circumvent code under test from causing any impact to the production environment. Rather, the goal of testing in production is to be able to detect problems that cannot be surfaced in pre-production testing early enough that a fully blown outage can be prevented from happening.
