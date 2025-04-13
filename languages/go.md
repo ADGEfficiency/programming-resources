@@ -16,6 +16,8 @@
 
 [Performance comparison: counting words in Python, Go, C++, C, AWK, Forth, and Rust](https://benhoyt.com/writings/count-words/)
 
+[An unordered list of things I miss in Go — kokada](https://kokada.dev/blog/an-unordered-list-of-things-i-miss-in-go/) - [Hacker News](https://news.ycombinator.com/item?id=41274850)
+
 # HATE Stack
 
 [The HATE Stack - Simple and Efficient](https://www.youtube.com/watch?v=bti-bnGbyak) - [awesome-club/hate-stack](https://github.com/awesome-club/hate-stack)

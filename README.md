@@ -24,6 +24,8 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 [musicForProgramming](https://musicforprogramming.net/?about)
 
+[Philip K. Dick's Favorite Classical Music](https://www.openculture.com/2014/05/philip-k-dicks-favorite-classical-music.html)
+
 [Liszt](https://youtu.be/salrwSVWpC4)
 
 [Rain with Clair de Lune](https://youtu.be/7mjtE5A2zMY)
@@ -42,6 +44,8 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 
 ## Random Cool Stuff
+
+[DevDocs](https://devdocs.io/) - combines multiple API documentations in a fast, organized, and searchable interface.
 
 [The Distributed Computing Manifesto](https://www.allthingsdistributed.com/2022/11/amazon-1998-distributed-computing-manifesto.html)
 
@@ -173,6 +177,8 @@ Honeypot documentaries:
 
 
 ## Blogs & Blog Posts
+
+[John Carmack on Inlined Code](http://number-none.com/blow/blog/programming/2014/09/26/carmack-on-inlined-code.html) - [Hacker News](https://news.ycombinator.com/item?id=41758371)
 
 [Good software development habits](https://zarar.dev/good-software-development-habits/)
 

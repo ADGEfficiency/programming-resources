@@ -194,3 +194,5 @@ problems but with V2 a lot of these are being addressed.
 Should schedule based on desired outcomes, rather than triggering events.
 
 Use freshness requirements.
+
+[How ngrok uses Dagster to run our data platform-ngrok](https://ngrok.com/blog-post/how-ngrok-uses-dagster-to-run-our-data-platform)

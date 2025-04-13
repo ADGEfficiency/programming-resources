@@ -1,3 +1,5 @@
+[Ask HN: What do you monitor on your servers? | Hacker News](https://news.ycombinator.com/item?id=41240379)
+
 [Deployment and infrastructure for a bootstrapped webapp with 150k monthly visits | Caspar von Wrede](https://casparwre.de/blog/webapp-python-deployment/)
 
 I use 2 VPS (virtual private servers) running on DigitalOcean

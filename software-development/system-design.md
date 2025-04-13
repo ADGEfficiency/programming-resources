@@ -1,3 +1,5 @@
+[How we built ngrok's data platform-ngrok](https://ngrok.com/blog-post/how-we-built-ngroks-data-platform)
+
 [In defense of simple architectures](https://danluu.com/simple-architectures/)
 
 [personal-server/README.md](https://github.com/erebe/personal-server/blob/master/README.md) - how I manage my personal server in 2023.

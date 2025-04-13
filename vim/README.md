@@ -32,13 +32,17 @@ https:/www.reddit.com/r/vim/
 
 https:/www.reddit.com/r/neovim/
 
-## Introductory
-
-vimtutor - type `$ vimtutor`
+## Games
 
 [VIM Adventures](https://vim-adventures.com/) - Learn VIM while playing a game.
 
 [VimGolf](https://www.vimgolf.com/)
+
+[Vim Racer](https://vim-racer.com/)
+
+## Introductory
+
+vimtutor - type `$ vimtutor`
 
 [Vim & Python: Making yourself at home](https://justin.abrah.ms/vim/vim_and_python.html)
 

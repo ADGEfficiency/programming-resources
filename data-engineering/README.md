@@ -993,3 +993,47 @@ Ingesting large datasets row by row via REST APIs. Shit doesn't scale and bulk e
 Having a small, inexperienced team build everything themselves. In this scenario using a SaaS product like Fivetran or Stitch is a much better option
 The inability to read a query plan and properly write a query
 ```
+
+---
+
+[How we built ngrok's data platform-ngrok](https://ngrok.com/blog-post/how-we-built-ngroks-data-platform)
+
+As such, the majority of the data modeling work (i.e., SQL) is done by subject matter experts, which is very different to DE roles in many other organizations. In other words, I write very little SQL on a day to day basis and won’t usually be the person that writes a data model.  
+
+Within those subject matter experts, some people write reusable, well-structured dbt models, while other people focus on ad hoc analysis (based on these models) via our BI tooling in Superset. 
+
+v1
+
+```
+On the batch ingestion side, we used Airbyte open source on Kubernetes to ingest third-party data via their respective APIs. We utilized the ngrok OAuth module to do authentication (as we do for all our open-source services that require an ingress controller). 
+
+Airbyte wrote JSON files, where we determined the schema with manual runs of a Glue parser and several Python scripts to create the target schemas, as well as another Glue job to write the target schema as Iceberg.
+
+At the time, we did not have an orchestrator available and relied on Glue internal schedules. This meant we had no alerting or any integration with on-call tools.
+
+We used AWS DMS here to get our core Postgres data, writing parquet data to S3. This was a once-a-day batch job.
+
+On the streaming side, we streamed event metadata via AWS Firehose, writing JSON data to 2 different S3 locations.
+
+For analytics, all our data was (and still is) eventually stored as Apache Iceberg and generally queried via AWS Athena, although the legacy architecture did have some datasets that were based on raw JSON in the mix. We used AWS Glue as a meta store.
+
+Our SQL models were actually SQL views directly in Athena, with no version control or lineage, that were directly created in production and queried via Preset (which is the managed cloud version of Superset).
+
+On a similar vein, not having a central orchestrator, alerting, and auditing for our data jobs was an operational challenge (you can learn more about how we solved those two issues here).
+
+Our data stack was also not integrated very deeply in our Go monorepo and tooling, missing things like Datadog monitors and metrics, good test coverage, or style guides and enforcements via CI (see the Working in a go monorepo section)
+```
+
+v2/now
+
+```
+Our modern data platform is more heavily based around open-source tools we self-host on Kubernetes, dogfooding ngrok, with some AWS native tools in the mix.
+
+All our batch ingestion is now run and orchestrated via Dagster, which I’ve written about previously. We still use Airbyte and still use ngrok to do so, but write directly to Glue and maintain our schemas as Terraform by querying the Glue API.
+
+For streaming data (which is where most of our volume and complexity comes from), we now run Apache Flink to consume Protobuf messages directly from Kafka, rather than rely on Firehose and internal services. We’ll also cover this in more detail in a bit.
+
+Our database ingestion is still using DMS, but now mostly relies on streaming writes, which are faster and more efficient (when responding to a support request, you don’t want yesterday’s data!).
+
+For analytics, we heavily rely on dbt now, as well as self-host the open-source version of Apache Superset. We also added a hosted version of the dbt docs, of course also dogfooded behind an ngrok endpoint.
+```
