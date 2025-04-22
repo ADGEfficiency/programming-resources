@@ -10,6 +10,8 @@
 
 The LoRA method works by attaching extra trainable parameters into a model(that we will denote by base model).
 
+[dvgodoy/FineTuningLLMs101_ODSC_Europe2024](https://github.com/dvgodoy/FineTuningLLMs101_ODSC_Europe2024) - [FineTuningLLMs101.ipynb - Colab](https://colab.research.google.com/github/dvgodoy/FineTuningLLMs101_ODSC_Europe2024/blob/main/FineTuningLLMs101.ipynb)
+
 ## Codellama
 
 [Code Llama: Llama 2 learns to code](https://huggingface.co/blog/codellama)

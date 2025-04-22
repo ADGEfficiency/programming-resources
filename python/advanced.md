@@ -1,3 +1,5 @@
+[Why We Went All In on Type Completeness](https://www.prefect.io/blog/why-we-went-all-in-on-type-completeness)
+
 [Shape typing in Python](https://jameshfisher.com/2024/04/12/shape-typing-in-python/)
 
 ```python

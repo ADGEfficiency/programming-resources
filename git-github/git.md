@@ -201,6 +201,10 @@ git merge dev
 
 [THIS IS HOW I GIT](https://daniel.haxx.se/blog/2020/11/09/this-is-how-i-git/)
 
+[Oh My Git!](https://ohmygit.org/) - downloadable game.
+
+[Learn Git Branching JS](https://learngitbranching.js.org/) - interactive tutorial website to practice working with Git in your browser.
+
 [Oh Shit, Git!?!](https://ohshitgit.com/) - how to get out of sticky situations in Git.
 
 `git reflog` shows a log of changes to the local repository's HEAD and branch heads

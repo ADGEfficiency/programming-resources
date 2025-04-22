@@ -1,5 +1,7 @@
 ## Implementations
 
+[RLAMA](https://rlama.dev/)
+
 [Open source conversational RAG on local files](https://www.reddit.com/r/ollama/comments/1h1q4n9/open_source_conversational_rag_on_local_files/?share_id=73QeDKAeaHjhxxHZZkPho&utm_name=androidcss)
 
 [Plug and Play RAG](https://www.reddit.com/r/LocalLLaMA/comments/1g19wm6/plug_and_play_rag/?share_id=4Bpot6xQokxU8CSK1lb6f&utm_name=androidcss)

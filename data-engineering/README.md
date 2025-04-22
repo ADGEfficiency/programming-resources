@@ -1037,3 +1037,27 @@ Our database ingestion is still using DMS, but now mostly relies on streaming wr
 
 For analytics, we heavily rely on dbt now, as well as self-host the open-source version of Apache Superset. We also added a hosted version of the dbt docs, of course also dogfooded behind an ngrok endpoint.
 ```
+
+[The Test Pyramid, Data Engineering, and You! | by David O'Keeffe | Cognizant Servian](https://servian.dev/the-test-pyramid-and-data-engineering-with-julia-e4678c3f8dff)
+
+Data pipeline testing has 5 levels (vs traditional 3 levels in software)
+
+Limited scope testing is practical and valuable
+
+Test Pyramid Basics
+- Unit tests: testing individual components (fast, reliable, focused)
+- Integration tests: testing connected components working together
+- End-to-end tests: testing the complete system
+- Unit tests should be most numerous, with fewer integration and even fewer E2E tests
+
+Data Engineering Testing Specifics
+- 5 levels: unit/component, single job, multiple jobs, pipeline+service, full system
+- Lars Albertsson suggests focusing on job-to-pipeline level testing
+- Jobs in data pipelines function as black-box functions
+- Data volatility makes unit tests potentially more fragile
+- Kent Beck's approach: "test as little as possible to reach confidence"
+
+Challenges Identified
+- Structural coupling between tests and implementation
+- Test fragility when data sources change
+- Balancing test coverage with practical value

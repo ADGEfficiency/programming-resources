@@ -1,3 +1,89 @@
+[Monolith First](https://martinfowler.com/bliki/MonolithFirst.html)
+
+Monolith First strategy is recommended by Martin Fowler
+- Successful microservices usually evolved from monoliths that grew too big
+- Systems built as microservices from scratch often end up in serious trouble
+- Even microservice advocates acknowledge significant MicroservicePremium cost
+
+Why start with monolith
+- YAGNI principle: unsure if application will be useful to users
+- Better to scale successful but poorly designed system than inverse
+- Prioritize speed and feedback cycle time initially
+- Avoid microservices premium drag during early phases
+
+Boundaries are critical but hard to get right
+- Microservices require stable, well-defined service boundaries (BoundedContexts)
+- Even experienced architects struggle with boundaries initially
+- Refactoring between services much harder than within monolith
+- Building monolith first helps discover correct boundaries
+
+Different approaches to monolith-first strategy
+- Carefully designed modular monolith (theoretical but few success stories)
+- Gradually peel off microservices at edges (common approach)
+- Replace monolith entirely as SacrificialArchitecture
+- Start with coarse-grained services then break down
+
+Counter arguments for microservices-first
+- Gets teams used to microservice development rhythm from start
+- Enforces separate team structure from beginning
+- Easier to scale development effort when needed
+- More viable for system replacements with known boundaries
+- Requires existing microservices experience in team
+
+Current state of advice
+- Limited anecdotes and evidence available
+- All advice should be considered tentative
+- Each approach has trade-offs
+
+Key constraints
+- Arbitrary systems can't always be broken into microservices
+- Many systems acquire too many dependencies between modules
+- Successful decomposition requires good modular design to start
+
+---
+
+Monolith first is generally recommended
+- Break off services only when infrastructure demands make it logical
+- Requires engineers to maintain proper domain separation within single codebase
+- Avoids premature complexity of microservices
+
+Issues with poor domain separation
+- Engineers who can't separate domains in monolith will do even worse with microservices
+- Poor separation leads to worse mess in distributed system
+- Often separation is done by technical boundaries rather than domain boundaries
+
+Companies lack proper domain-driven practices
+- Few companies do user story mapping or event storming
+- DDD is mentioned but rarely practiced
+- Lack of proper planning leads to technical rather than domain boundaries
+
+Modular monolith approach recommended
+- Build monolith from modular components
+- Use proper libraries and modular design patterns
+- Properly designed monoliths are already modular (since 1970s)
+
+Conditions for transitioning to microservices
+- Product pivots have slowed down
+- At least 3 senior engineers for transition leadership
+- Already containerized infrastructure with orchestration
+- Team skilled with containers, networking, testing
+- Start with fire-and-forget services behind queues
+
+Amazon Prime Video example
+- Reduced costs by 90% by switching from microservices back to monolith
+- Shows microservices aren't always the better solution
+
+Testing and infrastructure complexity
+- Microservices create significant testing challenges
+- Can't run everything locally
+- Requires complex infrastructure bridges and security layers
+
+Design considerations for scaling
+- Focus on what actually needs to scale (CPU/memory intensive operations)
+- Don't create services based on OOP thinking (Person service, Order service)
+- Design stateless services for components that need to handle large loads
+
+
 [How we built ngrok's data platform-ngrok](https://ngrok.com/blog-post/how-we-built-ngroks-data-platform)
 
 [In defense of simple architectures](https://danluu.com/simple-architectures/)

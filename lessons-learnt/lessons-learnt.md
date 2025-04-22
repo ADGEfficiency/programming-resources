@@ -1,3 +1,15 @@
+[Good software development habits | Zarar's blog](https://zarar.dev/good-software-development-habits/) - [Good software development habits : r/programming](https://www.reddit.com/r/programming/comments/1fdkv8n/good_software_development_habits/?share_id=gGIZJ7lIneZA4WErZcuYT&utm_name=androidcss) - [Good Software Development Habits | Hacker News](https://news.ycombinator.com/item?id=42165057)
+
+for each desired change, make the change easy (warning: this may be hard), then make the easy change
+
+Copy-paste is OK once. The second time you're introducing duplication (i.e., three copies), don't. You should have enough data points to create a good enough abstraction. The risk of diverging implementations of the same thing is too high at this point, and consolidation is needed. It's better to have some wonky parameterization than it is to have multiple implementations of nearly the same thing. Improving the parameters will be easier than to consolidate four different implementations if this situation comes up again.
+
+Designs get stale. You can slow the rate at which they get stale by refactoring, but ultimately you'll need to change how things work. Don't feel too bad about moving away from something that was dear to you a while ago and something you felt proud about at the time. You did the right thing then and shouldn't beat yourself up for not getting it right enough that you wouldn't need to change anything. Most of the time writing software is changing software. Just accept it and move on. There's no such thing as the perfect design, and change is at the core of software development. How good you are at changing things is how good you are at software development.
+
+Technical debt can be classified into three main types: 1) things that are preventing you from doing stuff now, 2) things that will prevent you from doing stuff later, and 3) things that might prevent you from doing stuff later. Every other classification is a subset of these three. Minimize having lots of stuff in #1 and try to focus on #2. Ignore #3.
+
+Testability is correlated with good design. Something not being easily testable hints that the design needs to be changed. 
+
 [Mocking | Learn Go with tests](https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/mocking)
 
 Every forward-thinking post about software development emphasises the importance of quick feedback loops.

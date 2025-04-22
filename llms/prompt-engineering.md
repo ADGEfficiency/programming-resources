@@ -1,3 +1,25 @@
+[Greg Brockman on X: "o1 is a different kind of model. great performance requires using it in a new way relative to standard chat models." / X](https://x.com/gdb/status/1878489681702310392)
+
+```
+Goal
+
+Return Format
+
+Warnings
+
+Context Dump
+```
+
+```
+overall goal
+
+do this
+
+but don't do this
+
+return format 
+```
+
 [Prompt Engineering Guide](https://www.promptingguide.ai/)
 
 [Prompt engineering - OpenAI API](https://platform.openai.com/docs/guides/prompt-engineering)

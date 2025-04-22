@@ -6,7 +6,6 @@ You will often find my notes and summaries alongside links to articles in the ma
 
 I maintain similar collections on [reinforcement learning](https://github.com/ADGEfficiency/rl-resources) and [machine learning](https://github.com/ADGEfficiency/ml-resources).
 
-
 ## Teaching Materials
 
 Hidden inside these notes are are the content for a few courses:
@@ -16,7 +15,6 @@ Hidden inside these notes are are the content for a few courses:
 - [test driven development](https://github.com/ADGEfficiency/programming-resources/tree/master/test-driven-development).
 
 Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-resources/tree/master/memes).
-
 
 ## Music For Programming
 
@@ -42,8 +40,9 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 [lofi air traffic control](https://www.lofiatc.com/?icao=KVNY) 
 
-
 ## Random Cool Stuff
+
+[Famous statistical quotations](https://stats.stackexchange.com/questions/726/famous-statistical-quotations)
 
 [DevDocs](https://devdocs.io/) - combines multiple API documentations in a fast, organized, and searchable interface.
 
@@ -121,13 +120,11 @@ Honeypot documentaries:
 
 [After being in a data science/ developer role for the better part of a decade, here is how companies REALLY develop software and AI/ML applications](https://www.reddit.com/r/datascience/comments/e6s20u/after_being_in_a_data_science_developer_role_for/)
 
-
 ## What Every Programmer Should Know
 
 [Memory](https://people.freebsd.org/~lstewart/articles/cpumemory.pdf) - [HN discussion](https://news.ycombinator.com/item?id=30354290)
 
 [What every computer science major should know](https://matt.might.net/articles/what-cs-majors-should-know/)
-
 
 ## Articles
 
@@ -161,13 +158,11 @@ Honeypot documentaries:
 
 [How Notion pulled itself back from the brink of failure](https://www.figma.com/blog/design-on-a-deadline-how-notion-pulled-itself-back-from-the-brink-of-failure/)
 
-
 ## Should You Learn to Code?
 
 [Don't Learn to Code - Learn to Automate - DaedTech](https://daedtech.com/dont-learn-to-code-learn-to-automate/)
 
 [Please Don't Learn to Code](https://blog.codinghorror.com/please-dont-learn-to-code/)
-
 
 ## Falsehoods
 
@@ -175,8 +170,10 @@ Honeypot documentaries:
 
 [Falsehoods Programmers Believe About Falsehoods Lists](https://kevin.deldycke.com/2016/12/falsehoods-programmers-believe-about-falsehoods-lists/)
 
-
 ## Blogs & Blog Posts
+
+[Sam Thorogood](https://samthor.au/)
+- [Post-Request/Response Apps](https://samthor.au/2024/post-request-response-apps/)
 
 [John Carmack on Inlined Code](http://number-none.com/blow/blog/programming/2014/09/26/carmack-on-inlined-code.html) - [Hacker News](https://news.ycombinator.com/item?id=41758371)
 
@@ -416,7 +413,6 @@ Nicolas Loizeau
 
 [The Digital Cat](https://www.thedigitalcatonline.com/)
 
-
 ## History of Programming
 
 [The A-Z of Programming Languages](http://www.math.bas.bg/bantchev/misc/az.pdf)
@@ -432,7 +428,6 @@ Nicolas Loizeau
 [Why Isn't Functional Programming the Norm? – Richard Feldman - 2019](https://www.youtube.com/watch?v=QyJZzq0v7Z4)
 
 [Why does "=" mean assignment? - Hillel Wayne](https://www.hillelwayne.com/equals-as-assignment/)
-
 
 ## Courses
 
@@ -472,7 +467,6 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 [CS360 -- Systems Programming](https://web.eecs.utk.edu/~jplank/plank/classes/cs360/lecture_notes.html), and the module on [Memory](https://web.eecs.utk.edu/~huangj/cs360/360/notes/Memory/lecture.html).
 
-
 ## Code Challenges
 
 [codewars](https://www.codewars.com/)
@@ -485,7 +479,6 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 
 [hoanhan101/algo: 101+ coding interview problems in Go](https://github.com/hoanhan101/algo)
 
-
 ## Books
 
 [A Mind at Play: How Claude Shannon Invented the Information Age](https://www.amazon.com/Mind-Play-Shannon-Invented-Information/dp/1476766681)
@@ -495,7 +488,6 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 [The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World (2015 book) - Pedro Domingos](https://en.wikipedia.org/wiki/The_Master_Algorithm)
 
 [Algorithms to Live By: The Computer Science of Human Decisions - Christian & Griffiths](https://www.goodreads.com/book/show/25666050-algorithms-to-live-by)
-
 
 ## Textbooks
 
@@ -514,7 +506,6 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 [Clean Architecture: A Craftsman's Guide to Software Structure and Design - Robert C. Martin](https://www.goodreads.com/book/show/18043011-clean-architecture)
 
 [Introduction to High-Performance Scientific Computing - Victor Eijkhout](http://pages.tacc.utexas.edu/~eijkhout/istc/html/index.html)
-
 
 ## Podcasts
 
@@ -536,7 +527,6 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 [Talk Python To Me](https://talkpython.fm/) - [Why is Python Slow?](https://talkpython.fm/episodes/show/265/why-is-python-slow)
 
 [Presentable](https://www.relay.fm/presentable) - how we design and build the products that are shaping our digital future
-
 
 ## Fonts
 
