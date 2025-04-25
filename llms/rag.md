@@ -1,3 +1,9 @@
+[[D] How reliable is RAG currently? : r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1ck0tnk/d_how_reliable_is_rag_currently/?share_id=7LOaSqpP1XYq6Qs7UUlre&utm_name=androidcss)
+
+ The problem with RAG is that there is hardly a universally good chunking, retrieval and re-ranking strategy. It is very often domain dependent and requires a fair bit of experimentations to get right. Not to mention that the parsing step (extraction and cleaning of texts) is often overlooked. 
+
+[Retrieve & Re-Rank — Sentence Transformers documentation](https://sbert.net/examples/sentence_transformer/applications/retrieve_rerank/README.html)
+
 ## Implementations
 
 [RLAMA](https://rlama.dev/)

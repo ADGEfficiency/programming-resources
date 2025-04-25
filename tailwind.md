@@ -13,3 +13,5 @@
 pines - https://devdojo.com/pines
 
 daisyui - https://daisyui.com/
+
+[What are your favourite Tailwind libraries and why? (eg: Flowbite, Hover, etc...) : r/tailwindcss](https://www.reddit.com/r/tailwindcss/comments/1f7hp3a/what_are_your_favourite_tailwind_libraries_and/?share_id=EHjj3VjUmodPd5Y3lbzZo&utm_name=androidcss)

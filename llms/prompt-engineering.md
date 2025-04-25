@@ -1,3 +1,7 @@
+[Claude Code Best Practices \ Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices)
+
+Explore, plan, code, commit
+
 [Greg Brockman on X: "o1 is a different kind of model. great performance requires using it in a new way relative to standard chat models." / X](https://x.com/gdb/status/1878489681702310392)
 
 ```

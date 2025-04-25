@@ -1,3 +1,5 @@
+[Go Templ HTMX component library using TailwindCSS and DaisyUI : r/golang](https://www.reddit.com/r/golang/comments/1enaav8/go_templ_htmx_component_library_using_tailwindcss/?share_id=7C3NCYuLmjllJqXjN_hDj&utm_name=androidcss)
+
 [mikestefanello/pagoda](https://github.com/mikestefanello/pagoda) - Rapid, easy full-stack web development starter kit in Go
 
 [dgryski/go-perfbook](https://github.com/dgryski/go-perfbook) - Thoughts on Go performance optimization
@@ -31,6 +33,8 @@
 ---
 
 ## Learning Go
+
+[10 week plan to master Go: GetStream’s onboarding plan : r/golang](https://www.reddit.com/r/golang/comments/1eiea6q/10_week_plan_to_master_go_getstreams_onboarding/?share_id=0YbvpMNHBGrElxcp8jznD&utm_name=androidcss)
 
 [A Tour of Go](https://go.dev/tour/welcome/1)
 

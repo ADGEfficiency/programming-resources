@@ -22,7 +22,7 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 [musicForProgramming](https://musicforprogramming.net/?about)
 
-[Philip K. Dick's Favorite Classical Music](https://www.openculture.com/2014/05/philip-k-dicks-favorite-classical-music.html)
+[Philip K. Dick's Favorite Classical Music](https://www.openculture.com/2014/05/philip-k-dicks-favorite-classical-music.html) - [PKD - playlist by openculturedotcom | Spotify](https://open.spotify.com/playlist/1RsnkX0bQWd2CVWW8jcxBR)
 
 [Liszt](https://youtu.be/salrwSVWpC4)
 
