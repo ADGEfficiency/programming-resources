@@ -42,6 +42,10 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 ## Random Cool Stuff
 
+[TheSimsDesignDocuments](https://donhopkins.com/home/TheSimsDesignDocuments/)
+
+[Build a working game of Tetris in Conway's Game of Life](https://codegolf.stackexchange.com/questions/11880/build-a-working-game-of-tetris-in-conways-game-of-life) - [Hacker News](https://news.ycombinator.com/item?id=42520432)
+
 [Famous statistical quotations](https://stats.stackexchange.com/questions/726/famous-statistical-quotations)
 
 [DevDocs](https://devdocs.io/) - combines multiple API documentations in a fast, organized, and searchable interface.
@@ -127,6 +131,8 @@ Honeypot documentaries:
 [What every computer science major should know](https://matt.might.net/articles/what-cs-majors-should-know/)
 
 ## Articles
+
+[The death of Glitch, the birth of Slack](https://buildingslack.com/the-death-of-glitch-the-birth-of-slack/)
 
 [The Man Who Killed Google Search](https://www.wheresyoured.at/the-men-who-killed-google/)
 

@@ -119,6 +119,16 @@ Where Vim Came From - [blog post](https://twobithistory.org/2018/08/05/where-vim
 1976 : em -> ex (“EXtended”) at UC Berkeley
 1977 Oct: ex gets visual mode, vi
 
+[Pikuma: Understanding the Origins and the Evolution of Vi & Vim](https://pikuma.com/blog/origins-of-vim-text-editor) - [Hacker News](https://news.ycombinator.com/item?id=43691020)
+
+- Commands like d), d{, D designed to minimize screen redraws
+- Hardware limitations forced design choices that proved efficient long-term
+
+Text editors with constraints may create better designs
+- Designing for limited hardware can yield elegant, efficient solutions
+- When constraints are removed, well-designed tools may shine even more
+- However, only successful examples survive this process
+
 ## Neovim
 
 [An Experienced (Neo)Vimmer's Workflow](https://seniormars.com/posts/neovim-workflow/)

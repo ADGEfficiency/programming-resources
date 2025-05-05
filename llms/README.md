@@ -12,6 +12,12 @@ The LoRA method works by attaching extra trainable parameters into a model(that 
 
 [dvgodoy/FineTuningLLMs101_ODSC_Europe2024](https://github.com/dvgodoy/FineTuningLLMs101_ODSC_Europe2024) - [FineTuningLLMs101.ipynb - Colab](https://colab.research.google.com/github/dvgodoy/FineTuningLLMs101_ODSC_Europe2024/blob/main/FineTuningLLMs101.ipynb)
 
+[[2408.13296] The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs: An Exhaustive Review of Technologies, Research, Best Practices, Applied Research Challenges and Opportunities](https://arxiv.org/abs/2408.13296)
+
+## Evals
+
+[A statistical approach to model evaluations \ Anthropic](https://www.anthropic.com/research/statistical-approach-to-model-evals)
+
 ## Codellama
 
 [Code Llama: Llama 2 learns to code](https://huggingface.co/blog/codellama)
@@ -31,7 +37,11 @@ Using the openai library and llama you can enforce that the response be valid js
 
 [anthropic-cookbook/patterns/agents at main · anthropics/anthropic-cookbook](https://github.com/anthropics/anthropic-cookbook/tree/main/patterns/agents)
 
+[Building Effective AI Agents \ Anthropic](https://www.anthropic.com/engineering/building-effective-agents)
+
 ## Inbox
+
+[Things we learned about LLMs in 2024](https://simonwillison.net/2024/Dec/31/llms-in-2024/) - [Things we learned about LLMs in 2024 | Hacker News](https://news.ycombinator.com/item?id=42560558)
 
 [The lifecycle of a code AI completion](https://sourcegraph.com/blog/the-lifecycle-of-a-code-ai-completion)
 

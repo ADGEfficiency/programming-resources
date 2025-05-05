@@ -1,3 +1,7 @@
+[Ten Python datetime pitfalls, and what libraries are (not) doing about it | Arie Bovenberg](https://dev.arie.bovenberg.net/blog/python-datetime-pitfalls/)
+
+[14 Advanced Python Features | Edward Li's Blog](https://blog.edward-li.com/tech/advanced-python-features/)
+
 [Why We Went All In on Type Completeness](https://www.prefect.io/blog/why-we-went-all-in-on-type-completeness)
 
 [Shape typing in Python](https://jameshfisher.com/2024/04/12/shape-typing-in-python/)

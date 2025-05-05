@@ -22,6 +22,20 @@
 
 [An unordered list of things I miss in Go — kokada](https://kokada.dev/blog/an-unordered-list-of-things-i-miss-in-go/) - [Hacker News](https://news.ycombinator.com/item?id=41274850)
 
+[Go channels are bad and you should feel bad | jtolio.com](https://www.jtolio.com/2016/03/go-channels-are-bad-and-you-should-feel-bad/) - [Problems with Go channels (2016) | Hacker News](https://news.ycombinator.com/item?id=43670373)
+
+Behind the scenes, channels are using locks to serialize access and provide threadsafety. So by using channels to synchronize access to memory, you are, in fact, using locks; locks wrapped in a threadsafe queue. So how do Go’s fancy locks compare to just using mutex’s from their standard library sync package? The following numbers were obtained by using Go’s builtin benchmarking functionality to serially call Put on a single set of their respective types.
+
+Channels don’t compose well with other concurrency primitives
+
+```
+Go language design philosophy debate
+- Critics: Go avoided learning from past language design research
+- Defenders: Go's simplicity was intentional and practical
+- Criticism of Go's type system limitations
+- Mixed opinions on Go's error handling approach
+```
+
 # HATE Stack
 
 [The HATE Stack - Simple and Efficient](https://www.youtube.com/watch?v=bti-bnGbyak) - [awesome-club/hate-stack](https://github.com/awesome-club/hate-stack)

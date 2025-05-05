@@ -1,3 +1,7 @@
+[(336) AI prompt engineering: A deep dive - YouTube](https://www.youtube.com/watch?v=T9aRN5JkmL8&t=877s)
+
+Ask a model where a prompt is weak
+
 [Claude Code Best Practices \ Anthropic](https://www.anthropic.com/engineering/claude-code-best-practices)
 
 Explore, plan, code, commit

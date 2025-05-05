@@ -1,3 +1,15 @@
+[Less htmx is More](https://unplannedobsolescence.com/blog/less-htmx-is-more/) - [Less Htmx Is More | Hacker News](https://news.ycombinator.com/item?id=43619581)
+
+Use htmx minimally - treating it as a library rather than a framework
+
+hx-boost should generally be avoided
+- Converts regular links to "boosted" links that replace page content without full navigation
+- Creates problems with back button, page refreshes, and JavaScript state management
+
+Cache headers can provide many benefits promised by hx-boost
+- Set cache control headers to reuse CSS and JS across page loads
+- Use versioned URLs for resources to control caching behavior
+- Browser optimization for same-origin links already provides smooth transitions
 
 [htmx, Rust & Shuttle: A New Rapid Prototyping Stack](https://www.shuttle.rs/blog/2023/10/25/htmx-with-rust)
 

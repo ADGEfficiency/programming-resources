@@ -1061,3 +1061,17 @@ Challenges Identified
 - Structural coupling between tests and implementation
 - Test fragility when data sources change
 - Balancing test coverage with practical value
+
+[What is Data Engineering? - The Pragmatic Engineer](https://blog.pragmaticengineer.com/what-is-data-engineering/)
+
+SCD
+
+The traditional way to track historical changes in data was to use what we call Slowly Changing Dimensions (SCD). There are several different types of SCD, but one of the simplest to implement is SCD type 2 which has a start and end date, as well as an “is_current” flag.
+
+An example of an SCD is a customer changing their address when they move home. Instead of just updating the current row which stores the address for said customer or employee, you will:
+
+    Insert a new row with the new information.
+    Update the old row, so it is no longer marked current.
+    Ensure the end date represents the last date when the information was accurate.
+
+This way, when someone asks, “how many customers did we have per region over the last 3 years,” you can answer accurately.
