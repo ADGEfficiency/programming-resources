@@ -57,6 +57,13 @@ Build an edge case engine. You can’t address the long tail if you can’t see 
 
 Collecting long-tail data in a repeatable way is a critical capability for most ML teams – usually involving identifying out-of-distribution data in production (either with statistical tests or by measuring unusual model behavior), sourcing similar examples, labeling the new data, and intelligently retraining, often using active learning.
 
+[Get Me Out Of Data Hell — Ludicity](https://ludic.mataroa.blog/blog/get-me-out-of-data-hell/)
+
+The author's values fundamentally conflict with the organization's
+- Organization values meeting arbitrary deadlines over quality
+- Author values tested code, comprehensible logs, and sustainable practices
+
+The specific technical problems are emblematic of deeper organizational issues
 
 [Data Science in Production Best Practices](https://medium.com/bcggamma/data-science-python-best-practices-fdb16fdedf82)
 

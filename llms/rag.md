@@ -6,6 +6,8 @@
 
 ## Implementations
 
+[txtai](https://neuml.github.io/txtai/)
+
 [RLAMA](https://rlama.dev/)
 
 [Open source conversational RAG on local files](https://www.reddit.com/r/ollama/comments/1h1q4n9/open_source_conversational_rag_on_local_files/?share_id=73QeDKAeaHjhxxHZZkPho&utm_name=androidcss)
