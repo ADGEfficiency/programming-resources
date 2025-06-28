@@ -322,3 +322,9 @@ https://www.benevolent.com/engineering-blog/make-reduce-how-to-use-makefiles-to-
 [stripe-cli/Makefile](https://github.com/stripe/stripe-cli/blob/master/Makefile)
 
 [aclark4life/project-makefile](https://github.com/aclark4life/project-makefile)
+
+### Other Task Runners
+
+[Taskfile](https://taskfile.dev/)
+
+[Justfile](https://just.systems/man/en/)

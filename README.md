@@ -416,6 +416,7 @@ Nicolas Loizeau
 - [Outliers: Selection vs. Detection](https://koaning.io/posts/outliers-selection-vs-detection/)
 - [Bad Labels](https://koaning.io/posts/labels/)
 - [Introduction to Inference](https://koaning.io/posts/introduction-to-inference/)
+- [Today I Scripted](https://koaning.io/posts/today-i-scripted/)
 
 [The Digital Cat](https://www.thedigitalcatonline.com/)
 

@@ -9,7 +9,7 @@ Agenda:
 
 # My First Three Lessons
 
-My first three lessons as a software engineer were:
+My first three explicit lessons in software engineering were:
 
 1. DRY - don't repeat yourself,
 2. YAGNI - you ain't gonna need it,
@@ -27,6 +27,9 @@ Testing has four benefits:
 3. they **document your code** - tests are the best kind of documentation - executable documentation.
 4. they enable **teamwork** - allows safe refactoring.
 
+> Tests are not just code that verifies other code works. Tests are executable specifications. They encode your actual intentions, your edge cases, your understanding of the problem domain. High performers excel at both speed and stability—there’s no trade-off. Tests are how you achieve both.
+>
+> [Field Notes From Shipping Real Code With Claude - diwank's space](https://diwank.space/field-notes-from-shipping-real-code-with-claude)
 
 ## 1. Testing Detects Broken Software
 
@@ -253,12 +256,13 @@ Watch out for:
 
 # Tests are a Tradeoff
 
-Tests are a tradeoff between two things:
+Tests are a tradeoff between:
 
 - the cost of writing tests,
+- the cost of running tests,
 - the cost of bugs.
 
-Tests can be expensive to write if they are an afterthought, and/or the code is not written in way that is easy to test.
+Tests can be expensive to write if they are an afterthought, and/or the code is not written in way that is easy to test.  In the opposite way, code where tests are written
 
 # Further Reading
 

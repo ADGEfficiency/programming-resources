@@ -4,6 +4,8 @@
 
 ## Starters
 
+[jpmorganchase/python-training](https://github.com/jpmorganchase/python-training/tree/main/notebooks)
+
 [The Python Tutorial](https://docs.python.org/3/tutorial/)
 
 [An Effective Python Environment: Making Yourself at Home - Real Python](https://realpython.com/effective-python-environment/)
@@ -13,6 +15,24 @@
 [ipython-cookbook](https://github.com/ipython-books/cookbook-2nd)
 
 [Stop using utcnow and utcfromtimestamp](https://blog.ganssle.io/articles/2019/11/utcnow.html) - [HN](https://news.ycombinator.com/item?id=33138302)
+
+[Today I Scripted | Vincent D. Warmerdam](https://koaning.io/posts/today-i-scripted/)
+
+```python
+# /// script
+# dependencies = [
+#   "requests<3",
+#   "rich",
+# ]
+# ///
+
+import requests
+from rich.pretty import pprint
+
+resp = requests.get("https://peps.python.org/api/peps.json")
+data = resp.json()
+pprint([(k, v["title"]) for k, v in data.items()][:10])
+```
 
 [How to run Python in production](https://ashishb.net/programming/python-in-production-2/)
 

@@ -1,3 +1,5 @@
+[anthropics/prompt-eng-interactive-tutorial: Anthropic's Interactive Prompt Engineering Tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial)
+
 [(336) AI prompt engineering: A deep dive - YouTube](https://www.youtube.com/watch?v=T9aRN5JkmL8&t=877s)
 
 Ask a model where a prompt is weak

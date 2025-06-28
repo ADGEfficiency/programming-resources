@@ -1,3 +1,11 @@
+[Sacrificial Architecture](https://martinfowler.com/bliki/SacrificialArchitecture.html)
+
+The best code you can write now is code you'll discard in a couple of years time.
+
+Much thinking on software architecture is how to facilitate that kind of longevity. Yet success can also be built on the top of code long since sent to /dev/null.
+
+Indeed it's a common pattern to see people coming into a maturing code base denigrating its lack of performance or scalability. But often in the early period of a software system you're less sure of what it really needs to do, so it's important to put more focus on flexibility for changing features rather than performance or availability. 
+
 [Monolith First](https://martinfowler.com/bliki/MonolithFirst.html)
 
 Monolith First strategy is recommended by Martin Fowler

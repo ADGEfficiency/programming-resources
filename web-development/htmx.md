@@ -1,3 +1,5 @@
+[A modest critique of Htmx | Hacker News](https://news.ycombinator.com/item?id=41781457)
+
 [Less htmx is More](https://unplannedobsolescence.com/blog/less-htmx-is-more/) - [Less Htmx Is More | Hacker News](https://news.ycombinator.com/item?id=43619581)
 
 Use htmx minimally - treating it as a library rather than a framework

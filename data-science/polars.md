@@ -139,3 +139,5 @@ pl.DataFrame(data=["world", "world!", "world!!"]).select(
 ```
 
 [Calmcode - polars: Introduction](https://calmcode.io/course/polars/introduction)
+
+[Modern Polars](https://kevinheavey.github.io/modern-polars/)

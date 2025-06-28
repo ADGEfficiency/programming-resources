@@ -68,6 +68,8 @@ Concise GNU Bash: An Introduction to Advanced Usage - James Panacciulli @ LinuxF
 
 ### Blog Posts / Discussions
 
+[unix-haters-handbook](https://web.mit.edu/~simsong/www/ugh.pdf)
+
 [Cheating at a Company Group Activity Using Unix Tools](https://medium.com/fundbox-engineering/cheating-at-a-company-group-activity-using-unix-tools-5c1d706f3d58)
 
 [Bash Patterns I Use Weekly](https://will-keleher.com/posts/5-Useful-Bash-Patterns.html)
@@ -101,6 +103,8 @@ Best things in your bash_profile/aliases? - [Hacker News](https://news.ycombinat
 [The Evolution of the Unix Time-sharing System](https://www.bell-labs.com/usr/dmr/www/hist.pdf)
 
 [Tips on how to structure your home directory (2023) | Hacker News](https://news.ycombinator.com/item?id=40085543)
+
+[Git Bash is my preferred Windows shell | Hacker News](https://news.ycombinator.com/item?id=41504832)
 
 [Bash #2 - Functional Command Relay | Dan Aloni](https://blog.aloni.org/posts/bash-functional-command-relay/)
 

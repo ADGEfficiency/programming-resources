@@ -26,6 +26,8 @@ But AWS Organizations managing heaps of accounts was also too painful to use and
 
 [Diving Deep on S3 Consistency](https://www.allthingsdistributed.com/2021/04/s3-strong-consistency.html)
 
+[Continuous reinvention: A brief history of block storage at AWS | All Things Distributed](https://www.allthingsdistributed.com/2024/08/continuous-reinvention-a-brief-history-of-block-storage-at-aws.html)
+
 [AWS Cloud Control API, a Uniform API to Access AWS and Third-Party Services | Hacker News](https://news.ycombinator.com/item?id=28710179)
 
 [CloudCasts - AWS for Humans](https://cloudcasts.io/)

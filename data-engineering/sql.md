@@ -481,6 +481,9 @@ resist the temptation to 'SELECT *' into a data frame and break the problem up i
 
 Storing raw strings in databases = heavy.  Instead it should be normalized.
 
+## Under the Hood
+
+[A Beginner’s Guide to the True Order of SQL Operations – Java, SQL and jOOQ.](https://blog.jooq.org/a-beginners-guide-to-the-true-order-of-sql-operations/)
 
 ## Advice
 

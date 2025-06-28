@@ -1,6 +1,10 @@
 https://erikbern.com/2021/07/07/the-data-team-a-short-story.html 
 
+[Things You Should Never Do As A Software Engineer](https://favtutor.com/articles/donts-for-software-engineer/)
+
 TODO
+
+/Users/adamgreen/personal/resource/atomic/best-programmers-i-know.md
 
 [Good software development habits](https://zarar.dev/good-software-development-habits/)
 

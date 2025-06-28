@@ -581,3 +581,57 @@ Often separated into offline (large batches) and online (single rows).
 Once you have a toolbox of unit tests like this, then you can much more safely fiddle with these stored procedures. 
 
 As someone who also refactors legacy code for a living. This is the way. Wrap legacy code in tests, then replace it. If your tests are sufficiently thorough, you can be sure that the refactor doesn't break any behavior. 
+
+## [Things I Wished More Developers Knew About Databases | by Jaana Dogan | Medium](https://rakyll.medium.com/things-i-wished-more-developers-knew-about-databases-2d0178464f78)
+
+ACID compliance is marketing more than technical specification
+- MongoDB claimed ACID while defaulting to 60-second disk commits and lacking journaling
+- Different databases interpret ACID properties with significant variation
+- "Snapshot isolation" often substituted for true serializability without disclosure
+- Tradeoff: Strict ACID compliance can severely impact performance and availability
+
+AUTOINCREMENT creates distributed system bottlenecks
+- Global coordination required in distributed databases
+- Sequential IDs can create hotspots in partitioned systems
+- UUIDs eliminate coordination but impact index performance
+- Natural keys often better but require careful uniqueness analysis
+- Pushback: Sequential IDs enable efficient range queries and better compression
+
+Database growth introduces fundamental unpredictability
+- Scaling assumptions become invalid as data size increases
+
+---
+
+## DuckDB
+
+[Mastering DuckDB when you're used to pandas or Polars: part 1 | Labs](https://labs.quansight.org/blog/duckdb-when-used-to-frames)
+
+[Mastering DuckDB when you're used to pandas or Polars: part 2 | Labs](https://labs.quansight.org/blog/duckdb-when-used-to-frames_part2)
+
+## UUIDs
+
+[TIL: 8 versions of UUID and when to use them | nicole@web](https://ntietz.com/blog/til-uses-for-the-different-uuid-versions/)
+
+    UUID Version 1 (v1) is generated from timestamp, monotonic counter, and a MAC address.
+    UUID Version 2 (v2) is reserved for security IDs with no known details[2].
+    UUID Version 3 (v3) is generated from MD5 hashes of some data you provide. The RFC suggests DNS and URLs among the candidates for data.
+    UUID Version 4 (v4) is generated from entirely random data. This is probably what most people think of and run into with UUIDs.
+    UUID Version 5 (v5) is generated from SHA1 hahes of some data you provide. As with v3, the RFC suggests DNS or URLs as candidates.
+    UUID Version 6 (v6) is generated from timestamp, monotonic counter, and a MAC address. These are the same data as Version 1, but they change the order so that sorting them will sort by creation time.
+    UUID Version 7 (v7) is generated from a timestamp and random data.
+    UUID Version 8 (v8) is entirely custom (besides the required version/variant fields that all versions contain).
+
+Most developers should choose between v4 and v7
+
+- v4 for general random IDs (safest choice)
+- v7 for database keys where sorting matters (performance benefit)
+- v5/v8 only when you have specific data requirements
+
+Timestamp-based UUIDs (v1, v6, v7) in databases create performance vs privacy tradeoffs
+
+- Performance benefit: sequential keys improve spatial locality in B-trees
+- Privacy concern: reveals creation timestamps relative to other records
+- Mitigation strategy: use separate public identifiers, keep internal UUIDs private
+- Alternative approach: add timestamp as separate indexed columns instead
+
+Many developers wrongly assume higher version numbers mean newer/better 
