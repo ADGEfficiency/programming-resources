@@ -4,6 +4,8 @@
 
 ## Starters
 
+[Scientific Python Lectures](https://lectures.scientific-python.org/) - Tutorials on the scientific Python ecosystem: a quick introduction to central tools and techniques.
+
 [jpmorganchase/python-training](https://github.com/jpmorganchase/python-training/tree/main/notebooks)
 
 [The Python Tutorial](https://docs.python.org/3/tutorial/)

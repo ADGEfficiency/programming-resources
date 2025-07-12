@@ -80,3 +80,5 @@ DBT lets you do everything in SQL which is easier to interpret and cheaper / eas
 6. Reusable macros
 7. Shockingly low learning curve
 8. Production run using dbt cloud or through Airflow trigger.
+
+[Overclocking dbt: Discord's Custom Solution in Processing Petabytes of Data](https://discord.com/blog/overclocking-dbt-discords-custom-solution-in-processing-petabytes-of-data)

@@ -1,3 +1,5 @@
+[Documentation done right: A developer’s guide - The GitHub Blog](https://github.blog/developer-skills/documentation-done-right-a-developers-guide/)
+
 [Two open source projects with great documentation • John Jago](https://johnjago.com/great-docs/)
 
 [esbuild - API](https://esbuild.github.io/api/)

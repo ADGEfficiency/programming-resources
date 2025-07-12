@@ -394,6 +394,17 @@ Databases only talk custom binary TCP protocols, not HTTP. Not REST. Not websock
 
 [Common data model mistakes made by startups](https://www.metabase.com/learn/analytics/data-model-mistakes) [HN Discussion](https://news.ycombinator.com/item?id=27248093)
 
+1. Polluting database with test/fake data
+2. Not tracking sessions - session is a group of events related to a user
+3. Soft deletes - alleviate performance hit of deletes & compaction
+4. Misusing semi-structured (JSON) data - enforcing schemas
+5. Right database for the job - more databases = more overhead
+
+Tip = make it easy to get business metrics
+- 10 important metrics the business cares about
+- 10 most commonly run update queries from the application
+- 10 most common read patterns from the application
+
 [Diving Deep on S3 Consistency](https://www.allthingsdistributed.com/2021/04/s3-strong-consistency.html)
 
 

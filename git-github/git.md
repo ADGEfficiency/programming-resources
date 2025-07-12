@@ -199,7 +199,7 @@ git merge dev
 
 - merge commits vs. squash & merge vs. rebase & merge
 
-[THIS IS HOW I GIT](https://daniel.haxx.se/blog/2020/11/09/this-is-how-i-git/)
+[THIS IS HOW I GIT](https://daniel.haxx.se/blog/2020/11/09/this-is-how-i-git/) Git workflow from the developer of curl.
 
 [Oh My Git!](https://ohmygit.org/) - downloadable game.
 

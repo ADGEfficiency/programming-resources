@@ -569,3 +569,5 @@ Use explain plans to understand if an index is actually being used or not!
 Partitioning is similar to indexes except it’s a “poor mans” index. It just keeps data in specific folders and skips the folders that don’t include the data I question. 
 
 What else did I miss for mastering SQL?
+
+[The Three Levels of SQL Comprehension: What they are and why you need to know about them | dbt Developer Blog](https://docs.getdbt.com/blog/the-levels-of-sql-comprehension)

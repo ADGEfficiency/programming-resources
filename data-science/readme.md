@@ -1,3 +1,12 @@
+[Adventures in Imbalanced Learning and Class Weight | andersource](https://andersource.dev/2025/05/05/imbalanced-learning.html)
+
+I know that class imbalance, in and of itself, does not warrant using class weights. Furthermore, if I deem class weights necessary, instead of using the typical “inverse proportion” scheme, my weights had better be informed by the particular problem characteristics: the nature of the tradeoff curve, label noise, and the cost I assign to each type of error.
+
+---
+[Adventures in Imbalanced Learning and Class Weight | Hacker News](https://news.ycombinator.com/item?id=43926029)
+
+Nice writeup. F1, balanced accuracy, etc. In truth it depends on your problem and what a practical "best" solution is, especially in imbalanced scenarios, but Matthews Correlation Coefficient (MCC) is probably the best comprehensive and balanced blind go-to metric, because it guarantees that more portions of the confusion matrix are good.
+
 [Shopify's Data Science & Engineering Foundations](https://shopify.engineering/shopifys-data-science-engineering-foundations)
 
 [Shopify's Data Science and Engineering Foundations (2020) | Hacker News](https://news.ycombinator.com/item?id=30643677)

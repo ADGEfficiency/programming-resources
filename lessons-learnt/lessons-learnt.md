@@ -1,3 +1,5 @@
+["Yes, Please Repeat Yourself" and other Software Design Principles I Learned the Hard Way : r/programming](https://www.reddit.com/r/programming/comments/1cckf07/yes_please_repeat_yourself_and_other_software/?share_id=xGL4Z8cYSQZXJjUNUmMkE&utm_name=androidcss)
+
 [Good software development habits | Zarar's blog](https://zarar.dev/good-software-development-habits/) - [Good software development habits : r/programming](https://www.reddit.com/r/programming/comments/1fdkv8n/good_software_development_habits/?share_id=gGIZJ7lIneZA4WErZcuYT&utm_name=androidcss) - [Good Software Development Habits | Hacker News](https://news.ycombinator.com/item?id=42165057)
 
 for each desired change, make the change easy (warning: this may be hard), then make the easy change

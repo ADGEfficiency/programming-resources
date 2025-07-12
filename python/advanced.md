@@ -1,3 +1,5 @@
+[How to Write a Spelling Corrector](https://norvig.com/spell-correct.html)
+
 [Ten Python datetime pitfalls, and what libraries are (not) doing about it | Arie Bovenberg](https://dev.arie.bovenberg.net/blog/python-datetime-pitfalls/)
 
 [14 Advanced Python Features | Edward Li's Blog](https://blog.edward-li.com/tech/advanced-python-features/)

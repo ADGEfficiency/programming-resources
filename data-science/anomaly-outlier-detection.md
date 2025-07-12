@@ -403,3 +403,121 @@ Often when analyzing data, we’re interested in finding not just unusual indivi
 For this, an important step in outlier detection is searching for what are called collective outliers. 
 
 These are cases in which individual rows are not necessarily unusual but sets of rows are.
+
+Examples
+- duplicates
+- gaps
+- missing combinations
+
+Can use aggregations to catch collective outliers - will catch three types of anomalies
+- unusual number (count)
+- many similar records are slightly unusual
+- records are unusual as a set
+
+Can aggregate by
+- time
+- entity
+
+Can also add trends over time for each entity
+
+Rolling windows
+
+Tracking/counting point anomalies over time
+
+# Chapter 13 - Explainable outlier detection
+
+XAI = explainable AI
+- research shows interpretability depends on the audience
+- requires understanding algorithm, scores, features etc
+
+Interpretability
+- uses model that are inherently interpretable
+- univariate tests
+- frequent pattern outlier factor
+
+Explainability
+- uses model that are not inherently interpretable
+- post hoc explanations
+
+Global versus local explanations
+- global = main patterns
+- local = one example
+
+Shap
+- can do local or global
+
+Proxy / mimic / surrogate model
+- interpretable model that estimates the predictions of another model
+- not perfect - can not predict well, or predict for different reasons
+
+AdditiveDecisionTrees—The AdditiveDecisionTrees model (https://github.com/Brett-Kennedy/AdditiveDecisionTree) is a variation on standard decision trees that is designed to provide more interpretability though more concise and more comprehensive rules. 
+
+ikNN—This is a form of interpretable kNN classifier based on ensembles of 2D spaces (https://github.com/Brett-Kennedy/ikNN). As it uses 2D subspaces, each may be visualized, which allows understanding the predictions, very similar to approaches discussed later in this chapter for outlier detection based on 2D subspaces.
+
+Counterfactuals
+- minimum changes to a row to produce a significantly different prediction
+- interpretML library’s DiCE tool (https://github.com/interpretml/DiCE)
+
+## Interpretable outlier detectors
+
+2D subspaces
+- good for small number features
+
+FPOF
+
+association rules
+
+real versus fake
+
+bayesian histogram-based anomaly detection
+- https://github.com/AVoss84/bhad
+- similar to histogram based outlier scores
+- univariate, sums row based on scores for each feature
+
+counts outlier detector
+
+DataConsistencyChecker (DCC) (https://mng.bz/V2rX)
+
+# Chapter 14 - Ensembles of outlier detectors
+
+Reduce false negatives by more diverse detectors
+
+Reduce false positives how each detector is combined
+
+Summing scores can make detectors more stable
+
+Want outliers that disagree - are wrong on different rows
+- minimize correlation between predictions / scores
+
+Need to scale scores of each detector
+
+[RnR - bunch more on general ensembling techniques]
+
+# Chapter 15 - Working with outlier detection predictions
+
+[RnR]
+
+# Chapter 16 - Deep learning based outlier detection
+
+[RnR auto-encoders, vae, gans]
+
+# Chapter 17 - Time series
+
+Three types of data
+- cross-sectional - no concept of time
+- panel / longitudinal - multiple entities, recorded at different times
+- time series - one entity, recorded at different times
+
+Contextual point outliers
+- may be normal in full range of data
+- but abnormal over their specific time period
+- unusual relative to previous data
+
+Ruptures / regieme change / change points
+
+Forecasting based outlier detection
+
+ADTK; https://github.com/arundo/adtk
+
+DeepOD DeepOD (https://github.com/xuhongzuo/DeepOD)
+

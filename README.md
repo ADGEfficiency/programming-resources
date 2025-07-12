@@ -42,6 +42,8 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 ## Random Cool Stuff
 
+[HN: the good parts](https://danluu.com/hn-comments/)
+
 [TheSimsDesignDocuments](https://donhopkins.com/home/TheSimsDesignDocuments/)
 
 [Build a working game of Tetris in Conway's Game of Life](https://codegolf.stackexchange.com/questions/11880/build-a-working-game-of-tetris-in-conways-game-of-life) - [Hacker News](https://news.ycombinator.com/item?id=42520432)
@@ -177,6 +179,9 @@ Honeypot documentaries:
 [Falsehoods Programmers Believe About Falsehoods Lists](https://kevin.deldycke.com/2016/12/falsehoods-programmers-believe-about-falsehoods-lists/)
 
 ## Blogs & Blog Posts
+
+[Test Double | Insights and Blogs](https://testdouble.com/insights)
+- [Looming demise of the 10x developer: a Justin Searls reflection](https://testdouble.com/insights/the-looming-demise-of-the-10x-developer)
 
 [Sam Thorogood](https://samthor.au/)
 - [Post-Request/Response Apps](https://samthor.au/2024/post-request-response-apps/)
@@ -530,6 +535,8 @@ Introduction to Computer Science and Programming in Python - [lecture videos](ht
 - [Brendan Eich: JavaScript, Firefox, Mozilla, and Brave](https://youtu.be/krB0enBeSiE)
 - [Charles Hoskinson: Cardano](https://youtu.be/FKh8hjJNhWc)
 - [Jeffrey Shainline: Neuromorphic Computing](https://youtu.be/EwueqdgIvq4)
+- Marc Raibert: Boston Dynamics and the Future of Robotics
+- Yann Lecun: Meta AI, Open Source, Limits of LLMs, AGI & the Future of AI
 
 [Talk Python To Me](https://talkpython.fm/) - [Why is Python Slow?](https://talkpython.fm/episodes/show/265/why-is-python-slow)
 
