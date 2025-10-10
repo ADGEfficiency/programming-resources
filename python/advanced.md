@@ -4,6 +4,54 @@
 
 [14 Advanced Python Features | Edward Li's Blog](https://blog.edward-li.com/tech/advanced-python-features/)
 
+Overload to type different signatures for one func:
+
+```python
+from typing import Literal, overload
+
+
+@overload
+def transform(data: str, mode: Literal["split"]) -> list[str]: ...
+
+
+@overload
+def transform(data: str, mode: Literal["upper"]) -> str: ...
+
+
+def transform(data: str, mode: Literal["split", "upper"]) -> list[str] | str:
+    if mode == "split":
+        return data.split()
+    else:
+        return data.upper()
+```
+
+Keyword vs positional only args:
+
+```python
+def foo(a, b, /, c, d, *, e, f):
+
+# / = positional before
+# * = keyword after
+```
+
+RnR
+- Generics
+- Protocols
+- Match with destructuring
+- Walrus
+
+
+```
+for thing in things:
+    if conditional:
+        break
+
+else:
+```
+
+[Advanced Python Features | Hacker News](https://news.ycombinator.com/item?id=43769486)
+
+
 [Why We Went All In on Type Completeness](https://www.prefect.io/blog/why-we-went-all-in-on-type-completeness)
 
 [Shape typing in Python](https://jameshfisher.com/2024/04/12/shape-typing-in-python/)
@@ -236,7 +284,7 @@ def get_repo(repo_name: str) -> GitHubRepo:
     return GitHubRepo(data["owner"]["login"], data["name"], data["description"])
 ```
 
-In many cases, you can and should ignore most of the fields coming from the API, adding only the fields that the application uses. 
+In many cases, you can and should ignore most of the fields coming from the API, adding only the fields that the application uses.
 
 Dataclasses, Pydantic, TypedDicts if legacy.
 

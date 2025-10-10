@@ -62,6 +62,10 @@ Concise GNU Bash: An Introduction to Advanced Usage - James Panacciulli @ LinuxF
 
 [The Challenges of Integrating the Unix and Mac OS Environments](https://www.usenix.org/legacy/publications/library/proceedings/usenix2000/invitedtalks/sanchez_html/sanchez.html)
 
+### Interactive
+
+[Command Challenge!](https://cmdchallenge.com/)
+
 ### Courses
 
 [DataCamp Introduction to Shell for Data Science - Datacamp Course](https://www.datacamp.com/courses/introduction-to-shell-for-data-science)

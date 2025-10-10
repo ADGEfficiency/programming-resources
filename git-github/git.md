@@ -336,6 +336,8 @@ Why git repos would struggle with large binary files: as every change is stored 
 
 [Things I think everyone should know about Git](https://perl.plover.com/classes/git-tips/) - [Things I wish everyone knew about Git (Part II)](https://blog.plover.com/prog/git/tips-2.html)
 
+[Git from the Bottom Up](https://jwiegley.github.io/git-from-the-bottom-up/)
+
 ## Criticism
 
 [What’s wrong with Git? A conceptual design analysis](https://blog.acolyer.org/2016/10/24/whats-wrong-with-git-a-conceptual-design-analysis/)

@@ -29,6 +29,22 @@ Go 1.21+ - A programming language for building web applications
 
 [The single most important factor that differentiates front-end frameworks](https://themer.dev/blog/the-single-most-important-factor-that-differentiates-front-end-frameworks)
 
+React
+- “I’ll manage state so that I know when it changes.”
+- since React is notified to make the state change, it also knows that it needs to re-render the component.
+
+Angular
+- “I’ll make the developer do all the work.” —Angular
+- is checking your entire component tree on every event
+- or can push manually, which is complex
+
+Vue
+- “I’ll track changes to state and react accordingly.”
+- work with state objects that have been specially instrumented by the framework to intercept and detect changes.
+
+Svelte
+- “I’ll figure it out for you at compile time.”
+
 [Using shadow DOM - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_shadow_DOM)
 
 [Developer Tools secrets that shouldn’t be secrets](https://christianheilmann.com/2021/11/01/developer-tools-secrets-that-shouldnt-be-secrets/)
@@ -137,7 +153,7 @@ Essential features of the web
 - browser - understands HTML
 - hyperlinks - `<a>` tag, URLs
 
-- [Chapter 2: Browsers](https://css-tricks.com/chapter-2-browsers/) 
+- [Chapter 2: Browsers](https://css-tricks.com/chapter-2-browsers/)
 - [Chapter 3: The Website](https://css-tricks.com/chapter-3-the-website/)
 
 [What do I need to read to be a great at CSS?](https://www.baldurbjarnason.com/2021/what-do-i-need-to-read-to-be-a-css-dev/) - [HN discussion](https://news.ycombinator.com/item?id=28968137)
@@ -165,7 +181,7 @@ You'll soon notice most sites are not monoliths, but the very same blocks you jo
 
 This will make your template-scavengig effective, you'll notice you like certain types of blocks (say 3 columns with a background image) and dislike others (say hero banners with buttons). Steal the ones you like (crop screenshots and save them), then see if you can see what you like in each of those you saved. Try and recreate them as abstractly as you can either on paper or by using the rectangle tool in any graphic editor (don't get lost making it perfect, you'll get there faster by doing it by code instead than using graphic design tools).
 
-Toy with design, it's all a fad anyway and what matters is what I've outlined here: blocks, columns, steal what you like. 
+Toy with design, it's all a fad anyway and what matters is what I've outlined here: blocks, columns, steal what you like.
 
 ---
 Most bad designs I’ve seen can be dramatically improved with some very basic design concepts that I think most developers can learn, at least towards getting the design looking relatively ‘clean’.
@@ -176,7 +192,7 @@ Secondly, make sure there is consistent padding, margins, and alignments. This i
 
 Lastly, look for opportunities to reduce the total number of visual elements in busy areas (within reason). Good examples of superfluous elements example might be outlines around icons, underlines, borders, two “empty space rectangles” that can become a single rectangle.
 
-I’ve found 70% of my design methods are just applying these three concepts over and over again, and formulating somewhat logical principles to apply them. My designs aren’t as good as what a designer would produce, but are much higher quality than I didn’t apply any thought to design at all. 
+I’ve found 70% of my design methods are just applying these three concepts over and over again, and formulating somewhat logical principles to apply them. My designs aren’t as good as what a designer would produce, but are much higher quality than I didn’t apply any thought to design at all.
 
 ---
  Writing modes, box-model, margin, padding, positioning (relative/absolute), flexbox, grid, media queries and units (px, %, rem, em).

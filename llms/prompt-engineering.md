@@ -1,3 +1,69 @@
+ask for plan
+
+relevant to interative prompting sessions
+
+prompt eng = mostly about context
+
+the most useful thing you can add to any prompt is relevant context
+
+even if llm has been trained on something, adding additional info about that thing might help
+
+imagine how useful it is when you add stuff that it was never trained on?
+
+## LLMs are Random
+
+temperature
+
+model weights can change
+
+cloud infra problems - optimizations that break model quality intermittently
+
+-> each session is independent, and you should expect behaviour to change over time
+
+## Context Window is not all made equal
+
+## Context
+
+- bring in documentation
+
+## Examples
+
+## Repeat Important Bits (top & bottom of prompt)
+
+## Kill poisoned sessions
+
+## scrap / not sure
+
+what to ask for
+- do the task
+- build a tool to do the tasks
+
+good engineers build tools, so should LLMs
+
+---
+
+[Prompting 101 | Code w/ Claude](https://youtu.be/ysPbXH0LpIE?si=WPLISRdrYsLRbpHo)
+
+Separate sections with `<guide> <example>` etc
+
+Task context
+
+Tone context
+
+Background data, documents, images
+
+Detailed task description & rules
+
+Examples
+
+Conversation history
+
+Immediate task description or request
+
+Output formatting
+
+Prefilled response
+
 [anthropics/prompt-eng-interactive-tutorial: Anthropic's Interactive Prompt Engineering Tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial)
 
 [(336) AI prompt engineering: A deep dive - YouTube](https://www.youtube.com/watch?v=T9aRN5JkmL8&t=877s)
@@ -27,7 +93,7 @@ do this
 
 but don't do this
 
-return format 
+return format
 ```
 
 [Prompt Engineering Guide](https://www.promptingguide.ai/)
@@ -89,7 +155,7 @@ Examples [optional]
 [Optional: 1-3 well-defined examples with placeholders if necessary. Clearly mark where examples start and end, and what the input and output are. User placeholders as necessary.] [If the examples are shorter than what a realistic example is expected to be, make a reference with () explaining how real examples should be longer / shorter / different. AND USE PLACEHOLDERS! ]
 Notes [optional]
 
-[optional: edge cases, details, and an area to call or repeat out specific important considerations] 
+[optional: edge cases, details, and an area to call or repeat out specific important considerations]
 ```
 
 ---
@@ -102,7 +168,7 @@ In what pre-ChatGPT world did "write clearly and provide ample information" incl
 
 * Specify the desired length of the output
 
-It's able to infer through quite a large amount of sloppiness. The much larger gains come from guiding it into a model of the world, as opposed to direct it to respond to lean perspectives like, "What do I eat to be better?" 
+It's able to infer through quite a large amount of sloppiness. The much larger gains come from guiding it into a model of the world, as opposed to direct it to respond to lean perspectives like, "What do I eat to be better?"
 
 ---
 
@@ -119,7 +185,7 @@ All of these best practices are great for managers dealing with their staff as w
 3. Split complex tasks into simpler subtasks
 4. Give time to "think"
 5. Use external tools
-6. Test changes systematically 
+6. Test changes systematically
 
 ---
 
@@ -127,7 +193,7 @@ I find that working with LLMs feels closer to the skills of managing a team than
 
 ---
 
-That's a really cool insight-- it's not coding. It's dispatching tasks to a team 
+That's a really cool insight-- it's not coding. It's dispatching tasks to a team
 
 ---
 
@@ -174,7 +240,7 @@ There's an unfortunately common take on AI that goes basically like this:
 
 "I tried it and it didn't do what I wanted, not impressed."
 
-My suggestion is to tune out the noise and really try experimenting with these tools – and know that they're rapidly improving. Even if ultimately you have criticisms or decide one way or another, at least really investigate them for your own use-cases rather than jumping on a bandwagon that's either "AI is bad" or the breathless hype-machine at the other end. 
+My suggestion is to tune out the noise and really try experimenting with these tools – and know that they're rapidly improving. Even if ultimately you have criticisms or decide one way or another, at least really investigate them for your own use-cases rather than jumping on a bandwagon that's either "AI is bad" or the breathless hype-machine at the other end.
 
 ---
 

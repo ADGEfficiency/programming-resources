@@ -90,3 +90,5 @@ Docker starts to become super useful when you have an application you are deploy
 1) elasticsearch, if you need real-time indexing and search capabilities. Alternatively you can just spin up a dedicated API that leverages full text search for your database container from 3)
 
 I prefer docker compose to Kubernetes because I am not a megacorp. You just define your different services, let them run, expose the right ports, and then things should "just work"
+
+[Best Practices Around Production Ready Web Apps with Docker Compose — Nick Janetakis](https://nickjanetakis.com/blog/best-practices-around-production-ready-web-apps-with-docker-compose)

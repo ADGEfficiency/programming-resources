@@ -178,6 +178,8 @@ Honeypot documentaries:
 
 [Falsehoods Programmers Believe About Falsehoods Lists](https://kevin.deldycke.com/2016/12/falsehoods-programmers-believe-about-falsehoods-lists/)
 
+[Falsehoods programmers believe about time, in a single list](https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca)
+
 ## Blogs & Blog Posts
 
 [Test Double | Insights and Blogs](https://testdouble.com/insights)
@@ -442,6 +444,10 @@ Nicolas Loizeau
 [Why does "=" mean assignment? - Hillel Wayne](https://www.hillelwayne.com/equals-as-assignment/)
 
 ## Courses
+
+[Computer Science from the Bottom Up](https://bottomupcs.com/index.html)
+
+[Composing Programs](https://www.composingprograms.com/)
 
 [CSE 20289 - Systems Programming](https://www3.nd.edu/~pbui/teaching/cse.20289.sp20/)
 

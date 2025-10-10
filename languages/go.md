@@ -46,6 +46,14 @@ Go language design philosophy debate
 
 ---
 
+## Go for Python Devs
+
+dev tools
+
+no default values in functions
+
+no keyword arguments when calling a function
+
 ## Learning Go
 
 [10 week plan to master Go: GetStream’s onboarding plan : r/golang](https://www.reddit.com/r/golang/comments/1eiea6q/10_week_plan_to_master_go_getstreams_onboarding/?share_id=0YbvpMNHBGrElxcp8jznD&utm_name=androidcss)

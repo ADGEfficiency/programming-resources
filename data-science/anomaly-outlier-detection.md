@@ -86,7 +86,7 @@ modified_z_score = 0.6745 * (x - median) / mad
 
 Masking - outliers causing other outliers not to be detected
 
-Swamping - outliers outliers causing other outliers to be detected when they shouldn't
+Swamping - outliers causing other outliers to be detected when they shouldn't
 
 Masking & swamping can occur with other methods
 
@@ -144,7 +144,6 @@ Visualizing
 Boxplots bad with multimodal data
 
 Categorical
-
 - rare combinations based on absolute count
 - rare combinations based on marginal probabilities
 
@@ -296,7 +295,6 @@ Tree data structures again
 ## Histogram-based Outlier Score (HBOS)
 
 [RnR - bunch of other detectors]
-
 
 # Other Libraries
 

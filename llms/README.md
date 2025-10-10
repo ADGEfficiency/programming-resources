@@ -18,6 +18,8 @@ The LoRA method works by attaching extra trainable parameters into a model(that 
 
 [A statistical approach to model evaluations \ Anthropic](https://www.anthropic.com/research/statistical-approach-to-model-evals)
 
+[Frequently Asked Questions (And Answers) About AI Evals – Hamel’s Blog](https://hamel.dev/blog/posts/evals-faq/)
+
 ## Codellama
 
 [Code Llama: Llama 2 learns to code](https://huggingface.co/blog/codellama)
@@ -74,3 +76,28 @@ That said, it's still a gamechanger that I can do it at all.
 3. I am a bit more hyped than the author that this is a game changer, but like them, I don't think it's going to be the end of the world. There are some jobs that are going to be heavily impacted and I think we are going to have a rough few years of bots astroturfing platforms. But all in all I think it's more of a force multiplier rather than a breakthrough like the internet.
 
 IMHO it's similar to what happened to DevOps in the 2000s, you just don't need a big special team to help you deploy anymore, you hire a few specialists and mostly buy off the shelf solutions. Similarly, certain ML tasks are now easy to implement even for dumb dumb web devs like me. 
+
+---
+
+[Tao on “blue team” vs. “red team” LLMs | Hacker News](https://news.ycombinator.com/item?id=44711306)
+
+Blue team (generative/constructive) creates initial output while red team (critical/evaluative) finds flaws and weaknesses
+- This pattern exists in mathematical proof creation vs checking, software development vs testing, and other domains
+- LLMs may be better suited for red team roles due to their unreliability - unreliable contributors cause less damage when attacking than when defending
+
+Fundamental asymmetry between offensive and defensive roles
+- Defensive systems only as strong as weakest component - single vulnerability can compromise entire system
+- Offensive systems benefit from multiple attack vectors - only need one successful approach
+- This asymmetry suggests placing unreliable AI tools in red team roles minimizes potential damage
+
+Testing philosophy and quality concerns dominate discussion
+- Legacy codebases suffer when tests become source of truth but may document bugs as features
+- Brittle tests slow development by requiring maintenance on every code change regardless of functional impact
+- Many enterprise testing practices generate bureaucratic overhead without meaningful safety improvements
+- Human review remains essential for distinguishing meaningful behavioral requirements from implementation artifacts
+
+Economic and organizational dynamics shape AI adoption
+- Organizations may use AI to accelerate low-value bureaucratic tasks rather than improve core outcomes
+- Productivity gains often illusory when applied to pointless work that scales infinitely
+- Capital allocation favors blue team AI applications despite red team potentially being more suitable
+- Quality of AI assistance correlates with user expertise - top performers benefit while others produce lower quality work

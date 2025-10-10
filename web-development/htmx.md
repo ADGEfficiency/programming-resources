@@ -1,3 +1,5 @@
+[Hypermedia Systems](https://hypermedia.systems/book/contents/)
+
 [A modest critique of Htmx | Hacker News](https://news.ycombinator.com/item?id=41781457)
 
 [Less htmx is More](https://unplannedobsolescence.com/blog/less-htmx-is-more/) - [Less Htmx Is More | Hacker News](https://news.ycombinator.com/item?id=43619581)
