@@ -6,7 +6,7 @@
 - indexing,
 - less tables usually better
 - see unique values with a groupby and count, rather than distinct (better info)
-- always write the WHERE first before I write the DELETE FROM statement. 
+- always write the WHERE first before I write the DELETE FROM statement.
 
 ## Relational Databases
 
@@ -50,7 +50,7 @@ A subquery is limited to being used within an expression.
 
 ## CTE
 
-A CTE (Common Table Expression) defines a temporary result set that you can reference within another SELECT, INSERT, UPDATE, or DELETE statement. 
+A CTE (Common Table Expression) defines a temporary result set that you can reference within another SELECT, INSERT, UPDATE, or DELETE statement.
 
 ```sql
 WITH
@@ -128,7 +128,7 @@ VALUES
 Get max in each region with a subquery:
 
 ```sql
-SELECT * 
+SELECT *
 FROM deals d1
 WHERE d1.deal_amount = (
     SELECT MAX(deal_amount)
@@ -316,11 +316,11 @@ FROM
   AND user.user_id = 123
 ```
 
-By leaving the user_id=123 constraint in the JOIN instead of putting it in the WHERE, you've just exposed everyone's purchase data to the user. 
+By leaving the user_id=123 constraint in the JOIN instead of putting it in the WHERE, you've just exposed everyone's purchase data to the user.
 
 ---
 
- Outer joins are inherently risky because they make it very easy to put conditions in a place that looks correct (read: passes review) but isn't, and the results are disastrous (information leak). 
+ Outer joins are inherently risky because they make it very easy to put conditions in a place that looks correct (read: passes review) but isn't, and the results are disastrous (information leak).
 
 ## [SQL Cheat Sheet](https://antonz.org/sql-cheatsheet/)
 
@@ -400,7 +400,7 @@ triggers, stored procedures
 
     it might not be queryable by SQL (see note 3)
 
-Some examples are ElasticSearch, Cassandra, MongoDB, and Redis, whose main common trait is that they don't store or access data using the relational concept of rows and columns. 
+Some examples are ElasticSearch, Cassandra, MongoDB, and Redis, whose main common trait is that they don't store or access data using the relational concept of rows and columns.
 
 ## ORMs
 
@@ -443,7 +443,7 @@ NoSQL advantages:
 - Decoupling property storage from block type allows for efficient transformation and changes to our rendering logic. But it’s also essential for collaboration, because we preserve as much user intention as possible.
 - ID, properties, type, content (children), parent,
 -  In Notion, indentation is structural: it’s a reflection of the structure of the render tree. In other words, when you indent something in Notion, you are manipulating relationships between blocks and their content, not just adding a style.
--  
+-
 
 [The Next 50 Years of Databases - 2015](http://www.cs.cmu.edu/~pavlo/blog/2015/09/the-next-50-years-of-databases.html)
 
@@ -457,17 +457,17 @@ NoSQL advantages:
 
 ## https://en.wikipedia.org/wiki/Data_definition_language
 
-Data description language (DDL) is a syntax for creating and modifying database objects (tables, indices, and users). 
+Data description language (DDL) is a syntax for creating and modifying database objects (tables, indices, and users).
 
-DDL statements are similar to a computer programming language for defining data structures, especially database schemas. 
+DDL statements are similar to a computer programming language for defining data structures, especially database schemas.
 
-Common examples of DDL statements include CREATE, ALTER, and DROP. 
+Common examples of DDL statements include CREATE, ALTER, and DROP.
 
 ## From HN
 
 https://news.ycombinator.com/item?id=27025829
 
-resist the temptation to 'SELECT *' into a data frame and break the problem up into stages where you get the database to do the maximum work before it gets to the data frame. 
+resist the temptation to 'SELECT *' into a data frame and break the problem up into stages where you get the database to do the maximum work before it gets to the data frame.
 
 
 ## Working with SQL
@@ -525,49 +525,59 @@ Storing raw strings in databases = heavy.  Instead it should be normalized.
 SQL has levels to it:
 
 - level 1
-SELECT, FROM, WHERE, GROUP BY, HAVING, LIMIT 
+SELECT, FROM, WHERE, GROUP BY, HAVING, LIMIT
 
-Master these basic keywords and you’ll be well on your way to mastering SQL. 
+Master these basic keywords and you’ll be well on your way to mastering SQL.
 
 - level 2
 Mastering JOINs:
-Most common JOINs: INNER and LEFT 
-Less common JOINs: FULL OUTER 
+Most common JOINs: INNER and LEFT
+Less common JOINs: FULL OUTER
 Joins you should avoid almost always: RIGHT and CROSS JOIN
 
-Mastering common table expressions (CTEs). 
+Mastering common table expressions (CTEs).
 
-The WITH keyword defines a CTE which you can imagine as a “variable” that you can query later. 
+The WITH keyword defines a CTE which you can imagine as a “variable” that you can query later.
 
-Using variables like this you can master algorithm techniques like recursion, breadth first search and more! 
+Using variables like this you can master algorithm techniques like recursion, breadth first search and more!
 
-CTEs also make your SQL much more readable and make your coworkers hate you less compared to nested sub queries. 
+CTEs also make your SQL much more readable and make your coworkers hate you less compared to nested sub queries.
 
 - level 3
-Mastering window functions 
+Mastering window functions
 
 Window functions have 3 pieces:
 
-The function (i.e. SUM, RANK, AVG) 
-The over clause to start the window 
+The function (i.e. SUM, RANK, AVG)
+The over clause to start the window
 The window definition which has 3 pieces:
-- how to split the window up with PARTITION BY 
-- how to order the window with ORDER BY 
+- how to split the window up with PARTITION BY
+- how to order the window with ORDER BY
 - how to restrict the window size with ROWS clause (useful for rolling monthly averages)
 
-Understand RANK vs DENSE_RANK vs ROW_NUMBER, I have been asked this in interviews a million times. 
+Understand RANK vs DENSE_RANK vs ROW_NUMBER, I have been asked this in interviews a million times.
 
 - level 4
-You understand table scans, b-tree indexes, and partitioning schemes to increase performance. 
+You understand table scans, b-tree indexes, and partitioning schemes to increase performance.
 
-Doing something like COUNT(CASE WHEN) is much better than doing multiple queries with a UNION ALL. UNION ALL is terrible for all sorts of reasons that I don’t want to get into in this post. 
+Doing something like COUNT(CASE WHEN) is much better than doing multiple queries with a UNION ALL. UNION ALL is terrible for all sorts of reasons that I don’t want to get into in this post.
 
-B-trees indexes allow for efficient scanning of data in the WHERE clause. 
+B-trees indexes allow for efficient scanning of data in the WHERE clause.
 
-Use explain plans to understand if an index is actually being used or not! 
+Use explain plans to understand if an index is actually being used or not!
 
-Partitioning is similar to indexes except it’s a “poor mans” index. It just keeps data in specific folders and skips the folders that don’t include the data I question. 
+Partitioning is similar to indexes except it’s a “poor mans” index. It just keeps data in specific folders and skips the folders that don’t include the data I question.
 
 What else did I miss for mastering SQL?
 
 [The Three Levels of SQL Comprehension: What they are and why you need to know about them | dbt Developer Blog](https://docs.getdbt.com/blog/the-levels-of-sql-comprehension)
+
+[Do You Really Know How To SQL? What Database Engineers Actually Recommend You Should Do. | by Jan Kammerath | Medium](https://medium.com/@jankammerath/do-you-really-know-how-to-sql-what-database-engineers-actually-recommend-you-should-do-7e6eba3c716b)
+
+Transactions
+
+Reporting vs analytics - don't run analytics in reporting databases
+
+[SQL Design Patterns (2010) | Hacker News](https://news.ycombinator.com/item?id=45035618)
+
+SELECT DISTINCT is often a code smell. (Not always.) If you see it, there’s a 70% chance it got slapped on to fix an issue that should have been solved a different way.

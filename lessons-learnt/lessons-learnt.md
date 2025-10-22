@@ -1,3 +1,18 @@
+[How I build software quickly | Hacker News](https://news.ycombinator.com/item?id=44557115)
+
+How good should this be?  How polished should the code be?
+
+Rough drafts quickly implemented
+- Reveal unknown unknowns
+- Avoid premature abstraction
+- Can communicate with others with demo's
+
+Try to change the requirements
+
+Debugging
+
+Pure functions, immutable data
+
 [Essays on programming I think about a lot | benkuhn.net](https://www.benkuhn.net/progessays/)
 
 ["Yes, Please Repeat Yourself" and other Software Design Principles I Learned the Hard Way : r/programming](https://www.reddit.com/r/programming/comments/1cckf07/yes_please_repeat_yourself_and_other_software/?share_id=xGL4Z8cYSQZXJjUNUmMkE&utm_name=androidcss)
@@ -12,7 +27,7 @@ Designs get stale. You can slow the rate at which they get stale by refactoring,
 
 Technical debt can be classified into three main types: 1) things that are preventing you from doing stuff now, 2) things that will prevent you from doing stuff later, and 3) things that might prevent you from doing stuff later. Every other classification is a subset of these three. Minimize having lots of stuff in #1 and try to focus on #2. Ignore #3.
 
-Testability is correlated with good design. Something not being easily testable hints that the design needs to be changed. 
+Testability is correlated with good design. Something not being easily testable hints that the design needs to be changed.
 
 [Mocking | Learn Go with tests](https://quii.gitbook.io/learn-go-with-tests/go-fundamentals/mocking)
 
@@ -43,7 +58,7 @@ Debuggability is highly underrated. When writing code, you have to think about h
 [40 years of programming](https://liw.fi/40/)
 
 Interesting and significant software is beyond the capacity of any one person to build alone in a reasonable time frame. This means that the fundamental, crucial, core skills in building software are communication and collaboration.
-You also need to know how to talk with other people to learn what software to build, what it must do, how much effort is acceptable, how to manage the work, and many more things. 
+You also need to know how to talk with other people to learn what software to build, what it must do, how much effort is acceptable, how to manage the work, and many more things.
 
 Even in the projects where I'm the only person, there are at least three people involved: past me, present me, and future me.
 
@@ -59,7 +74,7 @@ It's on individual developers to try to reduce maintenance costs surreptitiously
 
 Detailed planning beyond the very near future is difficult and usually fails. This includes estimating how long the work will take. I avoid doing this.
 
-Planning and estimation are far from useless and should not be neglected. 
+Planning and estimation are far from useless and should not be neglected.
 
 ---
 
@@ -99,7 +114,7 @@ What it means is, putting yourself in your boss’s shoes, and thinking about wh
 
 Give your boss stuff they can use. Maybe it’s ideas and suggestions about how to frame or present work the group has done, or explain problems you have faced. Maybe it’s a little bit of bonus content from time to time, that can be highlighted in a status report. Maybe it’s helping to defuse a situation that would make your boss or the group look bad. Sometimes it takes a little imagination to put yourself in your boss’s place, or maybe even some investigation on your part to find out what your boss’s true care-about’s really are, but this is worthwhile to do in general, anyway.
 
-When your boss takes credit for your work, it is usually (unless you have an awful boss, anyway) done in a way that helps him or her, while simultaneously raising your visibility in the company, and improving your personal brand. 
+When your boss takes credit for your work, it is usually (unless you have an awful boss, anyway) done in a way that helps him or her, while simultaneously raising your visibility in the company, and improving your personal brand.
 
 ## The “Do It Anyway” Principle
 
@@ -121,7 +136,7 @@ The "Two-And-Done" rule is about giving yourself two chances to make your case o
 
 If you fail to convince others after the second attempt, gracefully concede and get behind the agreed-upon decision. Don't undermine or sabotage it.If you fail to convince others after the second attempt, gracefully concede and get behind the agreed-upon decision. Don't undermine or sabotage it.
 
-Be effective rather than stubbornly trying to always be right. 
+Be effective rather than stubbornly trying to always be right.
 
 [My First Year as a Data Scientist](https://codebuildrepeat.blogspot.com/2020/03/my-first-year-as-data-scientist.html)
 
@@ -151,11 +166,11 @@ If you tell yourself you’re very energetic person, that feeling tired is tempo
 
 ## Don't sleep too much
 
-## Get in the habit of Fermi estimation, looking up key quantities, and using upper and lower bounds. 
+## Get in the habit of Fermi estimation, looking up key quantities, and using upper and lower bounds.
 
-I’ve noticed a lot of the smartest people I know do this: they don’t take any claims at face value, and check for themselves whether they’re plausible. This means, e.g. when they hear a fact, they’ll look it up to assure themselves that it’s true, because often people cite things that are false or partial. 
+I’ve noticed a lot of the smartest people I know do this: they don’t take any claims at face value, and check for themselves whether they’re plausible. This means, e.g. when they hear a fact, they’ll look it up to assure themselves that it’s true, because often people cite things that are false or partial.
 
- Engineers and physicists are trained to do this, everyone else has to learn. The usual name for this is Fermi estimation: estimating the rough order of magnitude of an unknown quantity using information that you already know. 
+ Engineers and physicists are trained to do this, everyone else has to learn. The usual name for this is Fermi estimation: estimating the rough order of magnitude of an unknown quantity using information that you already know.
 
 ## Whenever you make a claim or an argument, try and imagine the strongest possible argument against it
 
@@ -163,15 +178,15 @@ I’ve noticed a lot of the smartest people I know do this: they don’t take an
 
 ## Do a weekly review
 
-## Synthesize things as you read. 
+## Synthesize things as you read.
 
 Just because you’ve read something, doesn’t mean you’ve understood it; your brain has to come up with its own encoding. Whatever understanding things is, it’s related to compression. Which implies that you want to read and then restate in your own words, so that your mind is forced to compress the thing. Ideally several times, in varying ways.
 
-Once you’ve done this, you are much more likely to retain the thing, and to actually grasp it; and if you’re struggling with this exercise, then you don’t understand the thing and should go back and look at it again. (This is also a useful bullshit filter -- try and restate someone’s claim in a different way, and see if it still holds up). 
+Once you’ve done this, you are much more likely to retain the thing, and to actually grasp it; and if you’re struggling with this exercise, then you don’t understand the thing and should go back and look at it again. (This is also a useful bullshit filter -- try and restate someone’s claim in a different way, and see if it still holds up).
 
 ## Map out problems using logic trees
 
-This is a classic problem-solving and brainstorming technique, also known as morphological analysis. It’ll be familiar to any consultant, as it’s 80% of their secret sauce.  
+This is a classic problem-solving and brainstorming technique, also known as morphological analysis. It’ll be familiar to any consultant, as it’s 80% of their secret sauce.
 
 Take a problem, say analyzing a business’s profits (as in consulting). Break it down into logically exhaustive possibilities, e.g. “revenue” and “costs”. Break down each branch further into its component parts, e.g. revenue becomes price * quantity. Follow this process recursively, each time breaking the tree down into components.
 
@@ -237,7 +252,7 @@ The worst manager sacrifices their well-being as well as their employees' well-b
 
     Rule 5. Data dominates. If you've chosen the right data structures and organized things well, the algorithms will almost always be self-evident. Data structures, not algorithms, are central to programming.
 
-Pike's rules 1 and 2 restate Tony Hoare's famous maxim "Premature optimization is the root of all evil." Ken Thompson rephrased Pike's rules 3 and 4 as "When in doubt, use brute force.". Rules 3 and 4 are instances of the design philosophy KISS. Rule 5 was previously stated by Fred Brooks in The Mythical Man-Month. Rule 5 is often shortened to "write stupid code that uses smart objects". 
+Pike's rules 1 and 2 restate Tony Hoare's famous maxim "Premature optimization is the root of all evil." Ken Thompson rephrased Pike's rules 3 and 4 as "When in doubt, use brute force.". Rules 3 and 4 are instances of the design philosophy KISS. Rule 5 was previously stated by Fred Brooks in The Mythical Man-Month. Rule 5 is often shortened to "write stupid code that uses smart objects".
 
 [What I Wish Someone Had Told Me - Sam Altman](https://blog.samaltman.com/what-i-wish-someone-had-told-me)
 
@@ -269,9 +284,9 @@ a) because when I break down a problem into its code-able component parts, I lea
 
 b) because in the process of then actually implementing these parts I often discover edge cases or undefined cases (especially in naturally grown business-logic)
 
-c) because what the problem actually IS, is often not that clear at the start of the problem. Yes, in an ideal world, changing requirements would wait until the next version, however, sadly that's not what happens in the wild. 
+c) because what the problem actually IS, is often not that clear at the start of the problem. Yes, in an ideal world, changing requirements would wait until the next version, however, sadly that's not what happens in the wild.
 
-    JKCalhoun 
+    JKCalhoun
 
     Yeah, it could just be me, but I prefer to make two false starts, toss them, and then get it right on the third attempt rather than attempting to whiteboard the problem for two weeks.
 
@@ -279,7 +294,7 @@ c) because what the problem actually IS, is often not that clear at the start of
 
     To be sure, I do a little whiteboarding, but generally it might be about 2 hours or so of sketching out ideas, major structures, code flow ideas.
 
-        Palomides 
+        Palomides
 
         I forget where I read this, but something like:
 
@@ -287,7 +302,7 @@ c) because what the problem actually IS, is often not that clear at the start of
 
         second time to understand the solution
 
-        third time to do it right 
+        third time to do it right
 
             koide
 
@@ -300,9 +315,9 @@ c) because what the problem actually IS, is often not that clear at the start of
 
 https://news.ycombinator.com/item?id=27418296
 
-The difference between a decent developer and a great developer is the latter understand how their work fits into the larger picture. As a result they're able to quickly and effectively pivot to suit the dynamic needs of the business. 
+The difference between a decent developer and a great developer is the latter understand how their work fits into the larger picture. As a result they're able to quickly and effectively pivot to suit the dynamic needs of the business.
 
- It's not easy to do things the simple way, being clever is the easy path. Knowing when you need to be clever and when simple is enough is what separates experience from greenhorns. 
+ It's not easy to do things the simple way, being clever is the easy path. Knowing when you need to be clever and when simple is enough is what separates experience from greenhorns.
 
 [20 Things I’ve Learned in my 20 Years as a Software Engineer](https://www.simplethread.com/20-things-ive-learned-in-my-20-years-as-a-software-engineer/) - [Hacker News discussion](https://news.ycombinator.com/item?id=28797485)
 
@@ -310,7 +325,7 @@ The difference between a decent developer and a great developer is the latter un
 
 The first one was not a bad person by any means, but had no social skills, no ability to communicate and often just forged ahead building great stuff on his own. Entire areas of the software were entirely conceived and created by him, and it was difficult to even grasp what he was doing while pair programming with him. In a day he would write more tests and get more coverage than the rest of us would create in a week.
 
-The second one had come from a FAANG-ish place where he was extremely successful, but didn't want the money or stress. He was extremely kind, considerate and great at communicating. Pair programming with him was a joy and he helped everyone else on the team grow. I'm confident he could have created entire regions of the software on his own, but he knew that wasn't the right thing to do. He would often ask questions until someone else on the team could solve a problem, even though I'm sure he knew how to solve it easily himself. 
+The second one had come from a FAANG-ish place where he was extremely successful, but didn't want the money or stress. He was extremely kind, considerate and great at communicating. Pair programming with him was a joy and he helped everyone else on the team grow. I'm confident he could have created entire regions of the software on his own, but he knew that wasn't the right thing to do. He would often ask questions until someone else on the team could solve a problem, even though I'm sure he knew how to solve it easily himself.
 
 [How to Become a Bad Developer](https://rafaelquintanilha.com/how-to-become-a-bad-developer/) - [Hacker News discussion](https://news.ycombinator.com/item?id=27539342)
 
@@ -422,13 +437,13 @@ Model performance != business performance
 Not all experience is created equal
 - that’s why mentors are so important, and the team you work with is worth so much more than a couple bucks in your paycheck
 
-Loads of companies and startups have little or no tests. 
+Loads of companies and startups have little or no tests.
 - no company has a perfect tech setup.
 - being overly opinionated on topics you lack real-world experience with is pretty arrogant.
 - good enough is good enough.
 
 Documentation lies sometimes.
-- focus on automation over documentation where appropriate. 
+- focus on automation over documentation where appropriate.
 
 Disorganized or messy code isn’t the same as technical debt.
 - Having some technical debt is healthy
@@ -466,7 +481,7 @@ Sometimes you need to do grunt or non-glamarous work
 
 ### Two and done
 
-So the Two-And-Done rule was born, wherein I will state my case the first time, and if whoever is arguing to the contrary does not agree after hearing my position, I’ll let it go. 
+So the Two-And-Done rule was born, wherein I will state my case the first time, and if whoever is arguing to the contrary does not agree after hearing my position, I’ll let it go.
 
 But the next time the opportunity comes up, I will argue my point again. Maybe allowing for a gap of time for people to consider my original point, or maybe allowing me time to refine and rephrase my ideas to be more convincing.
 
