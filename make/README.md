@@ -96,7 +96,7 @@ all:
 ```
 
 ```
-$ make 
+$ make
 echo dev
 dev
 $ make account=prod
@@ -229,7 +229,7 @@ view: $(TEXFILE).pdf
 
 # Clean up stray files
 clean:
-    rm -fv $(OUT_FILES) 
+    rm -fv $(OUT_FILES)
     rm -fv $(CROP_FILES)
     rm -fv *.aux *.log *.toc *.blg *.bbl *.synctex.gz
     rm -fv *.out *.bcf *blx.bib *.run.xml
@@ -258,9 +258,11 @@ clean:
 
 ### Discussion
 
+[Dotfiles with make](https://www.matheusmoreira.com/articles/managing-dotfiles-with-make)
+
 [Makefiles for Web Work](https://rosszurowski.com/log/2022/makefiles)
 
-Using `?=` you can set default variables that you can override outside of make. 
+Using `?=` you can set default variables that you can override outside of make.
 
 You can document commands with a ## comment at the end of a line. For example:
 

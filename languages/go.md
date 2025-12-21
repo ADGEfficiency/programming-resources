@@ -79,7 +79,24 @@ no keyword arguments when calling a function
 [mauricioabreu/golings: rustlings but for golang this time](https://github.com/mauricioabreu/golings/)
 
 ---
-
+
+# Starting a Go Project
+
+Create a `main.go` with `package main` and a `main()`:
+
+```go
+package main
+
+func main() {
+	println("hello")
+}
+```
+
+You can then run with:
+
+```shell-session
+$ go run main.go
+```
 
 # Variables
 
@@ -87,7 +104,7 @@ Declare and initialize variables - requires a `var` keyword and the type:
 
 ```go
 var x = 5
-var int x = 
+var int x =
 
 // inside a function - but cannot define type
 x := 5
@@ -123,6 +140,12 @@ t.Errorf("got %q want %q", got, want)
 
 ```go
 t.Errorf("int: %d", 5)
+```
+
+Print to stderr
+
+```go
+fmt.Fprintln(os.Stderr, err)
 ```
 
 `%#v` - struct
@@ -219,7 +242,7 @@ func Hello(name string, language string) (prefix string) {
 
 ## Pointers
 
-In Go, when you call a function or a method the arguments are copied. 
+In Go, when you call a function or a method the arguments are copied.
 
 Can find location in memory with `&`:
 
@@ -479,48 +502,58 @@ Run app:
 $ go run hello.go
 ```
 
-## Testing
-
-The test function must start with the word Test
-
-The test function takes one argument only t *testing.T
-
-To use the *testing.T type, you need to import "testing", like we did with fmt in the other file*
-
-## Coverage
-
-```shell-session
-go test -cover
-```
-
-## Test Runs
-
-In `_test.go`
+## Starter package
 
 ```go
-package arrays
+// main.go
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("hi")
+}
+```
+
+```
+```
+
+## Testing
+
+The test function must start with the word `Test`
+
+The test function takes one argument only `t *testing.T`
+
+To use the `testing.T` type, you need to `import "testing"`
+
+```go
+package main
 
 import "testing"
 
-func TestSum(t *testing.T) {
-
-	// helper function, only available in this scope
-	checkSums := func(t *testing.T, got, want []int) {
+func TestFunc(t *testing.T) {
+	check := func(t *testing.T, got, want int) {
 		t.Helper()
-		if !slices.Equal(got, want) {
+		if got != want {
 			t.Errorf("got %v want %v", got, want)
 		}
 	}
 
-	t.Run("collection of 5 numbers", func(t *testing.T) {
-		// logic
-		checkSums(t, got, want)
+	t.Run("case_one", func(t *testing.T) {
+		got := 2
+		want := 7
+		check(t, got, want)
 	})
-	t.Run("collection of 4 numbers", func(t *testing.T) {
-		// logic
-	})
-
 }
+```
+
+## CLI Test Commands
+
+```shell-session
+go test -cover
+
+go test -run TestName
+go test -run TestName/subtest_name
 ```
 
 ## Test Examples
@@ -602,4 +635,32 @@ Inverse is the receive operator:
 
 ```go
 r := <-resultChannel
+```
+
+## Reading Files
+
+```go
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+)
+
+file, err := os.Open(fileName)
+if err != nil {
+    fmt.Fprintln(os.Stderr, err)
+    os.Exit(1)
+}
+fmt.Printf("read file %q\n", fileName)
+defer file.Close()
+scanner := bufio.NewScanner(file)
+for scanner.Scan() {
+    txt := scanner.Text()
+}
+
+if err := scanner.Err(); err != nil {
+    fmt.Fprintln(os.Stderr, err)
+    os.Exit(1)
+}
 ```

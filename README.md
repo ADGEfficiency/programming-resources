@@ -10,9 +10,9 @@ I maintain similar collections on [reinforcement learning](https://github.com/AD
 
 Hidden inside these notes are are the content for a few courses:
 
-- [fundamentals](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals) of [computing](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md) & [programming](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md),
-- [Bash and UNIX](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md),
-- [test driven development](https://github.com/ADGEfficiency/programming-resources/tree/master/test-driven-development).
+- [Fundamentals](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals) of [Computing](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/computers.md) & [Programming](https://github.com/ADGEfficiency/programming-resources/blob/master/fundamentals/programming.md)
+- [Bash and UNIX](https://github.com/ADGEfficiency/programming-resources/blob/master/bash-and-unix/intro.md)
+- [Test Driven Development](https://github.com/ADGEfficiency/programming-resources/tree/master/test-driven-development)
 
 Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-resources/tree/master/memes).
 
@@ -38,9 +38,11 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 [soma fm - Mission Control](https://somafm.com/missioncontrol/)
 
-[lofi air traffic control](https://www.lofiatc.com/?icao=KVNY) 
+[lofi air traffic control](https://www.lofiatc.com/?icao=KVNY)
 
 ## Random Cool Stuff
+
+[The Codeless Code: Contents](https://www.thecodelesscode.com/contents)
 
 [HN: the good parts](https://danluu.com/hn-comments/)
 
@@ -102,7 +104,7 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 Honeypot documentaries:
 
-- [Ember.js](https://www.youtube.com/watch?v=Cvz-9ccflKQ), 
+- [Ember.js](https://www.youtube.com/watch?v=Cvz-9ccflKQ),
 - [Vue.js](https://www.youtube.com/watch?v=OrxmtDw4pVI),
 - [GraphQL](https://www.youtube.com/watch?v=783ccP__No8),
 - [React.js](https://youtu.be/8pDqJVdNa44?si=SWo_Yu1HRAaproFT),
@@ -116,7 +118,7 @@ Honeypot documentaries:
 
 [Richard Hamming - You and Your Research Lecture](https://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
 
-[The Architecture of Open Source Applications](https://www.aosabook.org/en/index.html) - Architects look at thousands of buildings during their training, and study critiques of those buildings written by masters. In contrast, most software developers only ever get to know a handful of large programs well—usually programs they wrote themselves—and never study the great programs of history. As a result, they repeat one another's mistakes rather than building on one another's successes. 
+[The Architecture of Open Source Applications](https://www.aosabook.org/en/index.html) - Architects look at thousands of buildings during their training, and study critiques of those buildings written by masters. In contrast, most software developers only ever get to know a handful of large programs well—usually programs they wrote themselves—and never study the great programs of history. As a result, they repeat one another's mistakes rather than building on one another's successes.
 
 [Software Development Waste](https://neverworkintheory.org/2021/08/29/software-development-waste.html) - [Hacker News discussion](https://news.ycombinator.com/item?id=28352075)
 

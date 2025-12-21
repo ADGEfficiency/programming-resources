@@ -1,3 +1,7 @@
+## Config
+
+[ai-config/CLAUDE.md at master · dnouri/ai-config](https://github.com/dnouri/ai-config/blob/master/CLAUDE.md)
+
 ## Fine Tuning
 
 [How to Fine-Tune LLMs in 2024 with Hugging Face](https://www.philschmid.de/fine-tune-llms-in-2024-with-trl)
@@ -33,7 +37,7 @@ Formatting prompts:
 
 ## Structured Output
 
-Using the openai library and llama you can enforce that the response be valid json with response_format={ "type": "json_object" }. Hugely helpful. 
+Using the openai library and llama you can enforce that the response be valid json with response_format={ "type": "json_object" }. Hugely helpful.
 
 ## Agents
 
@@ -75,7 +79,7 @@ That said, it's still a gamechanger that I can do it at all.
 
 3. I am a bit more hyped than the author that this is a game changer, but like them, I don't think it's going to be the end of the world. There are some jobs that are going to be heavily impacted and I think we are going to have a rough few years of bots astroturfing platforms. But all in all I think it's more of a force multiplier rather than a breakthrough like the internet.
 
-IMHO it's similar to what happened to DevOps in the 2000s, you just don't need a big special team to help you deploy anymore, you hire a few specialists and mostly buy off the shelf solutions. Similarly, certain ML tasks are now easy to implement even for dumb dumb web devs like me. 
+IMHO it's similar to what happened to DevOps in the 2000s, you just don't need a big special team to help you deploy anymore, you hire a few specialists and mostly buy off the shelf solutions. Similarly, certain ML tasks are now easy to implement even for dumb dumb web devs like me.
 
 ---
 

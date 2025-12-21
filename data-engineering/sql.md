@@ -303,6 +303,12 @@ This way, when someone asks, “how many customers did we have per region over t
 
 ## [SQL join flavors](https://antonz.org/sql-join/)
 
+There are three variations of joins defined in the SQL standard:
+
+1. qualified join (= using specific match criteria),
+2. natural join (= automatic match criteria),
+3. cross join (= inner join with no specific match criteria).
+
 ## [SQL Join Flavors | Hacker News](https://news.ycombinator.com/item?id=37583197)
 
 Having a deeper understanding of the different JOIN flavors is critical. For example, I don't think many people realize how deceptively dangerous OUTER joins are:
@@ -581,3 +587,16 @@ Reporting vs analytics - don't run analytics in reporting databases
 [SQL Design Patterns (2010) | Hacker News](https://news.ycombinator.com/item?id=45035618)
 
 SELECT DISTINCT is often a code smell. (Not always.) If you see it, there’s a 70% chance it got slapped on to fix an issue that should have been solved a different way.
+
+[SQL Anti-Patterns You Should Avoid - by Jordan Goodman](https://datamethods.substack.com/p/sql-anti-patterns-you-should-avoid)
+
+`CASE WHEN` too much
+- instead create dimension table or view
+- then logic is consistent and available to others
+
+Functions on indexed columns
+- not `WHERE UPPER(name) = ‘ABC’`, instead create index on UPPER(name)
+
+`SELECT *` in views
+- schema can change
+- don't need the columns

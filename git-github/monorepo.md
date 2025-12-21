@@ -1,3 +1,9 @@
+[The Ingredients of a Productive Monorepo](https://blog.swgillespie.me/posts/monorepo-ingredients/)
+
+Consistency, organizational coherence, and shared tooling efforts
+
+Any operation over your repository that needs to be fast must be O(change) and not O(repo).
+
 [Advantages of monorepos](https://danluu.com/monorepo/)
 
 - projects can be organized how they should, not how the VCS wants
@@ -19,7 +25,7 @@ Drawbacks
 
 - tools to scale development, execution & code health
 - codebase complexity
-- unecessary dependencies
+- unnecessary dependencies
 
 Trunk based development + release branches
 
@@ -27,12 +33,12 @@ Feature flagging
 
 Avoids the `diamond dependency` problem
 
-- A depends on B and C, 
-- both B and C depend on D, 
-- B requires version D.1 and C requires version D.2. 
+- A depends on B and C,
+- both B and C depend on D,
+- B requires version D.1 and C requires version D.2.
 - It is now impossible to build A
 
-For the base library D, it can become very difficult to release a new version without causing breakage, since all its callers must be updated at the same time. 
+For the base library D, it can become very difficult to release a new version without causing breakage, since all its callers must be updated at the same time.
 
 [Monorepo, is it worth considering?](https://www.reddit.com/r/ExperiencedDevs/comments/tmca5u/monorepo_is_it_worth_considering/)
 

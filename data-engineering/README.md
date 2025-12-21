@@ -59,7 +59,7 @@ What to learn
 - capitalization is not important,
 - use binary formats (Parquet etc) where possible.
 
-## Mistakes 
+## Mistakes
 
 Not doing append only / keeping data
 - Failing to keep raw data to support reprocessing
@@ -144,20 +144,20 @@ Elastic Search
 
 Don't worry too much about the individual tools in the beginning. Yes, there are certain tools like u/Cloudskipper92 mentioned Airflow, DBT, Snowflake and so on, but you need to understand why and when you use them.
 
-Understand the 4 different parts of a platform: data integration, processing frameworks, data stores (Data Lakes, OLTP and OLAP) and visualization. Figure out which tools are in them. 
+Understand the 4 different parts of a platform: data integration, processing frameworks, data stores (Data Lakes, OLTP and OLAP) and visualization. Figure out which tools are in them.
 
-Work on understanding the difference between batch jobs (ETL) and data streaming.  
-I recommend learning a "transactional" and a "analytics" use case. 
+Work on understanding the difference between batch jobs (ETL) and data streaming.
+I recommend learning a "transactional" and a "analytics" use case.
 
 In the transactional build a streaming pipeline e.g. API -> Kafka -> Spark Streaming -> MongoDB -> API/UI
 
-For the analytics one use a Data Warehouse/Analytics store and write data to it. e.g.  
-File in S3 -> Apache Spark batch job (scheduled by airflow) -> Snowflake -> PowerBI  
+For the analytics one use a Data Warehouse/Analytics store and write data to it. e.g.
+File in S3 -> Apache Spark batch job (scheduled by airflow) -> Snowflake -> PowerBI
 
 ---
 https://www.reddit.com/r/dataengineering/comments/tpg0r9/common_mistakes_data_engineers_make_and_how_to/
 
-A common mistake I see is companies that write a data model without really thinking about it. 
+A common mistake I see is companies that write a data model without really thinking about it.
 
 The model becomes the byproduct of all the features they've implemented and the framework and the libraries they've used, rather than something that was deliberately designed.
 
@@ -241,7 +241,7 @@ Structured versus unstructured data
 
 ## ETL / ELT
 
-ETL = 
+ETL =
 - sources, targets
 
 ELT = no schema on load
@@ -323,9 +323,9 @@ Streaming is a proper superset of batch, and batch can be served equally well, i
 
 Unbounded data is infinite, ever-growing data stream, bounded data for a data stream that happens to have a beginning and an end (data ingestion stops after a while). An unbounded data stream includes (is a superset of) the notion of a bounded data set.
 
-Flink accumulates records in buffers, and ships these buffers over the network when they are full. 
+Flink accumulates records in buffers, and ships these buffers over the network when they are full.
 
-This style of processing can emulate both record-by-record processing (regard a buffer as “full” when it has one record), pure batch processing (retain all buffers in memory and disk until the result has been fully materialized), and, interestingly, a sweet spot in the middle, which is the default behavior of Flink and can achieve very high throughput. 
+This style of processing can emulate both record-by-record processing (regard a buffer as “full” when it has one record), pure batch processing (retain all buffers in memory and disk until the result has been fully materialized), and, interestingly, a sweet spot in the middle, which is the default behavior of Flink and can achieve very high throughput.
 
 The little secret of batch processors is that they always include a hidden streaming component. When a batch processor reads a file, it streams the file to the first operator.
 
@@ -474,15 +474,15 @@ Databricks:
 - data lakehouse (data lake + SQL),
 - Spark
 
-Data Warehouse: primarily transformed, curated and modeled data from upstream systems 
+Data Warehouse: primarily transformed, curated and modeled data from upstream systems
 
-Data warehouse is a theoretical concept whereas RDBMS is a vendor implementation of a relational database (i. e. SQL Server, Oracle, Postgres). Data warehouses are traditionally built on top of the RDBMSes but with somewhat different design than transactional databases (hence you'll often hear OLTP vs OLAP databases) - it is expects that data in a data warehouse will be rarely (if ever) updated; instead it is optimized for inserts and reads. Also, data is "denormalized", meaning there is a certain level of redundancy of the data in order to avoid some JOINs (because number of them in an analytical query can be very high). 
+Data warehouse is a theoretical concept whereas RDBMS is a vendor implementation of a relational database (i. e. SQL Server, Oracle, Postgres). Data warehouses are traditionally built on top of the RDBMSes but with somewhat different design than transactional databases (hence you'll often hear OLTP vs OLAP databases) - it is expects that data in a data warehouse will be rarely (if ever) updated; instead it is optimized for inserts and reads. Also, data is "denormalized", meaning there is a certain level of redundancy of the data in order to avoid some JOINs (because number of them in an analytical query can be very high).
 
-Data Warehouse stores mostly transformed structured relational data. Data Lake is like a dump for all kind of data. 
+Data Warehouse stores mostly transformed structured relational data. Data Lake is like a dump for all kind of data.
 
-The idea behind data lake is, since nowadays storage became a lot cheaper, you load all the data from various sources first into the data lake, transform it afterwards and save the transformed data for example in a Data Warehouse. This process is called ELT. Prior ETL was mainly used. This means you transform the data first and then load it into a database. 
+The idea behind data lake is, since nowadays storage became a lot cheaper, you load all the data from various sources first into the data lake, transform it afterwards and save the transformed data for example in a Data Warehouse. This process is called ELT. Prior ETL was mainly used. This means you transform the data first and then load it into a database.
 
-Data warehouse: has structures and usually analytics ready - as name suggests, warehouse for analytics 
+Data warehouse: has structures and usually analytics ready - as name suggests, warehouse for analytics
 
 ### Data lakehouse
 
@@ -520,7 +520,7 @@ Fivetran
 - dbt
 - Snowflake,
 - boto
-- Stitch, 
+- Stitch,
 - Fivetran,
 - Serverless,
 - BigQuery (can this be data warehosue?)
@@ -665,6 +665,8 @@ lots of data science is about proving something isn't working
 
 [Data Engineering Design Patterns](https://www.dedp.online/)
 
+Datg eng has lots of convergent evolution - different patterns that achieve the same result, developed during different times.
+
 ## Architecture
 
 ## [A modern data stack for startups](https://incident.io/blog/data-stack)
@@ -745,7 +747,7 @@ Once we had the stack up and running, we ran two workshops aiming at different a
 
 ## [Data-Oriented Architecture | Eyas's Blog](https://blog.eyas.sh/2020/03/data-oriented-architecture/)
 
-DOA is an inversion of the traditional dichotomy between a monolithic binary and data store (monolithic architecture) on the one hand, and small, distributed, independent binaries each with their own data stores (microservices, and service-oriented architecture) on the other. 
+DOA is an inversion of the traditional dichotomy between a monolithic binary and data store (monolithic architecture) on the one hand, and small, distributed, independent binaries each with their own data stores (microservices, and service-oriented architecture) on the other.
 
 In data-oriented architecture, a monolithic data store is the sole source of state in the system, which is being acted on by loosely-coupled, stateless microservices.
 
@@ -757,7 +759,7 @@ Within a monolithic server, code could still be componentized and separated into
 
 ### Service-Oriented Architecture and microservices
 
-Microservices are a type of service-oriented architecture. 
+Microservices are a type of service-oriented architecture.
 
 Service-oriented architectures (SOA), on the other hand, break up monolithic programs into services for each independent, componentized function.
 
@@ -803,7 +805,7 @@ This architecture is not a magic bullet. Where data-oriented architecture erases
 
 ## [A modern data stack for startups (2022) | Hacker News](https://news.ycombinator.com/item?id=38812087)
 
-## [Emerging Architectures for Modern Data Infrastructure | Andreessen Horowitz](https://a16z.com/emerging-architectures-for-modern-data-infrastructure/) 
+## [Emerging Architectures for Modern Data Infrastructure | Andreessen Horowitz](https://a16z.com/emerging-architectures-for-modern-data-infrastructure/)
 
 ## [Emerging Architectures for Modern Data Infrastructure | Hacker News](https://news.ycombinator.com/item?id=24814687)
 
@@ -817,7 +819,7 @@ There are typically 2 types of data to collect: Transactional data and behaviour
 
 Most transactional data, due to their important nature, are already generated and captured by the production applications. Since the logic is coded by application engineer, it's usually hard to get this data wrong. These data are then ETL-ed (or EL-ed) over to a DW, as described by the article.
 
-For behavioural data, this is where your statement will most apply to. This is where tools like Snowplow, Posthog, Segment, etc come in to set up the proper event data collection engine. This is also where it's important to "collect data properly", as these kinds of event data changes structure fast, and hard to keep track over time. I'd admit this space (data collection management) is still nascent, with only tools like iterative.ly on the market. 
+For behavioural data, this is where your statement will most apply to. This is where tools like Snowplow, Posthog, Segment, etc come in to set up the proper event data collection engine. This is also where it's important to "collect data properly", as these kinds of event data changes structure fast, and hard to keep track over time. I'd admit this space (data collection management) is still nascent, with only tools like iterative.ly on the market.
 
 ## [Writing a high quality data pipeline for master data with apache spark – Part 1 – Kapernikov](https://kapernikov.com/writing-a-high-quality-data-pipeline-for-master-data-with-apache-spark-part-1/)
 
@@ -869,7 +871,7 @@ If we go a bit deeper, I think that every data engineer should have basis in:
 
 [What is a staging area? · Start Data Engineering](https://www.startdataengineering.com/post/what-and-why-staging/)
 
-A staging area refers to an area where the raw/unprocessed data lives, before being transformed for downstream use. 
+A staging area refers to an area where the raw/unprocessed data lives, before being transformed for downstream use.
 
 Staging areas can be database tables, files in a cloud storage system, etc.
 
@@ -998,14 +1000,14 @@ The inability to read a query plan and properly write a query
 
 [How we built ngrok's data platform-ngrok](https://ngrok.com/blog-post/how-we-built-ngroks-data-platform)
 
-As such, the majority of the data modeling work (i.e., SQL) is done by subject matter experts, which is very different to DE roles in many other organizations. In other words, I write very little SQL on a day to day basis and won’t usually be the person that writes a data model.  
+As such, the majority of the data modeling work (i.e., SQL) is done by subject matter experts, which is very different to DE roles in many other organizations. In other words, I write very little SQL on a day to day basis and won’t usually be the person that writes a data model.
 
-Within those subject matter experts, some people write reusable, well-structured dbt models, while other people focus on ad hoc analysis (based on these models) via our BI tooling in Superset. 
+Within those subject matter experts, some people write reusable, well-structured dbt models, while other people focus on ad hoc analysis (based on these models) via our BI tooling in Superset.
 
 v1
 
 ```
-On the batch ingestion side, we used Airbyte open source on Kubernetes to ingest third-party data via their respective APIs. We utilized the ngrok OAuth module to do authentication (as we do for all our open-source services that require an ingress controller). 
+On the batch ingestion side, we used Airbyte open source on Kubernetes to ingest third-party data via their respective APIs. We utilized the ngrok OAuth module to do authentication (as we do for all our open-source services that require an ingress controller).
 
 Airbyte wrote JSON files, where we determined the schema with manual runs of a Glue parser and several Python scripts to create the target schemas, as well as another Glue job to write the target schema as Iceberg.
 
@@ -1075,3 +1077,15 @@ An example of an SCD is a customer changing their address when they move home. I
     Ensure the end date represents the last date when the information was accurate.
 
 This way, when someone asks, “how many customers did we have per region over the last 3 years,” you can answer accurately.
+
+## Change Data Capture
+
+CDC (Change Data Capture) is a pattern for tracking and capturing changes (inserts, updates, deletes) in a database so downstream systems can react to them.
+
+Can be applied on:
+
+- Database tracks it's own changes
+- Log based - External that tracks database logs, lightweight on the source DB
+- Application level - write events out
+
+`ALTER TABLE` can cause problems with CDC

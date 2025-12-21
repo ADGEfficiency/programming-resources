@@ -1,5 +1,16 @@
 [How to Write a Spelling Corrector](https://norvig.com/spell-correct.html)
 
+[Jonas Neubert - What is a PLC and how do I talk Python to it? - PyCon 2019 - YouTube](https://www.youtube.com/watch?v=a0l29lgDf6k)
+
+PLC = programmable logic controller
+- where software meets atoms & electrons
+
+Field devices
+- sensors - real world -> electrical signal -> variable in code
+- actuators - variable in code -> electrical signal -> effect in real world
+
+Many different kinds of electrical signals
+
 [Ten Python datetime pitfalls, and what libraries are (not) doing about it | Arie Bovenberg](https://dev.arie.bovenberg.net/blog/python-datetime-pitfalls/)
 
 [14 Advanced Python Features | Edward Li's Blog](https://blog.edward-li.com/tech/advanced-python-features/)
