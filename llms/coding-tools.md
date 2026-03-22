@@ -1,5 +1,7 @@
 [hesreallyhim/awesome-claude-code: A curated list of awesome commands, files, and workflows for Claude Code](https://github.com/hesreallyhim/awesome-claude-code)
 
+[The creator of Claude Code's Claude setup | Hacker News](https://news.ycombinator.com/item?id=46470017)
+
 [Field Notes From Shipping Real Code With Claude - diwank's space](https://diwank.space/field-notes-from-shipping-real-code-with-claude)
 
 Never let AI write tests
@@ -7,83 +9,83 @@ Never let AI write tests
 Tests are not just code that verifies other code works. Tests are executable specifications. They encode your actual intentions, your edge cases, your understanding of the problem domain. High performers excel at both speed and stability—there’s no trade-off. Tests are how you achieve both.
 
 ```
-# CLAUDE.md - Julep Backend Service  
+# CLAUDE.md - Julep Backend Service
 
-## The Golden Rule  
-When unsure about implementation details, ALWAYS ask the developer.  
+## The Golden Rule
+When unsure about implementation details, ALWAYS ask the developer.
 
-## Project Context  
-Julep enables developers to build stateful AI agents using declarative  
-workflows.  
+## Project Context
+Julep enables developers to build stateful AI agents using declarative
+workflows.
 
-## Critical Architecture Decisions  
+## Critical Architecture Decisions
 
-### Why Temporal?  
-We use Temporal for workflow orchestration because:  
-1. Workflows can run for days/weeks with perfect reliability  
-2. Automatic recovery from any failure point  
+### Why Temporal?
+We use Temporal for workflow orchestration because:
+1. Workflows can run for days/weeks with perfect reliability
+2. Automatic recovery from any failure point
 
-### Why PostgreSQL + pgvector?  
-1. ACID compliance for workflow state (can't lose user data)  
-2. Vector similarity search for agent memory  
+### Why PostgreSQL + pgvector?
+1. ACID compliance for workflow state (can't lose user data)
+2. Vector similarity search for agent memory
 
-### Why TypeSpec?  
-Single source of truth for API definitions:  
-- OpenAPI specs  
-- TypeScript/Python clients  
-- Validation schemas  
+### Why TypeSpec?
+Single source of truth for API definitions:
+- OpenAPI specs
+- TypeScript/Python clients
+- Validation schemas
 
-## Code Style and Patterns  
+## Code Style and Patterns
 
-### Anchor comments  
+### Anchor comments
 
-Add specially formatted comments throughout the codebase, where appropriate, for yourself as inline knowledge that can be easily `grep`ped for.  
+Add specially formatted comments throughout the codebase, where appropriate, for yourself as inline knowledge that can be easily `grep`ped for.
 
-### Guidelines:  
+### Guidelines:
 
-- Use `AIDEV-NOTE:`, `AIDEV-TODO:`, or `AIDEV-QUESTION:` (all-caps prefix) for comments aimed at AI and developers.  
-- **Important:** Before scanning files, always first try to **grep for existing anchors** `AIDEV-*` in relevant subdirectories.  
-- **Update relevant anchors** when modifying associated code.  
-- **Do not remove `AIDEV-NOTE`s** without explicit human instruction.  
-- Make sure to add relevant anchor comments, whenever a file or piece of code is:  
-  * too complex, or  
-  * very important, or  
-  * confusing, or  
-  * could have a bug  
+- Use `AIDEV-NOTE:`, `AIDEV-TODO:`, or `AIDEV-QUESTION:` (all-caps prefix) for comments aimed at AI and developers.
+- **Important:** Before scanning files, always first try to **grep for existing anchors** `AIDEV-*` in relevant subdirectories.
+- **Update relevant anchors** when modifying associated code.
+- **Do not remove `AIDEV-NOTE`s** without explicit human instruction.
+- Make sure to add relevant anchor comments, whenever a file or piece of code is:
+  * too complex, or
+  * very important, or
+  * confusing, or
+  * could have a bug
 
-## Domain Glossary (Claude, learn these!)  
+## Domain Glossary (Claude, learn these!)
 
-- **Agent**: AI entity with memory, tools, and defined behavior  
-- **Task**: Workflow definition composed of steps (NOT a Celery task)  
-- **Execution**: Running instance of a task  
-- **Tool**: Function an agent can call (browser, API, etc.)  
-- **Session**: Conversation context with memory  
-- **Entry**: Single interaction within a session  
+- **Agent**: AI entity with memory, tools, and defined behavior
+- **Task**: Workflow definition composed of steps (NOT a Celery task)
+- **Execution**: Running instance of a task
+- **Tool**: Function an agent can call (browser, API, etc.)
+- **Session**: Conversation context with memory
+- **Entry**: Single interaction within a session
 
-## What AI Must NEVER Do  
+## What AI Must NEVER Do
 
-1. **Never modify test files** - Tests encode human intent  
-2. **Never change API contracts** - Breaks real applications  
-3. **Never alter migration files** - Data loss risk  
-4. **Never commit secrets** - Use environment variables  
-5. **Never assume business logic** - Always ask  
-6. **Never remove AIDEV- comments** - They're there for a reason  
+1. **Never modify test files** - Tests encode human intent
+2. **Never change API contracts** - Breaks real applications
+3. **Never alter migration files** - Data loss risk
+4. **Never commit secrets** - Use environment variables
+5. **Never assume business logic** - Always ask
+6. **Never remove AIDEV- comments** - They're there for a reason
 
-Remember: We optimize for maintainability over cleverness.  
-When in doubt, choose the boring solution.  
+Remember: We optimize for maintainability over cleverness.
+When in doubt, choose the boring solution.
 ```
 
 But Pair Programming Mode requires more than just documentation. You need to actively guide the AI with what I call “anchor comments”—breadcrumbs that prevent Claude from wandering into the wilderness:
 
 ```
-// AIDEV-NOTE: This component uses virtual scrolling for performance  
-// See: https://tanstack.com/virtual/latest  
-// Don't convert to regular mapping—we handle 10k+ items  
+// AIDEV-NOTE: This component uses virtual scrolling for performance
+// See: https://tanstack.com/virtual/latest
+// Don't convert to regular mapping—we handle 10k+ items
 
-export function DataTable({ items }: DataTableProps) {  
-  // Claude, when you edit this, maintain the virtual scrolling  
-  ...  
-}  
+export function DataTable({ items }: DataTableProps) {
+  // Claude, when you edit this, maintain the virtual scrolling
+  ...
+}
 ```
 
 All projects should routinely ask Claude to look through the codebase changes, and add context to CLAUDE.md
@@ -93,18 +95,18 @@ All projects should routinely ask Claude to look through the codebase changes, a
 We’re not trying to hide that we use AI—we’re trying to use it responsibly. Every commit message that includes AI work gets tagged:
 
 ```
-# Our .gitmessage template  
-# feat/fix/docs: <description> [AI]?  
-#  
-# [AI] - Significant AI assistance (>50% generated)  
-# [AI-minor] - Minor AI assistance (<50% generated)  
-# [AI-review] - AI used for code review only  
-#   
-# Example:  
-# feat: add Redis caching to user service [AI]  
-#  
-# AI generated the cache implementation and Redis client setup.  
-# I designed the cache key structure and wrote all tests.  
+# Our .gitmessage template
+# feat/fix/docs: <description> [AI]?
+#
+# [AI] - Significant AI assistance (>50% generated)
+# [AI-minor] - Minor AI assistance (<50% generated)
+# [AI-review] - AI used for code review only
+#
+# Example:
+# feat: add Redis caching to user service [AI]
+#
+# AI generated the cache implementation and Redis client setup.
+# I designed the cache key structure and wrote all tests.
 # Manually verified cache invalidation logic works correctl
 ```
 
@@ -209,3 +211,59 @@ Alternative Tools
 - Gemini 2.5 Pro: Much cheaper with comparable quality
 - VSCode Copilot: Some users prefer its simplicity
 - Plandex, Goose: Alternative agentic coding tools
+
+## Pi
+
+[Pi – A minimal terminal coding harness | Hacker News](https://news.ycombinator.com/item?id=47143754)O
+
+[pi.dev](https://pi.dev/)
+
+`/model` = `ctrl L`
+
+`/resume` to resume a session
+
+JSON mode
+
+`pi -p "query` for scripts
+`pi -p "q" --mode json`
+
+```
+## What we didn't build
+
+Pi is aggressively extensible so it doesn't have to dictate your workflow. Features that other tools bake in can be built with extensions, skills, or installed from third-party pi packages. This keeps the core minimal while letting you shape pi to fit how you work.
+
+No MCP. Build CLI tools with READMEs (see Skills), or build an extension that adds MCP support. Why?
+
+No sub-agents. There's many ways to do this. Spawn pi instances via tmux, or build your own with extensions, or install a package that does it your way.
+
+No permission popups. Run in a container, or build your own confirmation flow with extensions inline with your environment and security requirements.
+
+No plan mode. Write plans to files, or build it with extensions, or install a package.
+
+No built-in to-dos. Use a TODO.md file, or build your own with extensions.
+
+No background bash. Use tmux. Full observability, direct interaction.
+```
+
+`/hotkeys`
+
+`@file.md` to tag files
+
+`!bash commands`
+
+[Specification - Agent Skills](https://agentskills.io/specification)
+
+`skill-made/SKILL.md`
+
+skill.md:
+
+```
+---
+name: pdf-processing
+description: Extract text and tables from PDF files, fill forms, merge documents.
+license: Apache-2.0
+metadata:
+  author: example-org
+  version: "1.0"
+---
+```

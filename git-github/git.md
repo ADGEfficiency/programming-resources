@@ -43,6 +43,12 @@ Or add all files:
 $ git add *
 ```
 
+Or only add patch:
+
+```bash
+`git add -u -p`
+```
+
 ## Structure of a Git Repository
 
 Working copy
@@ -296,9 +302,9 @@ See also [Git techniques | Hacker News](https://news.ycombinator.com/item?id=291
 
 Pull requests are categorized as either:
 
-- Ship (merge into mainline without review), 
-- Show (open a pull request for review, but merge into mainline immediately), 
-- Ask (open a pull request for discussion before merging). 
+- Ship (merge into mainline without review),
+- Show (open a pull request for review, but merge into mainline immediately),
+- Ask (open a pull request for discussion before merging).
 
 Code review, or “Approval”, should not be a requirement for a Pull Request to be merged.
 
@@ -307,6 +313,8 @@ Our branches should not live long, and we should rebase them on the mainline oft
 PRs should not replace other ways of having a conversation.
 
 ## Advanced
+
+[The Perfect Commit](https://simonwillison.net/2022/Oct/29/the-perfect-commit/)
 
 [Popular git config options](https://jvns.ca/blog/2024/02/16/popular-git-config-options/)
 

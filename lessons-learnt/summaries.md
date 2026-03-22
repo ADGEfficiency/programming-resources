@@ -1,4 +1,10 @@
-https://erikbern.com/2021/07/07/the-data-team-a-short-story.html 
+/Users/adamgreen/personal/resource/atomic/what-good-taste-software-eng.md
+
+[My Principles for Building Software](https://kevinmahoney.co.uk/articles/my-principles-for-building-software/#make-invalid-states-unrepresentable)
+
+/Users/adamgreen/personal/resource/atomic/my-principles-for-building-software.md
+
+https://erikbern.com/2021/07/07/the-data-team-a-short-story.html
 
 [Things You Should Never Do As A Software Engineer](https://favtutor.com/articles/donts-for-software-engineer/)
 
@@ -61,7 +67,7 @@ https://monicalent.com/blog/2019/06/03/absolute-truths-unlearned-as-junior-devel
 
 Some tech debt is ok
 
-Seniority not just aobut programming
+Seniority not just about programming
 
 https://madned.substack.com/p/an-old-hackers-tips-on-staying-employed
 

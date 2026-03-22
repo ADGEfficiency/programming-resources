@@ -1,3 +1,5 @@
+[Introduction - The LearnixOS Book](https://www.learnix-os.com/) - We are going to implement an entire POSIX compliant OS in Rust and not use ANY2 external libraries. All of the thought process, code and implementations will be explained and documented here as well as in this repo which all the code snippets are from.
+
 [Two Years With Rust - Marc's Blog](https://brooker.co.za/blog/2020/03/22/rust.html)
 
 [An introduction to Data Oriented Design with Rust](https://jamesmcm.github.io/blog/2020/07/25/intro-dod/)
@@ -8,7 +10,7 @@
 
 [Why use Rust on the backend?](https://blog.adamchalmers.com/why-rust-on-backend/)
 
-[I love building a startup in Rust. I wouldn't pick it again.](https://www.propelauth.com/post/i-love-building-a-startup-in-rust-i-wouldnt-pick-it-again) 
+[I love building a startup in Rust. I wouldn't pick it again.](https://www.propelauth.com/post/i-love-building-a-startup-in-rust-i-wouldnt-pick-it-again)
 
 [Why Not Rust? (2020) | Hacker News](https://news.ycombinator.com/item?id=29606523)
 
@@ -17,6 +19,8 @@
 [Data With Rust](https://datawithrust.com/)
 
 [Performance comparison: counting words in Python, Go, C++, C, AWK, Forth, and Rust](https://benhoyt.com/writings/count-words/)
+
+[How uv got so fast | Andrew Nesbitt](https://nesbitt.io/2025/12/26/how-uv-got-so-fast.html)
 
 ## Critique
 

@@ -27,7 +27,7 @@ There is an example Dockerfile in this repo that shows how to setup Neovim with 
 Build and run container interactive:
 
 ```shell-session
-$ docker build -t vim . 
+$ docker build -t vim .
 $ docker run -it vim /bin/bash
 ```
 
@@ -143,11 +143,13 @@ https://github.com/LukasPietzschmann/nvim-config/tree/master
 
 ## Resources
 
+[rockerBOO/awesome-neovim](https://github.com/rockerBOO/awesome-neovim) - collections of awesome Neovim plugins.
+
 [An Experienced (Neo)Vimmer's Workflow](https://seniormars.com/posts/neovim-workflow/) - [Hacker News](https://news.ycombinator.com/item?id=40798723)
 
 [Can someone explain me why the config table doesn't work inside the "opts" table?](https://www.reddit.com/r/neovim/comments/1barpx5/whichkeynvim_can_someone_explain_me_why_the/?share_id=ExbL8Hb7xuIJ0DUdEfUp_&utm_name=androidcss)
 
-When config is not present, and opts is, Lazy calls the plugin’s setup automatically, passing opts as the argument. If you want to use both, you need to call setup inside config yourself, passing the options. Lazy passes opts as the second argument of config, so you can then just call require(‘myplugin’).setup(opts). 
+When config is not present, and opts is, Lazy calls the plugin’s setup automatically, passing opts as the argument. If you want to use both, you need to call setup inside config yourself, passing the options. Lazy passes opts as the second argument of config, so you can then just call require(‘myplugin’).setup(opts).
 
 [Confusion with NeoVim's API : r/neovim](https://www.reddit.com/r/neovim/comments/1b9zg0z/confusion_with_neovims_api/?share_id=9ecGfoQYp3MIA2d2rkYk1&utm_name=androidcss)
 
@@ -155,7 +157,7 @@ When config is not present, and opts is, Lazy calls the plugin’s setup automat
 
     vim.o. vs vim.opt. vs api.nvim_set_option_value()
 
-Could somebody please explain the difference to me? 
+Could somebody please explain the difference to me?
 
 ---
 
@@ -166,3 +168,80 @@ You can use the API from inside Neovim as well, but it is pretty awkward. Hence 
 As for vim.o VS vim.opt, they differ in minor details when an option is a list or map.
 
 With that said, there is still some redundancy between Vim script and Lua. For example, we have vim.split (Lua) and split (Vim script). I don't know why we need two string-splitting functions.
+
+---
+
+[10 Built-in Neovim Features You're Probably Not Using : r/neovim](https://www.reddit.com/r/neovim/comments/1q3tnz5/10_builtin_neovim_features_youre_probably_not/)
+
+## 1 Shell Filter: ! and !!
+
+Pipe text through external commands. Use any Unix tool as a text processor.
+Command 	What it does
+:.!date 	Replace line with date output
+!ip sort 	Sort paragraph
+!ap jq . 	Format JSON in paragraph
+:%!column -t 	Align entire file
+
+## 2 Visual Block Increment: g Ctrl-a
+
+Create incrementing sequences in visual block. Select column of zeros, press g Ctrl-a - instant numbered list.
+
+## 3 Global Command: :g/pattern/cmd
+
+Run Ex command on all matching lines. Surgical bulk operations.
+Command 	Effect
+:g/TODO/d 	Delete all TODOs
+:g/^$/d 	Delete empty lines
+:g/error/t$ 	Copy error lines to end
+:g/func/norm A; 	Append ; to all functions
+## 4 Command-line Registers: Ctrl-r
+
+Insert register contents in : or / prompt.
+Shortcut 	Inserts
+Ctrl-r Ctrl-w 	Word under cursor
+Ctrl-r " 	Last yank
+Ctrl-r / 	Last search pattern
+Ctrl-r = 	Expression result
+## 5 Normal on Selection: :'<,'>norm
+
+Run normal mode commands on each selected line. Multi-cursor without plugins.
+
+    :'<,'>norm A, → Append comma to each line
+
+    :'<,'>norm I# → Comment each line
+
+    :'<,'>norm @q → Run macro on each line
+
+## 6 The g Commands
+
+Command 	Effect
+gi 	Go to last insert position + insert mode
+g; 	Jump to previous change
+g, 	Jump to next change
+gv 	Reselect last visual selection
+
+## 7 Auto-Marks
+
+Positions Vim tracks automatically.
+Mark 	Jumps to
+`` 	Previous position (toggle back)
+`. 	Last change position
+`" 	Position when file was last closed
+[ /] 	Start/end of last yank or change
+
+## 8 Command History Window: q:
+
+Editable command history in a buffer. q: opens command history, q/ opens search history. Edit any line, hit Enter to execute.
+
+## 9 Live Substitution Preview: inccommand
+
+See substitution results before executing. Add to config: vim.opt.inccommand = "split"
+
+## 10 Copy/Move Lines: :t and :m
+
+Duplicate or relocate lines without touching registers.
+Command 	Effect
+:t. 	Duplicate current line below
+:t0 	Copy line to top of file
+:m+2 	Move line 2 lines down
+:'<,'>t. 	Duplicate selection below

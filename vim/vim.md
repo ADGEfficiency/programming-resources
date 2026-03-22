@@ -1,5 +1,9 @@
 # Vim
 
+> Knowledge of vi/vim implies the kind of mind that excels in technical roles.
+>
+> Perseverance in the face of a problem and the ability to master the syntax of a given domain
+
 ## Why Vim?
 
 Highly customizable and extensible - vast ecosystem of plugins.
@@ -88,7 +92,7 @@ Command-line (aka ex) - for running commands.
 **Action** and **motion**:
 - action = does something,
 - motion = moving cursor.
- 
+
 Command + text objects or motion - can have number before command.
 
 ## Operators
@@ -128,7 +132,7 @@ Operators are - performed on objects:
 
 `w` words
 `s` sentences
-`p` paragraphs 
+`p` paragraphs
 `t` tags (HTML)
 
 ## Motions
@@ -144,7 +148,7 @@ Motions to select / move over text:
 `gg` top of file
 `GG` bottom of file
 
-`a` all 
+`a` all
 `i` in
 `$` end of line
 `G` end of file
@@ -175,14 +179,14 @@ Move cursor around screen
 `L`
 
 Move screen around cursor
-`zb` 
-`zz` 
-`zt` 
+`zb`
+`zz`
+`zt`
 
 ### Examples of Motions & Operators
 
 `yi)` yank inside )
-`da)` delete incl brackets 
+`da)` delete incl brackets
 `dt` space delete until space
 `df` space delete incl space
 
@@ -193,7 +197,7 @@ Move screen around cursor
 `diw` delete inside word
 `di”` delete inside “
 `dip` delete inside paragraph
-`das` delete sentence 
+`das` delete sentence
 `dit` delete inner tag
 
 (F T ? go backwards)
@@ -291,7 +295,7 @@ Leader key
 ## Shell
 
 `:!ls` run command
-`:r !ls` read output of command into buffer 
+`:r !ls` read output of command into buffer
 `:.w !bash` run line in terminal, show but don't replace
 `:. !bash` run line in terminal and replace with shell command output
 

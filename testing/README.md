@@ -34,14 +34,14 @@ Testing has four benefits:
 ## 1. Testing Detects Broken Software
 
 > I can use data to disprove a proposition, never to prove one.  I can use history to refute a conjecture, never to affirm it.
-> 
+>
 > Nassim Nicholas Taleb - Fooled by Randomness
 
 A test suite gives you a signal that your code is **broken**.  It gives you no signal of correctness.
 
 We are limited to testing for for correctness by **failing to show incorrectness** - we cannot prove correctness. The best we can hope for is to show no error.
 
-Yet even with this upper limit on the kinds of problems tests can help us solve, testing for brokenness will find many bugsand regressions.  
+Yet even with this upper limit on the kinds of problems tests can help us solve, testing for brokenness will find many bugsand regressions.
 
 
 ## 2. Testing Makes You Write Better Code
@@ -188,9 +188,11 @@ The TDD approach to writing code is to:
 
 TDD gives a useful debugging cycle that helps to write code - most developers do something similar (running code until it works), without the formality or benefits of writing a test.
 
-Even if all of the above were true, this doesn't mean you shouldn't be writing tests. More experienced developers will write tests for proof-of-concept code as well as mission critical code.  
+Even if all of the above were true, this doesn't mean you shouldn't be writing tests. More experienced developers will write tests for proof-of-concept code as well as mission critical code.
 
 TDD can be faster, even for code that they might throw away.
+
+One case where TDD is a poor fit is "exploratory coding", where you don’t know what you’re building and you are just exploring the problem space by coding and messing with data.
 
 ## TDD in Data Science
 
@@ -279,3 +281,59 @@ Tests can be expensive to write if they are an afterthought, and/or the code is 
 [Testing in Production: the hard parts](https://copyconstruct.medium.com/testing-in-production-the-hard-parts-3f06cefaf592)
 
 The goal of testing in production isn’t to completely circumvent code under test from causing any impact to the production environment. Rather, the goal of testing in production is to be able to detect problems that cannot be surfaced in pre-production testing early enough that a fully blown outage can be prevented from happening.
+
+---
+
+## 10 simple rules for writing great testcases by Steve Poole and Stuart Marks - [video](https://www.youtube.com/watch?v=n6Nde8TgB2Y)
+
+Test suite can end up knowing more about your code than you do
+
+### 1 - think before you act
+
+- what is the test trying to do - to exercise the code in a particular way
+- more important to test the whole thing rather than individual pieces
+- measure functional aspects of the system (not performance, not customer needs etc)
+
+### 2 - make your tests understandable
+
+- test code quality matters - they are just as much a part of the system as the output of the code is
+- debugging takes twice as much brain power as writing - so only write code with half your brain
+
+### 3 - small and simple
+
+- keep setup separate
+- use setup - test - teardown framework
+
+### 4 - test one thing only
+
+### 5 - fast tests only
+
+- run tests as often as possible
+- tight feedback loop between the code you are writing and the test - ie you can run test suite as you are writing new code
+- large, slow test bases means the links between tests and the code you are writing is longer
+
+### 6 - repeatability
+
+- to strive for, not possible in some cases
+- try to remove randomness
+
+### 7 - independent tests
+
+- must run in any order - no dependencies
+
+### 8 - provide diagnostic data on failure
+
+- use messages in asserts
+- reference input data
+- record test env info
+
+### 9 - no hard coding of environment
+
+- portable tests
+- no ports, IP addresses, data files, databases
+- use config files, system properties or mock objects
+
+### 10 - no extraneous output
+
+- passing test is a silent test
+- use an option to turn on debug output

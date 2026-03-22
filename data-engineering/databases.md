@@ -6,7 +6,7 @@
 
 [I stopped worrying and learned to love denormalized tables | Hacker News](https://news.ycombinator.com/item?id=35924259)
 
- Who decided the point of using databases is normalization? Where is that coming from? Relational databases have existed before the concept of normalization existed. Also an index is nothing more than a partial copy of a table with a different key. It denormalizes you data. Do you use indexes other than pk? 
+ Who decided the point of using databases is normalization? Where is that coming from? Relational databases have existed before the concept of normalization existed. Also an index is nothing more than a partial copy of a table with a different key. It denormalizes you data. Do you use indexes other than pk?
 
 [Relational Databases Explained](https://architecturenotes.co/things-you-should-know-about-databases/)
 
@@ -16,7 +16,7 @@ A transaction is a unit of work you want to treat as a single unit. Therefore, i
 
 [Things to know about databases | Hacker News](https://news.ycombinator.com/item?id=31895623)
 
-Realize that any reasonably used database will likely outlast the applications leveraging 
+Realize that any reasonably used database will likely outlast the applications leveraging
 
 [The right column order in multi-column indexes](https://use-the-index-luke.com/sql/where-clause/the-equals-operator/concatenated-keys)
 
@@ -53,7 +53,7 @@ I could now safely build an analytics table of millions of records and build man
 
 1) Normalisation at all costs is foolish - if the cost exceeds the value, then don't do it. That isn't complicated. Denormalised data sometimes points at design flaws, but even then all systems have design flaws and they don't automatically need to be fixed. Quality is expensive, like every other property (even doing things the cheap way is expensive, ironically - software is all about managing costs).
 
-2) For any given user it is better to have denormalised data where the data model is perfectly aligned to their use case. For a system with multiple users it is better to have normalised data. And the corollary is that any data important enough to be recorded is probably valuable enough that it will eventually have multiple interested users even if the person building the system swears that this time is different - so they should normalise their data. Brownie point to anyone who has reached enlightenment and understands the you of 12 months hence is a different user with different needs of the data. 
+2) For any given user it is better to have denormalised data where the data model is perfectly aligned to their use case. For a system with multiple users it is better to have normalised data. And the corollary is that any data important enough to be recorded is probably valuable enough that it will eventually have multiple interested users even if the person building the system swears that this time is different - so they should normalise their data. Brownie point to anyone who has reached enlightenment and understands the you of 12 months hence is a different user with different needs of the data.
 
 ---
 
@@ -71,11 +71,11 @@ For the third time this week, in relatively unrelated fields of computation scie
 
 ---
 
-The schemas always exist, it’s just a question of where: the database or the code that interacts with the database. 
+The schemas always exist, it’s just a question of where: the database or the code that interacts with the database.
 
 ---
 
-While this talks mostly about data warehousing, oftentimes denormalization is useful for everyday web app data storage. 
+While this talks mostly about data warehousing, oftentimes denormalization is useful for everyday web app data storage.
 
 If your web app (usually on Postgres) is mostly frequent reads and rare writes (most web apps are) — there's no excuse for your pages to load slower than a static site. Store your data as normalized as you want, add a denormalized materialized view, update it on writes, render pages based on the view.
 
@@ -196,9 +196,9 @@ VALUES
 ```sql
 -- Show settings for a given user
 select
-  US.user_id 
-, S1.description 
-, S1.data_type 
+  US.user_id
+, S1.description
+, S1.data_type
 , case when S1.constrained = 'true'
   then AV.item_value
   else US.unconstrained_value
@@ -206,7 +206,7 @@ select
 , AV.caption
 from USER_SETTING US
   inner join SETTING S1
-    on US.setting_id = S1.id 
+    on US.setting_id = S1.id
   left outer join ALLOWED_SETTING_VALUE AV
     on US.allowed_setting_value_id = AV.id
 where US.user_id = 234
@@ -236,17 +236,17 @@ ORMs are more misused than overused.
 
 ORMs produce objects. (Duh! That’s what the O stands for.) Objects are like directed graphs—nodes that point to other nodes but not necessarily to each other. Conversely, database relational tables contain data that are always linked bidirectionally via shared keys, aka an undirected graph.
 
-SRP dictates that a class should exist for one purpose and one purpose only. And, well, ORMs don’t do that. Sure, at a high level, they do “all the database stuffs”, but that’s equivalent to creating a single class that does “all the app stuffs”. 
+SRP dictates that a class should exist for one purpose and one purpose only. And, well, ORMs don’t do that. Sure, at a high level, they do “all the database stuffs”, but that’s equivalent to creating a single class that does “all the app stuffs”.
 
-JohnoTheCoder explained it best, ORMs: 
-- create classes that transact with the database, 
-- represent a record, 
+JohnoTheCoder explained it best, ORMs:
+- create classes that transact with the database,
+- represent a record,
 - define relationships,
 - create and execute migrations.
 
-Separation of Concerns is of similar spirit to SRP, but at the application layer. SOC dictates that an infrastructure component should be concerned with one thing, not multiple. 
+Separation of Concerns is of similar spirit to SRP, but at the application layer. SOC dictates that an infrastructure component should be concerned with one thing, not multiple.
 
-And an ORM shifts database management from the backend to the database, violating SOC. 
+And an ORM shifts database management from the backend to the database, violating SOC.
 
 But SOC is a bit of a silly principle in today’s world. Nowadays, infrastructure components and coding patterns are combining tasks to achieve better performance (e.g., CPU aggregators within OLAP databases), lower latency (e.g., edge backend-frontends), and cleaner code (e.g., monorepos).
 
@@ -258,15 +258,15 @@ This is mostly false. ORMs are far more efficient than most programmers believe.
 
 The first issue is that ORMs sometimes incur massive computational overhead when converting queries into objects (TypeORM is a particular offender of this).
 
-The second issue is that ORMs sometimes make multiple roundtrips to a database by looping through a one-to-many or many-to-many relationship. This is known as the N+1 problem (1 original query + N subqueries). 
+The second issue is that ORMs sometimes make multiple roundtrips to a database by looping through a one-to-many or many-to-many relationship. This is known as the N+1 problem (1 original query + N subqueries).
 
 The biggest issue with ORMs is visibility. Because ORMs are effectively query writers, they aren’t the ultimate error dispatcher outside of obvious scenarios (such as incorrect primitive types). Rather, ORMs need to digest the returned SQL error and translate it to the user.
 
 ### [Is ORM still an anti-pattern? | Hacker News](https://news.ycombinator.com/item?id=36497613)
 
-One of the selling points, which is now understood to be garbage, is that you can use different databases. But no-one uses different databases. 
+One of the selling points, which is now understood to be garbage, is that you can use different databases. But no-one uses different databases.
 
-Another selling point which is "you don't need to know SQL", is also garbage. Every non-trivial long-lived application will require tweaks to individual queries at the string level. 
+Another selling point which is "you don't need to know SQL", is also garbage. Every non-trivial long-lived application will require tweaks to individual queries at the string level.
 
 The proper way to build a data layer is one query at a time, as a string, with string interpolation. The closer you are to raw JDBC the better.
 
@@ -278,7 +278,7 @@ ORMs make the easy parts slightly easier, but they make the hard parts really ha
 
 The problem is the ORM requires you to know its language, the underlying SQL for that database, as well as how the ORM maps to that underlying language.
 
-It’s the worst of a leaky abstraction, and like 3x the conceptual overhead. But it’s better because … something something OOP. 
+It’s the worst of a leaky abstraction, and like 3x the conceptual overhead. But it’s better because … something something OOP.
 
 ---
 
@@ -292,11 +292,11 @@ People who create piles of garbage will do so regardless of what you give them.
 
 Let's not pretend ORM made poor behavior more manageable. It was just a different style mess to clean up.
 
-You give them TDD, they'll create bad broken tests. You give them linters, they'll put in arcane and asinine rules. 
+You give them TDD, they'll create bad broken tests. You give them linters, they'll put in arcane and asinine rules.
 
 ---
 
-This argument has been presented forever to excuse bad tools, and it is a strawman. Of course good tools don't fix bad behavior. The argument in favor of good tools is that competent people with good tools are insanely more productive than competent people with bad tools. 
+This argument has been presented forever to excuse bad tools, and it is a strawman. Of course good tools don't fix bad behavior. The argument in favor of good tools is that competent people with good tools are insanely more productive than competent people with bad tools.
 
 ## [ What is the "N+1 selects problem" in ORM (Object-Relational Mapping)? - Stack Overflow](https://stackoverflow.com/questions/97197/what-is-the-n1-selects-problem-in-orm-object-relational-mapping)
 
@@ -327,20 +327,20 @@ This reduces the number of round-trips to the database from N+1 to 2. Most ORM t
 [mysql - selecting rows with id from another table - Stack Overflow](https://stackoverflow.com/questions/10562915/selecting-rows-with-id-from-another-table)
 
 ```sql
-SELECT * FROM terms WHERE id IN 
+SELECT * FROM terms WHERE id IN
    (SELECT term_id FROM terms_relation WHERE taxonomy = "categ")
 ```
 
 ```sql
-SELECT t.* FROM terms AS t 
-   INNER JOIN terms_relation AS tr 
+SELECT t.* FROM terms AS t
+   INNER JOIN terms_relation AS tr
    ON t.id = tr.term_id AND tr.taxonomy = "categ"
 ```
 
 ```sql
-SELECT t.id, t.name, t.slug, tr.description, tr.created_at, tr.updated_at 
-  FROM terms AS t 
-   INNER JOIN terms_relation AS tr 
+SELECT t.id, t.name, t.slug, tr.description, tr.created_at, tr.updated_at
+  FROM terms AS t
+   INNER JOIN terms_relation AS tr
    ON t.id = tr.term_id AND tr.taxonomy = "categ"
 ```
 
@@ -360,7 +360,7 @@ SQL implementations of views are often problematic in practice due to planning c
 
 ---
 
-The central thesis revolves around continuous growth with no advice given for removal/cleanup. This is not a sound strategy for a database schema, at least for the SQL side. Column bloat, trigger bloat, index bloat... Schemas cannot continuously grow, there needs to be DROPs along the way. 
+The central thesis revolves around continuous growth with no advice given for removal/cleanup. This is not a sound strategy for a database schema, at least for the SQL side. Column bloat, trigger bloat, index bloat... Schemas cannot continuously grow, there needs to be DROPs along the way.
 
 ---
 
@@ -368,7 +368,7 @@ The central thesis revolves around continuous growth with no advice given for re
 
 I agree with this in theory and have seen it go oh so very wrong in practice. Tables with dozens of columns, some of which may be unused, invalid, actively deceiving, or at the very least confusing. Then a new developer joins and goes "A-ha! This is the way to get my data." ... except it's not and now their query is lying to users, analysts, leadership, anyone who thinks they're looking at the right data but isn't.
 
-You absolutely have to make time to deprecate and remove parts of the schema that are no longer valid. Even if it means breaking a few eggs (hopefully during a thorough test run or phased rollout) 
+You absolutely have to make time to deprecate and remove parts of the schema that are no longer valid. Even if it means breaking a few eggs (hopefully during a thorough test run or phased rollout)
 
 ---
 
@@ -376,7 +376,7 @@ This x100. The most miserable and frustrating periods of my career have been in 
 
 ---
 
-There are few things more important than comprehensive and up to date database documentation. Otherwise you don't even know what your data means. An organization that cannot produce documentation like that is somewhere between amateurish and waiting for a disaster to happen, unfortunately. 
+There are few things more important than comprehensive and up to date database documentation. Otherwise you don't even know what your data means. An organization that cannot produce documentation like that is somewhere between amateurish and waiting for a disaster to happen, unfortunately.
 
 ---
 
@@ -384,7 +384,7 @@ Data outlives code.
 
 [Databases have failed the web](https://josephg.com/blog/databases-have-failed-the-web/)
 
-Databases only talk custom binary TCP protocols, not HTTP. Not REST. Not websockets. So you need something to translate between how the server works and how the browser works. 
+Databases only talk custom binary TCP protocols, not HTTP. Not REST. Not websockets. So you need something to translate between how the server works and how the browser works.
 
 [How slow is SELECT * ? - Vettabase](https://vettabase.com/how-slow-is-select/)
 
@@ -459,7 +459,7 @@ How to structure a database for data reingestion (if the data can be uploaded ag
 
 Instead of upserting the data directly into the table, just insert / append the data into some other table(tableA). Now, create a view on top of this table which will pick up the latest record based on the primary keys. Now if you want to update some historical file you just need to update it in tableA. The changes will reflect into the view.
 
-Don't trust the csv name. Get the file timestamp from the storage metadata if you can and use that. 
+Don't trust the csv name. Get the file timestamp from the storage metadata if you can and use that.
 
 ---
 
@@ -559,11 +559,11 @@ Store events as Parquet on S3 to use with Spark
 
 [ML Engineer Guide: Feature Store vs Data Warehouse - Hopsworks](https://www.hopsworks.ai/post/feature-store-vs-data-warehouse)
 
-The feature store is a data warehouse of features for machine learning (ML). 
+The feature store is a data warehouse of features for machine learning (ML).
 
 It is a central vault for storing documented, curated, and access-controlled features that can be used across many different models.
 
-Architecturally, it differs from the traditional data warehouse in that it is a dual-database. 
+Architecturally, it differs from the traditional data warehouse in that it is a dual-database.
 
 One database (row-oriented) serving features at low latency to online applications.
 
@@ -587,11 +587,11 @@ Often separated into offline (large batches) and online (single rows).
 
 [How to deal with stored procedure hell? : r/ExperiencedDevs](https://www.reddit.com/r/ExperiencedDevs/comments/1h7z9px/how_to_deal_with_stored_procedure_hell/?share_id=l2fyJkCqdDUatd0OogR4W&utm_name=androidcss&rdt=45072)
 
- Here's one good thing about stored procedures that you can use to your advantage in this case: You can easily wrap simple, crude unit tests around them. Just stick to an Arrange/Act/Assert pattern with some ad hoc SQL. The execution of the stored procedure is the Act. Any necessary SQL to prime things for it is the Arrange (including, if necessary, a BEGIN TRAN). Then you Assert the state of the database after the procedure executes and, if necessary, ROLLBACK TRAN. 
+ Here's one good thing about stored procedures that you can use to your advantage in this case: You can easily wrap simple, crude unit tests around them. Just stick to an Arrange/Act/Assert pattern with some ad hoc SQL. The execution of the stored procedure is the Act. Any necessary SQL to prime things for it is the Arrange (including, if necessary, a BEGIN TRAN). Then you Assert the state of the database after the procedure executes and, if necessary, ROLLBACK TRAN.
 
-Once you have a toolbox of unit tests like this, then you can much more safely fiddle with these stored procedures. 
+Once you have a toolbox of unit tests like this, then you can much more safely fiddle with these stored procedures.
 
-As someone who also refactors legacy code for a living. This is the way. Wrap legacy code in tests, then replace it. If your tests are sufficiently thorough, you can be sure that the refactor doesn't break any behavior. 
+As someone who also refactors legacy code for a living. This is the way. Wrap legacy code in tests, then replace it. If your tests are sufficiently thorough, you can be sure that the refactor doesn't break any behavior.
 
 ## [Things I Wished More Developers Knew About Databases | by Jaana Dogan | Medium](https://rakyll.medium.com/things-i-wished-more-developers-knew-about-databases-2d0178464f78)
 
@@ -614,6 +614,18 @@ Database growth introduces fundamental unpredictability
 ---
 
 ## DuckDB
+
+[650GB of Data (Delta Lake on S3). Polars vs. DuckDB vs. Daft vs. Spark | Hacker News](https://news.ycombinator.com/item?id=45920881)
+
+It's good to know that OOTB duckdb can replace snowflake et all in these situations, especially with how expensive they are.
+
+650GB is dominated by I/O, not compute
+- The EC2 c5.4xlarge used has 10Gbps peak bandwidth; 650GB takes ~9 min at saturation, making that a floor not a ceiling
+- The actual query only reads 1-2 columns from columnar parquet, so effective data scanned is far smaller
+- Better instance types (n-series, c8gn) with 100-600Gbps NICs would change results significantly
+- Most of the runtime variance between engines is probably scheduling of S3 reads, not query execution
+
+Single-node tools (DuckDB, Polars) beat Spark on this benchmark
 
 [Mastering DuckDB when you're used to pandas or Polars: part 1 | Labs](https://labs.quansight.org/blog/duckdb-when-used-to-frames)
 
@@ -645,4 +657,4 @@ Timestamp-based UUIDs (v1, v6, v7) in databases create performance vs privacy tr
 - Mitigation strategy: use separate public identifiers, keep internal UUIDs private
 - Alternative approach: add timestamp as separate indexed columns instead
 
-Many developers wrongly assume higher version numbers mean newer/better 
+Many developers wrongly assume higher version numbers mean newer/better

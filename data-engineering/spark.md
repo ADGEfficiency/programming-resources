@@ -3,3 +3,10 @@
 [owenrh/spark-fires](https://github.com/owenrh/spark-fires) - Spark fires is a anti-pattern playground where we deliberately break Spark applications in various ways so you can observe what happens and potentially recognise the issue when you come across it in your day-to-day development and support activities.
 
 [eakmanrq/sqlframe: Turning PySpark Into a Universal DataFrame API](https://github.com/eakmanrq/sqlframe)
+
+[650GB of Data (Delta Lake on S3). Polars vs. DuckDB vs. Daft vs. Spark | Hacker News](https://news.ycombinator.com/item?id=45920881)
+
+Python UDFs in Spark are a known footgun
+- Entire Python context serialized via cloudpickle and sent to executors
+- Can be GBs of serialized data; almost always replaceable with native Spark functions
+- One team baked a linter rule to catch UDF usage

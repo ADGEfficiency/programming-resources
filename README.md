@@ -42,6 +42,10 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 ## Random Cool Stuff
 
+[PLUM](https://timthompson.com/plum/cgi/showlist.cgi?sort=name&concise=yes) - Programming Languages Used for Music
+
+[App Showcase | Ratatouille](https://ratatouille.rs/showcase/apps/)
+
 [The Codeless Code: Contents](https://www.thecodelesscode.com/contents)
 
 [HN: the good parts](https://danluu.com/hn-comments/)
@@ -227,6 +231,7 @@ Honeypot documentaries:
 [Julia Evans](https://jvns.ca/)
 - [The fish shell is awesome](https://jvns.ca/blog/2017/04/23/the-fish-shell-is-awesome/)
 - [Why you should understand (a little) about TCP](https://jvns.ca/blog/2015/11/21/why-you-should-understand-a-little-about-tcp/)
+- [How I write useful programming comics](https://jvns.ca/blog/2020/12/05/how-i-write-useful-programming-comics/)
 
 - [Why software projects fail](https://vadimkravcenko.com/shorts/why-software-projects-fail/)
 - [Database Migrations](https://vadimkravcenko.com/shorts/database-migrations/)

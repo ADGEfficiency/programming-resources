@@ -105,3 +105,64 @@ Economic and organizational dynamics shape AI adoption
 - Productivity gains often illusory when applied to pointless work that scales infinitely
 - Capital allocation favors blue team AI applications despite red team potentially being more suitable
 - Quality of AI assistance correlates with user expertise - top performers benefit while others produce lower quality work
+
+[576 - Using LLMs at Oxide / RFD / Oxide](https://rfd.shared.oxide.computer/rfd/0576)
+
+LLM use should be governed by company values, prioritized as: responsibility, rigor, empathy, teamwork, urgency
+- humans bear responsibility for LLM-generated artifacts regardless of automation used
+- urgency is explicitly deprioritized — many orgs get this backwards
+- notably, "disclosure" of LLM use is not treated as a simple fix; it can itself erode trust by distancing the author from their work
+
+LLMs as readers: high value, low risk
+- excellent for summarization and Q&A over large documents
+- privacy caveat: hosted models may train on uploaded docs by default (opt-out, not opt-in)
+- should not substitute for reading where reading is socially expected (e.g. hiring evaluation)
+
+LLMs as researchers: useful but hazardous at depth
+- fine for lightweight search-replacement tasks
+- deep research outputs can be confidently wrong; well-formatted ≠ accurate
+- LLM-generated content now pollutes the web, so LLM-cited sources may themselves be hallucinations
+- treat as a starting point, follow citation links, verify before sharing
+
+LLMs as editors: good when used late in the writing process
+- engage after document is already polished to preserve the author's voice
+- sycophancy risk: LLMs over-praise and nudge toward wholesale rewrites if engaged too early
+
+LLMs as writers: generally discouraged
+- output is clichéd, recognizable, and signals intellectual disengagement to readers
+- breaks the implicit social contract that writers have done more work than readers
+- reader frustration compounds if LLM-generated prose contains subtle incoherence (no underlying "puzzle")
+- Oxide-specific argument: their hiring selects for writers, so LLM-written prose is below the bar they know everyone can meet
+- not an absolute rule, but the default should be your own voice
+- this is arguably the most contested area in practice; many disagree about where the line is between "LLM-assisted" and "LLM-written"
+
+LLMs as code reviewers: useful but not a human substitute
+- good when targeted at specific issue types
+- misses systemic/architectural issues; can generate nonsense suggestions
+
+LLMs as debuggers: low expectations, occasional surprise
+- useful as a "rubber duck" to prompt next questions
+- should not displace collaborative debugging with colleagues
+- anecdote: LLMs have debugged I2C issues from oscilloscope screenshots
+
+LLMs as programmers: powerful but requires discipline
+- effective even writing code from scratch (unlike prose, which needs polish first)
+- most appropriate for experimental, auxiliary, or throwaway code
+- production/shipped code requires proportionally more care
+- anti-pattern: addressing code review comments via re-generation destroys iterative review
+- engineer must self-review before sending LLM code to peers
+- "gavage geese" metaphor: don't let LLMs feed unnecessary complexity into systems you then can't understand without them
+- this is arguably underdiscussed — implicit LLM dependency on a codebase is a serious long-term risk
+
+LLM mandates (anti-pattern): executive-mandated LLM use
+- undermines autonomy and tool selection judgment
+- explicitly rejected at Oxide
+
+LLM shaming (anti-pattern): social policing of others' LLM use
+- impractical as LLMs become infrastructure (search, etc.)
+- framed as a dietary analogy: your personal choices don't license policing others'
+- the analogy is charitable but slightly elides that LLM use can have externalities on collaborators in ways diet usually doesn't
+
+LLM anthropomorphization (anti-pattern): giving LLMs personas
+- creates false accountability — LLMs cannot be held responsible
+- explicitly rejected at Oxide; references Shell Game podcast as cautionary example

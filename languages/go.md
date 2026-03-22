@@ -36,6 +36,8 @@ Go language design philosophy debate
 - Mixed opinions on Go's error handling approach
 ```
 
+[MedUnes/go-kata](https://github.com/MedUnes/go-kata) A collection of daily coding challenges designed to help you master idiomatic Go through deliberate, repetitive practice - [Hacker News](https://news.ycombinator.com/item?id=46531622)
+
 # HATE Stack
 
 [The HATE Stack - Simple and Efficient](https://www.youtube.com/watch?v=bti-bnGbyak) - [awesome-club/hate-stack](https://github.com/awesome-club/hate-stack)
@@ -126,6 +128,21 @@ fmt.Println("print a line")
 
 const n int = 5
 fmt.Printf("formatted string, n=%d\n", n)
+```
+
+Common patterns:
+
+```go
+// Basic output
+fmt.Print("hello", "world")       // "helloworld"
+fmt.Println("hello", "world")     // "hello world\n"
+fmt.Printf("hello %s\n", "world") // "hello world\n"
+
+// To a writer (file, buffer, http.ResponseWriter)
+fmt.Fprintf(w, "count: %d", 42)
+
+// Build strings
+s := fmt.Sprintf("error on line %d", lineNum)
 ```
 
 Placeholders:
@@ -286,11 +303,13 @@ Indexing:
 lastTwoNames := names[2:]
 ```
 
-Appending to slice array:
+Appending to slice array (slice is like a list, dynamic sizing, index access):
 
 ```go
 names := []string{"John", "Maria", "Carl", "Peter"}
 names = append(names, "Adam")
+names[0]
+names[len(names)]
 ```
 
 ## Maps
@@ -538,12 +557,38 @@ func TestFunc(t *testing.T) {
 			t.Errorf("got %v want %v", got, want)
 		}
 	}
-
 	t.Run("case_one", func(t *testing.T) {
 		got := 2
 		want := 7
 		check(t, got, want)
 	})
+}
+```
+
+### Table Driven Tests
+
+```go
+func TestX(t *testing.T) {
+	check := func(t *testing.T, got, want int) {
+		t.Helper()
+		if got != want {
+			t.Errorf("got %v, want %v", got, want)
+		}
+	}
+	tests := []struct {
+		name string
+		in   int
+		want int
+	}{
+		{"case1", 1, 2},
+		{"case2", 5, 10},
+	}
+	for _, tc := range tests {
+		t.Run(tc.name, func(t *testing.T) {
+			got := yourFunc(tc.in)
+			check(t, got, tc.want)
+		})
+	}
 }
 ```
 
@@ -558,7 +603,7 @@ go test -run TestName/subtest_name
 
 ## Test Examples
 
-Begin with `Example`, live in `_test.go`:
+Begin with `Example` and live in `_test.go`:
 
 ```go
 func ExampleAdd() {
@@ -567,8 +612,6 @@ func ExampleAdd() {
 	// Output: 6
 }
 ```
-
-In `_test.go`:
 
 ## Test Benchmarks
 
@@ -637,7 +680,14 @@ Inverse is the receive operator:
 r := <-resultChannel
 ```
 
-## Reading Files
+## Reading Entire File
+
+```go
+// content is a slice of bytes []byte
+content, err := os.ReadFile(fileName)
+```
+
+## Reading Files Line by Line
 
 ```go
 import (
@@ -647,6 +697,7 @@ import (
 	"strconv"
 )
 
+// file is an `*os.File` - a pointer to an open file handle
 file, err := os.Open(fileName)
 if err != nil {
     fmt.Fprintln(os.Stderr, err)
@@ -658,7 +709,6 @@ scanner := bufio.NewScanner(file)
 for scanner.Scan() {
     txt := scanner.Text()
 }
-
 if err := scanner.Err(); err != nil {
     fmt.Fprintln(os.Stderr, err)
     os.Exit(1)

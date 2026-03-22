@@ -312,3 +312,7 @@ colors = {
 [Don't let dicts spoil your code (2020) | Hacker News](https://news.ycombinator.com/item?id=31879015)
 
 The article is not explaining the point, which I believe is: type your dicts if you want to provide strict guarantees to your downstream about data shape.
+
+[Writing Python like it’s Rust](https://kobzol.github.io/rust/python/2023/05/20/writing-python-like-its-rust.html)
+
+[How uv got so fast | Andrew Nesbitt](https://nesbitt.io/2025/12/26/how-uv-got-so-fast.html)

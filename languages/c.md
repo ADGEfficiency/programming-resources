@@ -7,3 +7,5 @@
 [HPC Tools for Programming](https://web.corral.tacc.utexas.edu/CompEdu/pdf/stc/hpc_programming.pdf)
 
 [Hello World](https://thecoder08.github.io/hello-world.html) - A deep dive into the world of abstraction behind a modern Hello World program.
+
+[some C habits I employ for the modern day | ~yosh](https://www.unix.dog/~yosh/blog/c-habits-for-me.html) - [Hacker News](https://news.ycombinator.com/item?id=46676125)

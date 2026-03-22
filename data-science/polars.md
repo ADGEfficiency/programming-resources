@@ -1,32 +1,23 @@
-#  Is Polars the Pandas Killer?
-
-## Pandas versus Polars
-
-## Selecting rows and columns
-
-row
-
-
 # Assign columns
 
 ```python
-df.with_columns([
-    (pl.col("value") * 10).alias("tenXValue"),
-    (pl.col("value") * 100).alias("hundredXValue"),
-])
+df.with_columns(
+    [
+        (pl.col("value") * 10).alias("tenXValue"),
+        (pl.col("value") * 100).alias("hundredXValue"),
+    ]
+)
 ```
 
 ## Group by
 
-
-```
-    regions = ds.groupby("region").agg([pl.mean("npv")])
+```python
+regions = ds.group_by("region").agg([pl.mean("npv")])
 ```
 
 Use of `pl.mean(col)` versus `pl.col(col).mean()`
 
-
-## Group by with conditional
+### Group by With Conditional
 
 ```python
 import polars as pl
@@ -49,8 +40,7 @@ q = (
 df = q.collect()
 ```
 
-
-## First time I enjoy polars
+## First time I Enjoyed Polars
 
     """
     #  naive
@@ -85,32 +75,28 @@ df = q.collect()
 df.to_numpy
 df.to_list
 
-## Masking / Replacing Values 
+## Masking / Replacing Values
 
-```
-    interval_data = interval_data.with_column(
-        pl.when(
-            pl.col('charge_energy_kw') > top,
-        ).then(
-            None
-        ).otherwise(
-            pl.col('charge_energy_kw')
-        ).alias(
-            'charge_energy_kw'
-        )
+```python
+interval_data = interval_data.with_column(
+    pl.when(
+        pl.col("charge_energy_kw") > top,
     )
+    .then(None)
+    .otherwise(pl.col("charge_energy_kw"))
+    .alias("charge_energy_kw")
+)
 ```
 
 ## Lazy read multiple files
 
-```
+```python
+queries = []
+for file in glob.glob("~/nem-data/data/unit-scada/2019-01/clean.parquet")
+    q = pl.scan_csv(file).groupby("bar").agg([pl.count(), pl.sum("foo")])
+    queries.append(q)
 
-    queries = []
-    for file in glob.glob("~/nem-data/data/unit-scada/2019-01/clean.parquet")
-        q = pl.scan_csv(file).groupby("bar").agg([pl.count(), pl.sum("foo")])
-        queries.append(q)
-
-    dataframes = pl.collect_all(queries)
+dataframes = pl.collect_all(queries)
 ```
 
 ---
@@ -141,3 +127,32 @@ pl.DataFrame(data=["world", "world!", "world!!"]).select(
 [Calmcode - polars: Introduction](https://calmcode.io/course/polars/introduction)
 
 [Modern Polars](https://kevinheavey.github.io/modern-polars/)
+
+[Python API reference — Polars documentation](https://docs.pola.rs/api/python/stable/reference/index.html)
+
+[Python Polars: A Lightning-Fast DataFrame Library – Real Python](https://realpython.com/polars-python/#polars-contexts-and-expressions)
+
+```
+# instead of df.dtypes
+df.schema
+```
+
+```
+Polars Contexts and Expressions
+
+Contexts and expressions are the core components of Polars’ unique data transformation syntax. Expressions refer to computations or transformations that are performed on data columns, and they allow you to apply various operations on the data to derive new results. Expressions include mathematical operations, aggregations, comparisons, string manipulations, and more.
+
+A context refers to the specific environment or situation in which an expression is evaluated. In other words, a context is the fundamental action that you want to perform on your data. Polars has three main contexts:
+```
+
+Three kinds of context
+- Selection: Selecting columns from a DataFrame
+- Filtering: Reducing the DataFrame size by extracting rows that meet specified conditions
+- Groupby/aggregation: Computing summary statistics within subgroups of the data
+
+`pl.col()` allows you to do more with a column versus just using a string
+
+
+```python
+.with_columns(column_name=pl.lit(5))
+```
