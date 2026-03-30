@@ -1,3 +1,11 @@
+---
+id: lessons-learnt
+aliases: []
+tags: []
+---
+
+[5 Empirical Laws of Software Engineering](https://martynassubonis.substack.com/p/5-empirical-laws-of-software-engineering)
+
 [How I build software quickly | Hacker News](https://news.ycombinator.com/item?id=44557115)
 
 How good should this be?  How polished should the code be?

@@ -1,3 +1,23 @@
+---
+id: coding-tools
+aliases: []
+tags: []
+---
+
+[How I Use Claude Code | Boris Tane](https://boristane.com/blog/how-i-use-claude-code/) - [HN](https://news.ycombinator.com/item?id=47106686)
+
+[Claude Code Cheat Sheet](https://cc.storyfox.cz/)
+
+Mode Switching
+⇧Tab Cycle permission modes
+⌥P Switch model
+⌥T Toggle thinking
+⌥O Toggle fast modeNEW
+
+/vim Toggle vim mode
+
+/release-notes
+
 [hesreallyhim/awesome-claude-code: A curated list of awesome commands, files, and workflows for Claude Code](https://github.com/hesreallyhim/awesome-claude-code)
 
 [The creator of Claude Code's Claude setup | Hacker News](https://news.ycombinator.com/item?id=46470017)

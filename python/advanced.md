@@ -1,3 +1,13 @@
+---
+id: advanced
+aliases: []
+tags: []
+---
+
+[Advanced, Overlooked Python Typing - by Martynas Šubonis](https://martynassubonis.substack.com/p/advanced-overlooked-python-typing)
+
+Overloading
+
 [How to Write a Spelling Corrector](https://norvig.com/spell-correct.html)
 
 [Jonas Neubert - What is a PLC and how do I talk Python to it? - PyCon 2019 - YouTube](https://www.youtube.com/watch?v=a0l29lgDf6k)

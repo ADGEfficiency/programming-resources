@@ -1,3 +1,9 @@
+---
+id: javascript
+aliases: []
+tags: []
+---
+
 set text of p element js
 
 ```js
@@ -62,3 +68,5 @@ console.log('hello');
 [Node.JS: The Good Parts? A Skeptic's View](https://youtu.be/CN0jTnSROsk)
 
 [Memory in Javascript— Beyond Leaks | by Yonatan Kra | WalkMe Engineering | Medium](https://medium.com/walkme-engineering/memory-in-javascript-beyond-leaks-8c1d697c655c)
+
+[The Three Pillars of JavaScript Bloat](https://43081j.com/2026/03/three-pillars-of-javascript-bloat) - [HN](https://news.ycombinator.com/item?id=47473718)

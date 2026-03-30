@@ -188,6 +188,10 @@ Honeypot documentaries:
 
 ## Blogs & Blog Posts
 
+[Boris Tane](https://boristane.com/)
+- [How I Use Claude Code | Boris Tane](https://boristane.com/blog/how-i-use-claude-code/)
+- [Lessons from starting, building, and exiting a devtools startup | Boris Tane](https://boristane.com/blog/learnings-from-starting-building-and-exiting-a-devtools-startup/)
+
 [Test Double | Insights and Blogs](https://testdouble.com/insights)
 - [Looming demise of the 10x developer: a Justin Searls reflection](https://testdouble.com/insights/the-looming-demise-of-the-10x-developer)
 
