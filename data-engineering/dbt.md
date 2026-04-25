@@ -82,3 +82,44 @@ DBT lets you do everything in SQL which is easier to interpret and cheaper / eas
 8. Production run using dbt cloud or through Airflow trigger.
 
 [Overclocking dbt: Discord's Custom Solution in Processing Petabytes of Data](https://discord.com/blog/overclocking-dbt-discords-custom-solution-in-processing-petabytes-of-data)
+
+---
+
+## Random notes
+
+dbt init
+- profiles.yml (~/.dbt/profiles.yml) - configures connections & auth to databricks
+- dbt_project.yml - project config
+- models/schema.yml - source config, model config
+---
+
+Data testing
+- accepted values
+- foreign keys
+- null where
+
+Documentation
+
+Templated SQL
+- for loops
+- placeholders for catalogs, schema, tables
+
+Source freshness
+
+Seeds - could put site names in there
+
+--
+
+Don't need everything to get started
+
+---
+
+Too look at:
+
+https://docs.getdbt.com/guides/using-jinja?step=3
+
+https://docs.getdbt.com/reference/resource-configs/where
+
+Use seeds to create manual lookup tables, like zip codes to states or marketing UTMs to campaigns. dbt seed will build these from CSVs into your warehouse and make them ref able in your models.
+
+Use the + operator on the left of a model dbt build --select +model_name to run a model and all of its upstream dependencies. Use the + operator on the right of the model dbt build --select model_name+ to run a model and everything downstream that depends on it.
