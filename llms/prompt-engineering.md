@@ -1,3 +1,9 @@
+---
+id: prompt-engineering
+aliases: []
+tags: []
+---
+
 ask for plan
 
 relevant to interative prompting sessions

@@ -1,3 +1,9 @@
+---
+id: git
+aliases: []
+tags: []
+---
+
 # Git
 
 ![](https://imgs.xkcd.com/comics/git_2x.png)
@@ -167,6 +173,8 @@ git merge dev
 ```
 
 ## Introductory
+
+[How to Learn Git](https://newsletter.techworld-with-milan.com/p/how-to-learn-git)
 
 [A beginner's guide to Git version control](https://developers.redhat.com/articles/2023/08/02/beginners-guide-git-version-control)
 

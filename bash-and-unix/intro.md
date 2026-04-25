@@ -430,3 +430,19 @@ $ wget https://news.ycombinator.com/y18.gif
 ```bash
 $ cat raw-data/specs.csv | column -t -s, | less -S
 ```
+
+
+## Linux Filesystem Hierarchy
+
+| Directory | Purpose |
+|-----------|---------|
+| `/bin`    | Command binaries |
+| `/sbin`   | System binaries |
+| `/etc`    | Configuration files |
+| `/home`   | User home directories |
+| `/lib`    | Common libraries |
+| `/mnt`    | Temporary filesystems (USB, CD) |
+| `/proc`   | Virtual filesystem — kernel info |
+| `/tmp`    | Temporary files, erased on reboot |
+| `/usr`    | User programs and data |
+| `/var`    | Files written during system operation |

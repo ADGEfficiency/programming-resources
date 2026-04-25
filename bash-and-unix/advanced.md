@@ -267,3 +267,128 @@ fg %number
 Single line for loop to copy files:
 
 `for file in *.data; do cp "$file" "$file.out"; done`
+
+
+## Parameter Defaults
+
+```bash
+${parameter:?word}  # error if not set
+${parameter:-word}  # default
+${parameter:=word}  # assignment
+```
+
+
+## `$*` vs `$@` Quoting
+
+`$*` = all positional params (single word when quoted)
+
+`$@` = all positional params (separate words when quoted)
+
+```bash
+myfunc() { printf "%q\n" $*; } && myfunc 1 "2 3" 4
+1
+2
+3
+4
+
+myfunc() { printf "%q\n" "$*"; } && myfunc 1 "2 3" 4
+1\ 2\ 3\ 4\
+
+myfunc() { printf "%q\n" $@; } && myfunc 1 "2 3" 4
+1
+2
+3
+4
+
+myfunc() { printf "%q\n" "$@"; } && myfunc 1 "2 3" 4 5
+1
+2\ 3
+4
+5
+```
+
+Without quotes, `$*` and `$@` behave the same (word splitting occurs). With quotes, `"$*"` joins all args into one word; `"$@"` expands each arg as a separate word.
+
+
+## Indirection
+
+`!` induces indirection — `${!name}` expands to the value of the variable whose name is stored in `name`:
+
+```bash
+$ name=bob
+$ bob=man
+$ echo $name
+bob
+$ echo $bob
+man
+$ echo ${!name}
+man
+```
+
+
+## Arrays — `declare -a` and Key Access
+
+```bash
+declare -a names='([0]="bob brown" [1]="sue")'
+
+# to get the keys
+echo "${!names[@]}"
+
+# accessing elements
+echo ${names[0]}
+```
+
+
+## Control Flow — if/elif/else
+
+```bash
+if list0
+  then list1
+fi
+
+if list0
+  then list1
+  elif list2
+    then list3
+  else list4
+fi
+```
+
+Tests use `[[ expression ]]`.
+
+
+## Directory Stack — `~n` Shorthand
+
+`pushd` / `popd` maintain a directory stack. `~2` navigates to the second entry on the stack without popping:
+
+```bash
+$ dirs         # show the stack
+$ pushd /tmp   # push /tmp, cd to it
+$ ~2           # go to second stack entry
+$ popd         # return to previous
+```
+
+
+## `$_` — Last Argument of Previous Command
+
+`$_` holds the last argument of the previous command. Distinct from `!$` (history expansion — only works interactively).
+
+```bash
+mv from to
+cd $_
+# cd to "to"
+```
+
+
+## Command Evaluation Order
+
+A shell command has the form: `[assignment ...] [word ...] [redirection ...]`
+
+Evaluation steps:
+1. Expand non-variable assignments and redirections; first word is the command, rest are args
+2. Perform redirections
+3. Expand and assign variables (variable assignments are local to the command if a command is present, global otherwise)
+4. Alias expansion (if command is not quoted)
+5. Run the command — external programs run in a separately inherited environment
+
+Inline variable assignments (`FOO=bar cmd`) are local to that command only.

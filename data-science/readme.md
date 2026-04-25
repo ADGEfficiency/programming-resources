@@ -1,3 +1,9 @@
+---
+id: readme
+aliases: []
+tags: []
+---
+
 [Adventures in Imbalanced Learning and Class Weight | andersource](https://andersource.dev/2025/05/05/imbalanced-learning.html)
 
 I know that class imbalance, in and of itself, does not warrant using class weights. Furthermore, if I deem class weights necessary, instead of using the typical “inverse proportion” scheme, my weights had better be informed by the particular problem characteristics: the nature of the tradeoff curve, label noise, and the cost I assign to each type of error.
@@ -170,7 +176,7 @@ ds really nice, and it’s easy to recruit for. Thus was born the traditional, m
 
  A way that allows for autonomy in roles, true ownership all the way into production, and accountability for output.
 
- Engineers should not write ETL. For the love of everything sacred and holy in the profession, this should not be a dedicated or specialized role. There is nothing more soul sucking than writing, maintaining, modifying, and supporting ETL to produce data that you yourself never get to use or consume.Instea
+ Engineers should not write ETL. For the love of everything sacred and holy in the profession, this should not be a dedicated or specialized role. There is nothing more soul sucking than writing, maintaining, modifying, and supporting ETL to produce data that you yourself never get to use or consume.Instead
 
  d, give people end-to-end ownership of the work they produce (autonomy). In the case of data scientists, that means ownership of the ETL. It also means ownership of the analysis of the data and the outcome of the data science. The best-case outcome of many efforts of data scientists is an artifact meant for a machine consumer, not a human one. Rather than a report, dashboard, or PowerPoint presentation, it is some sort of algorithm or API that is integrated into the engineering stack – something that fundamentally changes the operation of the business. Autonomy means the data scientists own that code as well. All the way into production. They should be able to develop and deploy it without asking the permission of engineers, be accountable for support, be held to performance, latency, and SLA requirements, etc.T
 
@@ -191,6 +197,31 @@ Check bidirectional relationship for top predictors & response
 - parametric study across one feature - need to use multiple datasets (non-linear model!)  - use test data
 
 Tree graphics = export graph vis
+
+[I read this today - "90% of what I do as a data scientist boils down to these 5 techniques." : r/LLMeng](https://www.reddit.com/r/LLMeng/comments/1okulr8/i_read_this_today_90_of_what_i_do_as_a_data/?share_id=Mz1zQFa0nAWiIEWUagk4l&utm_name=androidcss)
+
+ Building your own sklearn transformers
+- Use BaseEstimator and TransformerMixin Clean, reusable, and production-ready pipeline
+- Most people overlook this—custom transformers give you real control.
+
+Smarter one-hot encoding
+- Handle unknowns gracefully in prod Go beyond pandas.get_dummies()
+- Your model is only as stable as your categorical encoding.
+
+GroupBy + Aggregations
+- High-impact feature engineering
+- Especially useful when dealing with user/event-level data
+- Helps when your data needs more than just scalar transformations.
+
+Window functions
+- Time-aware feature extraction
+- pandas & SQL both support this
+- Perfect for churn, trend, and behavior analysis over time.
+
+Custom loss functions
+- Tailor your model’s focus
+- When default metrics don’t reflect real-world success
+- Sometimes accuracy isn't the goal—alignment with business matters more. 
 
 ## Repos
 

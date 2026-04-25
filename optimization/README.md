@@ -1,4 +1,6 @@
-[opytimizer](https://github.com/gugarosa/opytimizer) - [docs](https://opytimizer.readthedocs.io/en/latest/)
+[opytimizer](https://github.com/gugarosa/opytimizer)
+
+[recogna-lab/opytimizer: 🐦 Opytimizer is a Python library consisting of meta-heuristic optimization algorithms.](https://github.com/recogna-lab/opytimizer)
 
 [Baby Steps into Genetic Programming | Hacker News](https://news.ycombinator.com/item?id=43605731)
 

@@ -11,6 +11,12 @@ tags:
 1. **access to data** - all the important data, in the same place, easily queryable & accessible by everyone in the business,
 2. **access to data generation/creation/transformation**.
 
+Access to data
+
+1. Get data
+2. Organize data
+3. Serve data
+
 source data, manipulate data, store data and automate the process
 
 > the most basic foundation of what is most critically needed: all the important data, in the same place, easily queryable (from https://erikbern.com/2021/07/07/the-data-team-a-short-story.html)
@@ -227,7 +233,7 @@ Column stores are faster when accessing columns (compression on the columns)
 Row good for transactions
 
 
-## Colmuns / Fields to have in your data
+## Columns / Fields to have in your data
 
 Ensure that all Facts/Events have a business timestamp and an arrival/etl timestamp
 
@@ -523,9 +529,9 @@ Fivetran
 - Stitch,
 - Fivetran,
 - Serverless,
-- BigQuery (can this be data warehosue?)
-- Redshift (can this be data warehosue?)
-- Postgres (can this be data warehosue?)
+- BigQuery (can this be data warehouse?)
+- Redshift (can this be data warehouse?)
+- Postgres (can this be data warehouse?)
 
 ## dbt
 

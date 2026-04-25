@@ -1,3 +1,9 @@
+---
+id: data-modelling
+aliases: []
+tags: []
+---
+
 [Schema.org - Schema.org](https://schema.org/)
 
 [What is Data Mart in Data Warehouse? Types & Example](https://www.guru99.com/data-mart-tutorial.html)
@@ -150,3 +156,5 @@ Soft deletes
 - can undelete
 - require every read query to exclude deleted records
 - place where users can make mistakes
+
+[[resource/programming/atomic/medallion-dtyped.md]]

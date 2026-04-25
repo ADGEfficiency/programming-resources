@@ -1,3 +1,9 @@
+---
+id: rag
+aliases: []
+tags: []
+---
+
 [[D] How reliable is RAG currently? : r/MachineLearning](https://www.reddit.com/r/MachineLearning/comments/1ck0tnk/d_how_reliable_is_rag_currently/?share_id=7LOaSqpP1XYq6Qs7UUlre&utm_name=androidcss)
 
  The problem with RAG is that there is hardly a universally good chunking, retrieval and re-ranking strategy. It is very often domain dependent and requires a fair bit of experimentations to get right. Not to mention that the parsing step (extraction and cleaning of texts) is often overlooked. 
@@ -166,7 +172,7 @@ Response synthesis
 Create & refine
 - query + node 1 -> response -> node 2 -> response -> node 3 -> final response 
 
-Tree summarization / heirarchical summarization
+Tree summarization / hierarchical summarization
 - parallelizable
 
 Challenges with naive RAG - two types
@@ -176,7 +182,7 @@ Challenges with naive RAG - two types
 Quality - bad retrival
 - low precision - not all chunks are relevant -> hallucination or `lost in the middle` problem
 - low recall - not all relevant chunks are retrieved
-- outdated infomation
+- outdated information
 
 Quality - bad synthesis
 - hallucination
@@ -184,7 +190,7 @@ Quality - bad synthesis
 - toxicity / bias - harmful or offensive
 
 What can we do?
-- data - storing other infomation alongside the raw chunks
+- data - storing other information alongside the raw chunks
 - embeddings - optimize embedding representations
 - retrieval - better than top k?
 - synthesis - better prompts
@@ -196,7 +202,7 @@ How to measure performance / evaluation
 Evaluate of 50 data points
 
 Retrival evaluation
-- quality of retrived chunks
+- quality of retrieved chunks
 - want to return most relevant chunks
 - if you can compare with ground truth, can compare predicted against ground truth
 - rank order does not correlate with best order to give to an LLM
@@ -206,7 +212,7 @@ End to end
 - can use LLM evals - evaluate with an LLM
 
 LLM based evaluation
-- fafithfulness - whether matches retrived context
+- fafithfulness - whether matches retrieved context
 - relevancy - whether response matches the query
 - guidelines - whether response matches guidelines
 
@@ -238,4 +244,51 @@ Agentic behaviour
 
 ---
 
+[Building Enterprise AI: Hard-Won Lessons from 1200+ Hours of RAG Development | ByteVagabond – Digital Tinkering & Real-World Adventures](https://bytevagabond.com/post/how-to-build-enterprise-ai-rag/)
 Optimizing RAG
+
+AI Apps Are Really Just RAG
+- The real developer work is RAG: feeding models the right data with the right framing
+- RAG = Ingestion + Retrieval; "garbage in, garbage out" applies fully
+
+Ingestion: Convert Everything to Markdown
+- Enterprise data is heterogeneous (PDFs, Office docs, Notion, Confluence, SharePoint, etc.)
+- GFM (GitHub Flavored Markdown) is the recommended homogeneous target format
+- Conversion tools mentioned: Gemini 2.5 Flash for PDFs, Gotenberg for Office files
+
+Chunking: Split Without Losing Meaning
+- LLMs have context window limits; stuffing everything in is costly and degrades retrieval quality
+- Five approaches, roughly ordered by sophistication:
+  - Fixed Size: split by character count, ignores structure
+  - Recursive: split hierarchically by separators
+  - Document-Based: split by markdown headers, code blocks, table rows — recommended Pareto choice
+  - Semantic: group by embedding similarity
+  - Agentic: use an LLM to decide boundaries
+- Document-Based chunking works especially well when data is already in GFM
+
+Context Loss Problem
+- Chunks lose reference to surrounding context (e.g. "it's more than 3.85 million" — what is "it"?)
+- Solution: prepend an AST-derived breadcrumb path to every chunk (e.g. "Berlin > History > Prehistory of Berlin")
+- Extended further to folder/file hierarchy, not just document-internal structure
+
+Embeddings: Semantic Rather Than Keyword Search
+- Text search fails on synonyms/paraphrases (e.g. "inhabitants capital Germany" won't match "Berlin population")
+- Embeddings map text to high-dimensional vectors capturing semantic meaning
+- Model quality matters; MTEB leaderboard is the reference for comparison
+- Optimal chunk size for embeddings: ~512 tokens; too long dilutes specificity, too short loses context
+- Size bias problem: longer texts score higher cosine similarity regardless of relevance, making threshold-based filtering unreliable
+
+Late Chunking: A Notable Improvement
+- Traditional: chunk first, then embed each chunk independently
+- Late chunking: pass all chunks together to the embedder, so each chunk's embedding reflects surrounding context
+- Preserves inter-chunk relationships; mitigates the context loss problem at the embedding level
+- Complements (rather than replaces) the breadcrumb approach above
+
+Vector Databases: Use What You Have
+- Many dedicated options exist (Pinecone, Weaviate, Qdrant, Chroma, Milvus)
+- Existing databases often sufficient: PostgreSQL + pgvector, Redis, Elasticsearch, MongoDB Atlas
+- Author recommends extending existing DB: avoids sync issues, reuses backup/security infra, supports hybrid queries
+
+Hierarchical Indexing (introduced, not yet detailed in selection)
+- Motivated by large enterprise document silos making flat retrieval less reliable
+- Structures DB schema hierarchically to improve retrieval precision

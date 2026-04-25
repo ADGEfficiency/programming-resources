@@ -337,3 +337,9 @@ Test suite can end up knowing more about your code than you do
 
 - passing test is a silent test
 - use an option to turn on debug output
+
+[Systematically generating tests that would have caught Anthropic’s top‑K bug | Theorem](https://theorem.dev/blog/anthropic-bug-test/)
+
+Fractional proof decomposition - systematic PBTs
+
+[mikelane/pytest-gremlins](https://github.com/mikelane/pytest-gremlins): Fast-first mutation testing for pytest. Let the gremlins loose, see which ones survive.

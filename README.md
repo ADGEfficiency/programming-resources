@@ -42,6 +42,8 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 ## Random Cool Stuff
 
+[Suite numérique Dev Handbook](https://suitenumerique.gitbook.io/handbook) - EU open source office tools
+
 [PLUM](https://timthompson.com/plum/cgi/showlist.cgi?sort=name&concise=yes) - Programming Languages Used for Music
 
 [App Showcase | Ratatouille](https://ratatouille.rs/showcase/apps/)
@@ -187,6 +189,8 @@ Honeypot documentaries:
 [Falsehoods programmers believe about time, in a single list](https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca)
 
 ## Blogs & Blog Posts
+
+[Performance Hints from Jeff & Sanjay](https://abseil.io/fast/hints.html)
 
 [Boris Tane](https://boristane.com/)
 - [How I Use Claude Code | Boris Tane](https://boristane.com/blog/how-i-use-claude-code/)

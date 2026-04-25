@@ -1,3 +1,9 @@
+---
+id: go
+aliases: []
+tags: []
+---
+
 [Go Templ HTMX component library using TailwindCSS and DaisyUI : r/golang](https://www.reddit.com/r/golang/comments/1enaav8/go_templ_htmx_component_library_using_tailwindcss/?share_id=7C3NCYuLmjllJqXjN_hDj&utm_name=androidcss)
 
 [mikestefanello/pagoda](https://github.com/mikestefanello/pagoda) - Rapid, easy full-stack web development starter kit in Go
@@ -37,6 +43,8 @@ Go language design philosophy debate
 ```
 
 [MedUnes/go-kata](https://github.com/MedUnes/go-kata) A collection of daily coding challenges designed to help you master idiomatic Go through deliberate, repetitive practice - [Hacker News](https://news.ycombinator.com/item?id=46531622)
+
+[cdarwin/go-koans: koans for go](https://github.com/cdarwin/go-koans)
 
 # HATE Stack
 
@@ -93,6 +101,8 @@ func main() {
 	println("hello")
 }
 ```
+
+The `package main` tells the Go compiler what package it is part of.  For a one file CLI, `package main`.  For a library, it's whatever your library name is `package app`.
 
 You can then run with:
 

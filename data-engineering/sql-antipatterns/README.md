@@ -33,6 +33,8 @@ Foreign keys ensure that values in one table exist in another.
 
 TODO - write out in SQL
 
+# 6 - Entity Attribute Value
+
 # 7 - Polymorphic Associations
 
 Demonstrates how to setup one-to-many relationships for two models (features or bugs):

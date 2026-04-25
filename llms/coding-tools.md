@@ -4,6 +4,43 @@ aliases: []
 tags: []
 ---
 
+[A love letter to Pi | Lucas Meijer - YouTube](https://www.youtube.com/watch?v=fdbXNWkpPMY)
+
+Ask to present work as an HTML slide deck
+
+Analyze previous sessions 
+- evaluate how a conversation went
+- `analyze previous session, find places where agent went wrong way and later found the right way. Make recommendations on what I could have added to the repo that would help the agent reach it's goal faster.`
+- rate limiting step is evaluation
+- how will you evaluate agent, how will agent evaluate itself
+- tell agent how you will evaluate it - helps clarify when something is done
+- ask to record videos for evaluation
+
+pi
+- precise context management - `/tree` - interact with non-linear context tree
+
+[CodeCompanion.nvim](https://codecompanion.olimorris.dev/usage/chat-buffer/editor-context)
+
+#{buffer} share current buffer (last one you were in)
+
+#{buffers} share all open buffers
+
+#{diff} current git diff
+
+To do `/slash` commands, need to select, not press enter!!!
+
+`/compact`
+
+`/file` add a file in cwd
+
+[llm-wiki - Idea File](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
+
+There are three layers:
+
+1. Raw sources — your curated collection of source documents. Articles, papers, images, data files. These are immutable — the LLM reads from them but never modifies them. This is your source of truth.
+2. The wiki — a directory of LLM-generated markdown files. Summaries, entity pages, concept pages, comparisons, an overview, a synthesis. The LLM owns this layer entirely. It creates pages, updates them when new sources arrive, maintains cross-references, and keeps everything consistent. You read it; the LLM writes it.
+3. The schema — a document (e.g. CLAUDE.md for Claude Code or AGENTS.md for Codex) that tells the LLM how the wiki is structured, what the conventions are, and what workflows to follow when ingesting sources, answering questions, or maintaining the wiki. This is the key configuration file — it's what makes the LLM a disciplined wiki maintainer rather than a generic chatbot. You and the LLM co-evolve this over time as you figure out what works for your domain.
+
 [How I Use Claude Code | Boris Tane](https://boristane.com/blog/how-i-use-claude-code/) - [HN](https://news.ycombinator.com/item?id=47106686)
 
 [Claude Code Cheat Sheet](https://cc.storyfox.cz/)

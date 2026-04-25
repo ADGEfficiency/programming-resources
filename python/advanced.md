@@ -326,3 +326,111 @@ The article is not explaining the point, which I believe is: type your dicts if 
 [Writing Python like it’s Rust](https://kobzol.github.io/rust/python/2023/05/20/writing-python-like-its-rust.html)
 
 [How uv got so fast | Andrew Nesbitt](https://nesbitt.io/2025/12/26/how-uv-got-so-fast.html)
+
+[The Optimization Ladder - Cemrehan Çavdar](https://cemrehancavdar.com/2026/03/10/optimization-ladder/)
+
+Python is slow because of its dynamic design, not just the GIL or interpretation
+- Every operation requires runtime type dispatch because methods, builtins, and inheritance can be changed at any time
+- The GIL is irrelevant for single-threaded performance; free-threaded 3.13/3.14t actually makes single-threaded code slower due to refcount overhead
+
+When to stop climbing (the effort curve is exponential)
+- Upgrade Python first; it's free
+- Mypyc if already typed
+- NumPy if vectorizable; JAX if you can go functional
+- Numba for tight numeric loops
+- Cython/Rust only if you genuinely need the ceiling
+- Most code is I/O-bound or dict-bound; profile before optimizing
+
+---
+
+Rung 0: Upgrade CPython for free gains
+- 3.10 → 3.11 gives ~1.4x on n-body thanks to the Faster CPython project
+
+Rung 1: Alternative runtimes (PyPy, GraalPy) for 6-66x with zero code changes
+- PyPy (tracing JIT): 13x on both benchmarks
+- GraalPy (Truffle/GraalVM method JIT): 66x on spectral-norm, 5.9x on n-body
+- Catches: C-extension compatibility layers, GraalPy stuck on 3.12, JVM warmup for GraalPy
+
+[Python: The Optimization Ladder | Hacker News](https://news.ycombinator.com/item?id=47327703)
+
+The practical ladder collapses to two rungs for many (redgridtactical)
+- Python + numpy/scipy, then drop to C for hot paths
+- Middle rungs add complexity without fully solving the problem
+- Counter: JAX gives you an array language without leaving Python, avoiding hand-tuned C for GPU paths
+
+Why isn't Python as fast as JavaScript? (threethirtytwo)
+- gsnedders: JS operators return restricted type sets and can't be overridden (+ only returns string/number); primitives limit dynamism; only Proxy objects pay the full dynamic cost
+- gf000: Python's role as C glue language exposes internal details (refcount manipulation from C) that make optimization nearly impossible without breaking the ecosystem
+- GraalPy matches JS-order performance because it's willing to compromise that C-API compatibility
+- 12_throw_away: also just economic — JS gets orders of magnitude more optimization investment
+
+The "just use a faster language" camp vs the "Python is fast enough" camp
+- IshKebab: "All of the effort you go through to make Python not slow is far less work than just don't use Python"; rewrote a project 1:1 in Rust and got 50x free
+- atomicnumber3: 99% of code is fast enough in Python and iteration speed matters more
+- scuff3d: Go and modern Java/C# aren't much harder to write than Python and get close to Rust performance
+- LarsDu88: Python's network effects in AI/ML won due to historical accident; Go was too young, C# too corporate
+
+[Functional Programming Bits in Python - by Martynas Šubonis](https://martynassubonis.substack.com/p/functional-programming-bits-in-python)
+
+Python is a poor fit for pure FP but can borrow FP techniques pragmatically
+- Lacks persistent data structures, so immutability is expensive
+- No tail-call optimization, making recursion a weak loop substitute
+
+singledispatch enables ad-hoc polymorphism as an alternative to isinstance/match dispatch
+- Turns a function into a type-routed registry, similar to Haskell type classes
+- Lets new types be added in separate modules without modifying the original function
+- Addresses Open-Closed Principle concerns with centralized isinstance chains, especially when the base function lives in third-party code (avoids monkey-patching)
+- Tradeoff: adds indirection; overkill for small, local dispatch where isinstance is more readable due to locality of data and behavior
+- singledispatchmethod is the equivalent for instance methods
+- Commentary: the OCP argument is somewhat overstated — centralized dispatch is often fine and easier to reason about; singledispatch shines mainly at library/extension boundaries
+
+```python
+"""
+singledispatch is a decorator from Python's standard library (functools) that turns a regular function into a generic function — one whose actual implementation is chosen at runtime based on the type of its first argument.
+
+You write one "base" function, then register type-specific implementations. When you call it, Python looks at the type of the first argument and dispatches to the matching registered implementation.
+"""
+from functools import singledispatch
+
+@singledispatch
+def describe(x: object) -> str:
+    return f"some object: {x!r}"  # fallback
+
+@describe.register
+def _(x: int) -> str:
+    return f"integer: {x}"
+
+@describe.register
+def _(x: list) -> str:
+    return f"list of {len(x)} items"
+
+
+describe(42)         # "integer: 42"          -> int implementation
+describe([1, 2, 3])  # "list of 3 items"      -> list implementation
+describe("hello")    # "some object: 'hello'" -> falls back to base
+```
+
+partial fixes arguments to reshape a function's arity
+- Useful for adapting an n-ary function to a consumer expecting fewer args (e.g., making a predicate for filter)
+- Placeholder sentinel allows non-contiguous positional binding, avoiding lambda boilerplate or operator-flipping tricks
+- Tradeoff vs lambdas: partial is more declarative and introspectable but less flexible; lambdas are more familiar to most Python readers
+
+```python
+"""
+functools.partial takes a function and some arguments, and returns a new callable with those arguments "pre-filled."
+"""
+from functools import partial
+
+def log(level: str, message: str) -> None:
+    print(f"[{level}] {message}")
+
+info = partial(log, "INFO")
+warn = partial(log, "WARN")
+
+info("server started")   # [INFO] server started
+warn("disk almost full") # [WARN] disk almost full
+```
+
+starmap bridges product types to n-ary functions
+- Auto-unpacks tuples from zip/groupby into positional args, skipping destructuring lambdas
+- Keeps pipelines declarative by offloading unpacking to the iterator protocol
