@@ -179,7 +179,7 @@ Challenges with naive RAG - two types
 - quality - hallucination, accuracy
 - non-quality - latency, cost
 
-Quality - bad retrival
+Quality - bad retrieval
 - low precision - not all chunks are relevant -> hallucination or `lost in the middle` problem
 - low recall - not all relevant chunks are retrieved
 - outdated information
@@ -201,7 +201,7 @@ How to measure performance / evaluation
 
 Evaluate of 50 data points
 
-Retrival evaluation
+Retrieval evaluation
 - quality of retrieved chunks
 - want to return most relevant chunks
 - if you can compare with ground truth, can compare predicted against ground truth
@@ -229,9 +229,9 @@ Simple
 
 Advanced
 - reranking
-- recursive retrival
+- recursive retrieval
 - embedding table
-- small to big retrival
+- small to big retrieval
 
 Fine tuning
 - embeddings
