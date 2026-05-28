@@ -190,6 +190,8 @@ Honeypot documentaries:
 
 ## Blogs & Blog Posts
 
+[Jason Liu](https://jxnl.co/) - great personal blog
+
 [Performance Hints from Jeff & Sanjay](https://abseil.io/fast/hints.html)
 
 [Boris Tane](https://boristane.com/)

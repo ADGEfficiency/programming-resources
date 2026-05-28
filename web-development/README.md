@@ -230,3 +230,24 @@ owner : /people/564}
 ## Fonts
 
 [Recursive](https://fonts.google.com/specimen/Recursive)
+
+---
+
+https://developer.mozilla.org/en-US/docs/Learn
+
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML
+
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting
+
+description lists (dd, dt), quotations, citations, address, time
+
+https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure
+
+
+To implement such semantic mark up, HTML provides dedicated tags that you can use to represent such sections, for example:
+
+    header: <header>.
+    navigation bar: <nav>.
+    main content: <main>, with various content subsections represented by <article>, <section>, and <div> elements.
+    sidebar: <aside>; often placed inside <main>.
+    footer: <footer>.

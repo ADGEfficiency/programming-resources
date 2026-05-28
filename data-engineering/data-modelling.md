@@ -158,3 +158,27 @@ Soft deletes
 - place where users can make mistakes
 
 [[resource/programming/atomic/medallion-dtyped.md]]
+
+[Data Modeling: What is the most important concept in data modeling to you? : r/dataengineering](https://www.reddit.com/r/dataengineering/comments/1onxcfo/data_modeling_what_is_the_most_important_concept/?share_id=34R1pXT6qBVfqT_Py1umL&utm_name=androidcss)
+
+Cardinality and the grain of the data. Cardinality determines the data model design. 
+
+Cardinality ratios or multiplicity. The max number of instances of a relationship one entity can participate in with another entity.
+
+The other factors are also critical including proper naming conventions (using closer to business oriented names), right data types otherwise transformations and conversions will need to be done in the pipeline which are computational heavy and they're expensive.  
+
+Cardinality determines the relationship between your data. Like one to many, many to many in oltp database or star schema in olap database.
+
+One example in star schema/dimensional modeling is your fact table: it typically have high cardinality as the volume of data is huge because they represent for example transaction data or some kind of measures. Because of that, you have a lot of unique data.
+
+Whereas for dimensional table you typically see low cardinality as it represents data context so there are less unique value, for example gender (Male/female/undefined/something else) or product category (home appliances, gardening, etc)
+
+---
+
+Common problems with dimensional modelling:
+
+Maintaining the correct level of granularity, facts + keys in fact tables without tons of degenerate dimensions, not snowflaking dimensions, proper utilization of role playing dimensions, identifying what kind of fact table each is (transactional/accumulating snapshot/periodic snapshot/factless), not over-aggregating and losing detail, etc.
+
+It’s incredibly common now for data engineers to just make basically a flat table/CSV file equivalent of whatever meets the immediate business need, and then they do it again and again as new requirements arise.
+
+This is generally inefficient and creates a mess long term, but particularly with popular reporting tools like Power BI it can be disastrous and cause all kinds of issues.

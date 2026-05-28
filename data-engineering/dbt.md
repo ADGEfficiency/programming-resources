@@ -1,3 +1,9 @@
+---
+id: dbt
+aliases: []
+tags: []
+---
+
 ## dbt
 
 SQL + yaml + Python
@@ -123,3 +129,5 @@ https://docs.getdbt.com/reference/resource-configs/where
 Use seeds to create manual lookup tables, like zip codes to states or marketing UTMs to campaigns. dbt seed will build these from CSVs into your warehouse and make them ref able in your models.
 
 Use the + operator on the left of a model dbt build --select +model_name to run a model and all of its upstream dependencies. Use the + operator on the right of the model dbt build --select model_name+ to run a model and everything downstream that depends on it.
+
+[dbt-colibri v0.3.4](https://www.reddit.com/r/dataengineering/comments/1thhk5f/dbtcolibri_v034_local_columnlevel_lineage_for/?share_id=WoPXosouNSLjPKiINTeLr&utm_name=androidcss): Local column-level lineage for your dbt projects

@@ -1095,3 +1095,13 @@ Can be applied on:
 - Application level - write events out
 
 `ALTER TABLE` can cause problems with CDC
+
+[CDC vs SCDs : r/dataengineering](https://www.reddit.com/r/dataengineering/comments/1r7r8tw/cdc_vs_scds/?utm_name=mweb3xcss)
+
+CDC is change data capture, it just means capturing the low granularity data events. Database transaction logs are a typical source.
+
+SCD is a slowly changing dimension, a concept that means tracking the value of a qualitative dimension over time, so you can run analytics on the current value, or at any point in time.
+
+---
+
+I use CDC source tables to merge into SCD type 2 tables

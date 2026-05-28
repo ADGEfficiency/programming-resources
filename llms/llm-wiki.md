@@ -25,10 +25,6 @@ Connection to Licklider's 1960 "Man-Computer Symbiosis"
 - One commenter found it generative enough to seed their own llm-wiki with it alongside Foucault's Pendulum, CCRU essays, Manufacturing Consent, etc.
 - The meta-experiment: feeding the llm-wiki its own definition produced interesting "red yarn" connections about pareidolia and schizo-posting
 
-Ezra Klein article referenced: "I Saw Something New in San Francisco" (NYT, March 2026)
-- Cited in context of smart people "seeing the ghost in the machine" and losing human faculties as a result
-- Gift link shared in thread
-
 # LLM Knowledge Bases [tweet](https://xcancel.com/karpathy/status/2039805659525644595#m)
 
 Something I'm finding very useful recently: using LLMs to build personal knowledge bases for various topics of research interest. In this way, a large fraction of my recent token throughput is going less into manipulating code, and more into manipulating knowledge (stored as markdown and images). The latest LLMs are quite good at it. So:

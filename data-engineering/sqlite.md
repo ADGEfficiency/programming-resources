@@ -1,3 +1,9 @@
+---
+id: sqlite
+aliases: []
+tags: []
+---
+
 # SQLite
 
 https://sqlite.org/lpc2019/doc/trunk/briefing.md - a briefing on SQLite intended for Linux kernel hackers, and especially those working on Linux filesystems
@@ -91,3 +97,17 @@ Where not to use:
  SQLite can also do large and complex queries efficiently, just like client/server databases. But SQLite can do many smaller queries efficiently too. Application developers can use whichever technique works best for the task at hand. 
 
 [Why SQLite Does Not Use Git](https://sqlite.org/whynotgit.html)
+
+[I run multiple $10K MRR companies on a $20/month tech stack | Hacker News](https://news.ycombinator.com/item?id=47736555)
+
+Concurrent writes are SQLite's real weakness
+- WAL allows concurrent reads with one writer, not concurrent writers
+- Default config is hostile — need to set journal_mode=WAL, busy_timeout, synchronous=NORMAL, foreign_keys=ON, strict tables
+- Python's stdlib sqlite3 has wrong defaults pre-3.12
+- Schema migrations on large SQLite tables are painful due to limited ALTER TABLE — though commenters note this is also true at scale on "real" DBs
+
+Litestream gives SQLite a credible backup/replication story
+- Sub-second streaming replication to S3-compatible object storage
+- Author claims this beats RDS's 5-minute transaction log uploads
+- Disputed: small window of data loss on crash still exists; RDS provides higher 9s out of the box
+- Backups ≠ HA, though streaming replication blurs the line (disputed by locknitpicker, defended by andersmurphy)
