@@ -4,6 +4,8 @@ aliases: []
 tags: []
 ---
 
+[My AI Adoption Journey – Mitchell Hashimoto](https://mitchellh.com/writing/my-ai-adoption-journey#step-3-end-of-day-agents)
+
 [A love letter to Pi | Lucas Meijer - YouTube](https://www.youtube.com/watch?v=fdbXNWkpPMY)
 
 Ask to present work as an HTML slide deck

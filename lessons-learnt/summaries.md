@@ -1,4 +1,11 @@
+---
+id: summaries
+aliases: []
+tags: []
+---
+
 /Users/adamgreen/personal/resource/atomic/what-good-taste-software-eng.md
+/Users/adamgreen/personal/resource/programming/atomic/20-things-software-eng-justin-etheredge.md
 
 [My Principles for Building Software](https://kevinmahoney.co.uk/articles/my-principles-for-building-software/#make-invalid-states-unrepresentable)
 

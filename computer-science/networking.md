@@ -1,4 +1,12 @@
+---
+id: networking
+aliases: []
+tags: []
+---
+
 [How SSH port became 22](https://www.ssh.com/ssh/port)(
+
+[Networking | Opinionated Guides](https://opguides.info/engineering/networking/networking/)
 
 ## TCP
 
@@ -12,7 +20,7 @@ Protocol for delivering streams of bytes between applications running on hosts, 
 
 ---
 
-Network engineer here. Generally, in modern terminology, a packet is an IP packet Aand in networking that is more specifically what it means. Some data payload encapsulated in an IP header. Althought packet is used more loosely as pointed out above (generically).
+Network engineer here. Generally, in modern terminology, a packet is an IP packet And in networking that is more specifically what it means. Some data payload encapsulated in an IP header. Although packet is used more loosely as pointed out above (generically).
 
 IP is layer 3 and TCP is at layer 4. Both layers are independent of each other (although these days, it's almost always the ip/tcp stack). But back in the day, TCP could ride over any layer 3 protocol, not necessarily IP. And IP can carry any layer 4 protocol, not just tcp and udp. This is mostly control plane traffic, but take OSPF for example. It uses IP, but neither tcp or udp. 
 
