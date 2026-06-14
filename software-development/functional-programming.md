@@ -1,4 +1,14 @@
+---
+id: functional-programming
+aliases: []
+tags: []
+---
+
 [Things I wish someone had explained about functional programming](https://jrsinclair.com/articles/2019/what-i-wish-someone-had-explained-about-functional-programming/)
+
+Functional programming is a whole new way to think about programming. If you come from an OOP or imperative background, it turns a lot of received wisdom on its head.
+
+Things that you thought were bad ideas turn out to be good ideas. Things that you thought were convenient and clever turn out to be problematic.
 
 1. [Wrong Assumptions](https://jrsinclair.com/articles/2019/what-i-wish-someone-had-explained-about-functional-programming/)
 2. [Algebraic Structures](https://jrsinclair.com/articles/2019/algebraic-structures-what-i-wish-someone-had-explained-about-functional-programming/)

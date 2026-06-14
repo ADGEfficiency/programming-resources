@@ -1,3 +1,9 @@
+---
+id: sql
+aliases: []
+tags: []
+---
+
 # SQL
 
 ## Learnt on the job
@@ -600,3 +606,35 @@ Functions on indexed columns
 `SELECT *` in views
 - schema can change
 - don't need the columns
+
+[5 SQL patterns that made my queries 10x cleaner (with examples) : r/learnSQL](https://www.reddit.com/r/learnSQL/comments/1sc3peo/5_sql_patterns_that_made_my_queries_10x_cleaner/?utm_name=mweb3xcss)
+
+1. CTEs over nested subqueries
+
+Instead of: SELECT * FROM (SELECT * FROM (SELECT ...) a) b
+
+Use: WITH cte AS (SELECT ...) SELECT * FROM cte
+
+Much more readable and reusable.
+
+2. ROW_NUMBER() for deduplication
+
+ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY created_at DESC)
+
+Filter WHERE rn = 1 to get the most recent record per user. Clean and reliable.
+
+3. Conditional aggregation with CASE WHEN
+
+SUM(CASE WHEN status = 'completed' THEN revenue ELSE 0 END) AS completed_revenue
+
+Get multiple slices of data in a single query pass — no need for multiple JOINs.
+
+4. NULLIF to prevent division by zero
+
+revenue / NULLIF(quantity, 0)
+
+Returns NULL instead of throwing an error. Simple but saves a lot of headaches.
+
+5. DATE_TRUNC for clean time grouping
+
+DATE_TRUNC('month', order_date) gives you month-level grouping without string conversions.

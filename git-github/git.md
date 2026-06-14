@@ -389,6 +389,27 @@ A rebase based workflow requires two rebases
 - rebase feature back to master (or this could be a merge commit) (harder - more potential for conflicts if feature branch has diverged significantly)
 - push master
 
+---
+
+[Anybody else get confused by the interpretation of ours vs theirs in a conflict? : r/git](https://www.reddit.com/r/git/comments/1ru6n39/anybody_else_get_confused_by_the_interpretation/?utm_name=mweb3xcss)
+
+theirs versus ours
+
+The key: "ours" = the branch HEAD currently points to during the operation, not "my changes". The confusion comes from rebase secretly switching what HEAD points to.
+Merge (git checkout my-feature && git merge main):
+
+You stay on my-feature. Git brings main's commits into it.
+
+ours = my-feature (your branch) ✓ intuitive
+theirs = main
+
+Rebase (git checkout my-feature && git rebase main):
+
+Git internally checks out main first, then cherry-picks your commits on top of it, one by one. So during conflict resolution, HEAD is sitting on main's tip:
+
+ours = main (the base you're rebasing onto)
+theirs = my-feature (your own commits!) ✗ feels backwards
+
 ## Revert
 
 Undo commit with a new commit.

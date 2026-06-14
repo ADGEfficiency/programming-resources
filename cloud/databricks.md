@@ -1,3 +1,11 @@
+---
+id: databricks
+aliases: []
+tags:
+  - databricks
+  - data-engineering
+---
+
 [Jobs timeline | Databricks on AWS](https://docs.databricks.com/en/optimizations/spark-ui-guide/jobs-timeline.html)
 
 [One Page Explainer for "What is Databricks"](https://www.reddit.com/r/databricks/comments/1flmjus/one_page_explainer_for_what_is_databricks_as/?share_id=8e6w33yQ4Ki0VG9Fvjdrv&utm_name=androidcss)
@@ -10,3 +18,7 @@ In Delta Lake, ACID support allows insert, update and delete operations to behav
 
 - Databricks provides managed ergonomics that greenfield DuckDB/Polars stacks can't match without significant engineering investment
 - Databricks billing shock is real and has caused at least one org to rebuild from scratch
+
+[vb-dbrks/schemax: SchemaX - Automatic Schema Management](https://github.com/vb-dbrks/schemax)
+
+[Metadata-Driven ETL Framework in Databricks](https://community.databricks.com/t5/technical-blog/metadata-driven-etl-framework-in-databricks-part-1/ba-p/92666)

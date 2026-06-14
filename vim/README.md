@@ -129,6 +129,8 @@ Text editors with constraints may create better designs
 - When constraints are removed, well-designed tools may shine even more
 - However, only successful examples survive this process
 
+[The vi family | LPAR](https://lpar.ath0.com/posts/2026/05/the-vi-family/) - [Hacker News](https://news.ycombinator.com/item?id=48033483)
+
 ## Neovim
 
 [An Experienced (Neo)Vimmer's Workflow](https://seniormars.com/posts/neovim-workflow/)

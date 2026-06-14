@@ -190,6 +190,8 @@ Honeypot documentaries:
 
 ## Blogs & Blog Posts
 
+[The Insanity of Data Education - Joe Reis](https://joereis.substack.com/p/the-insanity-of-data-education)
+
 [Jason Liu](https://jxnl.co/) - great personal blog
 
 [Performance Hints from Jeff & Sanjay](https://abseil.io/fast/hints.html)

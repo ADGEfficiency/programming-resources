@@ -13,3 +13,16 @@ I think a big part is that the OSS solvers are somewhat hamstrung by the combina
 ---
 
 It's substantially harder than linear programming: it's equivalent to SAT, whereas linear programming is merely polynomial-time (and in practice weakly polynomial-time with current algorithms).
+
+[Solving Mixed Integer Programs Using Neural Networks 2012.13349v3.pdf](https://arxiv.org/pdf/2012.13349)
+
+Mixed Integer Programs (MIPs) are a class of NP-hard problems where the goal is to minimize a linear objective subject to linear constraints, with some or all of the variables constrained to be integer-valued
+
+These solvers use sophisticated heuristics to direct the search process for solving a MIP. A solver’s performance on a given application depends crucially on how well its heuristics suit that application
+
+Our approach applies learning to the two key sub-tasks of a MIP solver:
+
+a) output an assignment of values to all variables that satisfy the constraints (if such an assignment exists),
+b) prove a bound for the gap in objective value between that assignment and an optimal one.
+
+"learning to optimize" / "amortized optimization" bet — pay a large upfront training cost to make per-instance solving cheaper. It only makes economic sense for repeated, structurally-similar workloads, which is exactly the two Google production use cases they target
