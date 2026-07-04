@@ -1,3 +1,9 @@
+---
+id: databases
+aliases: []
+tags: []
+---
+
 # Indexes
 
 [SQL Indexing and Tuning e-Book for developers: Use The Index, Luke covers Oracle, MySQL, PostgreSQL, SQL Server, ...](https://use-the-index-luke.com/)
@@ -658,3 +664,32 @@ Timestamp-based UUIDs (v1, v6, v7) in databases create performance vs privacy tr
 - Alternative approach: add timestamp as separate indexed columns instead
 
 Many developers wrongly assume higher version numbers mean newer/better
+
+[How and why the Relational Model works for databases | Lu’s blog](https://uvdn7.github.io/relational/)
+
+Declarative language that describes data
+- abstraction that decouples how users reason about data from how it's organized on disk
+- removes complexity from users and shifts more responsibility into the database
+
+All data can be described as relations
+- relations = array of tuples
+- tuples imply nothing about layout (columns or rows)
+- relation = connects things
+- ie connecting employee with company = employment relation
+
+How to describe
+- primary key
+- foreign key
+- normalization
+
+Restricting data models -> makes scaling eaiser
+- k/v stores, graphs = eaiser to scale
+- distributed systems need to decide where to store a relation, how to shard
+- generality of the relational model is a challenge in these situations
+
+Operations on relations
+- projection = select
+- natural join
+- restriction
+
+A redundant relation is one that can be derived from other relations

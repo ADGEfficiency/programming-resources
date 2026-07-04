@@ -14,8 +14,8 @@ A* search for shortest path
 
 To get started, I recommend the following resources:
 
-- Read up on the hashtable, linked list, tree, graphs, heap, queue, and stack data structures. Play around with how to can use them in your language. 
-- GeeksforGeeks has a good overview on these. 
+- Read up on the hashtable, linked list, tree, graphs, heap, queue, and stack data structures. Play around with how to can use them in your language.
+- GeeksforGeeks has a good overview on these.
 - For coding practice, I'd recommend the HackerRank Data Structures collection.
 
 [Big O in your Average App](https://drobinin.com/assets/talks/bigo_slides.pdf)
@@ -31,3 +31,5 @@ To get started, I recommend the following resources:
 [E.W. Dijkstra Archive: On the cruelty of really teaching computing science †EWD 1036‡ - EWD1036.v4.pdf](https://www.psy.gla.ac.uk/~steve/educ/dijk/EWD1036.v4.pdf)
 
 [Open Data Structures (in pseudocode)](https://opendatastructures.org/ods-python/)
+
+[Volker Nannen (2003) A Short Introduction to Model Selection, Kolmogorov Complexity and Minimum Description Length (MDL)](https://volker.nannen.com/pdf/short_introduction_to_model_selection.pdf)
