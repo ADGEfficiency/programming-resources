@@ -10,6 +10,8 @@ tags:
 created: 2026-01-25 13:00:00
 ---
 
+[Distributed Representations of Sentences and Documents](https://arxiv.org/pdf/1405.4053v2) - Paragraph vectors
+
 [Introduction to NLP for Text](https://towardsdatascience.com/introduction-to-natural-language-processing-for-text-df845750fb63)
 
 ## Tokenization

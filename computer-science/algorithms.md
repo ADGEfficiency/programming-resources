@@ -1,4 +1,10 @@
-hashtable, linked list, tree, graphs, heap, queue, and stack data structures. Play around with how to can use them in your language. 
+---
+id: algorithms
+aliases: []
+tags: []
+---
+
+hashtable, linked list, tree, graphs, heap, queue, and stack data structures. Play around with how to can use them in your language.
 
 GeeksforGeeks has a good overview on these.
 
@@ -15,3 +21,7 @@ https://github.com/hoanhan101/algo
 [Finding Shortest Paths using Breadth First Search](https://medium.com/free-code-camp/exploring-the-applications-and-limits-of-breadth-first-search-to-the-shortest-paths-in-a-weighted-1e7b28b3307)
 
 [An Algorithm for Passing Programming Interviews - malisper.me](https://malisper.me/an-algorithm-for-passing-programming-interviews/)
+
+[George Hotz - What is Programming](../hotz.md) - notes on dynamic programming and sorting complexity (bubble n², merge sort, binary search).
+
+[The Algorithmic Beauty of Plants](https://algorithmicbotany.org/papers/abop/abop.pdf)

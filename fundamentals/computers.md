@@ -311,6 +311,8 @@ Computers think in base 2 (one bit has two states)
 - having memory (RAM & storage) in sizes like 1024 MB is so that the computer can use it efficiently
 - often see powers of 2 in programs (32, 64 etc)
 
+**Float32 vs float64**: a float32 is a 32-bit number, a float64 uses 64 bits. float64 takes up twice as much memory and operations on it may be slower on some machine architectures, but it represents numbers much more accurately and allows much larger numbers to be stored.
+
 
 We can use sequences of bits to represent actions we want the CPU to do (these are CPU instructions)
 - copy bytes
@@ -333,6 +335,8 @@ Hello World on Intel x86-64 - [programming-resources/fundamentals/hello.s](https
 
 - compile the source assembly code into binary
 - link with system libraries to produce an executable (this can sometimes happen dynamically at runtime)
+
+**Object files & linking**: object files let you assemble only part of a library rather than the whole thing. A linker combines them into an executable. **Dynamic linking** links during execution rather than at build time, which saves memory.
 
 ```assembly
 global start

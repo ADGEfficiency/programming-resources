@@ -19,3 +19,7 @@ So how do you deal with these grumpy necessities to your business? Review for a 
     People using our work
 
 Software engineers are creative, just like product managers and designers, and so you should work to include them in the creative process.
+
+---
+
+[George Hotz - What is Programming](../hotz.md) - what a software engineer actually does (translate business requirements → code), what hacking is, and object-level vs meta-level skills.

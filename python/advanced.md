@@ -325,6 +325,52 @@ The article is not explaining the point, which I believe is: type your dicts if 
 
 [Writing Python like it’s Rust](https://kobzol.github.io/rust/python/2023/05/20/writing-python-like-its-rust.html)
 
+## NewType
+
+Newtype - redifining an existing type just for a domain:
+
+```python
+import typing
+
+# Define a new type called "CarId", which is internally an `int`
+CarId = typing.NewType("CarId", int)
+# Ditto for "DriverId"
+DriverId = typing.NewType("DriverId", int)
+
+class Database:
+  def get_car_id(self, brand: str) -> CarId:
+  def get_driver_id(self, name: str) -> DriverId:
+```
+
+## Construction Functions
+
+An __init__ method that has a lot of parameters which serve for initialization in different ways, and which cannot really be used together
+
+Use construction function to define separate ways
+
+```python
+class Rectangle:
+    @staticmethod
+    def from_x1x2y1y2(x1: float, ...) -> "Rectangle":
+
+    @staticmethod
+    def from_tl_and_size(top: float, left: float, width: float, height: float) -> "Rectangle":
+```
+
+## Encoding invariants using types
+
+```python
+def connect(address: str) -> Optional[ConnectedClient]:
+  pass
+
+class ConnectedClient:
+  def authenticate(...) -> Optional["AuthenticatedClient"]:
+
+class AuthenticatedClient:
+  def send_message(...):
+  def close(...):``
+```
+
 [How uv got so fast | Andrew Nesbitt](https://nesbitt.io/2025/12/26/how-uv-got-so-fast.html)
 
 [The Optimization Ladder - Cemrehan Çavdar](https://cemrehancavdar.com/2026/03/10/optimization-ladder/)
