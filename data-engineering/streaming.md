@@ -1,3 +1,9 @@
+---
+id: streaming
+aliases: []
+tags: []
+---
+
 https://www.reddit.com/r/aws/comments/uy1hl0/aws_sns_vs_sqs_what_are_the_main_differences/
 
 SNS supports creating what's often called "topics" in messaging terms. You can publish messages to the topic and it would be pushed to all the subscribers. SNS supports a large verity of subscribers that it can push messages to. Each subscriber of a SNS topic will receive a copy of every message, i.e. it's a fan-out architecture.
@@ -11,3 +17,13 @@ Both systems are serverless, you just create your plumbing and they'll just scal
 SQS has a limit of 256kb per message, but most AWS SDKs supports transparently spilling large messages to S3, so you can easily send large messages through it.
 
 If you have very large throughput (thousands or more per second) it might be useful to batch up messages and have them spilled to S3, in order to reduce the cost a bit, if your usecase can support batching and extra latency
+
+[Introduction to streaming for data scientists](https://huyenchip.com/2022/08/03/stream-processing-for-data-scientists.html)
+
+Streaming data refers to data that is still flowing through a system, e.g. moving from one microservice to another.
+
+Once your data is stored in files, data lakes, or data warehouses, it becomes historical data.
+
+Batch processing vs. stream processing Historical data is often processed in batch jobs — jobs that are kicked off periodically. For example, once a day, you might want to kick off a batch job to generate recommendations for all users. When data is processed in batch jobs, we refer to it as batch processing. Batch processing has been a research subject for many decades, and companies have come up with distributed systems like MapReduce and Spark to process batch data efficiently.
+
+Stream processing refers to doing computation on streaming data. Stream processing is relatively new. We’ll discuss it in this post.
