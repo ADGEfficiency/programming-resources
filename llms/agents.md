@@ -4,6 +4,8 @@ aliases: []
 tags: []
 ---
 
+[Building LLM applications for production](https://huyenchip.com/2023/04/11/llm-engineering.html#agents_tools_and_control_flows)
+
 [Home | GitHub Agentic Workflows](https://github.github.com/gh-aw/)
 
 Use GitHub Copilot, Claude by Anthropic or OpenAI Codex for event-triggered and scheduled jobs to improve your repository. GitHub Agentic Workflows augment your existing, deterministic CI/CD with Continuous AI capabilities.
@@ -26,7 +28,7 @@ Gets the Architect’s brief, makes a short plan, then codes exactly what’s as
 
 Checks the output strictly against the brief. Approves it or sends it back for fixes. Nothing ships without this step. Very tough on scope and what was built.
 
-The handoffs are all done via simple markdown files in a handoff/ folder. Super transparent and easy to follow. Everything is controlled through context files (CLAUDE.md, agent prompts, token rules) so it works with Claude Code, Cursor, VS Code + any LLM that can read project context. 
+The handoffs are all done via simple markdown files in a handoff/ folder. Super transparent and easy to follow. Everything is controlled through context files (CLAUDE.md, agent prompts, token rules) so it works with Claude Code, Cursor, VS Code + any LLM that can read project context.
 
 [(19) Building pi in a World of Slop — Mario Zechner - YouTube](https://www.youtube.com/watch?v=RjfbvDXpFls)
 

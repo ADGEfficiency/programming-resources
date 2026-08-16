@@ -1,3 +1,15 @@
+---
+id: htmx
+aliases: []
+tags:
+  - programming
+  - web-development
+  - htmx
+  - go
+---
+
+[HTMX + Go - Development - Tim Brockley Blog](https://blog.timbrockley.co.uk/development/htmx-golang/)
+
 [Hypermedia Systems](https://hypermedia.systems/book/contents/)
 
 [A modest critique of Htmx | Hacker News](https://news.ycombinator.com/item?id=41781457)
@@ -72,6 +84,6 @@ And we saw that, despite the tighter application-level coupling found in a hyper
 
 Loading states are a way to play with users’ perception of time and turn it to your advantage.
 
-Loading indicators are all about balancing perceived time and perceived value. 
+Loading indicators are all about balancing perceived time and perceived value.
 
 Loading states are also a good opportunity to set expectations of users in your product. They can be used as a communication device to reduce uncertainty for the user by explaining what’s happening or preparing them for what’s coming up next.

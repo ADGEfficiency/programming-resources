@@ -4,13 +4,20 @@ aliases: []
 tags: []
 ---
 
+[LLMs are eroding my software engineering career and I don't know what to do – the human in the loop](https://human-in-the-loop.bearblog.dev/llms-are-eroding-my-software-engineering-career-and-i-dont-know-what-to-do/)
+
+Pillars eroding
+- domain knowledge - how to solve specific problems with code, writing design docs
+- debugging & distributed systems
+- code quality & architecture - not yet erroded
+
 [My AI Adoption Journey – Mitchell Hashimoto](https://mitchellh.com/writing/my-ai-adoption-journey#step-3-end-of-day-agents)
 
 [A love letter to Pi | Lucas Meijer - YouTube](https://www.youtube.com/watch?v=fdbXNWkpPMY)
 
 Ask to present work as an HTML slide deck
 
-Analyze previous sessions 
+Analyze previous sessions
 - evaluate how a conversation went
 - `analyze previous session, find places where agent went wrong way and later found the right way. Make recommendations on what I could have added to the repo that would help the agent reach it's goal faster.`
 - rate limiting step is evaluation

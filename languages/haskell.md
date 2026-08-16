@@ -1,4 +1,16 @@
+---
+id: haskell
+aliases: []
+tags:
+  - haskell
+  - programming
+  - python
+  - data-science
+---
+
 [Haskell IS a Great Language for Data Science -](https://jcarroll.com.au/2025/12/05/haskell-is-a-great-language-for-data-science/)
+
+Claus details how Python’s call-by-reference semantics enables one to modify variables unintentionally, since they’re scoped across functions. Haskell certainly doesn’t have this problem - everything is immutable, and functions are “pure” (no side-effects, though you can interact with typed side-effect ‘instructions’)
 
 [Introducing the backprop library](https://blog.jle.im/entry/introducing-the-backprop-library.html)
 

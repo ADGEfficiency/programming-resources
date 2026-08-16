@@ -4,6 +4,14 @@ aliases: []
 tags: []
 ---
 
+[[4-software-design-principles-hard-way]]
+
+single source of truth
+
+DRY trades off against the single responsibility principle.
+
+Sometimes redundant calculations are fine (ie recalculate rather than writing/mutating state)
+
 [5 Empirical Laws of Software Engineering](https://martynassubonis.substack.com/p/5-empirical-laws-of-software-engineering)
 
 [How I build software quickly | Hacker News](https://news.ycombinator.com/item?id=44557115)

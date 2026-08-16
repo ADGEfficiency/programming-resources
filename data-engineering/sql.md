@@ -199,6 +199,14 @@ We create those rows with `PARTITION BY` - the `PARTITION` divides the dataset i
 
 `RANK() OVER (PARTITION BY region)` assigns a rank within each region.
 
+Number of rows out is determined by the `WHERE` or `GROUP BY`
+
+`OVER` makes a ranking function a window function.
+
+### Partition
+
+Decides which rows each calculation looks at
+
 ### Window Functions
 
 Four main types:
@@ -207,6 +215,20 @@ Four main types:
 2. aggregate,
 3. positional,
 4. cumulative.
+
+Same rows in and out.
+
+### Example - Top-N-per-group
+
+Top-N-per-group (or top-1-per-group, greatest-n-per-group). That's the problem name; the row_number + filter implementation is usually just called the window-function approach to it. On Stack Overflow the canonical tag is "greatest-n-per-group."
+
+```sql
+WITH numbered AS (
+  SELECT *, row_number() OVER (PARTITION BY dept ORDER BY salary DESC) AS rn
+  FROM t
+)
+SELECT * FROM numbered WHERE rn = 1        -- now 1 row per dept
+```
 
 #### Ranking Window Functions
 
@@ -375,6 +397,7 @@ Use of indexes in querying to make operations faster.
 ### Advanced
 
 Recursive CTEs
+- recursive CTEs make SQL Turing complete
 
 Dynamic SQL generation
 

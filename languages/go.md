@@ -4,6 +4,15 @@ aliases: []
 tags: []
 ---
 
+[HTMX + Go - Development - Tim Brockley Blog](https://blog.timbrockley.co.uk/development/htmx-golang/)
+
+- imports
+- define `const`s
+- `main` with the HTTP server
+- serves files in the `javascript` directory
+- template parser with `tmpl`
+- template html
+
 [Go Templ HTMX component library using TailwindCSS and DaisyUI : r/golang](https://www.reddit.com/r/golang/comments/1enaav8/go_templ_htmx_component_library_using_tailwindcss/?share_id=7C3NCYuLmjllJqXjN_hDj&utm_name=androidcss)
 
 [mikestefanello/pagoda](https://github.com/mikestefanello/pagoda) - Rapid, easy full-stack web development starter kit in Go
