@@ -1,10 +1,16 @@
+---
+id: programming
+aliases: []
+tags: []
+---
+
 # Programming
 
 *The practice, principles, art and philosophies of programming*
 
 - [what is a program](#what-is-a-program) - *what are programs made of* - abstractions & interfaces, documentation, testing, properties of languages, OOP & functional programming, language landscape
 - [practice of programming](#practice-of-programming) - *what programmers do* - read code, googling for error messages, debugging, refactoring
-- [principles of programming](#principles-of-programming) - *laws, mindsets and rules* - simplicity, KISS, YAGNI, DRY, maintainability, 
+- [principles of programming](#principles-of-programming) - *laws, mindsets and rules* - simplicity, KISS, YAGNI, DRY, maintainability,
 - [art of programming](#art-of-programming) - *what makes a program good* - simplicity, readability, names, functions, classes
 - [philosophy of programming](#philosophies-of-programming) - *coherent collections of all the above* - agile, literate programming, TDD, clean code
 
@@ -191,7 +197,7 @@ c = tf.add(a, b)
 Abstractions are never perfect
 - **Law of leaky abstractions**
 - all abstractions leak
-- impossible to abstract perfectly - because all abstractions are lies 
+- impossible to abstract perfectly - because all abstractions are lies
 - they are approximations - the map, not the territory
 
 *Further reading*
@@ -292,7 +298,7 @@ def calculate_absolute_change(x, y):
 calculate_absolute_change()
 ```
 
-Uncle Bob Martin's 1st law of documentation 
+Uncle Bob Martin's 1st law of documentation
 
 - produce no documentation unless it's need is immediate & significant
 
@@ -361,7 +367,7 @@ Key elements
 - name
 - badges - don't use too many
 - one-liner - describe what the library dose
-- usage 
+- usage
   - example code should be included as a file in your repo as well
   - CLI examples should show commands and output
 - API
@@ -369,7 +375,7 @@ Key elements
 - Installation
 - License
 
-README driven development 
+README driven development
 - write README before the code
 - write the API / interface before the code
 - write the tutorial before the code
@@ -392,7 +398,7 @@ Examples
 - use inline assert statements (`assert train.shape[0] < test.shape[0]`) - they are low overhead and tells reader what has to happen
 - unit tests
 - integration tests
-- system tests 
+- system tests
 
 **Focus tests on code that is touched a lot / is important / changes a lot**
 - organize tests as scenarios that use multiple parts of the code
@@ -414,7 +420,7 @@ A log file
 
 Records
 
-- what happened 
+- what happened
 - when it happened
 
 You should log after events, not before:
@@ -493,7 +499,7 @@ Compiled languages are fast to run
 - interpretation
 
 
-## Typing 
+## Typing
 
 ### Types & type inference
 
@@ -671,7 +677,7 @@ For data science, common languages that you should be familiar with (you do not 
 
 ### Languages by domain
 
-Fast, operating system languages = C, C++, Rust, Go 
+Fast, operating system languages = C, C++, Rust, Go
 
 Business = Java
 - runs on a Java Virtual Machine (JVM)
@@ -716,7 +722,7 @@ Most time is spent
 Best way to learn
 - write programs
 - read other peoples programs (open source is amazing for this)
-> [reading code] is really worth it for what it builds in your brain. The more you learn to read other people’s stuff, the more able you are to invent your own in the future  - Donald Knuth 
+> [reading code] is really worth it for what it builds in your brain. The more you learn to read other people’s stuff, the more able you are to invent your own in the future  - Donald Knuth
 
 ## What beginners get wrong
 
@@ -735,9 +741,9 @@ Not understanding how your language works
 - anticipating problems
 - know what simple code looks like (having taste)
 - recognizing when your code is too complex
-- when to refactor & rename 
+- when to refactor & rename
 - when to use class (encapsulation)
-- prevent opportunities to be inconsistent 
+- prevent opportunities to be inconsistent
 
 Seeing unrelated ideas mixed together
 - using different libraries in the same function
@@ -910,7 +916,7 @@ Types of technical debt:
 - foundational - assumption deep in the heart of the system,
 - data - present in data,
 
-How do we fix technical debt 
+How do we fix technical debt
 
 - refactoring,
 - interfaces.
@@ -980,7 +986,7 @@ Mindsets of experienced programmers:
 - how do I check this works (is this code tested)?
 - why does this code need to change?
 - who needs to read it?
-- where will this code run? 
+- where will this code run?
 
 
 ## Zen of Python
@@ -1199,9 +1205,18 @@ Formalizing print debugging into logging allows post-event analysis of problems
 
 More powerful debuggers allow interactive programming at one point in time
 
+Reactive techniques
+- Print debugging
+- Using a debugger
+
+Pre-emptive
+- assertions
+- logging
+- testing
 
 *Further reading*
 - [The unreasonable effectiveness of print debugging](https://buttondown.email/geoffreylitt/archive/starting-this-newsletter-print-debugging-byoc/) - [Hacker News Discussion](https://news.ycombinator.com/item?id=26925570)
+- [The Debugging Guide — The Debugging Guide 0.2 documentation](https://uchicago-cs.github.io/debugging-guide/#debugging-techniques)
 
 
 # Art of programming

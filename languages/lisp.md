@@ -1,3 +1,9 @@
+---
+id: lisp
+aliases: []
+tags: []
+---
+
 [Running Lisp in Production](https://www.grammarly.com/blog/engineering/running-lisp-in-production/)
 
 [google/lisp-koans](https://github.com/google/lisp-koans)
@@ -27,3 +33,43 @@ The distinction some make between prototyping and software development has vexed
 Writing and programming are creative acts, yet we've tried to label programming as engineering (as if engineering weren't creative). Instead of fearing creativity, we need to embrace it.
 
 [The Most Beautiful Program Ever Written](https://www.lvguowei.me/post/the-most-beautiful-program-ever-written/)
+
+brew install chezschema
+
+```lisp
+5
+```
+
+Calls list function, evaluates args
+```
+(list 5 6)
+```
+
+Literal list
+```
+(quote (5 6))
+'(5 6)
+```
+
+```
+(null? '())
+
+True (#t). '() is the empty list (shorthand for (quote ())) and null? tests for the empty list.
+```
+
+```
+
+(null? 5)
+
+False (#f). null? only returns true for the empty list; non-list values (and non-empty lists) yield #f.
+```
+
+```
+list (3 4)
+[(,x ,y) (+ x y)]
+```
+3 -> x
+4 -> y
+x + y = 7
+
+Application, lambda, variable lookup

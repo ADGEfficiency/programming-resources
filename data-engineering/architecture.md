@@ -1,3 +1,9 @@
+---
+id: architecture
+aliases: []
+tags: []
+---
+
 [How we built ngrok's data platform - ngrok](https://ngrok.com/blog-post/how-we-built-ngroks-data-platform)
 
 [A battle-tested analytics stack for teams who need speed, clarity, and control](https://www.datagibberish.com/p/analytics-stack-for-speed-clarity-control)
@@ -31,3 +37,24 @@ Intermediates are like you said, a great place to put complex models chunked up 
 Stage is simple models (they can even contain a join or two), they certainly might be used by end users all the time and in dashboards but that doesn’t make them mart worthy in my opinion. They’re simple building blocks that can also be useful on their own
 
 My experience is that dbt is an odd duck in that there is a ton of flexibility and overall has more recommendations than rules. The most important thing to do is be consistent within and across projects for your organization.
+
+[Emerging Architectures for Modern Data Infrastructure | Andreessen Horowitz](https://a16z.com/emerging-architectures-for-modern-data-infrastructure/)
+
+Analytic systems that support data-driven decision-making.
+
+Operational systems that power data-driven products.
+
+These systems have not converged (analytic vs. operational are different)
+
+Reverse ETL
+
+- copying cleaned and processed data from a central data warehouse and pushing it back into everyday operational tools
+
+Value of the lakehouse is to pair a robust storage layer with an array of powerful data processing engines like Spark, Presto, Druid/Clickhouse, Python libraries, etc.
+
+Data stack backend = ingestion, storage, processing, transformation
+
+Software platform = something other developers can build on
+
+- mutual dependence between platform & variety of developers
+- one to many

@@ -267,8 +267,6 @@ for k, v in sorted(d.items()):
 
 [Python’s Innards: Introduction](https://tech.blog.aknin.name/2010/04/02/pythons-innards-introduction/)
 
-[Python behind the scenes #4: how Python bytecode is executed](https://tenthousandmeters.com/blog/python-behind-the-scenes-4-how-python-bytecode-is-executed/)
-
 [satwikkansal/wtfpython](https://github.com/satwikkansal/wtfpython) - What the f*ck Python? 😱
 
 [An exploration of why Python doesn't require a 'main' function](https://utcc.utoronto.ca/~cks/space/blog/python/WhyNoMainFunction)

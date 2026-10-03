@@ -646,6 +646,24 @@ ROW_NUMBER() OVER (PARTITION BY user_id ORDER BY created_at DESC)
 
 Filter WHERE rn = 1 to get the most recent record per user. Clean and reliable.
 
+Duckdb SQL:
+
+```
+qualify row_number() over (
+    partition by n.IntervalDateTime, n.PointOfConnectionCode, n.UnitCode
+    order by n.RunDateTime desc
+) = 1
+```
+
+Is like:
+
+- [ ] ```
+qualify row_number() over (
+    partition by THINGS TO GROUP ON
+    order by ORDER desc
+) = 1
+```
+
 3. Conditional aggregation with CASE WHEN
 
 SUM(CASE WHEN status = 'completed' THEN revenue ELSE 0 END) AS completed_revenue

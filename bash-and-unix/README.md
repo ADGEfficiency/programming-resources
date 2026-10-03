@@ -170,6 +170,7 @@ Work with entire line in file:
 $ cat lines.txt | while read x ; do echo $x ; done
 ```
 
+[A slack clone in 5 lines of bash](https://the-dam.org/docs/explanations/suc.html)
 
 [Shell programming with bash: by example, by counter-example](https://matt.might.net/articles/bash-by-example/)
 

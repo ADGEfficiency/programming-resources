@@ -413,3 +413,9 @@ theirs = my-feature (your own commits!) ✗ feels backwards
 ## Revert
 
 Undo commit with a new commit.
+
+[Unconventional commit format - Claude](https://claude.ai/chat/6ddee60d-bca9-47e7-a252-bd542329d586)
+
+`fix(compiler): prevent namespaced SVG <style> elements from being stripped` becomes
+
+`compiler: prevent namespaced SVG <style> elements from being stripped`.

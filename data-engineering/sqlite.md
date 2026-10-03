@@ -14,19 +14,19 @@ The Untold Story of SQLite - https://corecursive.com/066-sqlite-with-richard-hip
 
 ## [Command Line Shell For SQLite](https://www.sqlite.org/cli.html#index_recommendations_sqlite_expert_)
 
-The ".expert" command proposes indexes that might assist with specific queries, were they present in the database. 
+The ".expert" command proposes indexes that might assist with specific queries, were they present in the database.
 
 ```shell-session
-sqlite> CREATE TABLE x1(a, b, c);                  -- Create table in database 
+sqlite> CREATE TABLE x1(a, b, c);                  -- Create table in database
 sqlite> .expert
-sqlite> SELECT * FROM x1 WHERE a=? AND b>?;        -- Analyze this SELECT 
+sqlite> SELECT * FROM x1 WHERE a=? AND b>?;        -- Analyze this SELECT
 CREATE INDEX x1_idx_000123a7 ON x1(a, b);
 
 0|0|0|SEARCH TABLE x1 USING INDEX x1_idx_000123a7 (a=? AND b>?)
 
-sqlite> CREATE INDEX x1ab ON x1(a, b);             -- Create the recommended index 
+sqlite> CREATE INDEX x1ab ON x1(a, b);             -- Create the recommended index
 sqlite> .expert
-sqlite> SELECT * FROM x1 WHERE a=? AND b>?;        -- Re-analyze the same SELECT 
+sqlite> SELECT * FROM x1 WHERE a=? AND b>?;        -- Re-analyze the same SELECT
 (no new indexes)
 
 0|0|0|SEARCH TABLE x1 USING INDEX x1ab (a=? AND b>?)
@@ -37,7 +37,30 @@ sqlite> SELECT * FROM x1 WHERE a=? AND b>?;        -- Re-analyze the same SELECT
 ## [I'm All-In on Server-Side SQLite](https://fly.io/blog/all-in-on-sqlite-litestream/) - [HN discussion](https://news.ycombinator.com/item?id=31318708)
 
 ## [I Migrated from a Postgres Cluster to Distributed SQLite with LiteFS](https://kentcdodds.com/blog/i-migrated-from-a-postgres-cluster-to-distributed-sqlite-with-litefs)
+
 ## [How does SQLite work? Part 1: pages!](https://jvns.ca/blog/2014/09/27/how-does-sqlite-work-part-1-pages/)
+
+a SQLite database is split into pages, and that bytes 16 and 17 of our file are the page size.
+
+There’s an index on the id column of our fun table, which lets us run queries like select * from fun where id = 100 quickly. To be a bit more precise: to find row 100, we don’t need to read every page, we can just read a few pages
+
+Some pages are interior nodes (no data) some are leaf (where data is)
+
+[How does SQLite work? Part 2: btrees! (or: disk seeks are slow don't do them!)](https://jvns.ca/blog/2014/10/02/how-does-sqlite-work-part-2-btrees/)
+
+One of the most important things in database optimization is disk I/O. Reading more data than you absolutely need to read is really expensive, because seeking to a new location in a file takes a long time.
+
+It takes way less CPU time to search through your data than it does to read the data into memory
+
+btrees are organized so that each node has lots of children, to keep the depth small, and so that we won’t have to read too many pages to find a row.
+
+My 100,000 row SQLite database has a btree with depth 3, so to fetch a node I only need to read 3 pages. If I’d used a binary tree I would have needed to do log(100000) / log(2) = 16 seeks! That’s more than five times as many.
+
+My database has one table, and two btrees.
+
+Each table has a btree, made up of interior and leaf nodes. Leaf nodes contain all the data, and interior nodes point to other child nodes.
+
+Every index for that table also has its own btree, where you can look up which row id a column value corresponds to. This is why maintaining lots of indexes is slow – every time you insert a row you need to update as many trees as you have indexes.
 
 ## [I Migrated from a Postgres Cluster to Distributed SQLite with LiteFS](https://kentcdodds.com/blog/i-migrated-from-a-postgres-cluster-to-distributed-sqlite-with-litefs)
 
@@ -63,7 +86,7 @@ Max data = 281 TB (Postgres = unlimited, but tables have lower limit on size tha
 
 ## [How I run my servers](https://blog.wesleyac.com/posts/how-i-run-my-servers)
 
-Programs that require a database use SQLite, which means that the entire state of the app is kept in a single file. I have two redundant backup solutions: On a daily basis, a backup is taken via the SQLite .backup command, and saved to Tarsnap. The script to do so is run via cron. 
+Programs that require a database use SQLite, which means that the entire state of the app is kept in a single file. I have two redundant backup solutions: On a daily basis, a backup is taken via the SQLite .backup command, and saved to Tarsnap. The script to do so is run via cron.
 
 I also use Litestream to stream a copy of the database to DigitalOcean Spaces storage on a secondly basis, with snapshots taken every 6 hours. This gives me quite a lot of confidence that even in the most disastrous of cases, I'm unlikely to lose a significant amount of data, and if I wanted to be more sure, I could crank up the frequency of the Tarsnap backups.
 
@@ -94,7 +117,7 @@ Where not to use:
 
 [Many Small Queries Are Efficient In SQLite](https://sqlite.org/np1queryprob.html) - [HN Discussion](https://news.ycombinator.com/item?id=26151302)
 
- SQLite can also do large and complex queries efficiently, just like client/server databases. But SQLite can do many smaller queries efficiently too. Application developers can use whichever technique works best for the task at hand. 
+ SQLite can also do large and complex queries efficiently, just like client/server databases. But SQLite can do many smaller queries efficiently too. Application developers can use whichever technique works best for the task at hand.
 
 [Why SQLite Does Not Use Git](https://sqlite.org/whynotgit.html)
 

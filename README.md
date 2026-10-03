@@ -142,6 +142,8 @@ Honeypot documentaries:
 
 ## Articles
 
+[How Microsoft Vaporized a Trillion Dollars](https://isolveproblems.substack.com/p/how-microsoft-vaporized-a-trillion)
+
 [The death of Glitch, the birth of Slack](https://buildingslack.com/the-death-of-glitch-the-birth-of-slack/)
 
 [The Man Who Killed Google Search](https://www.wheresyoured.at/the-men-who-killed-google/)
