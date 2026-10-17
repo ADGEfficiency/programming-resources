@@ -38,7 +38,7 @@ Other highlgihts are the [memes](https://github.com/ADGEfficiency/programming-re
 
 [soma fm - Mission Control](https://somafm.com/missioncontrol/)
 
-[lofi air traffic control](https://www.lofiatc.com/?icao=KVNY)
+[lofi air traffic control (Final Approach Radio)](https://finalapproach.fm/?icao=KORD)
 
 ## Random Cool Stuff
 
